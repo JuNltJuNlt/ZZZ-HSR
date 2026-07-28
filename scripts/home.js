@@ -318,8 +318,10 @@ function setHomeGameView(key) {
     renderDirectory();
 
     const isFuture = key === "future";
+    const isZZZ = key === "zzz";
+
     byId("actions").hidden = isFuture;
-    byId("newStrip").hidden = isFuture;
+    byId("newStrip").hidden = isFuture || isZZZ;
     byId("directoryGrid").hidden = isFuture;
     byId("testCountdown").hidden = isFuture;
     byId("futurePanel").hidden = !isFuture;
