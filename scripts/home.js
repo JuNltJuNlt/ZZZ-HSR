@@ -6,7 +6,7 @@ const HOUR_MS = 60 * 60 * 1000;
 let homeData;
 let iconPaths;
 const homeState = {
-    activeGame: "sr",
+    activeGame: "zzz",
 };
 
 function renderList(container, items, createItem) {
@@ -314,6 +314,8 @@ function bindNoNavigation() {
 function setHomeGameView(key) {
     homeState.activeGame = key;
     renderGameTabs();
+    renderActions();
+    renderDirectory();
 
     const isFuture = key === "future";
     byId("actions").hidden = isFuture;
@@ -359,13 +361,16 @@ function renderGameTabs() {
 }
 
 function renderActions() {
-    renderList(byId("actions"), homeData.actions, (action) =>
+    const activeTab = homeData.gameTabs.find((tab) => tab.key === homeState.activeGame);
+    const gameKey = activeTab?.key === "future" ? "sr" : (activeTab?.key ?? "sr");
+    const actions = homeData.actionsByGame?.[gameKey] ?? homeData.actions ?? [];
+    renderList(byId("actions"), actions, (action) =>
         element("a", {
             href: action.href ?? "#",
             text: action.label,
             className: "hover-shadow",
             attrs: noNavigationAttrs(action),
-        }),
+        })
     );
 }
 
@@ -531,13 +536,16 @@ function renderTestCountdown() {
 }
 
 function renderDirectory() {
-    renderList(byId("directoryGrid"), homeData.directory, (item) =>
+    const activeTab = homeData.gameTabs.find((tab) => tab.key === homeState.activeGame);
+    const gameKey = activeTab?.key === "future" ? "sr" : (activeTab?.key ?? "sr");
+    const directory = homeData.directoryByGame?.[gameKey] ?? homeData.directory ?? [];
+    renderList(byId("directoryGrid"), directory, (item) =>
         element("a", {
             href: item.href ?? "#",
             text: item.label ?? item,
             className: "dir-card hover-shadow",
             attrs: noNavigationAttrs(item),
-        }),
+        })
     );
 }
 
@@ -545,7 +553,7 @@ async function initHome() {
     const homeConfig = await loadJson("../data/home/home.json");
     homeData = homeConfig.homeData;
     iconPaths = homeConfig.iconPaths;
-    homeState.activeGame = homeData.gameTabs.find((tab) => tab.active)?.key ?? "sr";
+    homeState.activeGame = homeData.gameTabs.find((tab) => tab.active)?.key ?? "zzz";
 
     initMenu(homeData);
     bindNoNavigation();
