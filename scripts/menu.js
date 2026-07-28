@@ -25,9 +25,16 @@ async function loadHomeData(homeData) {
 }
 
 function buildMenuGroups(homeData) {
+    const zzzDir = homeData.directoryByGame?.zzz ?? [];
+    const srDir = homeData.directoryByGame?.sr ?? homeData.directory ?? [];
+    const zzzActions = homeData.actionsByGame?.zzz ?? [];
+    const srActions = homeData.actionsByGame?.sr ?? homeData.actions ?? [];
+
     return {
-        quickSr: homeData.actions.map((item) => [item.label, item.disabled ? null : rootHref(item.href)]),
-        sr: homeData.directory.map((item) => [item.label, item.disabled ? null : rootHref(item.href)]),
+        quickZzz: zzzActions.map((item) => [item.label, item.disabled ? null : rootHref(item.href)]),
+        quickSr: srActions.map((item) => [item.label, item.disabled ? null : rootHref(item.href)]),
+        zzz: zzzDir.map((item) => [item.label, item.disabled ? null : rootHref(item.href)]),
+        sr: srDir.map((item) => [item.label, item.disabled ? null : rootHref(item.href)]),
     };
 }
 
@@ -60,6 +67,8 @@ const renderPanelLinks = (items) =>
     );
 
 const renderMainLinks = (items) => items.map(([label, href]) => scheduleLink(label, href));
+
+let currentMenuGame = "zzz";
 
 export const openMenu = async (homeData) => {
     const menuGroups = buildMenuGroups(await loadHomeData(homeData));
@@ -100,13 +109,14 @@ export const openMenu = async (homeData) => {
                     style: { border: "1.6px solid #7030A0" },
                 }),
                 create("schedule", {
-                    html: "<span style='font-size:16px;margin:auto'><b>原神</b></span>",
-                    className: "disabled",
-                    attrs: { "aria-disabled": "true" },
+                    html: "<span style='font-size:16px;margin:auto'><b>绝区零</b></span>",
+                    className: currentMenuGame === "zzz" ? "active" : "hover-shadow",
+                    attrs: { "data-menu-game": "zzz" },
                 }),
                 create("schedule", {
                     html: "<span style='font-size:16px;margin:auto'><b>星穹铁道</b></span>",
-                    className: "active",
+                    className: currentMenuGame === "sr" ? "active" : "hover-shadow",
+                    attrs: { "data-menu-game": "sr" },
                 }),
             ],
         }),
@@ -117,11 +127,11 @@ export const openMenu = async (homeData) => {
                 marginTop: "-13px",
                 justifyContent: "center",
             },
-            children: renderPanelLinks(menuGroups.quickSr),
+            children: renderPanelLinks(currentMenuGame === "zzz" ? menuGroups.quickZzz : menuGroups.quickSr),
         }),
         create("section", {
             className: "menu_SR",
-            children: renderMainLinks(menuGroups.sr),
+            children: renderMainLinks(currentMenuGame === "zzz" ? menuGroups.zzz : menuGroups.sr),
         }),
     );
 
@@ -140,6 +150,13 @@ export const openMenu = async (homeData) => {
     });
     dialog.querySelector("h3").addEventListener("click", () => {
         window.location.href = "/";
+    });
+
+    dialog.querySelectorAll("[data-menu-game]").forEach((el) => {
+        el.addEventListener("click", () => {
+            currentMenuGame = el.dataset.menuGame;
+            openMenu(homeData);
+        });
     });
 
     document.body.append(mask);
