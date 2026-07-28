@@ -576,6 +576,10 @@ async function initHome() {
     );
 
     renderDirectory();
+
+    if (homeState.activeGame === "zzz") {
+        byId("newStrip").hidden = true;
+    }
 }
 
 initHome();
