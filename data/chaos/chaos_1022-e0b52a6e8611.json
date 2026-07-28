@@ -1,0 +1,1165 @@
+{
+    "chaos_id": 1022,
+    "chaos_name": "出故乡记",
+    "buff": {
+        "id": 3030135,
+        "name": "记忆紊流",
+        "description": "我方全体生命上限提高<color style='color:#f29e38;'>30%</color>，每次受到攻击时恢复等同于生命上限<color style='color:#f29e38;'>5%</color>的生命值，并为【记忆紊流】增加<color style='color:#f29e38;'>1</color>段攻击段数；每次消耗生命值时恢复等同于生命上限<color style='color:#f29e38;'>10%</color>的生命值，并为【记忆紊流】增加<color style='color:#f29e38;'>2</color>段攻击段数，该效果每次攻击只可触发1次，最多增加<color style='color:#f29e38;'>20</color>段。<br>每个轮开始时，【记忆紊流】的每段攻击对随机敌方目标造成1次真实伤害。"
+    },
+    "floors": [
+        {
+            "floor": 1,
+            "element_upper": [
+                "Elec",
+                "Quantum"
+            ],
+            "element_lower": [
+                "Phys",
+                "Imaginary"
+            ],
+            "level": 68,
+            "upper": [
+                {
+                    "stage_id": 30112011,
+                    "monsters": [
+                        [
+                            {
+                                "id": 4012010,
+                                "hp": 25109,
+                                "speed": 110,
+                                "stance": 3
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 173831,
+                                "speed": 145,
+                                "stance": 16
+                            },
+                            {
+                                "id": 4012020,
+                                "hp": 25109,
+                                "speed": 110,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 4012010,
+                                "hp": 25109,
+                                "speed": 110,
+                                "stance": 3
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 173831,
+                                "speed": 145,
+                                "stance": 16
+                            },
+                            {
+                                "id": 3013010,
+                                "hp": 135202,
+                                "speed": 121,
+                                "stance": 12
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112012,
+                    "monsters": [
+                        [
+                            {
+                                "id": 3002010,
+                                "hp": 26557,
+                                "speed": 110,
+                                "stance": 3
+                            },
+                            {
+                                "id": 3003020,
+                                "hp": 173831,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3002040,
+                                "hp": 16900,
+                                "speed": 88,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3003020,
+                                "hp": 173831,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 2013020,
+                                "hp": 115887,
+                                "speed": 132,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 2,
+            "element_upper": [
+                "Ice",
+                "Elec"
+            ],
+            "element_lower": [
+                "Fire",
+                "Elec"
+            ],
+            "level": 70,
+            "upper": [
+                {
+                    "stage_id": 30112021,
+                    "monsters": [
+                        [
+                            {
+                                "id": 1012030,
+                                "hp": 14841,
+                                "speed": 110,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1013010,
+                                "hp": 137807,
+                                "speed": 132,
+                                "stance": 14
+                            },
+                            {
+                                "id": 1012030,
+                                "hp": 14841,
+                                "speed": 110,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 1013010,
+                                "hp": 137807,
+                                "speed": 132,
+                                "stance": 14
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 116606,
+                                "speed": 158,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112022,
+                    "monsters": [
+                        [
+                            {
+                                "id": 8002010,
+                                "hp": 20141,
+                                "speed": 132,
+                                "stance": 2
+                            },
+                            {
+                                "id": 8003040,
+                                "hp": 106006,
+                                "speed": 189,
+                                "stance": 10
+                            },
+                            {
+                                "id": 8002010,
+                                "hp": 20141,
+                                "speed": 132,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1012010,
+                                "hp": 14841,
+                                "speed": 110,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 8002010,
+                                "hp": 20141,
+                                "speed": 132,
+                                "stance": 2
+                            },
+                            {
+                                "id": 8003040,
+                                "hp": 106006,
+                                "speed": 189,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3003040,
+                                "hp": 127207,
+                                "speed": 110,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 3,
+            "element_upper": [
+                "Phys",
+                "Imaginary"
+            ],
+            "element_lower": [
+                "Elec",
+                "Quantum"
+            ],
+            "level": 73,
+            "upper": [
+                {
+                    "stage_id": 30112031,
+                    "monsters": [
+                        [
+                            {
+                                "id": 3002040,
+                                "hp": 22958,
+                                "speed": 88,
+                                "stance": 3
+                            },
+                            {
+                                "id": 3003020,
+                                "hp": 236144,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3002010,
+                                "hp": 36078,
+                                "speed": 110,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3003020,
+                                "hp": 236144,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 2013020,
+                                "hp": 157429,
+                                "speed": 132,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112032,
+                    "monsters": [
+                        [
+                            {
+                                "id": 8002010,
+                                "hp": 24926,
+                                "speed": 132,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1023020,
+                                "hp": 157429,
+                                "speed": 110,
+                                "stance": 10
+                            },
+                            {
+                                "id": 8002010,
+                                "hp": 24926,
+                                "speed": 132,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3013010,
+                                "hp": 183668,
+                                "speed": 121,
+                                "stance": 12
+                            },
+                            {
+                                "id": 1023020,
+                                "hp": 157429,
+                                "speed": 110,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 4,
+            "element_upper": [
+                "Ice",
+                "Quantum"
+            ],
+            "element_lower": [
+                "Ice",
+                "Elec",
+                "Imaginary"
+            ],
+            "level": 75,
+            "upper": [
+                {
+                    "stage_id": 30112041,
+                    "monsters": [
+                        [
+                            {
+                                "id": 401203005,
+                                "hp": 88789,
+                                "speed": 110,
+                                "stance": 3
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 266367,
+                                "speed": 145,
+                                "stance": 16
+                            },
+                            {
+                                "id": 401203005,
+                                "hp": 88789,
+                                "speed": 110,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 8003020,
+                                "hp": 147982,
+                                "speed": 132,
+                                "stance": 10
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 266367,
+                                "speed": 145,
+                                "stance": 16
+                            },
+                            {
+                                "id": 8003020,
+                                "hp": 147982,
+                                "speed": 132,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112042,
+                    "monsters": [
+                        [
+                            {
+                                "id": 100202022,
+                                "hp": 73991,
+                                "speed": 110,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 162780,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 100202022,
+                                "hp": 73991,
+                                "speed": 110,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 1013020,
+                                "hp": 162780,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 162780,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 162780,
+                                "speed": 158,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 5,
+            "element_upper": [
+                "Wind"
+            ],
+            "element_lower": [
+                "Phys",
+                "Ice"
+            ],
+            "level": 78,
+            "upper": [
+                {
+                    "stage_id": 30112051,
+                    "monsters": [
+                        [
+                            {
+                                "id": 2032010,
+                                "hp": 34633,
+                                "speed": 144,
+                                "stance": 3
+                            },
+                            {
+                                "id": 2033010,
+                                "hp": 207800,
+                                "speed": 144,
+                                "stance": 12
+                            },
+                            {
+                                "id": 2032020,
+                                "hp": 34633,
+                                "speed": 144,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 2033010,
+                                "hp": 207800,
+                                "speed": 144,
+                                "stance": 12
+                            },
+                            {
+                                "id": 2023020,
+                                "hp": 207800,
+                                "speed": 173,
+                                "stance": 12
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112052,
+                    "monsters": [
+                        [
+                            {
+                                "id": 1003010,
+                                "hp": 173167,
+                                "speed": 144,
+                                "stance": 8
+                            },
+                            {
+                                "id": 1003010,
+                                "hp": 173167,
+                                "speed": 144,
+                                "stance": 8
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3024010,
+                                "hp": 259751,
+                                "speed": 173,
+                                "stance": 16,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 6,
+            "element_upper": [
+                "Ice",
+                "Elec"
+            ],
+            "element_lower": [
+                "Fire",
+                "Elec"
+            ],
+            "level": 80,
+            "upper": [
+                {
+                    "stage_id": 30112061,
+                    "monsters": [
+                        [
+                            {
+                                "id": 1012030,
+                                "hp": 26594,
+                                "speed": 120,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1013010,
+                                "hp": 246945,
+                                "speed": 144,
+                                "stance": 14
+                            },
+                            {
+                                "id": 1012030,
+                                "hp": 26594,
+                                "speed": 120,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 1013010,
+                                "hp": 246945,
+                                "speed": 144,
+                                "stance": 14
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 208953,
+                                "speed": 173,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112062,
+                    "monsters": [
+                        [
+                            {
+                                "id": 8002010,
+                                "hp": 36092,
+                                "speed": 144,
+                                "stance": 2
+                            },
+                            {
+                                "id": 8003040,
+                                "hp": 189957,
+                                "speed": 206,
+                                "stance": 10
+                            },
+                            {
+                                "id": 8002010,
+                                "hp": 36092,
+                                "speed": 144,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1012010,
+                                "hp": 26594,
+                                "speed": 120,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 8002010,
+                                "hp": 36092,
+                                "speed": 144,
+                                "stance": 2
+                            },
+                            {
+                                "id": 8003040,
+                                "hp": 189957,
+                                "speed": 206,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3003040,
+                                "hp": 227949,
+                                "speed": 120,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 7,
+            "element_upper": [
+                "Fire",
+                "Imaginary"
+            ],
+            "element_lower": [
+                "Wind",
+                "Quantum"
+            ],
+            "level": 82,
+            "upper": [
+                {
+                    "stage_id": 30112071,
+                    "monsters": [
+                        [
+                            {
+                                "id": 3002010,
+                                "hp": 58222,
+                                "speed": 120,
+                                "stance": 3
+                            },
+                            {
+                                "id": 3003030,
+                                "hp": 254059,
+                                "speed": 120,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3001010,
+                                "hp": 21172,
+                                "speed": 100,
+                                "stance": 1
+                            },
+                            {
+                                "id": 3001010,
+                                "hp": 21172,
+                                "speed": 100,
+                                "stance": 1
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3003030,
+                                "hp": 254059,
+                                "speed": 120,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3003050,
+                                "hp": 254059,
+                                "speed": 144,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3002010,
+                                "hp": 58222,
+                                "speed": 120,
+                                "stance": 3
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112072,
+                    "monsters": [
+                        [
+                            {
+                                "id": 2022010,
+                                "hp": 25406,
+                                "speed": 100,
+                                "stance": 2
+                            },
+                            {
+                                "id": 2013010,
+                                "hp": 211716,
+                                "speed": 120,
+                                "stance": 10
+                            },
+                            {
+                                "id": 2022010,
+                                "hp": 25406,
+                                "speed": 100,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 2013010,
+                                "hp": 211716,
+                                "speed": 120,
+                                "stance": 10
+                            },
+                            {
+                                "id": 8003010,
+                                "hp": 211716,
+                                "speed": 120,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 8,
+            "element_upper": [
+                "Phys",
+                "Imaginary"
+            ],
+            "element_lower": [
+                "Elec",
+                "Quantum"
+            ],
+            "level": 85,
+            "upper": [
+                {
+                    "stage_id": 30112081,
+                    "monsters": [
+                        [
+                            {
+                                "id": 3002040,
+                                "hp": 43506,
+                                "speed": 96,
+                                "stance": 3
+                            },
+                            {
+                                "id": 3003020,
+                                "hp": 447490,
+                                "speed": 173,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3002010,
+                                "hp": 68367,
+                                "speed": 120,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3003020,
+                                "hp": 447490,
+                                "speed": 173,
+                                "stance": 10
+                            },
+                            {
+                                "id": 2013020,
+                                "hp": 298327,
+                                "speed": 144,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112082,
+                    "monsters": [
+                        [
+                            {
+                                "id": 8002010,
+                                "hp": 47235,
+                                "speed": 144,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1023020,
+                                "hp": 298327,
+                                "speed": 120,
+                                "stance": 10
+                            },
+                            {
+                                "id": 8002010,
+                                "hp": 47235,
+                                "speed": 144,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3013010,
+                                "hp": 348048,
+                                "speed": 132,
+                                "stance": 12
+                            },
+                            {
+                                "id": 1023020,
+                                "hp": 298327,
+                                "speed": 120,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 9,
+            "element_upper": [
+                "Ice",
+                "Quantum"
+            ],
+            "element_lower": [
+                "Ice",
+                "Elec",
+                "Imaginary"
+            ],
+            "level": 88,
+            "upper": [
+                {
+                    "stage_id": 30112091,
+                    "monsters": [
+                        [
+                            {
+                                "id": 401203005,
+                                "hp": 182069,
+                                "speed": 132,
+                                "stance": 3
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 546207,
+                                "speed": 174,
+                                "stance": 16
+                            },
+                            {
+                                "id": 401203005,
+                                "hp": 182069,
+                                "speed": 132,
+                                "stance": 3
+                            }
+                        ],
+                        [
+                            {
+                                "id": 8003020,
+                                "hp": 303448,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 546207,
+                                "speed": 174,
+                                "stance": 16
+                            },
+                            {
+                                "id": 8003020,
+                                "hp": 303448,
+                                "speed": 158,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112092,
+                    "monsters": [
+                        [
+                            {
+                                "id": 100202022,
+                                "hp": 151724,
+                                "speed": 132,
+                                "stance": 2
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 333793,
+                                "speed": 190,
+                                "stance": 10
+                            },
+                            {
+                                "id": 100202022,
+                                "hp": 151724,
+                                "speed": 132,
+                                "stance": 2
+                            }
+                        ],
+                        [
+                            {
+                                "id": 1013020,
+                                "hp": 333793,
+                                "speed": 190,
+                                "stance": 10
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 333793,
+                                "speed": 190,
+                                "stance": 10
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 333793,
+                                "speed": 190,
+                                "stance": 10
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 10,
+            "element_upper": [
+                "Fire",
+                "Quantum"
+            ],
+            "element_lower": [
+                "Fire",
+                "Imaginary"
+            ],
+            "level": 90,
+            "upper": [
+                {
+                    "stage_id": 30112101,
+                    "monsters": [
+                        [
+                            {
+                                "id": 2013010,
+                                "hp": 350412,
+                                "speed": 132,
+                                "stance": 10
+                            },
+                            {
+                                "id": 4023020,
+                                "hp": 385453,
+                                "speed": 132,
+                                "stance": 16
+                            }
+                        ],
+                        [
+                            {
+                                "id": 100401010,
+                                "hp": 946113,
+                                "speed": 158,
+                                "stance": 12
+                            },
+                            {
+                                "id": 4023020,
+                                "hp": 385453,
+                                "speed": 132,
+                                "stance": 16
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112102,
+                    "monsters": [
+                        [
+                            {
+                                "id": 3003030,
+                                "hp": 420495,
+                                "speed": 132,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3003050,
+                                "hp": 420495,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 3003030,
+                                "hp": 420495,
+                                "speed": 132,
+                                "stance": 10
+                            }
+                        ],
+                        [
+                            {
+                                "id": 3004020,
+                                "hp": 1401649,
+                                "speed": 106,
+                                "stance": 0,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 11,
+            "element_upper": [
+                "Phys",
+                "Wind"
+            ],
+            "element_lower": [
+                "Ice",
+                "Elec"
+            ],
+            "level": 92,
+            "upper": [
+                {
+                    "stage_id": 30112111,
+                    "monsters": [
+                        [
+                            {
+                                "id": 8003030,
+                                "hp": 526386,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 8013010,
+                                "hp": 526386,
+                                "speed": 132,
+                                "stance": 10
+                            }
+                        ],
+                        [
+                            {
+                                "id": 2034010,
+                                "hp": 1315965,
+                                "speed": 264,
+                                "stance": 24,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112112,
+                    "monsters": [
+                        [
+                            {
+                                "id": 1013020,
+                                "hp": 526386,
+                                "speed": 190,
+                                "stance": 10
+                            },
+                            {
+                                "id": 4013010,
+                                "hp": 861359,
+                                "speed": 174,
+                                "stance": 16
+                            },
+                            {
+                                "id": 1013020,
+                                "hp": 526386,
+                                "speed": 190,
+                                "stance": 10
+                            }
+                        ],
+                        [
+                            {
+                                "id": 4014020,
+                                "hp": 2871197,
+                                "speed": 79,
+                                "stance": 0,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "floor": 12,
+            "element_upper": [
+                "Ice",
+                "Quantum"
+            ],
+            "element_lower": [
+                "Imaginary"
+            ],
+            "level": 95,
+            "upper": [
+                {
+                    "stage_id": 30112121,
+                    "hp_coefficient": 2,
+                    "monsters": [
+                        [
+                            {
+                                "id": 800302024,
+                                "hp": 453905,
+                                "speed": 158,
+                                "stance": 10
+                            },
+                            {
+                                "id": 401301003,
+                                "hp": 1117305,
+                                "speed": 174,
+                                "stance": 16
+                            },
+                            {
+                                "id": 800302024,
+                                "hp": 453905,
+                                "speed": 158,
+                                "stance": 10
+                            }
+                        ],
+                        [
+                            {
+                                "id": 4034010,
+                                "hp": 2269526,
+                                "speed": 174,
+                                "stance": 24,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 30112122,
+                    "hp_coefficient": 2,
+                    "monsters": [
+                        [
+                            {
+                                "id": 402301001,
+                                "hp": 1256968,
+                                "speed": 158,
+                                "stance": 16
+                            },
+                            {
+                                "id": 402302001,
+                                "hp": 1117305,
+                                "speed": 132,
+                                "stance": 16
+                            }
+                        ],
+                        [
+                            {
+                                "id": 402302001,
+                                "hp": 1117305,
+                                "speed": 132,
+                                "stance": 16
+                            },
+                            {
+                                "id": 200401007,
+                                "hp": 1815621,
+                                "speed": 170,
+                                "stance": 15
+                            },
+                            {
+                                "id": 402302001,
+                                "hp": 1117305,
+                                "speed": 132,
+                                "stance": 16
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "time": "2025/03/31 - 2025/05/12"
+}
