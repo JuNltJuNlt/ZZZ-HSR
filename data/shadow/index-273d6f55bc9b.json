@@ -1,0 +1,25 @@
+{
+    "monster_catalog": "monster_catalog.json",
+    "entries": [
+        "shadow_3020.json",
+        "shadow_3019.json",
+        "shadow_3018.json",
+        "shadow_3017.json",
+        "shadow_3016.json",
+        "shadow_3015.json",
+        "shadow_3014.json",
+        "shadow_3013.json",
+        "shadow_3012.json",
+        "shadow_3011.json",
+        "shadow_3010.json",
+        "shadow_3009.json",
+        "shadow_3008.json",
+        "shadow_3007.json",
+        "shadow_3006.json",
+        "shadow_3005.json",
+        "shadow_3004.json",
+        "shadow_3003.json",
+        "shadow_3002.json",
+        "shadow_3001.json"
+    ]
+}

@@ -1,0 +1,277 @@
+{
+    "shadow_id": 3016,
+    "shadow_name": "兵锋天狼",
+    "time": "2026/03/16 - 2026/04/27",
+    "element_upper": [
+        "Fire",
+        "Ice",
+        "Elec",
+        "Quantum"
+    ],
+    "element_lower": [
+        "Phys",
+        "Fire",
+        "Elec",
+        "Wind"
+    ],
+    "element_star": [],
+    "boss_features": {
+        "upper": [
+            {
+                "id": 101401,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'>50%</color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'>100%</color>。"
+            },
+            {
+                "id": 101402,
+                "name": "铁甲森森",
+                "description": "首领幻影和其召唤物拥有<color style='color:#f29e38;'><u>【战甲】</u></color>，使自身受到的伤害降低。在第二阶段<color style='color:#f29e38;'><u>【战甲】</u></color>会强化为<color style='color:#f29e38;'><u>【百炼战甲】</u></color>，层数上限大幅提高，首领幻影还会额外获得韧性保护。",
+                "extra": [
+                    {
+                        "name": "战甲",
+                        "description": "受到的伤害降低。受到攻击后根据攻击者的【荣耀】层数减少自身【战甲】，减少到0层时，【战甲】被破坏，对自身造成大量虚数属性伤害，削减自身韧性，并使自身行动延后，使我方恢复战技点。【战甲】被破坏后，自身受到攻击时额外再受到少量虚数属性伤害。【战甲】在自身回合结束时恢复到最大层数。"
+                    },
+                    {
+                        "name": "百炼战甲",
+                        "description": "受到的伤害降低。受到攻击后根据攻击者的【荣耀】层数减少自身【百炼战甲】，减少到0层时，【百炼战甲】被破坏，对自身造成大量虚数属性伤害，削减自身大量韧性，并使自身行动延后，使我方恢复战技点，并使攻击者获得一定层数的【荣耀】。【百炼战甲】被破坏后，自身受到攻击时额外再受到少量虚数属性伤害。【百炼战甲】在自身回合结束时如果层数为0，则恢复到最大层数。"
+                    }
+                ]
+            },
+            {
+                "id": 101403,
+                "name": "铄金点玉",
+                "description": "第二阶段时，首领幻影的【百炼战甲】层数上限提高。"
+            },
+            {
+                "id": 101404,
+                "name": "列阵护主",
+                "description": "除首领幻影外，每多存在1个<color style='color:#f29e38;'>敌方单位</color>，敌方全体受到的伤害降低，造成的伤害提高。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 101201,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'>50%</color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'>100%</color>。"
+            },
+            {
+                "id": 101202,
+                "name": "铁骨峥嵘",
+                "description": "部位受到的伤害降低<color style='color:#f29e38;'>50%</color>。当首领幻影被<color style='color:#f29e38;'>弱点击破</color>后，受到的伤害提高<color style='color:#f29e38;'>100%</color>"
+            },
+            {
+                "id": 101203,
+                "name": "钩爪锯牙",
+                "description": "首领幻影的韧性提高<color style='color:#f29e38;'>40</color>点。"
+            },
+            {
+                "id": 101204,
+                "name": "兽血沸腾",
+                "description": "<color style='color:#f29e38;'>【厉咒】</color>状态的持续时间延长<color style='color:#f29e38;'>1</color>回合。"
+            }
+        ],
+        "star": []
+    },
+    "floors": [
+        {
+            "floor": 1,
+            "level": 60,
+            "upper": [
+                {
+                    "stage_id": 420381,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 401401301,
+                                "hp": 343234,
+                                "speed": 120,
+                                "stance": 48,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420391,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501201,
+                                "hp": 471947,
+                                "speed": 144,
+                                "stance": 28,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 2,
+            "level": 70,
+            "upper": [
+                {
+                    "stage_id": 420382,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 401401302,
+                                "hp": 1236733,
+                                "speed": 132,
+                                "stance": 48,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420392,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501202,
+                                "hp": 1700508,
+                                "speed": 158,
+                                "stance": 28,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 3,
+            "level": 80,
+            "upper": [
+                {
+                    "stage_id": 420383,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 401401303,
+                                "hp": 2649767,
+                                "speed": 144,
+                                "stance": 48,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420393,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501203,
+                                "hp": 4769581,
+                                "speed": 173,
+                                "stance": 28,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 4,
+            "level": 90,
+            "upper": [
+                {
+                    "stage_id": 420384,
+                    "level": 90,
+                    "hp_coefficient": 1.05,
+                    "monsters": [
+                        [
+                            {
+                                "id": 401401304,
+                                "hp": 8084165,
+                                "speed": 158,
+                                "stance": 48,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420394,
+                    "level": 90,
+                    "hp_coefficient": 1.4,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501204,
+                                "hp": 11856776,
+                                "speed": 190,
+                                "stance": 28,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        }
+    ],
+    "buff_total": {
+        "name": "末法余烬",
+        "description": "拥有<color style='color:#f29e38;'>【坚防守备】</color>的敌方目标被<color style='color:#f29e38;'>弱点击破</color>时，使我方全体目标解除控制状态、恢复战技点、立即行动并使阿哈立即获得一个额外回合（本回合固定计入<color style='color:#f29e38;'>10</color>笑点）。<br>敌方全体目标受到的欢愉伤害提高<color style='color:#f29e38;'>25%</color>，弱点击破伤害提高<color style='color:#f29e38;'>15%</color>。",
+        "id": 3110015
+    },
+    "buff": {
+        "upper": [
+            {
+                "id": 3111083,
+                "name": "以柔克刚",
+                "description": "我方全体造成的欢愉伤害无视敌方目标<color style='color:#f29e38;'>15%</color>的全属性抗性。破坏敌方目标的【战甲】或【百炼战甲】时，获得<color style='color:#f29e38;'>3</color>笑点。"
+            },
+            {
+                "id": 3111084,
+                "name": "气涌如山",
+                "description": "我方目标施放终结技后，使自身战技造成的暴击伤害提高<color style='color:#f29e38;'>50%</color>，持续<color style='color:#f29e38;'>2</color>回合。"
+            },
+            {
+                "id": 3111085,
+                "name": "可乘之隙",
+                "description": "我方全体造成的追加攻击和终结技伤害提高<color style='color:#f29e38;'>50%</color>，对弱点击破状态下的敌方目标额外提高<color style='color:#f29e38;'>50%</color>。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 3111086,
+                "name": "望风瓦解",
+                "description": "敌方全体受到的击破伤害提高<color style='color:#f29e38;'>10%</color>。击破敌方弱点后，我方全体速度提高<color style='color:#f29e38;'>15%</color>，持续<color style='color:#f29e38;'>2</color>回合。"
+            },
+            {
+                "id": 3111087,
+                "name": "金玉其质",
+                "description": "我方全体的暴击伤害提高<color style='color:#f29e38;'>30%</color>，编队中的第1位角色及其忆灵的暴击伤害额外提高<color style='color:#f29e38;'>30%</color>。"
+            },
+            {
+                "id": 3111088,
+                "name": "寸心如割",
+                "description": "处于弱点击破状态下的敌方目标受到的持续伤害提高<color style='color:#f29e38;'>30%</color>。"
+            }
+        ],
+        "star": []
+    }
+}

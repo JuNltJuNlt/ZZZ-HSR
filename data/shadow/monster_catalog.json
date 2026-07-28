@@ -1,0 +1,1110 @@
+{
+    "100401401": {
+        "1": "monster/Monster_1004010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "无望冽风的幻灭者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.6,
+            "Imaginary": 0.6
+        }
+    },
+    "100401402": {
+        "1": "monster/Monster_1004010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "无望冽风的幻灭者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.6,
+            "Imaginary": 0.6
+        }
+    },
+    "100401403": {
+        "1": "monster/Monster_1004010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "无望冽风的幻灭者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.6,
+            "Imaginary": 0.6
+        }
+    },
+    "100401404": {
+        "1": "monster/Monster_1004010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "无望冽风的幻灭者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.6,
+            "Imaginary": 0.6
+        }
+    },
+    "100402601": {
+        "1": "monster/Monster_1004020.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "杰帕德",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Ice": 0.2,
+            "Wind": 0.2
+        }
+    },
+    "100402602": {
+        "1": "monster/Monster_1004020.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "杰帕德",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Ice": 0.2,
+            "Wind": 0.2
+        }
+    },
+    "100402603": {
+        "1": "monster/Monster_1004020.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "杰帕德",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Ice": 0.2,
+            "Wind": 0.2
+        }
+    },
+    "100402604": {
+        "1": "monster/Monster_1004020.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "杰帕德",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Ice": 0.2,
+            "Wind": 0.2
+        }
+    },
+    "200401401": {
+        "1": "monster/Monster_2004010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "勾魂摄魄的支配者",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "200401402": {
+        "1": "monster/Monster_2004010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "勾魂摄魄的支配者",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "200401403": {
+        "1": "monster/Monster_2004010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "勾魂摄魄的支配者",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "200401404": {
+        "1": "monster/Monster_2004010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "勾魂摄魄的支配者",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "202401601": {
+        "1": "monster/Monster_2024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "弗有垂暮的不老仙"
+    },
+    "202401602": {
+        "1": "monster/Monster_2024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "弗有垂暮的不老仙"
+    },
+    "202401603": {
+        "1": "monster/Monster_2024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "弗有垂暮的不老仙"
+    },
+    "202401604": {
+        "1": "monster/Monster_2024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "弗有垂暮的不老仙"
+    },
+    "203401401": {
+        "1": "monster/Monster_2034010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "雷奔云谲的恶狼主",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203401402": {
+        "1": "monster/Monster_2034010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "雷奔云谲的恶狼主",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203401403": {
+        "1": "monster/Monster_2034010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "雷奔云谲的恶狼主",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203401404": {
+        "1": "monster/Monster_2034010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "雷奔云谲的恶狼主",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203501201": {
+        "1": "monster/Monster_2033020.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "业火焚心的影将军",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203501202": {
+        "1": "monster/Monster_2033020.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "业火焚心的影将军",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203501203": {
+        "1": "monster/Monster_2033020.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "业火焚心的影将军",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "203501204": {
+        "1": "monster/Monster_2033020.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "业火焚心的影将军",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "300402101": {
+        "1": "monster/Monster_3004020.webp",
+        "2": [],
+        "3": 2,
+        "4": "心蕉如火的猴把戏",
+        "9": {}
+    },
+    "300402102": {
+        "1": "monster/Monster_3004020.webp",
+        "2": [],
+        "3": 2,
+        "4": "心蕉如火的猴把戏",
+        "9": {}
+    },
+    "300402103": {
+        "1": "monster/Monster_3004020.webp",
+        "2": [],
+        "3": 2,
+        "4": "心蕉如火的猴把戏",
+        "9": {}
+    },
+    "300402104": {
+        "1": "monster/Monster_3004020.webp",
+        "2": [],
+        "3": 2,
+        "4": "心蕉如火的猴把戏",
+        "9": {}
+    },
+    "302401301": {
+        "1": "monster/Monster_3024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "芒寒色正的银骑士",
+        "9": {
+            "Elec": 0.6,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "302401302": {
+        "1": "monster/Monster_3024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "芒寒色正的银骑士",
+        "9": {
+            "Elec": 0.6,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "302401303": {
+        "1": "monster/Monster_3024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "芒寒色正的银骑士",
+        "9": {
+            "Elec": 0.6,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "302401304": {
+        "1": "monster/Monster_3024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "芒寒色正的银骑士",
+        "9": {
+            "Elec": 0.6,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "302501301": {
+        "1": "monster/Monster_3025010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万籁齐响的指挥家",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Wind": 0.4
+        },
+        "11": 10
+    },
+    "302501302": {
+        "1": "monster/Monster_3025010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万籁齐响的指挥家",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Wind": 0.4
+        },
+        "11": 10
+    },
+    "302501303": {
+        "1": "monster/Monster_3025010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万籁齐响的指挥家",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Wind": 0.4
+        },
+        "11": 10
+    },
+    "302501304": {
+        "1": "monster/Monster_3025010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万籁齐响的指挥家",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Wind": 0.4
+        },
+        "11": 10
+    },
+    "401401301": {
+        "1": "monster/Monster_4014010.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "兵戈扰攘的常胜军",
+        "9": {
+            "Phys": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "401401302": {
+        "1": "monster/Monster_4014010.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "兵戈扰攘的常胜军",
+        "9": {
+            "Phys": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "401401303": {
+        "1": "monster/Monster_4014010.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "兵戈扰攘的常胜军",
+        "9": {
+            "Phys": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "401401304": {
+        "1": "monster/Monster_4014010.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "兵戈扰攘的常胜军",
+        "9": {
+            "Phys": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "401403601": {
+        "1": "monster/Monster_4014030.webp",
+        "2": [
+            "Ice",
+            "Wind",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "枯茎朽骨的引路人",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Elec": 0.2
+        }
+    },
+    "401403602": {
+        "1": "monster/Monster_4014030.webp",
+        "2": [
+            "Ice",
+            "Wind",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "枯茎朽骨的引路人",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Elec": 0.2
+        }
+    },
+    "401403603": {
+        "1": "monster/Monster_4014030.webp",
+        "2": [
+            "Ice",
+            "Wind",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "枯茎朽骨的引路人",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Elec": 0.2
+        }
+    },
+    "401403604": {
+        "1": "monster/Monster_4014030.webp",
+        "2": [
+            "Ice",
+            "Wind",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "枯茎朽骨的引路人",
+        "9": {
+            "Phys": 0.2,
+            "Fire": 0.2,
+            "Elec": 0.2
+        }
+    },
+    "403401301": {
+        "1": "monster/Monster_4034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "末日歧途的盗火者",
+        "9": {
+            "Fire": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        },
+        "11": 2
+    },
+    "403401302": {
+        "1": "monster/Monster_4034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "末日歧途的盗火者",
+        "9": {
+            "Fire": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        },
+        "11": 2
+    },
+    "403401303": {
+        "1": "monster/Monster_4034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "末日歧途的盗火者",
+        "9": {
+            "Fire": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        },
+        "11": 2
+    },
+    "403401304": {
+        "1": "monster/Monster_4034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 2,
+        "4": "末日歧途的盗火者",
+        "9": {
+            "Fire": 0.4,
+            "Wind": 0.4,
+            "Imaginary": 0.4
+        },
+        "11": 2
+    },
+    "406401201": {
+        "1": "monster/Monster_4064010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "迷惘之渊的裁定者",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "406401202": {
+        "1": "monster/Monster_4064010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "迷惘之渊的裁定者",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "406401203": {
+        "1": "monster/Monster_4064010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "迷惘之渊的裁定者",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "406401204": {
+        "1": "monster/Monster_4064010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "迷惘之渊的裁定者",
+        "9": {
+            "Ice": 0.4,
+            "Wind": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "501401401": {
+        "1": "monster/Monster_5014010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万众瞩目的超偶像",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        }
+    },
+    "501401402": {
+        "1": "monster/Monster_5014010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万众瞩目的超偶像",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        }
+    },
+    "501401403": {
+        "1": "monster/Monster_5014010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万众瞩目的超偶像",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        }
+    },
+    "501401404": {
+        "1": "monster/Monster_5014010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "万众瞩目的超偶像",
+        "9": {
+            "Ice": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        }
+    },
+    "801501201": {
+        "1": "monster/Monster_8015010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "3": 2,
+        "4": "诛尽杀绝的灭星兽",
+        "9": {
+            "Elec": 0.2,
+            "Quantum": 0.2,
+            "Imaginary": 0.2
+        }
+    },
+    "801501202": {
+        "1": "monster/Monster_8015010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "3": 2,
+        "4": "诛尽杀绝的灭星兽",
+        "9": {
+            "Elec": 0.2,
+            "Quantum": 0.2,
+            "Imaginary": 0.2
+        }
+    },
+    "801501203": {
+        "1": "monster/Monster_8015010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "3": 2,
+        "4": "诛尽杀绝的灭星兽",
+        "9": {
+            "Elec": 0.2,
+            "Quantum": 0.2,
+            "Imaginary": 0.2
+        }
+    },
+    "801501204": {
+        "1": "monster/Monster_8015010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "3": 2,
+        "4": "诛尽杀绝的灭星兽",
+        "9": {
+            "Elec": 0.2,
+            "Quantum": 0.2,
+            "Imaginary": 0.2
+        }
+    },
+    "801502201": {
+        "1": "monster/Monster_8015020.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "乘间抵隙的煽动者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "801502202": {
+        "1": "monster/Monster_8015020.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "乘间抵隙的煽动者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "801502203": {
+        "1": "monster/Monster_8015020.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "乘间抵隙的煽动者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "801502204": {
+        "1": "monster/Monster_8015020.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "乘间抵隙的煽动者",
+        "9": {
+            "Phys": 0.4,
+            "Ice": 0.4,
+            "Quantum": 0.4
+        }
+    },
+    "802501101": {
+        "1": "monster/Monster_8025010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "遮天蔽日的噬星蠹",
+        "9": {
+            "Fire": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        },
+        "11": 3
+    },
+    "802501102": {
+        "1": "monster/Monster_8025010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "遮天蔽日的噬星蠹",
+        "9": {
+            "Fire": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        },
+        "11": 3
+    },
+    "802501103": {
+        "1": "monster/Monster_8025010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "遮天蔽日的噬星蠹",
+        "9": {
+            "Fire": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        },
+        "11": 3
+    },
+    "802501104": {
+        "1": "monster/Monster_8025010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 2,
+        "4": "遮天蔽日的噬星蠹",
+        "9": {
+            "Fire": 0.4,
+            "Elec": 0.4,
+            "Wind": 0.4
+        },
+        "11": 3
+    },
+    "803401201": {
+        "1": "monster/Monster_8034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Wind"
+        ],
+        "3": 2.1,
+        "4": "孤注一掷的掷骰者",
+        "9": {
+            "Fire": 0.4,
+            "Quantum": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "803401202": {
+        "1": "monster/Monster_8034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Wind"
+        ],
+        "3": 2.1,
+        "4": "孤注一掷的掷骰者",
+        "9": {
+            "Fire": 0.4,
+            "Quantum": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "803401203": {
+        "1": "monster/Monster_8034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Wind"
+        ],
+        "3": 2.1,
+        "4": "孤注一掷的掷骰者",
+        "9": {
+            "Fire": 0.4,
+            "Quantum": 0.4,
+            "Imaginary": 0.4
+        }
+    },
+    "803401204": {
+        "1": "monster/Monster_8034010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec",
+            "Wind"
+        ],
+        "3": 2.1,
+        "4": "孤注一掷的掷骰者",
+        "9": {
+            "Fire": 0.4,
+            "Quantum": 0.4,
+            "Imaginary": 0.4
+        }
+    }
+}

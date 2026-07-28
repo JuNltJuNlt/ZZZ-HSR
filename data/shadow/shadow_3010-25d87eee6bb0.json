@@ -1,0 +1,284 @@
+{
+    "shadow_id": 3010,
+    "shadow_name": "金血恶兽",
+    "time": "2025/07/07 - 2025/08/18",
+    "element_upper": [
+        "Phys",
+        "Ice",
+        "Elec",
+        "Quantum"
+    ],
+    "element_lower": [
+        "Phys",
+        "Fire",
+        "Ice",
+        "Wind"
+    ],
+    "element_star": [],
+    "boss_features": {
+        "upper": [
+            {
+                "id": 101101,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'> 50% </color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'> 100% </color>。"
+            },
+            {
+                "id": 101102,
+                "name": "镣铐崩解",
+                "description": "首领幻影失去第一层韧性或行动一定次数后，进入【<color style='color:#f29e38;'><u>镣铐崩解</u></color>】状态，改变攻击方式。",
+                "extra": [
+                    {
+                        "name": "镣铐崩解",
+                        "description": "交替施放【垂死的哽咽】和【却是必要的苦难】。【垂死的哽咽】会召唤【残破容器】并进入蓄力状态，【却是必要的苦难】会施放强力攻击。【灾难之力】层数会提高强力攻击的段数，消灭【残破容器】则可以削减韧性和【灾难之力】层数。在第二阶段则改为使用【沉默的悲叹】和【莫因舍弃而哭泣】，且【灾难之力】层数提高。"
+                    }
+                ]
+            },
+            {
+                "id": 101103,
+                "name": "黑雾弥漫",
+                "description": "消灭【完整容器】将不再削减首领幻影的韧性。"
+            },
+            {
+                "id": 101104,
+                "name": "容器强化",
+                "description": "所有【残破容器】和【完整容器】的生命上限提高。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 100301,
+                "name": "坚防守备",
+                "description": "首领幻影不可被攻击。首领幻影的三个<color style='color:#f29e38;'><u>部位</u></color>同时处于假死状态时，首领幻影陷入弱点击破状态并可以被攻击，行动额外延后，受到的伤害提高<color style='color:#f29e38;'> 100% </color>。",
+                "extra": [
+                    {
+                        "name": "部位",
+                        "description": "对部位进行的攻击会同时对本体削减等量的生命值"
+                    }
+                ]
+            },
+            {
+                "id": 100302,
+                "name": "阵地转移",
+                "description": "【反物质引擎】会将自身弱点属性<color style='color:#f29e38;'><u>转移</u></color>给【灾虐的右手】和【黎明的左手】，但当【灾虐的右手】或【黎明的左手】被消灭时，【反物质引擎】的韧性值受到额外削减。",
+                "extra": [
+                    {
+                        "name": "转移",
+                        "description": "将弱点属性转移给目标，弱点属性会在目标被消灭后返回，并造成额外韧性值削减。"
+                    }
+                ]
+            },
+            {
+                "id": 100303,
+                "name": "战而愈勇",
+                "description": "敌方单位施放单攻技能后，速度提高，持续1回合；施放群攻技能后，攻击力提高，持续1回合；施放辅助技能后，为技能目标回复生命值。"
+            },
+            {
+                "id": 100304,
+                "name": "坚韧之志",
+                "description": "敌方全体受到的伤害降低。但每拥有1个<color style='color:#f29e38;'>弱点属性</color>，受到的伤害提高。"
+            }
+        ],
+        "star": []
+    },
+    "floors": [
+        {
+            "floor": 1,
+            "level": 60,
+            "upper": [
+                {
+                    "stage_id": 420281,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 403401301,
+                                "hp": 134842,
+                                "speed": 132,
+                                "stance": 30,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420291,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801501201,
+                                "hp": 121358,
+                                "speed": 120,
+                                "stance": 10,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 2,
+            "level": 70,
+            "upper": [
+                {
+                    "stage_id": 420282,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 403401302,
+                                "hp": 485859,
+                                "speed": 145,
+                                "stance": 30,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420292,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801501202,
+                                "hp": 437273,
+                                "speed": 132,
+                                "stance": 10,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 3,
+            "level": 80,
+            "upper": [
+                {
+                    "stage_id": 420283,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 403401303,
+                                "hp": 1362737,
+                                "speed": 158,
+                                "stance": 30,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420293,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801501203,
+                                "hp": 1226464,
+                                "speed": 144,
+                                "stance": 10,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 4,
+            "level": 90,
+            "upper": [
+                {
+                    "stage_id": 420284,
+                    "level": 90,
+                    "monsters": [
+                        [
+                            {
+                                "id": 403401304,
+                                "hp": 2419750,
+                                "speed": 174,
+                                "stance": 30,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420294,
+                    "level": 90,
+                    "hp_coefficient": 2.1,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801501204,
+                                "hp": 3811106,
+                                "speed": 158,
+                                "stance": 10,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        }
+    ],
+    "buff_total": {
+        "id": 3110010,
+        "name": "末法余烬",
+        "description": "拥有<color style='color:#f29e38;'>【坚防守备】</color>的敌方单位被<color style='color:#f29e38;'>弱点击破</color>时，使我方全体解除控制状态、恢复战技点并激活终结技。<br>敌方全体受到的战技伤害提高<color style='color:#f29e38;'> 25% </color>。"
+    },
+    "buff": {
+        "upper": [
+            {
+                "id": 3111056,
+                "name": "敢勇当先",
+                "description": "编队中的第1位角色造成的伤害提高<color style='color:#f29e38;'> 60% </color>。我方每消耗<color style='color:#f29e38;'> 4 </color>个战技点，回复1个战技点。"
+            },
+            {
+                "id": 3111057,
+                "name": "破釜沉舟",
+                "description": "我方目标消耗自身生命值后，造成的伤害提高<color style='color:#f29e38;'> 40% </color>，持续<color style='color:#f29e38;'> 3 </color>回合。"
+            },
+            {
+                "id": 3111058,
+                "name": "附骨之疽",
+                "description": "我方目标对敌方造成持续伤害后，回复<color style='color:#f29e38;'> 6 </color>点能量。我方全体造成的持续伤害无视敌方目标<color style='color:#f29e38;'> 30% </color>的全属性抗性。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 3111046,
+                "name": "蕉学相长",
+                "description": "我方全体造成的战技和终结技伤害提高<color style='color:#f29e38;'> 50% </color>。"
+            },
+            {
+                "id": 3111014,
+                "name": "猎逐步伐",
+                "description": "我方角色击破敌方目标弱点时，行动提前<color style='color:#f29e38;'> 25% </color>。"
+            },
+            {
+                "id": 3111021,
+                "name": "时来运转",
+                "description": "角色造成的追加攻击伤害无视敌方目标<color style='color:#f29e38;'> 15% </color>的全属性抗性，同时对非弱点目标也能削减韧性，效果等同于原技能削韧值的<color style='color:#f29e38;'> 50% </color>。"
+            }
+        ],
+        "star": []
+    }
+}
