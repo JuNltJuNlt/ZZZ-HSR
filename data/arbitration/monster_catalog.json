@@ -1,0 +1,1147 @@
+{
+    "1013020": {
+        "1": "monster/Monster_1013020.webp",
+        "2": [
+            "Ice",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "自动机兵•齿狼",
+        "name": "自动机兵•齿狼",
+        "icon": "monster/Monster_1013020.webp",
+        "weakness": [
+            "Ice",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "2013020": {
+        "1": "monster/Monster_2013020.webp",
+        "2": [
+            "Phys",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "金人勾魂使",
+        "name": "金人勾魂使",
+        "icon": "monster/Monster_2013020.webp",
+        "weakness": [
+            "Phys",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "2023020": {
+        "1": "monster/Monster_2023020.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "丰饶灵兽•长右",
+        "name": "丰饶灵兽•长右",
+        "icon": "monster/Monster_2023020.webp",
+        "weakness": [
+            "Fire",
+            "Ice",
+            "Wind"
+        ]
+    },
+    "2023030": {
+        "1": "monster/Monster_2023030.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "承露天人",
+        "name": "承露天人",
+        "icon": "monster/Monster_2023030.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Elec"
+        ]
+    },
+    "2033010": {
+        "1": "monster/Monster_2033010.webp",
+        "2": [
+            "Elec",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "咆哮灵柩",
+        "name": "咆哮灵柩",
+        "icon": "monster/Monster_2033010.webp",
+        "weakness": [
+            "Elec",
+            "Wind",
+            "Imaginary"
+        ]
+    },
+    "2034010": {
+        "1": "monster/Monster_2034010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "步离战首•呼雷",
+        "name": "步离战首•呼雷",
+        "icon": "monster/Monster_2034010.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Wind"
+        ]
+    },
+    "3002030": {
+        "1": "monster/Monster_3002030.webp",
+        "2": [
+            "Phys",
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "惊梦剧团的气泡锂犬",
+        "name": "惊梦剧团的气泡锂犬",
+        "icon": "monster/Monster_3002030.webp",
+        "weakness": [
+            "Phys",
+            "Elec",
+            "Wind"
+        ]
+    },
+    "3003010": {
+        "1": "monster/Monster_3003010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "惊梦剧团的十七分熟",
+        "name": "惊梦剧团的十七分熟",
+        "icon": "monster/Monster_3003010.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Wind"
+        ]
+    },
+    "3003020": {
+        "1": "monster/Monster_3003020.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "惊梦剧团的甜猿泰山",
+        "name": "惊梦剧团的甜猿泰山",
+        "icon": "monster/Monster_3003020.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Imaginary"
+        ]
+    },
+    "3004012": {
+        "1": "monster/Monster_3004010.webp",
+        "2": [],
+        "3": 1,
+        "4": "昔在、今在、永在的剧目",
+        "name": "昔在、今在、永在的剧目",
+        "icon": "monster/Monster_3004010.webp",
+        "weakness": []
+    },
+    "3004020": {
+        "1": "monster/Monster_3004020.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "奇想林中的蕉研组",
+        "name": "奇想林中的蕉研组",
+        "icon": "monster/Monster_3004020.webp",
+        "weakness": [
+            "Fire",
+            "Ice",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "3012020": {
+        "1": "monster/Monster_3012020.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "忆域迷因「我心支离破碎」",
+        "name": "忆域迷因「我心支离破碎」",
+        "icon": "monster/Monster_3012020.webp",
+        "weakness": [
+            "Fire",
+            "Ice",
+            "Elec"
+        ]
+    },
+    "3013010": {
+        "1": "monster/Monster_3013010.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "忆域迷因「狂怒褪去之壳」",
+        "name": "忆域迷因「狂怒褪去之壳」",
+        "icon": "monster/Monster_3013010.webp",
+        "weakness": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "3014020": {
+        "1": "monster/Monster_3014020.webp",
+        "2": [
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "忆域迷因「何物朝向死亡」",
+        "name": "忆域迷因「何物朝向死亡」",
+        "icon": "monster/Monster_3014020.webp",
+        "weakness": [
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ]
+    },
+    "3024020": {
+        "1": "monster/Monster_3024020.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "「星核猎手」萨姆",
+        "name": "「星核猎手」萨姆",
+        "icon": "monster/Monster_3024020.webp",
+        "weakness": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "3024030": {
+        "1": "monster/Monster_3024030.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "示死祸源：深魇蝗灾",
+        "name": "示死祸源：深魇蝗灾",
+        "icon": "monster/Monster_3024030.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Wind"
+        ]
+    },
+    "3025016": {
+        "1": "monster/Monster_3025010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "「齐响诗班」神主日",
+        "name": "「齐响诗班」神主日",
+        "icon": "monster/Monster_3025010.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "4012010": {
+        "1": "monster/Monster_4012010.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "天谴斗士",
+        "name": "天谴斗士",
+        "icon": "monster/Monster_4012010.webp",
+        "weakness": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "4012030": {
+        "1": "monster/Monster_4012030.webp",
+        "2": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "天谴猎手",
+        "name": "天谴猎手",
+        "icon": "monster/Monster_4012030.webp",
+        "weakness": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "4013010": {
+        "1": "monster/Monster_4013010.webp",
+        "2": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "天谴先锋",
+        "name": "天谴先锋",
+        "icon": "monster/Monster_4013010.webp",
+        "weakness": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "4014020": {
+        "1": "monster/Monster_4014020.webp",
+        "2": [],
+        "3": 1,
+        "4": "颁赐者，千军首，天谴之矛",
+        "name": "颁赐者，千军首，天谴之矛",
+        "icon": "monster/Monster_4014020.webp",
+        "weakness": []
+    },
+    "4014030": {
+        "1": "monster/Monster_4014030.webp",
+        "2": [
+            "Wind",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "冥魂渡者，死龙残躯，玻吕刻斯",
+        "name": "冥魂渡者，死龙残躯，玻吕刻斯",
+        "icon": "monster/Monster_4014030.webp",
+        "weakness": [
+            "Wind",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "4023010": {
+        "1": "monster/Monster_4023010.webp",
+        "2": [
+            "Phys",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "正阳狮鹫",
+        "name": "正阳狮鹫",
+        "icon": "monster/Monster_4023010.webp",
+        "weakness": [
+            "Phys",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "4023020": {
+        "1": "monster/Monster_4023020.webp",
+        "2": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "月夜天马",
+        "name": "月夜天马",
+        "icon": "monster/Monster_4023020.webp",
+        "weakness": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "4032010": {
+        "1": "monster/Monster_4032010.webp",
+        "2": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "黑潮蚀刃",
+        "name": "黑潮蚀刃",
+        "icon": "monster/Monster_4032010.webp",
+        "weakness": [
+            "Elec",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "4032030": {
+        "1": "monster/Monster_4032030.webp",
+        "2": [
+            "Phys",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "黑潮蚀斧",
+        "name": "黑潮蚀斧",
+        "icon": "monster/Monster_4032030.webp",
+        "weakness": [
+            "Phys",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "4032050": {
+        "1": "monster/Monster_4032050.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "黑潮朽弓",
+        "name": "黑潮朽弓",
+        "icon": "monster/Monster_4032050.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Quantum"
+        ]
+    },
+    "4033010": {
+        "1": "monster/Monster_4033010.webp",
+        "2": [
+            "Phys",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "黑潮蚀魔",
+        "name": "黑潮蚀魔",
+        "icon": "monster/Monster_4033010.webp",
+        "weakness": [
+            "Phys",
+            "Wind",
+            "Quantum"
+        ]
+    },
+    "4033020": {
+        "1": "monster/Monster_4033020.webp",
+        "2": [
+            "Phys",
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "黑潮斗将",
+        "name": "黑潮斗将",
+        "icon": "monster/Monster_4033020.webp",
+        "weakness": [
+            "Phys",
+            "Elec",
+            "Wind"
+        ]
+    },
+    "4033030": {
+        "1": "monster/Monster_4033030.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "黑日狮鹫",
+        "name": "黑日狮鹫",
+        "icon": "monster/Monster_4033030.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Quantum"
+        ]
+    },
+    "4034010": {
+        "1": "monster/Monster_4034010.webp",
+        "2": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "至黑之剑，盗火行者",
+        "name": "至黑之剑，盗火行者",
+        "icon": "monster/Monster_4034010.webp",
+        "weakness": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "4044010": {
+        "1": "monster/Monster_4044010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "第一位天才，隐德来希，赞达尔",
+        "name": "第一位天才，隐德来希，赞达尔",
+        "icon": "monster/Monster_4044010.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Wind"
+        ]
+    },
+    "4052010": {
+        "1": "monster/Monster_4052010.webp",
+        "2": [
+            "Phys",
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "浪花侍女",
+        "name": "浪花侍女",
+        "icon": "monster/Monster_4052010.webp",
+        "weakness": [
+            "Phys",
+            "Elec",
+            "Wind"
+        ]
+    },
+    "4052020": {
+        "1": "monster/Monster_4052020.webp",
+        "2": [
+            "Fire",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "泡影稚子",
+        "name": "泡影稚子",
+        "icon": "monster/Monster_4052020.webp",
+        "weakness": [
+            "Fire",
+            "Elec"
+        ]
+    },
+    "4053010": {
+        "1": "monster/Monster_4053010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "波涛夫人",
+        "name": "波涛夫人",
+        "icon": "monster/Monster_4053010.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Elec"
+        ]
+    },
+    "4053020": {
+        "1": "monster/Monster_4053020.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "飓风大母",
+        "name": "飓风大母",
+        "icon": "monster/Monster_4053020.webp",
+        "weakness": [
+            "Fire",
+            "Ice",
+            "Elec"
+        ]
+    },
+    "4063010": {
+        "1": "monster/Monster_4063010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ],
+        "3": 1,
+        "4": "金血忆灵•翼蛇形",
+        "name": "金血忆灵•翼蛇形",
+        "icon": "monster/Monster_4063010.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ]
+    },
+    "4064010": {
+        "1": "monster/Monster_4064010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "金血忆灵•裁定忘却之形",
+        "name": "金血忆灵•裁定忘却之形",
+        "icon": "monster/Monster_4064010.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Imaginary"
+        ]
+    },
+    "5012010": {
+        "1": "monster/Monster_5012010.webp",
+        "2": [
+            "Phys",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "全自动魔仙棒",
+        "name": "全自动魔仙棒",
+        "icon": "monster/Monster_5012010.webp",
+        "weakness": [
+            "Phys",
+            "Imaginary"
+        ]
+    },
+    "5012030": {
+        "1": "monster/Monster_5012030.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "攻击性阅读物",
+        "name": "攻击性阅读物",
+        "icon": "monster/Monster_5012030.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Elec"
+        ]
+    },
+    "5012040": {
+        "1": "monster/Monster_5012040.webp",
+        "2": [
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "助手涂鸦•拖稿",
+        "name": "助手涂鸦•拖稿",
+        "icon": "monster/Monster_5012040.webp",
+        "weakness": [
+            "Elec",
+            "Wind"
+        ]
+    },
+    "5012090": {
+        "1": "monster/Monster_5012090.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Elec"
+        ],
+        "3": 1,
+        "4": "SD民用机铠",
+        "name": "SD民用机铠",
+        "icon": "monster/Monster_5012090.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Elec"
+        ]
+    },
+    "5012100": {
+        "1": "monster/Monster_5012100.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ],
+        "3": 1,
+        "4": "魔法少女急袭剧团",
+        "name": "魔法少女急袭剧团",
+        "icon": "monster/Monster_5012100.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ]
+    },
+    "5013010": {
+        "1": "monster/Monster_5013010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "摇滚狂徒",
+        "name": "摇滚狂徒",
+        "icon": "monster/Monster_5013010.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Wind"
+        ]
+    },
+    "5013030": {
+        "1": "monster/Monster_5013030.webp",
+        "2": [],
+        "3": 1,
+        "4": "画板孔雀",
+        "name": "画板孔雀",
+        "icon": "monster/Monster_5013030.webp",
+        "weakness": []
+    },
+    "5013040": {
+        "1": "monster/Monster_5013040.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "破晓战队•苍翼",
+        "name": "破晓战队•苍翼",
+        "icon": "monster/Monster_5013040.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Imaginary"
+        ]
+    },
+    "5013050": {
+        "1": "monster/Monster_5013050.webp",
+        "2": [
+            "Phys",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "破晓战队•赤焰",
+        "name": "破晓战队•赤焰",
+        "icon": "monster/Monster_5013050.webp",
+        "weakness": [
+            "Phys",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "5013060": {
+        "1": "monster/Monster_5013060.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "破晓战队•曙光",
+        "name": "破晓战队•曙光",
+        "icon": "monster/Monster_5013060.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Quantum"
+        ]
+    },
+    "5014010": {
+        "1": "monster/Monster_5014010.webp",
+        "2": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "火花大会@Official",
+        "name": "火花大会@Official",
+        "icon": "monster/Monster_5014010.webp",
+        "weakness": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "5014020": {
+        "1": "monster/Monster_5014020.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "合金机铠•帕姆王",
+        "name": "合金机铠•帕姆王",
+        "icon": "monster/Monster_5014020.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "5023010": {
+        "1": "monster/Monster_5023010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "乐变化天人",
+        "name": "乐变化天人",
+        "icon": "monster/Monster_5023010.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "5023020": {
+        "1": "monster/Monster_5023020.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "吞神子嗣",
+        "name": "吞神子嗣",
+        "icon": "monster/Monster_5023020.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "5024010": {
+        "1": "monster/Monster_5024010.webp",
+        "2": [
+            "Phys",
+            "Elec",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "极乐颠倒•邪愿莲华主",
+        "name": "极乐颠倒•邪愿莲华主",
+        "icon": "monster/Monster_5024010.webp",
+        "weakness": [
+            "Phys",
+            "Elec",
+            "Imaginary"
+        ]
+    },
+    "8003020": {
+        "1": "monster/Monster_8003020.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "外宇宙之炎",
+        "name": "外宇宙之炎",
+        "icon": "monster/Monster_8003020.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Quantum"
+        ]
+    },
+    "8032020": {
+        "1": "monster/Monster_8032020.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ],
+        "3": 1,
+        "4": "基层员工•安保",
+        "name": "基层员工•安保",
+        "icon": "monster/Monster_8032020.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ]
+    },
+    "8033020": {
+        "1": "monster/Monster_8033020.webp",
+        "2": [
+            "Fire",
+            "Wind",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "「灯塔」",
+        "name": "「灯塔」",
+        "icon": "monster/Monster_8033020.webp",
+        "weakness": [
+            "Fire",
+            "Wind",
+            "Quantum"
+        ]
+    },
+    "100401014": {
+        "1": "monster/Monster_1004010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "可可利亚",
+        "name": "可可利亚",
+        "icon": "monster/Monster_1004010.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "101401016": {
+        "1": "monster/Monster_1014010.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "史瓦罗",
+        "name": "史瓦罗",
+        "icon": "monster/Monster_1014010.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Wind"
+        ]
+    },
+    "302401012": {
+        "1": "monster/Monster_3024010.webp",
+        "2": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ],
+        "3": 1,
+        "4": "银枝",
+        "name": "银枝",
+        "icon": "monster/Monster_3024010.webp",
+        "weakness": [
+            "Phys",
+            "Fire",
+            "Ice"
+        ]
+    },
+    "401501101": {
+        "1": "monster/Monster_4015010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "至高，至阳，天空的化身",
+        "name": "至高，至阳，天空的化身",
+        "icon": "monster/Monster_4015010.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Quantum"
+        ]
+    },
+    "402301001": {
+        "1": "monster/Monster_4023010.webp",
+        "2": [
+            "Phys",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "正阳狮鹫",
+        "name": "正阳狮鹫",
+        "icon": "monster/Monster_4023010.webp",
+        "weakness": [
+            "Phys",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "402302001": {
+        "1": "monster/Monster_4023020.webp",
+        "2": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "月夜天马",
+        "name": "月夜天马",
+        "icon": "monster/Monster_4023020.webp",
+        "weakness": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "403501001": {
+        "1": "monster/Monster_4035010.webp",
+        "2": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "反造物主，流溢之恨",
+        "name": "反造物主，流溢之恨",
+        "icon": "monster/Monster_4035010.webp",
+        "weakness": [
+            "Ice",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "501401003": {
+        "1": "monster/Monster_5014010.webp",
+        "2": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "火花大会@Official",
+        "name": "火花大会@Official",
+        "icon": "monster/Monster_5014010.webp",
+        "weakness": [
+            "Fire",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "501403002": {
+        "1": "monster/Monster_5014030.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Quantum"
+        ],
+        "3": 1,
+        "4": "始作画者，无量塔绘世",
+        "name": "始作画者，无量塔绘世",
+        "icon": "monster/Monster_5014030.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Quantum"
+        ]
+    },
+    "800304016": {
+        "1": "monster/Monster_8003040.webp",
+        "2": [
+            "Fire",
+            "Elec",
+            "Wind"
+        ],
+        "3": 1,
+        "4": "蚕食者之影",
+        "name": "蚕食者之影",
+        "icon": "monster/Monster_8003040.webp",
+        "weakness": [
+            "Fire",
+            "Elec",
+            "Wind"
+        ]
+    },
+    "802401107": {
+        "1": "monster/Monster_8024010.webp",
+        "2": [
+            "Ice",
+            "Quantum",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "虫群•真蛰虫",
+        "name": "虫群•真蛰虫",
+        "icon": "monster/Monster_8024010.webp",
+        "weakness": [
+            "Ice",
+            "Quantum",
+            "Imaginary"
+        ]
+    },
+    "802501003": {
+        "1": "monster/Monster_8025010.webp",
+        "2": [
+            "Phys",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "碎星王虫•斯喀拉卡巴兹（拟造）",
+        "name": "碎星王虫•斯喀拉卡巴兹（拟造）",
+        "icon": "monster/Monster_8025010.webp",
+        "weakness": [
+            "Phys",
+            "Ice",
+            "Imaginary"
+        ]
+    },
+    "803301014": {
+        "1": "monster/Monster_8033010.webp",
+        "2": [
+            "Fire",
+            "Ice",
+            "Imaginary"
+        ],
+        "3": 1,
+        "4": "资深员工•组长",
+        "name": "资深员工•组长",
+        "icon": "monster/Monster_8033010.webp",
+        "weakness": [
+            "Fire",
+            "Ice",
+            "Imaginary"
+        ]
+    }
+}

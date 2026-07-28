@@ -1,0 +1,514 @@
+[
+    {
+        "id": 328,
+        "name": "寰宇生研院",
+        "icon": "71059.webp",
+        "skills": [
+            "进入战斗时，若装备者能量上限大于等于<unbreak>#1[i]</unbreak>点，每超过1点使装备者造成的伤害提高<unbreak>#2[f1]%</unbreak>，最多提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 327,
+        "name": "坠星启航地",
+        "icon": "71058.webp",
+        "skills": [
+            "使装备者的暴击率提高<unbreak>#1[i]%</unbreak>。进入战斗时，若装备者与另一名队友均为开拓同行角色，使装备者的暴击伤害提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 326,
+        "name": "千星荟萃之城",
+        "icon": "71055.webp",
+        "skills": [
+            "装备者施放追加攻击时，攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。当敌方目标被消灭时，我方全体在本场战斗中暴击伤害提高<unbreak>#3[i]%</unbreak>，该效果无法叠加。"
+        ]
+    },
+    {
+        "id": 325,
+        "name": "零号关卡朋克洛德",
+        "icon": "71054.webp",
+        "skills": [
+            "使装备者的欢愉度提高<unbreak>#1[i]%</unbreak>。战斗中欢愉度首次达到<unbreak>#2[i]%</unbreak>/<unbreak>#3[i]%</unbreak>时，使装备者暴击伤害提高<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 324,
+        "name": "天国@直播间",
+        "icon": "71051.webp",
+        "skills": [
+            "使装备者的暴击伤害提高<unbreak>#1[i]%</unbreak>，若在同一回合内消耗大于等于<unbreak>#2[i]</unbreak>点战技点，额外使装备者暴击伤害提高<unbreak>#3[i]%</unbreak>，持续<unbreak>#4[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 323,
+        "name": "永恒之地翁法罗斯",
+        "icon": "71050.webp",
+        "skills": [
+            "使装备者的暴击率提高<unbreak>#1[i]%</unbreak>。装备者的忆灵在场时，我方全体速度提高<unbreak>#2[i]%</unbreak>，该效果无法叠加。"
+        ]
+    },
+    {
+        "id": 322,
+        "name": "沉欢醉饮的海隅",
+        "icon": "71047.webp",
+        "skills": [
+            "使装备者的攻击力提高<unbreak>#1[i]%</unbreak>。当装备者的攻击力大于等于<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>时，使造成的持续伤害额外提高<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 321,
+        "name": "妖精织梦的乐园",
+        "icon": "71046.webp",
+        "skills": [
+            "队伍中当前在场的我方目标数量不等于4时，每多/少1名我方目标，使装备者及其忆灵造成的伤害提高<unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>，最多叠加<unbreak>#3[i]</unbreak>/<unbreak>#4[i]</unbreak>层。"
+        ]
+    },
+    {
+        "id": 320,
+        "name": "渊思寂虑的巨树",
+        "icon": "71043.webp",
+        "skills": [
+            "使装备者的速度提高<unbreak>#1[i]%</unbreak>。当装备者的速度大于等于<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>时，使装备者及其忆灵的治疗量提高<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 319,
+        "name": "谧宁拾骨地",
+        "icon": "71042.webp",
+        "skills": [
+            "使装备者的生命上限提高<unbreak>#1[i]%</unbreak>。当装备者的生命上限大于等于<unbreak>#2[i]</unbreak>点时，使装备者及其忆灵的暴击伤害提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 318,
+        "name": "奇想蕉乐园",
+        "icon": "71037.webp",
+        "skills": [
+            "使装备者的暴击伤害提高<unbreak>#1[i]%</unbreak>，当存在装备者召唤的目标时，暴击伤害额外提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 317,
+        "name": "沉陆海域露莎卡",
+        "icon": "71036.webp",
+        "skills": [
+            "使装备者的能量恢复效率提高<unbreak>#1[i]%</unbreak>，如果装备者不是编队中的第一位角色，使编队中的第一位角色攻击力提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 316,
+        "name": "劫火莲灯铸炼宫",
+        "icon": "71035.webp",
+        "skills": [
+            "使装备者的速度提高<unbreak>#1[i]%</unbreak>。当装备者击中拥有火属性弱点的敌方目标时，击破特攻提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 315,
+        "name": "奔狼的都蓝王朝",
+        "icon": "71034.webp",
+        "skills": [
+            "我方角色施放追加攻击时，装备者获得一层【功勋】，最多叠加<unbreak>#1[i]</unbreak>层，每层【功勋】使装备者追加攻击造成的伤害提高<unbreak>#2[i]%</unbreak>，叠满<unbreak>#1[i]</unbreak>层时，额外使装备者的暴击伤害提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 314,
+        "name": "出云显世与高天神国",
+        "icon": "71031.webp",
+        "skills": [
+            "使装备者的攻击力提高<unbreak>#1[i]%</unbreak>。进入战斗时，若至少存在一名与装备者命途相同的队友，装备者的暴击率提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 313,
+        "name": "无主荒星茨冈尼亚",
+        "icon": "71030.webp",
+        "skills": [
+            "使装备者的暴击率提高<unbreak>#3[i]%</unbreak>。当敌方目标被消灭时，装备者暴击伤害提高<unbreak>#1[i]%</unbreak>，最多叠加<unbreak>#2[i]</unbreak>层。"
+        ]
+    },
+    {
+        "id": 312,
+        "name": "梦想之地匹诺康尼",
+        "icon": "71027.webp",
+        "skills": [
+            "使装备者的能量恢复效率提高<unbreak>#1[i]%</unbreak>。使队伍中与装备者属性相同的我方其他角色造成的伤害提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 311,
+        "name": "苍穹战线格拉默",
+        "icon": "71026.webp",
+        "skills": [
+            "使装备者的攻击力提高<unbreak>#1[i]%</unbreak>。当装备者的速度大于等于<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>时，使装备者造成的伤害提高<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 310,
+        "name": "折断的龙骨",
+        "icon": "71023.webp",
+        "skills": [
+            "使装备者的效果抵抗提高<unbreak>#1[i]%</unbreak>。当装备者的效果抵抗大于等于<unbreak>#2[i]%</unbreak>时，我方全体暴击伤害提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 309,
+        "name": "繁星竞技场",
+        "icon": "71022.webp",
+        "skills": [
+            "使装备者的暴击率提高<unbreak>#1[i]%</unbreak>。当装备者的当前暴击率大于等于<unbreak>#2[i]%</unbreak>时，普攻和战技造成的伤害提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 308,
+        "name": "生命的翁瓦克",
+        "icon": "71019.webp",
+        "skills": [
+            "使装备者的能量恢复效率提高<unbreak>#1[i]%</unbreak>。当装备者的速度大于等于<unbreak>#2[i]</unbreak>时，进入战斗时立刻使行动提前<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 307,
+        "name": "盗贼公国塔利亚",
+        "icon": "71018.webp",
+        "skills": [
+            "使装备者的击破特攻提高<unbreak>#1[i]%</unbreak>。当装备者的速度大于等于<unbreak>#2[i]</unbreak>时，击破特攻额外提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 306,
+        "name": "停转的萨尔索图",
+        "icon": "71017.webp",
+        "skills": [
+            "使装备者的暴击率提高<unbreak>#1[i]%</unbreak>。当装备者当前暴击率大于等于<unbreak>#2[i]%</unbreak>时，终结技和追加攻击造成的伤害提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 305,
+        "name": "星体差分机",
+        "icon": "71016.webp",
+        "skills": [
+            "使装备者的暴击伤害提高<unbreak>#1[i]%</unbreak>。当装备者的暴击伤害大于等于<unbreak>#2[i]%</unbreak>时，进入战斗后装备者的暴击率提高<unbreak>#3[i]%</unbreak>，持续到施放首次攻击后结束。"
+        ]
+    },
+    {
+        "id": 304,
+        "name": "筑城者的贝洛伯格",
+        "icon": "71015.webp",
+        "skills": [
+            "使装备者的防御力提高<unbreak>#1[i]%</unbreak>。当装备者的效果命中大于等于<unbreak>#2[i]%</unbreak>时，防御力额外提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 303,
+        "name": "泛银河商业公司",
+        "icon": "71014.webp",
+        "skills": [
+            "使装备者的效果命中提高<unbreak>#1[i]%</unbreak>。同时提高装备者等同于当前效果命中<unbreak>#2[i]%</unbreak>的攻击力，最多提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 302,
+        "name": "不老者的仙舟",
+        "icon": "71013.webp",
+        "skills": [
+            "使装备者的生命上限提高<unbreak>#1[i]%</unbreak>。当装备者的速度大于等于<unbreak>#2[i]</unbreak>时，我方全体攻击力提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 301,
+        "name": "太空封印站",
+        "icon": "71012.webp",
+        "skills": [
+            "使装备者的攻击力提高<unbreak>#1[i]%</unbreak>。当装备者的速度大于等于<unbreak>#2[i]</unbreak>时，攻击力额外提高<unbreak>#3[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 132,
+        "name": "叩问天工的名冶",
+        "icon": "71057.webp",
+        "skills": [
+            "生命上限提高<unbreak>#1[i]%</unbreak>。",
+            "装备者对防御力降低状态的敌方目标造成的暴击伤害提高<unbreak>#1[i]%</unbreak>。装备者对敌方目标施加防御力降低状态后，使我方全体获得【助燃】，持续<unbreak>#2[i]</unbreak>回合，该效果无法叠加，持有【助燃】的我方目标造成的伤害提高<unbreak>#3[i]%</unbreak>。该效果在装备者施放攻击后可再次触发。"
+        ]
+    },
+    {
+        "id": 131,
+        "name": "星如我见的领航员",
+        "icon": "71056.webp",
+        "skills": [
+            "攻击力提高<unbreak>#1[i]%</unbreak>。",
+            "装备者进入战斗时/施放战技时，使战技和终结技造成的伤害提高<unbreak>#1[i]%</unbreak>，最多叠加<unbreak>#2[i]</unbreak>层，装备者回合开始时/施放终结技后，移除<unbreak>#3[i]</unbreak>层该效果。"
+        ]
+    },
+    {
+        "id": 130,
+        "name": "应天涉远的卜者",
+        "icon": "71053.webp",
+        "skills": [
+            "速度提高<unbreak>#1[i]%</unbreak>。",
+            "进入战斗前，若装备者的速度大于等于<unbreak>#1[i]</unbreak>/<unbreak>#2[i]</unbreak>，使装备者的暴击率提高<unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak>。装备者每场战斗首次施放欢愉技时，使我方全体欢愉度提高<unbreak>#5[i]%</unbreak>，该效果无法叠加。"
+        ]
+    },
+    {
+        "id": 129,
+        "name": "闪耀功勋的魔法少女",
+        "icon": "71052.webp",
+        "skills": [
+            "暴击伤害提高<unbreak>#1[i]%</unbreak>。",
+            "装备者及其忆灵造成的欢愉伤害无视目标<unbreak>#1[i]%</unbreak>的防御力，我方每累计获得<unbreak>#2[i]</unbreak>点笑点，造成的欢愉伤害额外无视目标<unbreak>#3[i]%</unbreak>的防御力，最多叠加<unbreak>#4[i]</unbreak>层。"
+        ]
+    },
+    {
+        "id": 128,
+        "name": "自匿星芒的隐士",
+        "icon": "71049.webp",
+        "skills": [
+            "提供的护盾量提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者提供的护盾量提高<unbreak>#1[i]%</unbreak>，我方目标持有装备者提供的护盾时，暴击伤害提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 127,
+        "name": "再创天地的救世主",
+        "icon": "71048.webp",
+        "skills": [
+            "暴击率提高<unbreak>#1[i]%</unbreak>。",
+            "装备者施放普攻或战技后，若装备者的忆灵在场，使装备者及其忆灵生命上限提高<unbreak>#1[i]%</unbreak>，我方全体造成的伤害提高<unbreak>#2[i]%</unbreak>，持续至装备者下次施放普攻或战技后。"
+        ]
+    },
+    {
+        "id": 126,
+        "name": "恶海逐波的船长",
+        "icon": "71045.webp",
+        "skills": [
+            "暴击伤害提高<unbreak>#1[i]%</unbreak>。",
+            "装备者成为其他我方目标的技能目标时，获得1层【助力】，最多叠加<unbreak>#1[i]</unbreak>层。施放终结技时，若持有<unbreak>#1[i]</unbreak>层【助力】，消耗所有【助力】，使装备者攻击力提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 125,
+        "name": "烈阳惊雷的女武神",
+        "icon": "71044.webp",
+        "skills": [
+            "速度提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者及其忆灵为装备者及其忆灵以外的我方目标提供治疗后，使装备者获得【甘霖】，每回合最多触发1次，持续<unbreak>#3[i]</unbreak>回合。装备者持有【甘霖】时，速度提高<unbreak>#1[i]%</unbreak>，我方全体暴击伤害提高<unbreak>#2[i]%</unbreak>，该效果无法叠加。"
+        ]
+    },
+    {
+        "id": 124,
+        "name": "哀歌覆国的诗人",
+        "icon": "71041.webp",
+        "skills": [
+            "量子属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者的速度降低<unbreak>#6[i]%</unbreak>。进入战斗前，若装备者的速度小于<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>，使装备者的暴击率提高<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。该效果同时对装备者的忆灵生效。"
+        ]
+    },
+    {
+        "id": 123,
+        "name": "凯歌祝捷的英豪",
+        "icon": "71040.webp",
+        "skills": [
+            "攻击力提高<unbreak>#1[i]%</unbreak>。",
+            "装备者的忆灵在场时，装备者的速度提高<unbreak>#1[i]%</unbreak>，装备者的忆灵攻击时，装备者和忆灵的暴击伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 122,
+        "name": "识海迷坠的学者",
+        "icon": "71039.webp",
+        "skills": [
+            "暴击率提高<unbreak>#1[i]%</unbreak>。",
+            "战技和终结技造成的伤害提高<unbreak>#1[i]%</unbreak>，施放终结技后，下一次施放战技时造成的伤害额外提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 121,
+        "name": "重循苦旅的司铎",
+        "icon": "71038.webp",
+        "skills": [
+            "速度提高<unbreak>#1[i]%</unbreak>。",
+            "对我方单体目标施放战技或终结技时，使技能目标的暴击伤害提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合，该效果最多叠加<unbreak>#3[i]</unbreak>次。"
+        ]
+    },
+    {
+        "id": 120,
+        "name": "风举云飞的勇烈",
+        "icon": "71033.webp",
+        "skills": [
+            "攻击力提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者的暴击率提高<unbreak>#1[i]%</unbreak>，装备者施放追加攻击时，使终结技造成的伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 119,
+        "name": "荡除蠹灾的铁骑",
+        "icon": "71032.webp",
+        "skills": [
+            "击破特攻提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者的击破特攻大于等于<unbreak>#1[i]%</unbreak>时，对敌方目标造成的击破伤害无视其<unbreak>#3[i]%</unbreak>的防御力。当装备者的击破特攻大于等于<unbreak>#2[i]%</unbreak>时，对敌方目标造成的超击破伤害额外无视其<unbreak>#4[i]%</unbreak>的防御力。"
+        ]
+    },
+    {
+        "id": 118,
+        "name": "机心戏梦的钟表匠",
+        "icon": "71029.webp",
+        "skills": [
+            "击破特攻提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者对我方目标施放终结技时，我方全体击破特攻提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合，该效果无法叠加。"
+        ]
+    },
+    {
+        "id": 117,
+        "name": "死水深潜的先驱",
+        "icon": "71028.webp",
+        "skills": [
+            "对受负面状态影响的敌人造成的伤害提高<unbreak>#1[i]%</unbreak>。",
+            "暴击率提高<unbreak>#1[i]%</unbreak>，装备者对陷入不少于<unbreak>#4[i]</unbreak>/<unbreak>#5[i]</unbreak>个负面效果的敌方目标造成的暴击伤害提高<unbreak>#2[i]%</unbreak>/<unbreak>#3[i]%</unbreak>。装备者对敌方目标施加负面效果后，上述效果提高<unbreak>100%</unbreak>，持续<unbreak>#6[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 116,
+        "name": "幽锁深牢的系囚",
+        "icon": "71025.webp",
+        "skills": [
+            "攻击力提高<unbreak>#1[i]%</unbreak>。",
+            "敌方目标每承受1个持续伤害效果，装备者对其造成伤害时就无视其<unbreak>#1[i]%</unbreak>的防御力，最多计入<unbreak>#2[i]</unbreak>个持续伤害效果。"
+        ]
+    },
+    {
+        "id": 115,
+        "name": "毁烬焚骨的大公",
+        "icon": "71024.webp",
+        "skills": [
+            "追加攻击造成的伤害提高<unbreak>#1[i]%</unbreak>。",
+            "装备者施放追加攻击时，根据追加攻击造成伤害的次数，每次造成伤害时使装备者的攻击力提高<unbreak>#1[i]%</unbreak>，最多叠加<unbreak>#2[i]</unbreak>次，持续<unbreak>#3[i]</unbreak>回合。该效果在装备者下一次施放追加攻击时移除。"
+        ]
+    },
+    {
+        "id": 114,
+        "name": "骇域漫游的信使",
+        "icon": "71021.webp",
+        "skills": [
+            "速度提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者对我方目标施放终结技时，我方全体速度提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合，该效果无法叠加。"
+        ]
+    },
+    {
+        "id": 113,
+        "name": "宝命长存的莳者",
+        "icon": "71020.webp",
+        "skills": [
+            "生命上限提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者受到攻击或被我方目标消耗生命值后，暴击率提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合，该效果最多叠加<unbreak>#3[i]</unbreak>层。"
+        ]
+    },
+    {
+        "id": 112,
+        "name": "盗匪荒漠的废土客",
+        "icon": "71011.webp",
+        "skills": [
+            "虚数属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "装备者对陷入负面效果的敌方目标造成伤害时暴击率提高<unbreak>#1[i]%</unbreak>，对陷入禁锢状态的敌方目标造成伤害时暴击伤害提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 111,
+        "name": "流星追迹的怪盗",
+        "icon": "71010.webp",
+        "skills": [
+            "击破特攻提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者的击破特攻提高<unbreak>#1[i]%</unbreak>。当装备者击破敌方目标弱点后，恢复<unbreak>#2[i]</unbreak>点能量。"
+        ]
+    },
+    {
+        "id": 110,
+        "name": "晨昏交界的翔鹰",
+        "icon": "71009.webp",
+        "skills": [
+            "风属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者施放终结技后，使其行动提前<unbreak>#1[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 109,
+        "name": "激奏雷电的乐队",
+        "icon": "71008.webp",
+        "skills": [
+            "雷属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者施放战技时，使装备者的攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 108,
+        "name": "繁星璀璨的天才",
+        "icon": "71007.webp",
+        "skills": [
+            "量子属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者对敌方目标造成伤害时，无视其<unbreak>#1[i]%</unbreak>的防御力。若目标拥有量子属性弱点，额外无视其<unbreak>#2[i]%</unbreak>的防御力。"
+        ]
+    },
+    {
+        "id": 107,
+        "name": "熔岩锻铸的火匠",
+        "icon": "71006.webp",
+        "skills": [
+            "火属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者战技造成的伤害提高<unbreak>#1[i]%</unbreak>，并使施放终结技后的下一次攻击造成的火属性伤害提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 106,
+        "name": "戍卫风雪的铁卫",
+        "icon": "71005.webp",
+        "skills": [
+            "受到伤害降低<unbreak>#1[i]%</unbreak>。",
+            "回合开始时，如果装备者当前生命值百分比小于等于<unbreak>#1[i]%</unbreak>，则回复等同于自身生命上限<unbreak>#2[i]%</unbreak>的生命值，并恢复<unbreak>#3[i]</unbreak>点能量。"
+        ]
+    },
+    {
+        "id": 105,
+        "name": "街头出身的拳王",
+        "icon": "71004.webp",
+        "skills": [
+            "物理属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者施放攻击或受到攻击后，其在本场战斗中攻击力提高<unbreak>#1[i]%</unbreak>，最多叠加<unbreak>#2[i]</unbreak>层。"
+        ]
+    },
+    {
+        "id": 104,
+        "name": "密林卧雪的猎人",
+        "icon": "71003.webp",
+        "skills": [
+            "冰属性伤害提高<unbreak>#1[i]%</unbreak>。",
+            "当装备者施放终结技时，暴击伤害提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。"
+        ]
+    },
+    {
+        "id": 103,
+        "name": "净庭教宗的圣骑士",
+        "icon": "71002.webp",
+        "skills": [
+            "防御力提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者提供的护盾量提高<unbreak>#1[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 102,
+        "name": "野穗伴行的快枪手",
+        "icon": "71001.webp",
+        "skills": [
+            "攻击力提高<unbreak>#1[i]%</unbreak>。",
+            "使装备者的速度提高<unbreak>#1[i]%</unbreak>，普攻造成的伤害提高<unbreak>#2[i]%</unbreak>。"
+        ]
+    },
+    {
+        "id": 101,
+        "name": "云无留迹的过客",
+        "icon": "71000.webp",
+        "skills": [
+            "治疗量提高<unbreak>#1[i]%</unbreak>。",
+            "在战斗开始时，立即为我方恢复1个战技点。"
+        ]
+    }
+]

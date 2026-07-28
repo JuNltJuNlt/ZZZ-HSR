@@ -1,0 +1,1740 @@
+[
+    {
+        "id": 1512,
+        "name": "知更鸟•晴歌",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Remembrance",
+        "icon": "1512.webp",
+        "stats": {
+            "HP": 0,
+            "ATK": 0,
+            "DEF": 0,
+            "SPD": 0,
+            "Aggro": 0
+        },
+        "ver": "4.5"
+    },
+    {
+        "id": 1513,
+        "name": "砂金•戏浪",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Elation",
+        "icon": "1513.webp",
+        "stats": {
+            "HP": 0,
+            "ATK": 0,
+            "DEF": 0,
+            "SPD": 0,
+            "Aggro": 0
+        },
+        "ver": "4.5"
+    },
+    {
+        "id": 1508,
+        "name": "远坂凛",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Erudition",
+        "icon": "1508.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 698.54,
+            "DEF": 460.85,
+            "SPD": 102,
+            "Aggro": 75
+        },
+        "ver": "4.4"
+    },
+    {
+        "id": 1509,
+        "name": "吉尔伽美什",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Destruction",
+        "icon": "1509.webp",
+        "sp": 360,
+        "stats": {
+            "HP": 1125.43,
+            "ATK": 717.95,
+            "DEF": 509.36,
+            "SPD": 97,
+            "Aggro": 125
+        },
+        "ver": "4.4"
+    },
+    {
+        "id": 1510,
+        "name": "姬子•启行",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Erudition",
+        "icon": "1510.webp",
+        "sp": 150,
+        "stats": {
+            "HP": 1125.43,
+            "ATK": 756.76,
+            "DEF": 485.1,
+            "SPD": 98,
+            "Aggro": 75
+        },
+        "ver": "4.4"
+    },
+    {
+        "id": 1507,
+        "release": 1780304400,
+        "name": "千冶•刃",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Nihility",
+        "icon": "1507.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 543.31,
+            "DEF": 485.1,
+            "SPD": 107,
+            "Aggro": 100
+        },
+        "ver": "4.3"
+    },
+    {
+        "id": 1505,
+        "release": 1778662800,
+        "name": "绯英",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Elation",
+        "icon": "1505.webp",
+        "sp": 480,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 737.35,
+            "DEF": 460.85,
+            "SPD": 104,
+            "Aggro": 100
+        },
+        "ver": "4.2"
+    },
+    {
+        "id": 1506,
+        "release": 1776848400,
+        "name": "银狼LV.999",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Elation",
+        "icon": "1506.webp",
+        "sp": 60,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 388.08,
+            "DEF": 654.88,
+            "SPD": 110,
+            "Aggro": 100
+        },
+        "ver": "4.2"
+    },
+    {
+        "id": 8009,
+        "release": 1776848400,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Elation",
+        "icon": "8009.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 465.7,
+            "DEF": 630.63,
+            "SPD": 106,
+            "Aggro": 100
+        },
+        "ver": "4.2"
+    },
+    {
+        "id": 8010,
+        "release": 1776848400,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Elation",
+        "icon": "8010.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 465.7,
+            "DEF": 630.63,
+            "SPD": 106,
+            "Aggro": 100
+        },
+        "ver": "4.2"
+    },
+    {
+        "id": 1504,
+        "release": 1774432800,
+        "name": "不死途",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Hunt",
+        "icon": "1504.webp",
+        "sp": 150,
+        "stats": {
+            "HP": 853.78,
+            "ATK": 776.16,
+            "DEF": 388.08,
+            "SPD": 106,
+            "Aggro": 75
+        },
+        "ver": "4.1"
+    },
+    {
+        "id": 1501,
+        "release": 1770976800,
+        "name": "火花",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Elation",
+        "icon": "1501.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 640.33,
+            "DEF": 460.85,
+            "SPD": 107,
+            "Aggro": 100
+        },
+        "ver": "4.0"
+    },
+    {
+        "id": 1502,
+        "release": 1770976800,
+        "name": "爻光",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Elation",
+        "icon": "1502.webp",
+        "sp": 180,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 465.7,
+            "DEF": 654.88,
+            "SPD": 101,
+            "Aggro": 100
+        },
+        "ver": "4.0"
+    },
+    {
+        "id": 1321,
+        "release": 1765101600,
+        "name": "大丽花",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Nihility",
+        "icon": "1321.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 679.14,
+            "DEF": 606.38,
+            "SPD": 96,
+            "Aggro": 100
+        },
+        "ver": "3.8"
+    },
+    {
+        "id": 1415,
+        "release": 1762336800,
+        "name": "昔涟",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Remembrance",
+        "icon": "1415.webp",
+        "sp": 24,
+        "stats": {
+            "HP": 1397.09,
+            "ATK": 446.29,
+            "DEF": 582.12,
+            "SPD": 101,
+            "Aggro": 100
+        },
+        "ver": "3.7"
+    },
+    {
+        "id": 8007,
+        "release": 1736935200,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Remembrance",
+        "icon": "8007.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 543.31,
+            "DEF": 630.63,
+            "SPD": 103,
+            "Aggro": 100
+        },
+        "ver": "3.7"
+    },
+    {
+        "id": 8008,
+        "release": 1736935200,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Remembrance",
+        "icon": "8008.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 543.31,
+            "DEF": 630.63,
+            "SPD": 103,
+            "Aggro": 100
+        },
+        "ver": "3.7"
+    },
+    {
+        "id": 1414,
+        "release": 1760173200,
+        "name": "丹恒•腾荒",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Preservation",
+        "icon": "1414.webp",
+        "sp": 135,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 582.12,
+            "DEF": 776.16,
+            "SPD": 97,
+            "Aggro": 150
+        },
+        "ver": "3.6"
+    },
+    {
+        "id": 1413,
+        "release": 1758790800,
+        "name": "长夜月",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Remembrance",
+        "icon": "1413.webp",
+        "sp": 240,
+        "stats": {
+            "HP": 1319.47,
+            "ATK": 543.31,
+            "DEF": 582.12,
+            "SPD": 99,
+            "Aggro": 100
+        },
+        "ver": "3.6"
+    },
+    {
+        "id": 1412,
+        "release": 1756803600,
+        "name": "刻律德菈",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Harmony",
+        "icon": "1412.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 620.93,
+            "DEF": 485.1,
+            "SPD": 99,
+            "Aggro": 100
+        },
+        "ver": "3.5"
+    },
+    {
+        "id": 1410,
+        "release": 1755075600,
+        "name": "海瑟音",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Nihility",
+        "icon": "1410.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1203.05,
+            "ATK": 601.52,
+            "DEF": 485.1,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "3.5"
+    },
+    {
+        "id": 1014,
+        "release": 1752224400,
+        "name": "Saber",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Destruction",
+        "icon": "1014.webp",
+        "sp": 360,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 601.52,
+            "DEF": 654.88,
+            "SPD": 101,
+            "Aggro": 125
+        },
+        "ver": "3.4"
+    },
+    {
+        "id": 1015,
+        "release": 1752224400,
+        "name": "Archer",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Hunt",
+        "icon": "1015.webp",
+        "sp": 220,
+        "stats": {
+            "HP": 1164.24,
+            "ATK": 620.93,
+            "DEF": 485.1,
+            "SPD": 105,
+            "Aggro": 75
+        },
+        "ver": "3.4"
+    },
+    {
+        "id": 1408,
+        "release": 1751446800,
+        "name": "白厄",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Destruction",
+        "icon": "1408.webp",
+        "sp": 12,
+        "stats": {
+            "HP": 1435.9,
+            "ATK": 582.12,
+            "DEF": 703.39,
+            "SPD": 94,
+            "Aggro": 125
+        },
+        "ver": "3.4"
+    },
+    {
+        "id": 1406,
+        "release": 1749632400,
+        "name": "赛飞儿",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Nihility",
+        "icon": "1406.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 931.39,
+            "ATK": 640.33,
+            "DEF": 509.36,
+            "SPD": 106,
+            "Aggro": 100
+        },
+        "ver": "3.3"
+    },
+    {
+        "id": 1409,
+        "release": 1747818000,
+        "name": "风堇",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Remembrance",
+        "icon": "1409.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 388.08,
+            "DEF": 630.63,
+            "SPD": 110,
+            "Aggro": 100
+        },
+        "ver": "3.3"
+    },
+    {
+        "id": 1405,
+        "release": 1746003600,
+        "name": "那刻夏",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Erudition",
+        "icon": "1405.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 970.2,
+            "ATK": 756.76,
+            "DEF": 557.87,
+            "SPD": 97,
+            "Aggro": 75
+        },
+        "ver": "3.2"
+    },
+    {
+        "id": 1407,
+        "release": 1744189200,
+        "name": "遐蝶",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Remembrance",
+        "icon": "1407.webp",
+        "stats": {
+            "HP": 1629.94,
+            "ATK": 523.91,
+            "DEF": 485.1,
+            "SPD": 95,
+            "Aggro": 100
+        },
+        "ver": "3.2"
+    },
+    {
+        "id": 1404,
+        "release": 1742378400,
+        "name": "万敌",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Destruction",
+        "icon": "1404.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1552.32,
+            "ATK": 426.89,
+            "DEF": 194.04,
+            "SPD": 95,
+            "Aggro": 125
+        },
+        "ver": "3.1"
+    },
+    {
+        "id": 1403,
+        "release": 1740564000,
+        "name": "缇宝",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Harmony",
+        "icon": "1403.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 523.91,
+            "DEF": 727.65,
+            "SPD": 96,
+            "Aggro": 100
+        },
+        "ver": "3.1"
+    },
+    {
+        "id": 1402,
+        "release": 1738749600,
+        "name": "阿格莱雅",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Remembrance",
+        "icon": "1402.webp",
+        "sp": 350,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 698.54,
+            "DEF": 485.1,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "3.0"
+    },
+    {
+        "id": 1401,
+        "release": 1736935200,
+        "name": "大黑塔",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Erudition",
+        "icon": "1401.webp",
+        "sp": 220,
+        "stats": {
+            "HP": 1164.24,
+            "ATK": 679.14,
+            "DEF": 485.1,
+            "SPD": 99,
+            "Aggro": 75
+        },
+        "ver": "3.0"
+    },
+    {
+        "id": 1225,
+        "release": 1735120800,
+        "name": "忘归人",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Nihility",
+        "icon": "1225.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1125.43,
+            "ATK": 582.12,
+            "DEF": 557.87,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "2.7"
+    },
+    {
+        "id": 1313,
+        "release": 1733306400,
+        "name": "星期日",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Harmony",
+        "icon": "1313.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 640.33,
+            "DEF": 533.61,
+            "SPD": 96,
+            "Aggro": 100
+        },
+        "ver": "2.7"
+    },
+    {
+        "id": 1317,
+        "release": 1729674000,
+        "name": "乱破",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Erudition",
+        "icon": "1317.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 717.95,
+            "DEF": 460.85,
+            "SPD": 96,
+            "Aggro": 75
+        },
+        "ver": "2.6"
+    },
+    {
+        "id": 1222,
+        "release": 1727859600,
+        "name": "灵砂",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Abundance",
+        "icon": "1222.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 679.14,
+            "DEF": 436.59,
+            "SPD": 98,
+            "Aggro": 100
+        },
+        "ver": "2.5"
+    },
+    {
+        "id": 1220,
+        "release": 1725958800,
+        "name": "飞霄",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Hunt",
+        "icon": "1220.webp",
+        "sp": 12,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 601.52,
+            "DEF": 388.08,
+            "SPD": 112,
+            "Aggro": 75
+        },
+        "ver": "2.5"
+    },
+    {
+        "id": 1223,
+        "release": 1725958800,
+        "name": "貊泽",
+        "rarity": 4,
+        "element": "Elec",
+        "path": "Hunt",
+        "icon": "1223.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 811.44,
+            "ATK": 599.76,
+            "DEF": 352.8,
+            "SPD": 111,
+            "Aggro": 75
+        },
+        "ver": "2.5"
+    },
+    {
+        "id": 1218,
+        "release": 1724230800,
+        "name": "椒丘",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Nihility",
+        "icon": "1218.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 601.52,
+            "DEF": 509.36,
+            "SPD": 98,
+            "Aggro": 100
+        },
+        "ver": "2.4"
+    },
+    {
+        "id": 1221,
+        "release": 1722416400,
+        "name": "云璃",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Destruction",
+        "icon": "1221.webp",
+        "sp": 240,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 679.14,
+            "DEF": 460.85,
+            "SPD": 94,
+            "Aggro": 125
+        },
+        "ver": "2.4"
+    },
+    {
+        "id": 1224,
+        "release": 1722416400,
+        "name": "三月七",
+        "rarity": 4,
+        "element": "Imaginary",
+        "path": "Hunt",
+        "icon": "1224.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1058.4,
+            "ATK": 564.48,
+            "DEF": 441,
+            "SPD": 102,
+            "Aggro": 75
+        },
+        "ver": "2.4"
+    },
+    {
+        "id": 1314,
+        "release": 1720602000,
+        "name": "翡翠",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Erudition",
+        "icon": "1314.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 659.74,
+            "DEF": 509.36,
+            "SPD": 103,
+            "Aggro": 75
+        },
+        "ver": "2.3"
+    },
+    {
+        "id": 1310,
+        "release": 1718787600,
+        "name": "流萤",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Destruction",
+        "icon": "1310.webp",
+        "sp": 240,
+        "stats": {
+            "HP": 814.97,
+            "ATK": 523.91,
+            "DEF": 776.16,
+            "SPD": 104,
+            "Aggro": 125
+        },
+        "ver": "2.3"
+    },
+    {
+        "id": 1315,
+        "release": 1716973200,
+        "name": "波提欧",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Hunt",
+        "icon": "1315.webp",
+        "sp": 115,
+        "stats": {
+            "HP": 1203.05,
+            "ATK": 620.93,
+            "DEF": 436.59,
+            "SPD": 107,
+            "Aggro": 75
+        },
+        "ver": "2.2"
+    },
+    {
+        "id": 1309,
+        "release": 1715158800,
+        "name": "知更鸟",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Harmony",
+        "icon": "1309.webp",
+        "sp": 160,
+        "stats": {
+            "HP": 1280.66,
+            "ATK": 640.33,
+            "DEF": 485.1,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "2.2"
+    },
+    {
+        "id": 8005,
+        "release": 1715158800,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Harmony",
+        "icon": "8005.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 446.29,
+            "DEF": 679.14,
+            "SPD": 105,
+            "Aggro": 100
+        },
+        "ver": "2.2"
+    },
+    {
+        "id": 8006,
+        "release": 1715158800,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Harmony",
+        "icon": "8006.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 446.29,
+            "DEF": 679.14,
+            "SPD": 105,
+            "Aggro": 100
+        },
+        "ver": "2.2"
+    },
+    {
+        "id": 1304,
+        "release": 1713344400,
+        "name": "砂金",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Preservation",
+        "icon": "1304.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1203.05,
+            "ATK": 446.29,
+            "DEF": 654.88,
+            "SPD": 106,
+            "Aggro": 150
+        },
+        "ver": "2.1"
+    },
+    {
+        "id": 1301,
+        "release": 1711533600,
+        "name": "加拉赫",
+        "rarity": 4,
+        "element": "Fire",
+        "path": "Abundance",
+        "icon": "1301.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1305.36,
+            "ATK": 529.2,
+            "DEF": 441,
+            "SPD": 98,
+            "Aggro": 100
+        },
+        "ver": "2.1"
+    },
+    {
+        "id": 1308,
+        "release": 1711533600,
+        "name": "黄泉",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Nihility",
+        "icon": "1308.webp",
+        "sp": 9,
+        "stats": {
+            "HP": 1125.43,
+            "ATK": 698.54,
+            "DEF": 436.59,
+            "SPD": 101,
+            "Aggro": 100
+        },
+        "ver": "2.1"
+    },
+    {
+        "id": 1312,
+        "release": 1709200800,
+        "name": "米沙",
+        "rarity": 4,
+        "element": "Ice",
+        "path": "Destruction",
+        "icon": "1312.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 1270.08,
+            "ATK": 599.76,
+            "DEF": 396.9,
+            "SPD": 96,
+            "Aggro": 125
+        },
+        "ver": "2.0"
+    },
+    {
+        "id": 1306,
+        "release": 1707213600,
+        "name": "花火",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Harmony",
+        "icon": "1306.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1397.09,
+            "ATK": 523.91,
+            "DEF": 485.1,
+            "SPD": 101,
+            "Aggro": 100
+        },
+        "ver": "2.0"
+    },
+    {
+        "id": 1307,
+        "release": 1707213600,
+        "name": "黑天鹅",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Nihility",
+        "icon": "1307.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 659.74,
+            "DEF": 485.1,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "2.0"
+    },
+    {
+        "id": 1305,
+        "release": 1705485600,
+        "name": "真理医生",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Hunt",
+        "icon": "1305.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 776.16,
+            "DEF": 460.85,
+            "SPD": 103,
+            "Aggro": 75
+        },
+        "ver": "1.6"
+    },
+    {
+        "id": 1214,
+        "release": 1703671200,
+        "name": "雪衣",
+        "rarity": 4,
+        "element": "Quantum",
+        "path": "Destruction",
+        "icon": "1214.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1058.4,
+            "ATK": 599.76,
+            "DEF": 396.9,
+            "SPD": 103,
+            "Aggro": 125
+        },
+        "ver": "1.6"
+    },
+    {
+        "id": 1303,
+        "release": 1703671200,
+        "name": "阮•梅",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Harmony",
+        "icon": "1303.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 659.74,
+            "DEF": 485.1,
+            "SPD": 104,
+            "Aggro": 100
+        },
+        "ver": "1.6"
+    },
+    {
+        "id": 1215,
+        "release": 1701856800,
+        "name": "寒鸦",
+        "rarity": 4,
+        "element": "Phys",
+        "path": "Harmony",
+        "icon": "1215.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 917.28,
+            "ATK": 564.48,
+            "DEF": 352.8,
+            "SPD": 110,
+            "Aggro": 100
+        },
+        "ver": "1.5"
+    },
+    {
+        "id": 1302,
+        "release": 1701856800,
+        "name": "银枝",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Erudition",
+        "icon": "1302.webp",
+        "sp": 180,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 737.35,
+            "DEF": 363.83,
+            "SPD": 103,
+            "Aggro": 75
+        },
+        "ver": "1.5"
+    },
+    {
+        "id": 1217,
+        "release": 1700042400,
+        "name": "藿藿",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Abundance",
+        "icon": "1217.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 601.52,
+            "DEF": 509.36,
+            "SPD": 98,
+            "Aggro": 100
+        },
+        "ver": "1.5"
+    },
+    {
+        "id": 1112,
+        "release": 1698483600,
+        "name": "托帕&账账",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Hunt",
+        "icon": "1112.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 931.39,
+            "ATK": 620.93,
+            "DEF": 412.34,
+            "SPD": 110,
+            "Aggro": 75
+        },
+        "ver": "1.4"
+    },
+    {
+        "id": 1210,
+        "release": 1698483600,
+        "name": "桂乃芬",
+        "rarity": 4,
+        "element": "Fire",
+        "path": "Nihility",
+        "icon": "1210.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 882,
+            "ATK": 582.12,
+            "DEF": 441,
+            "SPD": 106,
+            "Aggro": 100
+        },
+        "ver": "1.4"
+    },
+    {
+        "id": 1212,
+        "release": 1697014800,
+        "name": "镜流",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Destruction",
+        "icon": "1212.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1435.9,
+            "ATK": 679.14,
+            "DEF": 485.1,
+            "SPD": 96,
+            "Aggro": 125
+        },
+        "ver": "1.4"
+    },
+    {
+        "id": 1110,
+        "release": 1695200400,
+        "name": "玲可",
+        "rarity": 4,
+        "element": "Quantum",
+        "path": "Abundance",
+        "icon": "1110.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 1058.4,
+            "ATK": 493.92,
+            "DEF": 551.25,
+            "SPD": 100,
+            "Aggro": 100
+        },
+        "ver": "1.3"
+    },
+    {
+        "id": 1208,
+        "release": 1695200400,
+        "name": "符玄",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Preservation",
+        "icon": "1208.webp",
+        "sp": 135,
+        "stats": {
+            "HP": 1474.7,
+            "ATK": 465.7,
+            "DEF": 606.38,
+            "SPD": 100,
+            "Aggro": 150
+        },
+        "ver": "1.3"
+    },
+    {
+        "id": 1213,
+        "release": 1693386000,
+        "name": "丹恒•饮月",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Destruction",
+        "icon": "1213.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 698.54,
+            "DEF": 363.83,
+            "SPD": 102,
+            "Aggro": 125
+        },
+        "ver": "1.3"
+    },
+    {
+        "id": 1005,
+        "release": 1689757200,
+        "name": "卡芙卡",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Nihility",
+        "icon": "1005.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1086.62,
+            "ATK": 679.14,
+            "DEF": 485.1,
+            "SPD": 100,
+            "Aggro": 100
+        },
+        "ver": "1.2"
+    },
+    {
+        "id": 1111,
+        "release": 1689757200,
+        "name": "卢卡",
+        "rarity": 4,
+        "element": "Phys",
+        "path": "Nihility",
+        "icon": "1111.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 917.28,
+            "ATK": 582.12,
+            "DEF": 485.1,
+            "SPD": 103,
+            "Aggro": 100
+        },
+        "ver": "1.2"
+    },
+    {
+        "id": 1205,
+        "release": 1689757200,
+        "name": "刃",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Destruction",
+        "icon": "1205.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1358.28,
+            "ATK": 543.31,
+            "DEF": 485.1,
+            "SPD": 97,
+            "Aggro": 125
+        },
+        "ver": "1.2"
+    },
+    {
+        "id": 1203,
+        "release": 1687942800,
+        "name": "罗刹",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Abundance",
+        "icon": "1203.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 1280.66,
+            "ATK": 756.76,
+            "DEF": 363.83,
+            "SPD": 101,
+            "Aggro": 100
+        },
+        "ver": "1.1"
+    },
+    {
+        "id": 1207,
+        "release": 1687942800,
+        "name": "驭空",
+        "rarity": 4,
+        "element": "Imaginary",
+        "path": "Harmony",
+        "icon": "1207.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 917.28,
+            "ATK": 599.76,
+            "DEF": 374.85,
+            "SPD": 107,
+            "Aggro": 100
+        },
+        "ver": "1.1"
+    },
+    {
+        "id": 1006,
+        "release": 1686128400,
+        "name": "银狼",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Nihility",
+        "icon": "1006.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 640.33,
+            "DEF": 460.85,
+            "SPD": 107,
+            "Aggro": 100
+        },
+        "ver": "1.1"
+    },
+    {
+        "id": 1204,
+        "release": 1684335600,
+        "name": "景元",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Erudition",
+        "icon": "1204.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 1164.24,
+            "ATK": 698.54,
+            "DEF": 485.1,
+            "SPD": 99,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1001,
+        "release": 1682460000,
+        "name": "三月七",
+        "rarity": 4,
+        "element": "Ice",
+        "path": "Preservation",
+        "icon": "1001.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1058.4,
+            "ATK": 511.56,
+            "DEF": 573.3,
+            "SPD": 101,
+            "Aggro": 150
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1002,
+        "release": 1682460000,
+        "name": "丹恒",
+        "rarity": 4,
+        "element": "Wind",
+        "path": "Hunt",
+        "icon": "1002.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 882,
+            "ATK": 546.84,
+            "DEF": 396.9,
+            "SPD": 110,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1003,
+        "release": 1682460000,
+        "name": "姬子",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Erudition",
+        "icon": "1003.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1047.82,
+            "ATK": 756.76,
+            "DEF": 436.59,
+            "SPD": 96,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1004,
+        "release": 1682460000,
+        "name": "瓦尔特",
+        "rarity": 5,
+        "element": "Imaginary",
+        "path": "Nihility",
+        "icon": "1004.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1125.43,
+            "ATK": 620.93,
+            "DEF": 509.36,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1008,
+        "release": 1682460000,
+        "name": "阿兰",
+        "rarity": 4,
+        "element": "Elec",
+        "path": "Destruction",
+        "icon": "1008.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1199.52,
+            "ATK": 599.76,
+            "DEF": 330.75,
+            "SPD": 102,
+            "Aggro": 125
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1009,
+        "release": 1682460000,
+        "name": "艾丝妲",
+        "rarity": 4,
+        "element": "Fire",
+        "path": "Harmony",
+        "icon": "1009.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1023.12,
+            "ATK": 511.56,
+            "DEF": 463.05,
+            "SPD": 106,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1013,
+        "release": 1682460000,
+        "name": "黑塔",
+        "rarity": 4,
+        "element": "Ice",
+        "path": "Erudition",
+        "icon": "1013.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 952.56,
+            "ATK": 582.12,
+            "DEF": 396.9,
+            "SPD": 100,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1101,
+        "release": 1682460000,
+        "name": "布洛妮娅",
+        "rarity": 5,
+        "element": "Wind",
+        "path": "Harmony",
+        "icon": "1101.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 582.12,
+            "DEF": 533.61,
+            "SPD": 99,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1102,
+        "release": 1682460000,
+        "name": "希儿",
+        "rarity": 5,
+        "element": "Quantum",
+        "path": "Hunt",
+        "icon": "1102.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 931.39,
+            "ATK": 640.33,
+            "DEF": 363.83,
+            "SPD": 115,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1103,
+        "release": 1682460000,
+        "name": "希露瓦",
+        "rarity": 4,
+        "element": "Elec",
+        "path": "Erudition",
+        "icon": "1103.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 917.28,
+            "ATK": 652.68,
+            "DEF": 374.85,
+            "SPD": 104,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1104,
+        "release": 1682460000,
+        "name": "杰帕德",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Preservation",
+        "icon": "1104.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 1397.09,
+            "ATK": 543.31,
+            "DEF": 654.88,
+            "SPD": 92,
+            "Aggro": 150
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1105,
+        "release": 1682460000,
+        "name": "娜塔莎",
+        "rarity": 4,
+        "element": "Phys",
+        "path": "Abundance",
+        "icon": "1105.webp",
+        "sp": 90,
+        "stats": {
+            "HP": 1164.24,
+            "ATK": 476.28,
+            "DEF": 507.15,
+            "SPD": 98,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1106,
+        "release": 1682460000,
+        "name": "佩拉",
+        "rarity": 4,
+        "element": "Ice",
+        "path": "Nihility",
+        "icon": "1106.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 987.84,
+            "ATK": 546.84,
+            "DEF": 463.05,
+            "SPD": 105,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1107,
+        "release": 1682460000,
+        "name": "克拉拉",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Destruction",
+        "icon": "1107.webp",
+        "sp": 110,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 737.35,
+            "DEF": 485.1,
+            "SPD": 90,
+            "Aggro": 125
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1108,
+        "release": 1682460000,
+        "name": "桑博",
+        "rarity": 4,
+        "element": "Wind",
+        "path": "Nihility",
+        "icon": "1108.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1023.12,
+            "ATK": 617.4,
+            "DEF": 396.9,
+            "SPD": 102,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1109,
+        "release": 1682460000,
+        "name": "虎克",
+        "rarity": 4,
+        "element": "Fire",
+        "path": "Destruction",
+        "icon": "1109.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1340.64,
+            "ATK": 617.4,
+            "DEF": 352.8,
+            "SPD": 94,
+            "Aggro": 125
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1201,
+        "release": 1682460000,
+        "name": "青雀",
+        "rarity": 4,
+        "element": "Quantum",
+        "path": "Erudition",
+        "icon": "1201.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 1023.12,
+            "ATK": 652.68,
+            "DEF": 441,
+            "SPD": 98,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1202,
+        "release": 1682460000,
+        "name": "停云",
+        "rarity": 4,
+        "element": "Elec",
+        "path": "Harmony",
+        "icon": "1202.webp",
+        "sp": 130,
+        "stats": {
+            "HP": 846.72,
+            "ATK": 529.2,
+            "DEF": 396.9,
+            "SPD": 112,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1206,
+        "release": 1682460000,
+        "name": "素裳",
+        "rarity": 4,
+        "element": "Phys",
+        "path": "Hunt",
+        "icon": "1206.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 917.28,
+            "ATK": 564.48,
+            "DEF": 418.95,
+            "SPD": 107,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1209,
+        "release": 1682460000,
+        "name": "彦卿",
+        "rarity": 5,
+        "element": "Ice",
+        "path": "Hunt",
+        "icon": "1209.webp",
+        "sp": 140,
+        "stats": {
+            "HP": 892.58,
+            "ATK": 679.14,
+            "DEF": 412.34,
+            "SPD": 109,
+            "Aggro": 75
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 1211,
+        "release": 1682460000,
+        "name": "白露",
+        "rarity": 5,
+        "element": "Elec",
+        "path": "Abundance",
+        "icon": "1211.webp",
+        "sp": 100,
+        "stats": {
+            "HP": 1319.47,
+            "ATK": 562.72,
+            "DEF": 485.1,
+            "SPD": 98,
+            "Aggro": 100
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 8001,
+        "release": 1682460000,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Destruction",
+        "icon": "8001.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1203.05,
+            "ATK": 620.93,
+            "DEF": 460.85,
+            "SPD": 100,
+            "Aggro": 125
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 8002,
+        "release": 1682460000,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Phys",
+        "path": "Destruction",
+        "icon": "8002.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1203.05,
+            "ATK": 620.93,
+            "DEF": 460.85,
+            "SPD": 100,
+            "Aggro": 125
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 8003,
+        "release": 1682460000,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Preservation",
+        "icon": "8003.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 601.52,
+            "DEF": 606.38,
+            "SPD": 95,
+            "Aggro": 150
+        },
+        "ver": "1.0"
+    },
+    {
+        "id": 8004,
+        "release": 1682460000,
+        "name": "{NICKNAME}",
+        "rarity": 5,
+        "element": "Fire",
+        "path": "Preservation",
+        "icon": "8004.webp",
+        "sp": 120,
+        "stats": {
+            "HP": 1241.86,
+            "ATK": 601.52,
+            "DEF": 606.38,
+            "SPD": 95,
+            "Aggro": 150
+        },
+        "ver": "1.0"
+    }
+]

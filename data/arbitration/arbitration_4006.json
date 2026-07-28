@@ -1,0 +1,276 @@
+{
+    "arbitration_id": 4006,
+    "arbitration_name": "幸福语法",
+    "time": "2026/04/22 - 2026/06/01",
+    "debuff_a": [
+        {
+            "id": 3033041,
+            "name": "桎梏",
+            "description": "我方目标初始获得<color style='color:#f29e38;'>2</color>层该效果，每层使自身造成的伤害降低<color style='color:#f29e38;'>10%</color>，该效果不可解除，每次施放终结技后移除1层该效果。"
+        }
+    ],
+    "element_a": [
+        "Phys",
+        "Fire"
+    ],
+    "monster_a": {
+        "stage_id": 30506011,
+        "hp_coefficient": 7.2,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5012030,
+                    "hp": 628484,
+                    "speed": 132,
+                    "stance": 3,
+                    "number": 3
+                },
+                {
+                    "id": 5013010,
+                    "hp": 4525085,
+                    "speed": 174,
+                    "stance": 12,
+                    "number": 2
+                },
+                {
+                    "id": 5012090,
+                    "hp": 1131271,
+                    "speed": 106,
+                    "stance": 3,
+                    "number": 3
+                }
+            ],
+            [
+                {
+                    "id": 5023010,
+                    "hp": 1508362,
+                    "speed": 190,
+                    "stance": 14
+                },
+                {
+                    "id": 5013010,
+                    "hp": 4525085,
+                    "speed": 174,
+                    "stance": 12
+                }
+            ]
+        ]
+    },
+    "debuff_b": [
+        {
+            "id": 3033051,
+            "name": "均衡",
+            "description": "战斗开始时，速度最高的<color style='color:#f29e38;'>1</color>名我方角色速度降低<color style='color:#f29e38;'>20%</color>，速度最低的<color style='color:#f29e38;'>1</color>名我方角色速度提高<color style='color:#f29e38;'>15%</color>。"
+        }
+    ],
+    "element_b": [
+        "Fire",
+        "Imaginary"
+    ],
+    "monster_b": {
+        "stage_id": 30506012,
+        "hp_coefficient": 6.5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5013030,
+                    "hp": 3631241,
+                    "speed": 190,
+                    "stance": 12
+                },
+                {
+                    "id": 5013040,
+                    "hp": 3404289,
+                    "speed": 158,
+                    "stance": 16
+                }
+            ],
+            [
+                {
+                    "id": 5014010,
+                    "hp": 9645484,
+                    "speed": 158,
+                    "stance": 32,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "debuff_c": [
+        {
+            "id": 3033023,
+            "name": "挑衅",
+            "description": "敌方目标受到<color style='color:#f29e38;'>6</color>次攻击后立即行动，该计数在敌方目标回合开始时清空。"
+        }
+    ],
+    "element_c": [
+        "Phys",
+        "Quantum"
+    ],
+    "monster_c": {
+        "stage_id": 30506013,
+        "hp_coefficient": 6.5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5013060,
+                    "hp": 3404289,
+                    "speed": 158,
+                    "stance": 16
+                },
+                {
+                    "id": 5013050,
+                    "hp": 3404289,
+                    "speed": 158,
+                    "stance": 16
+                }
+            ],
+            [
+                {
+                    "id": 4034010,
+                    "hp": 7375959,
+                    "speed": 174,
+                    "stance": 24,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "buff_final": [
+        {
+            "id": 3033053,
+            "name": "拍手称快",
+            "description": "我方目标造成的欢愉伤害无视目标<color style='color:#f29e38;'>30%</color>防御力，我方角色回合开始时获得<color style='color:#f29e38;'>6</color>个笑点。"
+        },
+        {
+            "id": 3033054,
+            "name": "摧枯拉朽",
+            "description": "敌方目标受到的击破伤害提高<color style='color:#f29e38;'>30%</color>，敌方目标每次陷入弱点击破状态时，使我方全体行动提前<color style='color:#f29e38;'>5%</color>。"
+        },
+        {
+            "id": 3033055,
+            "name": "灵威御邪",
+            "description": "我方全体目标造成的伤害提高<color style='color:#f29e38;'>40%</color>，【极乐颠倒•邪愿莲华主】及其召唤物全属性抗性降低<color style='color:#f29e38;'>20%</color>。"
+        }
+    ],
+    "debuff_final_easy": [
+        {
+            "id": 3033056,
+            "name": "沉毅",
+            "description": "我方全体目标造成的伤害降低<color style='color:#f29e38;'>10%</color>，受到的伤害降低<color style='color:#f29e38;'>10%</color>。"
+        },
+        {
+            "id": 3033041,
+            "name": "桎梏",
+            "description": "我方目标初始获得<color style='color:#f29e38;'>2</color>层该效果，每层使自身造成的伤害降低<color style='color:#f29e38;'>10%</color>，该效果不可解除，每次施放终结技后移除1层该效果。"
+        }
+    ],
+    "debuff_final_hard": [
+        {
+            "id": 3033057,
+            "name": "沉毅+",
+            "description": "我方全体目标造成的伤害降低<color style='color:#f29e38;'>20%</color>，受到的伤害降低<color style='color:#f29e38;'>10%</color>。"
+        },
+        {
+            "id": 3033042,
+            "name": "桎梏+",
+            "description": "我方目标初始获得<color style='color:#f29e38;'>2</color>层该效果，每层使自身造成的伤害降低<color style='color:#f29e38;'>20%</color>，该效果不可解除，每次施放终结技后移除1层该效果。"
+        }
+    ],
+    "element_final": [
+        "Phys",
+        "Elec",
+        "Imaginary"
+    ],
+    "monster_final_easy": {
+        "stage_id": 30506021,
+        "hp_coefficient": 5.7,
+        "level": 100,
+        "monsters": [
+            [
+                {
+                    "id": 5012100,
+                    "hp": 770804,
+                    "speed": 132,
+                    "stance": 3,
+                    "number": 2
+                },
+                {
+                    "id": 3003020,
+                    "hp": 4624823,
+                    "speed": 190,
+                    "stance": 10
+                }
+            ],
+            [
+                {
+                    "id": 5023010,
+                    "hp": 1541608,
+                    "speed": 190,
+                    "stance": 14
+                }
+            ],
+            [
+                {
+                    "id": 5024010,
+                    "hp": 12332862,
+                    "speed": 190,
+                    "stance": 24,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "monster_final_hard": {
+        "stage_id": 30506022,
+        "hp_coefficient": 5.4,
+        "level": 120,
+        "monsters": [
+            [
+                {
+                    "id": 5012100,
+                    "hp": 2920941,
+                    "speed": 150,
+                    "stance": 3,
+                    "number": 2
+                },
+                {
+                    "id": 3003020,
+                    "hp": 17525646,
+                    "speed": 216,
+                    "stance": 10
+                }
+            ],
+            [
+                {
+                    "id": 5023010,
+                    "hp": 5841882,
+                    "speed": 216,
+                    "stance": 14
+                }
+            ],
+            [
+                {
+                    "id": 5024010,
+                    "hp": 46735056,
+                    "speed": 216,
+                    "stance": 24,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "target_abc": [
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利",
+        "没有角色无法战斗"
+    ],
+    "target_final": [
+        "不超过<color style='color:#f29e38;'> 6 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利"
+    ]
+}

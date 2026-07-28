@@ -1,0 +1,382 @@
+{
+    "homeData": {
+        "gameTabs": [
+            {
+                "key": "genshin",
+                "label": "原神",
+                "disabled": true
+            },
+            {
+                "key": "sr",
+                "label": "星穹铁道",
+                "href": "#",
+                "active": true
+            },
+            {
+                "key": "future",
+                "label": "未来日期",
+                "href": "#"
+            }
+        ],
+        "actions": [
+            {
+                "label": "改动汇总",
+                "disabled": true
+            },
+            {
+                "label": "未来情报",
+                "disabled": true
+            },
+            {
+                "label": "公式大全",
+                "href": "./sr_html/formula/"
+            }
+        ],
+        "siteVersion": "4.5v2",
+        "featured": {
+            "version": "4.5v1",
+            "characters": [
+                1512,
+                1513
+            ],
+            "lightcones": [
+                23064,
+                23063
+            ]
+        },
+        "testServer": {
+            "anchors": [
+                {
+                    "version": "4.4v4",
+                    "date": "2026-06-23T10:00:00+08:00"
+                },
+                {
+                    "version": "4.4v5",
+                    "date": "2026-06-26T10:00:00+08:00"
+                }
+            ],
+            "patchOffsets": [
+                0,
+                5,
+                12,
+                19,
+                22
+            ],
+            "shiftFrom": "4.5",
+            "shiftDays": 0,
+            "versions": [
+                {
+                    "version": "4.4",
+                    "days": 42
+                },
+                {
+                    "version": "4.5",
+                    "days": 42
+                },
+                {
+                    "version": "4.6",
+                    "days": 42
+                },
+                {
+                    "version": "4.7",
+                    "days": 42
+                },
+                {
+                    "version": "4.8",
+                    "days": 42
+                }
+            ],
+            "visibleCount": 10
+        },
+        "futureDate": {
+            "panels": [
+                {
+                    "key": "gi",
+                    "title": "原神",
+                    "birthday_stamp": 1600135200000,
+                    "birthday_name": "刻晴",
+                    "emote": "./images/emote/Keqing/1.png",
+                    "display_year": 2026,
+                    "start_stamp": 1724814000000,
+                    "offset_hours": [
+                        7,
+                        127,
+                        -279
+                    ],
+                    "versions": [
+                        {
+                            "version": "5.1",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.2",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.3",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.4",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.5",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.6",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.7",
+                            "days": 42
+                        },
+                        {
+                            "version": "5.8",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.0",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.1",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.2",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.3",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.4",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.5",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.6",
+                            "days": 42
+                        },
+                        {
+                            "version": "6.7",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.0",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.1",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.2",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.3",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.4",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.5",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.6",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.7",
+                            "days": 42
+                        },
+                        {
+                            "version": "7.8",
+                            "days": 42
+                        }
+                    ]
+                },
+                {
+                    "key": "sr",
+                    "title": "星穹铁道",
+                    "birthday_stamp": 1722394800000,
+                    "birthday_name": "云璃",
+                    "emote": "./images/emote/Yunli/1.png",
+                    "display_shift_days": 2,
+                    "test_shift_from": "4.5",
+                    "test_shift_days": 2,
+                    "start_from": {
+                        "version": "4.5",
+                        "kind": "test"
+                    },
+                    "start_stamp": 1729652400000,
+                    "offset_hours": [
+                        -25,
+                        -359,
+                        -279.5
+                    ],
+                    "versions": [
+                        {
+                            "version": "2.7",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.0",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.1",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.2",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.3",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.4",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.5",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.6",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.7",
+                            "days": 42
+                        },
+                        {
+                            "version": "3.8",
+                            "days": 56
+                        },
+                        {
+                            "version": "4.0",
+                            "days": 42
+                        },
+                        {
+                            "version": "4.1",
+                            "days": 28
+                        },
+                        {
+                            "version": "4.2",
+                            "days": 40
+                        },
+                        {
+                            "version": "4.3",
+                            "days": 42
+                        },
+                        {
+                            "version": "4.4",
+                            "days": 42
+                        },
+                        {
+                            "version": "4.5",
+                            "days": 42
+                        },
+                        {
+                            "version": "4.6",
+                            "days": 42
+                        },
+                        {
+                            "version": "4.7",
+                            "days": 42
+                        },
+                        {
+                            "version": "4.8",
+                            "days": 42
+                        }
+                    ]
+                }
+            ]
+        },
+        "directory": [
+            {
+                "label": "角色 光锥 遗器",
+                "href": "./sr_html/char/"
+            },
+            {
+                "label": "混沌回忆",
+                "href": "./sr_html/chaos/"
+            },
+            {
+                "label": "虚构叙事",
+                "href": "./sr_html/fiction/"
+            },
+            {
+                "label": "末日幻影",
+                "href": "./sr_html/shadow/"
+            },
+            {
+                "label": "异相仲裁",
+                "href": "./sr_html/arbitration/"
+            },
+            {
+                "label": "怪物",
+                "href": "./sr_html/monster/"
+            },
+            {
+                "label": "跃迁卡池",
+                "href": "./sr_html/banner/"
+            },
+            {
+                "label": "成就",
+                "href": "./sr_html/achievement/"
+            },
+            {
+                "label": "物品",
+                "href": "./sr_html/item/"
+            },
+            {
+                "label": "货币战争",
+                "disabled": true
+            },
+            {
+                "label": "差分宇宙 4.1",
+                "disabled": true
+            },
+            {
+                "label": "抽卡分析",
+                "disabled": true
+            }
+        ]
+    },
+    "iconPaths": {
+        "elements": {
+            "Elec": "./images/element/Elec.png",
+            "Fire": "./images/element/Fire.png",
+            "Ice": "./images/element/Ice.png",
+            "Imaginary": "./images/element/Imaginary.png",
+            "Phys": "./images/element/Phys.png",
+            "Quantum": "./images/element/Quantum.png",
+            "Wind": "./images/element/Wind.png"
+        },
+        "paths": {
+            "Abundance": "./images/paths/Abundance.png",
+            "Destruction": "./images/paths/Destruction.png",
+            "Elation": "./images/paths/Elation.webp",
+            "Erudition": "./images/paths/Erudition.png",
+            "Harmony": "./images/paths/Harmony.png",
+            "Hunt": "./images/paths/Hunt.png",
+            "Nihility": "./images/paths/Nihility.png",
+            "Preservation": "./images/paths/Preservation.png",
+            "Remembrance": "./images/paths/Remembrance.png"
+        }
+    }
+}

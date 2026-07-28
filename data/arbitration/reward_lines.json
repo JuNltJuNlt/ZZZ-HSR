@@ -1,0 +1,78 @@
+{
+    "1": [
+        {
+            "type": 2,
+            "count": "3⭐",
+            "reward": [
+                {
+                    "icon": "236",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "count": "6⭐",
+            "reward": [
+                {
+                    "icon": "236",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "type": 2,
+            "count": "9⭐",
+            "reward": [
+                {
+                    "icon": "236",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "type": 3,
+            "count": "1⭐",
+            "reward": [
+                {
+                    "icon": "239",
+                    "count": 1
+                },
+                {
+                    "icon": "/others/226001",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "type": 3,
+            "count": "2⭐",
+            "reward": [
+                {
+                    "icon": "/others/226002",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "type": 3,
+            "count": "3⭐",
+            "reward": [
+                {
+                    "icon": "/others/226003",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "type": 3,
+            "count": "通关绝境 / 0轮王棋",
+            "reward": [
+                {
+                    "icon": "/others/226004",
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+{
+    "arbitration_id": 4004,
+    "arbitration_name": "网络风波",
+    "time": "2026/01/28 - 2026/03/25",
+    "debuff_a": [
+        {
+            "id": 3033002,
+            "name": "淬火",
+            "description": "敌方目标生命值每降低1%，我方对其造成的暴击伤害降低<color style='color:#f29e38;'>3%</color>。"
+        }
+    ],
+    "element_a": [
+        "Fire",
+        "Wind"
+    ],
+    "monster_a": {
+        "stage_id": 30504011,
+        "hp_coefficient": 3.2,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 3003010,
+                    "hp": 2011149,
+                    "speed": 132,
+                    "stance": 16
+                },
+                {
+                    "id": 4053010,
+                    "hp": 1675957,
+                    "speed": 190,
+                    "stance": 18
+                }
+            ],
+            [
+                {
+                    "id": 3024030,
+                    "hp": 8938440,
+                    "speed": 190,
+                    "stance": 20
+                }
+            ]
+        ]
+    },
+    "debuff_b": [
+        {
+            "id": 3033003,
+            "name": "反相",
+            "description": "敌方目标每次受到攻击后，攻击者都会损失自身最大生命值<color style='color:#f29e38;'>2%</color>的生命值，该效果不致命。"
+        },
+        {
+            "id": 3033038,
+            "name": "失能",
+            "description": "进入战斗时，固定降低我方目标<color style='color:#f29e38;'>50%</color>的能量，并使我方目标在自身回合外的能量恢复效率降低<color style='color:#f29e38;'>50%</color>，持续<color style='color:#f29e38;'>2</color>回合。"
+        }
+    ],
+    "element_b": [
+        "Ice",
+        "Quantum"
+    ],
+    "monster_b": {
+        "stage_id": 30504012,
+        "hp_coefficient": 5.5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 4033010,
+                    "hp": 2688515,
+                    "speed": 158,
+                    "stance": 16
+                },
+                {
+                    "id": 4033030,
+                    "hp": 2880552,
+                    "speed": 190,
+                    "stance": 16
+                }
+            ],
+            [
+                {
+                    "id": 4034010,
+                    "hp": 6241196,
+                    "speed": 174,
+                    "stance": 24,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "debuff_c": [
+        {
+            "id": 3033047,
+            "name": "砺剑",
+            "description": "我方目标初始获得<color style='color:#f29e38;'>10</color>层该效果，每层使自身暴击伤害降低<color style='color:#f29e38;'>15%</color>，该效果不可解除；我方任意目标每消耗1个战技点，我方全体目标移除1层该效果。"
+        }
+    ],
+    "element_c": [
+        "Quantum",
+        "Imaginary"
+    ],
+    "monster_c": {
+        "stage_id": 30504013,
+        "hp_coefficient": 5.5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5013030,
+                    "hp": 3072589,
+                    "speed": 190,
+                    "stance": 12
+                },
+                {
+                    "id": 8003020,
+                    "hp": 1920368,
+                    "speed": 158,
+                    "stance": 10
+                }
+            ],
+            [
+                {
+                    "id": 3024020,
+                    "hp": 9601840,
+                    "speed": 158,
+                    "stance": 20
+                }
+            ]
+        ]
+    },
+    "buff_final": [
+        {
+            "id": 3033043,
+            "name": "欢愉瞬间",
+            "description": "关卡拥有特殊的欢愉技，进入阿哈时刻时对随机敌方目标造成<color style='color:#f29e38;'>15</color>次虚数属性欢愉伤害；阿哈时刻结束时，我方全体目标获得<color style='color:#f29e38;'>10%</color>全属性抗性穿透，持续<color style='color:#f29e38;'>2</color>回合。"
+        },
+        {
+            "id": 3033044,
+            "name": "笑中带泪",
+            "description": "处于副战场的敌方目标受到的最终伤害提高<color style='color:#f29e38;'>30%</color>，但无法被暴击。"
+        },
+        {
+            "id": 3033045,
+            "name": "心花怒放",
+            "description": "我方全体目标造成的伤害提高<color style='color:#f29e38;'>40%</color>，处于主战场的我方目标的速度提高<color style='color:#f29e38;'>40%</color>。"
+        }
+    ],
+    "debuff_final_easy": [
+        {
+            "id": 3033025,
+            "name": "滋扰",
+            "description": "敌方目标施放攻击后，对攻击目标随机造成<color style='color:#f29e38;'>5%</color>或者<color style='color:#f29e38;'>10%</color>的行动延后。"
+        },
+        {
+            "id": 3033042,
+            "name": "桎梏+",
+            "description": "我方目标初始获得<color style='color:#f29e38;'>2</color>层该效果，每层使自身造成的伤害降低<color style='color:#f29e38;'>20%</color>，该效果不可解除，每次施放终结技后移除1层该效果。"
+        }
+    ],
+    "debuff_final_hard": [
+        {
+            "id": 3033026,
+            "name": "滋扰+",
+            "description": "敌方目标施放攻击后，对攻击目标随机造成<color style='color:#f29e38;'>5%</color>或者<color style='color:#f29e38;'>20%</color>的行动延后。"
+        },
+        {
+            "id": 3033046,
+            "name": "桎梏++",
+            "description": "我方目标初始获得<color style='color:#f29e38;'>2</color>层该效果，每层使自身造成的伤害降低<color style='color:#f29e38;'>30%</color>，该效果不可解除，每次施放终结技后移除1层该效果。"
+        }
+    ],
+    "element_final": [
+        "Fire"
+    ],
+    "monster_final_easy": {
+        "stage_id": 30504021,
+        "hp_coefficient": 5.6,
+        "level": 100,
+        "monsters": [
+            [
+                {
+                    "id": 5012030,
+                    "hp": 631068,
+                    "speed": 132,
+                    "stance": 3,
+                    "number": 2
+                },
+                {
+                    "id": 5013010,
+                    "hp": 4543686,
+                    "speed": 174,
+                    "stance": 12
+                },
+                {
+                    "id": 2023020,
+                    "hp": 3029124,
+                    "speed": 190,
+                    "stance": 12
+                }
+            ],
+            [
+                {
+                    "id": 5014010,
+                    "hp": 10728148,
+                    "speed": 158,
+                    "stance": 32,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "monster_final_hard": {
+        "stage_id": 30504022,
+        "hp_coefficient": 5.6,
+        "level": 120,
+        "monsters": [
+            [
+                {
+                    "id": 5012030,
+                    "hp": 2524270,
+                    "speed": 150,
+                    "stance": 3,
+                    "number": 2
+                },
+                {
+                    "id": 5013010,
+                    "hp": 18174744,
+                    "speed": 198,
+                    "stance": 12
+                },
+                {
+                    "id": 2023020,
+                    "hp": 12116496,
+                    "speed": 216,
+                    "stance": 12
+                }
+            ],
+            [
+                {
+                    "id": 501401003,
+                    "hp": 55533955,
+                    "speed": 180,
+                    "stance": 32,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "target_abc": [
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利",
+        "没有角色无法战斗"
+    ],
+    "target_final": [
+        "不超过<color style='color:#f29e38;'> 6 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利"
+    ]
+}
