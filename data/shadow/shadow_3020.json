@@ -1,0 +1,345 @@
+{
+    "shadow_id": 3020,
+    "shadow_name": "仙客天狼",
+    "time": "2026/09/01 - 2026/10/12",
+    "element_upper": [
+        "Phys",
+        "Fire",
+        "Ice",
+        "Quantum"
+    ],
+    "element_lower": [
+        "Phys",
+        "Fire",
+        "Elec",
+        "Wind"
+    ],
+    "element_star": [
+        "Phys",
+        "Fire",
+        "Quantum",
+        "Imaginary"
+    ],
+    "boss_features": {
+        "upper": [
+            {
+                "id": 101701,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'>50%</color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'>100%</color>。"
+            },
+            {
+                "id": 101702,
+                "name": "丰亨豫大",
+                "description": "当首领幻影的召唤物被消灭时，其对自身造成少量真实伤害，削减自身少量韧性；如果被消灭的是<color style='color:#f29e38;'>精英敌人</color>，则改为对自身造成大量真实伤害，削减自身大量韧性。然后<color style='color:#f29e38;'>立即召唤</color>新的召唤物。"
+            },
+            {
+                "id": 101703,
+                "name": "如鹿添翼",
+                "description": "通过【鸡犬升天】和【鸡犬升天•强化】召唤的召唤物的初始行动值大幅提前。"
+            },
+            {
+                "id": 101704,
+                "name": "光环夺目",
+                "description": "任意种类的<u>光环</u>效果生效期间，所有未被弱点击破的敌方目标受到的伤害降低，造成的伤害提高。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 101201,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'>50%</color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'>100%</color>。"
+            },
+            {
+                "id": 101202,
+                "name": "铁骨峥嵘",
+                "description": "部位受到的伤害降低<color style='color:#f29e38;'>50%</color>。当首领幻影被<color style='color:#f29e38;'>弱点击破</color>后，受到的伤害提高<color style='color:#f29e38;'>100%</color>"
+            },
+            {
+                "id": 101203,
+                "name": "钩爪锯牙",
+                "description": "首领幻影的韧性提高<color style='color:#f29e38;'>40</color>点。"
+            },
+            {
+                "id": 101204,
+                "name": "兽血沸腾",
+                "description": "<color style='color:#f29e38;'>【厉咒】</color>状态的持续时间延长<color style='color:#f29e38;'>1</color>回合。"
+            }
+        ],
+        "star": [
+            {
+                "id": 101601,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'>50%</color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'>100%</color>。"
+            },
+            {
+                "id": 101602,
+                "name": "双重战场",
+                "description": "首领幻影会在战斗中开启<u>连麦PK</u>，选择一名我方角色前往副战场战斗，其余角色留在主战场提供支援。<u>连麦PK</u>开启后，处于主战场的敌方目标受到的伤害降低，并免疫控制类负面状态，首领幻影进入【<u>韧性锁止</u>】状态。首领幻影的回合开始时，【我方人气值】和【对方人气值】均重置为初始状态。",
+                "extra": [
+                    {
+                        "name": "连麦PK",
+                        "description": "我方全体目标将分别在<color style='color:#f29e38;'>主战场和副战场</color>进行作战。在阿哈时刻以外，不同战场的我方和敌方目标<color style='color:#f29e38;'>无法攻击</color>到另一战场的目标。在阿哈时刻期间，欢愉技始终只能对<color style='color:#f29e38;'>副战场</color>的敌方目标发动攻击。<br>连麦PK倒计时结束、处于副战场的我方角色陷入无法战斗状态、处于副战场的所有敌方目标被消灭、副战场没有可以战斗的我方角色，以上任意条件触发时，连麦PK解除。"
+                    },
+                    {
+                        "name": "韧性锁止",
+                        "description": "韧性值无法被削减至低于1点。"
+                    }
+                ]
+            },
+            {
+                "id": 101603,
+                "name": "人气爆发",
+                "description": "【我方人气值】和【对方人气值】的上限提高。"
+            },
+            {
+                "id": 101604,
+                "name": "人气傍身",
+                "description": "【我方人气值】和【对方人气值】每有一项未达到极限，敌方全体受到的伤害降低。"
+            }
+        ]
+    },
+    "floors": [
+        {
+            "floor": 1,
+            "level": 60,
+            "upper": [
+                {
+                    "stage_id": 420501,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 202401601,
+                                "hp": 514851,
+                                "speed": 120,
+                                "stance": 20,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.34
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420511,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501201,
+                                "hp": 471947,
+                                "speed": 144,
+                                "stance": 28,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.34
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 2,
+            "level": 70,
+            "upper": [
+                {
+                    "stage_id": 420502,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 202401602,
+                                "hp": 1855099,
+                                "speed": 132,
+                                "stance": 20,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.38
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420512,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501202,
+                                "hp": 1700508,
+                                "speed": 158,
+                                "stance": 28,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.38
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 3,
+            "level": 80,
+            "upper": [
+                {
+                    "stage_id": 420503,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 202401603,
+                                "hp": 5058647,
+                                "speed": 144,
+                                "stance": 20,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.4
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420513,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501203,
+                                "hp": 4769581,
+                                "speed": 173,
+                                "stance": 28,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.4
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 4,
+            "level": 90,
+            "upper": [
+                {
+                    "stage_id": 420504,
+                    "level": 90,
+                    "hp_coefficient": 2,
+                    "monsters": [
+                        [
+                            {
+                                "id": 202401604,
+                                "hp": 11548808,
+                                "speed": 158,
+                                "stance": 20,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.4
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420514,
+                    "level": 90,
+                    "hp_coefficient": 1.9,
+                    "monsters": [
+                        [
+                            {
+                                "id": 203501204,
+                                "hp": 16091338,
+                                "speed": 190,
+                                "stance": 28,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.4
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": [
+                {
+                    "stage_id": 420524,
+                    "level": 90,
+                    "hp_coefficient": 5,
+                    "monsters": [
+                        [
+                            {
+                                "id": 501401404,
+                                "hp": 24197501,
+                                "speed": 158,
+                                "stance": 44,
+                                "hp_ratio_sum": 2,
+                                "status_res": 0.4
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "buff_total": {
+        "name": "末法余烬",
+        "description": "拥有<color style='color:#f29e38;'>【坚防守备】</color>的敌方目标被<color style='color:#f29e38;'>弱点击破</color>时，使我方全体目标解除控制状态并激活终结技。<br>敌方全体目标受到的战技伤害提高<color style='color:#f29e38;'>25%</color>，欢愉伤害提高<color style='color:#f29e38;'>15%</color>。",
+        "id": 3110019
+    },
+    "buff": {
+        "upper": [
+            {
+                "id": 3111092,
+                "name": "膏腴之地",
+                "description": "我方全体造成的战技和终结技伤害提高<color style='color:#f29e38;'>30%</color>，编队中的第1位角色造成的战技和终结技伤害额外提高<color style='color:#f29e38;'>30%</color>。"
+            },
+            {
+                "id": 3111093,
+                "name": "才藻富赡",
+                "description": "敌方全体的风属性抗性和雷属性抗性降低<color style='color:#f29e38;'>40%</color>。"
+            },
+            {
+                "id": 3111089,
+                "name": "喜上眉梢",
+                "description": "敌方全体受到的欢愉伤害提高<color style='color:#f29e38;'>30%</color>。我方队伍中存在欢愉命途的角色时，我方全体的弱点击破效率提高<color style='color:#f29e38;'>50%</color>。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 3111077,
+                "name": "攻心扼吭",
+                "description": "我方全体目标造成的击破伤害提高<color style='color:#f29e38;'>10%</color>，当场上有敌方目标进入弱点击破状态后额外提高<color style='color:#f29e38;'>5%</color>，最多叠加<color style='color:#f29e38;'>4</color>次。"
+            },
+            {
+                "id": 3111080,
+                "name": "前尘影事",
+                "description": "当前在场的我方忆灵数量大于等于3时，我方全体目标造成的伤害提高<color style='color:#f29e38;'>60%</color>。"
+            },
+            {
+                "id": 3111058,
+                "name": "附骨之疽",
+                "description": "我方目标对敌方造成持续伤害后，回复<color style='color:#f29e38;'>1</color>点能量。我方全体造成的持续伤害无视敌方目标<color style='color:#f29e38;'>40%</color>的全属性抗性。"
+            }
+        ],
+        "star": [
+            {
+                "id": 3111089,
+                "name": "喜上眉梢",
+                "description": "敌方全体受到的欢愉伤害提高<color style='color:#f29e38;'>30%</color>。我方队伍中存在欢愉命途的角色时，我方全体的弱点击破效率提高<color style='color:#f29e38;'>50%</color>。"
+            },
+            {
+                "id": 3111079,
+                "name": "聚气化神",
+                "description": "我方目标每次消耗战技点后，使自身暴击伤害提高<color style='color:#f29e38;'>6%</color>，最多叠加<color style='color:#f29e38;'>10</color>层。"
+            },
+            {
+                "id": 3111068,
+                "name": "披坚执锐",
+                "description": "我方全体造成的物理属性伤害提高<color style='color:#f29e38;'>50%</color>，敌方全体的物理属性抗性降低<color style='color:#f29e38;'>20%</color>。"
+            }
+        ]
+    }
+}

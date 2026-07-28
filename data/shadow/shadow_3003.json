@@ -1,0 +1,277 @@
+{
+    "shadow_id": 3003,
+    "shadow_name": "煽动博弈",
+    "time": "2024/09/16 - 2024/10/28",
+    "element_upper": [
+        "Phys",
+        "Ice",
+        "Elec",
+        "Wind"
+    ],
+    "element_lower": [
+        "Fire",
+        "Elec",
+        "Wind",
+        "Imaginary"
+    ],
+    "element_star": [],
+    "boss_features": {
+        "upper": [
+            {
+                "id": 100501,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'> 50% </color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'> 100% </color>。"
+            },
+            {
+                "id": 100502,
+                "name": "点数竞赛",
+                "description": "首领幻影的技能会赋予所有我方和敌方单位<color style='color:#f29e38;'><u>点数</u></color>",
+                "extra": [
+                    {
+                        "name": "点数",
+                        "description": "敌方目标点数大于我方时，受到的伤害大幅降低，并获得韧性保护。我方角色攻击【点数】比自身低的敌方目标时，我方【点数】越高，敌方目标受到的伤害越高。点数的上限为 100 。"
+                    }
+                ]
+            },
+            {
+                "id": 100503,
+                "name": "庄家优势",
+                "description": "当我方单位点数小于召唤物点数时，召唤物受到的伤害大幅降低。"
+            },
+            {
+                "id": 100504,
+                "name": "先发优势",
+                "description": "召唤物的点数越大，其生命上限越高。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 100601,
+                "name": "坚防守备",
+                "description": "首领幻影受到的伤害降低<color style='color:#f29e38;'> 50% </color>。<color style='color:#f29e38;'>弱点击破</color>后，行动额外延后，受到的伤害提高<color style='color:#f29e38;'> 100% </color>。"
+            },
+            {
+                "id": 100602,
+                "name": "移花接木",
+                "description": "召唤新的【玄莲】时，首领幻影会进入<color style='color:#f29e38;'><u>韧性保护</u></color>状态。消灭任意召唤物会使首领幻影的韧性保护解除，并且对首领幻影造成额外韧性削减。",
+                "extra": [
+                    {
+                        "name": "韧性保护",
+                        "description": "韧性值无法受到削减。"
+                    }
+                ]
+            },
+            {
+                "id": 100603,
+                "name": "枯木逢春",
+                "description": "在一阶段，首领幻影在切换形态时会回复召唤物<color style='color:#f29e38;'> 25% </color>生命值。"
+            },
+            {
+                "id": 100604,
+                "name": "空花阳焰",
+                "description": "在二阶段，召唤物的生命上限提高<color style='color:#f29e38;'> 20% </color>。"
+            }
+        ],
+        "star": []
+    },
+    "floors": [
+        {
+            "floor": 1,
+            "level": 60,
+            "upper": [
+                {
+                    "stage_id": 420151,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 803401201,
+                                "hp": 107261,
+                                "speed": 120,
+                                "stance": 17,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420141,
+                    "level": 60,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801502201,
+                                "hp": 98067,
+                                "speed": 120,
+                                "stance": 38,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 2,
+            "level": 70,
+            "upper": [
+                {
+                    "stage_id": 420152,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 803401202,
+                                "hp": 386479,
+                                "speed": 132,
+                                "stance": 17,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420142,
+                    "level": 70,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801502202,
+                                "hp": 353352,
+                                "speed": 132,
+                                "stance": 38,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 3,
+            "level": 80,
+            "upper": [
+                {
+                    "stage_id": 420153,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 803401203,
+                                "hp": 1083996,
+                                "speed": 144,
+                                "stance": 17,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420143,
+                    "level": 80,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801502203,
+                                "hp": 991082,
+                                "speed": 144,
+                                "stance": 38,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        },
+        {
+            "floor": 4,
+            "level": 90,
+            "upper": [
+                {
+                    "stage_id": 420154,
+                    "level": 90,
+                    "monsters": [
+                        [
+                            {
+                                "id": 803401204,
+                                "hp": 1924801,
+                                "speed": 158,
+                                "stance": 19,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "lower": [
+                {
+                    "stage_id": 420144,
+                    "level": 90,
+                    "monsters": [
+                        [
+                            {
+                                "id": 801502204,
+                                "hp": 1759818,
+                                "speed": 158,
+                                "stance": 38,
+                                "hp_ratio_sum": 2
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "star": []
+        }
+    ],
+    "buff_total": {
+        "id": 3110003,
+        "name": "末法余烬",
+        "description": "拥有<color style='color:#f29e38;'>【坚防守备】</color>的敌方单位被<color style='color:#f29e38;'>弱点击破</color>时，使我方全体行动提前并恢复战技点。<br>敌方全体受到的追加攻击伤害提高<color style='color:#f29e38;'> 25% </color>，终结技伤害提高<color style='color:#f29e38;'> 15% </color>。"
+    },
+    "buff": {
+        "upper": [
+            {
+                "id": 3111021,
+                "name": "时来运转",
+                "description": "角色造成的追加攻击伤害无视敌方目标<color style='color:#f29e38;'> 15% </color>的全属性抗性，同时对非弱点目标也能削减韧性，效果等同于原技能削韧值的<color style='color:#f29e38;'> 50% </color>。"
+            },
+            {
+                "id": 3111022,
+                "name": "千金一掷",
+                "description": "角色造成的冰属性伤害提高<color style='color:#f29e38;'> 55% </color>。"
+            },
+            {
+                "id": 3111023,
+                "name": "追亡逐北",
+                "description": "角色击破敌方目标弱点时，行动提前<color style='color:#f29e38;'> 15% </color>，该效果每回合最多触发<color style='color:#f29e38;'> 1 </color>次。"
+            }
+        ],
+        "lower": [
+            {
+                "id": 3111018,
+                "name": "寸草不生",
+                "description": "角色攻击处于弱点击破状态下的敌人后，其当前承受的所有持续伤害立即产生相当于原伤害<color style='color:#f29e38;'> 80% </color>的伤害，该效果单个回合内每个角色各自最多触发<color style='color:#f29e38;'> 2 </color>次。"
+            },
+            {
+                "id": 3111019,
+                "name": "牵丝攀藤",
+                "description": "消灭敌方目标后，敌方全体受到的击破伤害提高<color style='color:#f29e38;'> 5% </color>，最多叠加<color style='color:#f29e38;'> 5 </color>层，该效果对所有新上场的敌人也生效。"
+            },
+            {
+                "id": 3111020,
+                "name": "势如破竹",
+                "description": "造成的终结技伤害的暴击伤害提高<color style='color:#f29e38;'> 30% </color>，对处于弱点击破状态下的敌方目标额外提高<color style='color:#f29e38;'> 30% </color>。"
+            }
+        ],
+        "star": []
+    }
+}
