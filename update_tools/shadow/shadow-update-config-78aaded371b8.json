@@ -1,9 +1,0 @@
-{
-    "nanokaBaseUrl": "https://static.nanoka.cc/hsr/4.4.52",
-    "nanokaImageBaseUrl": "https://static.nanoka.cc/assets/hsr",
-    "dataDir": "../../data/shadow",
-    "imagesDir": "../../images",
-    "versionProbeLimit": 8,
-    "defaultDurationDays": 42,
-    "downloadMissingMonsterImages": true
-}
