@@ -1,0 +1,8 @@
+{
+    "officialApiUrl": "https://act-api-takumi.mihoyo.com/event/rpgcultivate/achievement/list",
+    "officialPageUrl": "https://act.mihoyo.com/sr/event/cultivation-tool/index.html#/tools/achievement",
+    "cookieEnv": "MIHOYO_COOKIE",
+    "pageSize": 20,
+    "maxPages": 200,
+    "dataFile": "../../data/achievement/achievements.json"
+}

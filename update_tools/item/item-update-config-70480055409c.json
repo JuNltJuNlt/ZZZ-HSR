@@ -1,0 +1,8 @@
+{
+    "nanokaBaseUrl": "https://static.nanoka.cc/hsr/4.4.52",
+    "nanokaImageBaseUrl": "https://static.nanoka.cc/assets/hsr",
+    "siteUrl": "https://hsr.nanoka.cc/item/",
+    "dataFile": "../../data/item/items.json",
+    "imagesDir": "../../images/item",
+    "downloadImages": true
+}
