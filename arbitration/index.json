@@ -1,0 +1,15 @@
+{
+    "monster_catalog": "monster_catalog.json",
+    "reward_lines": "reward_lines.json",
+    "entries": [
+        "arbitration_4009.json",
+        "arbitration_4008.json",
+        "arbitration_4007.json",
+        "arbitration_4006.json",
+        "arbitration_4005.json",
+        "arbitration_4004.json",
+        "arbitration_4003.json",
+        "arbitration_4002.json",
+        "arbitration_4001.json"
+    ]
+}

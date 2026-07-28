@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="玉衡杯数据库 - 崩坏星穹铁道异相仲裁" />
+        <title>异相仲裁 - 玉衡杯数据库</title>
+        <link rel="stylesheet" href="../../stylesheets/thin.css" />
+        <link rel="stylesheet" href="../../stylesheets/style.css" />
+        <link rel="stylesheet" href="../../stylesheets/arbitration.css" />
+        <script src="../../plugins/echarts.min.js"></script>
+        <script type="module" src="../../scripts/arbitration.js"></script>
+    </head>
+    <body class="bg">
+        <container>
+            <h3>
+                <span class="title">
+                    <a href="../../index.html">
+                        <img src="../../images/others/logo.png" class="logo_img_yhb" alt="玉衡杯" />
+                    </a>
+                    <color style="font-size: 26px">
+                        <br />
+                        <img src="../../images/emote/Yunli/1.png" class="game_img" alt="" />
+                        <b>4.5v2</b>
+                    </color>
+                </span>
+                <em class="subtitle">
+                    <p><b>yuhengcup.wiki | <span style="white-space: pre"><a href="https://space.bilibili.com/3546567522912510" target="_blank">b站@妮可少女</a></span></b></p>
+                </em>
+                <em class="links">
+                    <img src="../../images/others/menu.png" class="_menu_" alt="菜单" />
+                </em>
+            </h3>
+
+            <div class="content">
+                <p class="content_title">
+                    异相仲裁
+                </p>
+
+                <div class="ver">
+                    <div id="prevSchedule" class="v_l">◁</div>
+                    <div class="ver_text hover-shadow">
+                        <p id="scheduleName" class="ver_text_name"></p>
+                        <p id="scheduleTime" class="ver_text_time"></p>
+                        <select
+                            id="scheduleSelect"
+                            class="schedule_select"
+                        ></select>
+                    </div>
+                    <div id="nextSchedule" class="v_r"><p>▷</p></div>
+                </div>
+
+                <div class="button_w">
+                    <a class="level_ dl_button hover-shadow" href="#"><span>下载图片</span></a>
+                </div>
+
+                <div class="info_area">
+                    <div id="trialRewards" class="buff reward_1"></div>
+                    <div class="target">
+                        <p id="trialCycle" class="target_c target_c_1"></p>
+                        <div id="trialTargets" class="target_t target_t_1"></div>
+                    </div>
+                </div>
+
+                <div id="trialBuffs" class="a_b u_b smallbuff_wrap"></div>
+                <div id="trialStages" class="u_l_wrapper"></div>
+                <div class="chart_container">
+                    <div id="trialChart" class="chart"></div>
+                </div>
+
+                <div class="info_area">
+                    <div id="finalRewards" class="buff reward_2"></div>
+                    <div class="target">
+                        <p id="finalCycle" class="target_c target_c_2"></p>
+                        <div id="finalTargets" class="target_t target_t_2"></div>
+                    </div>
+                </div>
+
+                <div id="finalBuffs" class="d_b u_b smallbuff_wrap"></div>
+                <div id="finalSections"></div>
+                <div class="chart_container">
+                    <div id="hardFinalChart" class="chart"></div>
+                </div>
+            </div>
+        </container>
+    </body>
+</html>
+

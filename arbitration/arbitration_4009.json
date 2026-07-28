@@ -1,0 +1,232 @@
+{
+    "arbitration_id": 4009,
+    "arbitration_name": "军团再临",
+    "time": "2026/08/26 - 2026/10/07",
+    "debuff_a": [
+        {
+            "id": 3033071,
+            "name": "鳞甲",
+            "description": "敌方目标初始拥有<color style='color:#f29e38;'>20</color>层该效果，每层使敌方目标受到的伤害降低<color style='color:#f29e38;'>2%</color>，敌方目标每次受到攻击后降低1层。该效果的层数在首领敌人阶段转换时重置。"
+        }
+    ],
+    "element_a": [
+        "Fire",
+        "Quantum"
+    ],
+    "monster_a": {
+        "stage_id": 30509011,
+        "hp_coefficient": 6.8,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 8033020,
+                    "hp": 3086555,
+                    "speed": 190,
+                    "stance": 16,
+                    "status_res": 0.3
+                },
+                {
+                    "id": 800304016,
+                    "hp": 3561410,
+                    "speed": 227,
+                    "stance": 10,
+                    "status_res": 0.3
+                }
+            ],
+            [
+                {
+                    "id": 8033020,
+                    "hp": 3268117,
+                    "speed": 190,
+                    "stance": 16,
+                    "status_res": 0.3
+                },
+                {
+                    "id": 100401014,
+                    "hp": 8547382,
+                    "speed": 158,
+                    "stance": 12,
+                    "status_res": 0.4
+                }
+            ]
+        ]
+    },
+    "debuff_b": [
+        {
+            "id": 3033063,
+            "name": "破势",
+            "description": "敌方目标每次受到我方攻击后，使自身受到的伤害降低<color style='color:#f29e38;'>2%</color>，受到的暴击伤害降低<color style='color:#f29e38;'>4%</color>，最多叠加<color style='color:#f29e38;'>10</color>层，该效果在敌方目标受到追加攻击后或阿哈时刻结束时改为降低<color style='color:#f29e38;'>5</color>层。"
+        }
+    ],
+    "element_b": [
+        "Imaginary"
+    ],
+    "monster_b": {
+        "stage_id": 30509012,
+        "hp_coefficient": 6.8,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5023010,
+                    "hp": 1424564,
+                    "speed": 190,
+                    "stance": 14,
+                    "status_res": 0.3
+                },
+                {
+                    "id": 5013010,
+                    "hp": 4273691,
+                    "speed": 174,
+                    "stance": 12,
+                    "status_res": 0.3
+                }
+            ],
+            [
+                {
+                    "id": 5014010,
+                    "hp": 10684229,
+                    "speed": 158,
+                    "stance": 32,
+                    "hp_ratio_sum": 2,
+                    "status_res": 0.4
+                }
+            ]
+        ]
+    },
+    "debuff_c": [
+        {
+            "id": 3033002,
+            "name": "淬火",
+            "description": "敌方目标生命值每降低1%，我方对其造成的暴击伤害降低<color style='color:#f29e38;'>3%</color>。"
+        }
+    ],
+    "element_c": [
+        "Phys",
+        "Fire"
+    ],
+    "monster_c": {
+        "stage_id": 30509013,
+        "hp_coefficient": 7.2,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 8032020,
+                    "hp": 553066,
+                    "speed": 132,
+                    "stance": 3,
+                    "status_res": 0.2,
+                    "number": 12
+                },
+                {
+                    "id": 4053010,
+                    "hp": 3770904,
+                    "speed": 190,
+                    "stance": 18,
+                    "status_res": 0.3,
+                    "number": 2
+                },
+                {
+                    "id": 5013060,
+                    "hp": 3770904,
+                    "speed": 158,
+                    "stance": 16,
+                    "status_res": 0.3,
+                    "number": 2
+                }
+            ]
+        ]
+    },
+    "buff_final": [
+        {
+            "id": 3033073,
+            "name": "美妙奇笑",
+            "description": "我方全体目标欢愉度提高<color style='color:#f29e38;'>40%</color>，造成的欢愉伤害的全属性抗性穿透提高<color style='color:#f29e38;'>20%</color>，施放欢愉技时该效果翻倍。"
+        },
+        {
+            "id": 3033074,
+            "name": "终结之吻",
+            "description": "我方任意目标回合开始时，我方全体目标固定恢复<color style='color:#f29e38;'>25%</color>能量，该效果全场只触发1次。我方全体目标造成的战技和终结技伤害提高<color style='color:#f29e38;'>40%</color>。"
+        },
+        {
+            "id": 3033075,
+            "name": "夤夜歌声",
+            "description": "我方全体目标速度提高<color style='color:#f29e38;'>10%</color>，【昔涟的声援♪】速度提高<color style='color:#f29e38;'>25%</color>。"
+        }
+    ],
+    "debuff_final_easy": [
+        {
+            "id": 3033058,
+            "name": "血嗜",
+            "description": "我方目标回合开始时损失<color style='color:#f29e38;'>500</color>点生命值，该效果可致命。"
+        },
+        {
+            "id": 3033071,
+            "name": "鳞甲",
+            "description": "敌方目标初始拥有<color style='color:#f29e38;'>20</color>层该效果，每层使敌方目标受到的伤害降低<color style='color:#f29e38;'>2%</color>，敌方目标每次受到攻击后降低1层。该效果的层数在首领敌人阶段转换时重置。"
+        }
+    ],
+    "debuff_final_hard": [
+        {
+            "id": 3033059,
+            "name": "血嗜+",
+            "description": "我方目标回合开始时损失<color style='color:#f29e38;'>1000</color>点生命值，该效果可致命。"
+        },
+        {
+            "id": 3033072,
+            "name": "鳞甲+",
+            "description": "敌方目标初始拥有<color style='color:#f29e38;'>20</color>层该效果，每层使敌方目标受到的伤害降低<color style='color:#f29e38;'>3%</color>，敌方目标每次受到攻击后降低1层。该效果的层数在首领敌人阶段转换时重置。"
+        }
+    ],
+    "element_final": [
+        "Ice",
+        "Elec",
+        "Quantum"
+    ],
+    "monster_final_easy": {
+        "stage_id": 30509021,
+        "hp_coefficient": 1,
+        "level": 100,
+        "monsters": [
+            [
+                {
+                    "id": 403501001,
+                    "hp": 11269061,
+                    "speed": 211,
+                    "stance": 20,
+                    "hp_ratio_sum": 3.25,
+                    "status_res": 0.4
+                }
+            ]
+        ]
+    },
+    "monster_final_hard": {
+        "stage_id": 30509022,
+        "hp_coefficient": 1,
+        "level": 120,
+        "monsters": [
+            [
+                {
+                    "id": 403501001,
+                    "hp": 45076246,
+                    "speed": 240,
+                    "stance": 20,
+                    "hp_ratio_sum": 3.25,
+                    "status_res": 0.4
+                }
+            ]
+        ]
+    },
+    "target_abc": [
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利",
+        "没有角色无法战斗"
+    ],
+    "target_final": [
+        "不超过<color style='color:#f29e38;'> 6 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利"
+    ]
+}

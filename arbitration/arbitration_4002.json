@@ -1,0 +1,221 @@
+{
+    "arbitration_id": 4002,
+    "arbitration_name": "烈阳幻域",
+    "time": "2025/11/05 - 2025/12/17",
+    "debuff_a": [
+        {
+            "id": 3033023,
+            "name": "挑衅",
+            "description": "敌方目标受到<color style='color:#f29e38;'>6</color>次攻击后立即行动，该计数在敌方目标回合开始时清空。"
+        }
+    ],
+    "element_a": [
+        "Phys",
+        "Elec"
+    ],
+    "monster_a": {
+        "stage_id": 30502011,
+        "hp_coefficient": 5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 3002030,
+                    "hp": 392803,
+                    "speed": 132,
+                    "stance": 3,
+                    "number": 6
+                },
+                {
+                    "id": 2013020,
+                    "hp": 2094947,
+                    "speed": 158,
+                    "stance": 10,
+                    "number": 2
+                },
+                {
+                    "id": 2033010,
+                    "hp": 2094947,
+                    "speed": 158,
+                    "stance": 12,
+                    "number": 2
+                }
+            ]
+        ]
+    },
+    "debuff_b": [
+        {
+            "id": 3033025,
+            "name": "滋扰",
+            "description": "敌方目标施放攻击后，对攻击目标随机造成<color style='color:#f29e38;'>5%</color>或者<color style='color:#f29e38;'>10%</color>的行动延后。"
+        },
+        {
+            "id": 3033005,
+            "name": "吸能",
+            "description": "敌方目标每次受到攻击后都会使攻击者能量降低<color style='color:#f29e38;'>2</color>点，但攻击者能量达到上限时不会降低；敌方目标被消灭时固定恢复攻击者<color style='color:#f29e38;'>10</color>点能量。"
+        }
+    ],
+    "element_b": [
+        "Phys",
+        "Wind"
+    ],
+    "monster_b": {
+        "stage_id": 30502012,
+        "hp_coefficient": 3.5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 4063010,
+                    "hp": 1955284,
+                    "speed": 158,
+                    "stance": 16
+                },
+                {
+                    "id": 2033010,
+                    "hp": 1466463,
+                    "speed": 158,
+                    "stance": 12
+                }
+            ],
+            [
+                {
+                    "id": 2034010,
+                    "hp": 3360644,
+                    "speed": 264,
+                    "stance": 24,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "debuff_c": [
+        {
+            "id": 3033001,
+            "name": "韧甲",
+            "description": "敌方目标初始拥有<color style='color:#f29e38;'>2</color>层【韧甲】，每层使敌方目标受到的伤害降低<color style='color:#f29e38;'>15%</color>；敌方目标每次韧性被削减为0时降低1层【韧甲】。"
+        }
+    ],
+    "element_c": [
+        "Fire",
+        "Ice"
+    ],
+    "monster_c": {
+        "stage_id": 30502013,
+        "hp_coefficient": 2.5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 803301014,
+                    "hp": 1396631,
+                    "speed": 158,
+                    "stance": 12
+                },
+                {
+                    "id": 2023020,
+                    "hp": 1047473,
+                    "speed": 190,
+                    "stance": 12
+                }
+            ],
+            [
+                {
+                    "id": 3004020,
+                    "hp": 3491578,
+                    "speed": 106,
+                    "stance": 0,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "buff_final": [
+        {
+            "id": 3033020,
+            "name": "狂戮生息",
+            "description": "我方全体目标暴击伤害提高<color style='color:#f29e38;'>50%</color>；施放【治愈的虹彩】时，增加的生命上限额外提高<color style='color:#f29e38;'>60%</color>。"
+        },
+        {
+            "id": 3033021,
+            "name": "火力激增",
+            "description": "我方全体目标造成的普攻、战技、终结技伤害提高<color style='color:#f29e38;'>80%</color>；施放【治愈的虹彩】时，额外使我方全体目标攻击力提高<color style='color:#f29e38;'>2000</color>点。"
+        },
+        {
+            "id": 3033022,
+            "name": "穿流疾驰",
+            "description": "我方全体目标造成的持续伤害的全属性抗性穿透提高<color style='color:#f29e38;'>40%</color>；施放【治愈的虹彩】时，额外使我方全体目标速度提高<color style='color:#f29e38;'>30%</color>。"
+        }
+    ],
+    "debuff_final_easy": [
+        {
+            "id": 3033012,
+            "name": "吸能+",
+            "description": "敌方目标每次受到攻击后都会使攻击者能量降低<color style='color:#f29e38;'>3</color>点，但攻击者能量达到上限时不会降低；敌方目标被消灭时固定恢复攻击者<color style='color:#f29e38;'>10</color>点能量。"
+        },
+        {
+            "id": 3033017,
+            "name": "龟裂",
+            "description": "我方目标受到敌方攻击时会被施加【龟裂】效果，每层使持有者在受到攻击后额外损失最大生命值<color style='color:#f29e38;'>#1[f1]%</color>的生命值，该效果叠加层数无上限且不可驱散。持有【龟裂】的目标获得除自身外的友方目标施加的护盾效果或治疗后，双方均解除全部【龟裂】效果。"
+        }
+    ],
+    "debuff_final_hard": [
+        {
+            "id": 3033013,
+            "name": "吸能++",
+            "description": "敌方目标每次受到攻击后都会使攻击者能量降低<color style='color:#f29e38;'>4</color>点，但攻击者能量达到上限时不会降低；敌方目标被消灭时固定恢复攻击者<color style='color:#f29e38;'>10</color>点能量。"
+        },
+        {
+            "id": 3033019,
+            "name": "龟裂++",
+            "description": "我方目标受到敌方攻击时会被施加【龟裂++】效果，每层使持有者在受到攻击后额外损失最大生命值<color style='color:#f29e38;'>#1[f1]%</color>的生命值，该效果叠加层数无上限且不可驱散。持有【龟裂++】的目标获得除自身外的友方目标施加的护盾效果或治疗后，双方均解除全部【龟裂++】效果。"
+        }
+    ],
+    "element_final": [
+        "Phys",
+        "Ice",
+        "Quantum"
+    ],
+    "monster_final_easy": {
+        "stage_id": 30502021,
+        "hp_coefficient": 4.5,
+        "level": 100,
+        "monsters": [
+            [
+                {
+                    "id": 401501101,
+                    "hp": 12677700,
+                    "speed": 190,
+                    "stance": 32,
+                    "hp_ratio_sum": 4.4
+                }
+            ]
+        ]
+    },
+    "monster_final_hard": {
+        "stage_id": 30502022,
+        "hp_coefficient": 5,
+        "level": 120,
+        "monsters": [
+            [
+                {
+                    "id": 401501101,
+                    "hp": 56345335,
+                    "speed": 216,
+                    "stance": 32,
+                    "hp_ratio_sum": 4.4
+                }
+            ]
+        ]
+    },
+    "target_abc": [
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利",
+        "没有角色无法战斗"
+    ],
+    "target_final": [
+        "不超过<color style='color:#f29e38;'> 6 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利"
+    ]
+}

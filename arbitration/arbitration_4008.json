@@ -1,0 +1,267 @@
+{
+    "arbitration_id": 4008,
+    "arbitration_name": "尘世卷中",
+    "time": "2026/07/15 - 2026/08/26",
+    "debuff_a": [
+        {
+            "id": 3033023,
+            "name": "挑衅",
+            "description": "敌方目标受到<color style='color:#f29e38;'>6</color>次攻击后立即行动，该计数在敌方目标回合开始时清空。"
+        }
+    ],
+    "element_a": [
+        "Fire",
+        "Ice"
+    ],
+    "monster_a": {
+        "stage_id": 30508011,
+        "hp_coefficient": 6.8,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 2023020,
+                    "hp": 2849128,
+                    "speed": 190,
+                    "stance": 12
+                },
+                {
+                    "id": 803301014,
+                    "hp": 3798837,
+                    "speed": 158,
+                    "stance": 12
+                }
+            ],
+            [
+                {
+                    "id": 302401012,
+                    "hp": 5342114,
+                    "speed": 190,
+                    "stance": 16,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "debuff_b": [
+        {
+            "id": 3033063,
+            "name": "破势",
+            "description": "敌方目标每次受到我方攻击后，使自身受到的伤害降低<color style='color:#f29e38;'>2</color>，受到的暴击伤害降低<color style='color:#f29e38;'>4</color>，最多叠加<color style='color:#f29e38;'>10</color>层，该效果在敌方目标受到追加攻击后或阿哈时刻结束时改为降低<color style='color:#f29e38;'>5</color>层。"
+        },
+        {
+            "id": 3033038,
+            "name": "失能",
+            "description": "进入战斗时，固定降低我方目标<color style='color:#f29e38;'>50</color>的能量，并使我方目标在自身回合外的能量恢复效率降低<color style='color:#f29e38;'>50</color>，持续<color style='color:#f29e38;'>2</color>回合。"
+        }
+    ],
+    "element_b": [
+        "Fire",
+        "Elec"
+    ],
+    "monster_b": {
+        "stage_id": 30508012,
+        "hp_coefficient": 6,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5023010,
+                    "hp": 1256968,
+                    "speed": 190,
+                    "stance": 14
+                },
+                {
+                    "id": 5023020,
+                    "hp": 3351915,
+                    "speed": 158,
+                    "stance": 18
+                }
+            ],
+            [
+                {
+                    "id": 101401016,
+                    "hp": 9909098,
+                    "speed": 158,
+                    "stance": 12
+                },
+                {
+                    "id": 5023020,
+                    "hp": 4804411,
+                    "speed": 158,
+                    "stance": 18
+                }
+            ]
+        ]
+    },
+    "debuff_c": [
+        {
+            "id": 3033058,
+            "name": "血嗜",
+            "description": "我方目标回合开始时损失<color style='color:#f29e38;'>500</color>点生命值，该效果可致命。"
+        }
+    ],
+    "element_c": [
+        "Phys",
+        "Imaginary"
+    ],
+    "monster_c": {
+        "stage_id": 30508013,
+        "hp_coefficient": 5,
+        "level": 95,
+        "monsters": [
+            [
+                {
+                    "id": 5013040,
+                    "hp": 2618684,
+                    "speed": 158,
+                    "stance": 16
+                },
+                {
+                    "id": 402301001,
+                    "hp": 3142419,
+                    "speed": 158,
+                    "stance": 16
+                }
+            ],
+            [
+                {
+                    "id": 5024010,
+                    "hp": 6703830,
+                    "speed": 190,
+                    "stance": 24,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "buff_final": [
+        {
+            "id": 3033066,
+            "name": "领航誓言",
+            "description": "我方编队中第一位角色造成的战技和终结技伤害的全属性抗性穿透提高<color style='color:#f29e38;'>50</color>。"
+        },
+        {
+            "id": 3033068,
+            "name": "落井下石",
+            "description": "敌方目标受到来自我方的追加攻击后，受到的伤害提高<color style='color:#f29e38;'>15</color>，持续<color style='color:#f29e38;'>2</color>回合，该效果最多叠加<color style='color:#f29e38;'>3</color>层。"
+        },
+        {
+            "id": 3033067,
+            "name": "狂欢不息",
+            "description": "我方全体目标的全属性抗性穿透提高<color style='color:#f29e38;'>20</color>，造成的欢愉伤害的全属性抗性穿透额外提高<color style='color:#f29e38;'>20</color>。"
+        }
+    ],
+    "debuff_final_easy": [
+        {
+            "id": 3033069,
+            "name": "激怒",
+            "description": "我方目标每次施放终结技后使敌方全体目标叠加1层该效果，每层使敌方目标的速度提高<color style='color:#f29e38;'>30</color>，最多叠加<color style='color:#f29e38;'>4</color>层。该效果的层数在敌方目标回合开始时清空。"
+        },
+        {
+            "id": 3033051,
+            "name": "均衡",
+            "description": "战斗开始时，速度最高的<color style='color:#f29e38;'>1</color>名我方角色速度降低<color style='color:#f29e38;'>20</color>，速度最低的<color style='color:#f29e38;'>1</color>名我方角色速度提高<color style='color:#f29e38;'>15</color>。"
+        }
+    ],
+    "debuff_final_hard": [
+        {
+            "id": 3033070,
+            "name": "激怒+",
+            "description": "我方目标每次施放终结技后使敌方全体目标叠加1层该效果，每层使敌方目标的速度提高<color style='color:#f29e38;'>50</color>，最多叠加<color style='color:#f29e38;'>4</color>层。该效果的层数在敌方目标回合开始时清空。"
+        },
+        {
+            "id": 3033052,
+            "name": "均衡+",
+            "description": "战斗开始时，速度最高的<color style='color:#f29e38;'>2</color>名我方角色速度降低<color style='color:#f29e38;'>20</color>，速度最低的<color style='color:#f29e38;'>1</color>名我方角色速度提高<color style='color:#f29e38;'>15</color>。"
+        }
+    ],
+    "element_final": [
+        "Fire",
+        "Quantum"
+    ],
+    "monster_final_easy": {
+        "stage_id": 30508021,
+        "hp_coefficient": 8.4,
+        "level": 100,
+        "monsters": [
+            [
+                {
+                    "id": 402302001,
+                    "hp": 6058246,
+                    "speed": 132,
+                    "stance": 16
+                },
+                {
+                    "id": 4033030,
+                    "hp": 5679608,
+                    "speed": 190,
+                    "stance": 16
+                }
+            ],
+            [
+                {
+                    "id": 402302001,
+                    "hp": 6058246,
+                    "speed": 132,
+                    "stance": 16,
+                    "number": 2
+                },
+                {
+                    "id": 501403002,
+                    "hp": 16660180,
+                    "speed": 173,
+                    "stance": 36,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "monster_final_hard": {
+        "stage_id": 30508022,
+        "hp_coefficient": 8,
+        "level": 120,
+        "monsters": [
+            [
+                {
+                    "id": 402302001,
+                    "hp": 23079033,
+                    "speed": 150,
+                    "stance": 16
+                },
+                {
+                    "id": 4033030,
+                    "hp": 21636600,
+                    "speed": 216,
+                    "stance": 16
+                }
+            ],
+            [
+                {
+                    "id": 402302001,
+                    "hp": 23079033,
+                    "speed": 150,
+                    "stance": 16,
+                    "number": 2
+                },
+                {
+                    "id": 501403002,
+                    "hp": 63467353,
+                    "speed": 195,
+                    "stance": 36,
+                    "hp_ratio_sum": 2
+                }
+            ]
+        ]
+    },
+    "target_abc": [
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利",
+        "没有角色无法战斗"
+    ],
+    "target_final": [
+        "不超过<color style='color:#f29e38;'> 6 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 4 </color>轮战斗胜利",
+        "不超过<color style='color:#f29e38;'> 2 </color>轮战斗胜利"
+    ]
+}

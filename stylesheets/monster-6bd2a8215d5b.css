@@ -1,0 +1,241 @@
+.monster-content {
+    padding: 0 0 30px;
+    background-color: #f7f9fc;
+}
+
+html {
+    scrollbar-color: #7b8fa8 #e8edf5;
+    scrollbar-width: auto;
+}
+
+html::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #e8edf5;
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 3px solid #e8edf5;
+    border-radius: 999px;
+    background-color: #7b8fa8;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #5f728d;
+}
+
+.monster-filter-panel {
+    display: block;
+    width: calc(100% - 64px);
+    max-width: 1800px;
+    margin: 26px auto 18px;
+    padding: 22px 26px 26px;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 22px rgba(39, 54, 62, 0.08);
+}
+
+.monster-filter-panel h1 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.monster-filter-group {
+    margin-top: 18px;
+}
+
+.monster-filter-group p {
+    margin: 0 0 8px;
+    color: #27363e;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.monster-search-group input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #b8c1cf;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    color: #111827;
+    font-size: 16px;
+}
+
+.monster-search-group input:focus {
+    border-color: #2545ba;
+    box-shadow: 0 0 0 3px rgba(37, 69, 186, 0.12);
+}
+
+.monster-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.monster-filter-button {
+    min-height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #b8c1cf;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #27363e;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.monster-filter-button.active {
+    border-color: #2545ba;
+    background-color: #2545ba;
+    color: #ffffff;
+}
+
+.monster-result-line {
+    width: calc(100% - 64px);
+    max-width: 1800px;
+    margin: 0 auto 10px;
+    color: #52606d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.monster-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: calc(100% - 64px);
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.monster-card {
+    overflow: hidden;
+    min-width: 0;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.monster-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+}
+
+.monster-image {
+    width: 88%;
+    height: 88%;
+    object-fit: contain;
+}
+
+.monster-card-body {
+    min-height: 142px;
+    padding: 12px 13px 14px;
+    border-top: 3px solid #2545ba;
+}
+
+.monster-name {
+    min-height: 44px;
+    margin: 0;
+    color: #111827;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.45;
+}
+
+.monster-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 8px 0 0;
+}
+
+.monster-id,
+.monster-rank {
+    color: #52606d;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.monster-rank {
+    padding: 2px 7px;
+    border: 1px solid #d8dee8;
+    border-radius: 999px;
+    background-color: #f7f9fc;
+}
+
+.monster-camp {
+    min-height: 20px;
+    margin: 10px 0 0;
+    color: #27363e;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.monster-weakness {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 30px;
+    margin-top: 10px;
+}
+
+.monster-element {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
+
+.monster-empty-weak {
+    min-height: 30px;
+    margin: 10px 0 0;
+    color: #9aa8b7;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+@media screen and (min-width: 560px) {
+    .monster-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .monster-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .monster-filter-panel h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .monster-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .monster-image-wrap {
+        aspect-ratio: 1.08 / 1;
+    }
+
+    .monster-card-body {
+        min-height: 136px;
+    }
+}
