@@ -4,7 +4,8 @@ const HOME_DATA_URL = new URL("../data/home/home.json", import.meta.url);
 let cachedHomeData;
 
 function rootHref(href) {
-    return href?.replace(/^\.\//, "/") ?? null;
+    if (!href) return null;
+    return href.replace(/^\.\//, "/ZZZ-HSR/");
 }
 
 async function loadHomeData(homeData) {
@@ -103,7 +104,7 @@ export const openMenu = async (homeData) => {
             className: "menu_CTRL",
             style: { marginBottom: "30px" },
             children: [
-                scheduleLink("首页", "/", {
+                scheduleLink("首页", "/ZZZ-HSR/", {
                     fontSize: "16px",
                     className: "",
                     style: { border: "1.6px solid #7030A0" },
@@ -149,7 +150,7 @@ export const openMenu = async (homeData) => {
         if (event.target === mask) close();
     });
     dialog.querySelector("h3").addEventListener("click", () => {
-        window.location.href = "/";
+        window.location.href = "/ZZZ-HSR/";
     });
 
     dialog.querySelectorAll("[data-menu-game]").forEach((el) => {
