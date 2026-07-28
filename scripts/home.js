@@ -8,6 +8,7 @@ let iconPaths;
 const homeState = {
     activeGame: "zzz",
 };
+let zzzCountdownInterval = null;
 
 function renderList(container, items, createItem) {
     const fragment = document.createDocumentFragment();
@@ -302,6 +303,20 @@ function formatRemaining(ms) {
     return time;
 }
 
+function renderZZZCountdown() {
+    const container = byId("testCountdown");
+    if (!container) return;
+    const target = new Date('2026-07-29T06:00:00');
+    const now = new Date();
+    const diff = Math.max(0, target - now);
+    const hours = Math.floor(diff / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+    const time = [hours, minutes, seconds].map(v => String(v).padStart(2, "0")).join(":");
+
+    container.innerHTML = `<p class="countdown c2 c2_b">3.1 ${time}</p>`;
+}
+
 function bindNoNavigation() {
     document.body.addEventListener("click", function (event) {
         const target = event.target.closest("[data-no-nav='true']");
@@ -325,6 +340,19 @@ function setHomeGameView(key) {
     byId("directoryGrid").hidden = isFuture;
     byId("testCountdown").hidden = isFuture;
     byId("futurePanel").hidden = !isFuture;
+
+    const version = homeData.siteVersionByGame?.[key] ?? homeData.siteVersion;
+    const versionEl = byId("siteVersionText");
+    if (versionEl) versionEl.textContent = version;
+
+    if (isZZZ) {
+        if (zzzCountdownInterval) clearInterval(zzzCountdownInterval);
+        renderZZZCountdown();
+        zzzCountdownInterval = setInterval(renderZZZCountdown, 1000);
+    } else if (!isFuture) {
+        if (zzzCountdownInterval) clearInterval(zzzCountdownInterval);
+        renderTestCountdown();
+    }
 
     if (isFuture) {
         renderFuturePanel();
@@ -563,8 +591,18 @@ async function initHome() {
     renderGameTabs();
     renderActions();
     renderFuturePanel();
-    renderTestCountdown();
-    window.setInterval(renderTestCountdown, 1000);
+
+    const initialVersion = homeData.siteVersionByGame?.[homeState.activeGame] ?? homeData.siteVersion;
+    const versionEl = byId("siteVersionText");
+    if (versionEl) versionEl.textContent = initialVersion;
+
+    if (homeState.activeGame === "zzz") {
+        renderZZZCountdown();
+        zzzCountdownInterval = setInterval(renderZZZCountdown, 1000);
+    } else {
+        renderTestCountdown();
+        window.setInterval(renderTestCountdown, 1000);
+    }
 
     const [characters, lightcones] = await Promise.all([
         loadJson("../data/character/character.json"),
