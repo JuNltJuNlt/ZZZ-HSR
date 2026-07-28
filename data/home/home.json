@@ -378,10 +378,6 @@
         "directoryByGame": {
             "zzz": [
                 {
-                    "label": "公式大全",
-                    "href": "./zzz_html/formula/"
-                },
-                {
                     "label": "怪物",
                     "href": "./zzz_html/monster/"
                 },
