@@ -314,7 +314,20 @@ function renderZZZCountdown() {
     const seconds = Math.floor((diff % 60000) / 1000);
     const time = [hours, minutes, seconds].map(v => String(v).padStart(2, "0")).join(":");
 
-    container.innerHTML = `<p class="countdown c2 c2_b">3.1 ${time}</p>`;
+    const birthday = new Date('2024-07-04');
+    const ageDays = Math.floor((now - birthday) / DAY_MS);
+
+    container.innerHTML = `
+        <div class="countdown_small c1 c_f">
+            <div class="cntd_emote">
+                <img src="./images/ZZZ%20images/emote/3.png" alt="">
+            </div>
+            <div class="c_a_w">
+                <p class="c1_a">绝区零 : <b>${ageDays}</b> 天</p>
+            </div>
+        </div>
+        <p class="countdown c1 c1_b">3.1 ${time}</p>
+    `;
 }
 
 function bindNoNavigation() {
