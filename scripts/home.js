@@ -345,6 +345,15 @@ function setHomeGameView(key) {
     const versionEl = byId("siteVersionText");
     if (versionEl) versionEl.textContent = version;
 
+    const gameImg = byId("gameImg");
+    if (gameImg) {
+        if (isZZZ) {
+            gameImg.src = './images/ZZZ%20images/emote/3.png';
+        } else {
+            gameImg.src = './images/emote/Yunli/1.png';
+        }
+    }
+
     if (isZZZ) {
         if (zzzCountdownInterval) clearInterval(zzzCountdownInterval);
         renderZZZCountdown();
@@ -595,6 +604,11 @@ async function initHome() {
     const initialVersion = homeData.siteVersionByGame?.[homeState.activeGame] ?? homeData.siteVersion;
     const versionEl = byId("siteVersionText");
     if (versionEl) versionEl.textContent = initialVersion;
+
+    const gameImg = byId("gameImg");
+    if (gameImg && homeState.activeGame === "zzz") {
+        gameImg.src = './images/ZZZ%20images/emote/3.png';
+    }
 
     if (homeState.activeGame === "zzz") {
         renderZZZCountdown();
