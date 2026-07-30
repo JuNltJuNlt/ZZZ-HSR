@@ -9,6 +9,7 @@ const homeState = {
     activeGame: "zzz",
 };
 let zzzCountdownInterval = null;
+let srCountdownInterval = null;
 
 function renderList(container, items, createItem) {
     const fragment = document.createDocumentFragment();
@@ -354,26 +355,38 @@ function setHomeGameView(key) {
     byId("testCountdown").hidden = isFuture;
     byId("futurePanel").hidden = !isFuture;
 
-    const version = homeData.siteVersionByGame?.[key] ?? homeData.siteVersion;
-    const versionEl = byId("siteVersionText");
-    if (versionEl) versionEl.textContent = version;
-
-    const gameImg = byId("gameImg");
-    if (gameImg) {
-        if (isZZZ) {
-            gameImg.src = './images/ZZZ%20images/emote/3.png';
+    const titleColor = document.querySelector("h3 .title color");
+    if (titleColor) {
+        if (isFuture) {
+            titleColor.innerHTML = `
+                <br />
+                <img src="./images/emote/Yunli/1.png" class="game_img" alt="" />
+                <b>3.1V12 / 4.5V2</b>
+                <img src="./images/ZZZ%20images/emote/3.png" class="game_img" alt="" />
+            `;
         } else {
-            gameImg.src = './images/emote/Yunli/1.png';
+            const version = homeData.siteVersionByGame?.[key] ?? homeData.siteVersion;
+            titleColor.innerHTML = `
+                <br />
+                <img id="gameImg" src="${isZZZ ? './images/ZZZ%20images/emote/3.png' : './images/emote/Yunli/1.png'}" class="game_img" alt="" />
+                <b id="siteVersionText">${version}</b>
+            `;
         }
     }
 
     if (isZZZ) {
         if (zzzCountdownInterval) clearInterval(zzzCountdownInterval);
+        if (srCountdownInterval) clearInterval(srCountdownInterval);
         renderZZZCountdown();
         zzzCountdownInterval = setInterval(renderZZZCountdown, 1000);
     } else if (!isFuture) {
         if (zzzCountdownInterval) clearInterval(zzzCountdownInterval);
+        if (srCountdownInterval) clearInterval(srCountdownInterval);
         renderTestCountdown();
+        srCountdownInterval = setInterval(renderTestCountdown, 1000);
+    } else {
+        if (zzzCountdownInterval) clearInterval(zzzCountdownInterval);
+        if (srCountdownInterval) clearInterval(srCountdownInterval);
     }
 
     if (isFuture) {
@@ -614,13 +627,15 @@ async function initHome() {
     renderActions();
     renderFuturePanel();
 
-    const initialVersion = homeData.siteVersionByGame?.[homeState.activeGame] ?? homeData.siteVersion;
-    const versionEl = byId("siteVersionText");
-    if (versionEl) versionEl.textContent = initialVersion;
-
-    const gameImg = byId("gameImg");
-    if (gameImg && homeState.activeGame === "zzz") {
-        gameImg.src = './images/ZZZ%20images/emote/3.png';
+    const titleColor = document.querySelector("h3 .title color");
+    if (titleColor) {
+        const initialVersion = homeData.siteVersionByGame?.[homeState.activeGame] ?? homeData.siteVersion;
+        const isZZZ = homeState.activeGame === "zzz";
+        titleColor.innerHTML = `
+            <br />
+            <img id="gameImg" src="${isZZZ ? './images/ZZZ%20images/emote/3.png' : './images/emote/Yunli/1.png'}" class="game_img" alt="" />
+            <b id="siteVersionText">${initialVersion}</b>
+        `;
     }
 
     if (homeState.activeGame === "zzz") {
@@ -628,7 +643,7 @@ async function initHome() {
         zzzCountdownInterval = setInterval(renderZZZCountdown, 1000);
     } else {
         renderTestCountdown();
-        window.setInterval(renderTestCountdown, 1000);
+        srCountdownInterval = setInterval(renderTestCountdown, 1000);
     }
 
     const [characters, lightcones] = await Promise.all([
