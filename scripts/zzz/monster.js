@@ -70,9 +70,15 @@ function matchesCamp(monster) {
 }
 
 function filteredMonsters() {
-    return monsterData.monsters.filter(function (monster) {
-        return matchesQuery(monster) && matchesCamp(monster);
-    });
+    const typeOrder = { "S": 1, "A": 2, "B": 3, "C": 4 };
+    return monsterData.monsters
+        .filter(function (monster) {
+            return matchesQuery(monster) && matchesCamp(monster);
+        })
+        .sort(function (a, b) {
+            if (a.category !== b.category) return a.category - b.category;
+            return (typeOrder[a.type] || 5) - (typeOrder[b.type] || 5);
+        });
 }
 
 function renderWeakness(monster) {
