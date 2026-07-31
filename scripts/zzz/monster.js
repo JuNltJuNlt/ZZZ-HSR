@@ -92,7 +92,7 @@ function renderWeakness(monster) {
 }
 
 function renderMonsterCard(monster) {
-    const imagePath = `${IMAGE_ROOT}/${monster.type}/${monster.name}.png`;
+    const imagePath = `${IMAGE_ROOT}/${monster.type}/${monster.name}.webp`;
 
     return create("article", {
         className: "monster-card hover-shadow",
