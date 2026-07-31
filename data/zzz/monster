@@ -1337,5 +1337,180 @@
             "weakness": ["电"],
             "resistance": ["以太"]
         }
+        {
+            "name": "死路屠夫",
+            "type": "S",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "初生死路屠夫",
+            "type": "S",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "恶名·死路屠夫",
+            "type": "S",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "冥宁芙·双子",
+            "type": "S",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "恶名·冥宁芙",
+            "type": "S",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "杰佩托",
+            "type": "S",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "秽息司祭",
+            "type": "S",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "尼尼微",
+            "type": "S",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "基塔布鲁",
+            "type": "S",
+            "category": 1,
+            "weakness": ["风"],
+            "resistance": []
+        },
+        {
+            "name": "异构·基塔布鲁",
+            "type": "S",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "基塔布鲁·滞变畸兽",
+            "type": "S",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "猎血清道夫",
+            "type": "S",
+            "category": 2,
+            "weakness": ["电", "以太"],
+            "resistance": ["火", "风"]
+        },
+        {
+            "name": "复写体·猎血清道夫",
+            "type": "S",
+            "category": 2,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "未知复合侵蚀体",
+            "type": "S",
+            "category": 3,
+            "weakness": ["电", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "「霸主侵蚀体·庞培」",
+            "type": "S",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "恶名·庞培",
+            "type": "S",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "秽息妖鬼·名可名",
+            "type": "S",
+            "category": 3,
+            "weakness": ["以太", "物理"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "彷徨猎手",
+            "type": "S",
+            "category": 3,
+            "weakness": ["冰", "火"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "牲鬼·布林格",
+            "type": "S",
+            "category": 5,
+            "weakness": ["冰"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "「亵渎者」",
+            "type": "S",
+            "category": 5,
+            "weakness": ["电", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "魇缚者·叶释渊",
+            "type": "S",
+            "category": 5,
+            "weakness": ["冰", "物理", "风"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "太初梦魇·「始主」",
+            "type": "S",
+            "category": 5,
+            "weakness": ["物理"],
+            "resistance": ["冰", "以太"]
+        },
+        {
+            "name": "异构·太初梦魇",
+            "type": "S",
+            "category": 5,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "叛律孤歌·薇斯珀",
+            "type": "S",
+            "category": 5,
+            "weakness": ["以太", "风"],
+            "resistance": ["冰", "火"]
+        },
+        {
+            "name": "焚昼余火·法厄同",
+            "type": "S",
+            "category": 5,
+            "weakness": ["冰", "风"],
+            "resistance": ["物理"]
+        }
     ]
 }
