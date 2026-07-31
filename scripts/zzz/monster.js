@@ -22,7 +22,8 @@ const glowColors = {
 
 const state = {
     query: "",
-    camp: "all",
+    camp: [],
+    types: [],
 };
 
 let monsterData = {
@@ -37,30 +38,43 @@ async function loadMonsterData() {
     monsterData = await response.json();
 }
 
-function optionButton(option) {
-    const active = state.camp === option.value;
+function optionButton(option, kind) {
+    const isCamp = kind === "camp";
+    const active = isCamp ? state.camp.includes(option.value) : state.types.includes(option.value);
     return create("button", {
         className: active ? "monster-filter-button active" : "monster-filter-button",
         text: option.label,
         attrs: {
             type: "button",
             "data-value": option.value,
+            "data-kind": kind,
         },
     });
 }
 
 function renderFilters() {
     const categories = [
-        { value: "all", label: "全部" },
         { value: "1", label: "以太异形" },
         { value: "2", label: "暴徒" },
         { value: "3", label: "侵蚀体" },
         { value: "4", label: "叛军" },
         { value: "5", label: "其他" }
     ];
+    const types = [
+        { value: "S", label: "S" },
+        { value: "A", label: "A" },
+        { value: "B", label: "B" },
+        { value: "C", label: "C" }
+    ];
+
     byId("monsterCampFilters").replaceChildren(
         ...categories.map(function (category) {
-            return optionButton(category);
+            return optionButton(category, "camp");
+        }),
+    );
+    byId("monsterTypeFilters").replaceChildren(
+        ...types.map(function (type) {
+            return optionButton(type, "type");
         }),
     );
 }
@@ -72,15 +86,20 @@ function matchesQuery(monster) {
 }
 
 function matchesCamp(monster) {
-    if (state.camp === "all") return true;
-    return String(monster.category) === state.camp;
+    if (state.camp.length === 0) return true;
+    return state.camp.includes(String(monster.category));
+}
+
+function matchesType(monster) {
+    if (state.types.length === 0) return true;
+    return state.types.includes(monster.type);
 }
 
 function filteredMonsters() {
     const typeOrder = { "S": 1, "A": 2, "B": 3, "C": 4 };
     return monsterData.monsters
         .filter(function (monster) {
-            return matchesQuery(monster) && matchesCamp(monster);
+            return matchesQuery(monster) && matchesCamp(monster) && matchesType(monster);
         })
         .sort(function (a, b) {
             if (a.category !== b.category) return a.category - b.category;
@@ -93,23 +112,14 @@ function renderWeakness(monster) {
     const resistance = monster.resistance || [];
     const items = [];
 
-    if (weakness.length === 0 && resistance.length === 0) {
-        items.push({ element: null, type: "weak" });
-        items.push({ element: null, type: "resist" });
-    } else {
-        weakness.forEach(function (element) {
-            items.push({ element, type: "weak" });
-        });
-        if (weakness.length === 0) {
-            items.unshift({ element: null, type: "weak" });
-        }
-        if (resistance.length === 0) {
-            items.push({ element: null, type: "resist" });
-        }
-        resistance.forEach(function (element) {
-            items.push({ element, type: "resist" });
-        });
-    }
+    weakness.forEach(function (element) {
+        items.push({ element, type: "weak" });
+    });
+    resistance.forEach(function (element) {
+        items.push({ element, type: "resist" });
+    });
+
+    if (items.length === 0) return null;
 
     return create("div", {
         className: "monster-weakness",
@@ -124,9 +134,7 @@ function renderWeakness(monster) {
                     gap: "3px"
                 },
                 children: [
-                    item.element
-                        ? image(`${ELEMENT_ROOT}/${item.element}.webp`, "monster-element", item.element)
-                        : create("span", { style: { width: "27px", height: "27px", display: "block" } }),
+                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "monster-element", item.element),
                     create("span", {
                         style: {
                             width: "20px",
@@ -178,7 +186,7 @@ function renderMonsterCard(monster) {
                         text: categoryNames[monster.category] || "",
                     }),
                     renderWeakness(monster),
-                ],
+                ].filter(Boolean),
             }),
         ],
     });
@@ -206,9 +214,28 @@ function bindEvents() {
     });
 
     byId("monsterCampFilters").addEventListener("click", function (event) {
-        const button = event.target.closest(".monster-filter-button");
+        const button = event.target.closest(".monster-filter-button[data-kind='camp']");
         if (!button) return;
-        state.camp = button.dataset.value;
+        const value = button.dataset.value;
+        const idx = state.camp.indexOf(value);
+        if (idx >= 0) {
+            state.camp.splice(idx, 1);
+        } else {
+            state.camp.push(value);
+        }
+        render();
+    });
+
+    byId("monsterTypeFilters").addEventListener("click", function (event) {
+        const button = event.target.closest(".monster-filter-button[data-kind='type']");
+        if (!button) return;
+        const value = button.dataset.value;
+        const idx = state.types.indexOf(value);
+        if (idx >= 0) {
+            state.types.splice(idx, 1);
+        } else {
+            state.types.push(value);
+        }
         render();
     });
 }
