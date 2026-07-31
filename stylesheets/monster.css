@@ -189,7 +189,7 @@ html::-webkit-scrollbar-thumb:hover {
 .monster-weakness {
     display: flex;
     align-items: center;
-    gap: 5px;
+    flex-wrap: wrap;
     min-height: 30px;
     margin-top: 10px;
 }
