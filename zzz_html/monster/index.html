@@ -3,27 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="玉衡杯数据库 - 绝区零公式大全" />
-        <title>公式大全 - 玉衡杯数据库</title>
+        <meta name="description" content="玉衡杯数据库 - 绝区零怪物" />
+        <title>怪物 - 玉衡杯数据库</title>
         <link rel="stylesheet" href="../../stylesheets/thin.css" />
         <link rel="stylesheet" href="../../stylesheets/style.css" />
-        <link rel="stylesheet" href="../../stylesheets/formula.css" />
-        <script>
-            window.MathJax = {
-                tex: {
-                    inlineMath: [["\\(", "\\)"]],
-                    displayMath: [["$$", "$$"]],
-                },
-                svg: {
-                    linebreaks: { automatic: true }
-                },
-                options: {
-                    enableMenu: false
-                }
-            };
-        </script>
-        <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
-        <script type="module" src="../../scripts/zzz/formula.js"></script>
+        <link rel="stylesheet" href="../../stylesheets/monster.css" />
+        <script type="module" src="../../scripts/zzz/monster.js"></script>
     </head>
     <body class="bg">
         <container>
@@ -46,12 +31,23 @@
                 </em>
             </h3>
 
-            <div class="content formulae-content">
-                <section class="formulae-hero">
-                    <h1>公式大全</h1>
+            <div class="content monster-content">
+                <section class="monster-filter-panel">
+                    <h1>怪物</h1>
+                    <div class="monster-filter-group monster-search-group">
+                        <p>搜索</p>
+                        <input id="monsterSearch" type="text" placeholder="搜索名称" autocomplete="off" />
+                    </div>
+                    <div class="monster-filter-group">
+                        <p>阵营</p>
+                        <div id="monsterCampFilters" class="monster-filter-buttons"></div>
+                    </div>
                 </section>
 
-                <section id="formulaeGrid" class="formulae-grid"></section>
+                <div class="monster-result-line">
+                    <span id="monsterCount"></span>
+                </div>
+                <section id="monsterGrid" class="monster-grid"></section>
             </div>
         </container>
     </body>
