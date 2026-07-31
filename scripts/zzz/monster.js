@@ -84,42 +84,45 @@ function filteredMonsters() {
 function renderWeakness(monster) {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
-    const all = [...weakness, ...resistance];
+    const items = [];
 
-    if (all.length === 0) {
-        const bar = create("span", {
-            style: {
-                width: "27px",
-                height: "4px",
-                borderRadius: "2px",
-                display: "inline-block"
-            }
+    if (weakness.length === 0 && resistance.length === 0) {
+        items.push({ element: null, type: "weak" });
+        items.push({ element: null, type: "resist" });
+    } else {
+        weakness.forEach(function (element) {
+            items.push({ element, type: "weak" });
         });
-        return create("div", {
-            className: "monster-weakness",
-            style: { justifyContent: "center", gap: "8px" },
-            children: [bar]
+        if (weakness.length === 0) {
+            items.unshift({ element: null, type: "weak" });
+        }
+        if (resistance.length === 0) {
+            items.push({ element: null, type: "resist" });
+        }
+        resistance.forEach(function (element) {
+            items.push({ element, type: "resist" });
         });
     }
 
     return create("div", {
         className: "monster-weakness",
-        style: { justifyContent: "center", gap: "12px" },
-        children: all.map(function (element) {
-            const isWeak = weakness.includes(element);
-            const barColor = isWeak ? "#4CAF50" : "#C62828";
+        style: { justifyContent: "center", gap: "6px" },
+        children: items.map(function (item) {
+            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
             return create("div", {
                 style: {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    gap: "4px"
+                    gap: "3px"
                 },
                 children: [
-                    image(`${ELEMENT_ROOT}/${element}.png`, "monster-element", element),
+                    item.element
+                        ? image(`${ELEMENT_ROOT}/${item.element}.webp`, "monster-element", item.element)
+                        : create("span", { style: { width: "27px", height: "27px", display: "block" } }),
                     create("span", {
                         style: {
-                            width: "24px",
+                            width: "20px",
                             height: "4px",
                             borderRadius: "2px",
                             backgroundColor: barColor,
