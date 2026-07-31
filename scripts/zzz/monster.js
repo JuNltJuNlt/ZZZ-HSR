@@ -13,6 +13,13 @@ const categoryNames = {
     "5": "其他"
 };
 
+const glowColors = {
+    "S": "rgba(220, 50, 50, 0.25)",
+    "A": "rgba(100, 180, 255, 0.25)",
+    "B": "rgba(220, 180, 50, 0.25)",
+    "C": "rgba(160, 160, 160, 0.25)"
+};
+
 const state = {
     query: "",
     camp: "all",
@@ -137,9 +144,14 @@ function renderWeakness(monster) {
 
 function renderMonsterCard(monster) {
     const imagePath = `${IMAGE_ROOT}/${monster.type}/${monster.name}.webp`;
+    const glow = glowColors[monster.type] || "rgba(160, 160, 160, 0.2)";
 
     return create("article", {
         className: "monster-card hover-shadow",
+        style: {
+            boxShadow: `0 0 8px 2px ${glow}`,
+            transition: "box-shadow 0.3s ease"
+        },
         children: [
             create("div", {
                 className: "monster-image-wrap",
