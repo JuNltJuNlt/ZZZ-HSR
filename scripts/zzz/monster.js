@@ -82,18 +82,53 @@ function filteredMonsters() {
 }
 
 function renderWeakness(monster) {
-    if (!monster.weakness || monster.weakness.length === 0) {
-        return create("p", {
-            className: "monster-empty-weak",
-            text: "无弱点",
+    const weakness = monster.weakness || [];
+    const resistance = monster.resistance || [];
+    const all = [...weakness, ...resistance];
+
+    if (all.length === 0) {
+        const bar = create("span", {
+            style: {
+                width: "27px",
+                height: "4px",
+                borderRadius: "2px",
+                display: "inline-block"
+            }
+        });
+        return create("div", {
+            className: "monster-weakness",
+            style: { justifyContent: "center", gap: "8px" },
+            children: [bar]
         });
     }
 
     return create("div", {
         className: "monster-weakness",
-        children: monster.weakness.map(function (element) {
-            return image(`${ELEMENT_ROOT}/${element}.png`, "monster-element", element);
-        }),
+        style: { justifyContent: "center", gap: "12px" },
+        children: all.map(function (element) {
+            const isWeak = weakness.includes(element);
+            const barColor = isWeak ? "#4CAF50" : "#C62828";
+            return create("div", {
+                style: {
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    gap: "4px"
+                },
+                children: [
+                    image(`${ELEMENT_ROOT}/${element}.png`, "monster-element", element),
+                    create("span", {
+                        style: {
+                            width: "24px",
+                            height: "4px",
+                            borderRadius: "2px",
+                            backgroundColor: barColor,
+                            display: "block"
+                        }
+                    })
+                ]
+            });
+        })
     });
 }
 
