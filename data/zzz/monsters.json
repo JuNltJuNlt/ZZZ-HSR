@@ -1336,7 +1336,7 @@
             "category": 5,
             "weakness": ["电"],
             "resistance": ["以太"]
-        }
+        },
         {
             "name": "死路屠夫",
             "type": "S",
