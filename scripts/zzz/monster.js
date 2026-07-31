@@ -1,0 +1,169 @@
+import { initMenu } from "../menu.js";
+import { byId, create, image } from "../tools.js";
+
+const DATA_URL = new URL("../../data/zzz/monsters.json", import.meta.url);
+const IMAGE_ROOT = "../../images/ZZZ%20images/monster";
+const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
+
+const categoryNames = {
+    "1": "以太异形",
+    "2": "暴徒",
+    "3": "侵蚀体",
+    "4": "叛军",
+    "5": "其他"
+};
+
+const state = {
+    query: "",
+    camp: "all",
+};
+
+let monsterData = {
+    monsters: [],
+};
+
+async function loadMonsterData() {
+    const response = await fetch(DATA_URL);
+    if (!response.ok) {
+        throw new Error(`无法读取怪物数据：${DATA_URL}`);
+    }
+    monsterData = await response.json();
+}
+
+function optionButton(option) {
+    const active = state.camp === option.value;
+    return create("button", {
+        className: active ? "monster-filter-button active" : "monster-filter-button",
+        text: option.label,
+        attrs: {
+            type: "button",
+            "data-value": option.value,
+        },
+    });
+}
+
+function renderFilters() {
+    const categories = [
+        { value: "all", label: "全部" },
+        { value: "1", label: "以太异形" },
+        { value: "2", label: "暴徒" },
+        { value: "3", label: "侵蚀体" },
+        { value: "4", label: "叛军" },
+        { value: "5", label: "其他" }
+    ];
+    byId("monsterCampFilters").replaceChildren(
+        ...categories.map(function (category) {
+            return optionButton(category);
+        }),
+    );
+}
+
+function matchesQuery(monster) {
+    if (!state.query) return true;
+    const query = state.query.toLowerCase();
+    return monster.name.toLowerCase().includes(query);
+}
+
+function matchesCamp(monster) {
+    if (state.camp === "all") return true;
+    return String(monster.category) === state.camp;
+}
+
+function filteredMonsters() {
+    return monsterData.monsters.filter(function (monster) {
+        return matchesQuery(monster) && matchesCamp(monster);
+    });
+}
+
+function renderWeakness(monster) {
+    if (!monster.weakness || monster.weakness.length === 0) {
+        return create("p", {
+            className: "monster-empty-weak",
+            text: "无弱点",
+        });
+    }
+
+    return create("div", {
+        className: "monster-weakness",
+        children: monster.weakness.map(function (element) {
+            return image(`${ELEMENT_ROOT}/${element}.png`, "monster-element", element);
+        }),
+    });
+}
+
+function renderMonsterCard(monster) {
+    const imagePath = `${IMAGE_ROOT}/${monster.type}/${monster.name}.png`;
+
+    return create("article", {
+        className: "monster-card hover-shadow",
+        children: [
+            create("div", {
+                className: "monster-image-wrap",
+                children: [image(imagePath, "monster-image", monster.name)],
+            }),
+            create("div", {
+                className: "monster-card-body",
+                children: [
+                    create("p", {
+                        className: "monster-name",
+                        text: monster.name,
+                    }),
+                    create("div", {
+                        className: "monster-meta",
+                        children: [
+                            create("span", {
+                                className: "monster-rank",
+                                text: monster.type,
+                            }),
+                        ],
+                    }),
+                    create("p", {
+                        className: "monster-camp",
+                        text: categoryNames[monster.category] || "",
+                    }),
+                    renderWeakness(monster),
+                ],
+            }),
+        ],
+    });
+}
+
+function renderMonsters() {
+    const monsters = filteredMonsters();
+    byId("monsterCount").textContent = `共 ${monsters.length} 个怪物`;
+    byId("monsterGrid").replaceChildren(
+        ...monsters.map(function (monster) {
+            return renderMonsterCard(monster);
+        }),
+    );
+}
+
+function render() {
+    renderFilters();
+    renderMonsters();
+}
+
+function bindEvents() {
+    byId("monsterSearch").addEventListener("input", function (event) {
+        state.query = event.currentTarget.value.trim();
+        renderMonsters();
+    });
+
+    byId("monsterCampFilters").addEventListener("click", function (event) {
+        const button = event.target.closest(".monster-filter-button");
+        if (!button) return;
+        state.camp = button.dataset.value;
+        render();
+    });
+}
+
+async function init() {
+    initMenu();
+    bindEvents();
+    await loadMonsterData();
+    render();
+}
+
+init().catch(function (error) {
+    console.error(error);
+});
