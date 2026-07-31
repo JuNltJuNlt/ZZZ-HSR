@@ -1,0 +1,1341 @@
+{
+    "categories": {
+        "1": "以太异形",
+        "2": "暴徒",
+        "3": "侵蚀体",
+        "4": "叛军",
+        "5": "其他"
+    },
+    "monsters": [
+        {
+            "name": "提尔锋",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "提尔锋·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "提尔锋（寄生态）",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "阿佩卡",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "阿佩卡·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "阿佩卡（寄生态）",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "萨提尔",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "萨提尔·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "霍普利泰",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "霍普利泰·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "雷蛛",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "雷蛛·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "绽壳虫",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "曼德拉",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "曼德拉·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "恶灵",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "恶灵·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "游魂",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "游魂·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "眼魔引擎",
+            "type": "C",
+            "category": 1,
+            "weakness": ["电", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "蜕生·眼魔引擎",
+            "type": "C",
+            "category": 1,
+            "weakness": ["物理", "风"],
+            "resistance": []
+        },
+        {
+            "name": "弗瑟尔",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "弗瑟尔·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "索迪代斯",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "索迪代斯·蓄能型",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "库鲁鲁",
+            "type": "C",
+            "category": 1,
+            "weakness": ["冰", "风"],
+            "resistance": []
+        },
+        {
+            "name": "骸蜂",
+            "type": "C",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "离子体·瑟托迪亚",
+            "type": "C",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": []
+        },
+        {
+            "name": "离子体·纳塞勒亚",
+            "type": "C",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": []
+        },
+        {
+            "name": "刺椎原虫",
+            "type": "C",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": []
+        },
+        {
+            "name": "离子体·多佩冈亚",
+            "type": "C",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "赫斯克龙",
+            "type": "C",
+            "category": 1,
+            "weakness": ["火", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "秽息行者·阿卡沃尔",
+            "type": "C",
+            "category": 1,
+            "weakness": ["以太", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "掠夺者",
+            "type": "C",
+            "category": 2,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "劫掠者",
+            "type": "C",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "纵火犯",
+            "type": "C",
+            "category": 2,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "焚毁狂",
+            "type": "C",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "偷猎者",
+            "type": "C",
+            "category": 2,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "盗猎客",
+            "type": "C",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "袭击者",
+            "type": "C",
+            "category": 2,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "偷袭者",
+            "type": "C",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "秽蚀·雷蛛",
+            "type": "C",
+            "category": 3,
+            "weakness": ["电", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "畸变骸蚁",
+            "type": "C",
+            "category": 3,
+            "weakness": ["以太"],
+            "resistance": []
+        },
+        {
+            "name": "秽息残兵·盾卫",
+            "type": "C",
+            "category": 3,
+            "weakness": ["火", "电"],
+            "resistance": []
+        },
+        {
+            "name": "秽息残兵·炮手",
+            "type": "C",
+            "category": 3,
+            "weakness": ["火", "电"],
+            "resistance": []
+        },
+        {
+            "name": "恶毒打手",
+            "type": "C",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "贪婪射手",
+            "type": "C",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": []
+        },
+        {
+            "name": "秽蚀·多佩冈亚",
+            "type": "C",
+            "category": 3,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "颂礼赞者",
+            "type": "C",
+            "category": 3,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "掠袭猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "袭扰猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "轻装猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "先锋猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "新晋猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "整训猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "戍卫猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "巡防猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "掷弹猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "轰击猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "黄金邦布",
+            "type": "C",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "白金邦布",
+            "type": "C",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "空域侦巡布",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火", "风"],
+            "resistance": []
+        },
+        {
+            "name": "蜕生·空域侦巡布",
+            "type": "C",
+            "category": 5,
+            "weakness": ["以太", "风"],
+            "resistance": []
+        },
+        {
+            "name": "秽息原牲",
+            "type": "C",
+            "category": 5,
+            "weakness": ["以太", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "特勤镇暴布",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火", "风"],
+            "resistance": []
+        },
+        {
+            "name": "蜕生·特勤镇暴布",
+            "type": "C",
+            "category": 5,
+            "weakness": ["以太", "风"],
+            "resistance": []
+        },
+        {
+            "name": "秩序护卫",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "巡逻者轻型",
+            "type": "C",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "巡逻者中型",
+            "type": "C",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "特勤护卫",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "法布提",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "法布提·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "离子体·法布提",
+            "type": "B",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "哈提",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "哈提·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "地精",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "地精·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "装甲哈提",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "装甲哈提·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "铁道地精",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "铁道地精·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "阿劳恩",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "阿劳恩·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "泰拉斯奎祸车",
+            "type": "B",
+            "category": 1,
+            "weakness": ["电", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "蜕生·泰拉斯奎祸车",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "离子体·普格努斯",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "拉赫穆",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "怒蛇",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火", "风"],
+            "resistance": []
+        },
+        {
+            "name": "杜拉罕",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "杜拉罕·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "初生杜拉罕",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "离子体·杜拉罕",
+            "type": "B",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "塔纳托斯",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "塔纳托斯·蓄能型",
+            "type": "B",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "离子体·塔纳托斯",
+            "type": "B",
+            "category": 1,
+            "weakness": ["以太"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "班尼雷克",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "渔人蟹",
+            "type": "B",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "魁梧施虐者",
+            "type": "B",
+            "category": 2,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "通缉虐待狂",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "魁梧打手",
+            "type": "B",
+            "category": 2,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "通缉打手",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "「怒汉」",
+            "type": "B",
+            "category": 2,
+            "weakness": ["电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "莫尔斯",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "多佩冈亚·莫尔斯",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "波可娜",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "多佩冈亚·波可娜",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "巴罗姆",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "多佩冈亚·巴罗姆",
+            "type": "B",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "狂乱暴徒",
+            "type": "B",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "盛怒恶霸",
+            "type": "B",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "凶心疯汉",
+            "type": "B",
+            "category": 3,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "秉火领颂",
+            "type": "B",
+            "category": 3,
+            "weakness": ["火", "物理"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "秽蚀·赫斯克龙",
+            "type": "B",
+            "category": 3,
+            "weakness": ["冰", "火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "秽蚀·「捷足巡游者」",
+            "type": "B",
+            "category": 3,
+            "weakness": ["电", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "秽蚀·「重装侵袭者」",
+            "type": "B",
+            "category": 3,
+            "weakness": ["电", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "秽蚀·特里诺斯",
+            "type": "B",
+            "category": 3,
+            "weakness": ["以太"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "秽蚀·狂乱暴徒",
+            "type": "B",
+            "category": 3,
+            "weakness": ["以太"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "秽蚀·盛怒恶霸",
+            "type": "B",
+            "category": 3,
+            "weakness": ["火", "物理"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "「重装侵袭者」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "「重装侵袭者Ⅱ型」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "「捷足巡游者」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "「捷足巡游者Ⅱ型」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "重装炮手",
+            "type": "B",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "突击炮手",
+            "type": "B",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "「卫士」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "「卫士Ⅱ型」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "城防戍卫布",
+            "type": "B",
+            "category": 5,
+            "weakness": ["电", "风"],
+            "resistance": []
+        },
+        {
+            "name": "蜕生·城防戍卫布",
+            "type": "B",
+            "category": 5,
+            "weakness": ["以太", "风"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "恶名·哈提",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "哈提头犬·蓄能型",
+            "type": "A",
+            "category": 1,
+            "weakness": ["火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "恶名·装甲哈提",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "恶名·杜拉罕",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "恶名·塔纳托斯",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "冥宁芙·灰纱",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "冥宁芙·黑纱",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "秽息行者·蝎骸",
+            "type": "A",
+            "category": 1,
+            "weakness": ["以太", "物理"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "蜕生·蝎骸",
+            "type": "A",
+            "category": 1,
+            "weakness": ["电", "风"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "色雷斯人",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "秽蚀·色雷斯人",
+            "type": "A",
+            "category": 1,
+            "weakness": ["以太", "风"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "帕里库斯",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "熔狱行赭",
+            "type": "A",
+            "category": 1,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "乌利迪姆",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "风"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "特佩什",
+            "type": "A",
+            "category": 1,
+            "weakness": ["冰", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "秽息蚀者·阿瓦鲁斯",
+            "type": "A",
+            "category": 1,
+            "weakness": ["火", "以太"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "蜕生·阿瓦鲁斯",
+            "type": "A",
+            "category": 1,
+            "weakness": ["物理", "风"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "祸首·通缉打手",
+            "type": "A",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "蛮横力士",
+            "type": "A",
+            "category": 2,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "伐木机",
+            "type": "A",
+            "category": 2,
+            "weakness": ["电"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "赫由托",
+            "type": "A",
+            "category": 3,
+            "weakness": ["冰", "火"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "秽蚀·蛮横力士",
+            "type": "A",
+            "category": 3,
+            "weakness": ["以太", "风"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "「护戍盾卫」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "「护戍盾卫Ω型」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "特战强袭轰击者",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "「卫士Ⅲ型」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "「提丰·挑战者型」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "「提丰·重击者型」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "「提丰·破坏者型」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "骸鸟",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "秽蚀·「骸鸟」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["火", "电"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "缄枢",
+            "type": "A",
+            "category": 5,
+            "weakness": ["电", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "格莱特",
+            "type": "A",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "格莱特·蓄能型",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "格莱特·超频型",
+            "type": "A",
+            "category": 5,
+            "weakness": ["以太"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "汉斯",
+            "type": "A",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "汉斯·蓄能型",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "汉斯·超频型",
+            "type": "A",
+            "category": 5,
+            "weakness": ["以太"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "星期五",
+            "type": "A",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "星期五·蓄能型",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "星期五·超频型",
+            "type": "A",
+            "category": 5,
+            "weakness": ["以太"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "终曲之愿·爱芮",
+            "type": "A",
+            "category": 5,
+            "weakness": ["以太", "物理"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "幻矢单元",
+            "type": "A",
+            "category": 5,
+            "weakness": ["以太", "物理"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "简·杜",
+            "type": "A",
+            "category": 5,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "多佩冈亚·简",
+            "type": "A",
+            "category": 5,
+            "weakness": ["物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "秽蚀·简",
+            "type": "A",
+            "category": 5,
+            "weakness": ["物理", "风"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "暗渊惩戒者",
+            "type": "A",
+            "category": 5,
+            "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "多佩冈亚·暗渊惩戒者",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "秽蚀·暗渊惩戒者",
+            "type": "A",
+            "category": 5,
+            "weakness": ["物理", "风"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "牲鬼·凶魁愚者",
+            "type": "A",
+            "category": 5,
+            "weakness": ["电", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "「变节者」",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "多佩冈亚·「变节者」",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "秽蚀·多佩冈亚·「变节者」",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "溺想者·狛野真斗",
+            "type": "A",
+            "category": 5,
+            "weakness": ["冰"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "多佩冈亚·狛野真斗",
+            "type": "A",
+            "category": 5,
+            "weakness": ["冰"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "秽蚀·狛野真斗",
+            "type": "A",
+            "category": 5,
+            "weakness": ["冰", "物理"],
+            "resistance": []
+        },
+        {
+            "name": "牲鬼·卫律使者",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "物理"],
+            "resistance": ["冰", "风"]
+        },
+        {
+            "name": "遴命者·「骸鸟」",
+            "type": "A",
+            "category": 5,
+            "weakness": ["冰", "物理"],
+            "resistance": ["电"]
+        },
+        {
+            "name": "闪耀之誓·比利",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "多佩冈亚·星辉·比利",
+            "type": "A",
+            "category": 5,
+            "weakness": ["火", "电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "「空域戒戍者」",
+            "type": "A",
+            "category": 5,
+            "weakness": ["冰", "风"],
+            "resistance": ["以太"]
+        },
+        {
+            "name": "魔神黄金邦布",
+            "type": "A",
+            "category": 5,
+            "weakness": ["电"],
+            "resistance": ["以太"]
+        }
+    ]
+}
