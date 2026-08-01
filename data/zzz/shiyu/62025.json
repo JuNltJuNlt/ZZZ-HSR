@@ -1,0 +1,1005 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-07-04 04:00:00",
+  "end_time": "2025-07-18 03:59:59",
+  "zone": {
+    "6202501": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 202350,
+                "attack": 1406,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 202350,
+                "attack": 1718,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 896501,
+                "attack": 2395,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 1302085,
+                "attack": 2291,
+                "defense": 592,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1240481,
+                "attack": 2395,
+                "defense": 640,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 223131,
+                "attack": 1979,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 223131,
+                "attack": 1797,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 1289116,
+                "attack": 2760,
+                "defense": 533,
+                "stun": 6857,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202502": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 245504,
+                "attack": 1459,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 245504,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1087690,
+                "attack": 2486,
+                "defense": 649,
+                "stun": 4963,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "Ruthless Fiend",
+                "hp": 1505027,
+                "attack": 2243,
+                "defense": 585,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 14305,
+                "attack": 1297,
+                "defense": 585,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 14305,
+                "attack": 1297,
+                "defense": 585,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 1053180,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 4033,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 877054,
+                "attack": 1432,
+                "defense": 585,
+                "stun": 4344,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202503": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "Hati - Energized",
+                "hp": 1568737,
+                "attack": 2546,
+                "defense": 745,
+                "stun": 4163,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "Fossor - Energized",
+                "hp": 403238,
+                "attack": 2103,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus - Energized",
+                "hp": 403238,
+                "attack": 1909,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin - Energized",
+                "hp": 1864640,
+                "attack": 2933,
+                "defense": 621,
+                "stun": 7264,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 2117662,
+                "attack": 2684,
+                "defense": 621,
+                "stun": 4706,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1957858,
+                "attack": 3071,
+                "defense": 800,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 299099,
+                "attack": 1660,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 299099,
+                "attack": 1660,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202504": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 386364,
+                "attack": 1548,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Looter",
+                "hp": 454463,
+                "attack": 1806,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 2875919,
+                "attack": 2722,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 3079934,
+                "attack": 3324,
+                "defense": 751,
+                "stun": 14292,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 2875919,
+                "attack": 3324,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "attack": 1548,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 1705009,
+                "attack": 3038,
+                "defense": 812,
+                "stun": 4918,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1826574,
+                "attack": 3324,
+                "defense": 812,
+                "stun": 5296,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "attack": 1720,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "attack": 1806,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 2549494,
+                "attack": 3467,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202505": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 665528,
+                "attack": 1584,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 665528,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 3054253,
+                "attack": 3108,
+                "defense": 794,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 4405181,
+                "attack": 2962,
+                "defense": 794,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ruthless Fiend",
+                "hp": 4234558,
+                "attack": 2786,
+                "defense": 715,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 3964566,
+                "attack": 2962,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 3563214,
+                "attack": 3255,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 733874,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 733874,
+                "attack": 2023,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 4391609,
+                "attack": 3548,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202506": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 591850,
+                "attack": 1951,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 591850,
+                "attack": 1672,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 10829310,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Miasma Ravager - Avarus",
+                "hp": 15789142,
+                "attack": 4025,
+                "defense": 953,
+                "stun": 14499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202507": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001197": {
+          "title": "Blazing and Radiant Strike",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 30%.\n· When enemies are Stunned, the whole squad's Sheer DMG increases by 15% and CRIT DMG increases by 20% for 25s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62025071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Rampant Brute",
+                "hp": 13520094,
+                "attack": 4304,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Flame Cantor",
+                "hp": 7001489,
+                "attack": 4141,
+                "defense": 794,
+                "stun": 9779,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "Exalting Hymnist",
+                "hp": 1234172,
+                "attack": 2576,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Fossor",
+                "hp": 656944,
+                "attack": 2479,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 656944,
+                "attack": 2250,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Palicus",
+                "hp": 8916035,
+                "attack": 4696,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Palicus",
+                "hp": 8916035,
+                "attack": 4696,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

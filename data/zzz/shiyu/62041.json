@@ -1,0 +1,744 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2026-02-06 04:00:00",
+  "end_time": "2026-02-20 03:59:59",
+  "zone": {
+    "6204101": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001411": {
+          "title": "Thunderclap Shimmer",
+          "desc": "· Agent CRIT DMG increases by 20%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent <color=#F0D12B>Physical DMG</color> increases by 15%, and attacks ignore 10% of enemy's DEF."
+        }
+      },
+      "layer_room": {
+        "62041011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 297520,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1550049,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1165024,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62041012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1550601,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1307428,
+                "defense": 687,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 206882,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 206882,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204102": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001411": {
+          "title": "Thunderclap Shimmer",
+          "desc": "· Agent CRIT DMG increases by 20%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent <color=#F0D12B>Physical DMG</color> increases by 15%, and attacks ignore 10% of enemy's DEF."
+        }
+      },
+      "layer_room": {
+        "62041021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2307710,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 2306888,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62041022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "Blastcrawler",
+                "hp": 147231,
+                "defense": 593,
+                "stun": 519,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1779654,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 2015443,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 316121,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 415098,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 415098,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204103": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001411": {
+          "title": "Thunderclap Shimmer",
+          "desc": "· Agent CRIT DMG increases by 20%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent <color=#F0D12B>Physical DMG</color> increases by 15%, and attacks ignore 10% of enemy's DEF."
+        }
+      },
+      "layer_room": {
+        "62041031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 1095964,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 5873413,
+                "defense": 794,
+                "stun": 7793,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 4422534,
+                "defense": 794,
+                "stun": 5946,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62041032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "杜拉罕",
+                "hp": 4988499,
+                "defense": 922,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 4988499,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 6148252,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204104": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001411": {
+          "title": "Thunderclap Shimmer",
+          "desc": "· Agent CRIT DMG increases by 20%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent <color=#F0D12B>Physical DMG</color> increases by 15%, and attacks ignore 10% of enemy's DEF."
+        }
+      },
+      "layer_room": {
+        "62041041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 1013048,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 15161034,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Wanted Intimidator",
+                "hp": 4808471,
+                "defense": 794,
+                "stun": 6350,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62041042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Tepes",
+                "hp": 15713672,
+                "defense": 953,
+                "stun": 17438,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204105": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001411": {
+          "title": "Thunderclap Shimmer",
+          "desc": "· Agent CRIT DMG increases by 20%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent <color=#F0D12B>Physical DMG</color> increases by 15%, and attacks ignore 10% of enemy's DEF."
+        },
+        "62001412": {
+          "title": "Chaotic Blitz",
+          "desc": "· Agent <color=#2EB6FF>Electric DMG</color> increases by 15%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> deal 20% increased DMG and ignore 10% of enemy All-DMG RES on hit."
+        },
+        "62001413": {
+          "title": "Everlasting Night Flame",
+          "desc": "· Agent <color=#FF5521>Fire DMG</color> increases by 20% and Agent ATK increases by 10%.\n· The Agent gains an additional 40 initial Energy and deals 40% bonus CRIT DMG."
+        }
+      },
+      "layer_room": {}
+    },
+    "62041051": {
+      "name": "Room 1",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001411": {
+          "title": "Thunderclap Shimmer",
+          "desc": "· Agent CRIT DMG increases by 20%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent <color=#F0D12B>Physical DMG</color> increases by 15%, and attacks ignore 10% of enemy's DEF."
+        }
+      },
+      "layer_room": {
+        "62041051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 6081718,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 6081718,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Sacrifice - Heretic Jester",
+                "hp": 26986581,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62041052": {
+      "name": "Room 2",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001412": {
+          "title": "Chaotic Blitz",
+          "desc": "· Agent <color=#2EB6FF>Electric DMG</color> increases by 15%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> deal 20% increased DMG and ignore 10% of enemy All-DMG RES on hit."
+        }
+      },
+      "layer_room": {
+        "62041052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 4765401,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "突击炮手",
+                "hp": 3732789,
+                "defense": 858,
+                "stun": 7121,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "格莱特",
+                "hp": 20279186,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62041053": {
+      "name": "Room 3",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001413": {
+          "title": "Everlasting Night Flame",
+          "desc": "· Agent <color=#FF5521>Fire DMG</color> increases by 20% and Agent ATK increases by 10%.\n· The Agent gains an additional 40 initial Energy and deals 40% bonus CRIT DMG."
+        }
+      },
+      "layer_room": {
+        "62041053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "狂乱暴徒",
+                "hp": 3749600,
+                "defense": 794,
+                "stun": 7112,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 5408088,
+                "defense": 794,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasma Ravager - Avarus",
+                "hp": 31199004,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

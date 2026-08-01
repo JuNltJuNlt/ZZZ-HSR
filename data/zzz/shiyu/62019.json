@@ -1,0 +1,1025 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-04-11 04:00:00",
+  "end_time": "2025-04-25 03:59:59",
+  "zone": {
+    "6201901": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 195124,
+                "attack": 1406,
+                "defense": 510,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 1255582,
+                "attack": 2291,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1196178,
+                "attack": 2395,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 1129953,
+                "attack": 2525,
+                "defense": 533,
+                "stun": 4363,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 195124,
+                "attack": 1562,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 195124,
+                "attack": 1562,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201902": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 236736,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1144883,
+                "attack": 2513,
+                "defense": 701,
+                "stun": 4935,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 236736,
+                "attack": 1621,
+                "defense": 598,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1223679,
+                "attack": 2135,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "Hati",
+                "hp": 1015566,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 4033,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 845730,
+                "attack": 1432,
+                "defense": 585,
+                "stun": 4344,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 152422,
+                "attack": 1702,
+                "defense": 468,
+                "stun": 1172,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 152422,
+                "attack": 1702,
+                "defense": 468,
+                "stun": 1172,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 261047,
+                "attack": 2054,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 261047,
+                "attack": 1865,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201903": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 322662,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 322662,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1667831,
+                "attack": 2186,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 2076270,
+                "attack": 2684,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 322662,
+                "attack": 1826,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 322662,
+                "attack": 1494,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 1423896,
+                "attack": 2933,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 322662,
+                "attack": 1660,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Metro Goblin",
+                "hp": 1727522,
+                "attack": 3071,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 270961,
+                "attack": 1743,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201904": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2169106,
+                "attack": 3038,
+                "defense": 812,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 400997,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1699083,
+                "attack": 3038,
+                "defense": 812,
+                "stun": 6060,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 340910,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 374926,
+                "attack": 1691,
+                "defense": 601,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 340910,
+                "attack": 1548,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 340910,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "恶灵",
+                "hp": 2256505,
+                "attack": 2894,
+                "defense": 751,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ruthless Fiend",
+                "hp": 2169106,
+                "attack": 2722,
+                "defense": 676,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201905": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "盛怒恶霸",
+                "hp": 2986333,
+                "attack": 2815,
+                "defense": 858,
+                "stun": 7793,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "「卫士」",
+                "hp": 3726411,
+                "attack": 3108,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 688892,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 585665,
+                "attack": 1760,
+                "defense": 731,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 3135628,
+                "attack": 2668,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 3488818,
+                "attack": 2962,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 2768788,
+                "attack": 3401,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 3135628,
+                "attack": 3255,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 645809,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 645809,
+                "attack": 2023,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201906": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "新晋猎兵",
+                "hp": 520828,
+                "attack": 2043,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 700311,
+                "attack": 1827,
+                "defense": 636,
+                "stun": 2079,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Specialized Assault Bomber",
+                "hp": 8633766,
+                "attack": 4458,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "格莱特",
+                "hp": 9981980,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 15816,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "Fossor - Energized",
+                "hp": 702166,
+                "attack": 2353,
+                "defense": 636,
+                "stun": 2183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus - Energized",
+                "hp": 702166,
+                "attack": 2136,
+                "defense": 636,
+                "stun": 2183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201907": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001191": {
+          "title": "Oppressive Shackles",
+          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+        }
+      },
+      "layer_room": {
+        "62019071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "戍卫猎兵",
+                "hp": 598663,
+                "attack": 1957,
+                "defense": 731,
+                "stun": 1410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Shielded Defender Omega",
+                "hp": 10953985,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 658370,
+                "attack": 1924,
+                "defense": 636,
+                "stun": 1481,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Fossor",
+                "hp": 544325,
+                "attack": 2479,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 544325,
+                "attack": 2250,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Palicus",
+                "hp": 7387572,
+                "attack": 4696,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Palicus",
+                "hp": 7387572,
+                "attack": 4696,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

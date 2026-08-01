@@ -1,0 +1,879 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-12-05 04:00:00",
+  "end_time": "2025-12-19 03:59:59",
+  "zone": {
+    "6203601": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1240481,
+                "attack": 2395,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1045942,
+                "attack": 2525,
+                "defense": 687,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 165506,
+                "attack": 1562,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 165506,
+                "attack": 1562,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 202350,
+                "attack": 1406,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 238016,
+                "attack": 1640,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1240039,
+                "attack": 2187,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 932019,
+                "attack": 1979,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203602": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1505027,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 877054,
+                "attack": 1432,
+                "defense": 585,
+                "stun": 4344,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 338842,
+                "attack": 2135,
+                "defense": 468,
+                "stun": 1842,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tyrfing (Infested)",
+                "hp": 338842,
+                "attack": 2135,
+                "defense": 468,
+                "stun": 1842,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hitchspiker",
+                "hp": 69199,
+                "attack": 1946,
+                "defense": 468,
+                "stun": 1228,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 1505027,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 288775,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 245504,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 1504491,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203603": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "Blastcrawler",
+                "hp": 143025,
+                "attack": 1218,
+                "defense": 593,
+                "stun": 519,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1728807,
+                "attack": 3210,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 1957858,
+                "attack": 3071,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 307089,
+                "attack": 1743,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 403238,
+                "attack": 2103,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 403238,
+                "attack": 1909,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 2117662,
+                "attack": 2684,
+                "defense": 621,
+                "stun": 4706,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1957858,
+                "attack": 3071,
+                "defense": 800,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 299099,
+                "attack": 1660,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 299099,
+                "attack": 1660,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203604": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "attack": 1548,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2368553,
+                "attack": 2636,
+                "defense": 812,
+                "stun": 8322,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 2068579,
+                "attack": 3181,
+                "defense": 872,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "attack": 1720,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "attack": 1806,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 2549494,
+                "attack": 3467,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 2301579,
+                "attack": 2894,
+                "defense": 812,
+                "stun": 5562,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ionized - Pugnus",
+                "hp": 3810451,
+                "attack": 3639,
+                "defense": 812,
+                "stun": 12834,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasma Spawn",
+                "hp": 672267,
+                "attack": 2063,
+                "defense": 601,
+                "stun": 1980,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203605": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "Fossor",
+                "hp": 1291618,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 1291618,
+                "attack": 2023,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic - Trinox",
+                "hp": 12229418,
+                "attack": 3900,
+                "defense": 858,
+                "stun": 11763,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 8718846,
+                "attack": 3401,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 14420220,
+                "attack": 3900,
+                "defense": 794,
+                "stun": 11046,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203606": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Tepes",
+                "hp": 19754331,
+                "attack": 4458,
+                "defense": 953,
+                "stun": 17438,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "祸首·通缉打手",
+                "hp": 19059586,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Rampant Brute",
+                "hp": 20231099,
+                "attack": 4086,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203607": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001361": {
+          "title": "Deceitful Steps",
+          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+        }
+      },
+      "layer_room": {
+        "62036071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Haytor",
+                "hp": 28454742,
+                "attack": 3522,
+                "defense": 1588,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62036072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 5631838,
+                "attack": 2593,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Miasmic - Doppelganger - The Defector",
+                "hp": 24416430,
+                "attack": 3522,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

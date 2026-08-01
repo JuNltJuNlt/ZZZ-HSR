@@ -1,0 +1,965 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2024-09-16 04:00:00",
+  "end_time": "2024-10-01 03:59:59",
+  "zone": {
+    "6200501": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 118219,
+                "attack": 1406,
+                "defense": 510,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 930061,
+                "attack": 2291,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 8422,
+                "attack": 1250,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 683308,
+                "attack": 3020,
+                "defense": 640,
+                "stun": 4714,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 118219,
+                "attack": 1562,
+                "defense": 545,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 516350,
+                "attack": 1380,
+                "defense": 533,
+                "stun": 4157,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 93059,
+                "attack": 1640,
+                "defense": 427,
+                "stun": 1122,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200502": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 143430,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 848061,
+                "attack": 2513,
+                "defense": 701,
+                "stun": 4935,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 143430,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 906429,
+                "attack": 2135,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 143430,
+                "attack": 1459,
+                "defense": 520,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 158373,
+                "attack": 1702,
+                "defense": 520,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1074637,
+                "attack": 2270,
+                "defense": 649,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 807702,
+                "attack": 2054,
+                "defense": 649,
+                "stun": 4701,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200503": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 12534,
+                "attack": 1328,
+                "defense": 621,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 922787,
+                "attack": 2546,
+                "defense": 745,
+                "stun": 4163,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 175941,
+                "attack": 1660,
+                "defense": 634,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 768467,
+                "attack": 1467,
+                "defense": 621,
+                "stun": 4484,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "袭扰猎兵",
+                "hp": 175941,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Guard Jaeger",
+                "hp": 175941,
+                "attack": 1660,
+                "defense": 634,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Lightfoot Rover",
+                "hp": 1111887,
+                "attack": 2186,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 1318222,
+                "attack": 2546,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200504": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 1393267,
+                "attack": 2636,
+                "defense": 812,
+                "stun": 8322,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 185891,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1099120,
+                "attack": 2665,
+                "defense": 812,
+                "stun": 5306,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 185891,
+                "attack": 1720,
+                "defense": 691,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1174767,
+                "attack": 2264,
+                "defense": 812,
+                "stun": 7004,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "袭击者",
+                "hp": 185891,
+                "attack": 1806,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "纵火犯",
+                "hp": 185891,
+                "attack": 1548,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1392770,
+                "attack": 2407,
+                "defense": 751,
+                "stun": 6670,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1046812,
+                "attack": 2178,
+                "defense": 751,
+                "stun": 5054,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200505": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1693824,
+                "attack": 3108,
+                "defense": 715,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 1541620,
+                "attack": 2844,
+                "defense": 715,
+                "stun": 5050,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1425286,
+                "attack": 3255,
+                "defense": 922,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 217739,
+                "attack": 1760,
+                "defense": 572,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 217739,
+                "attack": 1760,
+                "defense": 572,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "掠袭猎兵",
+                "hp": 191370,
+                "attack": 1115,
+                "defense": 794,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 217739,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Heavy Gunner",
+                "hp": 1326790,
+                "attack": 3108,
+                "defense": 858,
+                "stun": 6242,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Lightfoot Rover",
+                "hp": 1376038,
+                "attack": 2317,
+                "defense": 858,
+                "stun": 7215,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 1631391,
+                "attack": 2698,
+                "defense": 858,
+                "stun": 6871,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200506": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 3629727,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 13181,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 261405,
+                "attack": 2043,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 236740,
+                "attack": 1858,
+                "defense": 731,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005072": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Typhon Challenger",
+                "hp": 3536971,
+                "attack": 4086,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 236740,
+                "attack": 2043,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Guard Jaeger",
+                "hp": 236740,
+                "attack": 1858,
+                "defense": 731,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200507": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001051": {
+          "title": "Global Rollout",
+          "desc": "· Increases Agent ATK by 20%, and Attribute Anomaly DMG by 30%."
+        }
+      },
+      "layer_room": {
+        "62005062": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 278448,
+                "attack": 1761,
+                "defense": 636,
+                "stun": 1410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Rampant Brute",
+                "hp": 5408038,
+                "attack": 4304,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62005071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "汉斯",
+                "hp": 5336628,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 278448,
+                "attack": 1957,
+                "defense": 572,
+                "stun": 1410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 278448,
+                "attack": 1957,
+                "defense": 572,
+                "stun": 1410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

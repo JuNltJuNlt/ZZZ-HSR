@@ -1,0 +1,754 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2026-05-01 04:00:00",
+  "end_time": "2026-05-15 03:59:59",
+  "zone": {
+    "6204701": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001471": {
+          "title": "Chaotic Weave",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 297520,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1550049,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1165024,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62047012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1223238,
+                "defense": 640,
+                "stun": 4723,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 252938,
+                "defense": 545,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1307428,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204702": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001471": {
+          "title": "Chaotic Weave",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 2306888,
+                "defense": 689,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1733867,
+                "defense": 689,
+                "stun": 4852,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62047022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "盛怒恶霸",
+                "hp": 1853132,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "「卫士」",
+                "hp": 2395171,
+                "defense": 745,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204703": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001471": {
+          "title": "Chaotic Weave",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 5550393,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 4404890,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 4988499,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62047032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "突击炮手",
+                "hp": 4506004,
+                "defense": 858,
+                "stun": 5466,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4988499,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 6167254,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Miasmic Trooper - Shieldguard",
+                "hp": 1104786,
+                "defense": 731,
+                "stun": 1360,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic Trooper - Cannoneer",
+                "hp": 1104786,
+                "defense": 636,
+                "stun": 1360,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204704": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001471": {
+          "title": "Chaotic Weave",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Tepes",
+                "hp": 15713672,
+                "defense": 953,
+                "stun": 17438,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62047042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Typhon Slugger",
+                "hp": 12379396,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 1013048,
+                "defense": 731,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204705": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001471": {
+          "title": "Chaotic Weave",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+        },
+        "62001472": {
+          "title": "Cardinal Forge",
+          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+        },
+        "62001473": {
+          "title": "Glacial Whirlwind",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 20%.\n· When enemies are Stunned, the whole squad's CRIT DMG increases by 30% for 30s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {}
+    },
+    "62047051": {
+      "name": "Room 1",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001473": {
+          "title": "Glacial Whirlwind",
+          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 20%.\n· When enemies are Stunned, the whole squad's CRIT DMG increases by 30% for 30s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Faun",
+                "hp": 817045,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Metro Goblin",
+                "hp": 4738970,
+                "defense": 715,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasma Spawn",
+                "hp": 1421647,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasma Walker - Scorpse",
+                "hp": 39128891,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62047052": {
+      "name": "Room 2",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001471": {
+          "title": "Chaotic Weave",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Miasmic Trooper - Shieldguard",
+                "hp": 1184805,
+                "defense": 731,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic Trooper - Cannoneer",
+                "hp": 1184805,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic - Terror Raptor",
+                "hp": 30841807,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 9373502,
+                "defense": 858,
+                "stun": 13069,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62047053": {
+      "name": "Room 3",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001472": {
+          "title": "Cardinal Forge",
+          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62047053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "装甲哈提",
+                "hp": 4506442,
+                "defense": 858,
+                "stun": 6223,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Metro Goblin",
+                "hp": 5103506,
+                "defense": 715,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic - Rampant Brute",
+                "hp": 54641982,
+                "defense": 953,
+                "stun": 14589,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

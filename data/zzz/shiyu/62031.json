@@ -1,0 +1,889 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-09-26 04:00:00",
+  "end_time": "2025-10-10 03:59:59",
+  "zone": {
+    "6203101": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 202350,
+                "attack": 1406,
+                "defense": 510,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 1302085,
+                "attack": 2291,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 202350,
+                "attack": 1406,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 202350,
+                "attack": 1718,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 896501,
+                "attack": 2395,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 1302085,
+                "attack": 2291,
+                "defense": 592,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203102": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "盛怒恶霸",
+                "hp": 1208564,
+                "attack": 2270,
+                "defense": 701,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 288775,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 245504,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1269001,
+                "attack": 2135,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 245504,
+                "attack": 1459,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Looter",
+                "hp": 288775,
+                "attack": 1702,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Wanted Enforcer",
+                "hp": 1547584,
+                "attack": 2594,
+                "defense": 649,
+                "stun": 7037,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 1885531,
+                "attack": 2756,
+                "defense": 649,
+                "stun": 11637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203103": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 2241776,
+                "attack": 2546,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 403238,
+                "attack": 2103,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 403238,
+                "attack": 1909,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 2329668,
+                "attack": 2933,
+                "defense": 621,
+                "stun": 7396,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 365684,
+                "attack": 1494,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 365684,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "恶灵",
+                "hp": 2420489,
+                "attack": 2795,
+                "defense": 689,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ruthless Fiend",
+                "hp": 2326738,
+                "attack": 2629,
+                "defense": 621,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203104": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "Harrier Jaeger",
+                "hp": 348938,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1868503,
+                "attack": 2665,
+                "defense": 812,
+                "stun": 5306,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 2068579,
+                "attack": 2608,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 2557373,
+                "attack": 3181,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 347531,
+                "attack": 1691,
+                "defense": 601,
+                "stun": 1260,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 386364,
+                "attack": 1548,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Looter",
+                "hp": 454463,
+                "attack": 1806,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 2786996,
+                "attack": 2379,
+                "defense": 751,
+                "stun": 10506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 3079934,
+                "attack": 3324,
+                "defense": 751,
+                "stun": 14292,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 2875919,
+                "attack": 3324,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203105": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 5550393,
+                "attack": 2962,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 4404890,
+                "attack": 3401,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 4988499,
+                "attack": 3255,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 1027424,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 1027424,
+                "attack": 2023,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 5928381,
+                "attack": 3108,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 762085,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Heavy Gunner",
+                "hp": 4643763,
+                "attack": 3108,
+                "defense": 858,
+                "stun": 6242,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Guard Jaeger",
+                "hp": 762085,
+                "attack": 1760,
+                "defense": 731,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Lightfoot Rover",
+                "hp": 4988499,
+                "attack": 2668,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203106": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Terror Raptor",
+                "hp": 15864929,
+                "attack": 4458,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Typhon Challenger",
+                "hp": 12379396,
+                "attack": 4086,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203107": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001311": {
+          "title": "Frosty Fire",
+          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+        }
+      },
+      "layer_room": {
+        "62031071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Tarasque Mixer",
+                "hp": 4732077,
+                "attack": 3294,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "汉斯",
+                "hp": 13341570,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Miasmic - Doppelganger - The Defector",
+                "hp": 19918667,
+                "attack": 3522,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

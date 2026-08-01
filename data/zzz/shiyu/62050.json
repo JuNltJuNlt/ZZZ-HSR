@@ -1,0 +1,785 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2026-06-12 04:00:00",
+  "end_time": "2026-06-26 03:59:59",
+  "zone": {
+    "6205001": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001501": {
+          "title": "Flowing Frost",
+          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62050011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 297520,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1550049,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1165024,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62050012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 14738,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 903612,
+                "defense": 533,
+                "stun": 4157,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 228068,
+                "defense": 474,
+                "stun": 1179,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ionized - Pugnus",
+                "hp": 2403551,
+                "defense": 640,
+                "stun": 10001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205002": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001501": {
+          "title": "Flowing Frost",
+          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62050021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2307710,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 2306888,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62050022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 376439,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 1661212,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1779654,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 316121,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 2484003,
+                "defense": 621,
+                "stun": 8389,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205003": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001501": {
+          "title": "Flowing Frost",
+          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62050031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 7427442,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62050032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "Hati",
+                "hp": 4111729,
+                "defense": 858,
+                "stun": 5066,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 4988499,
+                "defense": 922,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 6148252,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205004": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001501": {
+          "title": "Flowing Frost",
+          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62050041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 828589,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 828589,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 15161034,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62050042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Haytor",
+                "hp": 22282617,
+                "defense": 1588,
+                "stun": 15244,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205005": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001491": {
+          "title": "Overwhelming Force",
+          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+        },
+        "62001501": {
+          "title": "Flowing Frost",
+          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+        },
+        "62001502": {
+          "title": "Unstoppable",
+          "desc": "· Agent ATK increases by 10%. <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> deal 20% increased DMG.\n· Agents gain an additional 40 initial Energy and deals 30% bonus CRIT DMG."
+        }
+      },
+      "layer_room": {}
+    },
+    "62050051": {
+      "name": "Room 1",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001501": {
+          "title": "Flowing Frost",
+          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62050051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Faun",
+                "hp": 885132,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Metro Goblin",
+                "hp": 5103506,
+                "defense": 715,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasma Spawn",
+                "hp": 1540117,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic Komano Manato",
+                "hp": 35320007,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62050052": {
+      "name": "Room 2",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001491": {
+          "title": "Overwhelming Force",
+          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+        }
+      },
+      "layer_room": {
+        "62050052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧施虐者",
+                "hp": 6867224,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 5170849,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「卫士」",
+                "hp": 45012670,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62050053": {
+      "name": "Room 3",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001502": {
+          "title": "Unstoppable",
+          "desc": "· Agent ATK increases by 10%. <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> deal 20% increased DMG.\n· Agents gain an additional 40 initial Energy and deals 30% bonus CRIT DMG."
+        }
+      },
+      "layer_room": {
+        "62050053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Fossor",
+                "hp": 976031,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Huskron",
+                "hp": 898670,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic - Doppelganger - The Defector",
+                "hp": 34054495,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Miasmic - Huskron",
+                "hp": 6221264,
+                "defense": 794,
+                "stun": 12446,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

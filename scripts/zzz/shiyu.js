@@ -6,82 +6,99 @@ const IMAGE_ROOT = "../../images/ZZZ%20images/monster";
 const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
 
 let shiyuEntries = [];
-let monsterCatalog = {};
+let monstersData = [];
 
 const text = {
     title: "式舆防卫战",
-    chartTotalTitle: "式舆防卫战总血量演化",
-    chartStageTitle: "式舆防卫战三路血量演化",
+    chartTotalTitle: "总血量演化",
+    chartStageTitle: "各间血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
-    waveNames: ["第一波", "第二波", "第三波"],
-    stageNames: ["上路", "中路", "下路"],
+    waveNames: ["第一波", "第二波", "第三波", "第四波"],
+    stageLabels: ["上路", "下路"],
 };
 
 const state = {
     scheduleIndex: 0,
+    floorIndex: 0,
 };
 
 const dataUrl = (fileName) => `${DATA_ROOT}/${fileName}`;
 
 const fetchJson = async (fileName) => {
-    const response = await fetch(dataUrl(fileName));
-    if (!response.ok) throw new Error(`无法读取数据：${fileName}`);
-    return response.json();
+    const res = await fetch(dataUrl(fileName));
+    if (!res.ok) throw new Error(`无法读取：${fileName}`);
+    return res.json();
 };
 
-const loadShiyuData = async () => {
+const loadData = async () => {
     const index = await fetchJson("index.json");
-    monsterCatalog = await fetchJson("monster_catalog.json");
-    shiyuEntries = await Promise.all(index.entries.map((fileName) => fetchJson(fileName)));
+    const mRes = await fetch('../../data/zzz/monsters.json');
+    monstersData = (await mRes.json()).monsters;
+    shiyuEntries = await Promise.all(index.entries.map(f => fetchJson(f)));
 };
 
 const currentEntry = () => shiyuEntries[state.scheduleIndex];
+const currentFloor = () => {
+    const zone = currentEntry().zone;
+    const keys = Object.keys(zone).sort();
+    return zone[keys[state.floorIndex]];
+};
 
 const setSchedule = (index) => {
     state.scheduleIndex = wrapIndex(index, shiyuEntries.length);
+    state.floorIndex = 0;
     render();
+};
+
+const setFloor = (index) => {
+    const zone = currentEntry().zone;
+    const len = Object.keys(zone).length;
+    state.floorIndex = wrapIndex(index, len);
+    renderFloor();
 };
 
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
-        ...shiyuEntries.map((entry, index) =>
-            create("option", {
-                text: `${entry.shiyu_name} | ${entry.time}`,
-                attrs: { value: index, selected: index === state.scheduleIndex },
-            }),
-        ),
+        ...shiyuEntries.map((e, i) => create("option", {
+            text: `${e.name} | ${e.begin_time} - ${e.end_time}`,
+            attrs: { value: i, selected: i === state.scheduleIndex },
+        })),
     );
 };
 
 const renderScheduleHeader = () => {
-    const entry = currentEntry();
-    byId("scheduleName").textContent = entry.shiyu_name;
-    byId("scheduleTime").textContent = entry.time;
+    const e = currentEntry();
+    byId("scheduleName").textContent = e.name;
+    byId("scheduleTime").textContent = `${e.begin_time} - ${e.end_time}`;
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
 
-const renderElementIcons = (elements = []) =>
-    elements.map((name) => image(`${ELEMENT_ROOT}/${name}.webp`, "elem_", name));
+const renderFloorText = () => {
+    const floor = currentFloor();
+    byId("floorText").textContent = `节点 ${floor.stage_num}`;
+};
 
-const renderWeaknessBars = (weakness = [], resistance = []) => {
+const renderElementIcons = (elements = []) =>
+    elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, "elem_", name));
+
+const renderWeaknessBars = (monster) => {
+    const weakness = monster.weakness || [];
+    const resistance = monster.resistance || [];
     const items = [];
-    weakness.forEach((el) => items.push({ element: el, type: "weak" }));
-    resistance.forEach((el) => items.push({ element: el, type: "resist" }));
+    weakness.forEach(el => items.push({ element: el, type: "weak" }));
+    resistance.forEach(el => items.push({ element: el, type: "resist" }));
     if (items.length === 0) return null;
 
     return create("div", {
         style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" },
-        children: items.map((item) => {
+        children: items.map(item => {
             const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
             return create("div", {
                 style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" },
                 children: [
                     image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem", item.element),
                     create("span", {
-                        style: {
-                            width: "18px", height: "3px", borderRadius: "2px",
-                            backgroundColor: barColor, display: "block"
-                        }
+                        style: { width: "18px", height: "3px", borderRadius: "2px", backgroundColor: barColor, display: "block" }
                     })
                 ]
             });
@@ -91,150 +108,173 @@ const renderWeaknessBars = (weakness = [], resistance = []) => {
 
 const stageTotalHp = (stage) =>
     Math.round(
-        stage.monsters.reduce(
-            (total, wave) =>
-                total + wave.reduce((waveTotal, m) =>
-                    waveTotal + m.hp * (m.hp_ratio_sum ?? 1) * (m.number ?? 1), 0),
-            0,
-        ),
+        (stage.monsters || []).reduce((total, wave) =>
+            total + wave.reduce((wt, m) => wt + m.hp * (m.hp_ratio_sum ?? 1) * (m.number ?? 1), 0), 0
+        )
     );
 
 const renderMonsterCard = (monster, stageLevel) => {
-    const info = monsterCatalog[monster.id] || {};
-    const name = info.name || `怪物 ${monster.id}`;
+    const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "C";
-    const imagePath = `${IMAGE_ROOT}/${type}/${name}.webp`;
+    const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
 
     return create("span", {
         className: "monster_card hover-shadow",
-        attrs: { "data-id": monster.id, "data-lv": stageLevel },
+        attrs: { "data-lv": stageLevel },
         children: [
             create("div", {
                 className: "monleft",
                 children: [
-                    image(imagePath, "monicon hasimg", name),
-                    ...(monster.number >= 2
-                        ? [create("span", { className: "monicon_num", text: String(monster.number) })]
-                        : []),
+                    image(imagePath, "monicon hasimg", monster.name),
+                    ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : []),
                 ],
             }),
             create("div", {
                 className: "monright",
                 children: [
-                    create("span", {
-                        className: "monname",
-                        html: `<b><color style="color:#cc0000;">${hp}</color></b>`,
-                    }),
+                    create("span", { className: "monname", html: `<b><color style="color:#cc0000;">${hp}</color></b>` }),
                 ],
             }),
-            renderWeaknessBars(info.weakness, info.resistance),
+            renderWeaknessBars(monster),
         ].filter(Boolean),
     });
 };
 
 const renderWave = (wave, index, stageLevel) => {
-    const info = wave.length === 1 ? monsterCatalog[wave[0].id] : null;
-    const waveTitle = info ? `<color style='font-weight:bold'>${info.name}</color>` : text.waveNames[index];
-
+    const waveTitle = text.waveNames[index] || `第${index + 1}波`;
     return create("div", {
         className: "wave_wrap",
         children: [
-            create("p", { className: "wave_name", html: waveTitle }),
-            create("div", {
-                className: "wave_monsters",
-                children: wave.map((monster) => renderMonsterCard(monster, stageLevel)),
-            }),
+            create("p", { className: "wave_name", text: waveTitle }),
+            create("div", { className: "wave_monsters", children: wave.map(m => renderMonsterCard(m, stageLevel)) }),
         ],
     });
 };
 
-const renderStage = (stage, label, elements) =>
-    create("div", {
-        className: "stage",
+const renderStage = (stageData, label, elements, index) => {
+    const letter = ["a", "b", "c"][index];
+    return create("div", {
+        className: "u_l",
         children: [
-            create("div", { className: "emote_block_", children: [
-                create("div", { className: "emote_", children: [
-                    image(`../../images/ZZZ%20images/emote/3.png`, "", "")
-                ] })
-            ]}),
-            create("p", {
-                html: `<color style="color:#2545ba">${label}</color>`,
-                style: { textAlign: "center", fontWeight: "bold", fontSize: "0.9em", marginBottom: "15px" },
-            }),
             create("div", {
-                className: "stage_waves",
-                children: stage.monsters.map((wave, index) => renderWave(wave, index, stage.level)),
-            }),
-        ],
-    });
-
-const renderAllStages = () => {
-    const entry = currentEntry();
-    const stages = [
-        { stage: entry.monster_a, label: "上路", elements: entry.element_a },
-        { stage: entry.monster_b, label: "中路", elements: entry.element_b },
-        { stage: entry.monster_c, label: "下路", elements: entry.element_c },
-    ];
-
-    byId("shiyuStages").replaceChildren(
-        ...stages.map(({ stage, label, elements }) =>
-            create("div", {
-                className: "u_l",
+                className: "u",
                 children: [
                     create("div", {
-                        className: "u",
+                        className: `${letter}_r u_r`,
                         children: [
                             create("div", {
-                                className: "a_r u_r",
                                 children: [
-                                    create("div", {
-                                        children: [
-                                            create("p", { text: `${label} Lv${stage.level}` }),
-                                            ...renderElementIcons(elements),
-                                        ],
-                                    }),
+                                    create("p", { text: `${label} Lv${stageData.level || 70}` }),
+                                    ...renderElementIcons(elements),
                                 ],
                             }),
+                        ],
+                    }),
+                    create("div", {
+                        className: `${letter}_m u_m`,
+                        children: [
                             create("div", {
-                                className: "a_m u_m",
-                                children: [renderStage(stage, label, elements)],
+                                className: "stage",
+                                children: [
+                                    create("div", {
+                                        className: "emote_block_",
+                                        children: [create("div", { className: "emote_", children: [image("../../images/ZZZ%20images/emote/3.png", "", "")] })],
+                                    }),
+                                    create("div", {
+                                        className: "stage_waves",
+                                        children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level)),
+                                    }),
+                                ],
                             }),
                         ],
                     }),
                 ],
             }),
-        ),
-    );
+        ],
+    });
+};
+
+const renderAllStages = () => {
+    const floor = currentFloor();
+    const rooms = Object.keys(floor.layer_room).sort();
+    const container = byId("shiyuStages");
+    container.replaceChildren();
+    
+    rooms.forEach((rk, i) => {
+        const stageData = floor.layer_room[rk];
+        const elements = stageData.weakness || [];
+        const label = text.stageLabels[i] || `第${i + 1}路`;
+        container.appendChild(renderStage(stageData, label, elements, i));
+    });
 };
 
 const renderBuffs = () => {
-    const entry = currentEntry();
-    const buffs = [
-        { label: "上路", buffs: entry.debuff_a },
-        { label: "中路", buffs: entry.debuff_b },
-        { label: "下路", buffs: entry.debuff_c },
-    ];
+    const floor = currentFloor();
+    const buffKeys = Object.keys(floor.layer_buff).sort();
+    const buffs = buffKeys.map(k => floor.layer_buff[k]).filter(b => b.title);
+    const container = byId("shiyuBuffs");
+    container.replaceChildren();
 
-    byId("shiyuBuffs").replaceChildren(
-        ...buffs.map(({ label, buffs }, index) =>
-            create("div", {
-                className: `smallbuff a_b_${index}`,
+    const stages = Object.keys(floor.layer_room).sort();
+    if (stages.length <= 2) {
+        const shared = buffs[0];
+        if (shared) {
+            container.appendChild(create("div", {
+                className: "smallbuff a_b_0",
                 children: [
-                    create("p", { className: "smallbuff_name", text: label }),
-                    ...buffs.map((buff) =>
-                        create("p", {
-                            className: "smallbuff_desc",
-                            html: `<b>${buff.name}</b><br>${buff.description}`,
-                        }),
-                    ),
+                    create("p", { className: "smallbuff_name", text: shared.title }),
+                    create("p", { className: "smallbuff_desc", html: shared.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">') }),
                 ],
-            }),
-        ),
-    );
+            }));
+        }
+    } else {
+        buffs.forEach((buff, i) => {
+            container.appendChild(create("div", {
+                className: `smallbuff a_b_${i}`,
+                children: [
+                    create("p", { className: "smallbuff_name", text: buff.title || `Buff ${i + 1}` }),
+                    create("p", { className: "smallbuff_desc", html: buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">') }),
+                ],
+            }));
+        });
+    }
 };
 
-const chartEntries = () => [...shiyuEntries].reverse();
+const chartEntries = () => shiyuEntries.slice().reverse();
+
+const renderCharts = () => {
+    const floor = currentFloor();
+    const floorNum = floor.stage_num;
+    const entries = chartEntries();
+
+    const totalData = entries.map(e => {
+        const zone = e.zone;
+        const keys = Object.keys(zone).sort();
+        const target = zone[keys[state.floorIndex]];
+        if (!target) return 0;
+        return Object.values(target.layer_room).reduce((sum, room) => sum + stageTotalHp(room), 0);
+    });
+
+    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }]);
+
+    const rooms = Object.keys(floor.layer_room).sort();
+    const stageSeries = rooms.map((rk, i) => {
+        const color = ["#cc0000", "#2545ba", "#4CAF50"][i];
+        return {
+            name: text.stageLabels[i] || `第${i + 1}路`,
+            color,
+            data: entries.map(e => {
+                const zone = e.zone;
+                const keys = Object.keys(zone).sort();
+                const target = zone[keys[state.floorIndex]];
+                if (!target || !target.layer_room[rk]) return 0;
+                return stageTotalHp(target.layer_room[rk]);
+            }),
+        };
+    });
+    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries);
+};
 
 const renderLineChart = (targetId, title, seriesData) => {
     const chartElement = byId(targetId);
@@ -245,17 +285,17 @@ const renderLineChart = (targetId, title, seriesData) => {
     if (existingChart) window.echarts.dispose(existingChart);
 
     const chartInstance = window.echarts.init(chartElement);
-    const activeIndex = entries.findIndex((e) => e.shiyu_id === currentEntry().shiyu_id);
+    const activeIndex = entries.findIndex(e => e.name === currentEntry().name);
 
     chartInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-        xAxis: { type: "category", data: entries.map((e) => e.shiyu_name), axisLabel: { color: "#000" } },
+        xAxis: { type: "category", data: entries.map(e => e.name), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
         yAxis: { type: "value" },
-        legend: { data: seriesData.map((s) => s.name), top: "16%" },
-        series: seriesData.map((s) => ({
+        legend: { data: seriesData.map(s => s.name), top: "16%" },
+        series: seriesData.map(s => ({
             name: s.name, type: "line", data: s.data,
             lineStyle: { color: s.color }, itemStyle: { color: s.color },
         })),
@@ -264,36 +304,30 @@ const renderLineChart = (targetId, title, seriesData) => {
     chartInstance.dispatchAction({ type: "showTip", dataIndex: activeIndex >= 0 ? activeIndex : entries.length - 1, seriesIndex: 0 });
 };
 
-const renderCharts = () => {
-    const entries = chartEntries();
-    renderLineChart("totalChart", text.chartTotalTitle, [
-        { name: "总血量", color: "#cc0000", data: entries.map((e) =>
-            stageTotalHp(e.monster_a) + stageTotalHp(e.monster_b) + stageTotalHp(e.monster_c)) },
-    ]);
-    renderLineChart("stageChart", text.chartStageTitle, [
-        { name: "上路", color: "#cc0000", data: entries.map((e) => stageTotalHp(e.monster_a)) },
-        { name: "中路", color: "#2545ba", data: entries.map((e) => stageTotalHp(e.monster_b)) },
-        { name: "下路", color: "#4CAF50", data: entries.map((e) => stageTotalHp(e.monster_c)) },
-    ]);
-};
-
-const render = () => {
-    renderScheduleSelect();
-    renderScheduleHeader();
+const renderFloor = () => {
+    renderFloorText();
     renderBuffs();
     renderAllStages();
     renderCharts();
 };
 
+const render = () => {
+    renderScheduleSelect();
+    renderScheduleHeader();
+    renderFloor();
+};
+
 const bindEvents = () => {
     byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
     byId("nextSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex - 1));
-    byId("scheduleSelect").addEventListener("change", (e) => setSchedule(Number(e.target.value)));
+    byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
+    byId("prevFloor").addEventListener("click", () => setFloor(state.floorIndex - 1));
+    byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
 };
 
 const init = async () => {
     initMenu();
-    await loadShiyuData();
+    await loadData();
     bindEvents();
     setSchedule(0);
 };

@@ -1,0 +1,1021 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2024-08-01 04:00:00",
+  "end_time": "2024-08-16 03:59:59",
+  "zone": {
+    "6200201": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 187897,
+                "attack": 1406,
+                "defense": 510,
+                "stun": 1843,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 1209079,
+                "attack": 2291,
+                "defense": 640,
+                "stun": 7169,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 10949,
+                "attack": 1250,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 888300,
+                "attack": 3020,
+                "defense": 640,
+                "stun": 5421,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 187897,
+                "attack": 1562,
+                "defense": 545,
+                "stun": 1843,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 671255,
+                "attack": 1380,
+                "defense": 533,
+                "stun": 4780,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 120977,
+                "attack": 1640,
+                "defense": 427,
+                "stun": 1290,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200202": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "袭扰猎兵",
+                "hp": 186459,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Rookie Jaeger",
+                "hp": 227968,
+                "attack": 1783,
+                "defense": 520,
+                "stun": 1926,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Lightfoot Rover",
+                "hp": 1178358,
+                "attack": 2135,
+                "defense": 701,
+                "stun": 7491,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 1397027,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 7134,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1397526,
+                "attack": 2486,
+                "defense": 585,
+                "stun": 8901,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 1320153,
+                "attack": 2621,
+                "defense": 585,
+                "stun": 5243,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 227968,
+                "attack": 1621,
+                "defense": 468,
+                "stun": 1926,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 186459,
+                "attack": 1621,
+                "defense": 468,
+                "stun": 1284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 227968,
+                "attack": 1621,
+                "defense": 468,
+                "stun": 1926,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200203": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 279641,
+                "attack": 1494,
+                "defense": 552,
+                "stun": 1988,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 279641,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1988,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1238931,
+                "attack": 2546,
+                "defense": 689,
+                "stun": 5891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 1799434,
+                "attack": 2435,
+                "defense": 689,
+                "stun": 7733,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "袭击者",
+                "hp": 279641,
+                "attack": 1743,
+                "defense": 552,
+                "stun": 1988,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "纵火犯",
+                "hp": 228723,
+                "attack": 1494,
+                "defense": 552,
+                "stun": 1325,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1713688,
+                "attack": 2324,
+                "defense": 689,
+                "stun": 7364,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1288016,
+                "attack": 2103,
+                "defense": 689,
+                "stun": 5580,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200204": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 241658,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1380,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1428855,
+                "attack": 2665,
+                "defense": 812,
+                "stun": 6102,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 295455,
+                "attack": 1720,
+                "defense": 691,
+                "stun": 2070,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 1955638,
+                "attack": 3181,
+                "defense": 812,
+                "stun": 9136,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 295455,
+                "attack": 1891,
+                "defense": 541,
+                "stun": 2070,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 17216,
+                "attack": 1376,
+                "defense": 676,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 1303831,
+                "attack": 3038,
+                "defense": 812,
+                "stun": 5656,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 295455,
+                "attack": 1720,
+                "defense": 691,
+                "stun": 2070,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Metro Goblin",
+                "hp": 1581855,
+                "attack": 3181,
+                "defense": 676,
+                "stun": 9136,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 248113,
+                "attack": 1806,
+                "defense": 541,
+                "stun": 2174,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200205": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "袭击者",
+                "hp": 346075,
+                "attack": 1848,
+                "defense": 636,
+                "stun": 2133,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "偷猎者",
+                "hp": 346075,
+                "attack": 1584,
+                "defense": 636,
+                "stun": 2133,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 2181554,
+                "attack": 2815,
+                "defense": 794,
+                "stun": 8962,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1594009,
+                "attack": 2229,
+                "defense": 794,
+                "stun": 5987,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1642656,
+                "attack": 2522,
+                "defense": 794,
+                "stun": 6837,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 346075,
+                "attack": 1935,
+                "defense": 572,
+                "stun": 2133,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 346075,
+                "attack": 1584,
+                "defense": 572,
+                "stun": 2133,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 2061575,
+                "attack": 2962,
+                "defense": 858,
+                "stun": 6589,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1636102,
+                "attack": 3401,
+                "defense": 858,
+                "stun": 6274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 1236340,
+                "attack": 1554,
+                "defense": 715,
+                "stun": 5532,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 290622,
+                "attack": 1848,
+                "defense": 572,
+                "stun": 2239,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200206": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 2306705,
+                "attack": 2848,
+                "defense": 715,
+                "stun": 10528,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 2241480,
+                "attack": 3436,
+                "defense": 715,
+                "stun": 7036,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 2014564,
+                "attack": 3436,
+                "defense": 922,
+                "stun": 10050,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 376275,
+                "attack": 1858,
+                "defense": 572,
+                "stun": 2277,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "装甲哈提",
+                "hp": 4223431,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 9817,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 376275,
+                "attack": 1858,
+                "defense": 731,
+                "stun": 2277,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 1344230,
+                "attack": 1641,
+                "defense": 715,
+                "stun": 5908,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200207": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001021": {
+          "title": "Daze Tactics",
+          "desc": "· Agents deal 20% less DMG and 50% more Daze to non-Stunned enemies. Enemies are Stunned for 20% longer.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62002071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "汉斯",
+                "hp": 6937617,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 19429,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 442566,
+                "attack": 1957,
+                "defense": 572,
+                "stun": 2433,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 442566,
+                "attack": 1957,
+                "defense": 572,
+                "stun": 2433,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62002072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·杜拉罕",
+                "hp": 5408137,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 14980,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ahriman",
+                "hp": 520572,
+                "attack": 1761,
+                "defense": 572,
+                "stun": 2433,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Specter",
+                "hp": 442566,
+                "attack": 2152,
+                "defense": 636,
+                "stun": 2433,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

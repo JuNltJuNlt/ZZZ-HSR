@@ -1,0 +1,765 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-12-29 15:00:00",
+  "end_time": "2026-01-09 03:59:59",
+  "zone": {
+    "6203801": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001381": {
+          "title": "Dawn's Guiding Light",
+          "desc": "· Agent ATK increases by 30%, CRIT DMG increases by 15%.\n· Enemy Stun DMG Multiplier increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62038011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 297520,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1550049,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1165024,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62038012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1223238,
+                "defense": 640,
+                "stun": 4723,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 252938,
+                "defense": 545,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1307428,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203802": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001381": {
+          "title": "Dawn's Guiding Light",
+          "desc": "· Agent ATK increases by 30%, CRIT DMG increases by 15%.\n· Enemy Stun DMG Multiplier increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62038021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 2306888,
+                "defense": 689,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1733867,
+                "defense": 689,
+                "stun": 4852,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62038022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "盛怒恶霸",
+                "hp": 1853132,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "「卫士」",
+                "hp": 2395171,
+                "defense": 745,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203803": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001381": {
+          "title": "Dawn's Guiding Light",
+          "desc": "· Agent ATK increases by 30%, CRIT DMG increases by 15%.\n· Enemy Stun DMG Multiplier increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62038031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 7427442,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62038032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 5928381,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 841483,
+                "defense": 636,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 4643763,
+                "defense": 858,
+                "stun": 6242,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4988499,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203804": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001381": {
+          "title": "Dawn's Guiding Light",
+          "desc": "· Agent ATK increases by 30%, CRIT DMG increases by 15%.\n· Enemy Stun DMG Multiplier increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62038041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Lumberjack",
+                "hp": 14855570,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Miasmic Trooper - Shieldguard",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62038042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Typhon Challenger",
+                "hp": 12379396,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Lightfoot Rover",
+                "hp": 5423826,
+                "defense": 858,
+                "stun": 8739,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Miasmic Trooper - Cannoneer",
+                "hp": 1469030,
+                "defense": 636,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203805": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001381": {
+          "title": "Dawn's Guiding Light",
+          "desc": "· Agent ATK increases by 30%, CRIT DMG increases by 15%.\n· Enemy Stun DMG Multiplier increases by 20%."
+        },
+        "62001382": {
+          "title": "Accumulating Frost",
+          "desc": "· Agent <color=#98EFF0>Ice DMG</color> increases by 20%, <color=#FFFFFF>Basic Attack</color> DMG increases by 40%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s, repeated triggers reset the duration."
+        },
+        "62001383": {
+          "title": "Piercing Thunder Strike",
+          "desc": "· Agent <color=#2EB6FF>Electric DMG</color> increases by 20%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>EX Special Attack</color> deal 40% increased DMG and ignore 15% of enemy DEF."
+        }
+      },
+      "layer_room": {}
+    },
+    "62038051": {
+      "name": "Room 1",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001381": {
+          "title": "Dawn's Guiding Light",
+          "desc": "· Agent ATK increases by 30%, CRIT DMG increases by 15%.\n· Enemy Stun DMG Multiplier increases by 20%."
+        }
+      },
+      "layer_room": {
+        "62038051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Flame Cantor",
+                "hp": 6161310,
+                "defense": 794,
+                "stun": 9779,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 9220418,
+                "defense": 794,
+                "stun": 12601,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「卫士」",
+                "hp": 28429055,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62038052": {
+      "name": "Room 2",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001383": {
+          "title": "Piercing Thunder Strike",
+          "desc": "· Agent <color=#2EB6FF>Electric DMG</color> increases by 20%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>EX Special Attack</color> deal 40% increased DMG and ignore 15% of enemy DEF."
+        }
+      },
+      "layer_room": {
+        "62038052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4374434,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 5408088,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Sacrifice - Heretic Jester",
+                "hp": 25701506,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62038053": {
+      "name": "Room 3",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001382": {
+          "title": "Accumulating Frost",
+          "desc": "· Agent <color=#98EFF0>Ice DMG</color> increases by 20%, <color=#FFFFFF>Basic Attack</color> DMG increases by 40%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s, repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62038053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 680871,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 4009897,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Huskron",
+                "hp": 691285,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic Komano Manato",
+                "hp": 23990948,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2026-08-21 04:00:00",
+  "end_time": "2026-09-04 03:59:59",
+  "zone": {
+    "6205501": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001551": {
+          "title": "Blazing Maelstrom",
+          "desc": "· Attribute Anomaly DMG dealt by Agents increases by 15%. \n· If there are 2/3 Agents in the squad with <color=#FFFFFF>Anomaly</color> specialty, Agent Anomaly Proficiency increases by 40/120 pts."
+        }
+      },
+      "layer_room": {
+        "62055011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1550601,
+                "defense": 640,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1195789,
+                "defense": 640,
+                "stun": 4714,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 278913,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 278913,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62055012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 252938,
+                "defense": 510,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 1627606,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205502": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001551": {
+          "title": "Blazing Maelstrom",
+          "desc": "· Attribute Anomaly DMG dealt by Agents increases by 15%. \n· If there are 2/3 Agents in the squad with <color=#FFFFFF>Anomaly</color> specialty, Agent Anomaly Proficiency increases by 40/120 pts."
+        }
+      },
+      "layer_room": {
+        "62055021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 2306888,
+                "defense": 689,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1733867,
+                "defense": 689,
+                "stun": 4852,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62055022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 376439,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hati",
+                "hp": 1661212,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1779654,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 316121,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 2484003,
+                "defense": 621,
+                "stun": 8389,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205503": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001551": {
+          "title": "Blazing Maelstrom",
+          "desc": "· Attribute Anomaly DMG dealt by Agents increases by 15%. \n· If there are 2/3 Agents in the squad with <color=#FFFFFF>Anomaly</color> specialty, Agent Anomaly Proficiency increases by 40/120 pts."
+        }
+      },
+      "layer_room": {
+        "62055031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 1095964,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 5873413,
+                "defense": 794,
+                "stun": 7793,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 4422534,
+                "defense": 794,
+                "stun": 5946,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62055032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "Hati",
+                "hp": 4111729,
+                "defense": 858,
+                "stun": 5066,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 4988499,
+                "defense": 922,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 6148252,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205504": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001551": {
+          "title": "Blazing Maelstrom",
+          "desc": "· Attribute Anomaly DMG dealt by Agents increases by 15%. \n· If there are 2/3 Agents in the squad with <color=#FFFFFF>Anomaly</color> specialty, Agent Anomaly Proficiency increases by 40/120 pts."
+        }
+      },
+      "layer_room": {
+        "62055041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Haytor",
+                "hp": 22282617,
+                "defense": 1588,
+                "stun": 15244,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62055042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Hati",
+                "hp": 4470543,
+                "defense": 858,
+                "stun": 5410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 11370776,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6205505": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001551": {
+          "title": "Blazing Maelstrom",
+          "desc": "· Attribute Anomaly DMG dealt by Agents increases by 15%. \n· If there are 2/3 Agents in the squad with <color=#FFFFFF>Anomaly</color> specialty, Agent Anomaly Proficiency increases by 40/120 pts."
+        },
+        "62001552": {
+          "title": "Treacherous Domain",
+          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· When Agents inflict an <color=#FFFFFF>Attribute Anomaly</color> on enemies, their DEF is reduced by 15%, and All-Attribute RES is reduced by 15% for 10s. Repeated triggers reset the duration."
+        },
+        "62001553": {
+          "title": "Biting Cold",
+          "desc": "· When an Agent with <color=#FFFFFF>Attack</color> specialty lands <color=#FFFFFF>Basic Attack</color>, it ignores 30% of enemy <color=#98EFF0>Ice RES</color>. \n· After an Agent with <color=#FFFFFF>Attack</color> specialty uses a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>EX Special Attack</color>, their <color=#98EFF0>Ice DMG</color> increases by 20% and CRIT DMG increases by 40% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {}
+    },
+    "62055051": {
+      "name": "Room 1",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001551": {
+          "title": "Blazing Maelstrom",
+          "desc": "· Attribute Anomaly DMG dealt by Agents increases by 15%. \n· If there are 2/3 Agents in the squad with <color=#FFFFFF>Anomaly</color> specialty, Agent Anomaly Proficiency increases by 40/120 pts."
+        }
+      },
+      "layer_room": {
+        "62055051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Metamorphosed - Avarus",
+                "hp": 39370171,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "City Guardboo",
+                "hp": 9696730,
+                "defense": 858,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Special Anti-Riotboo",
+                "hp": 1681945,
+                "defense": 683,
+                "stun": 3173,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Airspace Patrolboo",
+                "hp": 1681945,
+                "defense": 683,
+                "stun": 3173,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62055052": {
+      "name": "Room 2",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001552": {
+          "title": "Treacherous Domain",
+          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· When Agents inflict an <color=#FFFFFF>Attribute Anomaly</color> on enemies, their DEF is reduced by 15%, and All-Attribute RES is reduced by 15% for 10s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62055052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 4982010,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 748958,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 823690,
+                "defense": 636,
+                "stun": 2221,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Mirage Archer Unit",
+                "hp": 39537116,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62055053": {
+      "name": "Room 3",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001553": {
+          "title": "Biting Cold",
+          "desc": "· When an Agent with <color=#FFFFFF>Attack</color> specialty lands <color=#FFFFFF>Basic Attack</color>, it ignores 30% of enemy <color=#98EFF0>Ice RES</color>. \n· After an Agent with <color=#FFFFFF>Attack</color> specialty uses a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>EX Special Attack</color>, their <color=#98EFF0>Ice DMG</color> increases by 20% and CRIT DMG increases by 40% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62055053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧施虐者",
+                "hp": 5365019,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 4039726,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Thracian",
+                "hp": 39812638,
+                "defense": 953,
+                "stun": 13677,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

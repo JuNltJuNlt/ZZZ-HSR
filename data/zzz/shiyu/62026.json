@@ -1,0 +1,914 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-07-18 04:00:00",
+  "end_time": "2025-08-01 03:59:59",
+  "zone": {
+    "6202601": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 202350,
+                "attack": 1406,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 238016,
+                "attack": 1640,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1240039,
+                "attack": 2187,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 932019,
+                "attack": 1979,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1240481,
+                "attack": 2395,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1045942,
+                "attack": 2525,
+                "defense": 687,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 165506,
+                "attack": 1562,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 165506,
+                "attack": 1562,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202602": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 245504,
+                "attack": 1459,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Looter",
+                "hp": 288775,
+                "attack": 1702,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Wanted Enforcer",
+                "hp": 1547584,
+                "attack": 2594,
+                "defense": 649,
+                "stun": 7037,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 1885531,
+                "attack": 2756,
+                "defense": 649,
+                "stun": 11637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 200802,
+                "attack": 1459,
+                "defense": 559,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 1579769,
+                "attack": 2378,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202603": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2241776,
+                "attack": 2546,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 430138,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 365684,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 2240977,
+                "attack": 2546,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "Blastcrawler",
+                "hp": 143025,
+                "attack": 1218,
+                "defense": 593,
+                "stun": 519,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1728807,
+                "attack": 3210,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 1957858,
+                "attack": 3071,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 307089,
+                "attack": 1743,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 403238,
+                "attack": 2103,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 403238,
+                "attack": 1909,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202604": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2458320,
+                "attack": 3038,
+                "defense": 812,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 316014,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Heavy Gunner",
+                "hp": 1868503,
+                "attack": 2665,
+                "defense": 812,
+                "stun": 5306,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Guard Jaeger",
+                "hp": 316014,
+                "attack": 1720,
+                "defense": 691,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Lightfoot Rover",
+                "hp": 1997103,
+                "attack": 2264,
+                "defense": 812,
+                "stun": 7004,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 386364,
+                "attack": 1891,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "attack": 1548,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2458320,
+                "attack": 3038,
+                "defense": 812,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 2549494,
+                "attack": 3467,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202605": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 785323,
+                "attack": 1584,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 923741,
+                "attack": 1848,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 4950448,
+                "attack": 2815,
+                "defense": 794,
+                "stun": 7793,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 3727565,
+                "attack": 2522,
+                "defense": 794,
+                "stun": 5946,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "杜拉罕",
+                "hp": 4204592,
+                "attack": 3255,
+                "defense": 922,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 4204592,
+                "attack": 3255,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 865971,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 865971,
+                "attack": 2023,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Banyrek",
+                "hp": 5182099,
+                "attack": 3548,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202606": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 853855,
+                "attack": 1951,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 12778586,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Wanted Intimidator",
+                "hp": 4052854,
+                "attack": 2663,
+                "defense": 794,
+                "stun": 6350,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Tepes",
+                "hp": 13244381,
+                "attack": 4458,
+                "defense": 953,
+                "stun": 17438,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202607": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001271": {
+          "title": "Peculiar Bloom",
+          "desc": "· Agent CRIT DMG increases by 20%, Anomaly Proficiency increases by 40 points.\n· After an Agent with <color=#FFFFFF>Support</color> specialty uses their <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Aftershock</color>, the whole squad's ATK increases by 20% and their Attribute Anomaly DMG increases by 30% for 15s. Repeated triggers reset the duration."
+        }
+      },
+      "layer_room": {
+        "62026071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Miasmic - Jane",
+                "hp": 18939327,
+                "attack": 2818,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62026072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Faun",
+                "hp": 902154,
+                "attack": 1615,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Miasmic - Thracian",
+                "hp": 19182429,
+                "attack": 3522,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

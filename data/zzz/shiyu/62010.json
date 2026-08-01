@@ -1,0 +1,1014 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2024-12-01 04:00:00",
+  "end_time": "2024-12-17 03:59:59",
+  "zone": {
+    "6201001": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 216804,
+                "attack": 1406,
+                "defense": 510,
+                "stun": 1923,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tarasque Mixer",
+                "hp": 1395091,
+                "attack": 2291,
+                "defense": 640,
+                "stun": 7481,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 216804,
+                "attack": 1406,
+                "defense": 474,
+                "stun": 1923,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 216804,
+                "attack": 1718,
+                "defense": 474,
+                "stun": 1923,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 960537,
+                "attack": 2395,
+                "defense": 592,
+                "stun": 5699,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 1395091,
+                "attack": 2291,
+                "defense": 592,
+                "stun": 7481,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201002": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1612529,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 9288,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1243546,
+                "attack": 3134,
+                "defense": 701,
+                "stun": 5911,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 290053,
+                "attack": 2054,
+                "defense": 520,
+                "stun": 2215,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 290053,
+                "attack": 1865,
+                "defense": 520,
+                "stun": 2215,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 263040,
+                "attack": 1702,
+                "defense": 520,
+                "stun": 2009,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arsonist",
+                "hp": 263040,
+                "attack": 1459,
+                "defense": 520,
+                "stun": 2009,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 1897409,
+                "attack": 2243,
+                "defense": 649,
+                "stun": 11725,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 1897409,
+                "attack": 2756,
+                "defense": 649,
+                "stun": 11725,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201003": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2053004,
+                "attack": 2933,
+                "defense": 745,
+                "stun": 10951,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Harrier Jaeger",
+                "hp": 291407,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1383,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1560434,
+                "attack": 2573,
+                "defense": 745,
+                "stun": 6113,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 263911,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1383,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 290232,
+                "attack": 1633,
+                "defense": 552,
+                "stun": 1452,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 263911,
+                "attack": 1494,
+                "defense": 552,
+                "stun": 1383,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 263911,
+                "attack": 1826,
+                "defense": 552,
+                "stun": 1383,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1429536,
+                "attack": 2546,
+                "defense": 689,
+                "stun": 6148,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "恶灵",
+                "hp": 2135726,
+                "attack": 2795,
+                "defense": 689,
+                "stun": 9152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201004": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "Harrier Jaeger",
+                "hp": 307886,
+                "attack": 1891,
+                "defense": 601,
+                "stun": 1440,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1648679,
+                "attack": 2665,
+                "defense": 812,
+                "stun": 6368,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1825217,
+                "attack": 2608,
+                "defense": 812,
+                "stun": 9533,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 2256505,
+                "attack": 3181,
+                "defense": 812,
+                "stun": 9533,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "Demolition Jaeger",
+                "hp": 306645,
+                "attack": 1691,
+                "defense": 601,
+                "stun": 1512,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 340910,
+                "attack": 1806,
+                "defense": 601,
+                "stun": 2160,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 340910,
+                "attack": 1548,
+                "defense": 601,
+                "stun": 2160,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 2459114,
+                "attack": 2379,
+                "defense": 751,
+                "stun": 12608,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 2717589,
+                "attack": 3324,
+                "defense": 751,
+                "stun": 17151,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 2537575,
+                "attack": 3324,
+                "defense": 751,
+                "stun": 14300,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201005": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "Hati",
+                "hp": 1762170,
+                "attack": 3108,
+                "defense": 858,
+                "stun": 6079,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 1472207,
+                "attack": 1760,
+                "defense": 715,
+                "stun": 6546,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 2064056,
+                "attack": 2844,
+                "defense": 715,
+                "stun": 8657,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 335333,
+                "attack": 1848,
+                "defense": 572,
+                "stun": 2337,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 360054,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 1637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 360054,
+                "attack": 2229,
+                "defense": 636,
+                "stun": 1637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 399317,
+                "attack": 1584,
+                "defense": 636,
+                "stun": 2225,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Looter",
+                "hp": 469699,
+                "attack": 1848,
+                "defense": 636,
+                "stun": 2225,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Doppelganger - Mors",
+                "hp": 2972334,
+                "attack": 2786,
+                "defense": 794,
+                "stun": 14729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Bellum",
+                "hp": 3183190,
+                "attack": 3401,
+                "defense": 794,
+                "stun": 17665,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "Doppelganger - Pulchra",
+                "hp": 2972334,
+                "attack": 3401,
+                "defense": 794,
+                "stun": 14729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201006": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "恶名·杜拉罕",
+                "hp": 5305456,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 14634,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 279535,
+                "attack": 1951,
+                "defense": 572,
+                "stun": 1664,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 391475,
+                "attack": 2353,
+                "defense": 636,
+                "stun": 1748,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 391475,
+                "attack": 2353,
+                "defense": 636,
+                "stun": 1748,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 434164,
+                "attack": 1951,
+                "defense": 636,
+                "stun": 2376,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 434164,
+                "attack": 1672,
+                "defense": 636,
+                "stun": 2376,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 6497586,
+                "attack": 3715,
+                "defense": 953,
+                "stun": 14634,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201007": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001101": {
+          "title": "Surging Starflow",
+          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+        }
+      },
+      "layer_room": {
+        "62010071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 417672,
+                "attack": 1761,
+                "defense": 683,
+                "stun": 1692,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "汉斯",
+                "hp": 8004942,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 20273,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62010072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Fossor",
+                "hp": 460444,
+                "attack": 2479,
+                "defense": 636,
+                "stun": 1867,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 460444,
+                "attack": 2479,
+                "defense": 636,
+                "stun": 1867,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Thracian",
+                "hp": 6864248,
+                "attack": 4304,
+                "defense": 953,
+                "stun": 16413,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1050 @@
+{
+  "name": "Critical Node",
+  "begin_time": "2025-05-23 04:00:00",
+  "end_time": "2025-06-06 03:59:59",
+  "zone": {
+    "6202201": {
+      "name": "Critical Node: First Frontier",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 202350,
+                "attack": 1406,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 202350,
+                "attack": 1718,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 896501,
+                "attack": 2395,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "Ruthless Fiend",
+                "hp": 1240481,
+                "attack": 2161,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1240481,
+                "attack": 2395,
+                "defense": 640,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 722890,
+                "attack": 1380,
+                "defense": 533,
+                "stun": 4157,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 279282,
+                "attack": 2057,
+                "defense": 427,
+                "stun": 1763,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tyrfing (Infested)",
+                "hp": 279282,
+                "attack": 2057,
+                "defense": 427,
+                "stun": 1763,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hitchspiker",
+                "hp": 57036,
+                "attack": 1875,
+                "defense": 427,
+                "stun": 1175,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202202": {
+      "name": "Critical Node: Second Frontier",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 245504,
+                "attack": 1459,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 288775,
+                "attack": 1702,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1504491,
+                "attack": 2270,
+                "defense": 649,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1130782,
+                "attack": 2054,
+                "defense": 649,
+                "stun": 4701,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "Hati",
+                "hp": 1053180,
+                "attack": 2486,
+                "defense": 701,
+                "stun": 4033,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 877054,
+                "attack": 1432,
+                "defense": 585,
+                "stun": 4344,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 158067,
+                "attack": 1702,
+                "defense": 468,
+                "stun": 1172,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 158067,
+                "attack": 1702,
+                "defense": 468,
+                "stun": 1172,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 270716,
+                "attack": 2054,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 270716,
+                "attack": 1865,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202203": {
+      "name": "Critical Node: Third Frontier",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 2117662,
+                "attack": 2684,
+                "defense": 621,
+                "stun": 4706,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1957858,
+                "attack": 3071,
+                "defense": 800,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 299099,
+                "attack": 1660,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 299099,
+                "attack": 1660,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "Blastcrawler",
+                "hp": 143025,
+                "attack": 1218,
+                "defense": 593,
+                "stun": 519,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1728807,
+                "attack": 3210,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 1957858,
+                "attack": 3071,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 307089,
+                "attack": 1743,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Fossor",
+                "hp": 403238,
+                "attack": 2103,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 403238,
+                "attack": 1909,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202204": {
+      "name": "Critical Node: Fourth Frontier",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 2458320,
+                "attack": 3038,
+                "defense": 676,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 2237420,
+                "attack": 2780,
+                "defense": 676,
+                "stun": 4902,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 1997103,
+                "attack": 2780,
+                "defense": 872,
+                "stun": 7004,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 386364,
+                "attack": 1720,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 386364,
+                "attack": 1720,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 386364,
+                "attack": 1548,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 454463,
+                "attack": 1806,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 2435526,
+                "attack": 2751,
+                "defense": 751,
+                "stun": 7566,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1833891,
+                "attack": 2465,
+                "defense": 751,
+                "stun": 5772,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202205": {
+      "name": "Critical Node: Fifth Frontier",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 4065176,
+                "attack": 3108,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 638907,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 638907,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 3420685,
+                "attack": 2668,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 4111244,
+                "attack": 2844,
+                "defense": 858,
+                "stun": 7215,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 3805984,
+                "attack": 2962,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arlaune",
+                "hp": 2355531,
+                "attack": 1760,
+                "defense": 715,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Goblin",
+                "hp": 3420685,
+                "attack": 3255,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Ahriman",
+                "hp": 751518,
+                "attack": 1584,
+                "defense": 572,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Specter",
+                "hp": 638907,
+                "attack": 1935,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202206": {
+      "name": "Critical Node: Sixth Frontier",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 694662,
+                "attack": 1951,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Arsonist",
+                "hp": 694662,
+                "attack": 1672,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Rampant Brute",
+                "hp": 11035145,
+                "attack": 4086,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "Thracian",
+                "hp": 9337703,
+                "attack": 4086,
+                "defense": 953,
+                "stun": 12805,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 958764,
+                "attack": 2446,
+                "defense": 572,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tyrfing (Infested)",
+                "hp": 958764,
+                "attack": 2446,
+                "defense": 572,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Hitchspiker",
+                "hp": 195801,
+                "attack": 2229,
+                "defense": 572,
+                "stun": 1453,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202207": {
+      "name": "Critical Node: Seventh Frontier",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001194": {
+          "title": "Mountain Strike",
+          "desc": "· Agent ATK increases by 10%, and enemy Stun recovery speed is reduced by 10%. When inflicting an Attribute Anomaly on the enemy, if the enemy is not Stunned, 10% Daze will be directly accumulated.\n· Agents with the <color=#FFFFFF>Attack</color> specialty deal 30% more damage to enemies with <color=#FFFFFF>Ultimate</color> and <color=#FFFFFF>EX Special Attacks</color>, and if the enemy is Stunned, the attack's CRIT DMG is further increased by 60%."
+        }
+      },
+      "layer_room": {
+        "62022071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Tyrfing",
+                "hp": 47607,
+                "attack": 1566,
+                "defense": 715,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "恶名·塔纳托斯",
+                "hp": 11004815,
+                "attack": 3913,
+                "defense": 953,
+                "stun": 9118,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62022072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "Fossor",
+                "hp": 900952,
+                "attack": 2479,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Sordidus",
+                "hp": 900952,
+                "attack": 2250,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "Tepes",
+                "hp": 12673419,
+                "attack": 4696,
+                "defense": 953,
+                "stun": 18627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}
