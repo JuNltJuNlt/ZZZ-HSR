@@ -14,7 +14,7 @@ const text = {
     chartStageTitle: "各间血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     waveNames: ["第一波", "第二波", "第三波", "第四波"],
-    stageLabels: ["上路", "下路", "中路"],
+    stageLabels: ["房间一", "房间二", "房间三"],
 };
 
 const state = {
@@ -369,7 +369,7 @@ const renderAllStages = () => {
     rooms.forEach((rk, i) => {
         const stageData = floor.layer_room[rk];
         const elements = stageData.weakness || [];
-        const label = text.stageLabels[i] || `第${i + 1}路`;
+        const label = text.stageLabels[i] || `房间${i + 1}`;
         const wrapper = document.createElement("div");
         wrapper.style.flex = `1 1 ${rooms.length === 3 ? '30%' : '45%'}`;
         wrapper.style.minWidth = "300px";
@@ -434,7 +434,7 @@ const renderCharts = () => {
     const stageSeries = rooms.map((rk, i) => {
         const color = ["#cc0000", "#2545ba", "#4CAF50"][i];
         return {
-            name: text.stageLabels[i] || `第${i + 1}路`,
+            name: text.stageLabels[i] || `房间${i + 1}`,
             color,
             data: entries.map(e => {
                 const zone = e.zone;
@@ -501,7 +501,10 @@ const init = async () => {
     initMenu();
     await loadData();
     bindEvents();
-    setSchedule(0);
+    state.scheduleIndex = 0;
+    const zone = currentEntry().zone;
+    state.floorIndex = Object.keys(zone).length - 1;
+    render();
 };
 
 init().catch(console.error);
