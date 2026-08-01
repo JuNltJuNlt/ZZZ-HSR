@@ -186,8 +186,21 @@ const currentFloor = () => {
 };
 
 const setSchedule = (index) => {
+    const prevZone = currentEntry().zone;
+    const prevMaxFloor = Object.keys(prevZone).length;
+    const prevFloor = state.floorIndex;
+
     state.scheduleIndex = wrapIndex(index, shiyuEntries.length);
-    state.floorIndex = 0;
+    
+    const newZone = currentEntry().zone;
+    const newMaxFloor = Object.keys(newZone).length;
+    
+    if (prevFloor >= newMaxFloor) {
+        state.floorIndex = newMaxFloor - 1;
+    } else {
+        state.floorIndex = prevFloor;
+    }
+    
     render();
 };
 
@@ -357,9 +370,10 @@ const renderAllStages = () => {
         const stageData = floor.layer_room[rk];
         const elements = stageData.weakness || [];
         const label = text.stageLabels[i] || `第${i + 1}路`;
-        const wrapper = create("div", { style: `flex: 1 1 ${rooms.length === 3 ? '30%' : '45%'}; min-width: 300px;` });
+        const wrapper = document.createElement("div");
+        wrapper.style.flex = `1 1 ${rooms.length === 3 ? '30%' : '45%'}`;
+        wrapper.style.minWidth = "300px";
         
-        // 如果三路各有不同 buff，buff 放对应路上方
         if (rooms.length >= 3 && buffKeys[i]) {
             const buff = floor.layer_buff[buffKeys[i]];
             if (buff && buff.title) {
@@ -385,10 +399,9 @@ const renderBuffs = () => {
     const container = byId("shiyuBuffs");
     container.replaceChildren();
 
-    // 只有两路或一路共用 buff 时，在顶部显示宽 buff
     if (stages.length <= 2) {
         const buffs = buffKeys.map(k => floor.layer_buff[k]).filter(b => b.title);
-        buffs.forEach((buff, i) => {
+        buffs.forEach((buff) => {
             container.appendChild(create("div", {
                 className: "smallbuff a_b_0",
                 children: [
@@ -398,7 +411,6 @@ const renderBuffs = () => {
             }));
         });
     }
-    // 三路各自 buff 已放在 renderAllStages 中
 };
 
 const chartEntries = () => shiyuEntries.slice().reverse();
