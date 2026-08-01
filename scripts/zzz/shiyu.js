@@ -118,6 +118,8 @@ const renderMonsterCard = (monster, stageLevel) => {
     const type = info.type || "C";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
+    const def = monster.defense || 0;
+    const stun = monster.stun || 0;
 
     return create("span", {
         className: "monster_card hover-shadow",
@@ -134,6 +136,10 @@ const renderMonsterCard = (monster, stageLevel) => {
                 className: "monright",
                 children: [
                     create("span", { className: "monname", html: `<b><color style="color:#cc0000;">${hp}</color></b>` }),
+                    create("br"),
+                    create("span", { className: "monname", html: `防 <b><color style="color:#2545ba;">${def}</color></b>` }),
+                    create("br"),
+                    create("span", { className: "monname", html: `失衡 <b><color style="color:#2545ba;">${stun}</color></b>` }),
                 ],
             }),
             renderWeaknessBars(monster),
