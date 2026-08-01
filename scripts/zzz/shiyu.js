@@ -7,6 +7,7 @@ const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
 
 let shiyuEntries = [];
 let monstersData = [];
+let indexData = null;
 
 const text = {
     title: "式舆防卫战",
@@ -31,10 +32,10 @@ const fetchJson = async (fileName) => {
 };
 
 const loadData = async () => {
-    const index = await fetchJson("index.json");
+    indexData = await fetchJson("index.json");
     const mRes = await fetch('../../data/zzz/monsters.json');
     monstersData = (await mRes.json()).monsters;
-    shiyuEntries = await Promise.all(index.entries.map(f => fetchJson(f)));
+    shiyuEntries = await Promise.all(indexData.entries.map(f => fetchJson(f)));
 };
 
 const currentEntry = () => shiyuEntries[state.scheduleIndex];
@@ -75,7 +76,7 @@ const setFloor = (index) => {
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...shiyuEntries.map((e, i) => create("option", {
-            text: `${e.name} | ${e.begin_time} - ${e.end_time}`,
+            text: `${indexData.entries[i]} | ${e.begin_time} - ${e.end_time}`,
             attrs: { value: i, selected: i === state.scheduleIndex },
         })),
     );
@@ -83,7 +84,7 @@ const renderScheduleSelect = () => {
 
 const renderScheduleHeader = () => {
     const e = currentEntry();
-    byId("scheduleName").textContent = e.name;
+    byId("scheduleName").textContent = indexData.entries[state.scheduleIndex];
     byId("scheduleTime").textContent = `${e.begin_time} - ${e.end_time}`;
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
@@ -234,13 +235,13 @@ const renderAllStages = () => {
         
         buffKeys.forEach((bk) => {
             const buff = floor.layer_buff[bk];
-            if (buff && buff.title) {
+            if (buff) {
                 buffRow.appendChild(create("div", {
                     className: "smallbuff",
                     style: { flex: "1 1 30%", minWidth: "280px" },
                     children: [
-                        create("p", { className: "smallbuff_name", text: buff.title }),
-                        create("p", { className: "smallbuff_desc", html: buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">') }),
+                        create("p", { className: "smallbuff_name", text: buff.title || "" }),
+                        create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/ · /g, '<br>· ') }),
                     ],
                 }));
             }
@@ -277,14 +278,14 @@ const renderBuffs = () => {
 
     if (stages.length >= 3) return;
 
-    const buffs = buffKeys.map(k => floor.layer_buff[k]).filter(b => b.title);
+    const buffs = buffKeys.map(k => floor.layer_buff[k]).filter(b => b && (b.title || b.desc));
     buffs.forEach((buff) => {
         container.appendChild(create("div", {
             className: "smallbuff a_b_0",
             style: { width: "100%" },
             children: [
-                create("p", { className: "smallbuff_name", text: buff.title }),
-                create("p", { className: "smallbuff_desc", html: buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">') }),
+                create("p", { className: "smallbuff_name", text: buff.title || "" }),
+                create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/ · /g, '<br>· ') }),
             ],
         }));
     });
@@ -341,7 +342,7 @@ const renderLineChart = (targetId, title, seriesData) => {
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-        xAxis: { type: "category", data: entries.map(e => e.name), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
+        xAxis: { type: "category", data: entries.map(e => e.name || indexData.entries[shiyuEntries.indexOf(e)] || ""), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({
