@@ -76,7 +76,7 @@ const setFloor = (index) => {
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...shiyuEntries.map((e, i) => create("option", {
-            text: `${indexData.entries[i]} | ${e.begin_time} - ${e.end_time}`,
+            text: `${indexData.entries[i].replace('.json', '')} | ${e.begin_time} - ${e.end_time}`,
             attrs: { value: i, selected: i === state.scheduleIndex },
         })),
     );
@@ -84,7 +84,7 @@ const renderScheduleSelect = () => {
 
 const renderScheduleHeader = () => {
     const e = currentEntry();
-    byId("scheduleName").textContent = indexData.entries[state.scheduleIndex];
+    byId("scheduleName").textContent = indexData.entries[state.scheduleIndex].replace('.json', '');
     byId("scheduleTime").textContent = `${e.begin_time} - ${e.end_time}`;
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
@@ -241,7 +241,7 @@ const renderAllStages = () => {
                     style: { flex: "1 1 30%", minWidth: "280px" },
                     children: [
                         create("p", { className: "smallbuff_name", text: buff.title || "" }),
-                        create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/ · /g, '<br>· ') }),
+                        create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') }),
                     ],
                 }));
             }
@@ -285,7 +285,7 @@ const renderBuffs = () => {
             style: { width: "100%" },
             children: [
                 create("p", { className: "smallbuff_name", text: buff.title || "" }),
-                create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/ · /g, '<br>· ') }),
+                create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') }),
             ],
         }));
     });
@@ -342,7 +342,7 @@ const renderLineChart = (targetId, title, seriesData) => {
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-        xAxis: { type: "category", data: entries.map(e => e.name || indexData.entries[shiyuEntries.indexOf(e)] || ""), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
+        xAxis: { type: "category", data: entries.map(e => e.name || (indexData && indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '') || ""), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({
