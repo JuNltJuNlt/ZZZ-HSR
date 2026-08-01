@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="玉衡杯数据库 - 绝区零式舆防卫战" />
+        <title>式舆防卫战 - 玉衡杯数据库</title>
+        <link rel="stylesheet" href="../../stylesheets/thin.css" />
+        <link rel="stylesheet" href="../../stylesheets/style.css" />
+        <link rel="stylesheet" href="../../stylesheets/arbitration.css" />
+        <script src="../../plugins/echarts.min.js"></script>
+        <script type="module" src="../../scripts/zzz/shiyu.js"></script>
+    </head>
+    <body class="bg">
+        <container>
+            <h3>
+                <span class="title">
+                    <a href="../../index.html">
+                        <img src="../../images/others/logo.png" class="logo_img_yhb" alt="玉衡杯" />
+                    </a>
+                    <color style="font-size: 26px">
+                        <br />
+                        <img src="../../images/ZZZ%20images/emote/3.png" class="game_img" alt="" />
+                        <b>3.1V12</b>
+                    </color>
+                </span>
+                <em class="subtitle">
+                    <p><b>yuhengcup.wiki | <span style="white-space: pre"><a href="https://space.bilibili.com/3546567522912510" target="_blank">b站@妮可少女</a></span></b></p>
+                </em>
+                <em class="links">
+                    <img src="../../images/others/menu.png" class="_menu_" alt="菜单" />
+                </em>
+            </h3>
+
+            <div class="content">
+                <p class="content_title">式舆防卫战</p>
+
+                <div class="ver">
+                    <div id="prevSchedule" class="v_l">◁</div>
+                    <div class="ver_text hover-shadow">
+                        <p id="scheduleName" class="ver_text_name"></p>
+                        <p id="scheduleTime" class="ver_text_time"></p>
+                        <select id="scheduleSelect" class="schedule_select"></select>
+                    </div>
+                    <div id="nextSchedule" class="v_r"><p>▷</p></div>
+                </div>
+
+                <div id="shiyuBuffs" class="a_b u_b smallbuff_wrap"></div>
+                <div id="shiyuStages" class="u_l_wrapper"></div>
+
+                <div class="chart_container">
+                    <div id="totalChart" class="chart"></div>
+                </div>
+                <div class="chart_container">
+                    <div id="stageChart" class="chart"></div>
+                </div>
+            </div>
+        </container>
+    </body>
+</html>
