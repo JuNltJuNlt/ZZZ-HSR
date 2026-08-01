@@ -1,16 +1,16 @@
 {
   "id": 62036,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6203601": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11751": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -40,7 +40,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -60,7 +60,7 @@
             },
             "11771": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -80,7 +80,7 @@
             },
             "11781": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -100,7 +100,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -109,7 +109,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -129,7 +129,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -149,7 +149,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -169,7 +169,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -189,8 +189,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -202,13 +202,13 @@
       "b_rank_goal": 600
     },
     "6203602": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -218,7 +218,7 @@
           "monster_list": {
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -238,7 +238,7 @@
             },
             "11213": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -258,7 +258,7 @@
             },
             "11832": {
               "id": 100004,
-              "name": "Tyrfing (Infested)",
+              "name": "提尔锋（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_TyrfingInfested.png",
               "element": {
                 "ice": 1,
@@ -278,7 +278,7 @@
             },
             "11822": {
               "id": 100014,
-              "name": "Alpeca (Infested)",
+              "name": "阿佩卡（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_AlpecaInfested.png",
               "element": {
                 "ice": 1,
@@ -298,7 +298,7 @@
             },
             "11851": {
               "id": 30025,
-              "name": "Hitchspiker",
+              "name": "刺椎原虫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Hitchspiker.png",
               "element": {
                 "ice": 0,
@@ -318,8 +318,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -328,7 +328,7 @@
           "monster_list": {
             "11058": {
               "id": 30002,
-              "name": "Guardian",
+              "name": "「卫士」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Guardian.png",
               "element": {
                 "ice": 0,
@@ -348,7 +348,7 @@
             },
             "11454": {
               "id": 20007,
-              "name": "Heavy Striker",
+              "name": "「重装侵袭者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStriker.png",
               "element": {
                 "ice": 0,
@@ -368,7 +368,7 @@
             },
             "11164": {
               "id": 10005,
-              "name": "Strike Jaeger",
+              "name": "掠袭猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaeger.png",
               "element": {
                 "ice": 0,
@@ -388,7 +388,7 @@
             },
             "11254": {
               "id": 10006,
-              "name": "Light Jaeger",
+              "name": "轻装猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaeger.png",
               "element": {
                 "ice": 0,
@@ -408,8 +408,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -421,13 +421,13 @@
       "b_rank_goal": 600
     },
     "6203603": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -437,7 +437,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -457,7 +457,7 @@
             },
             "11192": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -477,7 +477,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -497,7 +497,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -517,7 +517,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -537,7 +537,7 @@
             },
             "11084": {
               "id": 10004,
-              "name": "Blastcrawler",
+              "name": "雷蛛",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_SpiderGrey.png",
               "element": {
                 "ice": 1,
@@ -557,8 +557,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -567,7 +567,7 @@
           "monster_list": {
             "11752": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -587,7 +587,7 @@
             },
             "11741": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -607,7 +607,7 @@
             },
             "11771": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -627,7 +627,7 @@
             },
             "11781": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -647,7 +647,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -659,13 +659,13 @@
       "b_rank_goal": 600
     },
     "6203604": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -675,7 +675,7 @@
           "monster_list": {
             "11155": {
               "id": 30000,
-              "name": "Dullahan",
+              "name": "杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_DurahanGrey.png",
               "element": {
                 "ice": 1,
@@ -695,7 +695,7 @@
             },
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -715,7 +715,7 @@
             },
             "31052": {
               "id": 930168,
-              "name": "Banyrek",
+              "name": "班尼雷克",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Banyrek.png",
               "element": {
                 "ice": 1,
@@ -735,7 +735,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -755,7 +755,7 @@
             },
             "11204": {
               "id": 10003,
-              "name": "Hoplitai",
+              "name": "霍普利泰",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
               "element": {
                 "ice": 1,
@@ -775,7 +775,7 @@
             },
             "11104": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -795,8 +795,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -805,7 +805,7 @@
           "monster_list": {
             "31172": {
               "id": 20032,
-              "name": "Ionized - Pugnus",
+              "name": "离子体·普格努斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_IonizedPugnus.png",
               "element": {
                 "ice": 1,
@@ -825,7 +825,7 @@
             },
             "11185": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -845,7 +845,7 @@
             },
             "31182": {
               "id": 10032,
-              "name": "Miasma Spawn",
+              "name": "秽息原牲",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaSpawn.png",
               "element": {
                 "ice": 0,
@@ -865,8 +865,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -878,13 +878,13 @@
       "b_rank_goal": 600
     },
     "6203605": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -894,7 +894,7 @@
           "monster_list": {
             "31312": {
               "id": 20027,
-              "name": "Miasmic - Trinox",
+              "name": "秽蚀·特里诺斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MiasmaTrinox.png",
               "element": {
                 "ice": 0,
@@ -914,7 +914,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -934,7 +934,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -954,7 +954,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 2
         },
@@ -963,7 +963,7 @@
           "monster_list": {
             "31322": {
               "id": 20031,
-              "name": "Miasmic - Wicked Wraith",
+              "name": "秽蚀·盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MiasmaWickedWraith.png",
               "element": {
                 "ice": 0,
@@ -983,7 +983,7 @@
             },
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -1003,8 +1003,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1016,13 +1016,13 @@
       "b_rank_goal": 600
     },
     "6203606": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -1032,7 +1032,7 @@
           "monster_list": {
             "11961": {
               "id": 930166,
-              "name": "Tepes",
+              "name": "特佩什",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Tepes.png",
               "element": {
                 "ice": 1,
@@ -1052,8 +1052,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 1
         },
@@ -1062,7 +1062,7 @@
           "monster_list": {
             "11671": {
               "id": 30019,
-              "name": "Rampant Brute",
+              "name": "蛮横力士",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_DubiousHero.png",
               "element": {
                 "ice": -1,
@@ -1082,7 +1082,7 @@
             },
             "11353": {
               "id": 200172,
-              "name": "Troublemaker - Wanted Enforcer",
+              "name": "祸首·通缉打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerBoss.png",
               "element": {
                 "ice": -1,
@@ -1102,8 +1102,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 1
         }
@@ -1115,13 +1115,13 @@
       "b_rank_goal": 600
     },
     "6203607": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001361": {
-          "title": "Deceitful Steps",
-          "desc": "· When an Agent with the <color=#FFFFFF>[Stun]</color> specialty hits a Stunned enemy, the enemy's Stun DMG Multiplier increases by 50%.\n· Agent EX Special Attack and Ultimate DMG increase by 60%."
+          "title": "迷声诡步",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "child": [],
@@ -1131,7 +1131,7 @@
           "monster_list": {
             "31192": {
               "id": 30039,
-              "name": "Haytor",
+              "name": "赫由托",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Hayyot.png",
               "element": {
                 "ice": 1,
@@ -1151,8 +1151,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "202": "Ice"
+            "201": "火属性",
+            "202": "冰属性"
           },
           "waves_num": 1
         },
@@ -1161,7 +1161,7 @@
           "monster_list": {
             "11059": {
               "id": 30002,
-              "name": "Guardian",
+              "name": "「卫士」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Guardian.png",
               "element": {
                 "ice": 0,
@@ -1181,7 +1181,7 @@
             },
             "31214": {
               "id": 300372,
-              "name": "Miasmic - Doppelganger - The Defector",
+              "name": "秽蚀·多佩冈亚·「变节者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaIsoldeSlime.png",
               "element": {
                 "ice": 0,
@@ -1201,8 +1201,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1213,7 +1213,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-12-05 04:00:00",
-  "end_time": "2025-12-19 03:59:59"
+  }
 }

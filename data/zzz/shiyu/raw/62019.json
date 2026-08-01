@@ -1,16 +1,16 @@
 {
   "id": 62019,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6201901": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11381": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -40,7 +40,7 @@
             },
             "11372": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -60,8 +60,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "205": "Ether"
+            "203": "电属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -70,7 +70,7 @@
           "monster_list": {
             "11741": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -90,7 +90,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -110,7 +110,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -130,7 +130,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -150,7 +150,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -162,13 +162,13 @@
       "b_rank_goal": 600
     },
     "6201902": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -178,7 +178,7 @@
           "monster_list": {
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -198,7 +198,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -218,7 +218,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -238,7 +238,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -258,7 +258,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -267,7 +267,7 @@
           "monster_list": {
             "11123": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -287,7 +287,7 @@
             },
             "11213": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -307,7 +307,7 @@
             },
             "11291": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -327,7 +327,7 @@
             },
             "11292": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -347,7 +347,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -367,7 +367,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -387,8 +387,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -400,13 +400,13 @@
       "b_rank_goal": 600
     },
     "6201903": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -416,7 +416,7 @@
           "monster_list": {
             "11451": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -436,7 +436,7 @@
             },
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -456,7 +456,7 @@
             },
             "11272": {
               "id": 100071,
-              "name": "Private Jaeger",
+              "name": "整训猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MeleeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -476,7 +476,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -496,7 +496,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -505,7 +505,7 @@
           "monster_list": {
             "11224": {
               "id": 20004,
-              "name": "Metro Goblin",
+              "name": "铁道地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinMetro.png",
               "element": {
                 "ice": 1,
@@ -525,7 +525,7 @@
             },
             "11124": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -545,7 +545,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -565,7 +565,7 @@
             },
             "11204": {
               "id": 10003,
-              "name": "Hoplitai",
+              "name": "霍普利泰",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
               "element": {
                 "ice": 1,
@@ -585,7 +585,7 @@
             },
             "11097": {
               "id": 10000,
-              "name": "Tyrfing",
+              "name": "提尔锋",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
               "element": {
                 "ice": 1,
@@ -605,7 +605,7 @@
             },
             "11104": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -625,8 +625,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -638,13 +638,13 @@
       "b_rank_goal": 600
     },
     "6201904": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -654,7 +654,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -674,7 +674,7 @@
             },
             "11262": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -694,7 +694,7 @@
             },
             "11272": {
               "id": 100071,
-              "name": "Private Jaeger",
+              "name": "整训猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MeleeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -714,7 +714,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -734,7 +734,7 @@
             },
             "11762": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -754,7 +754,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -763,7 +763,7 @@
           "monster_list": {
             "11522": {
               "id": 200141,
-              "name": "Ruthless Fiend",
+              "name": "凶心疯汉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
               "element": {
                 "ice": 0,
@@ -783,7 +783,7 @@
             },
             "11512": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -803,7 +803,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -823,7 +823,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -843,7 +843,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         }
@@ -855,13 +855,13 @@
       "b_rank_goal": 600
     },
     "6201905": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -871,7 +871,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -891,7 +891,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -911,7 +911,7 @@
             },
             "11045": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -931,7 +931,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -951,7 +951,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -971,7 +971,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -980,7 +980,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -1000,7 +1000,7 @@
             },
             "11185": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -1020,7 +1020,7 @@
             },
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -1040,7 +1040,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1060,7 +1060,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1080,8 +1080,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -1093,13 +1093,13 @@
       "b_rank_goal": 600
     },
     "6201906": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -1109,7 +1109,7 @@
           "monster_list": {
             "11971": {
               "id": 200092,
-              "name": "Specialized Assault Bomber",
+              "name": "特战强袭轰击者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_TacticalAssaultGunner.png",
               "element": {
                 "ice": 0,
@@ -1129,7 +1129,7 @@
             },
             "11271": {
               "id": 100071,
-              "name": "Private Jaeger",
+              "name": "整训猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MeleeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1149,7 +1149,7 @@
             },
             "11762": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1169,7 +1169,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1178,7 +1178,7 @@
           "monster_list": {
             "11302": {
               "id": 300041,
-              "name": "Greta - Energized",
+              "name": "格莱特·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_BoringMachineRed.png",
               "element": {
                 "ice": 0,
@@ -1198,7 +1198,7 @@
             },
             "11684": {
               "id": 100301,
-              "name": "Fossor - Energized",
+              "name": "弗瑟尔·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_FossorPro.png",
               "element": {
                 "ice": 0,
@@ -1218,7 +1218,7 @@
             },
             "11694": {
               "id": 100311,
-              "name": "Sordidus - Energized",
+              "name": "索迪代斯·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_SordidusPro.png",
               "element": {
                 "ice": 0,
@@ -1238,7 +1238,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 2
         }
@@ -1250,13 +1250,13 @@
       "b_rank_goal": 600
     },
     "6201907": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001191": {
-          "title": "Oppressive Shackles",
-          "desc": "· The damage dealt by <color=#FFFFFF>Aftershocks</color> and <color=#FFFFFF>EX Special Attacks</color> is increased by 25%, and Daze is increased by 15%.\n· After the enemy is Stunned, their Stun recovery speed is reduced by 15%, and the <color=#2EB6FF>Electric DMG</color> and <color=#FE437E>Ether DMG</color> dealt by Agents is increased by 40%."
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "child": [],
@@ -1266,7 +1266,7 @@
           "monster_list": {
             "11453": {
               "id": 200073,
-              "name": "Shielded Defender Omega",
+              "name": "「护戍盾卫Ω型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_HeavyStrikerBossPro.png",
               "element": {
                 "ice": 0,
@@ -1286,7 +1286,7 @@
             },
             "11281": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -1306,7 +1306,7 @@
             },
             "11761": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1326,7 +1326,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1335,7 +1335,7 @@
           "monster_list": {
             "11951": {
               "id": 30031,
-              "name": "Palicus",
+              "name": "帕里库斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Hecate.png",
               "element": {
                 "ice": 1,
@@ -1355,7 +1355,7 @@
             },
             "11952": {
               "id": 30031,
-              "name": "Palicus",
+              "name": "帕里库斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Hecate.png",
               "element": {
                 "ice": 1,
@@ -1375,7 +1375,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1395,7 +1395,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1415,8 +1415,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1427,7 +1427,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-04-11 04:00:00",
-  "end_time": "2025-04-25 03:59:59"
+  }
 }

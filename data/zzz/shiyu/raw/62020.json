@@ -1,16 +1,16 @@
 {
   "id": 62020,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6202001": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -40,7 +40,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -60,7 +60,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -80,7 +80,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -100,7 +100,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -109,7 +109,7 @@
           "monster_list": {
             "11741": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -129,7 +129,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -149,7 +149,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -169,7 +169,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -189,7 +189,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -201,13 +201,13 @@
       "b_rank_goal": 600
     },
     "6202002": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -217,7 +217,7 @@
           "monster_list": {
             "11381": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -237,7 +237,7 @@
             },
             "11372": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -257,8 +257,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "205": "Ether"
+            "203": "电属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -267,7 +267,7 @@
           "monster_list": {
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -287,7 +287,7 @@
             },
             "11192": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -307,7 +307,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -327,7 +327,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -347,8 +347,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -360,13 +360,13 @@
       "b_rank_goal": 600
     },
     "6202003": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -376,7 +376,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -396,7 +396,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -416,7 +416,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -436,7 +436,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -456,8 +456,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 4
         },
@@ -466,7 +466,7 @@
           "monster_list": {
             "11752": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -486,7 +486,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -506,7 +506,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -526,7 +526,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -546,7 +546,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -558,13 +558,13 @@
       "b_rank_goal": 600
     },
     "6202004": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -574,7 +574,7 @@
           "monster_list": {
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -594,7 +594,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -614,7 +614,7 @@
             },
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -634,7 +634,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -654,7 +654,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -674,8 +674,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         },
@@ -684,7 +684,7 @@
           "monster_list": {
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -704,7 +704,7 @@
             },
             "11124": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -724,7 +724,7 @@
             },
             "11184": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -744,7 +744,7 @@
             },
             "11681": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -764,7 +764,7 @@
             },
             "11691": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -784,8 +784,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -797,13 +797,13 @@
       "b_rank_goal": 600
     },
     "6202005": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -813,7 +813,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -833,7 +833,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -853,7 +853,7 @@
             },
             "11262": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -873,7 +873,7 @@
             },
             "11161": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -893,7 +893,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -902,7 +902,7 @@
           "monster_list": {
             "11752": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -922,7 +922,7 @@
             },
             "11742": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -942,7 +942,7 @@
             },
             "11732": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -962,7 +962,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -982,7 +982,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -1002,7 +1002,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -1014,13 +1014,13 @@
       "b_rank_goal": 600
     },
     "6202006": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -1030,7 +1030,7 @@
           "monster_list": {
             "11671": {
               "id": 30019,
-              "name": "Rampant Brute",
+              "name": "蛮横力士",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_DubiousHero.png",
               "element": {
                 "ice": -1,
@@ -1050,7 +1050,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -1070,7 +1070,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -1090,8 +1090,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 2
         },
@@ -1100,7 +1100,7 @@
           "monster_list": {
             "11195": {
               "id": 200034,
-              "name": "Notorious - Armored Hati",
+              "name": "恶名·装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HatiArmoredBoss.png",
               "element": {
                 "ice": 1,
@@ -1120,7 +1120,7 @@
             },
             "11293": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1140,7 +1140,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1160,7 +1160,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1180,8 +1180,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1193,13 +1193,13 @@
       "b_rank_goal": 600
     },
     "6202007": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -1209,7 +1209,7 @@
           "monster_list": {
             "11941": {
               "id": 30026,
-              "name": "Terror Raptor",
+              "name": "骇鸟",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_TerrorBird.png",
               "element": {
                 "ice": -1,
@@ -1229,7 +1229,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -1249,7 +1249,7 @@
             },
             "11762": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1269,7 +1269,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1278,7 +1278,7 @@
           "monster_list": {
             "11403": {
               "id": 300052,
-              "name": "Hans - Overclocked",
+              "name": "汉斯·超频型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_HansOverclocked.png",
               "element": {
                 "ice": 0,
@@ -1298,7 +1298,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -1318,7 +1318,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -1338,7 +1338,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1349,7 +1349,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-04-25 04:00:00",
-  "end_time": "2025-05-09 03:59:59"
+  }
 }

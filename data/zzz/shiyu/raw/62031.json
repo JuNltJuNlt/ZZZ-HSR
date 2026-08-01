@@ -1,16 +1,16 @@
 {
   "id": 62031,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6203101": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11381": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -40,7 +40,7 @@
             },
             "11372": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -60,8 +60,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "205": "Ether"
+            "203": "电属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -70,7 +70,7 @@
           "monster_list": {
             "11511": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -90,7 +90,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -110,7 +110,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -130,7 +130,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -150,7 +150,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         }
@@ -162,13 +162,13 @@
       "b_rank_goal": 600
     },
     "6203102": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -178,7 +178,7 @@
           "monster_list": {
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -198,7 +198,7 @@
             },
             "11046": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -218,7 +218,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -238,7 +238,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -258,7 +258,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -267,7 +267,7 @@
           "monster_list": {
             "11612": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -287,7 +287,7 @@
             },
             "11352": {
               "id": 200171,
-              "name": "Wanted Enforcer",
+              "name": "通缉打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerPro.png",
               "element": {
                 "ice": -1,
@@ -307,7 +307,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -327,7 +327,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -347,8 +347,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -360,13 +360,13 @@
       "b_rank_goal": 600
     },
     "6203103": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -376,7 +376,7 @@
           "monster_list": {
             "31051": {
               "id": 930168,
-              "name": "Banyrek",
+              "name": "班尼雷克",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Banyrek.png",
               "element": {
                 "ice": 1,
@@ -396,7 +396,7 @@
             },
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -416,7 +416,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -436,7 +436,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -456,8 +456,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -466,7 +466,7 @@
           "monster_list": {
             "11522": {
               "id": 200141,
-              "name": "Ruthless Fiend",
+              "name": "凶心疯汉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
               "element": {
                 "ice": 0,
@@ -486,7 +486,7 @@
             },
             "11512": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -506,7 +506,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -526,7 +526,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -546,7 +546,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         }
@@ -558,13 +558,13 @@
       "b_rank_goal": 600
     },
     "6203104": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -574,7 +574,7 @@
           "monster_list": {
             "11452": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -594,7 +594,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -614,7 +614,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -634,7 +634,7 @@
             },
             "11161": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -654,7 +654,7 @@
             },
             "11761": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -674,7 +674,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -683,7 +683,7 @@
           "monster_list": {
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -703,7 +703,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -723,7 +723,7 @@
             },
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -743,7 +743,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -763,7 +763,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -783,8 +783,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -796,13 +796,13 @@
       "b_rank_goal": 600
     },
     "6203105": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -812,7 +812,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -832,7 +832,7 @@
             },
             "11185": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -852,7 +852,7 @@
             },
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -872,7 +872,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -892,7 +892,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -912,8 +912,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -922,7 +922,7 @@
           "monster_list": {
             "11059": {
               "id": 30002,
-              "name": "Guardian",
+              "name": "「卫士」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Guardian.png",
               "element": {
                 "ice": 0,
@@ -942,7 +942,7 @@
             },
             "11444": {
               "id": 20008,
-              "name": "Lightfoot Rover",
+              "name": "「捷足巡游者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRover.png",
               "element": {
                 "ice": 0,
@@ -962,7 +962,7 @@
             },
             "11264": {
               "id": 20009,
-              "name": "Heavy Gunner",
+              "name": "重装炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepower.png",
               "element": {
                 "ice": 0,
@@ -982,7 +982,7 @@
             },
             "11283": {
               "id": 10008,
-              "name": "Guard Jaeger",
+              "name": "戍卫猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger.png",
               "element": {
                 "ice": 0,
@@ -1002,7 +1002,7 @@
             },
             "11253": {
               "id": 10006,
-              "name": "Light Jaeger",
+              "name": "轻装猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaeger.png",
               "element": {
                 "ice": 0,
@@ -1022,8 +1022,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -1035,13 +1035,13 @@
       "b_rank_goal": 600
     },
     "6203106": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -1051,7 +1051,7 @@
           "monster_list": {
             "11941": {
               "id": 30026,
-              "name": "Terror Raptor",
+              "name": "骇鸟",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_TerrorBird.png",
               "element": {
                 "ice": -1,
@@ -1071,7 +1071,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 1
         },
@@ -1080,7 +1080,7 @@
           "monster_list": {
             "11063": {
               "id": 30008,
-              "name": "Typhon Challenger",
+              "name": "「提丰·挑战者型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MetalGorilla.png",
               "element": {
                 "ice": 0,
@@ -1100,8 +1100,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 1
         }
@@ -1113,13 +1113,13 @@
       "b_rank_goal": 600
     },
     "6203107": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -1129,7 +1129,7 @@
           "monster_list": {
             "11401": {
               "id": 30005,
-              "name": "Hans",
+              "name": "汉斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MaterialHandler.png",
               "element": {
                 "ice": 0,
@@ -1149,7 +1149,7 @@
             },
             "11382": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -1169,7 +1169,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1178,7 +1178,7 @@
           "monster_list": {
             "31214": {
               "id": 300372,
-              "name": "Miasmic - Doppelganger - The Defector",
+              "name": "秽蚀·多佩冈亚·「变节者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaIsoldeSlime.png",
               "element": {
                 "ice": 0,
@@ -1198,8 +1198,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 1
         }
@@ -1210,7 +1210,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-09-26 04:00:00",
-  "end_time": "2025-10-10 03:59:59"
+  }
 }

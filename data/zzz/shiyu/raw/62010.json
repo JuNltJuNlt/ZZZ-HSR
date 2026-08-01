@@ -1,16 +1,16 @@
 {
   "id": 62010,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6201001": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -24,7 +24,7 @@
           "monster_list": {
             "11381": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -44,7 +44,7 @@
             },
             "11372": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -64,8 +64,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "205": "Ether"
+            "203": "电属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -74,7 +74,7 @@
           "monster_list": {
             "11511": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -94,7 +94,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -114,7 +114,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -134,7 +134,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -154,7 +154,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         }
@@ -166,13 +166,13 @@
       "b_rank_goal": 600
     },
     "6201002": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -186,7 +186,7 @@
           "monster_list": {
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -206,7 +206,7 @@
             },
             "11192": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -226,7 +226,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -246,7 +246,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -266,8 +266,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -276,7 +276,7 @@
           "monster_list": {
             "11622": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -296,7 +296,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -316,7 +316,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -336,7 +336,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -356,8 +356,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -369,13 +369,13 @@
       "b_rank_goal": 600
     },
     "6201003": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -389,7 +389,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -409,7 +409,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -429,7 +429,7 @@
             },
             "11271": {
               "id": 100071,
-              "name": "Private Jaeger",
+              "name": "整训猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MeleeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -449,7 +449,7 @@
             },
             "11161": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -469,7 +469,7 @@
             },
             "11761": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -489,7 +489,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -498,7 +498,7 @@
           "monster_list": {
             "11512": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -518,7 +518,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -538,7 +538,7 @@
             },
             "11481": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -558,7 +558,7 @@
             },
             "11491": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -578,7 +578,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         }
@@ -590,13 +590,13 @@
       "b_rank_goal": 600
     },
     "6201004": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -610,7 +610,7 @@
           "monster_list": {
             "11452": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -630,7 +630,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -650,7 +650,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -670,7 +670,7 @@
             },
             "11161": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -690,7 +690,7 @@
             },
             "11761": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -710,7 +710,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -719,7 +719,7 @@
           "monster_list": {
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -739,7 +739,7 @@
             },
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -759,7 +759,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -779,7 +779,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -799,7 +799,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -819,8 +819,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -832,13 +832,13 @@
       "b_rank_goal": 600
     },
     "6201005": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -852,7 +852,7 @@
           "monster_list": {
             "11225": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -872,7 +872,7 @@
             },
             "11214": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -892,7 +892,7 @@
             },
             "11124": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -912,7 +912,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -932,7 +932,7 @@
             },
             "11681": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -952,7 +952,7 @@
             },
             "11691": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -972,8 +972,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -982,7 +982,7 @@
           "monster_list": {
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -1002,7 +1002,7 @@
             },
             "11603": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -1022,7 +1022,7 @@
             },
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -1042,7 +1042,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -1062,7 +1062,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -1082,8 +1082,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -1095,13 +1095,13 @@
       "b_rank_goal": 600
     },
     "6201006": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -1115,7 +1115,7 @@
           "monster_list": {
             "11156": {
               "id": 300005,
-              "name": "Notorious - Dullahan",
+              "name": "恶名·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanBoss.png",
               "element": {
                 "ice": 1,
@@ -1135,7 +1135,7 @@
             },
             "11681": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1155,7 +1155,7 @@
             },
             "11691": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1175,7 +1175,7 @@
             },
             "11292": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1195,8 +1195,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         },
@@ -1205,7 +1205,7 @@
           "monster_list": {
             "11353": {
               "id": 200172,
-              "name": "Troublemaker - Wanted Enforcer",
+              "name": "祸首·通缉打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerBoss.png",
               "element": {
                 "ice": -1,
@@ -1225,7 +1225,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -1245,7 +1245,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -1265,8 +1265,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1278,13 +1278,13 @@
       "b_rank_goal": 600
     },
     "6201007": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001101": {
-          "title": "Surging Starflow",
-          "desc": "· Agent Impact increases by 20%. Upon stunning an enemy, all squad members recover 20 Energy and have their ATK increased by 20% for 20s. This Energy gain effect can trigger once every 15s.\n· Upon stunning an enemy, its Stun DMG Multiplier increases over time by 10% per second, up to a maximum increase of 60%."
+          "title": "汹涌星流",
+          "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         },
         "62001102": {
           "title": "",
@@ -1298,7 +1298,7 @@
           "monster_list": {
             "11401": {
               "id": 30005,
-              "name": "Hans",
+              "name": "汉斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MaterialHandler.png",
               "element": {
                 "ice": 0,
@@ -1318,7 +1318,7 @@
             },
             "11371": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -1338,7 +1338,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1347,7 +1347,7 @@
           "monster_list": {
             "11711": {
               "id": 30023,
-              "name": "Thracian",
+              "name": "色雷斯人",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Thracian.png",
               "element": {
                 "ice": 1,
@@ -1367,7 +1367,7 @@
             },
             "11681": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1387,7 +1387,7 @@
             },
             "11691": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1407,8 +1407,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1419,7 +1419,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2024-12-01 04:00:00",
-  "end_time": "2024-12-17 03:59:59"
+  }
 }

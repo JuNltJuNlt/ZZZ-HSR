@@ -1,16 +1,16 @@
 {
   "id": 62006,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6200601": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11123": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -40,7 +40,7 @@
             },
             "11213": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -60,7 +60,7 @@
             },
             "11291": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -80,7 +80,7 @@
             },
             "11292": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -100,7 +100,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -120,7 +120,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -140,8 +140,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -150,7 +150,7 @@
           "monster_list": {
             "11612": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -170,7 +170,7 @@
             },
             "11352": {
               "id": 200171,
-              "name": "Wanted Enforcer",
+              "name": "通缉打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerPro.png",
               "element": {
                 "ice": -1,
@@ -190,7 +190,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -210,7 +210,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -230,8 +230,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -243,13 +243,13 @@
       "b_rank_goal": 600
     },
     "6200602": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -259,7 +259,7 @@
           "monster_list": {
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -279,7 +279,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -299,7 +299,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -319,7 +319,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -339,7 +339,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -348,7 +348,7 @@
           "monster_list": {
             "11622": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -368,7 +368,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -388,7 +388,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -408,7 +408,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -428,8 +428,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -441,13 +441,13 @@
       "b_rank_goal": 600
     },
     "6200603": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -457,7 +457,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -477,7 +477,7 @@
             },
             "11192": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -497,7 +497,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -517,7 +517,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -537,7 +537,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -557,7 +557,7 @@
             },
             "11084": {
               "id": 10004,
-              "name": "Blastcrawler",
+              "name": "雷蛛",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_SpiderGrey.png",
               "element": {
                 "ice": 1,
@@ -577,8 +577,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -587,7 +587,7 @@
           "monster_list": {
             "11455": {
               "id": 20007,
-              "name": "Heavy Striker",
+              "name": "「重装侵袭者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStriker.png",
               "element": {
                 "ice": 0,
@@ -607,7 +607,7 @@
             },
             "11443": {
               "id": 20008,
-              "name": "Lightfoot Rover",
+              "name": "「捷足巡游者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRover.png",
               "element": {
                 "ice": 0,
@@ -627,7 +627,7 @@
             },
             "11164": {
               "id": 10005,
-              "name": "Strike Jaeger",
+              "name": "掠袭猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaeger.png",
               "element": {
                 "ice": 0,
@@ -647,7 +647,7 @@
             },
             "11254": {
               "id": 10006,
-              "name": "Light Jaeger",
+              "name": "轻装猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaeger.png",
               "element": {
                 "ice": 0,
@@ -667,8 +667,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -680,13 +680,13 @@
       "b_rank_goal": 600
     },
     "6200604": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -696,7 +696,7 @@
           "monster_list": {
             "11752": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -716,7 +716,7 @@
             },
             "11741": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -736,7 +736,7 @@
             },
             "11732": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -756,7 +756,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -776,7 +776,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -796,7 +796,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -805,7 +805,7 @@
           "monster_list": {
             "11355": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -825,7 +825,7 @@
             },
             "11364": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -845,7 +845,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -865,7 +865,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -885,8 +885,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -898,13 +898,13 @@
       "b_rank_goal": 600
     },
     "6200605": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -914,7 +914,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -934,7 +934,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -954,7 +954,7 @@
             },
             "11045": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -974,7 +974,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -994,7 +994,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1014,7 +1014,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -1023,7 +1023,7 @@
           "monster_list": {
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -1043,7 +1043,7 @@
             },
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -1063,7 +1063,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -1083,7 +1083,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -1103,7 +1103,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -1123,8 +1123,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -1136,13 +1136,13 @@
       "b_rank_goal": 600
     },
     "6200606": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -1152,7 +1152,7 @@
           "monster_list": {
             "11061": {
               "id": 300081,
-              "name": "Typhon Slugger",
+              "name": "「提丰·重击者型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MetalGorillaPro.png",
               "element": {
                 "ice": 0,
@@ -1172,7 +1172,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1192,7 +1192,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1212,7 +1212,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1221,7 +1221,7 @@
           "monster_list": {
             "11353": {
               "id": 200172,
-              "name": "Troublemaker - Wanted Enforcer",
+              "name": "祸首·通缉打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerBoss.png",
               "element": {
                 "ice": -1,
@@ -1241,7 +1241,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -1261,7 +1261,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -1281,8 +1281,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1294,13 +1294,13 @@
       "b_rank_goal": 600
     },
     "6200607": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001061": {
-          "title": "Close Quarters Combat",
-          "desc": "· Increases Agent ATK by 20% and DMG taken by 20%.\n· Obtaining a Shield grants all squad members 10 Energy, and an additional 20% ATK, lasting 20s. Can be triggered once every 20s."
+          "title": "短兵相接",
+          "desc": "· 代理人的攻击力提升20%，受到的伤害提升20%。\n· 获得护盾时，全队回复10点能量，攻击力额外提升20%，持续20秒，20秒内最多触发一次。"
         }
       },
       "child": [],
@@ -1310,7 +1310,7 @@
           "monster_list": {
             "11195": {
               "id": 200034,
-              "name": "Notorious - Armored Hati",
+              "name": "恶名·装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HatiArmoredBoss.png",
               "element": {
                 "ice": 1,
@@ -1330,7 +1330,7 @@
             },
             "11293": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1350,7 +1350,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1370,7 +1370,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1390,8 +1390,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         },
@@ -1400,7 +1400,7 @@
           "monster_list": {
             "11642": {
               "id": 30020,
-              "name": "Doppelganger - Jane",
+              "name": "多佩冈亚·简",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_JaneBoss.png",
               "element": {
                 "ice": -1,
@@ -1420,7 +1420,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -1440,7 +1440,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -1460,7 +1460,7 @@
             }
           },
           "monster_weakness": {
-            "200": "Physical"
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1471,7 +1471,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2024-10-01 04:00:00",
-  "end_time": "2024-10-16 03:59:59"
+  }
 }

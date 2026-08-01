@@ -1,16 +1,16 @@
 {
   "id": 62037,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6203701": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11511": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -40,7 +40,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -60,7 +60,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -80,7 +80,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -100,7 +100,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         },
@@ -109,7 +109,7 @@
           "monster_list": {
             "11751": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -129,7 +129,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -149,7 +149,7 @@
             },
             "11771": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -169,7 +169,7 @@
             },
             "11781": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -189,7 +189,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -201,13 +201,13 @@
       "b_rank_goal": 600
     },
     "6203702": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -217,7 +217,7 @@
           "monster_list": {
             "11058": {
               "id": 30002,
-              "name": "Guardian",
+              "name": "「卫士」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Guardian.png",
               "element": {
                 "ice": 0,
@@ -237,7 +237,7 @@
             },
             "11454": {
               "id": 20007,
-              "name": "Heavy Striker",
+              "name": "「重装侵袭者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStriker.png",
               "element": {
                 "ice": 0,
@@ -257,7 +257,7 @@
             },
             "11164": {
               "id": 10005,
-              "name": "Strike Jaeger",
+              "name": "掠袭猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaeger.png",
               "element": {
                 "ice": 0,
@@ -277,7 +277,7 @@
             },
             "11254": {
               "id": 10006,
-              "name": "Light Jaeger",
+              "name": "轻装猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaeger.png",
               "element": {
                 "ice": 0,
@@ -297,8 +297,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         },
@@ -307,7 +307,7 @@
           "monster_list": {
             "31051": {
               "id": 930168,
-              "name": "Banyrek",
+              "name": "班尼雷克",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Banyrek.png",
               "element": {
                 "ice": 1,
@@ -327,7 +327,7 @@
             },
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -347,7 +347,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -367,7 +367,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -387,8 +387,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -400,13 +400,13 @@
       "b_rank_goal": 600
     },
     "6203703": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -416,7 +416,7 @@
           "monster_list": {
             "11522": {
               "id": 200141,
-              "name": "Ruthless Fiend",
+              "name": "凶心疯汉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
               "element": {
                 "ice": 0,
@@ -436,7 +436,7 @@
             },
             "11512": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -456,7 +456,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -476,7 +476,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -496,7 +496,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         },
@@ -505,7 +505,7 @@
           "monster_list": {
             "11355": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -525,7 +525,7 @@
             },
             "11364": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -545,7 +545,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -565,7 +565,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -585,8 +585,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -598,13 +598,13 @@
       "b_rank_goal": 600
     },
     "6203704": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -614,7 +614,7 @@
           "monster_list": {
             "11502": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -634,7 +634,7 @@
             },
             "11522": {
               "id": 200141,
-              "name": "Ruthless Fiend",
+              "name": "凶心疯汉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
               "element": {
                 "ice": 0,
@@ -654,7 +654,7 @@
             },
             "11512": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -674,7 +674,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -694,7 +694,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -714,7 +714,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 3
         },
@@ -723,7 +723,7 @@
           "monster_list": {
             "31052": {
               "id": 930168,
-              "name": "Banyrek",
+              "name": "班尼雷克",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Banyrek.png",
               "element": {
                 "ice": 1,
@@ -743,7 +743,7 @@
             },
             "11155": {
               "id": 30000,
-              "name": "Dullahan",
+              "name": "杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_DurahanGrey.png",
               "element": {
                 "ice": 1,
@@ -763,7 +763,7 @@
             },
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -783,7 +783,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -803,7 +803,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -823,8 +823,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -836,13 +836,13 @@
       "b_rank_goal": 600
     },
     "6203705": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -852,7 +852,7 @@
           "monster_list": {
             "31322": {
               "id": 20031,
-              "name": "Miasmic - Wicked Wraith",
+              "name": "秽蚀·盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MiasmaWickedWraith.png",
               "element": {
                 "ice": 0,
@@ -872,7 +872,7 @@
             },
             "11352": {
               "id": 200171,
-              "name": "Wanted Enforcer",
+              "name": "通缉打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerPro.png",
               "element": {
                 "ice": -1,
@@ -892,7 +892,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -912,7 +912,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -932,8 +932,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         },
@@ -942,7 +942,7 @@
           "monster_list": {
             "31172": {
               "id": 20032,
-              "name": "Ionized - Pugnus",
+              "name": "离子体·普格努斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_IonizedPugnus.png",
               "element": {
                 "ice": 1,
@@ -962,7 +962,7 @@
             },
             "11185": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -982,7 +982,7 @@
             },
             "31182": {
               "id": 10032,
-              "name": "Miasma Spawn",
+              "name": "秽息原牲",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaSpawn.png",
               "element": {
                 "ice": 0,
@@ -1002,8 +1002,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -1015,13 +1015,13 @@
       "b_rank_goal": 600
     },
     "6203706": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -1031,7 +1031,7 @@
           "monster_list": {
             "31012": {
               "id": 930169,
-              "name": "Miasma Ravager - Avarus",
+              "name": "秽息蚀者·阿瓦鲁斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Avarus.png",
               "element": {
                 "ice": -1,
@@ -1051,8 +1051,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "205": "Ether"
+            "201": "火属性",
+            "205": "以太"
           },
           "waves_num": 1
         },
@@ -1061,7 +1061,7 @@
           "monster_list": {
             "31132": {
               "id": 930176,
-              "name": "Miasmic - Abyssal Enforcer",
+              "name": "秽蚀·暗渊惩戒者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaHugoSlime.png",
               "element": {
                 "ice": 0,
@@ -1081,8 +1081,8 @@
             }
           },
           "monster_weakness": {
-            "200": "Physical",
-            "204": "Wind"
+            "200": "物理",
+            "204": "风属性"
           },
           "waves_num": 1
         }
@@ -1094,13 +1094,13 @@
       "b_rank_goal": 600
     },
     "6203707": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001371": {
-          "title": "Cloudbreaker",
-          "desc": "· Agent Sheer DMG increases by 15%, <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· When Agent <color=#FFFFFF>Basic Attacks</color> and <color=#FFFFFF>EX Special Attacks</color> land a critical hit on an enemy, own CRIT DMG increases by 5% for 5s, stacking up to 10 times. Repeated triggers reset the duration."
+          "title": "断云摧甲",
+          "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -1110,7 +1110,7 @@
           "monster_list": {
             "31331": {
               "id": 30044,
-              "name": "Sacrifice - Covenant Guardian",
+              "name": "牲鬼·卫律使者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_CovenantGuardian.png",
               "element": {
                 "ice": -1,
@@ -1130,8 +1130,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 1
         },
@@ -1140,7 +1140,7 @@
           "monster_list": {
             "31112": {
               "id": 30035,
-              "name": "Sacrifice - Heretic Jester",
+              "name": "牲鬼·凶魁愚者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_HereticHunter.png",
               "element": {
                 "ice": 0,
@@ -1160,8 +1160,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "200": "Physical"
+            "203": "电属性",
+            "200": "物理"
           },
           "waves_num": 1
         }
@@ -1172,7 +1172,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-12-19 04:00:00",
-  "end_time": "2025-12-29 14:59:59"
+  }
 }

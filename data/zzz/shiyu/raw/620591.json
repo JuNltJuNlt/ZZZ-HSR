@@ -1,21 +1,151 @@
 {
-  "id": 62039,
+  "id": 620591,
   "name": "剧变节点",
   "priority": 1,
   "zone": {
-    "6203901": {
+    "6205901": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001391": {
-          "title": "寒光蚀铁",
-          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        "62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "child": [],
       "layer_room": {
-        "62039011": {
+        "62059011": {
+          "monster_icon": "",
+          "monster_list": {
+            "31491": {
+              "id": 20034,
+              "name": "怒蛇",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Predator.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 2484056.19,
+                "attack": 2759.2121212121215,
+                "defence": 532.8,
+                "stun": 9350.34,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31482": {
+              "id": 20033,
+              "name": "拉赫穆",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Arbiter.png",
+              "element": {
+                "ice": 1,
+                "fire": 0,
+                "electric": 1,
+                "ether": 0,
+                "physical": -1,
+                "wind": 0
+              },
+              "stats": {
+                "hp": 2573035.6574999997,
+                "attack": 3149.666666666667,
+                "defence": 532.8,
+                "stun": 10605.24,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31583": {
+              "id": 10036,
+              "name": "库鲁鲁",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "element": {
+                "ice": 1,
+                "fire": 0,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 375629.6775,
+                "attack": 1874.1818181818182,
+                "defence": 426.24,
+                "stun": 1441.8,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31744": {
+              "id": 10033,
+              "name": "秽息残兵·盾卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 0.0,
+                "attack": 0.0,
+                "defence": 0.0,
+                "stun": 0.0,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31762": {
+              "id": 10036,
+              "name": "库鲁鲁",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 480636.5025,
+                "attack": 2056.3939393939395,
+                "defence": 509.12,
+                "stun": 2403.0,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31752": {
+              "id": 10036,
+              "name": "库鲁鲁",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 480636.5025,
+                "attack": 2056.3939393939395,
+                "defence": 544.64,
+                "stun": 2403.0,
+                "attribute_infliction": 0.0
+              }
+            }
+          },
+          "monster_weakness": {
+            "204": "风属性",
+            "201": "火属性"
+          },
+          "waves_num": 4
+        },
+        "62059012": {
           "monster_icon": "",
           "monster_list": {
             "11454": {
@@ -104,96 +234,6 @@
             "200": "物理"
           },
           "waves_num": 3
-        },
-        "62039012": {
-          "monster_icon": "",
-          "monster_list": {
-            "11123": {
-              "id": 20001,
-              "name": "哈提",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 1085070.525,
-                "attack": 2394.787878787879,
-                "defence": 639.36,
-                "stun": 3859.04,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11213": {
-              "id": 20005,
-              "name": "阿劳恩",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 903611.3624999999,
-                "attack": 1379.6060606060607,
-                "defence": 532.8,
-                "stun": 4156.3,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11096": {
-              "id": 10000,
-              "name": "提尔锋",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 14737.8,
-                "attack": 1249.4545454545455,
-                "defence": 532.8,
-                "stun": 0.0,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11103": {
-              "id": 10001,
-              "name": "阿佩卡",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 14737.8,
-                "attack": 1249.4545454545455,
-                "defence": 532.8,
-                "stun": 0.0,
-                "attribute_infliction": 0.0
-              }
-            }
-          },
-          "monster_weakness": {
-            "202": "冰属性",
-            "205": "以太"
-          },
-          "waves_num": 4
         }
       },
       "goal_type": 0,
@@ -202,19 +242,129 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     },
-    "6203902": {
+    "6205902": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001391": {
-          "title": "寒光蚀铁",
-          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        "62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "child": [],
       "layer_room": {
-        "62039021": {
+        "62059021": {
+          "monster_icon": "",
+          "monster_list": {
+            "31554": {
+              "id": 20036,
+              "name": "蜕生·城防戍卫布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_CorruptedBattleMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": 0,
+                "ether": 1,
+                "physical": -1,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 3829367.3074999996,
+                "attack": 3679.666666666667,
+                "defence": 744.12,
+                "stun": 11439.359999999999,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31551": {
+              "id": 20019,
+              "name": "城防戍卫布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_BangbooBattleMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": 1,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 3696941.9899999998,
+                "attack": 3209.3333333333335,
+                "defence": 744.12,
+                "stun": 10085.76,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31652": {
+              "id": 10037,
+              "name": "蜕生·眼魔引擎",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_EyeEngine.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": 0,
+                "ether": 0,
+                "physical": 1,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 715316.0525,
+                "attack": 1798.3333333333335,
+                "defence": 592.54,
+                "stun": 2592.0,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31622": {
+              "id": 10024,
+              "name": "空域侦巡布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BangbooPatrolMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 715316.0525,
+                "attack": 1798.3333333333335,
+                "defence": 592.54,
+                "stun": 2592.0,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31624": {
+              "id": 10038,
+              "name": "蜕生·空域侦巡布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CorruptedPatrolMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": 0,
+                "ether": 1,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 715316.0525,
+                "attack": 1798.3333333333335,
+                "defence": 592.54,
+                "stun": 2592.0,
+                "attribute_infliction": 0.0
+              }
+            }
+          },
+          "monster_weakness": {
+            "204": "风属性",
+            "205": "以太"
+          },
+          "waves_num": 4
+        },
+        "62059022": {
           "monster_icon": "",
           "monster_list": {
             "11058": {
@@ -303,136 +453,6 @@
             "200": "物理"
           },
           "waves_num": 4
-        },
-        "62039022": {
-          "monster_icon": "",
-          "monster_list": {
-            "11224": {
-              "id": 20004,
-              "name": "铁道地精",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinMetro.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 2015442.0474999999,
-                "attack": 3071.0,
-                "defence": 620.1,
-                "stun": 7626.24,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11124": {
-              "id": 20001,
-              "name": "哈提",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 1661211.1774999998,
-                "attack": 2932.666666666667,
-                "defence": 744.12,
-                "stun": 4721.28,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11294": {
-              "id": 10014,
-              "name": "曼德拉",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 316120.89249999996,
-                "attack": 1743.0,
-                "defence": 496.08,
-                "stun": 1814.3999999999999,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11204": {
-              "id": 10003,
-              "name": "霍普利泰",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 376438.84249999997,
-                "attack": 1660.0,
-                "defence": 633.88,
-                "stun": 1728.0,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11097": {
-              "id": 10000,
-              "name": "提尔锋",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 376438.84249999997,
-                "attack": 1826.0,
-                "defence": 496.08,
-                "stun": 1728.0,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11104": {
-              "id": 10001,
-              "name": "阿佩卡",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 376438.84249999997,
-                "attack": 1494.0,
-                "defence": 496.08,
-                "stun": 1728.0,
-                "attribute_infliction": 0.0
-              }
-            }
-          },
-          "monster_weakness": {
-            "202": "冰属性",
-            "205": "以太"
-          },
-          "waves_num": 3
         }
       },
       "goal_type": 0,
@@ -441,19 +461,129 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     },
-    "6203903": {
+    "6205903": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001391": {
-          "title": "寒光蚀铁",
-          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        "62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "child": [],
       "layer_room": {
-        "62039031": {
+        "62059031": {
+          "monster_icon": "",
+          "monster_list": {
+            "31552": {
+              "id": 20019,
+              "name": "城防戍卫布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_BangbooBattleMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": 1,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 9478215.705,
+                "attack": 2924.488636363636,
+                "defence": 857.5200000000001,
+                "stun": 12273.48,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31481": {
+              "id": 20033,
+              "name": "拉赫穆",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Arbiter.png",
+              "element": {
+                "ice": 1,
+                "fire": 0,
+                "electric": 1,
+                "ether": 0,
+                "physical": -1,
+                "wind": 0
+              },
+              "stats": {
+                "hp": 9150444.66,
+                "attack": 2330.7954545454545,
+                "defence": 714.6,
+                "stun": 10821.18,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31642": {
+              "id": 20035,
+              "name": "蜕生·泰拉斯奎祸车",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MoltTarasqueMixer.png",
+              "element": {
+                "ice": 1,
+                "fire": 0,
+                "electric": 0,
+                "ether": 0,
+                "physical": 1,
+                "wind": 0
+              },
+              "stats": {
+                "hp": 11717645.205,
+                "attack": 2660.625,
+                "defence": 857.5200000000001,
+                "stun": 12273.48,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31744": {
+              "id": 10033,
+              "name": "秽息残兵·盾卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 0.0,
+                "attack": 0.0,
+                "defence": 0.0,
+                "stun": 0.0,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31752": {
+              "id": 10036,
+              "name": "库鲁鲁",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 1770506.535,
+                "attack": 1737.1022727272725,
+                "defence": 730.48,
+                "stun": 2781.0,
+                "attribute_infliction": 0.0
+              }
+            }
+          },
+          "monster_weakness": {
+            "204": "风属性",
+            "203": "电属性"
+          },
+          "waves_num": 3
+        },
+        "62059032": {
           "monster_icon": "",
           "monster_list": {
             "11613": {
@@ -562,116 +692,6 @@
             "200": "物理"
           },
           "waves_num": 3
-        },
-        "62039032": {
-          "monster_icon": "",
-          "monster_list": {
-            "11226": {
-              "id": 20002,
-              "name": "地精",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 4988498.864999999,
-                "attack": 2440.738636363636,
-                "defence": 714.6,
-                "stun": 8182.320000000001,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11185": {
-              "id": 30001,
-              "name": "塔纳托斯",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 5550392.085,
-                "attack": 2220.8522727272725,
-                "defence": 857.5200000000001,
-                "stun": 5728.860000000001,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11194": {
-              "id": 20003,
-              "name": "装甲哈提",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 4404889.965,
-                "attack": 2550.681818181818,
-                "defence": 857.5200000000001,
-                "stun": 5454.88,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11682": {
-              "id": 10030,
-              "name": "弗瑟尔",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 1027423.1099999999,
-                "attack": 1671.1363636363635,
-                "defence": 635.2,
-                "stun": 2043.52,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11692": {
-              "id": 10031,
-              "name": "索迪代斯",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 1027423.1099999999,
-                "attack": 1517.215909090909,
-                "defence": 635.2,
-                "stun": 2043.52,
-                "attribute_infliction": 0.0
-              }
-            }
-          },
-          "monster_weakness": {
-            "202": "冰属性",
-            "205": "以太"
-          },
-          "waves_num": 3
         }
       },
       "goal_type": 0,
@@ -680,19 +700,69 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     },
-    "6203904": {
+    "6205904": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001391": {
-          "title": "寒光蚀铁",
-          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        "62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "child": [],
       "layer_room": {
-        "62039041": {
+        "62059041": {
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_Sentinel.png",
+          "monster_list": {
+            "31531": {
+              "id": 30048,
+              "name": "「空域戒戍者」",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Sentinel.png",
+              "element": {
+                "ice": 1,
+                "fire": 0,
+                "electric": 0,
+                "ether": -1,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 31378646.88,
+                "attack": 3018.0681818181815,
+                "defence": 952.8000000000001,
+                "stun": 19771.4,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31553": {
+              "id": 20036,
+              "name": "蜕生·城防戍卫布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_CorruptedBattleMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": 0,
+                "ether": 1,
+                "physical": -1,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 9948967.14,
+                "attack": 2693.0454545454545,
+                "defence": 857.5200000000001,
+                "stun": 11556.6,
+                "attribute_infliction": 0.0
+              }
+            }
+          },
+          "monster_weakness": {
+            "204": "风属性",
+            "202": "冰属性"
+          },
+          "waves_num": 2
+        },
+        "62059042": {
           "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_ThugBulkyEnforcerBoss.png",
           "monster_list": {
             "11353": {
@@ -708,8 +778,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 15161033.58,
-                "attack": 2785.909090909091,
+                "hp": 10829309.7,
+                "attack": 3714.5454545454545,
                 "defence": 952.8000000000001,
                 "stun": 12194.6,
                 "attribute_infliction": 0.0
@@ -728,8 +798,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 828588.705,
-                "attack": 1462.6022727272727,
+                "hp": 497153.22300000006,
+                "attack": 1950.1363636363635,
                 "defence": 635.2,
                 "stun": 1320.0,
                 "attribute_infliction": 0.0
@@ -748,8 +818,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 828588.705,
-                "attack": 1253.6590909090908,
+                "hp": 497153.22300000006,
+                "attack": 1671.5454545454545,
                 "defence": 635.2,
                 "stun": 1320.0,
                 "attribute_infliction": 0.0
@@ -761,56 +831,6 @@
             "200": "物理"
           },
           "waves_num": 2
-        },
-        "62039042": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_HatiArmoredBoss.png",
-          "monster_list": {
-            "11195": {
-              "id": 200034,
-              "name": "恶名·装甲哈提",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HatiArmoredBoss.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 11370775.185,
-                "attack": 2785.909090909091,
-                "defence": 952.8000000000001,
-                "stun": 8536.0,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11124": {
-              "id": 20001,
-              "name": "哈提",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 4470542.265,
-                "attack": 2460.8863636363635,
-                "defence": 857.5200000000001,
-                "stun": 5409.8,
-                "attribute_infliction": 0.0
-              }
-            }
-          },
-          "monster_weakness": {
-            "202": "冰属性",
-            "205": "以太"
-          },
-          "waves_num": 2
         }
       },
       "goal_type": 0,
@@ -819,44 +839,40 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     },
-    "6203905": {
+    "6205905": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001391": {
-          "title": "寒光蚀铁",
-          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        "62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
-        "62001392": {
-          "title": "飞电掠火",
-          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升30%，异常精通提升60点。\n· 代理人初始额外获得40点能量，属性异常造成的伤害提升20%。"
-        },
-        "62001393": {
-          "title": "流焰贯空",
-          "desc": "· 代理人的贯穿伤害提升10%，暴击伤害提升25%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人时无视其10%的全伤害抗性。"
+        "62001562": {
+          "title": "御雷贯芒",
+          "desc": "· 代理人攻击命中敌人时无视其20%的<color=#2EB6FF>电属性伤害抗性</color>。 \n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击率提升5%，暴击伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
-        62039051,
-        62039052,
-        62039053
+        62059051,
+        62059052,
+        62059053
       ],
       "layer_room": {},
       "goal_type": 3,
       "ss_rank_goal": 0,
-      "s_rank_goal": 1270001003,
-      "a_rank_goal": 1270001002,
-      "b_rank_goal": 1270001001
+      "s_rank_goal": 1270001023,
+      "a_rank_goal": 1270001022,
+      "b_rank_goal": 1270001021
     },
-    "62039051": {
+    "62059051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001391": {
-          "title": "寒光蚀铁",
-          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        "62001571": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升20%，防御力提升20%。\n· 代理人命中敌人且触发暴击后，敌人的防御力降低20%，若其处于失衡状态，失衡易伤倍率提升35%。"
         },
         "62001001": {
           "title": "",
@@ -869,46 +885,240 @@
       },
       "child": [],
       "layer_room": {
-        "62039051": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_Chelonethid.png",
+        "62059051": {
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_WingedChelonethid.png",
           "monster_list": {
-            "31202": {
-              "id": 30013,
-              "name": "秽息行者·蝎骸",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Chelonethid.png",
+            "31571": {
+              "id": 30050,
+              "name": "蜕生·蝎骸",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_WingedChelonethid.png",
               "element": {
-                "ice": 0,
-                "fire": -1,
-                "electric": 0,
-                "ether": 1,
-                "physical": 1,
-                "wind": 0
+                "ice": -1,
+                "fire": 0,
+                "electric": 1,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
               },
               "stats": {
-                "hp": 32607408.599999998,
+                "hp": 37186078.095,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
-                "stun": 18236.0,
+                "stun": 19540.25,
                 "attribute_infliction": 0.0
               }
             },
-            "11364": {
-              "id": 20015,
-              "name": "魁梧施虐者",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
+            "31552": {
+              "id": 20019,
+              "name": "城防戍卫布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_BangbooBattleMecha.png",
               "element": {
-                "ice": 1,
+                "ice": 0,
                 "fire": 0,
+                "electric": 1,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 7965170.595,
+                "attack": 3252.454545454546,
+                "defence": 857.5200000000001,
+                "stun": 14001.300000000001,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31612": {
+              "id": 10035,
+              "name": "特勤镇暴布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sapper.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
                 "electric": 0,
                 "ether": 0,
-                "physical": 1,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 1293803.0999999999,
+                "attack": 1931.909090909091,
+                "defence": 682.84,
+                "stun": 3172.5,
+                "attribute_infliction": 0.0
+              }
+            },
+            "31622": {
+              "id": 10024,
+              "name": "空域侦巡布",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BangbooPatrolMecha.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 1293803.0999999999,
+                "attack": 1589.5454545454547,
+                "defence": 682.84,
+                "stun": 3172.5,
+                "attribute_infliction": 0.0
+              }
+            }
+          },
+          "monster_weakness": {
+            "204": "风属性",
+            "203": "电属性"
+          },
+          "waves_num": 3
+        }
+      },
+      "goal_type": 2,
+      "ss_rank_goal": 0,
+      "s_rank_goal": 25000,
+      "a_rank_goal": 16000,
+      "b_rank_goal": 8000
+    },
+    "62059052": {
+      "name": "房间二",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        },
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "child": [],
+      "layer_room": {
+        "62059052": {
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaThracian.png",
+          "monster_list": {
+            "31102": {
+              "id": 930178,
+              "name": "秽蚀·色雷斯人",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaThracian.png",
+              "element": {
+                "ice": 0,
+                "fire": 0,
+                "electric": -1,
+                "ether": 1,
+                "physical": 0,
+                "wind": 1
+              },
+              "stats": {
+                "hp": 38364857.19,
+                "attack": 3521.454545454546,
+                "defence": 952.8000000000001,
+                "stun": 14327.95,
+                "attribute_infliction": 0.0
+              }
+            },
+            "11752": {
+              "id": 300004,
+              "name": "离子体·杜拉罕",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
+              "element": {
+                "ice": -1,
+                "fire": 0,
+                "electric": 0,
+                "ether": 1,
+                "physical": 0,
                 "wind": 0
               },
               "stats": {
-                "hp": 3878136.36,
-                "attack": 2103.0909090909095,
-                "defence": 794.0,
-                "stun": 6782.1,
+                "hp": 4192165.0349999997,
+                "attack": 2714.4545454545455,
+                "defence": 921.0400000000001,
+                "stun": 9334.2,
+                "attribute_infliction": 0.0
+              }
+            },
+            "11732": {
+              "id": 200004,
+              "name": "离子体·法布提",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
+              "element": {
+                "ice": -1,
+                "fire": 0,
+                "electric": 0,
+                "ether": 1,
+                "physical": 0,
+                "wind": 0
+              },
+              "stats": {
+                "hp": 4982009.76,
+                "attack": 2592.1818181818185,
+                "defence": 714.6,
+                "stun": 11169.550000000001,
+                "attribute_infliction": 0.0
+              }
+            }
+          },
+          "monster_weakness": {
+            "205": "以太",
+            "204": "风属性"
+          },
+          "waves_num": 2
+        }
+      },
+      "goal_type": 2,
+      "ss_rank_goal": 0,
+      "s_rank_goal": 25000,
+      "a_rank_goal": 16000,
+      "b_rank_goal": 8000
+    },
+    "62059053": {
+      "name": "房间三",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001593": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，贯穿伤害提升20%，<color=#FFFFFF>[终结技]</color>造成的伤害提升50%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，攻击无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+        },
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "child": [],
+      "layer_room": {
+        "62059053": {
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_CovenantGuardian.png",
+          "monster_list": {
+            "31332": {
+              "id": 30044,
+              "name": "牲鬼·卫律使者",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_CovenantGuardian.png",
+              "element": {
+                "ice": -1,
+                "fire": 1,
+                "electric": 0,
+                "ether": 0,
+                "physical": 1,
+                "wind": -1
+              },
+              "stats": {
+                "hp": 41853885.614999995,
+                "attack": 3521.454545454546,
+                "defence": 952.8000000000001,
+                "stun": 17585.05,
                 "attribute_infliction": 0.0
               }
             },
@@ -925,16 +1135,36 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 5150417.399999999,
+                "hp": 4935816.675,
                 "attack": 2347.636363636364,
                 "defence": 794.0,
                 "stun": 8890.050000000001,
                 "attribute_infliction": 0.0
               }
+            },
+            "11364": {
+              "id": 20015,
+              "name": "魁梧施虐者",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
+              "element": {
+                "ice": 1,
+                "fire": 0,
+                "electric": 0,
+                "ether": 0,
+                "physical": 1,
+                "wind": 0
+              },
+              "stats": {
+                "hp": 3716547.3449999993,
+                "attack": 2103.0909090909095,
+                "defence": 794.0,
+                "stun": 6782.1,
+                "attribute_infliction": 0.0
+              }
             }
           },
           "monster_weakness": {
-            "205": "以太",
+            "201": "火属性",
             "200": "物理"
           },
           "waves_num": 2
@@ -945,222 +1175,8 @@
       "s_rank_goal": 25000,
       "a_rank_goal": 16000,
       "b_rank_goal": 8000
-    },
-    "62039052": {
-      "name": "房间二",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001392": {
-          "title": "飞电掠火",
-          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升30%，异常精通提升60点。\n· 代理人初始额外获得40点能量，属性异常造成的伤害提升20%。"
-        },
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        }
-      },
-      "child": [],
-      "layer_room": {
-        "62039052": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaTerrorBird.png",
-          "monster_list": {
-            "31262": {
-              "id": 30036,
-              "name": "秽蚀·「骇鸟」",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaTerrorBird.png",
-              "element": {
-                "ice": 0,
-                "fire": 1,
-                "electric": 1,
-                "ether": -1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 23131354.68,
-                "attack": 3521.454545454546,
-                "defence": 952.8000000000001,
-                "stun": 14327.95,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11603": {
-              "id": 200231,
-              "name": "多佩冈亚·莫尔斯",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
-              "element": {
-                "ice": -1,
-                "fire": 1,
-                "electric": 0,
-                "ether": 0,
-                "physical": 1,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 5574907.8,
-                "attack": 2323.1818181818185,
-                "defence": 794.0,
-                "stun": 14001.300000000001,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11623": {
-              "id": 200241,
-              "name": "多佩冈亚·波可娜",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
-              "element": {
-                "ice": -1,
-                "fire": 1,
-                "electric": 0,
-                "ether": 0,
-                "physical": 1,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 5574907.8,
-                "attack": 2836.727272727273,
-                "defence": 794.0,
-                "stun": 14001.300000000001,
-                "attribute_infliction": 0.0
-              }
-            }
-          },
-          "monster_weakness": {
-            "201": "火属性",
-            "203": "电属性"
-          },
-          "waves_num": 2
-        }
-      },
-      "goal_type": 2,
-      "ss_rank_goal": 0,
-      "s_rank_goal": 25000,
-      "a_rank_goal": 16000,
-      "b_rank_goal": 8000
-    },
-    "62039053": {
-      "name": "房间三",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001393": {
-          "title": "流焰贯空",
-          "desc": "· 代理人的贯穿伤害提升10%，暴击伤害提升25%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人时无视其10%的全伤害抗性。"
-        },
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        }
-      },
-      "child": [],
-      "layer_room": {
-        "62039053": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaThracian.png",
-          "monster_list": {
-            "31102": {
-              "id": 930178,
-              "name": "秽蚀·色雷斯人",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaThracian.png",
-              "element": {
-                "ice": 0,
-                "fire": 0,
-                "electric": -1,
-                "ether": 1,
-                "physical": 0,
-                "wind": 1
-              },
-              "stats": {
-                "hp": 26059148.28,
-                "attack": 3521.454545454546,
-                "defence": 952.8000000000001,
-                "stun": 14327.95,
-                "attribute_infliction": 0.0
-              }
-            },
-            "31082": {
-              "id": 930167,
-              "name": "秉火领颂",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FlameCantor.png",
-              "element": {
-                "ice": 0,
-                "fire": 1,
-                "electric": -1,
-                "ether": 0,
-                "physical": 1,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 6161309.550000001,
-                "attack": 3105.727272727273,
-                "defence": 794.0,
-                "stun": 9778.35,
-                "attribute_infliction": 0.0
-              }
-            },
-            "31182": {
-              "id": 10032,
-              "name": "秽息原牲",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaSpawn.png",
-              "element": {
-                "ice": 0,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 1,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 1184705.0999999999,
-                "attack": 1760.727272727273,
-                "defence": 635.2,
-                "stun": 2326.5,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11142": {
-              "id": 10002,
-              "name": "萨提尔",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Satyrus.png",
-              "element": {
-                "ice": 1,
-                "fire": 0,
-                "electric": 0,
-                "ether": 1,
-                "physical": 0,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 680870.7,
-                "attack": 1614.0000000000002,
-                "defence": 571.6800000000001,
-                "stun": 2115.0,
-                "attribute_infliction": 0.0
-              }
-            }
-          },
-          "monster_weakness": {
-            "205": "以太",
-            "204": "风属性"
-          },
-          "waves_num": 3
-        }
-      },
-      "goal_type": 2,
-      "ss_rank_goal": 0,
-      "s_rank_goal": 25000,
-      "a_rank_goal": 16000,
-      "b_rank_goal": 8000
     }
   },
-  "begin_time": "2026-01-09 04:00:00",
-  "end_time": "2026-01-23 03:59:59"
+  "begin_time": "2026-07-30 04:00:00",
+  "end_time": "2026-10-01 03:59:59"
 }

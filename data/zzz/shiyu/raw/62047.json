@@ -1,16 +1,16 @@
 {
   "id": 62047,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6204701": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -40,7 +40,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -60,7 +60,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -80,7 +80,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -100,8 +100,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         },
@@ -110,7 +110,7 @@
           "monster_list": {
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -130,7 +130,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -150,7 +150,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -170,7 +170,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -190,7 +190,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         }
@@ -202,13 +202,13 @@
       "b_rank_goal": 600
     },
     "6204702": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -218,7 +218,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -238,7 +238,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -258,7 +258,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -278,7 +278,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -298,8 +298,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 4
         },
@@ -308,7 +308,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -328,7 +328,7 @@
             },
             "11046": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -348,7 +348,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -368,7 +368,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -388,7 +388,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -408,7 +408,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         }
@@ -420,13 +420,13 @@
       "b_rank_goal": 600
     },
     "6204703": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -436,7 +436,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -456,7 +456,7 @@
             },
             "11185": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -476,7 +476,7 @@
             },
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -496,7 +496,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -516,7 +516,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -536,8 +536,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -546,7 +546,7 @@
           "monster_list": {
             "11452": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -566,7 +566,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -586,7 +586,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -606,7 +606,7 @@
             },
             "31151": {
               "id": 10033,
-              "name": "Miasmic Trooper - Shieldguard",
+              "name": "秽息残兵·盾卫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
               "element": {
                 "ice": 0,
@@ -626,7 +626,7 @@
             },
             "31161": {
               "id": 10034,
-              "name": "Miasmic Trooper - Cannoneer",
+              "name": "秽息残兵·炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGrenadierJaeger.png",
               "element": {
                 "ice": 0,
@@ -646,7 +646,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         }
@@ -658,13 +658,13 @@
       "b_rank_goal": 600
     },
     "6204704": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "child": [],
@@ -674,7 +674,7 @@
           "monster_list": {
             "11961": {
               "id": 930166,
-              "name": "Tepes",
+              "name": "特佩什",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Tepes.png",
               "element": {
                 "ice": 1,
@@ -694,8 +694,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 1
         },
@@ -704,7 +704,7 @@
           "monster_list": {
             "11061": {
               "id": 300081,
-              "name": "Typhon Slugger",
+              "name": "「提丰·重击者型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MetalGorillaPro.png",
               "element": {
                 "ice": 0,
@@ -724,7 +724,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -744,7 +744,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         }
@@ -761,16 +761,16 @@
       "monster_level": 0,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         },
         "62001472": {
-          "title": "Cardinal Forge",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "枢机锻序",
+          "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001473": {
-          "title": "Glacial Whirlwind",
-          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 20%.\n· When enemies are Stunned, the whole squad's CRIT DMG increases by 30% for 30s. Repeated triggers reset the duration."
+          "title": "乱霜缭华",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· 使敌人进入失衡状态时，全队造成的暴击伤害提升30%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
@@ -786,17 +786,17 @@
       "b_rank_goal": 1270001001
     },
     "62047051": {
-      "name": "Room 1",
+      "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001473": {
-          "title": "Glacial Whirlwind",
-          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 20%.\n· When enemies are Stunned, the whole squad's CRIT DMG increases by 30% for 30s. Repeated triggers reset the duration."
+          "title": "乱霜缭华",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· 使敌人进入失衡状态时，全队造成的暴击伤害提升30%，持续30秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
-          "desc": "· In this stage, dealing DMG to enemies earns you <color=#FFAF2C>DMG Score</color>. Defeating a single <color=#FFFFFF>normal/elite enemy</color> will grant you an instance of <color=#FFAF2C>Elimination Score</color>.\n· In this stage, scores earned at different times will receive additional <color=#FFAF2C>multiplier bonuses</color>. The earlier in the challenge, the higher the multiplier. The <color=#FFAF2C>total score cap (including bonus) is 50,000</color>."
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001002": {
           "title": "",
@@ -810,7 +810,7 @@
           "monster_list": {
             "31202": {
               "id": 30013,
-              "name": "Miasma Walker - Scorpse",
+              "name": "秽息行者·蝎骸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Chelonethid.png",
               "element": {
                 "ice": 0,
@@ -830,7 +830,7 @@
             },
             "11224": {
               "id": 20004,
-              "name": "Metro Goblin",
+              "name": "铁道地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinMetro.png",
               "element": {
                 "ice": 1,
@@ -850,7 +850,7 @@
             },
             "31182": {
               "id": 10032,
-              "name": "Miasma Spawn",
+              "name": "秽息原牲",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaSpawn.png",
               "element": {
                 "ice": 0,
@@ -870,7 +870,7 @@
             },
             "11142": {
               "id": 10002,
-              "name": "Faun",
+              "name": "萨提尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Satyrus.png",
               "element": {
                 "ice": 1,
@@ -890,8 +890,8 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether",
-            "200": "Physical"
+            "205": "以太",
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -903,17 +903,17 @@
       "b_rank_goal": 8000
     },
     "62047052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         },
         "62001001": {
           "title": "",
-          "desc": "· In this stage, dealing DMG to enemies earns you <color=#FFAF2C>DMG Score</color>. Defeating a single <color=#FFFFFF>normal/elite enemy</color> will grant you an instance of <color=#FFAF2C>Elimination Score</color>.\n· In this stage, scores earned at different times will receive additional <color=#FFAF2C>multiplier bonuses</color>. The earlier in the challenge, the higher the multiplier. The <color=#FFAF2C>total score cap (including bonus) is 50,000</color>."
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001002": {
           "title": "",
@@ -927,7 +927,7 @@
           "monster_list": {
             "31262": {
               "id": 30036,
-              "name": "Miasmic - Terror Raptor",
+              "name": "秽蚀·「骇鸟」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaTerrorBird.png",
               "element": {
                 "ice": 0,
@@ -947,7 +947,7 @@
             },
             "31282": {
               "id": 20018,
-              "name": "Miasmic - Heavy Striker",
+              "name": "秽蚀·「重装侵袭者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MiasmaHeavyStriker.png",
               "element": {
                 "ice": -1,
@@ -967,7 +967,7 @@
             },
             "31162": {
               "id": 10034,
-              "name": "Miasmic Trooper - Cannoneer",
+              "name": "秽息残兵·炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGrenadierJaeger.png",
               "element": {
                 "ice": 0,
@@ -987,7 +987,7 @@
             },
             "31152": {
               "id": 10033,
-              "name": "Miasmic Trooper - Shieldguard",
+              "name": "秽息残兵·盾卫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
               "element": {
                 "ice": 0,
@@ -1007,8 +1007,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "203": "Electric"
+            "201": "火属性",
+            "203": "电属性"
           },
           "waves_num": 2
         }
@@ -1020,17 +1020,17 @@
       "b_rank_goal": 8000
     },
     "62047053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001472": {
-          "title": "Cardinal Forge",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "枢机锻序",
+          "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
-          "desc": "· In this stage, dealing DMG to enemies earns you <color=#FFAF2C>DMG Score</color>. Defeating a single <color=#FFFFFF>normal/elite enemy</color> will grant you an instance of <color=#FFAF2C>Elimination Score</color>.\n· In this stage, scores earned at different times will receive additional <color=#FFAF2C>multiplier bonuses</color>. The earlier in the challenge, the higher the multiplier. The <color=#FFAF2C>total score cap (including bonus) is 50,000</color>."
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001002": {
           "title": "",
@@ -1044,7 +1044,7 @@
           "monster_list": {
             "31422": {
               "id": 30045,
-              "name": "Miasmic - Rampant Brute",
+              "name": "秽蚀·蛮横力士",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaDubiousHero.png",
               "element": {
                 "ice": 0,
@@ -1064,7 +1064,7 @@
             },
             "11224": {
               "id": 20004,
-              "name": "Metro Goblin",
+              "name": "铁道地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinMetro.png",
               "element": {
                 "ice": 1,
@@ -1084,7 +1084,7 @@
             },
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -1104,8 +1104,8 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether",
-            "204": "Wind"
+            "205": "以太",
+            "204": "风属性"
           },
           "waves_num": 2
         }

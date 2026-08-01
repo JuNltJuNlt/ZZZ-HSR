@@ -1,16 +1,16 @@
 {
   "id": 62015,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6201501": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11521": {
               "id": 200141,
-              "name": "Ruthless Fiend",
+              "name": "凶心疯汉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
               "element": {
                 "ice": 0,
@@ -40,7 +40,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -60,7 +60,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -80,7 +80,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -100,7 +100,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         },
@@ -109,7 +109,7 @@
           "monster_list": {
             "11114": {
               "id": 20000,
-              "name": "Farbauti",
+              "name": "法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantGrey.png",
               "element": {
                 "ice": 1,
@@ -129,7 +129,7 @@
             },
             "11213": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -149,7 +149,7 @@
             },
             "11832": {
               "id": 100004,
-              "name": "Tyrfing (Infested)",
+              "name": "提尔锋（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_TyrfingInfested.png",
               "element": {
                 "ice": 1,
@@ -169,7 +169,7 @@
             },
             "11822": {
               "id": 100014,
-              "name": "Alpeca (Infested)",
+              "name": "阿佩卡（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_AlpecaInfested.png",
               "element": {
                 "ice": 1,
@@ -189,7 +189,7 @@
             },
             "11851": {
               "id": 30025,
-              "name": "Hitchspiker",
+              "name": "刺椎原虫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Hitchspiker.png",
               "element": {
                 "ice": 0,
@@ -209,8 +209,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -222,13 +222,13 @@
       "b_rank_goal": 600
     },
     "6201502": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -238,7 +238,7 @@
           "monster_list": {
             "11441": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -258,7 +258,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -278,7 +278,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -298,7 +298,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -318,7 +318,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -327,7 +327,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -347,7 +347,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -367,7 +367,7 @@
             },
             "11314": {
               "id": 10019,
-              "name": "Assaulter",
+              "name": "袭击者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulter.png",
               "element": {
                 "ice": 1,
@@ -387,7 +387,7 @@
             },
             "11334": {
               "id": 10016,
-              "name": "Pyromaniac",
+              "name": "纵火犯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniac.png",
               "element": {
                 "ice": 1,
@@ -407,8 +407,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -420,13 +420,13 @@
       "b_rank_goal": 600
     },
     "6201503": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -436,7 +436,7 @@
           "monster_list": {
             "11722": {
               "id": 200021,
-              "name": "Goblin - Energized",
+              "name": "地精·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGreyPro.png",
               "element": {
                 "ice": 0,
@@ -456,7 +456,7 @@
             },
             "11125": {
               "id": 200011,
-              "name": "Hati - Energized",
+              "name": "哈提·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGreyPro.png",
               "element": {
                 "ice": 0,
@@ -476,7 +476,7 @@
             },
             "11684": {
               "id": 100301,
-              "name": "Fossor - Energized",
+              "name": "弗瑟尔·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_FossorPro.png",
               "element": {
                 "ice": 0,
@@ -496,7 +496,7 @@
             },
             "11694": {
               "id": 100311,
-              "name": "Sordidus - Energized",
+              "name": "索迪代斯·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_SordidusPro.png",
               "element": {
                 "ice": 0,
@@ -516,7 +516,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         },
@@ -525,7 +525,7 @@
           "monster_list": {
             "11752": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -545,7 +545,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -565,7 +565,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -585,7 +585,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -605,7 +605,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -617,13 +617,13 @@
       "b_rank_goal": 600
     },
     "6201504": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -633,7 +633,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -653,7 +653,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -673,7 +673,7 @@
             },
             "11451": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -693,7 +693,7 @@
             },
             "11272": {
               "id": 100071,
-              "name": "Private Jaeger",
+              "name": "整训猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MeleeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -713,7 +713,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -733,7 +733,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -742,7 +742,7 @@
           "monster_list": {
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -762,7 +762,7 @@
             },
             "11124": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -782,7 +782,7 @@
             },
             "11184": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -802,7 +802,7 @@
             },
             "11681": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -822,7 +822,7 @@
             },
             "11691": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -842,8 +842,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -855,13 +855,13 @@
       "b_rank_goal": 600
     },
     "6201505": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -871,7 +871,7 @@
           "monster_list": {
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -891,7 +891,7 @@
             },
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -911,7 +911,7 @@
             },
             "11602": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -931,7 +931,7 @@
             },
             "11312": {
               "id": 100191,
-              "name": "Ambusher",
+              "name": "偷袭者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
               "element": {
                 "ice": 0,
@@ -951,7 +951,7 @@
             },
             "11332": {
               "id": 100161,
-              "name": "Arsonist",
+              "name": "焚毁狂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
@@ -971,8 +971,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         },
@@ -981,7 +981,7 @@
           "monster_list": {
             "11225": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -1001,7 +1001,7 @@
             },
             "11214": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -1021,7 +1021,7 @@
             },
             "11124": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -1041,7 +1041,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1061,7 +1061,7 @@
             },
             "11681": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1081,7 +1081,7 @@
             },
             "11691": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1101,8 +1101,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -1114,13 +1114,13 @@
       "b_rank_goal": 600
     },
     "6201506": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -1130,7 +1130,7 @@
           "monster_list": {
             "11941": {
               "id": 30026,
-              "name": "Terror Raptor",
+              "name": "骇鸟",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_TerrorBird.png",
               "element": {
                 "ice": -1,
@@ -1150,7 +1150,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1170,7 +1170,7 @@
             },
             "11762": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1190,7 +1190,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -1199,7 +1199,7 @@
           "monster_list": {
             "11181": {
               "id": 300015,
-              "name": "Notorious - Thanatos",
+              "name": "恶名·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIBoss.png",
               "element": {
                 "ice": 1,
@@ -1219,7 +1219,7 @@
             },
             "11832": {
               "id": 100004,
-              "name": "Tyrfing (Infested)",
+              "name": "提尔锋（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_TyrfingInfested.png",
               "element": {
                 "ice": 1,
@@ -1239,7 +1239,7 @@
             },
             "11851": {
               "id": 30025,
-              "name": "Hitchspiker",
+              "name": "刺椎原虫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Hitchspiker.png",
               "element": {
                 "ice": 0,
@@ -1259,8 +1259,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1272,13 +1272,13 @@
       "b_rank_goal": 600
     },
     "6201507": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001151": {
-          "title": "Ice-Fire Synergy",
-          "desc": "· The Agent's <color=#FF5521>Fire DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 20%.\n· <color=#FFFFFF>Chain Attack</color> DMG increases by 40%. With every trigger of <color=#FFFFFF>Chain Attack</color>, the Agent recovers 10 Energy."
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
         }
       },
       "child": [],
@@ -1288,7 +1288,7 @@
           "monster_list": {
             "11127": {
               "id": 200015,
-              "name": "Hati Pack Leader — Energized",
+              "name": "哈提头犬·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_HatiEnergized.png",
               "element": {
                 "ice": 0,
@@ -1308,7 +1308,7 @@
             },
             "11684": {
               "id": 100301,
-              "name": "Fossor - Energized",
+              "name": "弗瑟尔·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_FossorPro.png",
               "element": {
                 "ice": 0,
@@ -1328,7 +1328,7 @@
             },
             "11694": {
               "id": 100311,
-              "name": "Sordidus - Energized",
+              "name": "索迪代斯·蓄能型",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_SordidusPro.png",
               "element": {
                 "ice": 0,
@@ -1348,7 +1348,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 2
         },
@@ -1357,7 +1357,7 @@
           "monster_list": {
             "11711": {
               "id": 30023,
-              "name": "Thracian",
+              "name": "色雷斯人",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Thracian.png",
               "element": {
                 "ice": 1,
@@ -1377,7 +1377,7 @@
             },
             "11832": {
               "id": 100004,
-              "name": "Tyrfing (Infested)",
+              "name": "提尔锋（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_TyrfingInfested.png",
               "element": {
                 "ice": 1,
@@ -1397,7 +1397,7 @@
             },
             "11822": {
               "id": 100014,
-              "name": "Alpeca (Infested)",
+              "name": "阿佩卡（寄生态）",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_AlpecaInfested.png",
               "element": {
                 "ice": 1,
@@ -1417,7 +1417,7 @@
             },
             "11851": {
               "id": 30025,
-              "name": "Hitchspiker",
+              "name": "刺椎原虫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Hitchspiker.png",
               "element": {
                 "ice": 0,
@@ -1437,8 +1437,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1449,7 +1449,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-02-14 04:00:00",
-  "end_time": "2025-02-28 03:59:59"
+  }
 }

@@ -1,16 +1,16 @@
 {
   "id": 62045,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6204501": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001451": {
-          "title": "Enigmatic Spectrum",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· Stunned enemies recover from Stun 20% slower, and Attribute Anomaly DMG taken increases by 20%."
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11381": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -40,7 +40,7 @@
             },
             "31151": {
               "id": 10033,
-              "name": "Miasmic Trooper - Shieldguard",
+              "name": "秽息残兵·盾卫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
               "element": {
                 "ice": 0,
@@ -60,7 +60,7 @@
             },
             "31161": {
               "id": 10034,
-              "name": "Miasmic Trooper - Cannoneer",
+              "name": "秽息残兵·炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGrenadierJaeger.png",
               "element": {
                 "ice": 0,
@@ -80,7 +80,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -89,7 +89,7 @@
           "monster_list": {
             "11751": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -109,7 +109,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -129,7 +129,7 @@
             },
             "11771": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -149,7 +149,7 @@
             },
             "11781": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -169,7 +169,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -181,13 +181,13 @@
       "b_rank_goal": 600
     },
     "6204502": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001451": {
-          "title": "Enigmatic Spectrum",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· Stunned enemies recover from Stun 20% slower, and Attribute Anomaly DMG taken increases by 20%."
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "child": [],
@@ -197,7 +197,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -217,7 +217,7 @@
             },
             "11046": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -237,7 +237,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -257,7 +257,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -277,7 +277,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -297,7 +297,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         },
@@ -306,7 +306,7 @@
           "monster_list": {
             "11224": {
               "id": 20004,
-              "name": "Metro Goblin",
+              "name": "铁道地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinMetro.png",
               "element": {
                 "ice": 1,
@@ -326,7 +326,7 @@
             },
             "11124": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -346,7 +346,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -366,7 +366,7 @@
             },
             "11204": {
               "id": 10003,
-              "name": "Hoplitai",
+              "name": "霍普利泰",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
               "element": {
                 "ice": 1,
@@ -386,7 +386,7 @@
             },
             "11097": {
               "id": 10000,
-              "name": "Tyrfing",
+              "name": "提尔锋",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
               "element": {
                 "ice": 1,
@@ -406,7 +406,7 @@
             },
             "11104": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -426,8 +426,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -439,13 +439,13 @@
       "b_rank_goal": 600
     },
     "6204503": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001451": {
-          "title": "Enigmatic Spectrum",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· Stunned enemies recover from Stun 20% slower, and Attribute Anomaly DMG taken increases by 20%."
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "child": [],
@@ -455,7 +455,7 @@
           "monster_list": {
             "11452": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -475,7 +475,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -495,7 +495,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -515,7 +515,7 @@
             },
             "31151": {
               "id": 10033,
-              "name": "Miasmic Trooper - Shieldguard",
+              "name": "秽息残兵·盾卫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
               "element": {
                 "ice": 0,
@@ -535,7 +535,7 @@
             },
             "31161": {
               "id": 10034,
-              "name": "Miasmic Trooper - Cannoneer",
+              "name": "秽息残兵·炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGrenadierJaeger.png",
               "element": {
                 "ice": 0,
@@ -555,7 +555,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -564,7 +564,7 @@
           "monster_list": {
             "11752": {
               "id": 300004,
-              "name": "Ionized - Dullahan",
+              "name": "离子体·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanEnergy.png",
               "element": {
                 "ice": -1,
@@ -584,7 +584,7 @@
             },
             "11742": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -604,7 +604,7 @@
             },
             "31302": {
               "id": 20026,
-              "name": "Miasmic - Frenzied Maniac",
+              "name": "秽蚀·狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MiasmaFrenziedManiac.png",
               "element": {
                 "ice": 0,
@@ -624,7 +624,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -644,7 +644,7 @@
             },
             "11782": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -664,7 +664,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -676,13 +676,13 @@
       "b_rank_goal": 600
     },
     "6204504": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001451": {
-          "title": "Enigmatic Spectrum",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· Stunned enemies recover from Stun 20% slower, and Attribute Anomaly DMG taken increases by 20%."
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "child": [],
@@ -692,7 +692,7 @@
           "monster_list": {
             "11791": {
               "id": 30027,
-              "name": "Lumberjack",
+              "name": "伐木机",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Harvester.png",
               "element": {
                 "ice": -1,
@@ -712,7 +712,7 @@
             },
             "31152": {
               "id": 10033,
-              "name": "Miasmic Trooper - Shieldguard",
+              "name": "秽息残兵·盾卫",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
               "element": {
                 "ice": 0,
@@ -732,7 +732,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         },
@@ -741,7 +741,7 @@
           "monster_list": {
             "31012": {
               "id": 930169,
-              "name": "Miasma Ravager - Avarus",
+              "name": "秽息蚀者·阿瓦鲁斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Avarus.png",
               "element": {
                 "ice": -1,
@@ -761,8 +761,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "205": "Ether"
+            "201": "火属性",
+            "205": "以太"
           },
           "waves_num": 1
         }
@@ -779,16 +779,16 @@
       "monster_level": 0,
       "layer_buff": {
         "62001451": {
-          "title": "Enigmatic Spectrum",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· Stunned enemies recover from Stun 20% slower, and Attribute Anomaly DMG taken increases by 20%."
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         },
         "62001431": {
-          "title": "Thunder Crimson Blaze",
-          "desc": "· Agent <color=#F0D12B>Physical DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 15%, while their CRIT DMG increases by 20%.\n· When an Agent with Attack specialty hits an enemy and crits, enemy DEF drops by 10% for 5s. Repeated triggers reset the duration."
+          "title": "雷霆赤焰",
+          "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%，暴击伤害提升20%。\n· [强攻]特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         },
         "62001382": {
-          "title": "Accumulating Frost",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> increases by 20%, <color=#FFFFFF>Basic Attack</color> DMG increases by 40%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s, repeated triggers reset the duration."
+          "title": "累雪攒霜",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，代理人的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
@@ -804,17 +804,17 @@
       "b_rank_goal": 1270001001
     },
     "62045051": {
-      "name": "Room 1",
+      "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001431": {
-          "title": "Thunder Crimson Blaze",
-          "desc": "· Agent <color=#F0D12B>Physical DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 15%, while their CRIT DMG increases by 20%.\n· When an Agent with Attack specialty hits an enemy and crits, enemy DEF drops by 10% for 5s. Repeated triggers reset the duration."
+          "title": "雷霆赤焰",
+          "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%，暴击伤害提升20%。\n· [强攻]特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
-          "desc": "· In this stage, dealing DMG to enemies earns you <color=#FFAF2C>DMG Score</color>. Defeating a single <color=#FFFFFF>normal/elite enemy</color> will grant you an instance of <color=#FFAF2C>Elimination Score</color>.\n· In this stage, scores earned at different times will receive additional <color=#FFAF2C>multiplier bonuses</color>. The earlier in the challenge, the higher the multiplier. The <color=#FFAF2C>total score cap (including bonus) is 50,000</color>."
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001002": {
           "title": "",
@@ -828,7 +828,7 @@
           "monster_list": {
             "31361": {
               "id": 30003,
-              "name": "Lockspring",
+              "name": "缄枢",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_BlackMazingerGoldenBomb.png",
               "element": {
                 "ice": 0,
@@ -848,7 +848,7 @@
             },
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -868,7 +868,7 @@
             },
             "11262": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -888,8 +888,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "200": "Physical"
+            "203": "电属性",
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -901,17 +901,17 @@
       "b_rank_goal": 8000
     },
     "62045052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001451": {
-          "title": "Enigmatic Spectrum",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%.\n· Stunned enemies recover from Stun 20% slower, and Attribute Anomaly DMG taken increases by 20%."
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         },
         "62001001": {
           "title": "",
-          "desc": "· In this stage, dealing DMG to enemies earns you <color=#FFAF2C>DMG Score</color>. Defeating a single <color=#FFFFFF>normal/elite enemy</color> will grant you an instance of <color=#FFAF2C>Elimination Score</color>.\n· In this stage, scores earned at different times will receive additional <color=#FFAF2C>multiplier bonuses</color>. The earlier in the challenge, the higher the multiplier. The <color=#FFAF2C>total score cap (including bonus) is 50,000</color>."
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001002": {
           "title": "",
@@ -925,7 +925,7 @@
           "monster_list": {
             "31422": {
               "id": 30045,
-              "name": "Miasmic - Rampant Brute",
+              "name": "秽蚀·蛮横力士",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaDubiousHero.png",
               "element": {
                 "ice": 0,
@@ -945,7 +945,7 @@
             },
             "11742": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -965,7 +965,7 @@
             },
             "11512": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -985,8 +985,8 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether",
-            "204": "Wind"
+            "205": "以太",
+            "204": "风属性"
           },
           "waves_num": 2
         }
@@ -998,17 +998,17 @@
       "b_rank_goal": 8000
     },
     "62045053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001382": {
-          "title": "Accumulating Frost",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> increases by 20%, <color=#FFFFFF>Basic Attack</color> DMG increases by 40%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s, repeated triggers reset the duration."
+          "title": "累雪攒霜",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，代理人的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
-          "desc": "· In this stage, dealing DMG to enemies earns you <color=#FFAF2C>DMG Score</color>. Defeating a single <color=#FFFFFF>normal/elite enemy</color> will grant you an instance of <color=#FFAF2C>Elimination Score</color>.\n· In this stage, scores earned at different times will receive additional <color=#FFAF2C>multiplier bonuses</color>. The earlier in the challenge, the higher the multiplier. The <color=#FFAF2C>total score cap (including bonus) is 50,000</color>."
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001002": {
           "title": "",
@@ -1022,7 +1022,7 @@
           "monster_list": {
             "31294": {
               "id": 300402,
-              "name": "Miasmic Komano Manato",
+              "name": "秽蚀·狛野真斗",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaNoranoSlime.png",
               "element": {
                 "ice": 1,
@@ -1042,7 +1042,7 @@
             },
             "11355": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -1062,7 +1062,7 @@
             },
             "11364": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -1082,7 +1082,7 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice"
+            "202": "冰属性"
           },
           "waves_num": 2
         }

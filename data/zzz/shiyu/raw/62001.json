@@ -1,16 +1,16 @@
 {
   "id": 62001,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6200101": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -24,7 +24,7 @@
           "monster_list": {
             "11511": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -44,7 +44,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -64,7 +64,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -84,7 +84,7 @@
             },
             "11491": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -104,7 +104,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 3
         },
@@ -113,7 +113,7 @@
           "monster_list": {
             "11192": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -133,7 +133,7 @@
             },
             "11123": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -153,7 +153,7 @@
             },
             "11292": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -173,7 +173,7 @@
             },
             "11097": {
               "id": 10000,
-              "name": "Tyrfing",
+              "name": "提尔锋",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
               "element": {
                 "ice": 1,
@@ -193,7 +193,7 @@
             },
             "11096": {
               "id": 10000,
-              "name": "Tyrfing",
+              "name": "提尔锋",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
               "element": {
                 "ice": 1,
@@ -213,7 +213,7 @@
             },
             "11104": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -233,8 +233,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -246,13 +246,13 @@
       "b_rank_goal": 600
     },
     "6200102": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -266,7 +266,7 @@
           "monster_list": {
             "11741": {
               "id": 300014,
-              "name": "Ionized - Thanatos",
+              "name": "离子体·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIEnergy.png",
               "element": {
                 "ice": -1,
@@ -286,7 +286,7 @@
             },
             "11731": {
               "id": 200004,
-              "name": "Ionized - Farbauti",
+              "name": "离子体·法布提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GiantEnergy.png",
               "element": {
                 "ice": -1,
@@ -306,7 +306,7 @@
             },
             "11772": {
               "id": 30017,
-              "name": "Ionized - Cyrtoidea",
+              "name": "离子体·瑟托迪亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Cyrtoidea.png",
               "element": {
                 "ice": 0,
@@ -326,7 +326,7 @@
             },
             "11781": {
               "id": 30018,
-              "name": "Ionized - Nassellaria",
+              "name": "离子体·纳塞勒亚",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Nassellaria.png",
               "element": {
                 "ice": 0,
@@ -346,7 +346,7 @@
             }
           },
           "monster_weakness": {
-            "205": "Ether"
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -355,7 +355,7 @@
           "monster_list": {
             "11451": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -375,7 +375,7 @@
             },
             "11046": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -395,7 +395,7 @@
             },
             "11272": {
               "id": 100071,
-              "name": "Private Jaeger",
+              "name": "整训猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MeleeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -415,7 +415,7 @@
             },
             "11251": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -435,7 +435,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         }
@@ -447,13 +447,13 @@
       "b_rank_goal": 600
     },
     "6200103": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -467,7 +467,7 @@
           "monster_list": {
             "11443": {
               "id": 20008,
-              "name": "Lightfoot Rover",
+              "name": "「捷足巡游者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRover.png",
               "element": {
                 "ice": 0,
@@ -487,7 +487,7 @@
             },
             "11263": {
               "id": 20009,
-              "name": "Heavy Gunner",
+              "name": "重装炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepower.png",
               "element": {
                 "ice": 0,
@@ -507,7 +507,7 @@
             },
             "11284": {
               "id": 10008,
-              "name": "Guard Jaeger",
+              "name": "戍卫猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger.png",
               "element": {
                 "ice": 0,
@@ -527,7 +527,7 @@
             },
             "11164": {
               "id": 10005,
-              "name": "Strike Jaeger",
+              "name": "掠袭猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaeger.png",
               "element": {
                 "ice": 0,
@@ -547,8 +547,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         },
@@ -557,7 +557,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -577,7 +577,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -597,7 +597,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -617,7 +617,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -637,7 +637,7 @@
             },
             "11323": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -657,8 +657,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -670,13 +670,13 @@
       "b_rank_goal": 600
     },
     "6200104": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -690,7 +690,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -710,7 +710,7 @@
             },
             "11451": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -730,7 +730,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -750,7 +750,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -770,7 +770,7 @@
             },
             "11251": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -790,7 +790,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -799,7 +799,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -819,7 +819,7 @@
             },
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -839,7 +839,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -859,7 +859,7 @@
             },
             "11104": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -879,7 +879,7 @@
             },
             "11204": {
               "id": 10003,
-              "name": "Hoplitai",
+              "name": "霍普利泰",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
               "element": {
                 "ice": 1,
@@ -899,8 +899,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         }
@@ -912,13 +912,13 @@
       "b_rank_goal": 600
     },
     "6200105": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -932,7 +932,7 @@
           "monster_list": {
             "11522": {
               "id": 200141,
-              "name": "Ruthless Fiend",
+              "name": "凶心疯汉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
               "element": {
                 "ice": 0,
@@ -952,7 +952,7 @@
             },
             "11502": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -972,7 +972,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -992,7 +992,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -1012,7 +1012,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 3
         },
@@ -1021,7 +1021,7 @@
           "monster_list": {
             "11355": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -1041,7 +1041,7 @@
             },
             "11364": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -1061,7 +1061,7 @@
             },
             "11314": {
               "id": 10019,
-              "name": "Assaulter",
+              "name": "袭击者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulter.png",
               "element": {
                 "ice": 1,
@@ -1081,7 +1081,7 @@
             },
             "11334": {
               "id": 10016,
-              "name": "Pyromaniac",
+              "name": "纵火犯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniac.png",
               "element": {
                 "ice": 1,
@@ -1101,8 +1101,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -1114,13 +1114,13 @@
       "b_rank_goal": 600
     },
     "6200106": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -1134,7 +1134,7 @@
           "monster_list": {
             "11057": {
               "id": 300022,
-              "name": "Guardian MK III",
+              "name": "「卫士Ⅲ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GuardianBoss.png",
               "element": {
                 "ice": 0,
@@ -1154,7 +1154,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -1174,7 +1174,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 1
         },
@@ -1183,7 +1183,7 @@
           "monster_list": {
             "11195": {
               "id": 200034,
-              "name": "Notorious - Armored Hati",
+              "name": "恶名·装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HatiArmoredBoss.png",
               "element": {
                 "ice": 1,
@@ -1203,7 +1203,7 @@
             },
             "11104": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -1223,8 +1223,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 1
         }
@@ -1236,13 +1236,13 @@
       "b_rank_goal": 600
     },
     "6200107": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         },
         "62001012": {
           "title": "",
@@ -1256,7 +1256,7 @@
           "monster_list": {
             "11181": {
               "id": 300015,
-              "name": "Notorious - Thanatos",
+              "name": "恶名·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIBoss.png",
               "element": {
                 "ice": 1,
@@ -1276,7 +1276,7 @@
             },
             "11293": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1296,7 +1296,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1316,7 +1316,7 @@
             },
             "11204": {
               "id": 10003,
-              "name": "Hoplitai",
+              "name": "霍普利泰",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
               "element": {
                 "ice": 1,
@@ -1336,8 +1336,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 1
         },
@@ -1346,7 +1346,7 @@
           "monster_list": {
             "11156": {
               "id": 300005,
-              "name": "Notorious - Dullahan",
+              "name": "恶名·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanBoss.png",
               "element": {
                 "ice": 1,
@@ -1366,7 +1366,7 @@
             },
             "11204": {
               "id": 10003,
-              "name": "Hoplitai",
+              "name": "霍普利泰",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Golemgrey.png",
               "element": {
                 "ice": 1,
@@ -1386,8 +1386,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 1
         }
@@ -1399,6 +1399,6 @@
       "b_rank_goal": 600
     }
   },
-  "begin_time": "2024-07-04 04:00:00",
-  "end_time": "2024-08-01 03:59:59"
+  "begin_time": "2024-05-07 04:00:00",
+  "end_time": "2024-05-14 03:59:59"
 }

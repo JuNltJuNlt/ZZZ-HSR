@@ -1,16 +1,16 @@
 {
   "id": 62012,
-  "name": "Critical Node",
+  "name": "剧变节点",
   "priority": 1,
   "zone": {
     "6201201": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -20,7 +20,7 @@
           "monster_list": {
             "11354": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -40,7 +40,7 @@
             },
             "11363": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -60,7 +60,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -80,7 +80,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -100,8 +100,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 4
         },
@@ -110,7 +110,7 @@
           "monster_list": {
             "11381": {
               "id": 20010,
-              "name": "Tarasque Mixer",
+              "name": "泰拉斯奎祸车",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_TarasqueMixer.png",
               "element": {
                 "ice": 0,
@@ -130,7 +130,7 @@
             },
             "11372": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -150,8 +150,8 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric",
-            "205": "Ether"
+            "203": "电属性",
+            "205": "以太"
           },
           "waves_num": 4
         }
@@ -163,13 +163,13 @@
       "b_rank_goal": 600
     },
     "6201202": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -179,7 +179,7 @@
           "monster_list": {
             "11123": {
               "id": 20001,
-              "name": "Hati",
+              "name": "哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiGrey.png",
               "element": {
                 "ice": 1,
@@ -199,7 +199,7 @@
             },
             "11213": {
               "id": 20005,
-              "name": "Arlaune",
+              "name": "阿劳恩",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ArlauneGrey.png",
               "element": {
                 "ice": 1,
@@ -219,7 +219,7 @@
             },
             "11096": {
               "id": 10000,
-              "name": "Tyrfing",
+              "name": "提尔锋",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ClaymoreGrey.png",
               "element": {
                 "ice": 1,
@@ -239,7 +239,7 @@
             },
             "11103": {
               "id": 10001,
-              "name": "Alpeca",
+              "name": "阿佩卡",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_CyclopsGrey.png",
               "element": {
                 "ice": 1,
@@ -259,8 +259,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 4
         },
@@ -269,7 +269,7 @@
           "monster_list": {
             "11058": {
               "id": 30002,
-              "name": "Guardian",
+              "name": "「卫士」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Guardian.png",
               "element": {
                 "ice": 0,
@@ -289,7 +289,7 @@
             },
             "11454": {
               "id": 20007,
-              "name": "Heavy Striker",
+              "name": "「重装侵袭者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStriker.png",
               "element": {
                 "ice": 0,
@@ -309,7 +309,7 @@
             },
             "11164": {
               "id": 10005,
-              "name": "Strike Jaeger",
+              "name": "掠袭猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaeger.png",
               "element": {
                 "ice": 0,
@@ -329,7 +329,7 @@
             },
             "11254": {
               "id": 10006,
-              "name": "Light Jaeger",
+              "name": "轻装猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaeger.png",
               "element": {
                 "ice": 0,
@@ -349,8 +349,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 4
         }
@@ -362,13 +362,13 @@
       "b_rank_goal": 600
     },
     "6201203": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -378,7 +378,7 @@
           "monster_list": {
             "11511": {
               "id": 200131,
-              "name": "Wicked Wraith",
+              "name": "盛怒恶霸",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_WickedWraithPro.png",
               "element": {
                 "ice": 0,
@@ -398,7 +398,7 @@
             },
             "11501": {
               "id": 200121,
-              "name": "Frenzied Maniac",
+              "name": "狂乱暴徒",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_FrenziedManiacPro.png",
               "element": {
                 "ice": 0,
@@ -418,7 +418,7 @@
             },
             "11482": {
               "id": 100271,
-              "name": "Vicious Striker",
+              "name": "恶毒打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -438,7 +438,7 @@
             },
             "11492": {
               "id": 100281,
-              "name": "Greedy Ranger",
+              "name": "贪婪射手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
               "element": {
                 "ice": 0,
@@ -458,7 +458,7 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire"
+            "201": "火属性"
           },
           "waves_num": 4
         },
@@ -467,7 +467,7 @@
           "monster_list": {
             "11052": {
               "id": 300021,
-              "name": "Guardian MK II",
+              "name": "「卫士Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GuardianPro.png",
               "element": {
                 "ice": 0,
@@ -487,7 +487,7 @@
             },
             "11046": {
               "id": 20020,
-              "name": "Enraged Sweeper",
+              "name": "「怒汉」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RagingGuy.png",
               "element": {
                 "ice": 0,
@@ -507,7 +507,7 @@
             },
             "11282": {
               "id": 100081,
-              "name": "Patrol Jaeger",
+              "name": "巡防猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_HeavyJaeger_Pro.png",
               "element": {
                 "ice": 0,
@@ -527,7 +527,7 @@
             },
             "11252": {
               "id": 100061,
-              "name": "Scout Jaeger",
+              "name": "先锋猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_LightJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -547,7 +547,7 @@
             },
             "11162": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -567,7 +567,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 4
         }
@@ -579,13 +579,13 @@
       "b_rank_goal": 600
     },
     "6201204": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -595,7 +595,7 @@
           "monster_list": {
             "11355": {
               "id": 20017,
-              "name": "Bulky Enforcer",
+              "name": "魁梧打手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcer.png",
               "element": {
                 "ice": 1,
@@ -615,7 +615,7 @@
             },
             "11364": {
               "id": 20015,
-              "name": "Bulky Intimidator",
+              "name": "魁梧施虐者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyAbuser.png",
               "element": {
                 "ice": 1,
@@ -635,7 +635,7 @@
             },
             "11324": {
               "id": 10018,
-              "name": "Poacher",
+              "name": "偷猎者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacher.png",
               "element": {
                 "ice": 1,
@@ -655,7 +655,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -675,8 +675,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "200": "Physical"
+            "202": "冰属性",
+            "200": "物理"
           },
           "waves_num": 3
         },
@@ -685,7 +685,7 @@
           "monster_list": {
             "11452": {
               "id": 200071,
-              "name": "Heavy Striker MK II",
+              "name": "「重装侵袭者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyStrikerPro.png",
               "element": {
                 "ice": 0,
@@ -705,7 +705,7 @@
             },
             "11261": {
               "id": 200091,
-              "name": "Assault Gunner",
+              "name": "突击炮手",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HeavyFirepowerPro.png",
               "element": {
                 "ice": 0,
@@ -725,7 +725,7 @@
             },
             "11442": {
               "id": 200081,
-              "name": "Lightfoot Rover MK II",
+              "name": "「捷足巡游者Ⅱ型」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_LightfootRoverPro.png",
               "element": {
                 "ice": 0,
@@ -745,7 +745,7 @@
             },
             "11161": {
               "id": 100051,
-              "name": "Harrier Jaeger",
+              "name": "袭扰猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_StrikeJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -765,7 +765,7 @@
             },
             "11761": {
               "id": 100091,
-              "name": "Demolition Jaeger",
+              "name": "轰击猎兵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GrenadierJaegerPro.png",
               "element": {
                 "ice": 0,
@@ -785,7 +785,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 3
         }
@@ -797,13 +797,13 @@
       "b_rank_goal": 600
     },
     "6201205": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -813,7 +813,7 @@
           "monster_list": {
             "11226": {
               "id": 20002,
-              "name": "Goblin",
+              "name": "地精",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_GoblinGrey.png",
               "element": {
                 "ice": 1,
@@ -833,7 +833,7 @@
             },
             "11185": {
               "id": 30001,
-              "name": "Thanatos",
+              "name": "塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIGrey.png",
               "element": {
                 "ice": 1,
@@ -853,7 +853,7 @@
             },
             "11194": {
               "id": 20003,
-              "name": "Armored Hati",
+              "name": "装甲哈提",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_HatiArmoredGrey.png",
               "element": {
                 "ice": 1,
@@ -873,7 +873,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -893,7 +893,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -913,8 +913,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 3
         },
@@ -923,7 +923,7 @@
           "monster_list": {
             "11623": {
               "id": 200241,
-              "name": "Doppelganger - Pulchra",
+              "name": "多佩冈亚·波可娜",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
               "element": {
                 "ice": -1,
@@ -943,7 +943,7 @@
             },
             "11603": {
               "id": 200231,
-              "name": "Doppelganger - Mors",
+              "name": "多佩冈亚·莫尔斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
               "element": {
                 "ice": -1,
@@ -963,7 +963,7 @@
             },
             "11613": {
               "id": 200251,
-              "name": "Doppelganger - Bellum",
+              "name": "多佩冈亚·巴罗姆",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
               "element": {
                 "ice": -1,
@@ -983,7 +983,7 @@
             },
             "11322": {
               "id": 100181,
-              "name": "Rustler",
+              "name": "盗猎客",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
               "element": {
                 "ice": 0,
@@ -1003,7 +1003,7 @@
             },
             "11342": {
               "id": 100151,
-              "name": "Looter",
+              "name": "劫掠者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
                 "ice": 0,
@@ -1023,8 +1023,8 @@
             }
           },
           "monster_weakness": {
-            "201": "Fire",
-            "200": "Physical"
+            "201": "火属性",
+            "200": "物理"
           },
           "waves_num": 3
         }
@@ -1036,13 +1036,13 @@
       "b_rank_goal": 600
     },
     "6201206": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -1052,7 +1052,7 @@
           "monster_list": {
             "11181": {
               "id": 300015,
-              "name": "Notorious - Thanatos",
+              "name": "恶名·塔纳托斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DeathXIIIBoss.png",
               "element": {
                 "ice": 1,
@@ -1072,7 +1072,7 @@
             },
             "11461": {
               "id": 10025,
-              "name": "Ahriman",
+              "name": "恶灵",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Ahriman.png",
               "element": {
                 "ice": 1,
@@ -1092,7 +1092,7 @@
             },
             "11471": {
               "id": 10026,
-              "name": "Specter",
+              "name": "游魂",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Specter.png",
               "element": {
                 "ice": 1,
@@ -1112,8 +1112,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         },
@@ -1122,7 +1122,7 @@
           "monster_list": {
             "11642": {
               "id": 30020,
-              "name": "Doppelganger - Jane",
+              "name": "多佩冈亚·简",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_JaneBoss.png",
               "element": {
                 "ice": -1,
@@ -1142,7 +1142,7 @@
             },
             "11344": {
               "id": 10015,
-              "name": "Raider",
+              "name": "掠夺者",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaider.png",
               "element": {
                 "ice": 1,
@@ -1162,7 +1162,7 @@
             },
             "11334": {
               "id": 10016,
-              "name": "Pyromaniac",
+              "name": "纵火犯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniac.png",
               "element": {
                 "ice": 1,
@@ -1182,7 +1182,7 @@
             }
           },
           "monster_weakness": {
-            "200": "Physical"
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1194,13 +1194,13 @@
       "b_rank_goal": 600
     },
     "6201207": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "child": [],
@@ -1210,7 +1210,7 @@
           "monster_list": {
             "11156": {
               "id": 300005,
-              "name": "Notorious - Dullahan",
+              "name": "恶名·杜拉罕",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_DurahanBoss.png",
               "element": {
                 "ice": 1,
@@ -1230,7 +1230,7 @@
             },
             "11294": {
               "id": 10014,
-              "name": "Mandrake",
+              "name": "曼德拉",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Mandrake.png",
               "element": {
                 "ice": 1,
@@ -1250,7 +1250,7 @@
             },
             "11682": {
               "id": 10030,
-              "name": "Fossor",
+              "name": "弗瑟尔",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Fossor.png",
               "element": {
                 "ice": 1,
@@ -1270,7 +1270,7 @@
             },
             "11692": {
               "id": 10031,
-              "name": "Sordidus",
+              "name": "索迪代斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Sordidus.png",
               "element": {
                 "ice": 1,
@@ -1290,8 +1290,8 @@
             }
           },
           "monster_weakness": {
-            "202": "Ice",
-            "205": "Ether"
+            "202": "冰属性",
+            "205": "以太"
           },
           "waves_num": 2
         },
@@ -1300,7 +1300,7 @@
           "monster_list": {
             "11401": {
               "id": 30005,
-              "name": "Hans",
+              "name": "汉斯",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MaterialHandler.png",
               "element": {
                 "ice": 0,
@@ -1320,7 +1320,7 @@
             },
             "11372": {
               "id": 10029,
-              "name": "Beholder Engine",
+              "name": "眼魔引擎",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_BeholderEngine.png",
               "element": {
                 "ice": 0,
@@ -1340,7 +1340,7 @@
             }
           },
           "monster_weakness": {
-            "203": "Electric"
+            "203": "电属性"
           },
           "waves_num": 2
         }
@@ -1351,7 +1351,5 @@
       "a_rank_goal": 420,
       "b_rank_goal": 600
     }
-  },
-  "begin_time": "2025-01-03 04:00:00",
-  "end_time": "2025-01-17 03:59:59"
+  }
 }
