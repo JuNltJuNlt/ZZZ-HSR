@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
+  "name": "剧变节点",
   "begin_time": "2026-01-23 04:00:00",
   "end_time": "2026-02-06 03:59:59",
   "zone": {
     "6204001": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001401": {
-          "title": "Fleeting Glory",
-          "desc": "· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 25% and CRIT DMG increases by 20%.\n· When Agents hit enemies, they ignore 10% of enemy <color=#F0D12B>Physical RES</color>."
+          "title": "刹那荣枯",
+          "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -45,7 +45,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1550049,
                 "defense": 592,
                 "stun": 5937,
@@ -58,7 +58,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1165024,
                 "defense": 592,
                 "stun": 4499,
@@ -92,7 +92,7 @@
                 "resistance": []
               },
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1627606,
                 "defense": 640,
                 "stun": 6234,
@@ -111,13 +111,13 @@
       }
     },
     "6204002": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001401": {
-          "title": "Fleeting Glory",
-          "desc": "· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 25% and CRIT DMG increases by 20%.\n· When Agents hit enemies, they ignore 10% of enemy <color=#F0D12B>Physical RES</color>."
+          "title": "刹那荣枯",
+          "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -139,7 +139,7 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 442789,
                 "defense": 552,
                 "stun": 1728,
@@ -152,7 +152,7 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 2802043,
                 "defense": 689,
                 "stun": 11440,
@@ -167,7 +167,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 3000819,
                 "defense": 689,
                 "stun": 13721,
@@ -182,7 +182,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2802043,
                 "defense": 689,
                 "stun": 11440,
@@ -218,7 +218,7 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1661212,
                 "defense": 745,
                 "stun": 4722,
@@ -270,7 +270,7 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 2484003,
                 "defense": 621,
                 "stun": 8389,
@@ -289,13 +289,13 @@
       }
     },
     "6204003": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001401": {
-          "title": "Fleeting Glory",
-          "desc": "· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 25% and CRIT DMG increases by 20%.\n· When Agents hit enemies, they ignore 10% of enemy <color=#F0D12B>Physical RES</color>."
+          "title": "刹那荣枯",
+          "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -330,7 +330,7 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 6721003,
                 "defense": 794,
                 "stun": 10822,
@@ -345,7 +345,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 7427442,
                 "defense": 794,
                 "stun": 14721,
@@ -360,7 +360,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -383,7 +383,7 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 4111729,
                 "defense": 858,
                 "stun": 5066,
@@ -409,7 +409,7 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -422,7 +422,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -435,7 +435,7 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 6148252,
                 "defense": 715,
                 "stun": 9001,
@@ -454,13 +454,13 @@
       }
     },
     "6204004": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001401": {
-          "title": "Fleeting Glory",
-          "desc": "· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 25% and CRIT DMG increases by 20%.\n· When Agents hit enemies, they ignore 10% of enemy <color=#F0D12B>Physical RES</color>."
+          "title": "刹那荣枯",
+          "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -518,7 +518,7 @@
           "monsters": [
             [
               {
-                "name": "Miasma Ravager - Avarus",
+                "name": "秽息蚀者·阿瓦鲁斯",
                 "hp": 22104799,
                 "defense": 953,
                 "stun": 14499,
@@ -544,50 +544,39 @@
       "monster_level": 0,
       "layer_buff": {
         "62001401": {
-          "title": "Fleeting Glory",
-          "desc": "· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 25% and CRIT DMG increases by 20%.\n· When Agents hit enemies, they ignore 10% of enemy <color=#F0D12B>Physical RES</color>."
+          "title": "刹那荣枯",
+          "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         },
         "62001402": {
-          "title": "Piercing Blade Abyss",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#F0D12B>Physical DMG</color> increase by 15%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "冽刃凌渊",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color>提升15%。\n· 代理人使敌人进入属性异常状态后，其防御力降低10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001403": {
-          "title": "Cleanse the Heart with Fire",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> increases by 20%.\n· Agent <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Chain Attack</color> DMG increase by 40%, and CRIT DMG increases by 30%."
-        }
-      },
-      "layer_room": {}
-    },
-    "62040051": {
-      "name": "Room 1",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001401": {
-          "title": "Fleeting Glory",
-          "desc": "· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 25% and CRIT DMG increases by 20%.\n· When Agents hit enemies, they ignore 10% of enemy <color=#F0D12B>Physical RES</color>."
+          "title": "掬火濯心",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[连携技]</color>造成的伤害提升40%，造成的暴击伤害提升30%。"
         }
       },
       "layer_room": {
-        "62040051": {
+        "62040051_62040051": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "杜拉罕",
+                "name": "杜拉罕·蓄能型",
                 "hp": 4009897,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Ionized - Pugnus",
+                "name": "离子体·普格努斯",
                 "hp": 7386481,
                 "defense": 858,
                 "stun": 15080,
@@ -600,7 +589,173 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Doppelganger - The Defector",
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 23131355,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62040052_62040052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "杜拉罕·蓄能型",
+                "hp": 4009897,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "重装炮手",
+                "hp": 3732789,
+                "defense": 858,
+                "stun": 7121,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "秽蚀·简",
+                "hp": 27829214,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62040053_62040053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "狂乱暴徒",
+                "hp": 3749600,
+                "defense": 794,
+                "stun": 7112,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 5408088,
+                "defense": 794,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "多佩冈亚·暗渊惩戒者",
+                "hp": 22214337,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62040051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001401": {
+          "title": "刹那荣枯",
+          "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
+        }
+      },
+      "layer_room": {
+        "62040051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "杜拉罕·蓄能型",
+                "hp": 4009897,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "离子体·普格努斯",
+                "hp": 7386481,
+                "defense": 858,
+                "stun": 15080,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·多佩冈亚·「变节者」",
                 "hp": 23131355,
                 "defense": 953,
                 "stun": 14328,
@@ -621,13 +776,13 @@
       }
     },
     "62040052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001402": {
-          "title": "Piercing Blade Abyss",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#F0D12B>Physical DMG</color> increase by 15%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "冽刃凌渊",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color>提升15%。\n· 代理人使敌人进入属性异常状态后，其防御力降低10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -636,20 +791,21 @@
           "monsters": [
             [
               {
-                "name": "杜拉罕",
+                "name": "杜拉罕·蓄能型",
                 "hp": 4009897,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Heavy Gunner",
+                "name": "重装炮手",
                 "hp": 3732789,
                 "defense": 858,
                 "stun": 7121,
@@ -664,7 +820,7 @@
                 ]
               },
               {
-                "name": "Miasmic - Jane",
+                "name": "秽蚀·简",
                 "hp": 27829214,
                 "defense": 953,
                 "stun": 14328,
@@ -685,13 +841,13 @@
       }
     },
     "62040053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001403": {
-          "title": "Cleanse the Heart with Fire",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> increases by 20%.\n· Agent <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Chain Attack</color> DMG increase by 40%, and CRIT DMG increases by 30%."
+          "title": "掬火濯心",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[连携技]</color>造成的伤害提升40%，造成的暴击伤害提升30%。"
         }
       },
       "layer_room": {
@@ -714,20 +870,21 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 5408088,
                 "defense": 794,
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Doppelganger - Abyssal Enforcer",
+                "name": "多佩冈亚·暗渊惩戒者",
                 "hp": 22214337,
                 "defense": 953,
                 "stun": 14328,

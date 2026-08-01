@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-06-20 04:00:00",
-  "end_time": "2025-07-04 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6202401": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "盗猎客",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -33,9 +30,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 238016,
-                "attack": 1640,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 1275557,
-                "attack": 2499,
                 "defense": 592,
                 "stun": 6734,
                 "number": 1,
@@ -63,9 +58,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 1554102,
-                "attack": 2656,
                 "defense": 592,
                 "stun": 11136,
                 "number": 1,
@@ -89,7 +83,6 @@
               {
                 "name": "法布提",
                 "hp": 1240481,
-                "attack": 2395,
                 "defense": 640,
                 "stun": 7407,
                 "number": 1,
@@ -101,9 +94,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 223131,
-                "attack": 1979,
                 "defense": 474,
                 "stun": 1766,
                 "number": 1,
@@ -115,9 +107,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 223131,
-                "attack": 1797,
                 "defense": 474,
                 "stun": 1766,
                 "number": 1,
@@ -129,9 +120,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 1289116,
-                "attack": 2760,
                 "defense": 533,
                 "stun": 6857,
                 "number": 1,
@@ -149,13 +139,13 @@
       }
     },
     "6202402": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -166,7 +156,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 245504,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -179,7 +168,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 245504,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -192,7 +180,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1087690,
-                "attack": 2486,
                 "defense": 649,
                 "stun": 4963,
                 "number": 1,
@@ -205,18 +192,18 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 1579769,
-                "attack": 2378,
                 "defense": 649,
                 "stun": 6514,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               }
             ]
           ],
@@ -229,7 +216,6 @@
               {
                 "name": "法布提",
                 "hp": 1505027,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 7740,
                 "number": 1,
@@ -241,9 +227,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 877054,
-                "attack": 1432,
                 "defense": 585,
                 "stun": 4344,
                 "number": 1,
@@ -255,9 +240,8 @@
                 "resistance": []
               },
               {
-                "name": "阿佩卡",
+                "name": "阿佩卡（寄生态）",
                 "hp": 338842,
-                "attack": 2135,
                 "defense": 468,
                 "stun": 1842,
                 "number": 1,
@@ -269,9 +253,8 @@
                 "resistance": []
               },
               {
-                "name": "Tyrfing (Infested)",
+                "name": "提尔锋（寄生态）",
                 "hp": 338842,
-                "attack": 2135,
                 "defense": 468,
                 "stun": 1842,
                 "number": 1,
@@ -283,9 +266,8 @@
                 "resistance": []
               },
               {
-                "name": "Hitchspiker",
+                "name": "刺椎原虫",
                 "hp": 69199,
-                "attack": 1946,
                 "defense": 468,
                 "stun": 1228,
                 "number": 1,
@@ -302,13 +284,13 @@
       }
     },
     "6202403": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -319,7 +301,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -332,7 +313,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 365684,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -345,7 +325,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1620141,
-                "attack": 2546,
                 "defense": 689,
                 "stun": 5123,
                 "number": 1,
@@ -358,9 +337,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2241776,
-                "attack": 2297,
                 "defense": 621,
                 "stun": 7990,
                 "number": 1,
@@ -381,9 +359,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 365684,
-                "attack": 1826,
                 "defense": 497,
                 "stun": 1728,
                 "number": 1,
@@ -397,7 +374,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 497,
                 "stun": 1728,
                 "number": 1,
@@ -409,9 +385,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1613749,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 4722,
                 "number": 1,
@@ -425,7 +400,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 365684,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
@@ -437,9 +411,8 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 1957858,
-                "attack": 3071,
                 "defense": 621,
                 "stun": 7627,
                 "number": 1,
@@ -453,7 +426,6 @@
               {
                 "name": "曼德拉",
                 "hp": 307089,
-                "attack": 1743,
                 "defense": 497,
                 "stun": 1815,
                 "number": 1,
@@ -471,13 +443,13 @@
       }
     },
     "6202404": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -488,7 +460,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 386364,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -501,7 +472,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 386364,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -514,7 +484,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1773108,
-                "attack": 3038,
                 "defense": 751,
                 "stun": 6052,
                 "number": 1,
@@ -527,9 +496,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2458320,
-                "attack": 2722,
                 "defense": 676,
                 "stun": 9506,
                 "number": 1,
@@ -552,7 +520,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 2301579,
-                "attack": 2894,
                 "defense": 812,
                 "stun": 5562,
                 "number": 1,
@@ -564,9 +531,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 2068579,
-                "attack": 3181,
                 "defense": 676,
                 "stun": 7944,
                 "number": 1,
@@ -578,9 +544,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 426042,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1984,
                 "number": 1,
@@ -592,9 +557,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 426042,
-                "attack": 1977,
                 "defense": 601,
                 "stun": 1984,
                 "number": 1,
@@ -606,9 +570,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 2549494,
-                "attack": 3467,
                 "defense": 676,
                 "stun": 8738,
                 "number": 1,
@@ -626,13 +589,13 @@
       }
     },
     "6202405": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -643,7 +606,6 @@
               {
                 "name": "偷袭者",
                 "hp": 665528,
-                "attack": 1848,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -657,7 +619,6 @@
               {
                 "name": "盗猎客",
                 "hp": 665528,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -669,9 +630,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 4800717,
-                "attack": 2434,
                 "defense": 794,
                 "stun": 10822,
                 "number": 1,
@@ -685,9 +645,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 5305316,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 14721,
                 "number": 1,
@@ -701,9 +660,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 4953890,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 12274,
                 "number": 1,
@@ -725,9 +683,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 2936949,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 5066,
                 "number": 1,
@@ -741,7 +698,6 @@
               {
                 "name": "杜拉罕",
                 "hp": 3563214,
-                "attack": 3255,
                 "defense": 922,
                 "stun": 8183,
                 "number": 1,
@@ -753,9 +709,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 733874,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -767,9 +722,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 733874,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -781,9 +735,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 4391609,
-                "attack": 3548,
                 "defense": 715,
                 "stun": 9001,
                 "number": 1,
@@ -801,13 +754,13 @@
       }
     },
     "6202406": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -816,9 +769,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 42162,
-                "attack": 1486,
                 "defense": 715,
                 "stun": 0,
                 "number": 1,
@@ -832,7 +784,6 @@
               {
                 "name": "恶名·塔纳托斯",
                 "hp": 9746274,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -852,15 +803,14 @@
           "monsters": [
             [
               {
-                "name": "汉斯",
+                "name": "汉斯·超频型",
                 "hp": 11343160,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 15816,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "以太"
                 ],
                 "resistance": [
                   "物理"
@@ -869,7 +819,6 @@
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 723606,
-                "attack": 1858,
                 "defense": 572,
                 "stun": 1981,
                 "number": 1,
@@ -882,7 +831,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 723606,
-                "attack": 1858,
                 "defense": 572,
                 "stun": 1981,
                 "number": 1,
@@ -899,13 +847,13 @@
       }
     },
     "6202407": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001196": {
-          "title": "Tiger's Roaring Gale",
-          "desc": "· Agent Sheer DMG increases by 20%, Energy and Adrenaline Generation Rate increase by 15%.\n· When enemies are Stunned, the whole squad recovers 600 Decibels, and their <color=#FE437E>Ether DMG</color> and <color=#FF5521>Fire DMG</color> increase by 20% for 20s. The Decibel generation effect can trigger once every 20 seconds."
+          "title": "虎啸风生",
+          "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -914,9 +862,8 @@
           "monsters": [
             [
               {
-                "name": "Hati Pack Leader — Energized",
+                "name": "哈提头犬·蓄能型",
                 "hp": 12737192,
-                "attack": 4304,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -929,9 +876,8 @@
                 ]
               },
               {
-                "name": "Flame Cantor",
+                "name": "秉火领颂",
                 "hp": 6806228,
-                "attack": 3620,
                 "defense": 794,
                 "stun": 8623,
                 "number": 1,
@@ -945,9 +891,8 @@
                 ]
               },
               {
-                "name": "Exalting Hymnist",
+                "name": "颂礼赞者",
                 "hp": 1234172,
-                "attack": 2576,
                 "defense": 636,
                 "stun": 2327,
                 "number": 1,
@@ -967,9 +912,8 @@
           "monsters": [
             [
               {
-                "name": "Huskron",
+                "name": "赫斯克龙",
                 "hp": 760414,
-                "attack": 1761,
                 "defense": 636,
                 "stun": 2327,
                 "number": 1,
@@ -981,9 +925,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Thracian",
+                "name": "秽蚀·色雷斯人",
                 "hp": 15925036,
-                "attack": 3522,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,

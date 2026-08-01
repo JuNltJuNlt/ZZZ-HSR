@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-02-28 04:00:00",
-  "end_time": "2025-03-14 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6201601": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -19,37 +17,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1196178,
-                "attack": 2395,
                 "defense": 533,
                 "stun": 7407,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 1008587,
-                "attack": 2525,
                 "defense": 687,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 159595,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1068,
                 "number": 1,
@@ -62,7 +59,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 159595,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1068,
                 "number": 1,
@@ -83,7 +79,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 195124,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -96,7 +91,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 195124,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -109,7 +103,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 864483,
-                "attack": 2395,
                 "defense": 592,
                 "stun": 4750,
                 "number": 1,
@@ -122,18 +115,18 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 1255582,
-                "attack": 2291,
                 "defense": 592,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               }
             ]
           ],
@@ -142,13 +135,13 @@
       }
     },
     "6201602": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -159,7 +152,6 @@
               {
                 "name": "偷猎者",
                 "hp": 236736,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -173,7 +165,6 @@
               {
                 "name": "掠夺者",
                 "hp": 278462,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -185,9 +176,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1450759,
-                "attack": 2270,
                 "defense": 649,
                 "stun": 6204,
                 "number": 1,
@@ -199,9 +189,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1090397,
-                "attack": 2054,
                 "defense": 649,
                 "stun": 4701,
                 "number": 1,
@@ -221,9 +210,8 @@
           "monsters": [
             [
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 278462,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -234,9 +222,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 236736,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -249,7 +236,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1144883,
-                "attack": 2513,
                 "defense": 701,
                 "stun": 4935,
                 "number": 1,
@@ -262,19 +248,17 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 1523349,
-                "attack": 2621,
                 "defense": 701,
                 "stun": 6514,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -284,13 +268,13 @@
       }
     },
     "6201603": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -299,9 +283,8 @@
           "monsters": [
             [
               {
-                "name": "Blastcrawler",
+                "name": "雷蛛",
                 "hp": 126198,
-                "attack": 1218,
                 "defense": 593,
                 "stun": 519,
                 "number": 1,
@@ -315,7 +298,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1525418,
-                "attack": 3210,
                 "defense": 745,
                 "stun": 5085,
                 "number": 1,
@@ -327,9 +309,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 1727522,
-                "attack": 3071,
                 "defense": 621,
                 "stun": 7627,
                 "number": 1,
@@ -343,7 +324,6 @@
               {
                 "name": "曼德拉",
                 "hp": 270961,
-                "attack": 1743,
                 "defense": 497,
                 "stun": 1815,
                 "number": 1,
@@ -355,9 +335,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 355798,
-                "attack": 2103,
                 "defense": 552,
                 "stun": 1905,
                 "number": 1,
@@ -369,9 +348,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 355798,
-                "attack": 1909,
                 "defense": 552,
                 "stun": 1905,
                 "number": 1,
@@ -393,7 +371,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 263911,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1152,
                 "number": 1,
@@ -406,7 +383,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 263911,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1152,
                 "number": 1,
@@ -419,7 +395,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1429536,
-                "attack": 2546,
                 "defense": 689,
                 "stun": 5123,
                 "number": 1,
@@ -432,9 +407,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2053004,
-                "attack": 2629,
                 "defense": 621,
                 "stun": 9126,
                 "number": 1,
@@ -453,13 +427,13 @@
       }
     },
     "6201604": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -470,7 +444,6 @@
               {
                 "name": "偷猎者",
                 "hp": 340910,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -484,7 +457,6 @@
               {
                 "name": "掠夺者",
                 "hp": 400997,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -496,9 +468,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2148994,
-                "attack": 2751,
                 "defense": 751,
                 "stun": 7566,
                 "number": 1,
@@ -510,9 +481,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1618139,
-                "attack": 2465,
                 "defense": 751,
                 "stun": 5772,
                 "number": 1,
@@ -532,37 +502,36 @@
           "monsters": [
             [
               {
-                "name": "塔纳托斯",
+                "name": "塔纳托斯·蓄能型",
                 "hp": 2030805,
-                "attack": 2894,
                 "defense": 812,
                 "stun": 5562,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "装甲哈提",
+                "name": "装甲哈提·蓄能型",
                 "hp": 1611683,
-                "attack": 3324,
                 "defense": 812,
                 "stun": 5296,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Fossor - Energized",
+                "name": "弗瑟尔·蓄能型",
                 "hp": 375919,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1984,
                 "number": 1,
@@ -573,9 +542,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus - Energized",
+                "name": "索迪代斯·蓄能型",
                 "hp": 375919,
-                "attack": 1977,
                 "defense": 601,
                 "stun": 1984,
                 "number": 1,
@@ -586,9 +554,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin - Energized",
+                "name": "地精·蓄能型",
                 "hp": 1738314,
-                "attack": 3038,
                 "defense": 676,
                 "stun": 7566,
                 "number": 1,
@@ -607,13 +574,13 @@
       }
     },
     "6201605": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -624,7 +591,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 532422,
-                "attack": 1584,
                 "defense": 572,
                 "stun": 1854,
                 "number": 1,
@@ -636,9 +602,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 2349560,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 5066,
                 "number": 1,
@@ -652,7 +617,6 @@
               {
                 "name": "杜拉罕",
                 "hp": 2850571,
-                "attack": 3255,
                 "defense": 922,
                 "stun": 8183,
                 "number": 1,
@@ -666,7 +630,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 532422,
-                "attack": 1760,
                 "defense": 731,
                 "stun": 1854,
                 "number": 1,
@@ -678,9 +641,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 1962943,
-                "attack": 1760,
                 "defense": 715,
                 "stun": 5455,
                 "number": 1,
@@ -702,7 +664,6 @@
               {
                 "name": "盗猎客",
                 "hp": 532422,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -714,9 +675,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 626265,
-                "attack": 1848,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -728,9 +688,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 3963112,
-                "attack": 2786,
                 "defense": 794,
                 "stun": 12274,
                 "number": 1,
@@ -744,9 +703,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 4244253,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 14721,
                 "number": 1,
@@ -760,9 +718,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 3963112,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 12274,
                 "number": 1,
@@ -782,13 +739,13 @@
       }
     },
     "6201606": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -797,9 +754,8 @@
           "monsters": [
             [
               {
-                "name": "装甲哈提",
+                "name": "恶名·装甲哈提",
                 "hp": 6497586,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -811,9 +767,8 @@
                 "resistance": []
               },
               {
-                "name": "阿佩卡",
+                "name": "阿佩卡（寄生态）",
                 "hp": 798970,
-                "attack": 2446,
                 "defense": 572,
                 "stun": 2178,
                 "number": 1,
@@ -825,9 +780,8 @@
                 "resistance": []
               },
               {
-                "name": "Tyrfing (Infested)",
+                "name": "提尔锋（寄生态）",
                 "hp": 798970,
-                "attack": 2446,
                 "defense": 572,
                 "stun": 2178,
                 "number": 1,
@@ -839,9 +793,8 @@
                 "resistance": []
               },
               {
-                "name": "Hitchspiker",
+                "name": "刺椎原虫",
                 "hp": 163167,
-                "attack": 2229,
                 "defense": 572,
                 "stun": 1453,
                 "number": 1,
@@ -862,7 +815,6 @@
               {
                 "name": "偷袭者",
                 "hp": 578885,
-                "attack": 1951,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -876,7 +828,6 @@
               {
                 "name": "盗猎客",
                 "hp": 578885,
-                "attack": 1672,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -890,7 +841,6 @@
               {
                 "name": "祸首·通缉打手",
                 "hp": 8663448,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -910,13 +860,13 @@
       }
     },
     "6201607": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001161": {
-          "title": "Frightening Strike",
-          "desc": "· The Agent's Impact increases by 15%.\n· When the Agent's <color=#FFFFFF>Chain Attack</color> hits the enemy, DEF decreases by 25%, lasting 10s. Repeated triggers reset the duration."
+          "title": "震慑破击",
+          "desc": "· 代理人的冲击力提升15%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人时，其防御力降低25%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -927,7 +877,6 @@
               {
                 "name": "恶名·杜拉罕",
                 "hp": 8320211,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -939,9 +888,8 @@
                 "resistance": []
               },
               {
-                "name": "阿佩卡",
+                "name": "阿佩卡（寄生态）",
                 "hp": 939731,
-                "attack": 2576,
                 "defense": 572,
                 "stun": 2327,
                 "number": 1,
@@ -953,9 +901,8 @@
                 "resistance": []
               },
               {
-                "name": "Tyrfing (Infested)",
+                "name": "提尔锋（寄生态）",
                 "hp": 939731,
-                "attack": 2576,
                 "defense": 572,
                 "stun": 2327,
                 "number": 1,
@@ -967,9 +914,8 @@
                 "resistance": []
               },
               {
-                "name": "Hitchspiker",
+                "name": "刺椎原虫",
                 "hp": 191914,
-                "attack": 2348,
                 "defense": 572,
                 "stun": 1551,
                 "number": 1,
@@ -988,9 +934,8 @@
           "monsters": [
             [
               {
-                "name": "Friday - Energized",
+                "name": "星期五·蓄能型",
                 "hp": 10673256,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 16895,
                 "number": 1,
@@ -1003,9 +948,8 @@
                 ]
               },
               {
-                "name": "Fossor - Energized",
+                "name": "弗瑟尔·蓄能型",
                 "hp": 750793,
-                "attack": 2479,
                 "defense": 636,
                 "stun": 2332,
                 "number": 1,
@@ -1016,9 +960,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus - Energized",
+                "name": "索迪代斯·蓄能型",
                 "hp": 750793,
-                "attack": 2250,
                 "defense": 636,
                 "stun": 2332,
                 "number": 1,

@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-09-26 04:00:00",
-  "end_time": "2025-10-10 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6203101": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 510,
                 "stun": 1602,
                 "number": 1,
@@ -33,9 +30,8 @@
                 "resistance": []
               },
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1302085,
-                "attack": 2291,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -57,7 +53,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -70,7 +65,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 202350,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -83,7 +77,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 896501,
-                "attack": 2395,
                 "defense": 592,
                 "stun": 4750,
                 "number": 1,
@@ -96,46 +89,10 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 1302085,
-                "attack": 2291,
                 "defense": 592,
                 "stun": 6234,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              }
-            ]
-          ],
-          "weakness": []
-        }
-      }
-    },
-    "6203102": {
-      "name": "Critical Node: Second Frontier",
-      "stage_num": 2,
-      "monster_level": 53,
-      "layer_buff": {
-        "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
-        }
-      },
-      "layer_room": {
-        "62031021": {
-          "level": 53,
-          "monsters": [
-            [
-              {
-                "name": "盛怒恶霸",
-                "hp": 1208564,
-                "attack": 2270,
-                "defense": 701,
-                "stun": 6204,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -144,11 +101,45 @@
                 "resistance": [
                   "电"
                 ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203102": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 1208564,
+                "defense": 701,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 288775,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -159,9 +150,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 245504,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -174,7 +164,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1269001,
-                "attack": 2135,
                 "defense": 701,
                 "stun": 6514,
                 "number": 1,
@@ -197,7 +186,6 @@
               {
                 "name": "盗猎客",
                 "hp": 245504,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -209,9 +197,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 288775,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -223,9 +210,8 @@
                 "resistance": []
               },
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 1547584,
-                "attack": 2594,
                 "defense": 649,
                 "stun": 7037,
                 "number": 1,
@@ -239,9 +225,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 1885531,
-                "attack": 2756,
                 "defense": 649,
                 "stun": 11637,
                 "number": 1,
@@ -261,13 +246,13 @@
       }
     },
     "6203103": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -278,7 +263,6 @@
               {
                 "name": "法布提",
                 "hp": 2241776,
-                "attack": 2546,
                 "defense": 745,
                 "stun": 7990,
                 "number": 1,
@@ -290,9 +274,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 403238,
-                "attack": 2103,
                 "defense": 552,
                 "stun": 1905,
                 "number": 1,
@@ -304,9 +287,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 403238,
-                "attack": 1909,
                 "defense": 552,
                 "stun": 1905,
                 "number": 1,
@@ -318,9 +300,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 2329668,
-                "attack": 2933,
                 "defense": 621,
                 "stun": 7396,
                 "number": 1,
@@ -342,7 +323,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -355,7 +335,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 365684,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -366,23 +345,22 @@
                 "resistance": []
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 2420489,
-                "attack": 2795,
                 "defense": 689,
                 "stun": 7627,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2326738,
-                "attack": 2629,
                 "defense": 621,
                 "stun": 9126,
                 "number": 1,
@@ -401,13 +379,13 @@
       }
     },
     "6203104": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -416,9 +394,8 @@
           "monsters": [
             [
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 348938,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1200,
                 "number": 1,
@@ -431,7 +408,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1868503,
-                "attack": 2665,
                 "defense": 812,
                 "stun": 5306,
                 "number": 1,
@@ -446,7 +422,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 2068579,
-                "attack": 2608,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
@@ -459,25 +434,22 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2557373,
-                "attack": 3181,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 347531,
-                "attack": 1691,
                 "defense": 601,
                 "stun": 1260,
                 "number": 1,
@@ -498,7 +470,6 @@
               {
                 "name": "盗猎客",
                 "hp": 386364,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -510,9 +481,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 454463,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -524,9 +494,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 2786996,
-                "attack": 2379,
                 "defense": 751,
                 "stun": 10506,
                 "number": 1,
@@ -540,9 +509,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 3079934,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 14292,
                 "number": 1,
@@ -556,9 +524,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2875919,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 11916,
                 "number": 1,
@@ -578,13 +545,13 @@
       }
     },
     "6203105": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -595,7 +562,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 5550393,
-                "attack": 2962,
                 "defense": 858,
                 "stun": 5729,
                 "number": 1,
@@ -609,7 +575,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 4404890,
-                "attack": 3401,
                 "defense": 858,
                 "stun": 5455,
                 "number": 1,
@@ -621,9 +586,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 4988499,
-                "attack": 3255,
                 "defense": 715,
                 "stun": 8183,
                 "number": 1,
@@ -635,9 +599,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1027424,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -649,9 +612,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1027424,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -673,7 +635,6 @@
               {
                 "name": "「卫士」",
                 "hp": 5928381,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
@@ -687,22 +648,21 @@
                 ]
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 762085,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1236,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "Heavy Gunner",
+                "name": "重装炮手",
                 "hp": 4643763,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 6242,
                 "number": 1,
@@ -716,9 +676,8 @@
                 ]
               },
               {
-                "name": "Guard Jaeger",
+                "name": "戍卫猎兵",
                 "hp": 762085,
-                "attack": 1760,
                 "defense": 731,
                 "stun": 1236,
                 "number": 1,
@@ -730,9 +689,8 @@
                 "resistance": []
               },
               {
-                "name": "Lightfoot Rover",
+                "name": "「捷足巡游者」",
                 "hp": 4988499,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -752,13 +710,13 @@
       }
     },
     "6203106": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -767,9 +725,8 @@
           "monsters": [
             [
               {
-                "name": "Terror Raptor",
+                "name": "骇鸟",
                 "hp": 15864929,
-                "attack": 4458,
                 "defense": 953,
                 "stun": 13414,
                 "number": 1,
@@ -790,9 +747,8 @@
           "monsters": [
             [
               {
-                "name": "Typhon Challenger",
+                "name": "「提丰·挑战者型」",
                 "hp": 12379396,
-                "attack": 4086,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -812,13 +768,13 @@
       }
     },
     "6203107": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001311": {
-          "title": "Frosty Fire",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 10%/20% of all DMG RES when hitting enemies.\n· After <color=#FFFFFF>Aftershock</color> hits, Agents' CRIT DMG increases by 60% for 10s. Repeated triggers refresh the duration."
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -827,9 +783,8 @@
           "monsters": [
             [
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 4732077,
-                "attack": 3294,
                 "defense": 858,
                 "stun": 9335,
                 "number": 1,
@@ -843,7 +798,6 @@
               {
                 "name": "汉斯",
                 "hp": 13341570,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 16895,
                 "number": 1,
@@ -864,9 +818,8 @@
           "monsters": [
             [
               {
-                "name": "Miasmic - Doppelganger - The Defector",
+                "name": "秽蚀·多佩冈亚·「变节者」",
                 "hp": 19918667,
-                "attack": 3522,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,

@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
+  "name": "剧变节点",
   "begin_time": "2026-05-01 04:00:00",
   "end_time": "2026-05-15 03:59:59",
   "zone": {
     "6204701": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -45,7 +45,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1550049,
                 "defense": 592,
                 "stun": 5937,
@@ -58,7 +58,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1165024,
                 "defense": 592,
                 "stun": 4499,
@@ -79,7 +79,7 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 252938,
                 "defense": 474,
                 "stun": 1602,
@@ -105,15 +105,14 @@
                 ]
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 252938,
                 "defense": 545,
                 "stun": 1602,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
@@ -138,13 +137,13 @@
       }
     },
     "6204702": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -179,7 +178,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2306888,
                 "defense": 689,
                 "stun": 6404,
@@ -192,7 +191,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1733867,
                 "defense": 689,
                 "stun": 4852,
@@ -213,37 +212,48 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 1853132,
                 "defense": 745,
                 "stun": 6404,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2395171,
                 "defense": 745,
                 "stun": 9126,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 376439,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -256,25 +266,12 @@
               {
                 "name": "巡防猎兵",
                 "hp": 376439,
-                "defense": 552,
-                "stun": 1728,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "戍卫猎兵",
-                "hp": 376439,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -285,13 +282,13 @@
       }
     },
     "6204703": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -326,7 +323,7 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 4988499,
                 "defense": 715,
                 "stun": 8183,
@@ -339,7 +336,7 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -352,7 +349,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -401,22 +398,21 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 6167254,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 1104786,
                 "defense": 731,
                 "stun": 1360,
@@ -429,7 +425,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 1104786,
                 "defense": 636,
                 "stun": 1360,
@@ -448,13 +444,13 @@
       }
     },
     "6204704": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -463,7 +459,7 @@
           "monsters": [
             [
               {
-                "name": "Tepes",
+                "name": "特佩什",
                 "hp": 15713672,
                 "defense": 953,
                 "stun": 17438,
@@ -484,7 +480,7 @@
           "monsters": [
             [
               {
-                "name": "Typhon Slugger",
+                "name": "「提丰·重击者型」",
                 "hp": 12379396,
                 "defense": 953,
                 "stun": 12195,
@@ -498,15 +494,14 @@
                 ]
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 1013048,
                 "defense": 731,
                 "stun": 1981,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -522,37 +517,25 @@
       "monster_level": 0,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         },
         "62001472": {
-          "title": "Cardinal Forge",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "枢机锻序",
+          "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001473": {
-          "title": "Glacial Whirlwind",
-          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 20%.\n· When enemies are Stunned, the whole squad's CRIT DMG increases by 30% for 30s. Repeated triggers reset the duration."
-        }
-      },
-      "layer_room": {}
-    },
-    "62047051": {
-      "name": "Room 1",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001473": {
-          "title": "Glacial Whirlwind",
-          "desc": "· Agents' Daze dealt increases by 10%, <color=#FFFFFF>Ultimate</color> DMG increases by 20%.\n· When enemies are Stunned, the whole squad's CRIT DMG increases by 30% for 30s. Repeated triggers reset the duration."
+          "title": "乱霜缭华",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· 使敌人进入失衡状态时，全队造成的暴击伤害提升30%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047051": {
+        "62047051_62047051": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "Faun",
+                "name": "萨提尔",
                 "hp": 817045,
                 "defense": 572,
                 "stun": 2115,
@@ -565,7 +548,7 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 4738970,
                 "defense": 715,
                 "stun": 9335,
@@ -578,7 +561,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasma Spawn",
+                "name": "秽息原牲",
                 "hp": 1421647,
                 "defense": 636,
                 "stun": 2327,
@@ -591,7 +574,195 @@
                 "resistance": []
               },
               {
-                "name": "Miasma Walker - Scorpse",
+                "name": "秽息行者·蝎骸",
+                "hp": 39128891,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62047052_62047052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1184805,
+                "defense": 731,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1184805,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·「骇鸟」",
+                "hp": 30841807,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "秽蚀·「重装侵袭者」",
+                "hp": 9373502,
+                "defense": 858,
+                "stun": 13069,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62047053_62047053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "装甲哈提",
+                "hp": 4506442,
+                "defense": 858,
+                "stun": 6223,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "铁道地精",
+                "hp": 5103506,
+                "defense": 715,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·蛮横力士",
+                "hp": 54641982,
+                "defense": 953,
+                "stun": 14589,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62047051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001473": {
+          "title": "乱霜缭华",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· 使敌人进入失衡状态时，全队造成的暴击伤害提升30%，持续30秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62047051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "萨提尔",
+                "hp": 817045,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "铁道地精",
+                "hp": 4738970,
+                "defense": 715,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息原牲",
+                "hp": 1421647,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息行者·蝎骸",
                 "hp": 39128891,
                 "defense": 953,
                 "stun": 18236,
@@ -612,13 +783,13 @@
       }
     },
     "62047052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001471": {
-          "title": "Chaotic Weave",
-          "desc": "· When there are 1/2 Agents with <color=#FFFFFF>Attack</color> specialty in the squad, Agents ignore 5%/15% of All-DMG RES when hitting enemies.\n· After an Agent triggers a critical hit, their <color=#2EB6FF>Electric DMG</color> increases by 35% for 5s. Repeated triggers reset the duration."
+          "title": "紊丝无定",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -627,7 +798,7 @@
           "monsters": [
             [
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 1184805,
                 "defense": 731,
                 "stun": 2327,
@@ -640,7 +811,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 1184805,
                 "defense": 636,
                 "stun": 2327,
@@ -653,7 +824,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Terror Raptor",
+                "name": "秽蚀·「骇鸟」",
                 "hp": 30841807,
                 "defense": 953,
                 "stun": 14328,
@@ -668,18 +839,18 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "秽蚀·「重装侵袭者」",
                 "hp": 9373502,
                 "defense": 858,
                 "stun": 13069,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
+                  "电",
                   "物理"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰"
                 ]
               }
             ]
@@ -689,13 +860,13 @@
       }
     },
     "62047053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001472": {
-          "title": "Cardinal Forge",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "枢机锻序",
+          "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -717,7 +888,7 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 5103506,
                 "defense": 715,
                 "stun": 9335,
@@ -730,7 +901,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Rampant Brute",
+                "name": "秽蚀·蛮横力士",
                 "hp": 54641982,
                 "defense": 953,
                 "stun": 14589,

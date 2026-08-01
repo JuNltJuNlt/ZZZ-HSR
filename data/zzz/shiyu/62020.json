@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-04-25 04:00:00",
-  "end_time": "2025-05-09 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6202001": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -19,9 +17,8 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 202350,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -34,7 +31,6 @@
               {
                 "name": "突击炮手",
                 "hp": 978590,
-                "attack": 2421,
                 "defense": 640,
                 "stun": 4723,
                 "number": 1,
@@ -47,23 +43,20 @@
                 ]
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 202350,
-                "attack": 1562,
                 "defense": 545,
                 "stun": 1602,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1045942,
-                "attack": 2057,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -84,37 +77,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1240481,
-                "attack": 2395,
                 "defense": 533,
                 "stun": 7407,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 1171803,
-                "attack": 2525,
                 "defense": 533,
                 "stun": 4363,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 202350,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1602,
                 "number": 1,
@@ -127,7 +119,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 202350,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1602,
                 "number": 1,
@@ -144,13 +135,13 @@
       }
     },
     "6202002": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -161,7 +152,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 245504,
-                "attack": 1459,
                 "defense": 559,
                 "stun": 1674,
                 "number": 1,
@@ -173,9 +163,8 @@
                 "resistance": []
               },
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1579769,
-                "attack": 2378,
                 "defense": 701,
                 "stun": 6514,
                 "number": 1,
@@ -197,7 +186,6 @@
               {
                 "name": "法布提",
                 "hp": 1505027,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 7740,
                 "number": 1,
@@ -211,7 +199,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1160643,
-                "attack": 3134,
                 "defense": 701,
                 "stun": 4926,
                 "number": 1,
@@ -223,9 +210,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 270716,
-                "attack": 2054,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -237,9 +223,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 270716,
-                "attack": 1865,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -257,13 +242,13 @@
       }
     },
     "6202003": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -274,7 +259,6 @@
               {
                 "name": "偷猎者",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -288,7 +272,6 @@
               {
                 "name": "掠夺者",
                 "hp": 430138,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -300,9 +283,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2240977,
-                "attack": 2324,
                 "defense": 689,
                 "stun": 6404,
                 "number": 1,
@@ -314,9 +296,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1684328,
-                "attack": 2103,
                 "defense": 689,
                 "stun": 4852,
                 "number": 1,
@@ -336,37 +317,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 2241776,
-                "attack": 2546,
                 "defense": 621,
                 "stun": 7990,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 1957858,
-                "attack": 3071,
                 "defense": 800,
                 "stun": 7627,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 365684,
-                "attack": 1660,
                 "defense": 497,
                 "stun": 1728,
                 "number": 1,
@@ -379,7 +359,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 365684,
-                "attack": 1660,
                 "defense": 497,
                 "stun": 1728,
                 "number": 1,
@@ -396,13 +375,13 @@
       }
     },
     "6202004": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -413,7 +392,6 @@
               {
                 "name": "盗猎客",
                 "hp": 386364,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -425,9 +403,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 454463,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -439,9 +416,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 2786996,
-                "attack": 2379,
                 "defense": 751,
                 "stun": 10506,
                 "number": 1,
@@ -455,9 +431,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 3079934,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 14292,
                 "number": 1,
@@ -471,9 +446,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2875919,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 11916,
                 "number": 1,
@@ -495,9 +469,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1705009,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 4918,
                 "number": 1,
@@ -511,7 +484,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 2237420,
-                "attack": 2780,
                 "defense": 676,
                 "stun": 4902,
                 "number": 1,
@@ -525,7 +497,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1826574,
-                "attack": 3324,
                 "defense": 812,
                 "stun": 5296,
                 "number": 1,
@@ -537,9 +508,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 348375,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1324,
                 "number": 1,
@@ -551,9 +521,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 348375,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1324,
                 "number": 1,
@@ -571,13 +540,13 @@
       }
     },
     "6202005": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -586,25 +555,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 4065176,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 577017,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1236,
                 "number": 1,
@@ -617,7 +583,6 @@
               {
                 "name": "突击炮手",
                 "hp": 3184295,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 6242,
                 "number": 1,
@@ -632,7 +597,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 3420685,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -653,51 +617,50 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 4065176,
-                "attack": 3108,
                 "defense": 715,
                 "stun": 9792,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 3805984,
-                "attack": 3255,
                 "defense": 715,
                 "stun": 5729,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 3420685,
-                "attack": 3255,
                 "defense": 922,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 638907,
-                "attack": 1760,
                 "defense": 572,
                 "stun": 1854,
                 "number": 1,
@@ -710,7 +673,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 638907,
-                "attack": 1760,
                 "defense": 572,
                 "stun": 1854,
                 "number": 1,
@@ -727,13 +689,13 @@
       }
     },
     "6202006": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -744,7 +706,6 @@
               {
                 "name": "偷袭者",
                 "hp": 694662,
-                "attack": 1951,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -756,9 +717,8 @@
                 "resistance": []
               },
               {
-                "name": "Arsonist",
+                "name": "焚毁狂",
                 "hp": 694662,
-                "attack": 1672,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -770,9 +730,8 @@
                 "resistance": []
               },
               {
-                "name": "Rampant Brute",
+                "name": "蛮横力士",
                 "hp": 11035145,
-                "attack": 4086,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -794,9 +753,8 @@
           "monsters": [
             [
               {
-                "name": "装甲哈提",
+                "name": "恶名·装甲哈提",
                 "hp": 7797103,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -810,7 +768,6 @@
               {
                 "name": "曼德拉",
                 "hp": 583354,
-                "attack": 1951,
                 "defense": 572,
                 "stun": 2079,
                 "number": 1,
@@ -822,9 +779,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 766000,
-                "attack": 2353,
                 "defense": 636,
                 "stun": 2183,
                 "number": 1,
@@ -836,9 +792,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 766000,
-                "attack": 2136,
                 "defense": 636,
                 "stun": 2183,
                 "number": 1,
@@ -856,13 +811,13 @@
       }
     },
     "6202007": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001192": {
-          "title": "The Sound of Change",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increases by 20%.\n· After Stunning or inflicting an Attribute Anomaly on an enemy, the Agent generates 20 Energy. The Energy Generation effect can trigger once every 20s and all squad members' ATK increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "嬗变之音",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -871,23 +826,20 @@
           "monsters": [
             [
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 817045,
-                "attack": 1957,
                 "defense": 731,
                 "stun": 2115,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 898571,
-                "attack": 1924,
                 "defense": 636,
                 "stun": 2221,
                 "number": 1,
@@ -898,9 +850,8 @@
                 "resistance": []
               },
               {
-                "name": "Terror Raptor",
+                "name": "骇鸟",
                 "hp": 12795411,
-                "attack": 4696,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -921,15 +872,14 @@
           "monsters": [
             [
               {
-                "name": "汉斯",
+                "name": "汉斯·超频型",
                 "hp": 12807907,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 16895,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "以太"
                 ],
                 "resistance": [
                   "物理"
@@ -938,7 +888,6 @@
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 817045,
-                "attack": 1957,
                 "defense": 572,
                 "stun": 2115,
                 "number": 1,
@@ -951,7 +900,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 817045,
-                "attack": 1957,
                 "defense": 572,
                 "stun": 2115,
                 "number": 1,

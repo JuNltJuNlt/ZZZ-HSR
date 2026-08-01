@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
+  "name": "剧变节点",
   "begin_time": "2026-06-12 04:00:00",
   "end_time": "2026-06-26 03:59:59",
   "zone": {
     "6205001": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001501": {
-          "title": "Flowing Frost",
-          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "霜华流转",
+          "desc": "· 代理人的异常精通提升30点，<color=#FFFFFF>[异放]</color>造成的伤害提升20%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -45,7 +45,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1550049,
                 "defense": 592,
                 "stun": 5937,
@@ -58,7 +58,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1165024,
                 "defense": 592,
                 "stun": 4499,
@@ -79,7 +79,7 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 14738,
                 "defense": 533,
                 "stun": 0,
@@ -92,7 +92,7 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 903612,
                 "defense": 533,
                 "stun": 4157,
@@ -105,7 +105,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 228068,
                 "defense": 474,
                 "stun": 1179,
@@ -118,7 +118,7 @@
                 "resistance": []
               },
               {
-                "name": "Ionized - Pugnus",
+                "name": "离子体·普格努斯",
                 "hp": 2403551,
                 "defense": 640,
                 "stun": 10001,
@@ -137,13 +137,13 @@
       }
     },
     "6205002": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001501": {
-          "title": "Flowing Frost",
-          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "霜华流转",
+          "desc": "· 代理人的异常精通提升30点，<color=#FFFFFF>[异放]</color>造成的伤害提升20%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -180,19 +180,20 @@
                 "resistance": []
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 376439,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者」",
                 "hp": 2306888,
                 "defense": 745,
                 "stun": 6404,
@@ -228,7 +229,7 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1661212,
                 "defense": 745,
                 "stun": 4722,
@@ -280,7 +281,7 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 2484003,
                 "defense": 621,
                 "stun": 8389,
@@ -299,13 +300,13 @@
       }
     },
     "6205003": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001501": {
-          "title": "Flowing Frost",
-          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "霜华流转",
+          "desc": "· 代理人的异常精通提升30点，<color=#FFFFFF>[异放]</color>造成的伤害提升20%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -340,7 +341,7 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -355,7 +356,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 7427442,
                 "defense": 794,
                 "stun": 14721,
@@ -370,7 +371,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -393,7 +394,7 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 4111729,
                 "defense": 858,
                 "stun": 5066,
@@ -419,7 +420,7 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -432,7 +433,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -445,7 +446,7 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 6148252,
                 "defense": 715,
                 "stun": 9001,
@@ -464,13 +465,13 @@
       }
     },
     "6205004": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001501": {
-          "title": "Flowing Frost",
-          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "霜华流转",
+          "desc": "· 代理人的异常精通提升30点，<color=#FFFFFF>[异放]</color>造成的伤害提升20%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -528,7 +529,7 @@
           "monsters": [
             [
               {
-                "name": "Haytor",
+                "name": "赫由托",
                 "hp": 22282617,
                 "defense": 1588,
                 "stun": 15244,
@@ -554,37 +555,25 @@
       "monster_level": 0,
       "layer_buff": {
         "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         },
         "62001501": {
-          "title": "Flowing Frost",
-          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "霜华流转",
+          "desc": "· 代理人的异常精通提升30点，<color=#FFFFFF>[异放]</color>造成的伤害提升20%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001502": {
-          "title": "Unstoppable",
-          "desc": "· Agent ATK increases by 10%. <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> deal 20% increased DMG.\n· Agents gain an additional 40 initial Energy and deals 30% bonus CRIT DMG."
-        }
-      },
-      "layer_room": {}
-    },
-    "62050051": {
-      "name": "Room 1",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001501": {
-          "title": "Flowing Frost",
-          "desc": "· Agent Anomaly Proficiency increases by 30 pts, and <color=#FFFFFF>Abloom</color> deals 20% bonus DMG.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, the Agent's <color=#98EFF0>Ice DMG</color> additionally increases by 20% for 15s. Repeated triggers reset the duration."
+          "title": "锐不可当",
+          "desc": "· 代理人的攻击力提升10%，<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升20%。\n· 代理人初始额外获得40点能量，暴击伤害提升30%。"
         }
       },
       "layer_room": {
-        "62050051": {
+        "62050051_62050051": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "Faun",
+                "name": "萨提尔",
                 "hp": 885132,
                 "defense": 572,
                 "stun": 2115,
@@ -597,7 +586,7 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 5103506,
                 "defense": 715,
                 "stun": 9335,
@@ -610,7 +599,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasma Spawn",
+                "name": "秽息原牲",
                 "hp": 1540117,
                 "defense": 636,
                 "stun": 2327,
@@ -623,42 +612,28 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Komano Manato",
+                "name": "秽蚀·狛野真斗",
                 "hp": 35320007,
                 "defense": 953,
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰"
-                ],
-                "resistance": [
+                  "冰",
                   "物理"
-                ]
+                ],
+                "resistance": []
               }
             ]
           ],
           "weakness": []
-        }
-      }
-    },
-    "62050052": {
-      "name": "Room 2",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
-        }
-      },
-      "layer_room": {
-        "62050052": {
+        },
+        "62050052_62050052": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 6867224,
                 "defense": 794,
                 "stun": 8891,
@@ -671,7 +646,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 5170849,
                 "defense": 794,
                 "stun": 6783,
@@ -684,7 +659,7 @@
                 "resistance": []
               },
               {
-                "name": "「卫士」",
+                "name": "牲鬼·卫律使者",
                 "hp": 45012670,
                 "defense": 953,
                 "stun": 17586,
@@ -695,32 +670,20 @@
                   "物理"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰",
+                  "风"
                 ]
               }
             ]
           ],
           "weakness": []
-        }
-      }
-    },
-    "62050053": {
-      "name": "Room 3",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001502": {
-          "title": "Unstoppable",
-          "desc": "· Agent ATK increases by 10%. <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> deal 20% increased DMG.\n· Agents gain an additional 40 initial Energy and deals 30% bonus CRIT DMG."
-        }
-      },
-      "layer_room": {
-        "62050053": {
+        },
+        "62050053_62050053": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 976031,
                 "defense": 636,
                 "stun": 2332,
@@ -733,7 +696,7 @@
                 "resistance": []
               },
               {
-                "name": "Huskron",
+                "name": "赫斯克龙",
                 "hp": 898670,
                 "defense": 636,
                 "stun": 2327,
@@ -746,7 +709,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Doppelganger - The Defector",
+                "name": "秽蚀·多佩冈亚·「变节者」",
                 "hp": 34054495,
                 "defense": 953,
                 "stun": 14328,
@@ -761,7 +724,220 @@
                 ]
               },
               {
-                "name": "Miasmic - Huskron",
+                "name": "秽蚀·赫斯克龙",
+                "hp": 6221264,
+                "defense": 794,
+                "stun": 12446,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62050051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001501": {
+          "title": "霜华流转",
+          "desc": "· 代理人的异常精通提升30点，<color=#FFFFFF>[异放]</color>造成的伤害提升20%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62050051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "萨提尔",
+                "hp": 885132,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "铁道地精",
+                "hp": 5103506,
+                "defense": 715,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息原牲",
+                "hp": 1540117,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 35320007,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62050052": {
+      "name": "房间二",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001491": {
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
+        }
+      },
+      "layer_room": {
+        "62050052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧打手",
+                "hp": 6867224,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 5170849,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "牲鬼·卫律使者",
+                "hp": 45012670,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰",
+                  "风"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62050053": {
+      "name": "房间三",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001502": {
+          "title": "锐不可当",
+          "desc": "· 代理人的攻击力提升10%，<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升20%。\n· 代理人初始额外获得40点能量，暴击伤害提升30%。"
+        }
+      },
+      "layer_room": {
+        "62050053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "弗瑟尔",
+                "hp": 976031,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "赫斯克龙",
+                "hp": 898670,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 34054495,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "秽蚀·赫斯克龙",
                 "hp": 6221264,
                 "defense": 794,
                 "stun": 12446,

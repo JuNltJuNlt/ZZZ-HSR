@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-10-24 04:00:00",
-  "end_time": "2025-11-07 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6203301": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -19,9 +17,8 @@
           "monsters": [
             [
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1302085,
-                "attack": 2291,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -33,9 +30,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 239932,
-                "attack": 1875,
                 "defense": 545,
                 "stun": 1175,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 239932,
-                "attack": 1692,
                 "defense": 474,
                 "stun": 1175,
                 "number": 1,
@@ -69,37 +64,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1240481,
-                "attack": 2395,
                 "defense": 533,
                 "stun": 7407,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 1045942,
-                "attack": 2525,
                 "defense": 687,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 165506,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1068,
                 "number": 1,
@@ -112,7 +106,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 165506,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1068,
                 "number": 1,
@@ -129,13 +122,13 @@
       }
     },
     "6203302": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -146,7 +139,6 @@
               {
                 "name": "盗猎客",
                 "hp": 245504,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -158,9 +150,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 288775,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -172,9 +163,8 @@
                 "resistance": []
               },
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 1547584,
-                "attack": 2594,
                 "defense": 649,
                 "stun": 7037,
                 "number": 1,
@@ -188,9 +178,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 1885531,
-                "attack": 2756,
                 "defense": 649,
                 "stun": 11637,
                 "number": 1,
@@ -212,9 +201,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1053180,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 4033,
                 "number": 1,
@@ -226,9 +214,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 877054,
-                "attack": 1432,
                 "defense": 585,
                 "stun": 4344,
                 "number": 1,
@@ -242,7 +229,6 @@
               {
                 "name": "曼德拉",
                 "hp": 158067,
-                "attack": 1702,
                 "defense": 468,
                 "stun": 1172,
                 "number": 1,
@@ -256,7 +242,6 @@
               {
                 "name": "曼德拉",
                 "hp": 158067,
-                "attack": 1702,
                 "defense": 468,
                 "stun": 1172,
                 "number": 1,
@@ -268,9 +253,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 270716,
-                "attack": 2054,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -282,9 +266,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 270716,
-                "attack": 1865,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -302,13 +285,13 @@
       }
     },
     "6203303": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -317,40 +300,48 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 1800186,
-                "attack": 2324,
                 "defense": 745,
                 "stun": 6404,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2326738,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 9126,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 430138,
-                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 365684,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -363,27 +354,12 @@
               {
                 "name": "巡防猎兵",
                 "hp": 365684,
-                "attack": 1826,
-                "defense": 552,
-                "stun": 1728,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "戍卫猎兵",
-                "hp": 365684,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -396,9 +372,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 365684,
-                "attack": 1826,
                 "defense": 497,
                 "stun": 1728,
                 "number": 1,
@@ -412,7 +387,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 497,
                 "stun": 1728,
                 "number": 1,
@@ -424,9 +398,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1613749,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 4722,
                 "number": 1,
@@ -440,7 +413,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 365684,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
@@ -452,9 +424,8 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 1957858,
-                "attack": 3071,
                 "defense": 621,
                 "stun": 7627,
                 "number": 1,
@@ -468,7 +439,6 @@
               {
                 "name": "曼德拉",
                 "hp": 307089,
-                "attack": 1743,
                 "defense": 497,
                 "stun": 1815,
                 "number": 1,
@@ -486,13 +456,13 @@
       }
     },
     "6203304": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -503,7 +473,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1868503,
-                "attack": 2665,
                 "defense": 812,
                 "stun": 5306,
                 "number": 1,
@@ -518,7 +487,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 2068579,
-                "attack": 2608,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
@@ -531,25 +499,22 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2557373,
-                "attack": 3181,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 458121,
-                "attack": 2063,
                 "defense": 691,
                 "stun": 1320,
                 "number": 1,
@@ -561,9 +526,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 458121,
-                "attack": 1863,
                 "defense": 601,
                 "stun": 1320,
                 "number": 1,
@@ -583,37 +547,36 @@
           "monsters": [
             [
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 2301579,
-                "attack": 3181,
                 "defense": 676,
                 "stun": 5562,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 2068579,
-                "attack": 3181,
                 "defense": 872,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 386364,
-                "attack": 1720,
                 "defense": 541,
                 "stun": 1800,
                 "number": 1,
@@ -626,7 +589,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 386364,
-                "attack": 1720,
                 "defense": 541,
                 "stun": 1800,
                 "number": 1,
@@ -637,18 +599,17 @@
                 "resistance": []
               },
               {
-                "name": "狂乱暴徒",
+                "name": "秽蚀·狂乱暴徒",
                 "hp": 2792624,
-                "attack": 3811,
                 "defense": 812,
                 "stun": 9930,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "以太"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               }
             ]
@@ -658,13 +619,13 @@
       }
     },
     "6203305": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -675,7 +636,6 @@
               {
                 "name": "偷袭者",
                 "hp": 984981,
-                "attack": 1848,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -689,7 +649,6 @@
               {
                 "name": "盗猎客",
                 "hp": 984981,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -701,9 +660,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 7105061,
-                "attack": 2434,
                 "defense": 794,
                 "stun": 10822,
                 "number": 1,
@@ -717,9 +675,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 7851867,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 14721,
                 "number": 1,
@@ -733,9 +690,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 7331757,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 12274,
                 "number": 1,
@@ -757,9 +713,8 @@
           "monsters": [
             [
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1086134,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -771,9 +726,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1086134,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -785,9 +739,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Trinox",
+                "name": "秽蚀·特里诺斯",
                 "hp": 10283829,
-                "attack": 3900,
                 "defense": 858,
                 "stun": 11763,
                 "number": 1,
@@ -806,13 +759,13 @@
       }
     },
     "6203306": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -821,9 +774,8 @@
           "monsters": [
             [
               {
-                "name": "Lumberjack",
+                "name": "伐木机",
                 "hp": 15704460,
-                "attack": 4458,
                 "defense": 953,
                 "stun": 13414,
                 "number": 1,
@@ -836,9 +788,8 @@
                 ]
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 1552975,
-                "attack": 2229,
                 "defense": 731,
                 "stun": 2178,
                 "number": 1,
@@ -858,24 +809,22 @@
           "monsters": [
             [
               {
-                "name": "汉斯",
+                "name": "汉斯·超频型",
                 "hp": 16787876,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 15816,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "以太"
                 ],
                 "resistance": [
                   "物理"
                 ]
               },
               {
-                "name": "Huskron",
+                "name": "赫斯克龙",
                 "hp": 1087316,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2178,
                 "number": 1,
@@ -893,13 +842,13 @@
       }
     },
     "6203307": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001331": {
-          "title": "Harmony of Strings",
-          "desc": "· Agent Max HP increases by 15%, <color=#FE437E>Ether DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 20%.\n· When an Agent with <color=#FFFFFF>Support</color> specialty uses <color=#FFFFFF>EX Special Attack</color>, the whole squad's Sheer DMG increases by 20% and ATK increases by 20%, lasting 20s, repeated triggers reset the duration."
+          "title": "机弦协律",
+          "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
@@ -910,7 +859,6 @@
               {
                 "name": "突击炮手",
                 "hp": 4072133,
-                "attack": 3457,
                 "defense": 858,
                 "stun": 7121,
                 "number": 1,
@@ -923,9 +871,8 @@
                 ]
               },
               {
-                "name": "Specialized Assault Bomber",
+                "name": "特战强袭轰击者",
                 "hp": 14770680,
-                "attack": 4696,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -946,9 +893,8 @@
           "monsters": [
             [
               {
-                "name": "Palicus",
+                "name": "帕里库斯",
                 "hp": 14775143,
-                "attack": 3522,
                 "defense": 953,
                 "stun": 10030,
                 "number": 1,
@@ -960,9 +906,8 @@
                 "resistance": []
               },
               {
-                "name": "Palicus",
+                "name": "帕里库斯",
                 "hp": 14775143,
-                "attack": 3522,
                 "defense": 953,
                 "stun": 10030,
                 "number": 1,

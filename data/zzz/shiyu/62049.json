@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
+  "name": "剧变节点",
   "begin_time": "2026-05-29 04:00:00",
   "end_time": "2026-06-12 03:59:59",
   "zone": {
     "6204901": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -45,7 +45,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1550049,
                 "defense": 592,
                 "stun": 5937,
@@ -58,7 +58,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1165024,
                 "defense": 592,
                 "stun": 4499,
@@ -79,7 +79,7 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 14738,
                 "defense": 533,
                 "stun": 0,
@@ -105,7 +105,7 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1085071,
                 "defense": 640,
                 "stun": 3860,
@@ -118,7 +118,7 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 903612,
                 "defense": 533,
                 "stun": 4157,
@@ -137,13 +137,13 @@
       }
     },
     "6204902": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -180,19 +180,20 @@
                 "resistance": []
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 376439,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者」",
                 "hp": 2306888,
                 "defense": 745,
                 "stun": 6404,
@@ -241,7 +242,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2306888,
                 "defense": 689,
                 "stun": 6404,
@@ -254,7 +255,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1733867,
                 "defense": 689,
                 "stun": 4852,
@@ -273,13 +274,13 @@
       }
     },
     "6204903": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -314,7 +315,7 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -329,7 +330,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 7427442,
                 "defense": 794,
                 "stun": 14721,
@@ -344,7 +345,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -393,7 +394,7 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 4988499,
                 "defense": 715,
                 "stun": 8183,
@@ -406,7 +407,7 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -419,7 +420,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -438,13 +439,13 @@
       }
     },
     "6204904": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -453,7 +454,7 @@
           "monsters": [
             [
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 6385962,
                 "defense": 794,
                 "stun": 8323,
@@ -483,7 +484,7 @@
                 ]
               },
               {
-                "name": "Wanted Intimidator",
+                "name": "通缉虐待狂",
                 "hp": 4808471,
                 "defense": 794,
                 "stun": 6350,
@@ -506,7 +507,7 @@
           "monsters": [
             [
               {
-                "name": "Tepes",
+                "name": "特佩什",
                 "hp": 15713672,
                 "defense": 953,
                 "stun": 17438,
@@ -530,50 +531,39 @@
       "monster_level": 0,
       "layer_buff": {
         "62001383": {
-          "title": "Piercing Thunder Strike",
-          "desc": "· Agent <color=#2EB6FF>Electric DMG</color> increases by 20%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>EX Special Attack</color> deal 40% increased DMG and ignore 15% of enemy DEF."
+          "title": "贯虹惊雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         },
         "62001481": {
-          "title": "Perpetual Frigidity",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> increases by 10%, and Anomaly Proficiency increases by 40.\n· When an enemy is inflicted with an Attribute Anomaly, the whole squad's <color=#FFFFFF>Abloom</color> DMG increases by 30%, and <color=#FFFFFF>Abloom</color> DMG ignores 20% of enemy <color=#98EFF0>Ice RES</color> for 10s. Repeated triggers reset the duration."
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         },
         "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
-        }
-      },
-      "layer_room": {}
-    },
-    "62049051": {
-      "name": "Room 1",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001491": {
-          "title": "Overwhelming Force",
-          "desc": "· Agent Sheer DMG increases by 35%, and their <color=#F0D12B>Physical DMG</color> increases by 10%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> ignore 10% of enemy <color=#F0D12B>Physical RES</color> on hit."
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62049051": {
+        "62049051_62049051": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 6309435,
                 "defense": 794,
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 7598676,
                 "defense": 794,
                 "stun": 16794,
@@ -588,7 +578,183 @@
                 ]
               },
               {
-                "name": "Miasmic - Doppelganger - The Defector",
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 34054495,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62049052_62049052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 748958,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 748958,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·普格努斯",
+                "hp": 8057979,
+                "defense": 858,
+                "stun": 15080,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 27989440,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62049053_62049053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 34054495,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "秽蚀·「捷足巡游者」",
+                "hp": 8165887,
+                "defense": 858,
+                "stun": 13069,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "秽蚀·「重装侵袭者」",
+                "hp": 10094541,
+                "defense": 858,
+                "stun": 13069,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62049051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001491": {
+          "title": "势如破竹",
+          "desc": "· 代理人的贯穿伤害提升35%，<color=#F0D12B>物理属性伤害</color>提升10%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，无视其10%的<color=#F0D12B>物理属性伤害抗性</color>。"
+        }
+      },
+      "layer_room": {
+        "62049051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "盛怒恶霸",
+                "hp": 6309435,
+                "defense": 794,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 7598676,
+                "defense": 794,
+                "stun": 16794,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "秽蚀·多佩冈亚·「变节者」",
                 "hp": 34054495,
                 "defense": 953,
                 "stun": 14328,
@@ -609,13 +775,13 @@
       }
     },
     "62049052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001481": {
-          "title": "Perpetual Frigidity",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> increases by 10%, and Anomaly Proficiency increases by 40.\n· When an enemy is inflicted with an Attribute Anomaly, the whole squad's <color=#FFFFFF>Abloom</color> DMG increases by 30%, and <color=#FFFFFF>Abloom</color> DMG ignores 20% of enemy <color=#98EFF0>Ice RES</color> for 10s. Repeated triggers reset the duration."
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -648,7 +814,7 @@
                 "resistance": []
               },
               {
-                "name": "Ionized - Pugnus",
+                "name": "离子体·普格努斯",
                 "hp": 8057979,
                 "defense": 858,
                 "stun": 15080,
@@ -661,18 +827,17 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Komano Manato",
+                "name": "秽蚀·狛野真斗",
                 "hp": 27989440,
                 "defense": 953,
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰"
-                ],
-                "resistance": [
+                  "冰",
                   "物理"
-                ]
+                ],
+                "resistance": []
               }
             ]
           ],
@@ -681,13 +846,13 @@
       }
     },
     "62049053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001383": {
-          "title": "Piercing Thunder Strike",
-          "desc": "· Agent <color=#2EB6FF>Electric DMG</color> increases by 20%.\n· Agent <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>EX Special Attack</color> deal 40% increased DMG and ignore 15% of enemy DEF."
+          "title": "贯虹惊雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
@@ -696,7 +861,7 @@
           "monsters": [
             [
               {
-                "name": "Sacrifice - Heretic Jester",
+                "name": "牲鬼·凶魁愚者",
                 "hp": 34054495,
                 "defense": 953,
                 "stun": 14328,
@@ -711,7 +876,7 @@
                 ]
               },
               {
-                "name": "Miasmic - Lightfoot Rover",
+                "name": "秽蚀·「捷足巡游者」",
                 "hp": 8165887,
                 "defense": 858,
                 "stun": 13069,
@@ -726,18 +891,18 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "秽蚀·「重装侵袭者」",
                 "hp": 10094541,
                 "defense": 858,
                 "stun": 13069,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
+                  "电",
                   "物理"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰"
                 ]
               }
             ]

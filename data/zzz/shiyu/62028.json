@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-08-15 04:00:00",
-  "end_time": "2025-08-29 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6202801": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "偷猎者",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -35,7 +32,6 @@
               {
                 "name": "掠夺者",
                 "hp": 238016,
-                "attack": 1640,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1240039,
-                "attack": 2187,
                 "defense": 592,
                 "stun": 5937,
                 "number": 1,
@@ -61,9 +56,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 932019,
-                "attack": 1979,
                 "defense": 592,
                 "stun": 4499,
                 "number": 1,
@@ -85,7 +79,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 165506,
-                "attack": 1406,
                 "defense": 510,
                 "stun": 1068,
                 "number": 1,
@@ -97,9 +90,8 @@
                 "resistance": []
               },
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1302085,
-                "attack": 2291,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -117,13 +109,13 @@
       }
     },
     "6202802": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -134,7 +126,6 @@
               {
                 "name": "盗猎客",
                 "hp": 245504,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -146,9 +137,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 288775,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -160,9 +150,8 @@
                 "resistance": []
               },
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 1547584,
-                "attack": 2594,
                 "defense": 649,
                 "stun": 7037,
                 "number": 1,
@@ -176,9 +165,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 1885531,
-                "attack": 2756,
                 "defense": 649,
                 "stun": 11637,
                 "number": 1,
@@ -202,7 +190,6 @@
               {
                 "name": "法布提",
                 "hp": 1505027,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 7740,
                 "number": 1,
@@ -214,9 +201,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 270716,
-                "attack": 2054,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -228,9 +214,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 270716,
-                "attack": 1865,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -242,9 +227,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 1564034,
-                "attack": 2864,
                 "defense": 585,
                 "stun": 7165,
                 "number": 1,
@@ -262,13 +246,13 @@
       }
     },
     "6202803": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -279,7 +263,6 @@
               {
                 "name": "袭击者",
                 "hp": 365684,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -293,7 +276,6 @@
               {
                 "name": "纵火犯",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -305,9 +287,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2240977,
-                "attack": 2324,
                 "defense": 689,
                 "stun": 6404,
                 "number": 1,
@@ -319,9 +300,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1684328,
-                "attack": 2103,
                 "defense": 689,
                 "stun": 4852,
                 "number": 1,
@@ -341,40 +321,48 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 1800186,
-                "attack": 2324,
                 "defense": 745,
                 "stun": 6404,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2326738,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 9126,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 430138,
-                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 365684,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -387,27 +375,12 @@
               {
                 "name": "巡防猎兵",
                 "hp": 365684,
-                "attack": 1826,
-                "defense": 552,
-                "stun": 1728,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "戍卫猎兵",
-                "hp": 365684,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -418,13 +391,13 @@
       }
     },
     "6202804": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -435,7 +408,6 @@
               {
                 "name": "偷袭者",
                 "hp": 386364,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -449,7 +421,6 @@
               {
                 "name": "盗猎客",
                 "hp": 386364,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -461,9 +432,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 2786996,
-                "attack": 2379,
                 "defense": 751,
                 "stun": 10506,
                 "number": 1,
@@ -477,9 +447,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 3079934,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 14292,
                 "number": 1,
@@ -493,9 +462,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2875919,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 11916,
                 "number": 1,
@@ -517,9 +485,8 @@
           "monsters": [
             [
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 348938,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1200,
                 "number": 1,
@@ -532,7 +499,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1868503,
-                "attack": 2665,
                 "defense": 812,
                 "stun": 5306,
                 "number": 1,
@@ -547,7 +513,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 2068579,
-                "attack": 2608,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
@@ -560,25 +525,22 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2557373,
-                "attack": 3181,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 347531,
-                "attack": 1691,
                 "defense": 601,
                 "stun": 1260,
                 "number": 1,
@@ -595,13 +557,13 @@
       }
     },
     "6202805": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -612,7 +574,6 @@
               {
                 "name": "「卫士」",
                 "hp": 4996778,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
@@ -626,22 +587,21 @@
                 ]
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 642329,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1236,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "Heavy Gunner",
+                "name": "重装炮手",
                 "hp": 3914029,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 6242,
                 "number": 1,
@@ -655,9 +615,8 @@
                 ]
               },
               {
-                "name": "Guard Jaeger",
+                "name": "戍卫猎兵",
                 "hp": 642329,
-                "attack": 1760,
                 "defense": 731,
                 "stun": 1236,
                 "number": 1,
@@ -669,9 +628,8 @@
                 "resistance": []
               },
               {
-                "name": "Lightfoot Rover",
+                "name": "「捷足巡游者」",
                 "hp": 4204592,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -693,9 +651,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 3465600,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 5066,
                 "number": 1,
@@ -707,9 +664,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 2895340,
-                "attack": 1760,
                 "defense": 715,
                 "stun": 5455,
                 "number": 1,
@@ -723,7 +679,6 @@
               {
                 "name": "曼德拉",
                 "hp": 659488,
-                "attack": 1848,
                 "defense": 572,
                 "stun": 1947,
                 "number": 1,
@@ -735,9 +690,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 708106,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 1364,
                 "number": 1,
@@ -749,9 +703,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 708106,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 1364,
                 "number": 1,
@@ -763,9 +716,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 5182099,
-                "attack": 3548,
                 "defense": 715,
                 "stun": 9001,
                 "number": 1,
@@ -783,13 +735,13 @@
       }
     },
     "6202806": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -798,9 +750,8 @@
           "monsters": [
             [
               {
-                "name": "Miasmic - Abyssal Enforcer",
+                "name": "秽蚀·暗渊惩戒者",
                 "hp": 17416922,
-                "attack": 3344,
                 "defense": 953,
                 "stun": 13414,
                 "number": 1,
@@ -822,25 +773,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅲ型」",
                 "hp": 10707694,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 13181,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 853855,
-                "attack": 2043,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -851,16 +799,14 @@
                 "resistance": []
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 853855,
-                "attack": 1858,
                 "defense": 731,
                 "stun": 1981,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -871,13 +817,13 @@
       }
     },
     "6202807": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001281": {
-          "title": "Shock and Thunder",
-          "desc": "· For Agents, <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#F0D12B>Physical Anomaly Buildup Rate</color> increase by 15%, while ATK increases by 15%.\n· When hitting enemies affected by Attribute Anomaly, Agents ignore 15% of their DEF and deal 20% bonus DMG."
+          "title": "叶引风雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升15%，攻击力提升15%。\n· 命中处于属性异常状态中的敌人时，代理人无视其15%的防御力，对其造成的伤害提升20%。"
         }
       },
       "layer_room": {
@@ -886,9 +832,8 @@
           "monsters": [
             [
               {
-                "name": "Palicus",
+                "name": "帕里库斯",
                 "hp": 10699241,
-                "attack": 4696,
                 "defense": 953,
                 "stun": 10030,
                 "number": 1,
@@ -900,9 +845,8 @@
                 "resistance": []
               },
               {
-                "name": "Palicus",
+                "name": "帕里库斯",
                 "hp": 10699241,
-                "attack": 4696,
                 "defense": 953,
                 "stun": 10030,
                 "number": 1,
@@ -922,9 +866,8 @@
           "monsters": [
             [
               {
-                "name": "Rampant Brute",
+                "name": "蛮横力士",
                 "hp": 15953711,
-                "attack": 4304,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -938,9 +881,8 @@
                 ]
               },
               {
-                "name": "Miasma Walker - Arcavor",
+                "name": "秽息行者· 阿卡沃尔",
                 "hp": 1456322,
-                "attack": 2120,
                 "defense": 636,
                 "stun": 2327,
                 "number": 1,
@@ -952,9 +894,8 @@
                 "resistance": []
               },
               {
-                "name": "Flame Cantor",
+                "name": "秉火领颂",
                 "hp": 8261756,
-                "attack": 4141,
                 "defense": 794,
                 "stun": 9779,
                 "number": 1,

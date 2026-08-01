@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-01-03 04:00:00",
-  "end_time": "2025-01-17 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6201201": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "偷猎者",
                 "hp": 187897,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -35,7 +32,6 @@
               {
                 "name": "掠夺者",
                 "hp": 221015,
-                "attack": 1640,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1151465,
-                "attack": 2187,
                 "defense": 592,
                 "stun": 5937,
                 "number": 1,
@@ -61,9 +56,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 865446,
-                "attack": 1979,
                 "defense": 592,
                 "stun": 4499,
                 "number": 1,
@@ -85,7 +79,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 187897,
-                "attack": 1406,
                 "defense": 510,
                 "stun": 1602,
                 "number": 1,
@@ -97,9 +90,8 @@
                 "resistance": []
               },
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1209079,
-                "attack": 2291,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -117,13 +109,13 @@
       }
     },
     "6201202": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -132,9 +124,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 13283,
-                "attack": 1297,
                 "defense": 585,
                 "stun": 0,
                 "number": 1,
@@ -148,7 +139,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 13283,
-                "attack": 1297,
                 "defense": 585,
                 "stun": 0,
                 "number": 1,
@@ -160,9 +150,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 977953,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 4033,
                 "number": 1,
@@ -174,9 +163,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 814407,
-                "attack": 1432,
                 "defense": 585,
                 "stun": 4344,
                 "number": 1,
@@ -198,7 +186,6 @@
               {
                 "name": "「卫士」",
                 "hp": 1397526,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 7740,
                 "number": 1,
@@ -214,7 +201,6 @@
               {
                 "name": "掠袭猎兵",
                 "hp": 268149,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -226,22 +212,21 @@
                 "resistance": []
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 227968,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者」",
                 "hp": 1397027,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 6204,
                 "number": 1,
@@ -261,13 +246,13 @@
       }
     },
     "6201203": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -278,7 +263,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 311907,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -291,7 +275,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 311907,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -304,7 +287,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1381885,
-                "attack": 2546,
                 "defense": 689,
                 "stun": 5123,
                 "number": 1,
@@ -317,18 +299,18 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 2007061,
-                "attack": 2435,
                 "defense": 689,
                 "stun": 6724,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               }
             ]
           ],
@@ -339,40 +321,48 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 1535453,
-                "attack": 2324,
                 "defense": 745,
                 "stun": 6404,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 1984571,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 9126,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 366882,
-                "attack": 1826,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 311907,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -385,27 +375,12 @@
               {
                 "name": "巡防猎兵",
                 "hp": 311907,
-                "attack": 1826,
-                "defense": 552,
-                "stun": 1728,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "戍卫猎兵",
-                "hp": 311907,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -416,13 +391,13 @@
       }
     },
     "6201204": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -433,7 +408,6 @@
               {
                 "name": "偷猎者",
                 "hp": 329546,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -447,7 +421,6 @@
               {
                 "name": "掠夺者",
                 "hp": 387630,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -459,9 +432,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2077361,
-                "attack": 2751,
                 "defense": 751,
                 "stun": 7566,
                 "number": 1,
@@ -473,9 +445,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1564201,
-                "attack": 2465,
                 "defense": 751,
                 "stun": 5772,
                 "number": 1,
@@ -495,9 +466,8 @@
           "monsters": [
             [
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 297623,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1200,
                 "number": 1,
@@ -510,7 +480,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1593723,
-                "attack": 2665,
                 "defense": 812,
                 "stun": 5306,
                 "number": 1,
@@ -525,7 +494,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1764376,
-                "attack": 2608,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
@@ -538,25 +506,22 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2181289,
-                "attack": 3181,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 296423,
-                "attack": 1691,
                 "defense": 601,
                 "stun": 1260,
                 "number": 1,
@@ -573,13 +538,13 @@
       }
     },
     "6201205": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -590,7 +555,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 2537323,
-                "attack": 2962,
                 "defense": 858,
                 "stun": 5729,
                 "number": 1,
@@ -604,7 +568,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 2013664,
-                "attack": 3401,
                 "defense": 858,
                 "stun": 5455,
                 "number": 1,
@@ -616,9 +579,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 2280457,
-                "attack": 3255,
                 "defense": 715,
                 "stun": 8183,
                 "number": 1,
@@ -630,9 +592,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 469680,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -644,9 +605,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 469680,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -668,7 +628,6 @@
               {
                 "name": "盗猎客",
                 "hp": 425938,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -680,9 +639,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 501012,
-                "attack": 1848,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -694,9 +652,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 3170490,
-                "attack": 2786,
                 "defense": 794,
                 "stun": 12274,
                 "number": 1,
@@ -710,9 +667,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 3395402,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 14721,
                 "number": 1,
@@ -726,9 +682,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 3170490,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 12274,
                 "number": 1,
@@ -748,13 +703,13 @@
       }
     },
     "6201206": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -765,7 +720,6 @@
               {
                 "name": "恶名·塔纳托斯",
                 "hp": 6237615,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -777,9 +731,8 @@
                 "resistance": []
               },
               {
-                "name": "Ahriman",
+                "name": "恶灵",
                 "hp": 418248,
-                "attack": 1672,
                 "defense": 572,
                 "stun": 1320,
                 "number": 1,
@@ -791,9 +744,8 @@
                 "resistance": []
               },
               {
-                "name": "Specter",
+                "name": "游魂",
                 "hp": 378784,
-                "attack": 2043,
                 "defense": 636,
                 "stun": 1320,
                 "number": 1,
@@ -815,7 +767,6 @@
               {
                 "name": "纵火犯",
                 "hp": 463108,
-                "attack": 1672,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -829,7 +780,6 @@
               {
                 "name": "掠夺者",
                 "hp": 544734,
-                "attack": 1951,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -841,9 +791,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Jane",
+                "name": "多佩冈亚·简",
                 "hp": 6043670,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -862,13 +811,13 @@
       }
     },
     "6201207": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001121": {
-          "title": "Explosive Assault",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric DMG</color> and <color=#98EFF0>Ice DMG</color> by 20%.\n· When attacking an enemy in suffering an Attribute Anomaly, increases Agent's CRIT Rate by 20% and CRIT DMG by 40%."
+          "title": "爆裂突击",
+          "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
@@ -879,7 +828,6 @@
               {
                 "name": "恶名·杜拉罕",
                 "hp": 6656169,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -893,7 +841,6 @@
               {
                 "name": "曼德拉",
                 "hp": 457419,
-                "attack": 2055,
                 "defense": 572,
                 "stun": 2221,
                 "number": 1,
@@ -905,9 +852,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 600635,
-                "attack": 2479,
                 "defense": 636,
                 "stun": 2332,
                 "number": 1,
@@ -919,9 +865,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 600635,
-                "attack": 2250,
                 "defense": 636,
                 "stun": 2332,
                 "number": 1,
@@ -943,7 +888,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 544697,
-                "attack": 1761,
                 "defense": 683,
                 "stun": 2115,
                 "number": 1,
@@ -957,7 +901,6 @@
               {
                 "name": "汉斯",
                 "hp": 8538605,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 16895,
                 "number": 1,

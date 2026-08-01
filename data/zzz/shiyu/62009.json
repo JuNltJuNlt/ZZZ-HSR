@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2024-11-16 04:00:00",
-  "end_time": "2024-12-01 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6200901": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "袭击者",
                 "hp": 216804,
-                "attack": 1640,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -35,7 +32,6 @@
               {
                 "name": "纵火犯",
                 "hp": 216804,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1328613,
-                "attack": 2187,
                 "defense": 592,
                 "stun": 5937,
                 "number": 1,
@@ -61,9 +56,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 998592,
-                "attack": 1979,
                 "defense": 592,
                 "stun": 4499,
                 "number": 1,
@@ -85,7 +79,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 216804,
-                "attack": 1406,
                 "defense": 510,
                 "stun": 1602,
                 "number": 1,
@@ -97,9 +90,8 @@
                 "resistance": []
               },
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1395091,
-                "attack": 2291,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -117,13 +109,13 @@
       }
     },
     "6200902": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -134,7 +126,6 @@
               {
                 "name": "盗猎客",
                 "hp": 263040,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -146,9 +137,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 309402,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -160,9 +150,8 @@
                 "resistance": []
               },
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 1658125,
-                "attack": 2594,
                 "defense": 649,
                 "stun": 7037,
                 "number": 1,
@@ -176,9 +165,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 2020212,
-                "attack": 2756,
                 "defense": 649,
                 "stun": 11637,
                 "number": 1,
@@ -200,37 +188,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1612529,
-                "attack": 2486,
                 "defense": 585,
                 "stun": 7740,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 1359644,
-                "attack": 2621,
                 "defense": 753,
                 "stun": 6514,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 215145,
-                "attack": 1621,
                 "defense": 468,
                 "stun": 1116,
                 "number": 1,
@@ -243,7 +230,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 215145,
-                "attack": 1621,
                 "defense": 468,
                 "stun": 1116,
                 "number": 1,
@@ -260,13 +246,13 @@
       }
     },
     "6200903": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -277,7 +263,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 263911,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1152,
                 "number": 1,
@@ -290,7 +275,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 263911,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1152,
                 "number": 1,
@@ -303,7 +287,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1429536,
-                "attack": 2546,
                 "defense": 689,
                 "stun": 5123,
                 "number": 1,
@@ -316,9 +299,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2053004,
-                "attack": 2629,
                 "defense": 621,
                 "stun": 9126,
                 "number": 1,
@@ -339,9 +321,8 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 322662,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -352,23 +333,20 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 322662,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1667831,
-                "attack": 2186,
                 "defense": 745,
                 "stun": 6724,
                 "number": 1,
@@ -381,19 +359,17 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2076270,
-                "attack": 2684,
                 "defense": 745,
                 "stun": 6724,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -403,13 +379,13 @@
       }
     },
     "6200904": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -420,7 +396,6 @@
               {
                 "name": "「卫士」",
                 "hp": 2169106,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 9506,
                 "number": 1,
@@ -434,22 +409,21 @@
                 ]
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 278836,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1200,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "Heavy Gunner",
+                "name": "重装炮手",
                 "hp": 1648679,
-                "attack": 2665,
                 "defense": 812,
                 "stun": 5306,
                 "number": 1,
@@ -463,9 +437,8 @@
                 ]
               },
               {
-                "name": "Guard Jaeger",
+                "name": "戍卫猎兵",
                 "hp": 278836,
-                "attack": 1720,
                 "defense": 691,
                 "stun": 1200,
                 "number": 1,
@@ -477,9 +450,8 @@
                 "resistance": []
               },
               {
-                "name": "Lightfoot Rover",
+                "name": "「捷足巡游者」",
                 "hp": 1762150,
-                "attack": 2264,
                 "defense": 812,
                 "stun": 7004,
                 "number": 1,
@@ -501,9 +473,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1504420,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 4918,
                 "number": 1,
@@ -517,7 +488,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 1974194,
-                "attack": 2780,
                 "defense": 676,
                 "stun": 4902,
                 "number": 1,
@@ -531,7 +501,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1611683,
-                "attack": 3324,
                 "defense": 812,
                 "stun": 5296,
                 "number": 1,
@@ -543,9 +512,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 307390,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1324,
                 "number": 1,
@@ -557,9 +525,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 307390,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1324,
                 "number": 1,
@@ -577,13 +544,13 @@
       }
     },
     "6200905": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -594,7 +561,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 399317,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -607,7 +573,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 399317,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -620,7 +585,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1832552,
-                "attack": 3108,
                 "defense": 794,
                 "stun": 6234,
                 "number": 1,
@@ -633,23 +597,22 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 2643109,
-                "attack": 2962,
                 "defense": 794,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2540735,
-                "attack": 2786,
                 "defense": 715,
                 "stun": 9792,
                 "number": 1,
@@ -670,40 +633,36 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 2036136,
-                "attack": 2815,
                 "defense": 858,
                 "stun": 7793,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2540735,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 469699,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -714,23 +673,20 @@
                 "resistance": []
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 399317,
-                "attack": 1760,
                 "defense": 731,
                 "stun": 1854,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 2137929,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -749,13 +705,13 @@
       }
     },
     "6200906": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -766,7 +722,6 @@
               {
                 "name": "纵火犯",
                 "hp": 434164,
-                "attack": 1672,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -780,7 +735,6 @@
               {
                 "name": "掠夺者",
                 "hp": 510688,
-                "attack": 1951,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -792,9 +746,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Jane",
+                "name": "多佩冈亚·简",
                 "hp": 5665941,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -815,23 +768,20 @@
           "monsters": [
             [
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 355110,
-                "attack": 1858,
                 "defense": 731,
                 "stun": 1320,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "Shielded Defender Omega",
+                "name": "「护戍盾卫Ω型」",
                 "hp": 6497586,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -844,9 +794,8 @@
                 ]
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 390526,
-                "attack": 1827,
                 "defense": 636,
                 "stun": 1386,
                 "number": 1,
@@ -863,13 +812,13 @@
       }
     },
     "6200907": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001091": {
-          "title": "Whirling Currents",
-          "desc": "· <color=#FFFFFF>Assist Attack</color>, <color=#FFFFFF>EX Special Attack</color>, and <color=#FFFFFF>Ultimate</color> Anomaly Buildup increases by 30% and DMG increases by 20%.\n· When triggering <color=#FFFFFF>Disorder</color>, generate 400 Decibels, and reduce the target's DEF by 20% for 20s. The Decibel gain effect can trigger once every 10s."
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -878,9 +827,8 @@
           "monsters": [
             [
               {
-                "name": "Typhon Challenger",
+                "name": "「提丰·挑战者型」",
                 "hp": 6240158,
-                "attack": 4304,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -894,9 +842,8 @@
                 ]
               },
               {
-                "name": "Lightfoot Rover",
+                "name": "「捷足巡游者」",
                 "hp": 2734021,
-                "attack": 2968,
                 "defense": 858,
                 "stun": 9335,
                 "number": 1,
@@ -920,7 +867,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 417672,
-                "attack": 1761,
                 "defense": 683,
                 "stun": 1410,
                 "number": 1,
@@ -932,9 +878,8 @@
                 "resistance": []
               },
               {
-                "name": "Friday",
+                "name": "星期五",
                 "hp": 8004942,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 16895,
                 "number": 1,

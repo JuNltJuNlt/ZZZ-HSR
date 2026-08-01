@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2024-11-01 04:00:00",
-  "end_time": "2024-11-16 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6200801": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 187897,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1923,
                 "number": 1,
@@ -34,7 +31,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 187897,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1923,
                 "number": 1,
@@ -47,7 +43,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 832465,
-                "attack": 2395,
                 "defense": 592,
                 "stun": 5699,
                 "number": 1,
@@ -60,9 +55,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 1151875,
-                "attack": 2161,
                 "defense": 533,
                 "stun": 8888,
                 "number": 1,
@@ -83,24 +77,22 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 924976,
-                "attack": 2187,
                 "defense": 640,
                 "stun": 7124,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 221015,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1923,
                 "number": 1,
@@ -111,9 +103,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 187897,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1923,
                 "number": 1,
@@ -126,7 +117,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 971232,
-                "attack": 2057,
                 "defense": 640,
                 "stun": 7481,
                 "number": 1,
@@ -145,13 +135,13 @@
       }
     },
     "6200802": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -162,7 +152,6 @@
               {
                 "name": "偷猎者",
                 "hp": 227968,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 2009,
                 "number": 1,
@@ -176,7 +165,6 @@
               {
                 "name": "掠夺者",
                 "hp": 268149,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 2009,
                 "number": 1,
@@ -188,9 +176,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1397027,
-                "attack": 2270,
                 "defense": 649,
                 "stun": 7444,
                 "number": 1,
@@ -202,9 +189,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1050012,
-                "attack": 2054,
                 "defense": 649,
                 "stun": 5641,
                 "number": 1,
@@ -224,9 +210,8 @@
           "monsters": [
             [
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 268149,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 2009,
                 "number": 1,
@@ -237,9 +222,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 227968,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 2009,
                 "number": 1,
@@ -252,7 +236,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1102480,
-                "attack": 2513,
                 "defense": 701,
                 "stun": 5922,
                 "number": 1,
@@ -265,19 +248,17 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 1466929,
-                "attack": 2621,
                 "defense": 701,
                 "stun": 7817,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -287,13 +268,13 @@
       }
     },
     "6200803": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -304,7 +285,6 @@
               {
                 "name": "偷袭者",
                 "hp": 279641,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 2074,
                 "number": 1,
@@ -316,9 +296,8 @@
                 "resistance": []
               },
               {
-                "name": "Arsonist",
+                "name": "焚毁狂",
                 "hp": 279641,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 2074,
                 "number": 1,
@@ -330,9 +309,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 2147711,
-                "attack": 2822,
                 "defense": 689,
                 "stun": 14414,
                 "number": 1,
@@ -346,9 +324,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2017158,
-                "attack": 2822,
                 "defense": 689,
                 "stun": 12103,
                 "number": 1,
@@ -372,7 +349,6 @@
               {
                 "name": "法布提",
                 "hp": 1779270,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 10951,
                 "number": 1,
@@ -384,9 +360,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 1030983,
-                "attack": 1660,
                 "defense": 621,
                 "stun": 6101,
                 "number": 1,
@@ -398,9 +373,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 308358,
-                "attack": 2103,
                 "defense": 552,
                 "stun": 2286,
                 "number": 1,
@@ -412,9 +386,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 308358,
-                "attack": 1909,
                 "defense": 552,
                 "stun": 2286,
                 "number": 1,
@@ -432,13 +405,13 @@
       }
     },
     "6200804": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -449,7 +422,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 295455,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 2160,
                 "number": 1,
@@ -462,7 +434,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 295455,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 2160,
                 "number": 1,
@@ -475,7 +446,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1355906,
-                "attack": 3038,
                 "defense": 751,
                 "stun": 7263,
                 "number": 1,
@@ -488,23 +458,22 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 1901195,
-                "attack": 2522,
                 "defense": 751,
                 "stun": 8405,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 1879892,
-                "attack": 2722,
                 "defense": 676,
                 "stun": 11408,
                 "number": 1,
@@ -525,25 +494,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 1879892,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 11408,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 295455,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 2160,
                 "number": 1,
@@ -554,23 +520,20 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 295455,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 2160,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1581855,
-                "attack": 2608,
                 "defense": 812,
                 "stun": 9533,
                 "number": 1,
@@ -583,19 +546,17 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 1901195,
-                "attack": 2780,
                 "defense": 812,
                 "stun": 8405,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -605,13 +566,13 @@
       }
     },
     "6200805": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -622,7 +583,6 @@
               {
                 "name": "盗猎客",
                 "hp": 346075,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 2225,
                 "number": 1,
@@ -634,9 +594,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 407073,
-                "attack": 1848,
                 "defense": 636,
                 "stun": 2225,
                 "number": 1,
@@ -648,9 +607,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 2576023,
-                "attack": 2786,
                 "defense": 794,
                 "stun": 14729,
                 "number": 1,
@@ -664,9 +622,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 2758764,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 17665,
                 "number": 1,
@@ -680,9 +637,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2576023,
-                "attack": 3401,
                 "defense": 794,
                 "stun": 14729,
                 "number": 1,
@@ -706,7 +662,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 2061575,
-                "attack": 2962,
                 "defense": 858,
                 "stun": 6875,
                 "number": 1,
@@ -720,7 +675,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1636102,
-                "attack": 3401,
                 "defense": 858,
                 "stun": 6546,
                 "number": 1,
@@ -732,9 +686,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 1852872,
-                "attack": 3255,
                 "defense": 715,
                 "stun": 9819,
                 "number": 1,
@@ -746,9 +699,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 381615,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2453,
                 "number": 1,
@@ -760,9 +712,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 381615,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2453,
                 "number": 1,
@@ -780,13 +731,13 @@
       }
     },
     "6200806": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -795,9 +746,8 @@
           "monsters": [
             [
               {
-                "name": "Hati Pack Leader — Energized",
+                "name": "哈提头犬·蓄能型",
                 "hp": 5631242,
-                "attack": 4086,
                 "defense": 953,
                 "stun": 14634,
                 "number": 1,
@@ -810,9 +760,8 @@
                 ]
               },
               {
-                "name": "Fossor - Energized",
+                "name": "弗瑟尔·蓄能型",
                 "hp": 414917,
-                "attack": 2353,
                 "defense": 636,
                 "stun": 2619,
                 "number": 1,
@@ -823,9 +772,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus - Energized",
+                "name": "索迪代斯·蓄能型",
                 "hp": 414917,
-                "attack": 2136,
                 "defense": 636,
                 "stun": 2619,
                 "number": 1,
@@ -844,25 +792,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅲ型」",
                 "hp": 4718645,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 15817,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 442596,
-                "attack": 2043,
                 "defense": 636,
                 "stun": 2376,
                 "number": 1,
@@ -873,9 +818,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 376275,
-                "attack": 2043,
                 "defense": 636,
                 "stun": 2376,
                 "number": 1,
@@ -892,13 +836,13 @@
       }
     },
     "6200807": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001081": {
-          "title": "Lightning Speed",
-          "desc": "· Agent DMG is increased by 25%.\n· When inflicting <color=#FF5521>Burn</color> or <color=#2EB6FF>Shock</color> on enemies, Agent ATK increases by 20% for 15s. When the effect is triggered, the enemy immediately gains 20% Daze if the enemy is not Stunned."
+          "title": "电光火石",
+          "desc": "· 代理人造成的伤害提升25%。\n· 对敌人施加<color=#FF5521>[灼烧]</color>或<color=#2EB6FF>[感电]</color>效果时，代理人的攻击力提升20%，持续15秒；效果触发时，若敌人未处于失衡状态下，将直接累积20%失衡值。"
         }
       },
       "layer_room": {
@@ -909,7 +853,6 @@
               {
                 "name": "偷袭者",
                 "hp": 442566,
-                "attack": 2055,
                 "defense": 636,
                 "stun": 2538,
                 "number": 1,
@@ -921,9 +864,8 @@
                 "resistance": []
               },
               {
-                "name": "Arsonist",
+                "name": "焚毁狂",
                 "hp": 442566,
-                "attack": 1761,
                 "defense": 636,
                 "stun": 2538,
                 "number": 1,
@@ -935,9 +877,8 @@
                 "resistance": []
               },
               {
-                "name": "Rampant Brute",
+                "name": "蛮横力士",
                 "hp": 7030449,
-                "attack": 4304,
                 "defense": 953,
                 "stun": 15632,
                 "number": 1,
@@ -961,7 +902,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 442566,
-                "attack": 1761,
                 "defense": 683,
                 "stun": 2538,
                 "number": 1,
@@ -975,7 +915,6 @@
               {
                 "name": "汉斯",
                 "hp": 6937617,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 20273,
                 "number": 1,

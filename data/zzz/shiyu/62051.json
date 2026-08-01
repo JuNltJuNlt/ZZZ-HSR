@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
+  "name": "剧变节点",
   "begin_time": "2026-06-26 04:00:00",
   "end_time": "2026-07-10 03:59:59",
   "zone": {
     "6205101": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001511": {
-          "title": "Frozen Tempest",
-          "desc": "· Agent <color=#A6C5FD>Wind DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 30%, <color=#FFFFFF>Vortex</color> DMG increases by 30%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, their Anomaly Proficiency increases by 40 for 15s. Repeated triggers reset the duration."
+          "title": "凛冬风暴",
+          "desc": "· 代理人的<color=#A6C5FD>风属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，<color=#FFFFFF>[乱流]</color>造成的伤害提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -45,7 +45,7 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 278913,
                 "defense": 474,
                 "stun": 1766,
@@ -58,7 +58,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 278913,
                 "defense": 474,
                 "stun": 1766,
@@ -105,7 +105,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1550049,
                 "defense": 592,
                 "stun": 5937,
@@ -118,7 +118,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1165024,
                 "defense": 592,
                 "stun": 4499,
@@ -137,13 +137,13 @@
       }
     },
     "6205102": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001511": {
-          "title": "Frozen Tempest",
-          "desc": "· Agent <color=#A6C5FD>Wind DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 30%, <color=#FFFFFF>Vortex</color> DMG increases by 30%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, their Anomaly Proficiency increases by 40 for 15s. Repeated triggers reset the duration."
+          "title": "凛冬风暴",
+          "desc": "· 代理人的<color=#A6C5FD>风属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，<color=#FFFFFF>[乱流]</color>造成的伤害提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -152,7 +152,7 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 376439,
                 "defense": 497,
                 "stun": 1728,
@@ -178,7 +178,7 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1661212,
                 "defense": 745,
                 "stun": 4722,
@@ -204,7 +204,7 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 2015443,
                 "defense": 621,
                 "stun": 7627,
@@ -266,19 +266,20 @@
                 "resistance": []
               },
               {
-                "name": "袭扰猎兵",
+                "name": "轻装猎兵",
                 "hp": 376439,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "火",
+                  "物理"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者」",
                 "hp": 2306888,
                 "defense": 745,
                 "stun": 6404,
@@ -299,13 +300,13 @@
       }
     },
     "6205103": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001511": {
-          "title": "Frozen Tempest",
-          "desc": "· Agent <color=#A6C5FD>Wind DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 30%, <color=#FFFFFF>Vortex</color> DMG increases by 30%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, their Anomaly Proficiency increases by 40 for 15s. Repeated triggers reset the duration."
+          "title": "凛冬风暴",
+          "desc": "· 代理人的<color=#A6C5FD>风属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，<color=#FFFFFF>[乱流]</color>造成的伤害提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -340,7 +341,7 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 4988499,
                 "defense": 715,
                 "stun": 8183,
@@ -353,7 +354,7 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -366,7 +367,7 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1027424,
                 "defense": 636,
                 "stun": 2044,
@@ -413,7 +414,7 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -428,7 +429,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 7427442,
                 "defense": 794,
                 "stun": 14721,
@@ -443,7 +444,7 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 6935446,
                 "defense": 794,
                 "stun": 12274,
@@ -464,13 +465,13 @@
       }
     },
     "6205104": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001511": {
-          "title": "Frozen Tempest",
-          "desc": "· Agent <color=#A6C5FD>Wind DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 30%, <color=#FFFFFF>Vortex</color> DMG increases by 30%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, their Anomaly Proficiency increases by 40 for 15s. Repeated triggers reset the duration."
+          "title": "凛冬风暴",
+          "desc": "· 代理人的<color=#A6C5FD>风属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，<color=#FFFFFF>[乱流]</color>造成的伤害提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -479,7 +480,7 @@
           "monsters": [
             [
               {
-                "name": "City Guardboo",
+                "name": "城防戍卫布",
                 "hp": 5969381,
                 "defense": 858,
                 "stun": 11557,
@@ -492,7 +493,7 @@
                 "resistance": []
               },
               {
-                "name": "Metamorphosed - Scorpse",
+                "name": "蜕生·蝎骸",
                 "hp": 14913227,
                 "defense": 953,
                 "stun": 18293,
@@ -515,7 +516,7 @@
           "monsters": [
             [
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 3831578,
                 "defense": 794,
                 "stun": 8323,
@@ -530,7 +531,7 @@
                 ]
               },
               {
-                "name": "Wanted Intimidator",
+                "name": "通缉虐待狂",
                 "hp": 2885083,
                 "defense": 794,
                 "stun": 6350,
@@ -545,7 +546,7 @@
                 ]
               },
               {
-                "name": "Sacrifice - Heretic Jester",
+                "name": "牲鬼·凶魁愚者",
                 "hp": 13657326,
                 "defense": 953,
                 "stun": 13414,
@@ -571,37 +572,25 @@
       "monster_level": 0,
       "layer_buff": {
         "62001472": {
-          "title": "Cardinal Forge",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "枢机锻序",
+          "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001511": {
-          "title": "Frozen Tempest",
-          "desc": "· Agent <color=#A6C5FD>Wind DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 30%, <color=#FFFFFF>Vortex</color> DMG increases by 30%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, their Anomaly Proficiency increases by 40 for 15s. Repeated triggers reset the duration."
+          "title": "凛冬风暴",
+          "desc": "· 代理人的<color=#A6C5FD>风属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，<color=#FFFFFF>[乱流]</color>造成的伤害提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         },
         "62001512": {
-          "title": "Void Erosion",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 30%, CRIT DMG increases by 40%.\n· When an Agent with the <color=#FFFFFF>Attack</color> specialty hits an enemy and crits, enemy DEF drops by 10% for 5s. Repeated triggers reset the duration."
-        }
-      },
-      "layer_room": {}
-    },
-    "62051051": {
-      "name": "Room 1",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "62001511": {
-          "title": "Frozen Tempest",
-          "desc": "· Agent <color=#A6C5FD>Wind DMG</color> and <color=#98EFF0>Ice DMG</color> increase by 30%, <color=#FFFFFF>Vortex</color> DMG increases by 30%.\n· After an Agent uses an <color=#FFFFFF>EX Special Attack</color>, their Anomaly Proficiency increases by 40 for 15s. Repeated triggers reset the duration."
+          "title": "虚蚀裂界",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升30%，暴击伤害提升40%。\n· <color=#FFFFFF>[强攻]</color>特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62051051": {
+        "62051051_62051051": {
           "level": 70,
           "monsters": [
             [
               {
-                "name": "Miasmic - Abyssal Enforcer",
+                "name": "秽蚀·暗渊惩戒者",
                 "hp": 30921349,
                 "defense": 953,
                 "stun": 14328,
@@ -616,7 +605,7 @@
                 ]
               },
               {
-                "name": "City Guardboo",
+                "name": "城防戍卫布",
                 "hp": 8311483,
                 "defense": 858,
                 "stun": 14002,
@@ -629,7 +618,7 @@
                 "resistance": []
               },
               {
-                "name": "Special Anti-Riotboo",
+                "name": "特勤镇暴布",
                 "hp": 1423184,
                 "defense": 683,
                 "stun": 3173,
@@ -642,7 +631,192 @@
                 "resistance": []
               },
               {
-                "name": "Airspace Patrolboo",
+                "name": "空域侦巡布",
+                "hp": 1423184,
+                "defense": 683,
+                "stun": 3173,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62051052_62051052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 5631838,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "整训猎兵",
+                "hp": 817045,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 898571,
+                "defense": 636,
+                "stun": 2221,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "幻矢单元",
+                "hp": 39537116,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62051053_62051053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 21991703,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "拉赫穆",
+                "hp": 6233612,
+                "defense": 715,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "怒蛇",
+                "hp": 6233612,
+                "defense": 715,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62051051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001511": {
+          "title": "凛冬风暴",
+          "desc": "· 代理人的<color=#A6C5FD>风属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，<color=#FFFFFF>[乱流]</color>造成的伤害提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身的异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62051051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·暗渊惩戒者",
+                "hp": 30921349,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "城防戍卫布",
+                "hp": 8311483,
+                "defense": 858,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "特勤镇暴布",
+                "hp": 1423184,
+                "defense": 683,
+                "stun": 3173,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "空域侦巡布",
                 "hp": 1423184,
                 "defense": 683,
                 "stun": 3173,
@@ -661,13 +835,13 @@
       }
     },
     "62051052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001512": {
-          "title": "Void Erosion",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 30%, CRIT DMG increases by 40%.\n· When an Agent with the <color=#FFFFFF>Attack</color> specialty hits an enemy and crits, enemy DEF drops by 10% for 5s. Repeated triggers reset the duration."
+          "title": "虚蚀裂界",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升30%，暴击伤害提升40%。\n· <color=#FFFFFF>[强攻]</color>特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -676,35 +850,33 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 5631838,
                 "defense": 858,
                 "stun": 11170,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 817045,
                 "defense": 636,
                 "stun": 2115,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 898571,
                 "defense": 636,
                 "stun": 2221,
@@ -716,7 +888,7 @@
                 "resistance": []
               },
               {
-                "name": "Mirage Archer Unit",
+                "name": "幻矢单元",
                 "hp": 39537116,
                 "defense": 953,
                 "stun": 18236,
@@ -737,13 +909,13 @@
       }
     },
     "62051053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001472": {
-          "title": "Cardinal Forge",
-          "desc": "· Agent <color=#FE437E>Ether Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> increase by 25%.\n· When Agents inflict an Attribute Anomaly on enemies, their DEF is reduced by 10%, and they take 20% more Attribute Anomaly DMG for 10s. Repeated triggers reset the duration."
+          "title": "枢机锻序",
+          "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -752,21 +924,20 @@
           "monsters": [
             [
               {
-                "name": "Miasmic Komano Manato",
+                "name": "秽蚀·狛野真斗",
                 "hp": 21991703,
                 "defense": 953,
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰"
-                ],
-                "resistance": [
+                  "冰",
                   "物理"
-                ]
+                ],
+                "resistance": []
               },
               {
-                "name": "Lahmu",
+                "name": "拉赫穆",
                 "hp": 6233612,
                 "defense": 715,
                 "stun": 14002,
@@ -781,7 +952,7 @@
                 ]
               },
               {
-                "name": "Mushussu",
+                "name": "怒蛇",
                 "hp": 6233612,
                 "defense": 715,
                 "stun": 14002,

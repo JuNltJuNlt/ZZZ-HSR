@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-03-14 04:00:00",
-  "end_time": "2025-03-28 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6201701": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "盗猎客",
                 "hp": 195124,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -33,9 +30,8 @@
                 "resistance": []
               },
               {
-                "name": "Looter",
+                "name": "劫掠者",
                 "hp": 229515,
-                "attack": 1640,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "Wanted Enforcer",
+                "name": "通缉打手",
                 "hp": 1230001,
-                "attack": 2499,
                 "defense": 592,
                 "stun": 6734,
                 "number": 1,
@@ -63,9 +58,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 1498598,
-                "attack": 2656,
                 "defense": 592,
                 "stun": 11136,
                 "number": 1,
@@ -87,24 +81,22 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 960552,
-                "attack": 2187,
                 "defense": 640,
                 "stun": 5937,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 195124,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -115,33 +107,29 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 195124,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 1255582,
-                "attack": 2525,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -151,13 +139,13 @@
       }
     },
     "6201702": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -168,7 +156,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 236736,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -181,7 +168,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 236736,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -194,7 +180,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1048844,
-                "attack": 2486,
                 "defense": 649,
                 "stun": 4963,
                 "number": 1,
@@ -207,18 +192,18 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 1523349,
-                "attack": 2378,
                 "defense": 649,
                 "stun": 6514,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               }
             ]
           ],
@@ -229,9 +214,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 13794,
-                "attack": 1297,
                 "defense": 585,
                 "stun": 0,
                 "number": 1,
@@ -245,7 +229,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 13794,
-                "attack": 1297,
                 "defense": 585,
                 "stun": 0,
                 "number": 1,
@@ -257,9 +240,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1015566,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 4033,
                 "number": 1,
@@ -271,9 +253,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 845730,
-                "attack": 1432,
                 "defense": 585,
                 "stun": 4344,
                 "number": 1,
@@ -291,13 +272,13 @@
       }
     },
     "6201703": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -308,7 +289,6 @@
               {
                 "name": "偷猎者",
                 "hp": 322662,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -322,7 +302,6 @@
               {
                 "name": "掠夺者",
                 "hp": 379534,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -334,9 +313,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1977333,
-                "attack": 2324,
                 "defense": 689,
                 "stun": 6404,
                 "number": 1,
@@ -348,9 +326,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1486172,
-                "attack": 2103,
                 "defense": 689,
                 "stun": 4852,
                 "number": 1,
@@ -370,9 +347,8 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 322662,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -385,7 +361,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1560434,
-                "attack": 2573,
                 "defense": 745,
                 "stun": 5094,
                 "number": 1,
@@ -398,23 +373,20 @@
                 ]
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 322662,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1727522,
-                "attack": 2518,
                 "defense": 745,
                 "stun": 7627,
                 "number": 1,
@@ -433,13 +405,13 @@
       }
     },
     "6201704": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -450,7 +422,6 @@
               {
                 "name": "偷袭者",
                 "hp": 340910,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -464,7 +435,6 @@
               {
                 "name": "盗猎客",
                 "hp": 340910,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -476,9 +446,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Mors",
+                "name": "多佩冈亚·莫尔斯",
                 "hp": 2459114,
-                "attack": 2379,
                 "defense": 751,
                 "stun": 10506,
                 "number": 1,
@@ -492,9 +461,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Bellum",
+                "name": "多佩冈亚·巴罗姆",
                 "hp": 2717589,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 14292,
                 "number": 1,
@@ -508,9 +476,8 @@
                 ]
               },
               {
-                "name": "Doppelganger - Pulchra",
+                "name": "多佩冈亚·波可娜",
                 "hp": 2537575,
-                "attack": 3324,
                 "defense": 751,
                 "stun": 11916,
                 "number": 1,
@@ -532,9 +499,8 @@
           "monsters": [
             [
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 307886,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1200,
                 "number": 1,
@@ -547,7 +513,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1648679,
-                "attack": 2665,
                 "defense": 812,
                 "stun": 5306,
                 "number": 1,
@@ -562,7 +527,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1825217,
-                "attack": 2608,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
@@ -575,25 +539,22 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2256505,
-                "attack": 3181,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 306645,
-                "attack": 1691,
                 "defense": 601,
                 "stun": 1260,
                 "number": 1,
@@ -610,13 +571,13 @@
       }
     },
     "6201705": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -627,7 +588,6 @@
               {
                 "name": "法布提",
                 "hp": 3726411,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
@@ -639,9 +599,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 2159237,
-                "attack": 1760,
                 "defense": 715,
                 "stun": 5455,
                 "number": 1,
@@ -653,9 +612,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 645809,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -667,9 +625,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 645809,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -689,25 +646,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 3726411,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 479025,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1236,
                 "number": 1,
@@ -720,7 +674,6 @@
               {
                 "name": "突击炮手",
                 "hp": 2918937,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 6242,
                 "number": 1,
@@ -733,23 +686,20 @@
                 ]
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 479025,
-                "attack": 1760,
                 "defense": 731,
                 "stun": 1236,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 3135628,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -768,13 +718,13 @@
       }
     },
     "6201706": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -785,7 +735,6 @@
               {
                 "name": "偷袭者",
                 "hp": 520828,
-                "attack": 1951,
                 "defense": 636,
                 "stun": 1320,
                 "number": 1,
@@ -799,7 +748,6 @@
               {
                 "name": "盗猎客",
                 "hp": 520828,
-                "attack": 1672,
                 "defense": 636,
                 "stun": 1320,
                 "number": 1,
@@ -813,7 +761,6 @@
               {
                 "name": "祸首·通缉打手",
                 "hp": 9529793,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -837,7 +784,6 @@
               {
                 "name": "眼魔引擎",
                 "hp": 520828,
-                "attack": 1672,
                 "defense": 683,
                 "stun": 1320,
                 "number": 1,
@@ -851,7 +797,6 @@
               {
                 "name": "汉斯",
                 "hp": 9981980,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 15816,
                 "number": 1,
@@ -870,13 +815,13 @@
       }
     },
     "6201707": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001171": {
-          "title": "Chasing Fire and Thunder",
-          "desc": "· Agent <color=#FF5521>Fire DMG</color> and <color=#2EB6FF>Electric DMG</color> are increased by 20%.\n· When an Agent hits an enemy with an <color=#FFFFFF>Aftershock</color> or Stuns an enemy, all squad members' CRIT Rate is increased by 15%, and CRIT DMG is increased by 30%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "逐火追雷",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -885,9 +830,8 @@
           "monsters": [
             [
               {
-                "name": "Hati Pack Leader — Energized",
+                "name": "哈提头犬·蓄能型",
                 "hp": 11208729,
-                "attack": 4304,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -900,9 +844,8 @@
                 ]
               },
               {
-                "name": "Fossor - Energized",
+                "name": "弗瑟尔·蓄能型",
                 "hp": 825872,
-                "attack": 2479,
                 "defense": 636,
                 "stun": 2332,
                 "number": 1,
@@ -913,9 +856,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus - Energized",
+                "name": "索迪代斯·蓄能型",
                 "hp": 825872,
-                "attack": 2250,
                 "defense": 636,
                 "stun": 2332,
                 "number": 1,
@@ -934,23 +876,20 @@
           "monsters": [
             [
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 584741,
-                "attack": 2152,
                 "defense": 636,
                 "stun": 1410,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 786250,
-                "attack": 1924,
                 "defense": 636,
                 "stun": 2221,
                 "number": 1,
@@ -961,9 +900,8 @@
                 "resistance": []
               },
               {
-                "name": "Specialized Assault Bomber",
+                "name": "特战强袭轰击者",
                 "hp": 9693259,
-                "attack": 4696,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,

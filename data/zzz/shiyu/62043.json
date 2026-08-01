@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
+  "name": "剧变节点",
   "begin_time": "2026-03-06 04:00:00",
   "end_time": "2026-03-20 03:59:59",
   "zone": {
     "6204301": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001433": {
-          "title": "Mecha Wings",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%. \n· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 30%, and attacks ignore 10% of enemy <color=#FE437E>Ether RES</color>."
+          "title": "机芯化翼",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -19,7 +19,7 @@
           "monsters": [
             [
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1627606,
                 "defense": 640,
                 "stun": 6234,
@@ -32,7 +32,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 299915,
                 "defense": 545,
                 "stun": 1175,
@@ -45,7 +45,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 299915,
                 "defense": 474,
                 "stun": 1175,
@@ -66,30 +66,32 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1550601,
                 "defense": 533,
                 "stun": 7407,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 1307428,
                 "defense": 687,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -122,13 +124,13 @@
       }
     },
     "6204302": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
         "62001433": {
-          "title": "Mecha Wings",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%. \n· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 30%, and attacks ignore 10% of enemy <color=#FE437E>Ether RES</color>."
+          "title": "机芯化翼",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -137,37 +139,48 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 1853132,
                 "defense": 745,
                 "stun": 6404,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2395171,
                 "defense": 745,
                 "stun": 9126,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 376439,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -180,25 +193,12 @@
               {
                 "name": "巡防猎兵",
                 "hp": 376439,
-                "defense": 552,
-                "stun": 1728,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "戍卫猎兵",
-                "hp": 376439,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               }
@@ -211,7 +211,7 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 376439,
                 "defense": 497,
                 "stun": 1728,
@@ -237,7 +237,7 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1661212,
                 "defense": 745,
                 "stun": 4722,
@@ -263,7 +263,7 @@
                 "resistance": []
               },
               {
-                "name": "Metro Goblin",
+                "name": "铁道地精",
                 "hp": 2015443,
                 "defense": 621,
                 "stun": 7627,
@@ -295,13 +295,13 @@
       }
     },
     "6204303": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
         "62001433": {
-          "title": "Mecha Wings",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%. \n· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 30%, and attacks ignore 10% of enemy <color=#FE437E>Ether RES</color>."
+          "title": "机芯化翼",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -338,22 +338,21 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 6167254,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 1104786,
                 "defense": 731,
                 "stun": 1360,
@@ -366,7 +365,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 1104786,
                 "defense": 636,
                 "stun": 1360,
@@ -387,30 +386,32 @@
           "monsters": [
             [
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 5550393,
                 "defense": 715,
                 "stun": 5729,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 4988499,
                 "defense": 922,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -437,17 +438,17 @@
                 "resistance": []
               },
               {
-                "name": "狂乱暴徒",
+                "name": "秽蚀·狂乱暴徒",
                 "hp": 6734576,
                 "defense": 858,
                 "stun": 10228,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "以太"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               }
             ]
@@ -457,13 +458,13 @@
       }
     },
     "6204304": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
         "62001433": {
-          "title": "Mecha Wings",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%. \n· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 30%, and attacks ignore 10% of enemy <color=#FE437E>Ether RES</color>."
+          "title": "机芯化翼",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -472,7 +473,7 @@
           "monsters": [
             [
               {
-                "name": "Lumberjack",
+                "name": "伐木机",
                 "hp": 14855570,
                 "defense": 953,
                 "stun": 13414,
@@ -486,7 +487,7 @@
                 ]
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 1469030,
                 "defense": 731,
                 "stun": 2178,
@@ -507,21 +508,21 @@
           "monsters": [
             [
               {
-                "name": "汉斯",
+                "name": "汉斯·超频型",
                 "hp": 15880423,
                 "defense": 953,
                 "stun": 15816,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电"
+                  "以太"
                 ],
                 "resistance": [
                   "物理"
                 ]
               },
               {
-                "name": "Huskron",
+                "name": "赫斯克龙",
                 "hp": 1028542,
                 "defense": 636,
                 "stun": 2178,
@@ -545,28 +546,193 @@
       "monster_level": 0,
       "layer_buff": {
         "62001431": {
-          "title": "Thunder Crimson Blaze",
-          "desc": "· Agent <color=#F0D12B>Physical DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 15%, while their CRIT DMG increases by 20%.\n· When an Agent with Attack specialty hits an enemy and crits, enemy DEF drops by 10% for 5s. Repeated triggers reset the duration."
+          "title": "雷霆赤焰",
+          "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%，暴击伤害提升20%。\n· [强攻]特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         },
         "62001432": {
-          "title": "Flameheart Lithic Core",
-          "desc": "· Agent Sheer DMG increases by 10%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent Sheer DMG further increases by 15%, and attacks ignore 15% of enemy All-DMG RES on hit."
+          "title": "奇火石心",
+          "desc": "· 代理人的贯穿伤害提升10%。\n·  处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的贯穿伤害额外提升15%，攻击命中敌人时无视其15%的全伤害抗性。"
         },
         "62001433": {
-          "title": "Mecha Wings",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%. \n· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 30%, and attacks ignore 10% of enemy <color=#FE437E>Ether RES</color>."
+          "title": "机芯化翼",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
-      "layer_room": {}
+      "layer_room": {
+        "62043051_62043051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4738970,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1184805,
+                "defense": 731,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1184805,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "缄枢",
+                "hp": 30618602,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62043052_62043052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧打手",
+                "hp": 5150418,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 3878137,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "牲鬼·卫律使者",
+                "hp": 33167231,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰",
+                  "风"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62043053_62043053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 3898965,
+                "defense": 715,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 3280825,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "秽蚀·蛮横力士",
+                "hp": 40435067,
+                "defense": 953,
+                "stun": 14589,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
     },
     "62043051": {
-      "name": "Room 1",
+      "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001431": {
-          "title": "Thunder Crimson Blaze",
-          "desc": "· Agent <color=#F0D12B>Physical DMG</color> and <color=#2EB6FF>Electric DMG</color> increase by 15%, while their CRIT DMG increases by 20%.\n· When an Agent with Attack specialty hits an enemy and crits, enemy DEF drops by 10% for 5s. Repeated triggers reset the duration."
+          "title": "雷霆赤焰",
+          "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%，暴击伤害提升20%。\n· [强攻]特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -589,7 +755,7 @@
                 ]
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 1184805,
                 "defense": 731,
                 "stun": 2327,
@@ -602,7 +768,7 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 1184805,
                 "defense": 636,
                 "stun": 2327,
@@ -615,7 +781,7 @@
                 "resistance": []
               },
               {
-                "name": "Lockspring",
+                "name": "缄枢",
                 "hp": 30618602,
                 "defense": 953,
                 "stun": 18236,
@@ -636,13 +802,13 @@
       }
     },
     "62043052": {
-      "name": "Room 2",
+      "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001432": {
-          "title": "Flameheart Lithic Core",
-          "desc": "· Agent Sheer DMG increases by 10%.\n· While in <color=#FFFFFF>Ether Veil</color>, Agent Sheer DMG further increases by 15%, and attacks ignore 15% of enemy All-DMG RES on hit."
+          "title": "奇火石心",
+          "desc": "· 代理人的贯穿伤害提升10%。\n·  处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的贯穿伤害额外提升15%，攻击命中敌人时无视其15%的全伤害抗性。"
         }
       },
       "layer_room": {
@@ -651,7 +817,7 @@
           "monsters": [
             [
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 5150418,
                 "defense": 794,
                 "stun": 8891,
@@ -664,7 +830,7 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 3878137,
                 "defense": 794,
                 "stun": 6783,
@@ -677,7 +843,7 @@
                 "resistance": []
               },
               {
-                "name": "「卫士」",
+                "name": "牲鬼·卫律使者",
                 "hp": 33167231,
                 "defense": 953,
                 "stun": 17586,
@@ -688,7 +854,8 @@
                   "物理"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰",
+                  "风"
                 ]
               }
             ]
@@ -698,13 +865,13 @@
       }
     },
     "62043053": {
-      "name": "Room 3",
+      "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
         "62001433": {
-          "title": "Mecha Wings",
-          "desc": "· Agent <color=#FE437E>Ether DMG</color> increases by 20%. \n· While in <color=#FFFFFF>Ether Veil</color>, Agent ATK increases by 30%, and attacks ignore 10% of enemy <color=#FE437E>Ether RES</color>."
+          "title": "机芯化翼",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -713,33 +880,35 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 3898965,
                 "defense": 715,
                 "stun": 11170,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 3280825,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "Miasmic - Rampant Brute",
+                "name": "秽蚀·蛮横力士",
                 "hp": 40435067,
                 "defense": 953,
                 "stun": 14589,

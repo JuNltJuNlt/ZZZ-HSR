@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-03-28 04:00:00",
-  "end_time": "2025-04-11 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6201801": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -19,37 +17,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1196178,
-                "attack": 2395,
                 "defense": 533,
                 "stun": 7407,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 1008587,
-                "attack": 2525,
                 "defense": 687,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 159595,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1068,
                 "number": 1,
@@ -62,7 +59,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 159595,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1068,
                 "number": 1,
@@ -81,24 +77,22 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 960552,
-                "attack": 2187,
                 "defense": 640,
                 "stun": 5937,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 229515,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -109,9 +103,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 195124,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -124,7 +117,6 @@
               {
                 "name": "突击炮手",
                 "hp": 972490,
-                "attack": 2760,
                 "defense": 640,
                 "stun": 5394,
                 "number": 1,
@@ -143,13 +135,13 @@
       }
     },
     "6201802": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -158,9 +150,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 13794,
-                "attack": 1297,
                 "defense": 585,
                 "stun": 0,
                 "number": 1,
@@ -172,9 +163,8 @@
                 "resistance": []
               },
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 236736,
-                "attack": 1783,
                 "defense": 468,
                 "stun": 1674,
                 "number": 1,
@@ -188,7 +178,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 236736,
-                "attack": 1459,
                 "defense": 468,
                 "stun": 1674,
                 "number": 1,
@@ -200,9 +189,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1015566,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 4033,
                 "number": 1,
@@ -216,7 +204,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1119192,
-                "attack": 3134,
                 "defense": 701,
                 "stun": 4926,
                 "number": 1,
@@ -230,7 +217,6 @@
               {
                 "name": "曼德拉",
                 "hp": 152422,
-                "attack": 1702,
                 "defense": 468,
                 "stun": 1172,
                 "number": 1,
@@ -252,7 +238,6 @@
               {
                 "name": "法布提",
                 "hp": 1451276,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 7740,
                 "number": 1,
@@ -266,7 +251,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1119192,
-                "attack": 3134,
                 "defense": 701,
                 "stun": 4926,
                 "number": 1,
@@ -278,9 +262,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 261047,
-                "attack": 2054,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -292,9 +275,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 261047,
-                "attack": 1865,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -312,13 +294,13 @@
       }
     },
     "6201803": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -329,7 +311,6 @@
               {
                 "name": "偷猎者",
                 "hp": 322662,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -343,7 +324,6 @@
               {
                 "name": "掠夺者",
                 "hp": 379534,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -355,9 +335,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1977333,
-                "attack": 2324,
                 "defense": 689,
                 "stun": 6404,
                 "number": 1,
@@ -369,9 +348,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1486172,
-                "attack": 2103,
                 "defense": 689,
                 "stun": 4852,
                 "number": 1,
@@ -391,25 +369,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2053004,
-                "attack": 2933,
                 "defense": 745,
                 "stun": 9126,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 379534,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -420,9 +395,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 322662,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -433,33 +407,29 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 322662,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2076270,
-                "attack": 2684,
                 "defense": 745,
                 "stun": 6724,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -469,13 +439,13 @@
       }
     },
     "6201804": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -484,9 +454,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1504420,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 4918,
                 "number": 1,
@@ -500,7 +469,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 1974194,
-                "attack": 2780,
                 "defense": 676,
                 "stun": 4902,
                 "number": 1,
@@ -514,7 +482,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1611683,
-                "attack": 3324,
                 "defense": 812,
                 "stun": 5296,
                 "number": 1,
@@ -526,9 +493,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 307390,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1324,
                 "number": 1,
@@ -540,9 +506,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 307390,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1324,
                 "number": 1,
@@ -562,9 +527,8 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 340910,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -577,7 +541,6 @@
               {
                 "name": "突击炮手",
                 "hp": 1699083,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 6060,
                 "number": 1,
@@ -590,33 +553,29 @@
                 ]
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 340910,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2256505,
-                "attack": 3181,
                 "defense": 812,
                 "stun": 7944,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -626,13 +585,13 @@
       }
     },
     "6201805": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -643,7 +602,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 585665,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -656,7 +614,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 585665,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -669,7 +626,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 2687742,
-                "attack": 3108,
                 "defense": 794,
                 "stun": 6234,
                 "number": 1,
@@ -682,9 +638,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 3726411,
-                "attack": 2786,
                 "defense": 715,
                 "stun": 9792,
                 "number": 1,
@@ -705,25 +660,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 3726411,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 585665,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -734,23 +686,20 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 585665,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 3135628,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -763,19 +712,17 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 3876560,
-                "attack": 3255,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -785,13 +732,13 @@
       }
     },
     "6201806": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -802,7 +749,6 @@
               {
                 "name": "恶名·塔纳托斯",
                 "hp": 8576721,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -816,7 +762,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 520828,
-                "attack": 1858,
                 "defense": 731,
                 "stun": 1320,
                 "number": 1,
@@ -830,7 +775,6 @@
               {
                 "name": "曼德拉",
                 "hp": 409984,
-                "attack": 1951,
                 "defense": 572,
                 "stun": 1386,
                 "number": 1,
@@ -844,7 +788,6 @@
               {
                 "name": "曼德拉",
                 "hp": 409984,
-                "attack": 1951,
                 "defense": 572,
                 "stun": 1386,
                 "number": 1,
@@ -864,23 +807,20 @@
           "monsters": [
             [
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 636773,
-                "attack": 1858,
                 "defense": 731,
                 "stun": 1981,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "Demolition Jaeger",
+                "name": "轰击猎兵",
                 "hp": 700311,
-                "attack": 1827,
                 "defense": 636,
                 "stun": 2079,
                 "number": 1,
@@ -891,9 +831,8 @@
                 "resistance": []
               },
               {
-                "name": "Terror Raptor",
+                "name": "骇鸟",
                 "hp": 9972241,
-                "attack": 4458,
                 "defense": 953,
                 "stun": 13414,
                 "number": 1,
@@ -912,13 +851,13 @@
       }
     },
     "6201807": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001181": {
-          "title": "United in Spirit",
-          "desc": "· Enemy Stun DMG Multiplier is increased by 30%.\n· When an Agent's <color=#FFFFFF>Aftershock</color> hits an enemy, the enemy's <color=#FF5521>Fire RES</color> and <color=#2EB6FF>Electric RES</color> are reduced by 20%, lasting for 15s. Repeated triggers reset the duration."
+          "title": "契阔同心",
+          "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -929,7 +868,6 @@
               {
                 "name": "偷袭者",
                 "hp": 680871,
-                "attack": 2055,
                 "defense": 636,
                 "stun": 2115,
                 "number": 1,
@@ -943,7 +881,6 @@
               {
                 "name": "盗猎客",
                 "hp": 680871,
-                "attack": 1761,
                 "defense": 636,
                 "stun": 2115,
                 "number": 1,
@@ -955,9 +892,8 @@
                 "resistance": []
               },
               {
-                "name": "Doppelganger - Abyssal Enforcer",
+                "name": "多佩冈亚·暗渊惩戒者",
                 "hp": 11107169,
-                "attack": 4696,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -979,9 +915,8 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 584741,
-                "attack": 2152,
                 "defense": 636,
                 "stun": 1410,
                 "number": 1,
@@ -992,23 +927,20 @@
                 "resistance": []
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 584741,
-                "attack": 1957,
                 "defense": 731,
                 "stun": 1410,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "Friday",
+                "name": "星期五",
                 "hp": 11206919,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 16895,
                 "number": 1,

@@ -1,16 +1,16 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2024-07-04 04:00:00",
-  "end_time": "2024-08-01 03:59:59",
+  "name": "剧变节点",
+  "begin_time": "2024-05-07 04:00:00",
+  "end_time": "2024-05-14 03:59:59",
   "zone": {
     "6200101": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -19,9 +19,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 11791,
-                "attack": 1250,
                 "defense": 533,
                 "stun": 0,
                 "number": 1,
@@ -33,9 +32,8 @@
                 "resistance": []
               },
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 202350,
-                "attack": 1718,
                 "defense": 427,
                 "stun": 1602,
                 "number": 1,
@@ -49,7 +47,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 427,
                 "stun": 1602,
                 "number": 1,
@@ -61,9 +58,8 @@
                 "resistance": []
               },
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 868057,
-                "attack": 2395,
                 "defense": 640,
                 "stun": 3860,
                 "number": 1,
@@ -77,7 +73,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 956631,
-                "attack": 3020,
                 "defense": 640,
                 "stun": 4714,
                 "number": 1,
@@ -91,7 +86,6 @@
               {
                 "name": "曼德拉",
                 "hp": 130283,
-                "attack": 1640,
                 "defense": 427,
                 "stun": 1122,
                 "number": 1,
@@ -113,7 +107,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -126,7 +119,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 165506,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1068,
                 "number": 1,
@@ -139,7 +131,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 896501,
-                "attack": 2395,
                 "defense": 592,
                 "stun": 4750,
                 "number": 1,
@@ -152,18 +143,18 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 1302085,
-                "attack": 2291,
                 "defense": 592,
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               }
             ]
           ],
@@ -172,13 +163,13 @@
       }
     },
     "6200102": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -187,37 +178,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1505027,
-                "attack": 2486,
                 "defense": 585,
                 "stun": 7740,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 1421703,
-                "attack": 2621,
                 "defense": 585,
                 "stun": 4559,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 245504,
-                "attack": 1621,
                 "defense": 468,
                 "stun": 1674,
                 "number": 1,
@@ -230,7 +220,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 200802,
-                "attack": 1621,
                 "defense": 468,
                 "stun": 1116,
                 "number": 1,
@@ -249,24 +238,22 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 1208564,
-                "attack": 2270,
                 "defense": 701,
                 "stun": 6204,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 200802,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1116,
                 "number": 1,
@@ -277,33 +264,29 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 245504,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 1579769,
-                "attack": 2621,
                 "defense": 701,
                 "stun": 6514,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -313,13 +296,13 @@
       }
     },
     "6200103": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -330,7 +313,6 @@
               {
                 "name": "掠袭猎兵",
                 "hp": 354231,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -342,9 +324,8 @@
                 "resistance": []
               },
               {
-                "name": "Heavy Gunner",
+                "name": "重装炮手",
                 "hp": 1456405,
-                "attack": 2573,
                 "defense": 745,
                 "stun": 5094,
                 "number": 1,
@@ -358,9 +339,8 @@
                 ]
               },
               {
-                "name": "Guard Jaeger",
+                "name": "戍卫猎兵",
                 "hp": 301152,
-                "attack": 1660,
                 "defense": 634,
                 "stun": 1728,
                 "number": 1,
@@ -372,9 +352,8 @@
                 "resistance": []
               },
               {
-                "name": "Lightfoot Rover",
+                "name": "「捷足巡游者」",
                 "hp": 1556642,
-                "attack": 2186,
                 "defense": 745,
                 "stun": 6724,
                 "number": 1,
@@ -398,7 +377,6 @@
               {
                 "name": "偷猎者",
                 "hp": 246317,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1152,
                 "number": 1,
@@ -412,7 +390,6 @@
               {
                 "name": "偷猎者",
                 "hp": 301152,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -426,7 +403,6 @@
               {
                 "name": "掠夺者",
                 "hp": 354231,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -438,9 +414,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1845510,
-                "attack": 2324,
                 "defense": 689,
                 "stun": 6404,
                 "number": 1,
@@ -452,9 +427,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1387094,
-                "attack": 2103,
                 "defense": 689,
                 "stun": 4852,
                 "number": 1,
@@ -472,13 +446,13 @@
       }
     },
     "6200104": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -487,25 +461,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2024499,
-                "attack": 3038,
                 "defense": 812,
                 "stun": 9506,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 260247,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1200,
                 "number": 1,
@@ -516,9 +487,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 318182,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -529,33 +499,29 @@
                 "resistance": []
               },
               {
-                "name": "戍卫猎兵",
+                "name": "巡防猎兵",
                 "hp": 318182,
-                "attack": 1720,
                 "defense": 691,
                 "stun": 1800,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2047441,
-                "attack": 2780,
                 "defense": 812,
                 "stun": 7004,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -569,7 +535,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 318182,
-                "attack": 1548,
                 "defense": 541,
                 "stun": 1800,
                 "number": 1,
@@ -583,7 +548,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1504238,
-                "attack": 3324,
                 "defense": 812,
                 "stun": 5296,
                 "number": 1,
@@ -597,7 +561,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 318182,
-                "attack": 1720,
                 "defense": 691,
                 "stun": 1800,
                 "number": 1,
@@ -609,9 +572,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 1703536,
-                "attack": 3181,
                 "defense": 676,
                 "stun": 7944,
                 "number": 1,
@@ -625,7 +587,6 @@
               {
                 "name": "曼德拉",
                 "hp": 267199,
-                "attack": 1806,
                 "defense": 541,
                 "stun": 1890,
                 "number": 1,
@@ -643,13 +604,13 @@
       }
     },
     "6200105": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -660,7 +621,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 372696,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -673,7 +633,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 372696,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -686,7 +645,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1710382,
-                "attack": 3108,
                 "defense": 794,
                 "stun": 6234,
                 "number": 1,
@@ -699,9 +657,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2371353,
-                "attack": 2786,
                 "defense": 715,
                 "stun": 9792,
                 "number": 1,
@@ -724,7 +681,6 @@
               {
                 "name": "袭击者",
                 "hp": 372696,
-                "attack": 1848,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -738,7 +694,6 @@
               {
                 "name": "纵火犯",
                 "hp": 372696,
-                "attack": 1584,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -750,9 +705,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2349366,
-                "attack": 2815,
                 "defense": 794,
                 "stun": 7793,
                 "number": 1,
@@ -764,9 +718,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1769014,
-                "attack": 2522,
                 "defense": 794,
                 "stun": 5946,
                 "number": 1,
@@ -784,13 +737,13 @@
       }
     },
     "6200106": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -799,25 +752,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅲ型」",
                 "hp": 5081618,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 13181,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 405219,
-                "attack": 2043,
                 "defense": 636,
                 "stun": 1981,
                 "number": 1,
@@ -838,7 +788,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 405219,
-                "attack": 1672,
                 "defense": 572,
                 "stun": 1981,
                 "number": 1,
@@ -850,9 +799,8 @@
                 "resistance": []
               },
               {
-                "name": "装甲哈提",
+                "name": "恶名·装甲哈提",
                 "hp": 4548311,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -870,13 +818,13 @@
       }
     },
     "6200107": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001011": {
-          "title": "Bullying Tactics",
-          "desc": "· When there are normal enemies on the battlefield, Agents deal 25% less DMG to elite and boss enemies and 50% more DMG to normal enemies.\n· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 20%. <color=#FFFFFF>Basic Attack</color> and <color=#FFFFFF>Dash Attack</color> DMG increase by 50%."
+          "title": "凌弱战术",
+          "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
@@ -887,7 +835,6 @@
               {
                 "name": "恶名·塔纳托斯",
                 "hp": 6419476,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 9118,
                 "number": 1,
@@ -901,7 +848,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 476610,
-                "attack": 1957,
                 "defense": 731,
                 "stun": 2115,
                 "number": 1,
@@ -915,7 +861,6 @@
               {
                 "name": "曼德拉",
                 "hp": 400241,
-                "attack": 2055,
                 "defense": 572,
                 "stun": 2221,
                 "number": 1,
@@ -929,7 +874,6 @@
               {
                 "name": "曼德拉",
                 "hp": 400241,
-                "attack": 2055,
                 "defense": 572,
                 "stun": 2221,
                 "number": 1,
@@ -951,7 +895,6 @@
               {
                 "name": "恶名·杜拉罕",
                 "hp": 5824148,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -965,7 +908,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 476610,
-                "attack": 1957,
                 "defense": 731,
                 "stun": 2115,
                 "number": 1,

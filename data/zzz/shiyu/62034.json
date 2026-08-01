@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2025-11-07 04:00:00",
-  "end_time": "2025-11-21 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6203401": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -19,37 +17,36 @@
           "monsters": [
             [
               {
-                "name": "法布提",
+                "name": "离子体·法布提",
                 "hp": 1240481,
-                "attack": 2395,
                 "defense": 533,
                 "stun": 7407,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 1171803,
-                "attack": 2525,
                 "defense": 533,
                 "stun": 4363,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 202350,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1602,
                 "number": 1,
@@ -62,7 +59,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 202350,
-                "attack": 1562,
                 "defense": 427,
                 "stun": 1602,
                 "number": 1,
@@ -83,7 +79,6 @@
               {
                 "name": "偷猎者",
                 "hp": 202350,
-                "attack": 1406,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -97,7 +92,6 @@
               {
                 "name": "掠夺者",
                 "hp": 238016,
-                "attack": 1640,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -109,9 +103,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1240039,
-                "attack": 2187,
                 "defense": 592,
                 "stun": 5937,
                 "number": 1,
@@ -123,9 +116,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 932019,
-                "attack": 1979,
                 "defense": 592,
                 "stun": 4499,
                 "number": 1,
@@ -143,13 +135,13 @@
       }
     },
     "6203402": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -158,9 +150,8 @@
           "monsters": [
             [
               {
-                "name": "Tarasque Mixer",
+                "name": "泰拉斯奎祸车",
                 "hp": 1579769,
-                "attack": 2378,
                 "defense": 701,
                 "stun": 6514,
                 "number": 1,
@@ -172,9 +163,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Shieldguard",
+                "name": "秽息残兵·盾卫",
                 "hp": 291100,
-                "attack": 1946,
                 "defense": 598,
                 "stun": 1228,
                 "number": 1,
@@ -186,9 +176,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic Trooper - Cannoneer",
+                "name": "秽息残兵·炮手",
                 "hp": 291100,
-                "attack": 1756,
                 "defense": 520,
                 "stun": 1228,
                 "number": 1,
@@ -210,7 +199,6 @@
               {
                 "name": "法布提",
                 "hp": 1505027,
-                "attack": 2486,
                 "defense": 701,
                 "stun": 7740,
                 "number": 1,
@@ -222,9 +210,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 270716,
-                "attack": 2054,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -236,9 +223,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 270716,
-                "attack": 1865,
                 "defense": 520,
                 "stun": 1846,
                 "number": 1,
@@ -250,9 +236,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 1564034,
-                "attack": 2864,
                 "defense": 585,
                 "stun": 7165,
                 "number": 1,
@@ -270,13 +255,13 @@
       }
     },
     "6203403": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -285,9 +270,8 @@
           "monsters": [
             [
               {
-                "name": "Tyrfing",
+                "name": "提尔锋",
                 "hp": 21308,
-                "attack": 1328,
                 "defense": 621,
                 "stun": 0,
                 "number": 1,
@@ -301,7 +285,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 21308,
-                "attack": 1328,
                 "defense": 621,
                 "stun": 0,
                 "number": 1,
@@ -315,7 +298,6 @@
               {
                 "name": "法布提",
                 "hp": 2241776,
-                "attack": 2546,
                 "defense": 745,
                 "stun": 7990,
                 "number": 1,
@@ -329,7 +311,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1728807,
-                "attack": 3210,
                 "defense": 745,
                 "stun": 5085,
                 "number": 1,
@@ -351,7 +332,6 @@
               {
                 "name": "偷猎者",
                 "hp": 365684,
-                "attack": 1494,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -365,7 +345,6 @@
               {
                 "name": "掠夺者",
                 "hp": 430138,
-                "attack": 1743,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -377,9 +356,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2305165,
-                "attack": 2656,
                 "defense": 689,
                 "stun": 7264,
                 "number": 1,
@@ -391,9 +369,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1735732,
-                "attack": 2380,
                 "defense": 689,
                 "stun": 5542,
                 "number": 1,
@@ -411,13 +388,13 @@
       }
     },
     "6203404": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -426,9 +403,8 @@
           "monsters": [
             [
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 426042,
-                "attack": 2178,
                 "defense": 601,
                 "stun": 1984,
                 "number": 1,
@@ -440,9 +416,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 426042,
-                "attack": 1977,
                 "defense": 601,
                 "stun": 1984,
                 "number": 1,
@@ -454,9 +429,8 @@
                 "resistance": []
               },
               {
-                "name": "Miasmic - Trinox",
+                "name": "秽蚀·特里诺斯",
                 "hp": 4033884,
-                "attack": 3811,
                 "defense": 812,
                 "stun": 11420,
                 "number": 1,
@@ -479,7 +453,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 386364,
-                "attack": 1548,
                 "defense": 541,
                 "stun": 1800,
                 "number": 1,
@@ -493,7 +466,6 @@
               {
                 "name": "法布提",
                 "hp": 2368553,
-                "attack": 2636,
                 "defense": 812,
                 "stun": 8322,
                 "number": 1,
@@ -507,7 +479,6 @@
               {
                 "name": "杜拉罕",
                 "hp": 2068579,
-                "attack": 3181,
                 "defense": 872,
                 "stun": 7944,
                 "number": 1,
@@ -521,7 +492,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 386364,
-                "attack": 1720,
                 "defense": 691,
                 "stun": 1800,
                 "number": 1,
@@ -535,7 +505,6 @@
               {
                 "name": "曼德拉",
                 "hp": 324456,
-                "attack": 1806,
                 "defense": 541,
                 "stun": 1890,
                 "number": 1,
@@ -547,9 +516,8 @@
                 "resistance": []
               },
               {
-                "name": "Banyrek",
+                "name": "班尼雷克",
                 "hp": 2549494,
-                "attack": 3467,
                 "defense": 676,
                 "stun": 8738,
                 "number": 1,
@@ -567,13 +535,13 @@
       }
     },
     "6203405": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -582,37 +550,36 @@
           "monsters": [
             [
               {
-                "name": "塔纳托斯",
+                "name": "离子体·塔纳托斯",
                 "hp": 5867558,
-                "attack": 3255,
                 "defense": 715,
                 "stun": 5729,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
-                "name": "杜拉罕",
+                "name": "离子体·杜拉罕",
                 "hp": 5273556,
-                "attack": 3255,
                 "defense": 922,
                 "stun": 8183,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [
+                  "冰"
+                ]
               },
               {
                 "name": "离子体·瑟托迪亚",
                 "hp": 984981,
-                "attack": 1760,
                 "defense": 572,
                 "stun": 1854,
                 "number": 1,
@@ -625,7 +592,6 @@
               {
                 "name": "离子体·纳塞勒亚",
                 "hp": 984981,
-                "attack": 1760,
                 "defense": 572,
                 "stun": 1854,
                 "number": 1,
@@ -636,18 +602,17 @@
                 "resistance": []
               },
               {
-                "name": "狂乱暴徒",
+                "name": "秽蚀·狂乱暴徒",
                 "hp": 7119409,
-                "attack": 3900,
                 "defense": 858,
                 "stun": 10228,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "以太"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               }
             ]
@@ -661,7 +626,6 @@
               {
                 "name": "法布提",
                 "hp": 6267146,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
@@ -673,9 +637,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 3631444,
-                "attack": 1760,
                 "defense": 715,
                 "stun": 5455,
                 "number": 1,
@@ -687,9 +650,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 1086134,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -701,9 +663,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 1086134,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -721,13 +682,13 @@
       }
     },
     "6203406": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -736,24 +697,22 @@
           "monsters": [
             [
               {
-                "name": "狂乱暴徒",
+                "name": "秽蚀·狂乱暴徒",
                 "hp": 6665244,
-                "attack": 2694,
                 "defense": 858,
                 "stun": 9630,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "以太"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "Miasmic - Trinox",
+                "name": "秽蚀·特里诺斯",
                 "hp": 9627419,
-                "attack": 2694,
                 "defense": 858,
                 "stun": 11075,
                 "number": 1,
@@ -774,9 +733,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 4726002,
-                "attack": 3282,
                 "defense": 858,
                 "stun": 5410,
                 "number": 1,
@@ -788,9 +746,8 @@
                 "resistance": []
               },
               {
-                "name": "装甲哈提",
+                "name": "恶名·装甲哈提",
                 "hp": 12020534,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -808,13 +765,13 @@
       }
     },
     "6203407": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001341": {
-          "title": "Frosty Fire",
-          "desc": "· Agent <color=#98EFF0>Ice DMG</color> and <color=#FE437E>Ether DMG</color> increase by 15%.\n· While Agents are in an <color=#FFFFFF>Ether Veil</color>, CRIT DMG increases by 40% and Sheer DMG increases by 20%. These buffs are removed when exiting <color=#FFFFFF>Ether Veil</color>."
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
@@ -823,9 +780,8 @@
           "monsters": [
             [
               {
-                "name": "Miasma Ravager - Avarus",
+                "name": "秽息蚀者·阿瓦鲁斯",
                 "hp": 22285003,
-                "attack": 3180,
                 "defense": 953,
                 "stun": 15487,
                 "number": 1,
@@ -847,9 +803,8 @@
           "monsters": [
             [
               {
-                "name": "Haytor",
+                "name": "赫由托",
                 "hp": 22464270,
-                "attack": 3522,
                 "defense": 1588,
                 "stun": 16284,
                 "number": 1,

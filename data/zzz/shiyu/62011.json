@@ -1,16 +1,14 @@
 {
-  "name": "Critical Node",
-  "begin_time": "2024-12-17 04:00:00",
-  "end_time": "2025-01-03 03:59:59",
+  "name": "剧变节点",
   "zone": {
     "6201101": {
-      "name": "Critical Node: First Frontier",
+      "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -21,7 +19,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 10949,
-                "attack": 1250,
                 "defense": 533,
                 "stun": 0,
                 "number": 1,
@@ -35,7 +32,6 @@
               {
                 "name": "法布提",
                 "hp": 1151875,
-                "attack": 2395,
                 "defense": 640,
                 "stun": 7407,
                 "number": 1,
@@ -47,9 +43,8 @@
                 "resistance": []
               },
               {
-                "name": "Arlaune",
+                "name": "阿劳恩",
                 "hp": 671255,
-                "attack": 1380,
                 "defense": 533,
                 "stun": 4157,
                 "number": 1,
@@ -61,9 +56,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 169422,
-                "attack": 1979,
                 "defense": 474,
                 "stun": 1179,
                 "number": 1,
@@ -83,24 +77,22 @@
           "monsters": [
             [
               {
-                "name": "盛怒恶霸",
+                "name": "「怒汉」",
                 "hp": 924976,
-                "attack": 2187,
                 "defense": 640,
                 "stun": 5937,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 221015,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -111,9 +103,8 @@
                 "resistance": []
               },
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 187897,
-                "attack": 1718,
                 "defense": 474,
                 "stun": 1602,
                 "number": 1,
@@ -126,7 +117,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 971232,
-                "attack": 2057,
                 "defense": 640,
                 "stun": 6234,
                 "number": 1,
@@ -145,13 +135,13 @@
       }
     },
     "6201102": {
-      "name": "Critical Node: Second Frontier",
+      "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -162,7 +152,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 227968,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -175,7 +164,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 227968,
-                "attack": 1783,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -188,7 +176,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1009997,
-                "attack": 2486,
                 "defense": 649,
                 "stun": 4963,
                 "number": 1,
@@ -201,9 +188,8 @@
                 ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 1397526,
-                "attack": 2243,
                 "defense": 585,
                 "stun": 7740,
                 "number": 1,
@@ -226,7 +212,6 @@
               {
                 "name": "偷猎者",
                 "hp": 227968,
-                "attack": 1459,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -240,7 +225,6 @@
               {
                 "name": "掠夺者",
                 "hp": 268149,
-                "attack": 1702,
                 "defense": 520,
                 "stun": 1674,
                 "number": 1,
@@ -252,9 +236,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 1397027,
-                "attack": 2270,
                 "defense": 649,
                 "stun": 6204,
                 "number": 1,
@@ -266,9 +249,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1050012,
-                "attack": 2054,
                 "defense": 649,
                 "stun": 4701,
                 "number": 1,
@@ -286,13 +268,13 @@
       }
     },
     "6201103": {
-      "name": "Critical Node: Third Frontier",
+      "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -301,9 +283,8 @@
           "monsters": [
             [
               {
-                "name": "巡防猎兵",
+                "name": "先锋猎兵",
                 "hp": 311907,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
@@ -314,23 +295,20 @@
                 "resistance": []
               },
               {
-                "name": "新晋猎兵",
+                "name": "整训猎兵",
                 "hp": 311907,
-                "attack": 1826,
                 "defense": 552,
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": []
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 1612237,
-                "attack": 2186,
                 "defense": 745,
                 "stun": 6724,
                 "number": 1,
@@ -343,19 +321,17 @@
                 ]
               },
               {
-                "name": "重装炮手",
+                "name": "「重装侵袭者Ⅱ型」",
                 "hp": 2007061,
-                "attack": 2684,
                 "defense": 745,
                 "stun": 6724,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               }
             ]
@@ -367,9 +343,8 @@
           "monsters": [
             [
               {
-                "name": "Blastcrawler",
+                "name": "雷蛛",
                 "hp": 121992,
-                "attack": 1218,
                 "defense": 593,
                 "stun": 519,
                 "number": 1,
@@ -383,7 +358,6 @@
               {
                 "name": "装甲哈提",
                 "hp": 1474571,
-                "attack": 3210,
                 "defense": 745,
                 "stun": 5085,
                 "number": 1,
@@ -395,9 +369,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 1669938,
-                "attack": 3071,
                 "defense": 621,
                 "stun": 7627,
                 "number": 1,
@@ -411,7 +384,6 @@
               {
                 "name": "曼德拉",
                 "hp": 261929,
-                "attack": 1743,
                 "defense": 497,
                 "stun": 1815,
                 "number": 1,
@@ -423,9 +395,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 343938,
-                "attack": 2103,
                 "defense": 552,
                 "stun": 1905,
                 "number": 1,
@@ -437,9 +408,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 343938,
-                "attack": 1909,
                 "defense": 552,
                 "stun": 1905,
                 "number": 1,
@@ -457,13 +427,13 @@
       }
     },
     "6201104": {
-      "name": "Critical Node: Fourth Frontier",
+      "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -474,7 +444,6 @@
               {
                 "name": "恶毒打手",
                 "hp": 329546,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -487,7 +456,6 @@
               {
                 "name": "贪婪射手",
                 "hp": 329546,
-                "attack": 1891,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -500,7 +468,6 @@
               {
                 "name": "狂乱暴徒",
                 "hp": 1512357,
-                "attack": 3038,
                 "defense": 751,
                 "stun": 6052,
                 "number": 1,
@@ -513,23 +480,22 @@
                 ]
               },
               {
-                "name": "恶灵",
+                "name": "盛怒恶霸",
                 "hp": 2120564,
-                "attack": 2522,
                 "defense": 751,
                 "stun": 7004,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "以太"
+                  "火"
                 ],
-                "resistance": []
+                "resistance": [
+                  "电"
+                ]
               },
               {
-                "name": "Ruthless Fiend",
+                "name": "凶心疯汉",
                 "hp": 2096802,
-                "attack": 2722,
                 "defense": 676,
                 "stun": 9506,
                 "number": 1,
@@ -552,7 +518,6 @@
               {
                 "name": "偷猎者",
                 "hp": 329546,
-                "attack": 1548,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -566,7 +531,6 @@
               {
                 "name": "掠夺者",
                 "hp": 387630,
-                "attack": 1806,
                 "defense": 601,
                 "stun": 1800,
                 "number": 1,
@@ -578,9 +542,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧施虐者",
+                "name": "魁梧打手",
                 "hp": 2077361,
-                "attack": 2751,
                 "defense": 751,
                 "stun": 7566,
                 "number": 1,
@@ -592,9 +555,8 @@
                 "resistance": []
               },
               {
-                "name": "魁梧打手",
+                "name": "魁梧施虐者",
                 "hp": 1564201,
-                "attack": 2465,
                 "defense": 751,
                 "stun": 5772,
                 "number": 1,
@@ -612,13 +574,13 @@
       }
     },
     "6201105": {
-      "name": "Critical Node: Fifth Frontier",
+      "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -627,25 +589,22 @@
           "monsters": [
             [
               {
-                "name": "「卫士」",
+                "name": "「卫士Ⅱ型」",
                 "hp": 2710117,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 9792,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ]
               },
               {
-                "name": "Harrier Jaeger",
+                "name": "袭扰猎兵",
                 "hp": 384678,
-                "attack": 1935,
                 "defense": 636,
                 "stun": 1236,
                 "number": 1,
@@ -658,7 +617,6 @@
               {
                 "name": "突击炮手",
                 "hp": 2122863,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 6242,
                 "number": 1,
@@ -673,7 +631,6 @@
               {
                 "name": "「捷足巡游者Ⅱ型」",
                 "hp": 2280457,
-                "attack": 2668,
                 "defense": 858,
                 "stun": 8183,
                 "number": 1,
@@ -694,9 +651,8 @@
           "monsters": [
             [
               {
-                "name": "Hati",
+                "name": "哈提",
                 "hp": 1879648,
-                "attack": 3108,
                 "defense": 858,
                 "stun": 5066,
                 "number": 1,
@@ -710,7 +666,6 @@
               {
                 "name": "塔纳托斯",
                 "hp": 2537323,
-                "attack": 2962,
                 "defense": 858,
                 "stun": 5729,
                 "number": 1,
@@ -722,9 +677,8 @@
                 "resistance": []
               },
               {
-                "name": "Goblin",
+                "name": "地精",
                 "hp": 2280457,
-                "attack": 3255,
                 "defense": 715,
                 "stun": 8183,
                 "number": 1,
@@ -736,9 +690,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 469680,
-                "attack": 2229,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -750,9 +703,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 469680,
-                "attack": 2023,
                 "defense": 636,
                 "stun": 2044,
                 "number": 1,
@@ -770,13 +722,13 @@
       }
     },
     "6201106": {
-      "name": "Critical Node: Sixth Frontier",
+      "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -785,9 +737,8 @@
           "monsters": [
             [
               {
-                "name": "Guard Jaeger",
+                "name": "戍卫猎兵",
                 "hp": 463108,
-                "attack": 1858,
                 "defense": 731,
                 "stun": 1981,
                 "number": 1,
@@ -799,9 +750,8 @@
                 "resistance": []
               },
               {
-                "name": "Shielded Defender",
+                "name": "「护戍盾卫」",
                 "hp": 6930759,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 12195,
                 "number": 1,
@@ -815,9 +765,8 @@
                 ]
               },
               {
-                "name": "Grenadier Jaegers",
+                "name": "掷弹猎兵",
                 "hp": 509317,
-                "attack": 1827,
                 "defense": 636,
                 "stun": 2079,
                 "number": 1,
@@ -837,9 +786,8 @@
           "monsters": [
             [
               {
-                "name": "装甲哈提",
+                "name": "恶名·装甲哈提",
                 "hp": 5198069,
-                "attack": 3715,
                 "defense": 953,
                 "stun": 8536,
                 "number": 1,
@@ -853,7 +801,6 @@
               {
                 "name": "曼德拉",
                 "hp": 388903,
-                "attack": 1951,
                 "defense": 572,
                 "stun": 2079,
                 "number": 1,
@@ -865,9 +812,8 @@
                 "resistance": []
               },
               {
-                "name": "Fossor",
+                "name": "弗瑟尔",
                 "hp": 510667,
-                "attack": 2353,
                 "defense": 636,
                 "stun": 2183,
                 "number": 1,
@@ -879,9 +825,8 @@
                 "resistance": []
               },
               {
-                "name": "Sordidus",
+                "name": "索迪代斯",
                 "hp": 510667,
-                "attack": 2136,
                 "defense": 636,
                 "stun": 2183,
                 "number": 1,
@@ -899,13 +844,13 @@
       }
     },
     "6201107": {
-      "name": "Critical Node: Seventh Frontier",
+      "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
         "62001111": {
-          "title": "Anomaly Impact",
-          "desc": "· Increases Agent <color=#2EB6FF>Electric Anomaly Buildup Rate</color> and <color=#98EFF0>Ice Anomaly Buildup Rate</color> by 25%.\n· When inflicting an Attribute Anomaly on an enemy, increases all squad members' CRIT DMG by 20% and Attribute Anomaly DMG by 20%. Stacks up to three times and lasts for 30s. The duration of each stack is calculated separately."
+          "title": "异常冲击",
+          "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
@@ -916,7 +861,6 @@
               {
                 "name": "偷袭者",
                 "hp": 544697,
-                "attack": 2055,
                 "defense": 636,
                 "stun": 2115,
                 "number": 1,
@@ -928,9 +872,8 @@
                 "resistance": []
               },
               {
-                "name": "Arsonist",
+                "name": "焚毁狂",
                 "hp": 544697,
-                "attack": 1761,
                 "defense": 636,
                 "stun": 2115,
                 "number": 1,
@@ -944,7 +887,6 @@
               {
                 "name": "祸首·通缉打手",
                 "hp": 8151803,
-                "attack": 3913,
                 "defense": 953,
                 "stun": 13027,
                 "number": 1,
@@ -968,7 +910,6 @@
               {
                 "name": "阿佩卡",
                 "hp": 544697,
-                "attack": 1761,
                 "defense": 572,
                 "stun": 2115,
                 "number": 1,
@@ -982,7 +923,6 @@
               {
                 "name": "霍普利泰",
                 "hp": 544697,
-                "attack": 1957,
                 "defense": 731,
                 "stun": 2115,
                 "number": 1,
@@ -994,9 +934,8 @@
                 "resistance": []
               },
               {
-                "name": "Thracian",
+                "name": "色雷斯人",
                 "hp": 7321865,
-                "attack": 4304,
                 "defense": 953,
                 "stun": 13677,
                 "number": 1,
