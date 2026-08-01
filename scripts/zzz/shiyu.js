@@ -235,7 +235,7 @@ const renderAllStages = () => {
             if (buff && buff.title) {
                 buffRow.appendChild(create("div", {
                     className: "smallbuff",
-                    style: "flex: 1 1 30%; min-width: 280px;",
+                    style: { flex: "1 1 30%", minWidth: "280px" },
                     children: [
                         create("p", { className: "smallbuff_name", text: buff.title }),
                         create("p", { className: "smallbuff_desc", html: buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">') }),
@@ -279,7 +279,7 @@ const renderBuffs = () => {
     buffs.forEach((buff) => {
         container.appendChild(create("div", {
             className: "smallbuff a_b_0",
-            style: "width: 100%;",
+            style: { width: "100%" },
             children: [
                 create("p", { className: "smallbuff_name", text: buff.title }),
                 create("p", { className: "smallbuff_desc", html: buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">') }),
@@ -381,7 +381,7 @@ const bindEvents = () => {
         if (ver) ver.style.display = "none";
         if (floor) floor.style.display = "none";
         dl.style.display = "none";
-        html2canvas(document.querySelector(".content"), { scale: 2, backgroundColor: "#f7f9fc" }).then(canvas => {
+        html2canvas(document.querySelector(".content"), { scale: 2, backgroundColor: "#f7f9fc", useCORS: true }).then(canvas => {
             const a = document.createElement("a");
             a.download = `式舆防卫战_${currentEntry().name}.png`;
             a.href = canvas.toDataURL("image/png");
