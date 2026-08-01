@@ -40,19 +40,21 @@ const loadData = async () => {
 const currentEntry = () => shiyuEntries[state.scheduleIndex];
 const currentFloor = () => {
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).sort();
+    const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
     return zone[keys[state.floorIndex]];
 };
 
 const setSchedule = (index) => {
     const prevZone = currentEntry().zone;
-    const prevMaxFloor = Object.keys(prevZone).length;
+    const prevKeys = Object.keys(prevZone).filter(k => k.length <= 7);
+    const prevMaxFloor = prevKeys.length;
     const prevFloor = state.floorIndex;
 
     state.scheduleIndex = wrapIndex(index, shiyuEntries.length);
     
     const newZone = currentEntry().zone;
-    const newMaxFloor = Object.keys(newZone).length;
+    const newKeys = Object.keys(newZone).filter(k => k.length <= 7);
+    const newMaxFloor = newKeys.length;
     
     if (prevFloor >= newMaxFloor) {
         state.floorIndex = newMaxFloor - 1;
@@ -65,8 +67,8 @@ const setSchedule = (index) => {
 
 const setFloor = (index) => {
     const zone = currentEntry().zone;
-    const len = Object.keys(zone).length;
-    state.floorIndex = wrapIndex(index, len);
+    const keys = Object.keys(zone).filter(k => k.length <= 7);
+    state.floorIndex = wrapIndex(index, keys.length);
     renderFloor();
 };
 
@@ -297,7 +299,7 @@ const renderCharts = () => {
 
     const totalData = entries.map(e => {
         const zone = e.zone;
-        const keys = Object.keys(zone).sort();
+        const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
         const target = zone[keys[state.floorIndex]];
         if (!target) return 0;
         return Object.values(target.layer_room).reduce((sum, room) => sum + stageTotalHp(room), 0);
@@ -313,7 +315,7 @@ const renderCharts = () => {
             color,
             data: entries.map(e => {
                 const zone = e.zone;
-                const keys = Object.keys(zone).sort();
+                const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
                 const target = zone[keys[state.floorIndex]];
                 if (!target || !target.layer_room[rk]) return 0;
                 return stageTotalHp(target.layer_room[rk]);
@@ -400,7 +402,8 @@ const init = async () => {
     bindEvents();
     state.scheduleIndex = 0;
     const zone = currentEntry().zone;
-    state.floorIndex = Object.keys(zone).length - 1;
+    const keys = Object.keys(zone).filter(k => k.length <= 7);
+    state.floorIndex = keys.length - 1;
     render();
 };
 
