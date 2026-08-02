@@ -391,10 +391,10 @@ const renderCharts = () => {
 
     const totalData = entries.map(e => {
         const zone = e.zone;
-        const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
-        const target = zone[keys[state.floorIndex]];
-        if (!target) return 0;
-        return Object.values(target.layer_room).reduce((sum, room) => sum + stageTotalHp(room, isFifth), 0);
+        const f5key = Object.keys(zone).find(k => zone[k].stage_num === floorNum);
+        if (!f5key) return 0;
+        const rooms = zone[f5key].layer_room;
+        return Object.values(rooms).reduce((sum, room) => sum + stageTotalHp(room, isFifth), 0);
     });
 
     renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }]);
@@ -407,10 +407,11 @@ const renderCharts = () => {
             color,
             data: entries.map(e => {
                 const zone = e.zone;
-                const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
-                const target = zone[keys[state.floorIndex]];
-                if (!target || !target.layer_room[rk]) return 0;
-                return stageTotalHp(target.layer_room[rk], isFifth);
+                const f5key = Object.keys(zone).find(k => zone[k].stage_num === floorNum);
+                if (!f5key) return 0;
+                const entryRooms = Object.keys(zone[f5key].layer_room).sort();
+                if (!entryRooms[i]) return 0;
+                return stageTotalHp(zone[f5key].layer_room[entryRooms[i]], isFifth);
             }),
         };
     });
@@ -433,7 +434,7 @@ const renderLineChart = (targetId, title, seriesData) => {
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-        xAxis: { type: "category", data: entries.map(e => e.name || (indexData && indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '') || ""), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
+        xAxis: { type: "category", data: entries.map(e => (indexData && indexData.entries[shiyuEntries.indexOf(e)] || e.name || "").replace('.json', '')), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({
