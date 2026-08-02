@@ -29,7 +29,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -42,7 +43,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -55,7 +57,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -78,7 +81,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "库鲁鲁",
@@ -91,7 +95,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "蜕生·泰拉斯奎祸车",
@@ -104,7 +109,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -117,7 +123,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -130,7 +137,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -143,7 +151,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -178,7 +187,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -192,7 +202,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -204,7 +215,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -216,7 +228,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -228,7 +241,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -249,7 +263,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "城防戍卫布",
@@ -262,7 +277,8 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "蜕生·眼魔引擎",
@@ -275,7 +291,8 @@
                   "物理",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -288,7 +305,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -301,7 +319,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -336,7 +355,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -350,7 +370,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -364,7 +385,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -377,7 +399,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -390,7 +413,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -413,7 +437,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "城防戍卫布",
@@ -426,7 +451,8 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "蜕生·城防戍卫布",
@@ -441,7 +467,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -454,7 +481,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -467,7 +495,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -501,7 +530,8 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "蜕生·蝎骸",
@@ -516,7 +546,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
@@ -539,7 +570,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "A"
               },
               {
                 "name": "怒蛇",
@@ -552,7 +584,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
@@ -596,7 +629,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·赫斯克龙",
@@ -611,7 +645,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "自律战术单位·「征服者」",
@@ -626,9 +661,16 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         },
@@ -636,19 +678,6 @@
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "秽蚀·狛野真斗",
-                "hp": 35320007,
-                "defense": 953,
-                "stun": 16284,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "物理"
-                ],
-                "resistance": []
-              },
               {
                 "name": "拉赫穆",
                 "hp": 7965171,
@@ -662,7 +691,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "怒蛇",
@@ -675,9 +705,36 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 35320007,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -698,7 +755,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -711,7 +769,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -724,8 +783,11 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·星徽·比利",
                 "hp": 44738412,
@@ -739,9 +801,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·星徽·比利",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -752,6 +825,14 @@
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
         "62001581": {
           "title": "(Test1)TBD",
           "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
@@ -775,7 +856,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·赫斯克龙",
@@ -790,7 +872,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "自律战术单位·「征服者」",
@@ -805,7 +888,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "C"
               }
             ]
           ],
@@ -818,6 +902,14 @@
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
         "62001582": {
           "title": "(Test1)TBD",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#F0D12B>物理属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#F0D12B>物理属性</color>积蓄效率提升25%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低20%，持续10秒，重复触发时刷新持续时间。"
@@ -839,7 +931,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               },
               {
                 "name": "拉赫穆",
@@ -854,7 +947,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "怒蛇",
@@ -867,7 +961,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
@@ -880,6 +975,14 @@
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
         "62001583": {
           "title": "(Test1)TBD",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，持续20秒，重复触发时刷新持续时间。"
@@ -903,7 +1006,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -916,7 +1020,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -929,7 +1034,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·星徽·比利",
@@ -944,7 +1050,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],

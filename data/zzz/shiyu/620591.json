@@ -31,7 +31,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "怒蛇",
@@ -44,7 +45,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "库鲁鲁",
@@ -57,7 +59,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -70,7 +73,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -83,7 +87,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -96,7 +101,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -117,7 +123,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "新晋猎兵",
@@ -130,7 +137,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -145,7 +153,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者」",
@@ -160,7 +169,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
@@ -194,7 +204,8 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "蜕生·城防戍卫布",
@@ -209,7 +220,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "空域侦巡布",
@@ -222,7 +234,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "蜕生·空域侦巡布",
@@ -235,7 +248,8 @@
                   "以太",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "蜕生·眼魔引擎",
@@ -248,7 +262,8 @@
                   "物理",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -271,7 +286,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -284,7 +300,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -297,7 +314,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -312,7 +330,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
@@ -348,7 +367,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "城防戍卫布",
@@ -361,7 +381,8 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "蜕生·泰拉斯奎祸车",
@@ -374,7 +395,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -387,7 +409,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "库鲁鲁",
@@ -400,7 +423,8 @@
                   "冰",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -421,7 +445,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -434,7 +459,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -449,7 +475,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -464,7 +491,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -479,7 +507,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
@@ -515,7 +544,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               },
               {
                 "name": "蜕生·城防戍卫布",
@@ -530,7 +560,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
@@ -551,7 +582,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -564,7 +596,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "祸首·通缉打手",
@@ -579,7 +612,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
@@ -593,14 +627,10 @@
       "monster_level": 0,
       "layer_buff": {
         "62001541": {
-          "title": "TBD",
-          "desc": "· 代理人的锐化伤害提升20%，防御力提升20%。\n· 代理人命中敌人且触发暴击后，敌人的防御力降低20%，若其处于失衡状态，失衡易伤倍率提升35%。"
-        },
-        "62001542": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
-        "62001563": {
+        "62001562": {
           "title": "御雷贯芒",
           "desc": "· 代理人攻击命中敌人时无视其20%的<color=#2EB6FF>电属性伤害抗性</color>。 \n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击率提升5%，暴击伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
@@ -621,8 +651,39 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
+              {
+                "name": "特勤镇暴布",
+                "hp": 1293804,
+                "defense": 683,
+                "stun": 3173,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "空域侦巡布",
+                "hp": 1293804,
+                "defense": 683,
+                "stun": 3173,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "蜕生·蝎骸",
                 "hp": 37186079,
@@ -636,35 +697,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
-              },
-              {
-                "name": "特勤镇暴布",
-                "hp": 1293804,
-                "defense": 683,
-                "stun": 3173,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "空域侦巡布",
-                "hp": 1293804,
-                "defense": 683,
-                "stun": 3173,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·蝎骸",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -684,7 +730,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -698,8 +745,11 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
-              },
+                ],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 38364858,
@@ -713,9 +763,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -734,7 +795,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -747,8 +809,11 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "牲鬼·卫律使者",
                 "hp": 41853886,
@@ -763,9 +828,20 @@
                 "resistance": [
                   "冰",
                   "风"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·卫律使者",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -805,7 +881,8 @@
                   "电",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "蜕生·蝎骸",
@@ -820,7 +897,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               },
               {
                 "name": "特勤镇暴布",
@@ -833,7 +911,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "空域侦巡布",
@@ -846,7 +925,8 @@
                   "火",
                   "风"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
@@ -889,7 +969,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -903,7 +984,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·色雷斯人",
@@ -918,7 +1000,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
@@ -960,7 +1043,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -973,7 +1057,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "牲鬼·卫律使者",
@@ -989,7 +1074,8 @@
                 "resistance": [
                   "冰",
                   "风"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],

@@ -164,11 +164,16 @@ const renderMonsterCard = (monster, stageLevel) => {
     });
 };
 
-const renderWave = (wave, index, stageLevel) => {
+const renderWave = (wave, index, stageLevel, waveNames) => {
+    const waveName = waveNames?.[index];
+    const displayName = waveName 
+        ? (waveName.bold ? `<b>${waveName.name}</b>` : waveName.name)
+        : (text.waveNames[index] || `第${index + 1}波`);
+    
     return create("div", {
         className: "wave_wrap",
         children: [
-            create("p", { className: "wave_name", text: text.waveNames[index] || `第${index + 1}波` }),
+            create("p", { className: "wave_name", html: displayName }),
             create("div", { className: "wave_monsters", children: wave.map(m => renderMonsterCard(m, stageLevel)) }),
         ],
     });
@@ -205,7 +210,7 @@ const renderStage = (stageData, label, elements, index) => {
                                     }),
                                     create("div", {
                                         className: "stage_waves",
-                                        children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level)),
+                                        children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level, stageData.waveNames)),
                                     }),
                                 ],
                             }),
