@@ -137,6 +137,22 @@ const renderMonsterCard = (monster, stageLevel) => {
     const def = monster.defense || 0;
     const stun = monster.stun || 0;
 
+    const img = image(imagePath, "monicon hasimg", monster.name);
+    const nameLayer = create("div", {
+        className: "monnameload hasimgname",
+        children: [create("p", { text: monster.name })],
+    });
+
+    img.addEventListener("load", () => {
+        nameLayer.style.display = "none";
+    });
+    img.addEventListener("error", () => {
+        img.style.opacity = "0";
+        img.classList.remove("hasimg");
+        nameLayer.classList.remove("hasimgname");
+        img.parentElement.classList.add("monicon");
+    });
+
     return create("span", {
         className: "monster_card hover-shadow",
         attrs: { "data-lv": stageLevel },
@@ -144,11 +160,8 @@ const renderMonsterCard = (monster, stageLevel) => {
             create("div", {
                 className: "monleft",
                 children: [
-                    image(imagePath, "monicon hasimg", monster.name),
-                    create("div", {
-                        className: "monnameload hasimgname",
-                        children: [create("p", { text: monster.name })],
-                    }),
+                    img,
+                    nameLayer,
                     ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : []),
                 ],
             }),
