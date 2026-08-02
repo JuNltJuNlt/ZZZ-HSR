@@ -1292,8 +1292,8 @@
             "name": "秽蚀·狛野真斗",
             "type": "A",
             "category": 5,
-            "weakness": ["冰", "物理"],
-            "resistance": []
+            "weakness": ["冰"],
+            "resistance": ["物理"]
         },
         {
             "name": "牲鬼·卫律使者",
