@@ -206,7 +206,8 @@ const renderStage = (stageData, label, elements, index) => {
         (m.weakness || []).forEach(w => allWeakness.add(w));
         (m.resistance || []).forEach(r => {
             allResistance.add(r);
-            if (m.type === 'A' || m.type === 'S') aResistance.add(r);
+            const info = monstersData.find(x => x.name === m.name);
+            if (info && (info.type === 'A' || info.type === 'S')) aResistance.add(r);
         });
     });
     const roomWeakness = [...allWeakness].filter(w => !allResistance.has(w) && !aResistance.has(w));
