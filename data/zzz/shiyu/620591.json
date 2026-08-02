@@ -25,13 +25,8 @@
                 "stun": 10606,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
+                "weakness": ["冰", "电"],
+                "resistance": ["物理"],
                 "type": "B"
               },
               {
@@ -41,10 +36,7 @@
                 "stun": 9351,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
+                "weakness": ["火", "风"],
                 "resistance": [],
                 "type": "B"
               },
@@ -55,10 +47,7 @@
                 "stun": 1442,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
+                "weakness": ["冰", "风"],
                 "resistance": [],
                 "type": "C"
               },
@@ -69,10 +58,7 @@
                 "stun": 0,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
+                "weakness": ["火", "电"],
                 "resistance": [],
                 "type": "C"
               },
@@ -83,10 +69,7 @@
                 "stun": 2403,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
+                "weakness": ["冰", "风"],
                 "resistance": [],
                 "type": "C"
               },
@@ -97,10 +80,7 @@
                 "stun": 2403,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
+                "weakness": ["冰", "风"],
                 "resistance": [],
                 "type": "C"
               }
@@ -119,10 +99,7 @@
                 "stun": 1068,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -133,10 +110,7 @@
                 "stun": 1602,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -147,13 +121,8 @@
                 "stun": 6234,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["以太"],
                 "type": "B"
               },
               {
@@ -163,13 +132,8 @@
                 "stun": 5937,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["以太"],
                 "type": "B"
               }
             ]
@@ -200,10 +164,7 @@
                 "stun": 10086,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
+                "weakness": ["电", "风"],
                 "resistance": [],
                 "type": "B"
               },
@@ -214,13 +175,8 @@
                 "stun": 11440,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太",
-                  "风"
-                ],
-                "resistance": [
-                  "物理"
-                ],
+                "weakness": ["以太", "风"],
+                "resistance": ["物理"],
                 "type": "B"
               },
               {
@@ -230,10 +186,7 @@
                 "stun": 2592,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
+                "weakness": ["火", "风"],
                 "resistance": [],
                 "type": "C"
               },
@@ -244,10 +197,7 @@
                 "stun": 2592,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太",
-                  "风"
-                ],
+                "weakness": ["以太", "风"],
                 "resistance": [],
                 "type": "C"
               },
@@ -258,10 +208,7 @@
                 "stun": 2592,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "物理",
-                  "风"
-                ],
+                "weakness": ["物理", "风"],
                 "resistance": [],
                 "type": "C"
               }
@@ -280,13 +227,8 @@
                 "stun": 7990,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["以太"],
                 "type": "B"
               },
               {
@@ -296,10 +238,7 @@
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -310,10 +249,7 @@
                 "stun": 1728,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -324,13 +260,8 @@
                 "stun": 6404,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["以太"],
                 "type": "B"
               }
             ]
@@ -361,13 +292,8 @@
                 "stun": 10822,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
+                "weakness": ["冰", "电"],
+                "resistance": ["物理"],
                 "type": "B"
               },
               {
@@ -377,10 +303,7 @@
                 "stun": 12274,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
+                "weakness": ["电", "风"],
                 "resistance": [],
                 "type": "B"
               },
@@ -391,10 +314,7 @@
                 "stun": 12274,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "物理"
-                ],
+                "weakness": ["冰", "物理"],
                 "resistance": [],
                 "type": "B"
               },
@@ -405,10 +325,7 @@
                 "stun": 0,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
+                "weakness": ["火", "电"],
                 "resistance": [],
                 "type": "C"
               },
@@ -419,10 +336,7 @@
                 "stun": 2781,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
+                "weakness": ["冰", "风"],
                 "resistance": [],
                 "type": "C"
               }
@@ -441,10 +355,7 @@
                 "stun": 1854,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -455,10 +366,7 @@
                 "stun": 1854,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -469,13 +377,8 @@
                 "stun": 12274,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["冰"],
                 "type": "B"
               },
               {
@@ -485,13 +388,8 @@
                 "stun": 14721,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["冰"],
                 "type": "B"
               },
               {
@@ -501,13 +399,8 @@
                 "stun": 12274,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["冰"],
                 "type": "B"
               }
             ]
@@ -538,13 +431,8 @@
                 "stun": 19772,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
-                "resistance": [
-                  "以太"
-                ],
+                "weakness": ["冰", "风"],
+                "resistance": ["以太"],
                 "type": "A"
               },
               {
@@ -554,13 +442,8 @@
                 "stun": 11557,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太",
-                  "风"
-                ],
-                "resistance": [
-                  "物理"
-                ],
+                "weakness": ["以太", "风"],
+                "resistance": ["物理"],
                 "type": "B"
               }
             ]
@@ -578,10 +461,7 @@
                 "stun": 1320,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -592,10 +472,7 @@
                 "stun": 1320,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
+                "weakness": ["火", "物理"],
                 "resistance": [],
                 "type": "C"
               },
@@ -606,13 +483,8 @@
                 "stun": 12195,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["冰"],
                 "type": "A"
               }
             ]
@@ -626,13 +498,17 @@
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
+        "62001571": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升20%，防御力提升20%。\n· 代理人命中敌人且触发暴击后，敌人的防御力降低20%，若其处于失衡状态，失衡易伤倍率提升35%。"
+        },
         "62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
-        "62001562": {
-          "title": "御雷贯芒",
-          "desc": "· 代理人攻击命中敌人时无视其20%的<color=#2EB6FF>电属性伤害抗性</color>。 \n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击率提升5%，暴击伤害提升20%，持续15秒，重复触发时刷新持续时间。"
+        "62001593": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，贯穿伤害提升20%，<color=#FFFFFF>[终结技]</color>造成的伤害提升50%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，攻击无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -647,10 +523,7 @@
                 "stun": 14002,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
+                "weakness": ["电", "风"],
                 "resistance": [],
                 "type": "B"
               },
@@ -661,10 +534,7 @@
                 "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
+                "weakness": ["火", "风"],
                 "resistance": [],
                 "type": "C"
               },
@@ -675,10 +545,7 @@
                 "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
+                "weakness": ["火", "风"],
                 "resistance": [],
                 "type": "C"
               }
@@ -691,26 +558,15 @@
                 "stun": 19541,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["电", "风"],
+                "resistance": ["冰"],
                 "type": "A"
               }
             ]
           ],
           "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "蜕生·蝎骸",
-              "bold": true
-            }
+            { "name": "小怪波", "bold": false },
+            { "name": "蜕生·蝎骸", "bold": true }
           ],
           "weakness": []
         },
@@ -725,12 +581,8 @@
                 "stun": 11170,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["以太"],
+                "resistance": ["冰"],
                 "type": "B"
               },
               {
@@ -740,12 +592,8 @@
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["以太"],
+                "resistance": ["冰"],
                 "type": "B"
               }
             ],
@@ -757,26 +605,15 @@
                 "stun": 14328,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太",
-                  "风"
-                ],
-                "resistance": [
-                  "电"
-                ],
+                "weakness": ["以太", "风"],
+                "resistance": ["电"],
                 "type": "A"
               }
             ]
           ],
           "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "秽蚀·色雷斯人",
-              "bold": true
-            }
+            { "name": "小怪波", "bold": false },
+            { "name": "秽蚀·色雷斯人", "bold": true }
           ],
           "weakness": []
         },
@@ -791,10 +628,7 @@
                 "stun": 8891,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "物理"
-                ],
+                "weakness": ["冰", "物理"],
                 "resistance": [],
                 "type": "B"
               },
@@ -805,10 +639,7 @@
                 "stun": 6783,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "物理"
-                ],
+                "weakness": ["冰", "物理"],
                 "resistance": [],
                 "type": "B"
               }
@@ -821,27 +652,15 @@
                 "stun": 17586,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰",
-                  "风"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["冰", "风"],
                 "type": "A"
               }
             ]
           ],
           "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "牲鬼·卫律使者",
-              "bold": true
-            }
+            { "name": "小怪波", "bold": false },
+            { "name": "牲鬼·卫律使者", "bold": true }
           ],
           "weakness": []
         }
@@ -877,10 +696,7 @@
                 "stun": 14002,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
+                "weakness": ["电", "风"],
                 "resistance": [],
                 "type": "B"
               },
@@ -891,13 +707,8 @@
                 "stun": 19541,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["电", "风"],
+                "resistance": ["冰"],
                 "type": "A"
               },
               {
@@ -907,10 +718,7 @@
                 "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
+                "weakness": ["火", "风"],
                 "resistance": [],
                 "type": "C"
               },
@@ -921,10 +729,7 @@
                 "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
+                "weakness": ["火", "风"],
                 "resistance": [],
                 "type": "C"
               }
@@ -964,12 +769,8 @@
                 "stun": 11170,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["以太"],
+                "resistance": ["冰"],
                 "type": "B"
               },
               {
@@ -979,12 +780,8 @@
                 "stun": 9335,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": [
-                  "冰"
-                ],
+                "weakness": ["以太"],
+                "resistance": ["冰"],
                 "type": "B"
               },
               {
@@ -994,13 +791,8 @@
                 "stun": 14328,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太",
-                  "风"
-                ],
-                "resistance": [
-                  "电"
-                ],
+                "weakness": ["以太", "风"],
+                "resistance": ["电"],
                 "type": "A"
               }
             ]
@@ -1039,10 +831,7 @@
                 "stun": 8891,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "物理"
-                ],
+                "weakness": ["冰", "物理"],
                 "resistance": [],
                 "type": "B"
               },
@@ -1053,10 +842,7 @@
                 "stun": 6783,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "物理"
-                ],
+                "weakness": ["冰", "物理"],
                 "resistance": [],
                 "type": "B"
               },
@@ -1067,14 +853,8 @@
                 "stun": 17586,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰",
-                  "风"
-                ],
+                "weakness": ["火", "物理"],
+                "resistance": ["冰", "风"],
                 "type": "A"
               }
             ]
