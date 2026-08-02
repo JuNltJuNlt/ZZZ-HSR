@@ -122,12 +122,31 @@ const renderWeaknessBars = (monster) => {
     });
 };
 
-const stageTotalHp = (stage) =>
-    Math.round(
-        (stage.monsters || []).reduce((total, wave) =>
-            total + wave.reduce((wt, m) => wt + m.hp * (m.hp_ratio_sum ?? 1) * (m.number ?? 1), 0), 0
-        )
-    );
+const stageTotalHp = (stage, isFifthFloor = false) => {
+    if (!isFifthFloor) {
+        return Math.round(
+            (stage.monsters || []).reduce((total, wave) =>
+                total + wave.reduce((wt, m) => wt + m.hp * (m.hp_ratio_sum ?? 1) * (m.number ?? 1), 0), 0
+            )
+        );
+    }
+    const allMonsters = (stage.monsters || []).flat();
+    let total = 0;
+    allMonsters.forEach(m => {
+        const info = monstersData.find(x => x.name === m.name);
+        if (info && (info.type === 'A' || info.type === 'S')) {
+            total += m.hp * (m.hp_ratio_sum ?? 1);
+        }
+    });
+    const bMonsters = allMonsters.filter(m => {
+        const info = monstersData.find(x => x.name === m.name);
+        return info && info.type === 'B';
+    });
+    if (bMonsters.length > 0) {
+        total += Math.max(...bMonsters.map(m => m.hp * (m.hp_ratio_sum ?? 1)));
+    }
+    return Math.round(total);
+};
 
 const renderMonsterCard = (monster, stageLevel) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
@@ -353,11 +372,21 @@ const renderBuffs = () => {
     });
 };
 
-const chartEntries = () => shiyuEntries.slice().reverse();
+const chartEntries = () => {
+    const all = shiyuEntries.slice().reverse();
+    if (currentFloor().stage_num === 5) {
+        return all.filter(e => {
+            const idx = indexData.entries[shiyuEntries.indexOf(e)];
+            return parseInt(idx.replace('.json', '')) >= 62038;
+        });
+    }
+    return all;
+};
 
 const renderCharts = () => {
     const floor = currentFloor();
     const floorNum = floor.stage_num;
+    const isFifth = floorNum === 5;
     const entries = chartEntries();
 
     const totalData = entries.map(e => {
@@ -365,7 +394,7 @@ const renderCharts = () => {
         const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
         const target = zone[keys[state.floorIndex]];
         if (!target) return 0;
-        return Object.values(target.layer_room).reduce((sum, room) => sum + stageTotalHp(room), 0);
+        return Object.values(target.layer_room).reduce((sum, room) => sum + stageTotalHp(room, isFifth), 0);
     });
 
     renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }]);
@@ -381,7 +410,7 @@ const renderCharts = () => {
                 const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
                 const target = zone[keys[state.floorIndex]];
                 if (!target || !target.layer_room[rk]) return 0;
-                return stageTotalHp(target.layer_room[rk]);
+                return stageTotalHp(target.layer_room[rk], isFifth);
             }),
         };
     });
