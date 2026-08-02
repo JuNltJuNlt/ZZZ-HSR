@@ -170,7 +170,7 @@ const renderMonsterCard = (monster, stageLevel) => {
                 className: "monright",
                 style: { textAlign: "center", marginTop: "4px" },
                 children: [
-                    create("span", { className: "monname", html: `<b><color style="color:#2545ba;">${stun}</color></b>` }),
+                    create("span", { className: "monname", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                     create("br"),
                     create("span", { className: "monname", html: `<b><color style="color:#cc0000;">${hp}</color></b>` }),
                     create("br"),
@@ -198,6 +198,36 @@ const renderWave = (wave, index, stageLevel, waveNames) => {
 
 const renderStage = (stageData, label, elements, index) => {
     const letter = ["a", "b", "c"][index];
+    
+    const allWeakness = new Set();
+    const allResistance = new Set();
+    (stageData.monsters || []).flat().forEach(m => {
+        (m.weakness || []).forEach(w => allWeakness.add(w));
+        (m.resistance || []).forEach(r => allResistance.add(r));
+    });
+    const roomWeakness = [...allWeakness].filter(w => !allResistance.has(w));
+    const roomResistance = [...allResistance].filter(r => !allWeakness.has(r));
+    
+    const summaryItems = [];
+    roomWeakness.forEach(el => summaryItems.push({ element: el, type: "weak" }));
+    roomResistance.forEach(el => summaryItems.push({ element: el, type: "resist" }));
+    
+    const summaryBars = summaryItems.length > 0 ? create("div", {
+        style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" },
+        children: summaryItems.map(item => {
+            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
+            return create("div", {
+                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" },
+                children: [
+                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
+                    create("span", {
+                        style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" }
+                    })
+                ]
+            });
+        })
+    }) : null;
+
     return create("div", {
         className: "u_l",
         children: [
@@ -211,7 +241,12 @@ const renderStage = (stageData, label, elements, index) => {
                                 children: [
                                     create("p", { text: `${label} Lv${stageData.level || 70}` }),
                                     ...renderElementIcons(elements, "elem_"),
-                                ],
+                                    create("p", {
+                                        text: text.chartSubtitle,
+                                        style: { fontSize: "0.75em", color: "#0066FF" },
+                                    }),
+                                    summaryBars,
+                                ].filter(Boolean),
                             }),
                         ],
                     }),
@@ -406,7 +441,7 @@ const bindEvents = () => {
         if (ver) ver.style.display = "none";
         if (floor) floor.style.display = "none";
         dl.style.display = "none";
-        html2canvas(document.querySelector(".content"), { scale: 2, backgroundColor: "#f7f9fc", useCORS: true }).then(canvas => {
+        html2canvas(document.querySelector("container"), { scale: 2, backgroundColor: "#29105a", useCORS: true }).then(canvas => {
             const a = document.createElement("a");
             a.download = `式舆防卫战_${currentEntry().name}.png`;
             a.href = canvas.toDataURL("image/png");
