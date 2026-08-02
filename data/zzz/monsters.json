@@ -1107,14 +1107,14 @@
             "resistance": ["火"]
         },
         {
-            "name": "骸鸟",
+            "name": "骇鸟",
             "type": "A",
             "category": 4,
             "weakness": ["电"],
             "resistance": ["冰"]
         },
         {
-            "name": "秽蚀·「骸鸟」",
+            "name": "秽蚀·「骇鸟」",
             "type": "A",
             "category": 4,
             "weakness": ["火", "电"],
@@ -1303,7 +1303,7 @@
             "resistance": ["冰", "风"]
         },
         {
-            "name": "遴命者·「骸鸟」",
+            "name": "遴命者·「骇鸟」",
             "type": "A",
             "category": 5,
             "weakness": ["冰", "物理"],
