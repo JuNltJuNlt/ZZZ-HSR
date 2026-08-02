@@ -201,12 +201,16 @@ const renderStage = (stageData, label, elements, index) => {
     
     const allWeakness = new Set();
     const allResistance = new Set();
+    const aResistance = new Set();
     (stageData.monsters || []).flat().forEach(m => {
         (m.weakness || []).forEach(w => allWeakness.add(w));
-        (m.resistance || []).forEach(r => allResistance.add(r));
+        (m.resistance || []).forEach(r => {
+            allResistance.add(r);
+            if (m.type === 'A' || m.type === 'S') aResistance.add(r);
+        });
     });
-    const roomWeakness = [...allWeakness].filter(w => !allResistance.has(w));
-    const roomResistance = [...allResistance].filter(r => !allWeakness.has(r));
+    const roomWeakness = [...allWeakness].filter(w => !allResistance.has(w) && !aResistance.has(w));
+    const roomResistance = [...new Set([...allResistance, ...aResistance])].filter(r => !allWeakness.has(r) || aResistance.has(r));
     
     const summaryItems = [];
     roomWeakness.forEach(el => summaryItems.push({ element: el, type: "weak" }));
