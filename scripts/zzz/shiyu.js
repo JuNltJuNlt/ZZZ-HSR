@@ -201,7 +201,7 @@ const renderStage = (stageData, label, elements, index) => {
                                 children: [
                                     create("div", {
                                         className: "emote_block_",
-                                        children: [create("div", { className: "emote_", children: [image("../../images/ZZZ%20images/emote/3.png", "", "")] })],
+                                        children: [create("div", { className: "emote_", children: [image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")] })],
                                     }),
                                     create("div", {
                                         className: "stage_waves",
@@ -394,6 +394,14 @@ const bindEvents = () => {
             if (floor) floor.style.display = "";
             dl.style.display = "";
         });
+    });
+
+    document.body.addEventListener("click", (event) => {
+        if (event.target.closest(".emote_block_")) {
+            document.querySelectorAll(".emote_").forEach(node => {
+                node.replaceChildren(image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", ""));
+            });
+        }
     });
 };
 
