@@ -85,20 +85,6 @@
     font-size: 16px;
 }
 
-::-webkit-scrollbar:horizontal {
-    display: none;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    background-color: #aaaaaa;
-    border-radius: 4px;
-}
-
-.title {
-    color: #fff;
-    cursor: pointer;
-}
-
 popdialog {
     height: 95%;
 }
@@ -307,14 +293,14 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
 }
 
-#trialChart, #hardFinalChart {
+#totalChart, #stageChart {
     width: 100%;
     min-width: 800px;
     height: 100%;
     overflow-x: scroll;
 }
 
-#trialChart::-webkit-scrollbar, #hardFinalChart::-webkit-scrollbar {
+#totalChart::-webkit-scrollbar, #stageChart::-webkit-scrollbar {
     width: 0px;
     height: 0px;
 }
@@ -502,16 +488,6 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (min-width: 900px) {
-    #trialStages > .u_l {
-        flex: 0 1 calc((100% - 72px) / 3);
-        max-width: calc((100% - 72px) / 3);
-    }
-
-    #finalSections .u_l_wrapper > .u_l {
-        flex: 0 1 calc((100% - 48px) / 2);
-        max-width: calc((100% - 48px) / 2);
-    }
-
     .u {
         margin: 6px 0px;
         max-width: 100%;
@@ -601,7 +577,4 @@ input::-webkit-inner-spin-button {
     .ver_text_name, .ver_text_time {
         font-size: 17px;
     }
-}
-
-@media screen and (min-width: 600px) {
 }
