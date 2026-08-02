@@ -145,6 +145,10 @@ const renderMonsterCard = (monster, stageLevel) => {
                 className: "monleft",
                 children: [
                     image(imagePath, "monicon hasimg", monster.name),
+                    create("div", {
+                        className: "monnameload hasimgname",
+                        children: [create("p", { text: monster.name })],
+                    }),
                     ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : []),
                 ],
             }),
@@ -408,6 +412,20 @@ const bindEvents = () => {
             });
         }
     });
+
+    document.body.addEventListener("mouseenter", (event) => {
+        const card = event.target.closest(".monster_card");
+        if (!card) return;
+        card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "");
+        card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "0.2");
+    }, true);
+
+    document.body.addEventListener("mouseleave", (event) => {
+        const card = event.target.closest(".monster_card");
+        if (!card) return;
+        card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "none");
+        card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "1");
+    }, true);
 };
 
 const init = async () => {
