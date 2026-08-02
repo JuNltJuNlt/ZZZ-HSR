@@ -476,7 +476,7 @@ const bindEvents = () => {
         if (ver) ver.style.display = "none";
         if (floor) floor.style.display = "none";
         dl.style.display = "none";
-        html2canvas(document.querySelector("container"), { scale: 2, backgroundColor: "#29105a", useCORS: true }).then(canvas => {
+        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
             const a = document.createElement("a");
             a.download = `式舆防卫战_${currentEntry().name}.png`;
             a.href = canvas.toDataURL("image/png");
