@@ -219,14 +219,14 @@ const renderCharts = () => {
     const oldEntries = allReversed.filter(e => isOldEntry(e));
     const newEntries = allReversed.filter(e => !isOldEntry(e));
 
-    const isOldFloor = oldEntries.length > 0 && Object.keys(oldEntries[0].zone).some(k => oldEntries[0].zone[k].stage_num === floorNum);
-    const activeEntries = isOldFloor ? oldEntries : newEntries;
+    const isOld = isOldEntry(currentEntry());
+    const activeEntries = isOld ? oldEntries : newEntries;
     const labels = activeEntries.map(e => entryLabel(e));
 
     const totalData = activeEntries.map(e => floorTotalHp(e.zone, floorNum));
     renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
 
-    const roomCount = floorNum >= 7 ? 3 : 2;
+    const roomCount = isOld ? 2 : (floorNum === 5 ? 3 : 2);
     const stageSeries = [];
     const colors = ["#cc0000", "#2545ba", "#4CAF50"];
     for (let i = 0; i < roomCount; i++) {
@@ -287,8 +287,9 @@ const bindEvents = () => {
     byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
     byId("togglePeakChart").addEventListener("click", () => {
         state.showPeakChart = !state.showPeakChart;
-        document.getElementById("peakChart").parentElement.style.display = state.showPeakChart ? "" : "none";
-        if (state.showPeakChart) renderCharts();
+        const container = document.getElementById("peakChartContainer");
+        container.style.display = state.showPeakChart ? "" : "none";
+        if (state.showPeakChart) setTimeout(() => renderCharts(), 100);
     });
     byId("downloadBtn").addEventListener("click", (e) => {
         e.preventDefault();
