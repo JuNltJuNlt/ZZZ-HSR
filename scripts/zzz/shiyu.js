@@ -259,21 +259,22 @@ const renderCharts = () => {
         for (let i = 0; i < roomCount; i++) {
             const data = [];
             oldEntries.forEach(e => data.push(roomHp(e.zone, merge.old, i)));
-            if (floorNum === 7 && i === 2) {
-                stageSeries.push({
-                    name: text.stageLabels[i] || `房间${i + 1}`,
-                    color: colors[i],
-                    data: [...oldEntries.map(() => null), ...newEntries.map(e => roomHp(e.zone, merge.new, i))],
-                });
-            } else {
-                newEntries.forEach(e => data.push(roomHp(e.zone, merge.new, i)));
-                stageSeries.push({
-                    name: text.stageLabels[i] || `房间${i + 1}`,
-                    color: colors[i],
-                    data,
-                });
-            }
+            newEntries.forEach(e => data.push(roomHp(e.zone, merge.new, i)));
+            stageSeries.push({
+                name: text.stageLabels[i] || `房间${i + 1}`,
+                color: colors[i],
+                data,
+            });
         }
+
+        if (floorNum === 7) {
+            stageSeries[2] = {
+                name: text.stageLabels[2] || "房间三",
+                color: colors[2],
+                data: [...oldEntries.map(() => null), ...newEntries.map(e => roomHp(e.zone, merge.new, 2))],
+            };
+        }
+
         renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, stageLabels);
     }
 };
