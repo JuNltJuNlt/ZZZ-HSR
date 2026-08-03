@@ -227,14 +227,12 @@ const renderCharts = () => {
     const oldEntries = allReversed.filter(e => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) <= 62037);
     const newEntries = allReversed.filter(e => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) >= 62038);
 
-    // 总血量图：所有期合并一条线
     const allEntries = [...oldEntries, ...newEntries];
     const totalLabels = allEntries.map(e => (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
     const totalData = allEntries.map(e => floorTotalHp(e.zone, merge.old || merge.new));
 
     renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], totalLabels);
 
-    // 各间血量图
     const roomCount = merge.solo ? 2 : Math.max(
         oldEntries.length > 0 ? Object.keys(oldEntries[0].zone[Object.keys(oldEntries[0].zone).find(k => oldEntries[0].zone[k].stage_num === (merge.old || merge.new))]?.layer_room || {}).length : 0,
         newEntries.length > 0 ? Object.keys(newEntries[0].zone[Object.keys(newEntries[0].zone).find(k => newEntries[0].zone[k].stage_num === (merge.new || merge.old))]?.layer_room || {}).length : 0,
@@ -244,38 +242,22 @@ const renderCharts = () => {
     const stageLabels = [];
     const colors = ["#cc0000", "#2545ba", "#4CAF50"];
 
+    oldEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
+    newEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
+
     for (let i = 0; i < roomCount; i++) {
         const data = [];
-        oldEntries.forEach(e => {
-            const num = parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
-            if (num <= 62037) {
-                data.push(roomHp(e.zone, merge.old, i));
-                if (i === 0 && stageLabels.length < oldEntries.length + newEntries.length) {
-                    // 只在第一个循环时添加labels
-                }
-            }
-        });
-        newEntries.forEach(e => {
-            const num = parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
-            if (num >= 62038) {
-                data.push(roomHp(e.zone, merge.new, i));
-            }
-        });
-        
-        // 第7层特殊：房间三只有新版才有
+        oldEntries.forEach(e => data.push(roomHp(e.zone, merge.old, i)));
         if (floorNum === 7 && i === 2) {
-            const data3 = [];
-            oldEntries.forEach(() => data3.push(null));
-            newEntries.forEach(e => data3.push(roomHp(e.zone, merge.new, i)));
-            stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data: data3 });
+            oldEntries.forEach(() => data.push(null));
+        }
+        newEntries.forEach(e => data.push(roomHp(e.zone, merge.new || merge.old, i)));
+        if (floorNum === 7 && i === 2) {
+            stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data: [...oldEntries.map(() => null), ...newEntries.map(e => roomHp(e.zone, merge.new, i))] });
         } else {
             stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data });
         }
     }
-
-    // 生成labels
-    oldEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
-    newEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
 
     renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, stageLabels);
 };
@@ -299,31 +281,20 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }, true);
 };
 
-const renderFloor = () => { renderFloorText(); renderBuffs(); renderAllStages(); renderCharts(); };
-const render = () => { renderScheduleSelect(); renderScheduleHeader(); renderFloor(); };
-
-const bindEvents = () => {
-    byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
-    byId("nextSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex - 1));
-    byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
-    byId("prevFloor").addEventListener("click", () => setFloor(state.floorIndex - 1));
-    byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
-    byId("downloadBtn").addEventListener("click", (e) => {
-        e.preventDefault();
-        const title = document.querySelector(".content_title"), ver = document.querySelector(".ver"), floor = document.querySelector(".floor_select"), dl = byId("downloadBtn");
-        if (title) title.style.marginBottom = "0"; if (ver) ver.style.display = "none"; if (floor) floor.style.display = "none"; dl.style.display = "none";
-        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
-            const a = document.createElement("a"); a.download = `式舆防卫战_${currentEntry().name}.png`; a.href = canvas.toDataURL("image/png"); a.click();
-            if (title) title.style.marginBottom = ""; if (ver) ver.style.display = ""; if (floor) floor.style.display = ""; dl.style.display = "";
-        });
-    });
-    document.body.addEventListener("click", (event) => { if (event.target.closest(".emote_block_")) document.querySelectorAll(".emote_").forEach(node => { node.replaceChildren(image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")); }); });
-    document.body.addEventListener("mouseenter", (event) => { const card = event.target.closest(".monster_card"); if (!card) return; card.querySelectorAll(".hasimgname").forEach(node => node.style.display = ""); card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "0.2"); }, true);
-    document.body.addEventListener("mouseleave", (event) => { const card = event.target.closest(".monster_card"); if (!card) return; card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "none"); card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "1"); }, true);
+const renderFloor = () => {
+    renderFloorText();
+    renderBuffs();
+    renderAllStages();
+    renderCharts();
 };
 
-const init = async () => { initMenu(); await loadData(); bindEvents(); state.scheduleIndex = 0; const zone = currentEntry().zone; const keys = Object.keys(zone).filter(k => k.length <= 7); state.floorIndex = keys.length - 1; render(); };
-init().catch(console.error);const bindEvents = () => {
+const render = () => {
+    renderScheduleSelect();
+    renderScheduleHeader();
+    renderFloor();
+};
+
+const bindEvents = () => {
     byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
     byId("nextSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex - 1));
     byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
@@ -339,13 +310,7 @@ init().catch(console.error);const bindEvents = () => {
         if (ver) ver.style.display = "none";
         if (floor) floor.style.display = "none";
         dl.style.display = "none";
-        html2canvas(document.body, {
-            scale: 2,
-            backgroundColor: "#29105a",
-            useCORS: true,
-            windowHeight: document.body.scrollHeight,
-            windowWidth: document.body.scrollWidth
-        }).then(canvas => {
+        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
             const a = document.createElement("a");
             a.download = `式舆防卫战_${currentEntry().name}.png`;
             a.href = canvas.toDataURL("image/png");
@@ -356,7 +321,6 @@ init().catch(console.error);const bindEvents = () => {
             dl.style.display = "";
         });
     });
-
     document.body.addEventListener("click", (event) => {
         if (event.target.closest(".emote_block_")) {
             document.querySelectorAll(".emote_").forEach(node => {
@@ -364,14 +328,12 @@ init().catch(console.error);const bindEvents = () => {
             });
         }
     });
-
     document.body.addEventListener("mouseenter", (event) => {
         const card = event.target.closest(".monster_card");
         if (!card) return;
         card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "");
         card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "0.2");
     }, true);
-
     document.body.addEventListener("mouseleave", (event) => {
         const card = event.target.closest(".monster_card");
         if (!card) return;
