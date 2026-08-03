@@ -230,7 +230,8 @@ const renderCharts = () => {
     const allEntries = [...oldEntries, ...newEntries];
     const totalLabels = allEntries.map(e => (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
     const totalData = allEntries.map(e => {
-        const floorToUse = merge.solo ? merge.old : (parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) <= 62037 ? merge.old : merge.new);
+        const num = parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
+        const floorToUse = merge.solo ? merge.old : (num <= 62037 ? merge.old : merge.new);
         return floorTotalHp(e.zone, floorToUse);
     });
 
@@ -240,10 +241,9 @@ const renderCharts = () => {
     allEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
 
     if (merge.solo) {
-        const roomCount = 2;
         const stageSeries = [];
         const colors = ["#cc0000", "#2545ba"];
-        for (let i = 0; i < roomCount; i++) {
+        for (let i = 0; i < 2; i++) {
             stageSeries.push({
                 name: text.stageLabels[i] || `房间${i + 1}`,
                 color: colors[i],
@@ -257,24 +257,23 @@ const renderCharts = () => {
         const colors = ["#cc0000", "#2545ba", "#4CAF50"];
 
         for (let i = 0; i < roomCount; i++) {
-            const data = [];
-            oldEntries.forEach(e => data.push(roomHp(e.zone, merge.old, i)));
-            newEntries.forEach(e => data.push(roomHp(e.zone, merge.new, i)));
-            stageSeries.push({
-                name: text.stageLabels[i] || `房间${i + 1}`,
-                color: colors[i],
-                data,
-            });
+            if (floorNum === 7 && i === 2) {
+                stageSeries.push({
+                    name: text.stageLabels[i] || `房间${i + 1}`,
+                    color: colors[i],
+                    data: [...oldEntries.map(() => null), ...newEntries.map(e => roomHp(e.zone, merge.new, i))],
+                });
+            } else {
+                const data = [];
+                oldEntries.forEach(e => data.push(roomHp(e.zone, merge.old, i)));
+                newEntries.forEach(e => data.push(roomHp(e.zone, merge.new, i)));
+                stageSeries.push({
+                    name: text.stageLabels[i] || `房间${i + 1}`,
+                    color: colors[i],
+                    data,
+                });
+            }
         }
-
-        if (floorNum === 7) {
-            stageSeries[2] = {
-                name: text.stageLabels[2] || "房间三",
-                color: colors[2],
-                data: [...oldEntries.map(() => null), ...newEntries.map(e => roomHp(e.zone, merge.new, 2))],
-            };
-        }
-
         renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, stageLabels);
     }
 };
