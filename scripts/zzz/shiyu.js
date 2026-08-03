@@ -250,6 +250,10 @@ const renderCharts = () => {
 const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
+    if (targetId === "peakChart") {
+        chartElement.style.width = chartElement.parentElement.offsetWidth + "px";
+        chartElement.style.height = "600px";
+    }
     const existingChart = window.echarts.getInstanceByDom(chartElement);
     if (existingChart) window.echarts.dispose(existingChart);
     const chartInstance = window.echarts.init(chartElement);
@@ -288,8 +292,17 @@ const bindEvents = () => {
     byId("togglePeakChart").addEventListener("click", () => {
         state.showPeakChart = !state.showPeakChart;
         const container = document.getElementById("peakChartContainer");
-        container.style.display = state.showPeakChart ? "" : "none";
-        if (state.showPeakChart) setTimeout(() => renderCharts(), 100);
+        if (state.showPeakChart) {
+            container.style.display = "";
+            setTimeout(() => {
+                const peakChart = document.getElementById("peakChart");
+                peakChart.style.width = container.offsetWidth + "px";
+                peakChart.style.height = "600px";
+                renderCharts();
+            }, 200);
+        } else {
+            container.style.display = "none";
+        }
     });
     byId("downloadBtn").addEventListener("click", (e) => {
         e.preventDefault();
