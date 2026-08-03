@@ -13,6 +13,7 @@ const text = {
     title: "式舆防卫战",
     chartTotalTitle: "总血量演化",
     chartStageTitle: "各间血量演化",
+    chartPeakTitle: "最高层总血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     waveNames: ["第一波", "第二波", "第三波", "第四波"],
     stageLabels: ["房间一", "房间二", "房间三"],
@@ -21,16 +22,7 @@ const text = {
 const state = {
     scheduleIndex: 0,
     floorIndex: 0,
-};
-
-const floorMergeMap = {
-    1: { old: 1, new: 1 },
-    2: { old: 2, new: null, solo: true },
-    3: { old: 3, new: 2 },
-    4: { old: 4, new: null, solo: true },
-    5: { old: 5, new: 3 },
-    6: { old: 6, new: 4 },
-    7: { old: 7, new: 5 },
+    showPeakChart: false,
 };
 
 const dataUrl = (fileName) => `${DATA_ROOT}/${fileName}`;
@@ -147,6 +139,9 @@ const roomHp = (zone, floorNum, roomIndex) => {
     return stageTotalHp(zone[fkey].layer_room[rooms[roomIndex]]);
 };
 
+const isOldEntry = (e) => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) <= 62037;
+const entryLabel = (e) => (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '');
+
 const renderMonsterCard = (monster, stageLevel) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "C";
@@ -220,61 +215,35 @@ const renderBuffs = () => {
 
 const renderCharts = () => {
     const floorNum = currentFloor().stage_num;
-    const merge = floorMergeMap[floorNum];
-    if (!merge) return;
-
     const allReversed = shiyuEntries.slice().reverse();
-    const oldEntries = allReversed.filter(e => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) <= 62037);
-    const newEntries = allReversed.filter(e => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) >= 62038);
+    const oldEntries = allReversed.filter(e => isOldEntry(e));
+    const newEntries = allReversed.filter(e => !isOldEntry(e));
 
-    const allEntries = [...oldEntries, ...newEntries];
-    const totalLabels = allEntries.map(e => (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
-    const totalData = allEntries.map(e => {
-        const num = parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
-        const floorToUse = merge.solo ? merge.old : (num <= 62037 ? merge.old : merge.new);
-        return floorTotalHp(e.zone, floorToUse);
-    });
+    const isOldFloor = oldEntries.length > 0 && Object.keys(oldEntries[0].zone).some(k => oldEntries[0].zone[k].stage_num === floorNum);
+    const activeEntries = isOldFloor ? oldEntries : newEntries;
+    const labels = activeEntries.map(e => entryLabel(e));
 
-    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], totalLabels);
+    const totalData = activeEntries.map(e => floorTotalHp(e.zone, floorNum));
+    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
 
-    const stageLabels = [];
-    allEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
+    const roomCount = floorNum >= 7 ? 3 : 2;
+    const stageSeries = [];
+    const colors = ["#cc0000", "#2545ba", "#4CAF50"];
+    for (let i = 0; i < roomCount; i++) {
+        const data = activeEntries.map(e => roomHp(e.zone, floorNum, i));
+        stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data });
+    }
+    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, labels);
 
-    if (merge.solo) {
-        const stageSeries = [];
-        const colors = ["#cc0000", "#2545ba"];
-        for (let i = 0; i < 2; i++) {
-            stageSeries.push({
-                name: text.stageLabels[i] || `房间${i + 1}`,
-                color: colors[i],
-                data: oldEntries.map(e => roomHp(e.zone, merge.old, i)),
-            });
-        }
-        renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, stageLabels.slice(0, oldEntries.length));
-    } else {
-        const roomCount = floorNum === 7 ? 3 : 2;
-        const stageSeries = [];
-        const colors = ["#cc0000", "#2545ba", "#4CAF50"];
-
-        for (let i = 0; i < roomCount; i++) {
-            if (floorNum === 7 && i === 2) {
-                stageSeries.push({
-                    name: text.stageLabels[i] || `房间${i + 1}`,
-                    color: colors[i],
-                    data: [...oldEntries.map(() => null), ...newEntries.map(e => roomHp(e.zone, merge.new, i))],
-                });
-            } else {
-                const data = [];
-                oldEntries.forEach(e => data.push(roomHp(e.zone, merge.old, i)));
-                newEntries.forEach(e => data.push(roomHp(e.zone, merge.new, i)));
-                stageSeries.push({
-                    name: text.stageLabels[i] || `房间${i + 1}`,
-                    color: colors[i],
-                    data,
-                });
-            }
-        }
-        renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, stageLabels);
+    if (state.showPeakChart) {
+        const allEntries = [...oldEntries, ...newEntries];
+        const peakLabels = allEntries.map(e => entryLabel(e));
+        const peakData = allEntries.map(e => {
+            const num = parseInt(entryLabel(e));
+            const floorToUse = num <= 62037 ? 7 : 5;
+            return floorTotalHp(e.zone, floorToUse);
+        });
+        renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels);
     }
 };
 
@@ -316,6 +285,11 @@ const bindEvents = () => {
     byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
     byId("prevFloor").addEventListener("click", () => setFloor(state.floorIndex - 1));
     byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
+    byId("togglePeakChart").addEventListener("click", () => {
+        state.showPeakChart = !state.showPeakChart;
+        document.getElementById("peakChart").parentElement.style.display = state.showPeakChart ? "" : "none";
+        if (state.showPeakChart) renderCharts();
+    });
     byId("downloadBtn").addEventListener("click", (e) => {
         e.preventDefault();
         const title = document.querySelector(".content_title");
