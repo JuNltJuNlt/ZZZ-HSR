@@ -1511,6 +1511,13 @@
             "category": 5,
             "weakness": ["冰", "风"],
             "resistance": ["物理"]
+        },
+        {
+            "name": "自律战术单位·「征服者」",
+            "type": "A",
+            "category": 4,
+            "weakness": ["电", "风"],
+            "resistance": ["物理"]
         }
     ]
 }
