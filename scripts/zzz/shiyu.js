@@ -23,6 +23,16 @@ const state = {
     floorIndex: 0,
 };
 
+const floorMergeMap = {
+    1: { old: 1, new: 1 },
+    2: { old: 2, new: null, solo: true },
+    3: { old: 3, new: 2 },
+    4: { old: 4, new: null, solo: true },
+    5: { old: 5, new: 3 },
+    6: { old: 6, new: 4 },
+    7: { old: 7, new: 5 },
+};
+
 const dataUrl = (fileName) => `${DATA_ROOT}/${fileName}`;
 
 const fetchJson = async (fileName) => {
@@ -122,30 +132,41 @@ const renderWeaknessBars = (monster) => {
     });
 };
 
-const stageTotalHp = (stage, isFifthFloor = false) => {
-    if (!isFifthFloor) {
-        return Math.round(
-            (stage.monsters || []).reduce((total, wave) =>
-                total + wave.reduce((wt, m) => wt + m.hp * (m.hp_ratio_sum ?? 1) * (m.number ?? 1), 0), 0
-            )
-        );
-    }
+const stageTotalHp = (stage) => {
     const allMonsters = (stage.monsters || []).flat();
-    let total = 0;
-    allMonsters.forEach(m => {
+    const aList = allMonsters.filter(m => {
         const info = monstersData.find(x => x.name === m.name);
-        if (info && (info.type === 'A' || info.type === 'S')) {
-            total += m.hp * (m.hp_ratio_sum ?? 1);
-        }
+        return info && (info.type === 'A' || info.type === 'S');
     });
-    const bMonsters = allMonsters.filter(m => {
+    const bList = allMonsters.filter(m => {
         const info = monstersData.find(x => x.name === m.name);
         return info && info.type === 'B';
     });
-    if (bMonsters.length > 0) {
-        total += Math.max(...bMonsters.map(m => m.hp * (m.hp_ratio_sum ?? 1)));
-    }
+    const cList = allMonsters.filter(m => {
+        const info = monstersData.find(x => x.name === m.name);
+        return info && info.type === 'C';
+    });
+
+    let total = 0;
+    if (aList.length > 0) total += Math.max(...aList.map(m => m.hp * (m.hp_ratio_sum ?? 1)));
+    if (bList.length > 0) total += Math.max(...bList.map(m => m.hp * (m.hp_ratio_sum ?? 1)));
+    if (cList.length > 0) total += cList.reduce((s, m) => s + m.hp * (m.hp_ratio_sum ?? 1), 0) / cList.length;
+
     return Math.round(total);
+};
+
+const floorTotalHp = (zone, floorNum) => {
+    const fkey = Object.keys(zone).find(k => zone[k].stage_num === floorNum);
+    if (!fkey) return 0;
+    return Object.values(zone[fkey].layer_room).reduce((sum, room) => sum + stageTotalHp(room), 0);
+};
+
+const roomHp = (zone, floorNum, roomIndex) => {
+    const fkey = Object.keys(zone).find(k => zone[k].stage_num === floorNum);
+    if (!fkey) return 0;
+    const rooms = Object.keys(zone[fkey].layer_room).sort();
+    if (!rooms[roomIndex]) return 0;
+    return stageTotalHp(zone[fkey].layer_room[rooms[roomIndex]]);
 };
 
 const renderMonsterCard = (monster, stageLevel) => {
@@ -162,9 +183,7 @@ const renderMonsterCard = (monster, stageLevel) => {
         children: [create("p", { text: monster.name })],
     });
 
-    img.addEventListener("load", () => {
-        nameLayer.style.display = "none";
-    });
+    img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => {
         img.style.opacity = "0";
         img.classList.remove("hasimg");
@@ -372,85 +391,117 @@ const renderBuffs = () => {
     });
 };
 
-const chartEntries = () => {
-    const all = shiyuEntries.slice().reverse();
-    const floorNum = currentFloor().stage_num;
-    if (floorNum === 5) {
-        return all.filter(e => {
-            const idx = indexData.entries[shiyuEntries.indexOf(e)];
-            return parseInt(idx.replace('.json', '')) >= 62038;
-        });
-    }
-    if (floorNum >= 6) {
-        return all.filter(e => {
-            const idx = indexData.entries[shiyuEntries.indexOf(e)];
-            return parseInt(idx.replace('.json', '')) <= 62037;
-        });
-    }
-    return all;
-};
-
 const renderCharts = () => {
-    const floor = currentFloor();
-    const floorNum = floor.stage_num;
-    const isFifth = floorNum === 5;
-    const entries = chartEntries();
+    const floorNum = currentFloor().stage_num;
+    const merge = floorMergeMap[floorNum];
+    if (!merge) return;
 
-    const totalData = entries.map(e => {
-        const zone = e.zone;
-        const f5key = Object.keys(zone).find(k => zone[k].stage_num === floorNum);
-        if (!f5key) return 0;
-        const rooms = zone[f5key].layer_room;
-        return Object.values(rooms).reduce((sum, room) => sum + stageTotalHp(room, isFifth), 0);
+    const allReversed = shiyuEntries.slice().reverse();
+    const oldEntries = allReversed.filter(e => {
+        const idx = indexData.entries[shiyuEntries.indexOf(e)];
+        return parseInt(idx.replace('.json', '')) <= 62037;
+    });
+    const newEntries = allReversed.filter(e => {
+        const idx = indexData.entries[shiyuEntries.indexOf(e)];
+        return parseInt(idx.replace('.json', '')) >= 62038;
     });
 
-    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }]);
+    const totalLabels = [];
+    const totalSeries = [];
+    const stageLabels = [];
+    const stageSeries = [];
+    const roomCount = Object.keys(currentFloor().layer_room).length;
 
-    const rooms = Object.keys(floor.layer_room).sort();
-    const stageSeries = rooms.map((rk, i) => {
-        const color = ["#cc0000", "#2545ba", "#4CAF50"][i];
-        return {
-            name: text.stageLabels[i] || `房间${i + 1}`,
-            color,
-            data: entries.map(e => {
-                const zone = e.zone;
-                const f5key = Object.keys(zone).find(k => zone[k].stage_num === floorNum);
-                if (!f5key) return 0;
-                const entryRooms = Object.keys(zone[f5key].layer_room).sort();
-                if (!entryRooms[i]) return 0;
-                return stageTotalHp(zone[f5key].layer_room[entryRooms[i]], isFifth);
-            }),
-        };
-    });
-    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries);
+    if (merge.solo) {
+        oldEntries.forEach(e => {
+            totalLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
+        });
+        totalSeries.push({
+            name: "总血量", color: "#2545ba",
+            data: oldEntries.map(e => floorTotalHp(e.zone, merge.old)),
+        });
+        for (let i = 0; i < roomCount; i++) {
+            stageSeries.push({
+                name: text.stageLabels[i] || `房间${i + 1}`,
+                color: ["#cc0000", "#2545ba", "#4CAF50"][i],
+                data: oldEntries.map(e => roomHp(e.zone, merge.old, i)),
+            });
+        }
+    } else {
+        oldEntries.forEach(e => {
+            const lbl = (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '') + "(旧)";
+            totalLabels.push(lbl);
+            stageLabels.push(lbl);
+        });
+        newEntries.forEach(e => {
+            const lbl = (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '') + "(新)";
+            totalLabels.push(lbl);
+            stageLabels.push(lbl);
+        });
+        totalSeries.push({
+            name: "旧版总血量", color: "#2545ba",
+            data: oldEntries.map(e => floorTotalHp(e.zone, merge.old)),
+        });
+        totalSeries.push({
+            name: "新版总血量", color: "#cc0000",
+            data: newEntries.map(e => floorTotalHp(e.zone, merge.new)),
+        });
+        for (let i = 0; i < roomCount; i++) {
+            stageSeries.push({
+                name: `旧版${text.stageLabels[i] || `房间${i + 1}`}`,
+                color: "#2545ba",
+                data: oldEntries.map(e => roomHp(e.zone, merge.old, i)),
+            });
+            stageSeries.push({
+                name: `新版${text.stageLabels[i] || `房间${i + 1}`}`,
+                color: ["#cc0000", "#4CAF50", "#FF9800"][i],
+                data: newEntries.map(e => roomHp(e.zone, merge.new, i)),
+            });
+        }
+    }
+
+    const allLabels = merge.solo ? totalLabels : stageLabels;
+    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, totalSeries, totalLabels);
+    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, allLabels);
 };
 
-const renderLineChart = (targetId, title, seriesData) => {
+const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
-    const entries = chartEntries();
-    if (!chartElement || !entries.length || !window.echarts) return;
+    if (!chartElement || !seriesData.length || !window.echarts) return;
 
     const existingChart = window.echarts.getInstanceByDom(chartElement);
     if (existingChart) window.echarts.dispose(existingChart);
 
     const chartInstance = window.echarts.init(chartElement);
-    const activeIndex = entries.findIndex(e => e.name === currentEntry().name);
 
     chartInstance.setOption({
-        title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
+        title: {
+            text: title,
+            subtext: text.chartSubtitle,
+            left: "center",
+            textStyle: { color: "#000" },
+            subtextStyle: { color: "#2545ba" },
+            top: "8%"
+        },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-        xAxis: { type: "category", data: entries.map(e => (indexData && indexData.entries[shiyuEntries.indexOf(e)] || e.name || "").replace('.json', '')), axisLabel: { color: "#000", interval: 0, rotate: 30 } },
+        xAxis: {
+            type: "category",
+            data: labels,
+            axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 }
+        },
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({
-            name: s.name, type: "line", data: s.data,
-            lineStyle: { color: s.color }, itemStyle: { color: s.color },
+            name: s.name,
+            type: "line",
+            data: s.data,
+            lineStyle: { color: s.color },
+            itemStyle: { color: s.color },
         })),
+        dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
     }, true);
-
-    chartInstance.dispatchAction({ type: "showTip", dataIndex: activeIndex >= 0 ? activeIndex : entries.length - 1, seriesIndex: 0 });
 };
 
 const renderFloor = () => {
@@ -483,7 +534,13 @@ const bindEvents = () => {
         if (ver) ver.style.display = "none";
         if (floor) floor.style.display = "none";
         dl.style.display = "none";
-        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
+        html2canvas(document.body, {
+            scale: 2,
+            backgroundColor: "#29105a",
+            useCORS: true,
+            windowHeight: document.body.scrollHeight,
+            windowWidth: document.body.scrollWidth
+        }).then(canvas => {
             const a = document.createElement("a");
             a.download = `式舆防卫战_${currentEntry().name}.png`;
             a.href = canvas.toDataURL("image/png");
