@@ -60,19 +60,12 @@ const setSchedule = (index) => {
     const prevKeys = Object.keys(prevZone).filter(k => k.length <= 7);
     const prevMaxFloor = prevKeys.length;
     const prevFloor = state.floorIndex;
-
     state.scheduleIndex = wrapIndex(index, shiyuEntries.length);
-    
     const newZone = currentEntry().zone;
     const newKeys = Object.keys(newZone).filter(k => k.length <= 7);
     const newMaxFloor = newKeys.length;
-    
-    if (prevFloor >= newMaxFloor) {
-        state.floorIndex = newMaxFloor - 1;
-    } else {
-        state.floorIndex = prevFloor;
-    }
-    
+    if (prevFloor >= newMaxFloor) state.floorIndex = newMaxFloor - 1;
+    else state.floorIndex = prevFloor;
     render();
 };
 
@@ -100,8 +93,7 @@ const renderScheduleHeader = () => {
 };
 
 const renderFloorText = () => {
-    const floor = currentFloor();
-    byId("floorText").textContent = String(floor.stage_num);
+    byId("floorText").textContent = String(currentFloor().stage_num);
 };
 
 const renderElementIcons = (elements = [], className = "elem_") =>
@@ -114,7 +106,6 @@ const renderWeaknessBars = (monster) => {
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
     if (items.length === 0) return null;
-
     return create("div", {
         style: { display: "flex", justifyContent: "center", gap: "3px", marginTop: "4px" },
         children: items.map(item => {
@@ -123,9 +114,7 @@ const renderWeaknessBars = (monster) => {
                 style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
                 children: [
                     image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
-                    create("span", {
-                        style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" }
-                    })
+                    create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
                 ]
             });
         })
@@ -134,24 +123,13 @@ const renderWeaknessBars = (monster) => {
 
 const stageTotalHp = (stage) => {
     const allMonsters = (stage.monsters || []).flat();
-    const aList = allMonsters.filter(m => {
-        const info = monstersData.find(x => x.name === m.name);
-        return info && (info.type === 'A' || info.type === 'S');
-    });
-    const bList = allMonsters.filter(m => {
-        const info = monstersData.find(x => x.name === m.name);
-        return info && info.type === 'B';
-    });
-    const cList = allMonsters.filter(m => {
-        const info = monstersData.find(x => x.name === m.name);
-        return info && info.type === 'C';
-    });
-
+    const aList = allMonsters.filter(m => { const info = monstersData.find(x => x.name === m.name); return info && (info.type === 'A' || info.type === 'S'); });
+    const bList = allMonsters.filter(m => { const info = monstersData.find(x => x.name === m.name); return info && info.type === 'B'; });
+    const cList = allMonsters.filter(m => { const info = monstersData.find(x => x.name === m.name); return info && info.type === 'C'; });
     let total = 0;
     if (aList.length > 0) total += Math.max(...aList.map(m => m.hp * (m.hp_ratio_sum ?? 1)));
     if (bList.length > 0) total += Math.max(...bList.map(m => m.hp * (m.hp_ratio_sum ?? 1)));
     if (cList.length > 0) total += cList.reduce((s, m) => s + m.hp * (m.hp_ratio_sum ?? 1), 0) / cList.length;
-
     return Math.round(total);
 };
 
@@ -176,196 +154,58 @@ const renderMonsterCard = (monster, stageLevel) => {
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
     const def = monster.defense || 0;
     const stun = monster.stun || 0;
-
     const img = image(imagePath, "monicon hasimg", monster.name);
-    const nameLayer = create("div", {
-        className: "monnameload hasimgname",
-        children: [create("p", { text: monster.name })],
-    });
-
+    const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monster.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
-    img.addEventListener("error", () => {
-        img.style.opacity = "0";
-        img.classList.remove("hasimg");
-        nameLayer.classList.remove("hasimgname");
-        img.parentElement.classList.add("monicon");
-    });
-
+    img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
     return create("span", {
-        className: "monster_card hover-shadow",
-        attrs: { "data-lv": stageLevel },
+        className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
-            create("div", {
-                className: "monleft",
-                children: [
-                    img,
-                    nameLayer,
-                    ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : []),
-                ],
-            }),
+            create("div", { className: "monleft", children: [img, nameLayer, ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : [])] }),
             renderWeaknessBars(monster),
-            create("div", {
-                className: "monright",
-                style: { textAlign: "center", marginTop: "4px" },
-                children: [
-                    create("span", { className: "monname", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
-                    create("br"),
-                    create("span", { className: "monname", html: `<b><color style="color:#cc0000;">${hp}</color></b>` }),
-                    create("br"),
-                    create("span", { className: "monname", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
-                ],
-            }),
+            create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
+                create("span", { className: "monname", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
+                create("br"),
+                create("span", { className: "monname", html: `<b><color style="color:#cc0000;">${hp}</color></b>` }),
+                create("br"),
+                create("span", { className: "monname", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
+            ]}),
         ].filter(Boolean),
     });
 };
 
 const renderWave = (wave, index, stageLevel, waveNames) => {
     const waveName = waveNames?.[index];
-    const displayName = waveName 
-        ? (waveName.bold ? `<b>${waveName.name}</b>` : waveName.name)
-        : (text.waveNames[index] || `第${index + 1}波`);
-    
-    return create("div", {
-        className: "wave_wrap",
-        children: [
-            create("p", { className: "wave_name", html: displayName }),
-            create("div", { className: "wave_monsters", children: wave.map(m => renderMonsterCard(m, stageLevel)) }),
-        ],
-    });
+    const displayName = waveName ? (waveName.bold ? `<b>${waveName.name}</b>` : waveName.name) : (text.waveNames[index] || `第${index + 1}波`);
+    return create("div", { className: "wave_wrap", children: [create("p", { className: "wave_name", html: displayName }), create("div", { className: "wave_monsters", children: wave.map(m => renderMonsterCard(m, stageLevel)) })] });
 };
 
 const renderStage = (stageData, label, elements, index) => {
     const letter = ["a", "b", "c"][index];
-    
-    const allWeakness = new Set();
-    const allResistance = new Set();
-    const aResistance = new Set();
+    const allWeakness = new Set(); const allResistance = new Set(); const aResistance = new Set();
     (stageData.monsters || []).flat().forEach(m => {
         (m.weakness || []).forEach(w => allWeakness.add(w));
-        (m.resistance || []).forEach(r => {
-            allResistance.add(r);
-            const info = monstersData.find(x => x.name === m.name);
-            if (info && (info.type === 'A' || info.type === 'S')) aResistance.add(r);
-        });
+        (m.resistance || []).forEach(r => { allResistance.add(r); const info = monstersData.find(x => x.name === m.name); if (info && (info.type === 'A' || info.type === 'S')) aResistance.add(r); });
     });
     const roomWeakness = [...allWeakness].filter(w => !allResistance.has(w) && !aResistance.has(w));
     const roomResistance = [...new Set([...allResistance, ...aResistance])].filter(r => !allWeakness.has(r) || aResistance.has(r));
-    
-    const summaryItems = [];
-    roomWeakness.forEach(el => summaryItems.push({ element: el, type: "weak" }));
-    roomResistance.forEach(el => summaryItems.push({ element: el, type: "resist" }));
-    
-    const summaryBars = summaryItems.length > 0 ? create("div", {
-        style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" },
-        children: summaryItems.map(item => {
-            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-            return create("div", {
-                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" },
-                children: [
-                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
-                    create("span", {
-                        style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" }
-                    })
-                ]
-            });
-        })
-    }) : null;
-
-    return create("div", {
-        className: "u_l",
-        children: [
-            create("div", {
-                className: "u",
-                children: [
-                    create("div", {
-                        className: `${letter}_r u_r`,
-                        children: [
-                            create("div", {
-                                children: [
-                                    create("p", { text: `${label} Lv${stageData.level || 70}` }),
-                                    ...renderElementIcons(elements, "elem_"),
-                                    create("p", {
-                                        text: text.chartSubtitle,
-                                        style: { fontSize: "0.75em", color: "#0066FF" },
-                                    }),
-                                    summaryBars,
-                                ].filter(Boolean),
-                            }),
-                        ],
-                    }),
-                    create("div", {
-                        className: `${letter}_m u_m`,
-                        children: [
-                            create("div", {
-                                className: "stage",
-                                children: [
-                                    create("div", {
-                                        className: "emote_block_",
-                                        children: [create("div", { className: "emote_", children: [image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")] })],
-                                    }),
-                                    create("div", {
-                                        className: "stage_waves",
-                                        children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level, stageData.waveNames)),
-                                    }),
-                                ],
-                            }),
-                        ],
-                    }),
-                ],
-            }),
-        ],
-    });
+    const summaryItems = []; roomWeakness.forEach(el => summaryItems.push({ element: el, type: "weak" })); roomResistance.forEach(el => summaryItems.push({ element: el, type: "resist" }));
+    const summaryBars = summaryItems.length > 0 ? create("div", { style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" }, children: summaryItems.map(item => create("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }, children: [image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element), create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: item.type === "weak" ? "#4CAF50" : "#C62828", display: "block" } })] })) }) : null;
+    return create("div", { className: "u_l", children: [create("div", { className: "u", children: [create("div", { className: `${letter}_r u_r`, children: [create("div", { children: [create("p", { text: `${label} Lv${stageData.level || 70}` }), ...renderElementIcons(elements, "elem_"), create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }), summaryBars].filter(Boolean) })] }), create("div", { className: `${letter}_m u_m`, children: [create("div", { className: "stage", children: [create("div", { className: "emote_block_", children: [create("div", { className: "emote_", children: [image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")] })] }), create("div", { className: "stage_waves", children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level, stageData.waveNames)) })] })] })] })] });
 };
 
 const renderAllStages = () => {
     const floor = currentFloor();
     const rooms = Object.keys(floor.layer_room).sort();
     const buffKeys = Object.keys(floor.layer_buff).sort();
-    const container = byId("shiyuStages");
-    container.replaceChildren();
-    
+    const container = byId("shiyuStages"); container.replaceChildren();
     if (rooms.length >= 3) {
-        const buffRow = document.createElement("div");
-        buffRow.style.display = "flex";
-        buffRow.style.flexWrap = "wrap";
-        buffRow.style.gap = "12px";
-        buffRow.style.justifyContent = "center";
-        buffRow.style.marginBottom = "12px";
-        buffRow.style.width = "100%";
-        
-        buffKeys.forEach((bk) => {
-            const buff = floor.layer_buff[bk];
-            if (buff) {
-                buffRow.appendChild(create("div", {
-                    className: "smallbuff",
-                    style: { flex: "1 1 30%", minWidth: "280px" },
-                    children: [
-                        create("p", { className: "smallbuff_name", text: buff.title || "" }),
-                        create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') }),
-                    ],
-                }));
-            }
-        });
+        const buffRow = document.createElement("div"); buffRow.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:12px;width:100%";
+        buffKeys.forEach(bk => { const buff = floor.layer_buff[bk]; if (buff) buffRow.appendChild(create("div", { className: "smallbuff", style: { flex: "1 1 30%", minWidth: "280px" }, children: [create("p", { className: "smallbuff_name", text: buff.title || "" }), create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') })] })); });
         container.appendChild(buffRow);
     }
-    
-    const monsterRow = document.createElement("div");
-    monsterRow.style.display = "flex";
-    monsterRow.style.flexWrap = "wrap";
-    monsterRow.style.gap = "12px";
-    monsterRow.style.justifyContent = "center";
-    monsterRow.style.width = "100%";
-    
-    rooms.forEach((rk, i) => {
-        const stageData = floor.layer_room[rk];
-        const elements = stageData.weakness || [];
-        const label = text.stageLabels[i] || `房间${i + 1}`;
-        const wrapper = document.createElement("div");
-        wrapper.style.flex = `1 1 ${rooms.length === 3 ? '30%' : '45%'}`;
-        wrapper.style.minWidth = "300px";
-        wrapper.appendChild(renderStage(stageData, label, elements, i));
-        monsterRow.appendChild(wrapper);
-    });
+    const monsterRow = document.createElement("div"); monsterRow.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;justify-content:center;width:100%";
+    rooms.forEach((rk, i) => { const stageData = floor.layer_room[rk]; const wrapper = document.createElement("div"); wrapper.style.cssText = `flex:1 1 ${rooms.length === 3 ? '30%' : '45%'};min-width:300px`; wrapper.appendChild(renderStage(stageData, text.stageLabels[i] || `房间${i + 1}`, stageData.weakness || [], i)); monsterRow.appendChild(wrapper); });
     container.appendChild(monsterRow);
 };
 
@@ -373,22 +213,9 @@ const renderBuffs = () => {
     const floor = currentFloor();
     const buffKeys = Object.keys(floor.layer_buff).sort();
     const stages = Object.keys(floor.layer_room).sort();
-    const container = byId("shiyuBuffs");
-    container.replaceChildren();
-
+    const container = byId("shiyuBuffs"); container.replaceChildren();
     if (stages.length >= 3) return;
-
-    const buffs = buffKeys.map(k => floor.layer_buff[k]).filter(b => b && (b.title || b.desc));
-    buffs.forEach((buff) => {
-        container.appendChild(create("div", {
-            className: "smallbuff a_b_0",
-            style: { width: "100%" },
-            children: [
-                create("p", { className: "smallbuff_name", text: buff.title || "" }),
-                create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') }),
-            ],
-        }));
-    });
+    buffKeys.map(k => floor.layer_buff[k]).filter(b => b && (b.title || b.desc)).forEach(buff => { container.appendChild(create("div", { className: "smallbuff a_b_0", style: { width: "100%" }, children: [create("p", { className: "smallbuff_name", text: buff.title || "" }), create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') })] })); });
 };
 
 const renderCharts = () => {
@@ -397,125 +224,83 @@ const renderCharts = () => {
     if (!merge) return;
 
     const allReversed = shiyuEntries.slice().reverse();
-    const oldEntries = allReversed.filter(e => {
-        const idx = indexData.entries[shiyuEntries.indexOf(e)];
-        return parseInt(idx.replace('.json', '')) <= 62037;
-    });
-    const newEntries = allReversed.filter(e => {
-        const idx = indexData.entries[shiyuEntries.indexOf(e)];
-        return parseInt(idx.replace('.json', '')) >= 62038;
-    });
+    const oldEntries = allReversed.filter(e => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) <= 62037);
+    const newEntries = allReversed.filter(e => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) >= 62038);
 
-    const totalLabels = [];
-    const totalSeries = [];
-    const stageLabels = [];
+    // 总血量图：所有期合并一条线
+    const allEntries = [...oldEntries, ...newEntries];
+    const totalLabels = allEntries.map(e => (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
+    const totalData = allEntries.map(e => floorTotalHp(e.zone, merge.old || merge.new));
+
+    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], totalLabels);
+
+    // 各间血量图
+    const roomCount = merge.solo ? 2 : Math.max(
+        oldEntries.length > 0 ? Object.keys(oldEntries[0].zone[Object.keys(oldEntries[0].zone).find(k => oldEntries[0].zone[k].stage_num === (merge.old || merge.new))]?.layer_room || {}).length : 0,
+        newEntries.length > 0 ? Object.keys(newEntries[0].zone[Object.keys(newEntries[0].zone).find(k => newEntries[0].zone[k].stage_num === (merge.new || merge.old))]?.layer_room || {}).length : 0,
+    );
+
     const stageSeries = [];
-    const roomCount = Object.keys(currentFloor().layer_room).length;
+    const stageLabels = [];
+    const colors = ["#cc0000", "#2545ba", "#4CAF50"];
 
-    if (merge.solo) {
+    for (let i = 0; i < roomCount; i++) {
+        const data = [];
         oldEntries.forEach(e => {
-            totalLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
-        });
-        totalSeries.push({
-            name: "总血量", color: "#2545ba",
-            data: oldEntries.map(e => floorTotalHp(e.zone, merge.old)),
-        });
-        for (let i = 0; i < roomCount; i++) {
-            stageSeries.push({
-                name: text.stageLabels[i] || `房间${i + 1}`,
-                color: ["#cc0000", "#2545ba", "#4CAF50"][i],
-                data: oldEntries.map(e => roomHp(e.zone, merge.old, i)),
-            });
-        }
-    } else {
-        oldEntries.forEach(e => {
-            const lbl = (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '') + "(旧)";
-            totalLabels.push(lbl);
-            stageLabels.push(lbl);
+            const num = parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
+            if (num <= 62037) {
+                data.push(roomHp(e.zone, merge.old, i));
+                if (i === 0 && stageLabels.length < oldEntries.length + newEntries.length) {
+                    // 只在第一个循环时添加labels
+                }
+            }
         });
         newEntries.forEach(e => {
-            const lbl = (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '') + "(新)";
-            totalLabels.push(lbl);
-            stageLabels.push(lbl);
+            const num = parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', ''));
+            if (num >= 62038) {
+                data.push(roomHp(e.zone, merge.new, i));
+            }
         });
-        totalSeries.push({
-            name: "旧版总血量", color: "#2545ba",
-            data: oldEntries.map(e => floorTotalHp(e.zone, merge.old)),
-        });
-        totalSeries.push({
-            name: "新版总血量", color: "#cc0000",
-            data: newEntries.map(e => floorTotalHp(e.zone, merge.new)),
-        });
-        for (let i = 0; i < roomCount; i++) {
-            stageSeries.push({
-                name: `旧版${text.stageLabels[i] || `房间${i + 1}`}`,
-                color: "#2545ba",
-                data: oldEntries.map(e => roomHp(e.zone, merge.old, i)),
-            });
-            stageSeries.push({
-                name: `新版${text.stageLabels[i] || `房间${i + 1}`}`,
-                color: ["#cc0000", "#4CAF50", "#FF9800"][i],
-                data: newEntries.map(e => roomHp(e.zone, merge.new, i)),
-            });
+        
+        // 第7层特殊：房间三只有新版才有
+        if (floorNum === 7 && i === 2) {
+            const data3 = [];
+            oldEntries.forEach(() => data3.push(null));
+            newEntries.forEach(e => data3.push(roomHp(e.zone, merge.new, i)));
+            stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data: data3 });
+        } else {
+            stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data });
         }
     }
 
-    const allLabels = merge.solo ? totalLabels : stageLabels;
-    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, totalSeries, totalLabels);
-    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, allLabels);
+    // 生成labels
+    oldEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
+    newEntries.forEach(e => stageLabels.push((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')));
+
+    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, stageLabels);
 };
 
 const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
-
     const existingChart = window.echarts.getInstanceByDom(chartElement);
     if (existingChart) window.echarts.dispose(existingChart);
-
     const chartInstance = window.echarts.init(chartElement);
-
     chartInstance.setOption({
-        title: {
-            text: title,
-            subtext: text.chartSubtitle,
-            left: "center",
-            textStyle: { color: "#000" },
-            subtextStyle: { color: "#2545ba" },
-            top: "8%"
-        },
+        title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-        xAxis: {
-            type: "category",
-            data: labels,
-            axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 }
-        },
+        xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 } },
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
-        series: seriesData.map(s => ({
-            name: s.name,
-            type: "line",
-            data: s.data,
-            lineStyle: { color: s.color },
-            itemStyle: { color: s.color },
-        })),
+        series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
     }, true);
 };
 
-const renderFloor = () => {
-    renderFloorText();
-    renderBuffs();
-    renderAllStages();
-    renderCharts();
-};
-
-const render = () => {
-    renderScheduleSelect();
-    renderScheduleHeader();
-    renderFloor();
-};
+const renderFloor = () => { renderFloorText(); renderBuffs(); renderAllStages(); renderCharts(); };
+const render = () => { renderScheduleSelect(); renderScheduleHeader(); renderFloor(); };
 
 const bindEvents = () => {
     byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
@@ -523,7 +308,27 @@ const bindEvents = () => {
     byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
     byId("prevFloor").addEventListener("click", () => setFloor(state.floorIndex - 1));
     byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
-    
+    byId("downloadBtn").addEventListener("click", (e) => {
+        e.preventDefault();
+        const title = document.querySelector(".content_title"), ver = document.querySelector(".ver"), floor = document.querySelector(".floor_select"), dl = byId("downloadBtn");
+        if (title) title.style.marginBottom = "0"; if (ver) ver.style.display = "none"; if (floor) floor.style.display = "none"; dl.style.display = "none";
+        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
+            const a = document.createElement("a"); a.download = `式舆防卫战_${currentEntry().name}.png`; a.href = canvas.toDataURL("image/png"); a.click();
+            if (title) title.style.marginBottom = ""; if (ver) ver.style.display = ""; if (floor) floor.style.display = ""; dl.style.display = "";
+        });
+    });
+    document.body.addEventListener("click", (event) => { if (event.target.closest(".emote_block_")) document.querySelectorAll(".emote_").forEach(node => { node.replaceChildren(image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")); }); });
+    document.body.addEventListener("mouseenter", (event) => { const card = event.target.closest(".monster_card"); if (!card) return; card.querySelectorAll(".hasimgname").forEach(node => node.style.display = ""); card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "0.2"); }, true);
+    document.body.addEventListener("mouseleave", (event) => { const card = event.target.closest(".monster_card"); if (!card) return; card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "none"); card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "1"); }, true);
+};
+
+const init = async () => { initMenu(); await loadData(); bindEvents(); state.scheduleIndex = 0; const zone = currentEntry().zone; const keys = Object.keys(zone).filter(k => k.length <= 7); state.floorIndex = keys.length - 1; render(); };
+init().catch(console.error);const bindEvents = () => {
+    byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
+    byId("nextSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex - 1));
+    byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
+    byId("prevFloor").addEventListener("click", () => setFloor(state.floorIndex - 1));
+    byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
     byId("downloadBtn").addEventListener("click", (e) => {
         e.preventDefault();
         const title = document.querySelector(".content_title");
