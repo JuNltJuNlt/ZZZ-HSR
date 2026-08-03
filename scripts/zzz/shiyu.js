@@ -374,10 +374,17 @@ const renderBuffs = () => {
 
 const chartEntries = () => {
     const all = shiyuEntries.slice().reverse();
-    if (currentFloor().stage_num === 5) {
+    const floorNum = currentFloor().stage_num;
+    if (floorNum === 5) {
         return all.filter(e => {
             const idx = indexData.entries[shiyuEntries.indexOf(e)];
             return parseInt(idx.replace('.json', '')) >= 62038;
+        });
+    }
+    if (floorNum >= 6) {
+        return all.filter(e => {
+            const idx = indexData.entries[shiyuEntries.indexOf(e)];
+            return parseInt(idx.replace('.json', '')) <= 62037;
         });
     }
     return all;
