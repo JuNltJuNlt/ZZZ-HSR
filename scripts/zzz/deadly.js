@@ -118,7 +118,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     const monster = room.monsters[0][0];
     const buffKeys = Object.keys(zoneData.layer_buff || {});
 
-    const section = create("div", { className: letter });
+    const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
     const lineup = create("div", { className: `${letter}_m` });
     
@@ -135,7 +135,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     section.appendChild(recommend);
     section.appendChild(lineup);
 
-    const buffContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px" } });
+    const buffContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px", width: "100%" } });
     buffKeys.forEach(bk => {
         const buff = zoneData.layer_buff[bk];
         if (buff && buff.desc) {
@@ -160,17 +160,18 @@ const renderAllBosses = () => {
     const bossColors = ["u", "l", "t"];
     const allSelectableBuffs = [];
 
-    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "0" } });
+    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center" } });
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
         const label = text.stageLabels[i] || `Boss${i+1}`;
         const wrapper = create("div", {
             style: {
-                flex: "0 0 auto",
-                width: "calc(33.33% - 24px)",
+                width: "calc(33.33% - 20px)",
                 maxWidth: "400px",
-                margin: "0 12px",
+                margin: "0 10px",
+                display: "flex",
+                flexDirection: "column",
             }
         });
         wrapper.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
