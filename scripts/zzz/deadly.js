@@ -13,7 +13,7 @@ const text = {
     title: "危局强袭战",
     chartTotalTitle: "总血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
-    stageLabels: ["Boss一", "Boss二", "Boss三"],
+    stageLabels: ["", "", ""],
 };
 
 const state = {
@@ -117,6 +117,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     const room = zoneData.layer_room[roomKey];
     const monster = room.monsters[0][0];
     const buffKeys = Object.keys(zoneData.layer_buff || {});
+    const selectKeys = Object.keys(zoneData.selectable_buff || {});
 
     const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
@@ -124,7 +125,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     
     recommend.appendChild(create("div", {
         children: [
-            create("p", { text: `${label} Lv${zoneData.monster_level || 70}` }),
+            create("p", { text: `Lv${zoneData.monster_level || 70}` }),
             ...renderElementIcons(elements, "elem_"),
             create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
         ],
@@ -135,17 +136,33 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     section.appendChild(recommend);
     section.appendChild(lineup);
 
-    const buffContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px", width: "100%" } });
+    // 首领特性
+    const traitContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px", width: "100%" } });
     buffKeys.forEach(bk => {
         const buff = zoneData.layer_buff[bk];
         if (buff && buff.desc) {
-            buffContainer.appendChild(create("p", {
+            traitContainer.appendChild(create("p", {
                 html: `<b>${buff.title || ''}</b>${buff.title ? '<br>' : ''}${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
                 style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" }
             }));
         }
     });
-    section.appendChild(buffContainer);
+    section.appendChild(traitContainer);
+
+    // 操作分事项
+    if (selectKeys.length > 0) {
+        const scoreContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px", width: "100%" } });
+        selectKeys.forEach(bk => {
+            const buff = zoneData.selectable_buff[bk];
+            if (buff && buff.title) {
+                scoreContainer.appendChild(create("p", {
+                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
+                    style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" }
+                }));
+            }
+        });
+        section.appendChild(scoreContainer);
+    }
 
     return section;
 };
@@ -158,18 +175,17 @@ const renderAllBosses = () => {
     container.replaceChildren();
 
     const bossColors = ["u", "l", "t"];
-    const allSelectableBuffs = [];
+    const allSharedBuffs = [];
 
-    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center" } });
+    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px" } });
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
-        const label = text.stageLabels[i] || `Boss${i+1}`;
+        const label = text.stageLabels[i];
         const wrapper = create("div", {
             style: {
-                width: "calc(33.33% - 20px)",
-                maxWidth: "400px",
-                margin: "0 10px",
+                width: "calc(33.33% - 32px)",
+                maxWidth: "420px",
                 display: "flex",
                 flexDirection: "column",
             }
@@ -177,12 +193,12 @@ const renderAllBosses = () => {
         wrapper.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
         bossRow.appendChild(wrapper);
         if (i === 0 && zoneData.selectable_buff) {
-            Object.values(zoneData.selectable_buff).forEach(b => allSelectableBuffs.push(b));
+            Object.values(zoneData.selectable_buff).forEach(b => allSharedBuffs.push(b));
         }
     });
     container.appendChild(bossRow);
 
-    if (allSelectableBuffs.length > 0) {
+    if (allSharedBuffs.length > 0) {
         const sharedBuffBox = create("div", {
             style: {
                 width: "calc(100% - 36px)",
@@ -194,7 +210,7 @@ const renderAllBosses = () => {
                 padding: "20px",
                 lineHeight: "1.8",
             },
-            children: allSelectableBuffs.map(buff =>
+            children: allSharedBuffs.map(buff =>
                 create("p", {
                     html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
                     style: { margin: "0 0 15px 0" }
