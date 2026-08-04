@@ -114,19 +114,10 @@ const renderMonsterCard = (monster, stageLevel) => {
 
 function processBossDesc(zoneData) {
     const buffKeys = Object.keys(zoneData.layer_buff || {});
-    const selectKeys = Object.keys(zoneData.selectable_buff || {});
     const allLines = [];
 
     buffKeys.forEach(bk => {
         const buff = zoneData.layer_buff[bk];
-        if (buff && buff.desc) {
-            const lines = buff.desc.split('\n').filter(l => l.trim());
-            lines.forEach(l => allLines.push(l));
-        }
-    });
-
-    selectKeys.forEach(bk => {
-        const buff = zoneData.selectable_buff[bk];
         if (buff && buff.desc) {
             const lines = buff.desc.split('\n').filter(l => l.trim());
             lines.forEach(l => allLines.push(l));
