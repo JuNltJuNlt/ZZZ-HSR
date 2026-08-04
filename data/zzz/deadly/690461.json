@@ -42,9 +42,9 @@
             [
               {
                 "name": "异构·基塔布鲁",
-                "hp": 31900305,
-                "defense": 953,
-                "stun": 18934,
+                "hp": 31900304.79,
+                "defense": 952.8000000000001,
+                "stun": 18933.95,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [],
@@ -55,6 +55,152 @@
           ],
           "weakness": [],
           "s_rank_goal": 30000
+        }
+      }
+    }
+  },
+  "has_final": true,
+  "final_zone": {
+    "69046101": {
+      "name": "库萨里库",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69014506": {
+          "title": "",
+          "desc": "·对库萨里库造成的异常伤害降低40%。每次使用<color=#FFFFFF>[招架支援]</color>抵挡一次库萨里库的裂隙招式将对其施加一层<color=#FFFFFF>[识破]</color>，每层<color=#FFFFFF>[识破]</color>会使库萨里库后续受到的锐爆伤害<color=#FFAF2C>提升20%</color>，最多叠加3层，持续60s，重复触发时刷新持续时间。"
+        },
+        "69014507": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "layer_room": {
+        "690461011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "库萨里库",
+                "hp": 18522757.62,
+                "defense": 952.8000000000001,
+                "stun": 18933.95,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "69046102": {
+      "name": "秽息妖鬼·名可名",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011602": {
+          "title": "",
+          "desc": "秽息妖鬼每次进入<color=#FFAF2C>属性异常</color>时，代理人对其造成的异常伤害增加8%，最多叠加6层；开启<Term:2000002></Term>时清空所有层数，每层使<color=#FFAF2C>[秽盾]</color>被削减效率提升2.5%。"
+        },
+        "69011603": {
+          "title": "",
+          "desc": "· 代理人吸引秽息妖鬼地面攻击<color=#FFAF2C>一次性引爆至少5处秽息泽</color>，且<color=#FFAF2C>未被该攻击及秽息泽爆炸命中</color>时，可获得<color=#FFAF2C>1700操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        }
+      },
+      "layer_room": {
+        "690461021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息妖鬼·名可名",
+                "hp": 25549710.21,
+                "defense": 952.8000000000001,
+                "stun": 16647.4,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "69046103": {
+      "name": "魇缚者·叶释渊",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69012602": {
+          "title": "",
+          "desc": "· 索贝克与魇缚者每次交替上场时，可使魇缚者获得1层<color=#FFFFFF>[合契]</color>与一层<color=#FFFFFF>[舍身]</color>，[合契]与[舍身]最多叠加3层，每层[合契]可使全属性异常积蓄抗性<color=#FFAF2C>提升15%</color>，每层[舍身]可使魇缚者防御<color=#FFAF2C>降低8%</color>；魇缚者进入失衡状态时，受到暴击伤害<color=#FFAF2C>提升50%</color>。"
+        },
+        "69012603": {
+          "title": "",
+          "desc": "· 代理人使索贝克与魇缚者进入<color=#FFAF2C>虚弱状态</color>时，可获得<color=#FFAF2C>1500操作得分</color>；代理人<color=#FFAF2C>击杀索贝克</color>时，可获得<color=#FFAF2C>2000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69013004": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Stun><color=#FFAF2C>[击破]</color>特性的代理人挑战。"
+        }
+      },
+      "layer_room": {
+        "690461031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魇缚者·叶释渊",
+                "hp": 25151998.41,
+                "defense": 952.8000000000001,
+                "stun": 14068.040000000003,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
         }
       }
     }

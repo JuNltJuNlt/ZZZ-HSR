@@ -88,8 +88,8 @@ const renderMonsterCard = (monster, stageLevel) => {
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
-    const def = monster.defense || 0;
-    const stun = monster.stun || 0;
+    const def = Math.round(monster.defense || 0);
+    const stun = Math.round(monster.stun || 0);
     const img = image(imagePath, "monicon hasimg", monster.name);
     img.style.height = "180px";
     img.style.width = "auto";
@@ -191,7 +191,7 @@ const renderAllBosses = () => {
     const allSharedBuffs = [];
     const sections = [];
 
-    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px" } });
+    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px", position: "relative" } });
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
@@ -222,42 +222,20 @@ const renderAllBosses = () => {
         const traitBoxes = sections.map(s => s.section.querySelector(`.u_b`));
         const maxH = Math.max(...traitBoxes.map(b => b?.offsetHeight || 0));
         traitBoxes.forEach(b => { if (b) b.style.minHeight = maxH + "px"; });
-
-        const firstWrapper = sections[0]?.wrapper;
-        const lastWrapper = sections[2]?.wrapper;
-        if (firstWrapper && lastWrapper) {
-            const firstRect = firstWrapper.getBoundingClientRect();
-            const lastRect = lastWrapper.getBoundingClientRect();
-            const sharedBox = container.querySelector(".shared-buff-box");
-            if (sharedBox) {
-                const left = firstRect.left;
-                const width = lastRect.right - left;
-                sharedBox.style.position = "relative";
-                sharedBox.style.left = "0";
-                sharedBox.style.width = width + "px";
-                sharedBox.style.marginLeft = "0";
-                sharedBox.style.marginRight = "0";
-                sharedBox.style.alignSelf = "flex-start";
-                // 让buff框对齐boss1左侧
-                const bossRowLeft = bossRow.getBoundingClientRect().left;
-                sharedBox.style.marginLeft = (left - bossRowLeft) + "px";
-            }
-        }
-    }, 200);
+    }, 100);
 
     if (allSharedBuffs.length > 0) {
         const sharedBuffBox = create("div", {
             className: "shared-buff-box",
             style: {
-                width: "calc(100% - 36px)",
-                maxWidth: "1200px",
                 backgroundColor: "#27363E",
                 color: "#eeeeee",
                 borderRadius: "5px",
-                margin: "16px auto 10px",
+                margin: "16px 0 10px 0",
                 padding: "20px",
                 lineHeight: "1.8",
                 display: "block",
+                boxSizing: "border-box",
             },
             children: allSharedBuffs.map(buff =>
                 create("p", {
@@ -267,6 +245,23 @@ const renderAllBosses = () => {
             ),
         });
         container.appendChild(sharedBuffBox);
+
+        // 延迟对齐buff框
+        setTimeout(() => {
+            const firstWrapper = sections[0]?.wrapper;
+            const lastWrapper = sections[2]?.wrapper;
+            if (firstWrapper && lastWrapper) {
+                const firstRect = firstWrapper.getBoundingClientRect();
+                const lastRect = lastWrapper.getBoundingClientRect();
+                const containerRect = container.getBoundingClientRect();
+                const leftOffset = firstRect.left - containerRect.left;
+                const rightEdge = lastRect.right - containerRect.left;
+                const totalWidth = rightEdge - leftOffset;
+                sharedBuffBox.style.marginLeft = leftOffset + "px";
+                sharedBuffBox.style.width = totalWidth + "px";
+                sharedBuffBox.style.maxWidth = "none";
+            }
+        }, 200);
     }
 
     byId("finalSection").style.display = "none";

@@ -38,9 +38,9 @@
             [
               {
                 "name": "异构·焚昼余火",
-                "hp": 33703546,
-                "defense": 953,
-                "stun": 17586,
+                "hp": 33703545.96,
+                "defense": 952.8000000000001,
+                "stun": 17585.05,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [],
@@ -51,6 +51,141 @@
           ],
           "weakness": [],
           "s_rank_goal": 30000
+        }
+      }
+    }
+  },
+  "has_final": true,
+  "final_zone": {
+    "69047101": {
+      "name": "焚昼余火·法厄同",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "69013601": {
+          "title": "",
+          "desc": "·焚昼余火开启[焚风]状态后，获得5层<color=#FFFFFF>[赴火]</color>，每层<color=#FFFFFF>[赴火]</color>使自身造成的伤害<color=#FFAF2C>提升10%</color>，且受到的暴击伤害<color=#FFAF2C>降低25%</color>。焚昼余火拥有<color=#FFFFFF>[赴火]</color>时，每次进入<color=#FFAF2C>异常状态</color>将失去一层<color=#FFFFFF>[赴火]</color>，并使后续受到的异放伤害<color=#FFAF2C>提升10%</color>，最多叠加3层，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69013602": {
+          "title": "",
+          "desc": "·焚昼余火处于<color=#FFFFFF>[焚风]</color>状态期间，对焚昼余火造成部位破坏时，可获得<color=#FFAF2C>1250操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的焚昼余火击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>；<color=#FFAF2C>[完美反制]</color>焚昼余火的<Term:2000003></Term>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "layer_room": {
+        "690471011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "焚昼余火·法厄同",
+                "hp": 22691838.509999998,
+                "defense": 952.8000000000001,
+                "stun": 19540.25,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "风"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "69047102": {
+      "name": "熔狱行赭",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69014410": {
+          "title": "",
+          "desc": "(Test1)·熔狱行赭进入[熔狱]状态后，每触发一次<Term:2000004><\\Term> 会获得1层<color=#FFFFFF>[熄火]</color>，每层<color=#FFFFFF>[熄火]</color>使自身的防御力<color=#FFAF2C>降低10%</color>，且失衡易伤倍率<color=#FFAF2C>提升10%</color>。最多叠加3层，持续20秒，触发<color=#FFFFFF>招架支援</color>可刷新持续时间。"
+        },
+        "69014411": {
+          "title": "",
+          "desc": "(Test1)· 成功<color=#FFAF2C>触发[完美反制]</color>时，可获得<color=#FFAF2C>2000操作得分</color>；<color=#FFAF2C>每击碎一颗燧石</color>可获得<color=#FFAF2C>1000操作分，最多获得5000操作得分</color>。"
+        }
+      },
+      "layer_room": {
+        "690471021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "熔狱行赭",
+                "hp": 18440190.27,
+                "defense": 952.8000000000001,
+                "stun": 22701,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [],
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "69047103": {
+      "name": "秽息司祭",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013002": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Rupture><color=#FFAF2C>[命破]</color>特性的代理人挑战。"
+        }
+      },
+      "layer_room": {
+        "690471031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 20908631.7,
+                "defense": 952.8000000000001,
+                "stun": 16647.4,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
         }
       }
     }
