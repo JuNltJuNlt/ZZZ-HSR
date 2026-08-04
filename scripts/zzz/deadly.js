@@ -13,7 +13,7 @@ const text = {
     title: "危局强袭战",
     chartTotalTitle: "总血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
-    stageLabels: ["", "", ""],
+    stageLabels: ["第一间", "第二间", "第三间"],
 };
 
 const state = {
@@ -148,7 +148,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     
     recommend.appendChild(create("div", {
         children: [
-            create("p", { text: `Lv${zoneData.monster_level || 70}` }),
+            create("p", { text: `${label} Lv${zoneData.monster_level || 70}` }),
             ...renderElementIcons(elements, "elem_"),
             create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
         ],
@@ -187,11 +187,6 @@ const renderAllBosses = () => {
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
-    container.appendChild(create("p", {
-        text: entry.deadly_name || "",
-        style: { textAlign: "center", fontWeight: "bold", fontSize: "1.4em", margin: "0 0 10px 0" },
-    }));
-
     const bossColors = ["u", "l", "t"];
     const allSharedBuffs = [];
     const sections = [];
@@ -200,6 +195,7 @@ const renderAllBosses = () => {
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
+        const label = text.stageLabels[i];
         const wrapper = create("div", {
             style: {
                 width: "calc(33.33% - 32px)",
@@ -208,7 +204,7 @@ const renderAllBosses = () => {
                 flexDirection: "column",
             }
         });
-        const section = renderBossSection(zoneData, bossColors[i], "", elements);
+        const section = renderBossSection(zoneData, bossColors[i], label, elements);
         sections.push({ section, wrapper });
         wrapper.appendChild(section);
         bossRow.appendChild(wrapper);
@@ -234,9 +230,17 @@ const renderAllBosses = () => {
             const lastRect = lastWrapper.getBoundingClientRect();
             const sharedBox = container.querySelector(".shared-buff-box");
             if (sharedBox) {
-                sharedBox.style.width = (lastRect.right - firstRect.left) + "px";
-                sharedBox.style.marginLeft = firstRect.left + "px";
-                sharedBox.style.marginRight = "auto";
+                const left = firstRect.left;
+                const width = lastRect.right - left;
+                sharedBox.style.position = "relative";
+                sharedBox.style.left = "0";
+                sharedBox.style.width = width + "px";
+                sharedBox.style.marginLeft = "0";
+                sharedBox.style.marginRight = "0";
+                sharedBox.style.alignSelf = "flex-start";
+                // 让buff框对齐boss1左侧
+                const bossRowLeft = bossRow.getBoundingClientRect().left;
+                sharedBox.style.marginLeft = (left - bossRowLeft) + "px";
             }
         }
     }, 200);
@@ -257,7 +261,7 @@ const renderAllBosses = () => {
             },
             children: allSharedBuffs.map(buff =>
                 create("p", {
-                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/(<br>)?· /g, (m, p) => (p ? '<br>· ' : '· '))}`,
+                    html: `<b>${buff.title}</b><br><span style="font-size:14px;">${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/(<br>)?· /g, (m, p) => (p ? '<br>· ' : '· '))}</span>`,
                     style: { margin: "0 0 15px 0", textAlign: "left", display: "block" }
                 })
             ),
