@@ -8,6 +8,8 @@ const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
 let shiyuEntries = [];
 let monstersData = [];
 let indexData = null;
+let showPeakChart = false;
+let peakChartLoaded = false;
 
 const text = {
     title: "式舆防卫战",
@@ -22,7 +24,6 @@ const text = {
 const state = {
     scheduleIndex: 0,
     floorIndex: 0,
-    showPeakChart: false,
 };
 
 const dataUrl = (fileName) => `${DATA_ROOT}/${fileName}`;
@@ -234,17 +235,20 @@ const renderCharts = () => {
         stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data });
     }
     renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, labels);
+};
 
-    if (state.showPeakChart) {
-        const allEntries = [...oldEntries, ...newEntries];
-        const peakLabels = allEntries.map(e => entryLabel(e));
-        const peakData = allEntries.map(e => {
-            const num = parseInt(entryLabel(e));
-            const floorToUse = num <= 62037 ? 7 : 5;
-            return floorTotalHp(e.zone, floorToUse);
-        });
-        renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels);
-    }
+const renderPeakChart = () => {
+    const allReversed = shiyuEntries.slice().reverse();
+    const oldEntries = allReversed.filter(e => isOldEntry(e));
+    const newEntries = allReversed.filter(e => !isOldEntry(e));
+    const allEntries = [...oldEntries, ...newEntries];
+    const peakLabels = allEntries.map(e => entryLabel(e));
+    const peakData = allEntries.map(e => {
+        const num = parseInt(entryLabel(e));
+        const floorToUse = num <= 62037 ? 7 : 5;
+        return floorTotalHp(e.zone, floorToUse);
+    });
+    renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels);
 };
 
 const renderLineChart = (targetId, title, seriesData, labels) => {
@@ -290,16 +294,19 @@ const bindEvents = () => {
     byId("prevFloor").addEventListener("click", () => setFloor(state.floorIndex - 1));
     byId("nextFloor").addEventListener("click", () => setFloor(state.floorIndex + 1));
     byId("togglePeakChart").addEventListener("click", () => {
-        state.showPeakChart = !state.showPeakChart;
+        showPeakChart = !showPeakChart;
         const container = document.getElementById("peakChartContainer");
-        if (state.showPeakChart) {
+        if (showPeakChart) {
             container.style.display = "";
-            setTimeout(() => {
-                const peakChart = document.getElementById("peakChart");
-                peakChart.style.width = container.offsetWidth + "px";
-                peakChart.style.height = "600px";
-                renderCharts();
-            }, 200);
+            if (!peakChartLoaded) {
+                setTimeout(() => {
+                    const peakChart = document.getElementById("peakChart");
+                    peakChart.style.width = container.offsetWidth + "px";
+                    peakChart.style.height = "600px";
+                    renderPeakChart();
+                    peakChartLoaded = true;
+                }, 200);
+            }
         } else {
             container.style.display = "none";
         }
