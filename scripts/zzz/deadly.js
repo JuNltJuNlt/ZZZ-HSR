@@ -116,7 +116,6 @@ function formatDesc(desc) {
     let html = desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>');
     html = html.replace(/^· /gm, '<br>· ');
     html = html.replace(/^<br>/, '');
-    // 将适合xx特性移到第一句
     const match = html.match(/<br>· 适合[^。]+。/);
     if (match) {
         html = html.replace(match[0], '');
@@ -130,7 +129,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     const room = zoneData.layer_room[roomKey];
     const monster = room.monsters[0][0];
     const buffKeys = Object.keys(zoneData.layer_buff || {});
-    const selectKeys = Object.keys(zoneData.selectable_buff || {});
 
     const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
@@ -148,7 +146,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     section.appendChild(recommend);
     section.appendChild(lineup);
 
-    // 机制描述
     const mechDescs = [];
     buffKeys.forEach(bk => {
         const buff = zoneData.layer_buff[bk];
@@ -167,26 +164,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     });
     section.appendChild(traitContainer);
 
-    // 操作分事项 - 再多空一行
-    if (selectKeys.length > 0) {
-        const scoreDescs = [];
-        selectKeys.forEach(bk => {
-            const buff = zoneData.selectable_buff[bk];
-            if (buff && buff.desc) scoreDescs.push(formatDesc(buff.desc));
-        });
-        const scoreContainer = create("div", {
-            className: `${letter}_b u_b`,
-            style: {
-                backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "6px 0 3px 0", padding: "12px",
-                width: "100%", boxSizing: "border-box",
-            },
-            children: scoreDescs.map(d =>
-                create("p", { html: d, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" } })
-            ),
-        });
-        section.appendChild(scoreContainer);
-    }
-
     return section;
 };
 
@@ -197,14 +174,19 @@ const renderAllBosses = () => {
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
+    container.appendChild(create("p", {
+        text: entry.deadly_name || "",
+        style: { textAlign: "center", fontWeight: "bold", fontSize: "1.4em", margin: "0 0 10px 0" },
+    }));
+
     const bossColors = ["u", "l", "t"];
     const allSharedBuffs = [];
+    const sections = [];
 
     const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px" } });
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
-        const label = text.stageLabels[i];
         const wrapper = create("div", {
             style: {
                 width: "calc(33.33% - 32px)",
@@ -213,13 +195,25 @@ const renderAllBosses = () => {
                 flexDirection: "column",
             }
         });
-        wrapper.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
+        const section = renderBossSection(zoneData, bossColors[i], "", elements);
+        sections.push({ section, wrapper });
+        wrapper.appendChild(section);
         bossRow.appendChild(wrapper);
-        if (i === 0 && zoneData.selectable_buff) {
-            Object.values(zoneData.selectable_buff).forEach(b => allSharedBuffs.push(b));
+        if (zoneData.selectable_buff) {
+            Object.values(zoneData.selectable_buff).forEach(b => {
+                if (!allSharedBuffs.find(x => x.title === b.title)) {
+                    allSharedBuffs.push(b);
+                }
+            });
         }
     });
     container.appendChild(bossRow);
+
+    setTimeout(() => {
+        const traitBoxes = sections.map(s => s.section.querySelector(`.u_b`));
+        const maxH = Math.max(...traitBoxes.map(b => b?.offsetHeight || 0));
+        traitBoxes.forEach(b => { if (b) b.style.minHeight = maxH + "px"; });
+    }, 100);
 
     if (allSharedBuffs.length > 0) {
         const sharedBuffBox = create("div", {
