@@ -132,37 +132,34 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     }));
 
     lineup.appendChild(create("div", { className: "wave_monsters", children: [renderMonsterCard(monster, zoneData.monster_level)] }));
-
     section.appendChild(recommend);
     section.appendChild(lineup);
 
-    // 首领特性
-    const traitContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px", width: "100%" } });
+    const descParts = [];
     buffKeys.forEach(bk => {
         const buff = zoneData.layer_buff[bk];
-        if (buff && buff.desc) {
-            traitContainer.appendChild(create("p", {
-                html: `<b>${buff.title || ''}</b>${buff.title ? '<br>' : ''}${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
+        if (buff && buff.desc) descParts.push(buff.desc);
+    });
+    selectKeys.forEach(bk => {
+        const buff = zoneData.selectable_buff[bk];
+        if (buff && buff.desc) descParts.push(buff.desc);
+    });
+
+    const combinedDesc = descParts.join('\n\n');
+    const traitContainer = create("div", {
+        className: `${letter}_b u_b`,
+        style: {
+            backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px",
+            width: "100%", boxSizing: "border-box", minHeight: "60px",
+        },
+        children: [
+            create("p", {
+                html: combinedDesc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· '),
                 style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" }
-            }));
-        }
+            })
+        ],
     });
     section.appendChild(traitContainer);
-
-    // 操作分事项
-    if (selectKeys.length > 0) {
-        const scoreContainer = create("div", { className: `${letter}_b u_b`, style: { backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px", width: "100%" } });
-        selectKeys.forEach(bk => {
-            const buff = zoneData.selectable_buff[bk];
-            if (buff && buff.title) {
-                scoreContainer.appendChild(create("p", {
-                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
-                    style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" }
-                }));
-            }
-        });
-        section.appendChild(scoreContainer);
-    }
 
     return section;
 };
@@ -174,8 +171,22 @@ const renderAllBosses = () => {
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
+    container.appendChild(create("p", {
+        text: entry.deadly_name || "",
+        style: { textAlign: "center", fontWeight: "bold", fontSize: "1.4em", margin: "0 0 10px 0" },
+    }));
+
     const bossColors = ["u", "l", "t"];
     const allSharedBuffs = [];
+
+    const bossSections = zoneKeys.map((zk, i) => {
+        const zoneData = zone[zk];
+        const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
+        const label = text.stageLabels[i];
+        return renderBossSection(zoneData, bossColors[i], label, elements);
+    });
+
+    const maxHeight = Math.max(...bossSections.map(s => s.querySelector(`.${bossColors[0]}_b`)?.offsetHeight || 0));
 
     const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px" } });
     zoneKeys.forEach((zk, i) => {
@@ -190,7 +201,10 @@ const renderAllBosses = () => {
                 flexDirection: "column",
             }
         });
-        wrapper.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
+        const section = renderBossSection(zoneData, bossColors[i], label, elements);
+        const traitBox = section.querySelector(`.${bossColors[i]}_b`);
+        if (traitBox && maxHeight > 0) traitBox.style.minHeight = maxHeight + "px";
+        wrapper.appendChild(section);
         bossRow.appendChild(wrapper);
         if (i === 0 && zoneData.selectable_buff) {
             Object.values(zoneData.selectable_buff).forEach(b => allSharedBuffs.push(b));
@@ -212,7 +226,7 @@ const renderAllBosses = () => {
             },
             children: allSharedBuffs.map(buff =>
                 create("p", {
-                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
+                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/(<br>)?· /g, (m, p) => (p ? '<br>· ' : '· '))}`,
                     style: { margin: "0 0 15px 0" }
                 })
             ),
