@@ -112,6 +112,19 @@ const renderMonsterCard = (monster, stageLevel) => {
     });
 };
 
+function formatDesc(desc) {
+    let html = desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>');
+    html = html.replace(/^· /gm, '<br>· ');
+    html = html.replace(/^<br>/, '');
+    // 将适合xx特性移到第一句
+    const match = html.match(/<br>· 适合[^。]+。/);
+    if (match) {
+        html = html.replace(match[0], '');
+        html = match[0].replace(/^<br>/, '') + '<br>' + html;
+    }
+    return html;
+}
+
 const renderBossSection = (zoneData, letter, label, elements) => {
     const roomKey = Object.keys(zoneData.layer_room)[0];
     const room = zoneData.layer_room[roomKey];
@@ -135,31 +148,44 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     section.appendChild(recommend);
     section.appendChild(lineup);
 
-    const descParts = [];
+    // 机制描述
+    const mechDescs = [];
     buffKeys.forEach(bk => {
         const buff = zoneData.layer_buff[bk];
-        if (buff && buff.desc) descParts.push(buff.desc);
-    });
-    selectKeys.forEach(bk => {
-        const buff = zoneData.selectable_buff[bk];
-        if (buff && buff.desc) descParts.push(buff.desc);
+        if (buff && buff.desc) mechDescs.push(formatDesc(buff.desc));
     });
 
-    const combinedDesc = descParts.join('\n\n');
     const traitContainer = create("div", {
         className: `${letter}_b u_b`,
         style: {
             backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px",
-            width: "100%", boxSizing: "border-box", minHeight: "60px",
+            width: "100%", boxSizing: "border-box",
         },
-        children: [
-            create("p", {
-                html: combinedDesc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· '),
-                style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" }
-            })
-        ],
+        children: mechDescs.map(d =>
+            create("p", { html: d, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" } })
+        ),
     });
     section.appendChild(traitContainer);
+
+    // 操作分事项 - 再多空一行
+    if (selectKeys.length > 0) {
+        const scoreDescs = [];
+        selectKeys.forEach(bk => {
+            const buff = zoneData.selectable_buff[bk];
+            if (buff && buff.desc) scoreDescs.push(formatDesc(buff.desc));
+        });
+        const scoreContainer = create("div", {
+            className: `${letter}_b u_b`,
+            style: {
+                backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "6px 0 3px 0", padding: "12px",
+                width: "100%", boxSizing: "border-box",
+            },
+            children: scoreDescs.map(d =>
+                create("p", { html: d, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" } })
+            ),
+        });
+        section.appendChild(scoreContainer);
+    }
 
     return section;
 };
@@ -171,22 +197,8 @@ const renderAllBosses = () => {
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
-    container.appendChild(create("p", {
-        text: entry.deadly_name || "",
-        style: { textAlign: "center", fontWeight: "bold", fontSize: "1.4em", margin: "0 0 10px 0" },
-    }));
-
     const bossColors = ["u", "l", "t"];
     const allSharedBuffs = [];
-
-    const bossSections = zoneKeys.map((zk, i) => {
-        const zoneData = zone[zk];
-        const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
-        const label = text.stageLabels[i];
-        return renderBossSection(zoneData, bossColors[i], label, elements);
-    });
-
-    const maxHeight = Math.max(...bossSections.map(s => s.querySelector(`.${bossColors[0]}_b`)?.offsetHeight || 0));
 
     const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px" } });
     zoneKeys.forEach((zk, i) => {
@@ -201,10 +213,7 @@ const renderAllBosses = () => {
                 flexDirection: "column",
             }
         });
-        const section = renderBossSection(zoneData, bossColors[i], label, elements);
-        const traitBox = section.querySelector(`.${bossColors[i]}_b`);
-        if (traitBox && maxHeight > 0) traitBox.style.minHeight = maxHeight + "px";
-        wrapper.appendChild(section);
+        wrapper.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
         bossRow.appendChild(wrapper);
         if (i === 0 && zoneData.selectable_buff) {
             Object.values(zoneData.selectable_buff).forEach(b => allSharedBuffs.push(b));
@@ -220,7 +229,7 @@ const renderAllBosses = () => {
                 backgroundColor: "#27363E",
                 color: "#eeeeee",
                 borderRadius: "5px",
-                margin: "10px auto",
+                margin: "16px auto 10px",
                 padding: "20px",
                 lineHeight: "1.8",
             },
