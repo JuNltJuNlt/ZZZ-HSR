@@ -91,6 +91,8 @@ const renderMonsterCard = (monster, stageLevel) => {
     const def = monster.defense || 0;
     const stun = monster.stun || 0;
     const img = image(imagePath, "monicon hasimg", monster.name);
+    img.style.height = "180px";
+    img.style.width = "auto";
     const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monster.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
@@ -138,7 +140,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         const buff = zoneData.layer_buff[bk];
         if (buff && buff.desc) {
             buffContainer.appendChild(create("p", {
-                html: `<b>${buff.title || ''}</b>${buff.title ? '<br>' : ''}${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">')}`,
+                html: `<b>${buff.title || ''}</b>${buff.title ? '<br>' : ''}${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
                 style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px" }
             }));
         }
@@ -183,7 +185,7 @@ const renderAllBosses = () => {
             },
             children: allSelectableBuffs.map(buff =>
                 create("p", {
-                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">')}`,
+                    html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`,
                     style: { margin: "0 0 15px 0" }
                 })
             ),
@@ -191,8 +193,7 @@ const renderAllBosses = () => {
         container.appendChild(sharedBuffBox);
     }
 
-    const hasFinal = entry.final_zone && Object.keys(entry.final_zone).length > 0;
-    byId("finalSection").style.display = hasFinal ? "" : "none";
+    byId("finalSection").style.display = "none";
 };
 
 const renderCharts = () => {
