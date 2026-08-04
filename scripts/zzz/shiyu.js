@@ -306,6 +306,13 @@ const bindEvents = () => {
     });
     byId("downloadBtn").addEventListener("click", (e) => {
         e.preventDefault();
+        const container = document.querySelector("container");
+        const origStyle = container.getAttribute("style") || "";
+        container.style.overflow = "visible";
+        container.style.height = "auto";
+        document.body.style.overflow = "visible";
+        document.body.style.height = "auto";
+        
         const title = document.querySelector(".content_title");
         const ver = document.querySelector(".ver");
         const floor = document.querySelector(".floor_select");
@@ -314,11 +321,21 @@ const bindEvents = () => {
         if (ver) ver.style.display = "none";
         if (floor) floor.style.display = "none";
         dl.style.display = "none";
-        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
+
+        html2canvas(document.body, {
+            scale: 2,
+            backgroundColor: "#29105a",
+            useCORS: true,
+            windowHeight: document.body.scrollHeight,
+            windowWidth: document.body.scrollWidth
+        }).then(canvas => {
             const a = document.createElement("a");
             a.download = `式舆防卫战_${currentEntry().name}.png`;
             a.href = canvas.toDataURL("image/png");
             a.click();
+            container.setAttribute("style", origStyle);
+            document.body.style.overflow = "";
+            document.body.style.height = "";
             if (title) title.style.marginBottom = "";
             if (ver) ver.style.display = "";
             if (floor) floor.style.display = "";
