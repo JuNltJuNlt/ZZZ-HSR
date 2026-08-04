@@ -87,7 +87,8 @@ const renderMonsterCard = (monster, stageLevel) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
-    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
+    const hpMultiplier = stageLevel >= 100 ? 15.8 : 8.74;
+    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * hpMultiplier);
     const def = Math.round(monster.defense || 0);
     const stun = Math.round(monster.stun || 0);
     const img = image(imagePath, "monicon hasimg", monster.name);
@@ -246,7 +247,6 @@ const renderAllBosses = () => {
         });
         container.appendChild(sharedBuffBox);
 
-        // 延迟对齐buff框
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
