@@ -128,9 +128,10 @@ function processBossDesc(zoneData) {
     const scoreLines = allLines.filter(l => l.includes('操作得分') || l.includes('可获得'));
 
     let result = '';
-    if (suitLine) result += suitLine + '\n';
+    if (suitLine) result += suitLine + '\n\n';
     const otherLines = allLines.filter(l => l !== suitLine && !scoreLines.includes(l));
     otherLines.forEach(l => result += l + '\n');
+    if (scoreLines.length > 0) result += '\n';
     scoreLines.forEach(l => result += l + '\n');
 
     return result.trim();
@@ -167,11 +168,11 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     const traitContainer = create("div", {
         className: `${letter}_b u_b`,
         style: {
-            backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px",
+            backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "14px",
             width: "100%", boxSizing: "border-box", textAlign: "left", display: "block",
         },
         children: [
-            create("p", { html, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px", textAlign: "left", display: "block" } })
+            create("p", { html, style: { lineHeight: "1.8", margin: "4px 0", fontSize: "14px", textAlign: "left", display: "block" } })
         ],
     });
     section.appendChild(traitContainer);
@@ -225,14 +226,26 @@ const renderAllBosses = () => {
         const traitBoxes = sections.map(s => s.section.querySelector(`.u_b`));
         const maxH = Math.max(...traitBoxes.map(b => b?.offsetHeight || 0));
         traitBoxes.forEach(b => { if (b) b.style.minHeight = maxH + "px"; });
-    }, 100);
+
+        const firstWrapper = sections[0]?.wrapper;
+        const lastWrapper = sections[2]?.wrapper;
+        if (firstWrapper && lastWrapper) {
+            const firstRect = firstWrapper.getBoundingClientRect();
+            const lastRect = lastWrapper.getBoundingClientRect();
+            const sharedBox = container.querySelector(".shared-buff-box");
+            if (sharedBox) {
+                sharedBox.style.width = (lastRect.right - firstRect.left) + "px";
+                sharedBox.style.marginLeft = firstRect.left + "px";
+                sharedBox.style.marginRight = "auto";
+            }
+        }
+    }, 200);
 
     if (allSharedBuffs.length > 0) {
-        const firstBossLeft = sections[0]?.wrapper?.getBoundingClientRect()?.left || 0;
-        const lastBossRight = sections[2]?.wrapper?.getBoundingClientRect()?.right || 0;
         const sharedBuffBox = create("div", {
+            className: "shared-buff-box",
             style: {
-                width: `${lastBossRight - firstBossLeft}px`,
+                width: "calc(100% - 36px)",
                 maxWidth: "1200px",
                 backgroundColor: "#27363E",
                 color: "#eeeeee",
