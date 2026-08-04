@@ -112,23 +112,43 @@ const renderMonsterCard = (monster, stageLevel) => {
     });
 };
 
-function formatDesc(desc) {
-    let html = desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>');
-    html = html.replace(/^· /gm, '<br>· ');
-    html = html.replace(/^<br>/, '');
-    const match = html.match(/<br>· 适合[^。]+。/);
-    if (match) {
-        html = html.replace(match[0], '');
-        html = match[0].replace(/^<br>/, '') + '<br>' + html;
-    }
-    return html;
+function processBossDesc(zoneData) {
+    const buffKeys = Object.keys(zoneData.layer_buff || {});
+    const selectKeys = Object.keys(zoneData.selectable_buff || {});
+    const allLines = [];
+
+    buffKeys.forEach(bk => {
+        const buff = zoneData.layer_buff[bk];
+        if (buff && buff.desc) {
+            const lines = buff.desc.split('\n').filter(l => l.trim());
+            lines.forEach(l => allLines.push(l));
+        }
+    });
+
+    selectKeys.forEach(bk => {
+        const buff = zoneData.selectable_buff[bk];
+        if (buff && buff.desc) {
+            const lines = buff.desc.split('\n').filter(l => l.trim());
+            lines.forEach(l => allLines.push(l));
+        }
+    });
+
+    const suitLine = allLines.find(l => l.includes('适合') && l.includes('特性的代理人挑战'));
+    const scoreLines = allLines.filter(l => l.includes('操作得分') || l.includes('可获得'));
+
+    let result = '';
+    if (suitLine) result += suitLine + '\n';
+    const otherLines = allLines.filter(l => l !== suitLine && !scoreLines.includes(l));
+    otherLines.forEach(l => result += l + '\n');
+    scoreLines.forEach(l => result += l + '\n');
+
+    return result.trim();
 }
 
 const renderBossSection = (zoneData, letter, label, elements) => {
     const roomKey = Object.keys(zoneData.layer_room)[0];
     const room = zoneData.layer_room[roomKey];
     const monster = room.monsters[0][0];
-    const buffKeys = Object.keys(zoneData.layer_buff || {});
 
     const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
@@ -146,11 +166,12 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     section.appendChild(recommend);
     section.appendChild(lineup);
 
-    const mechDescs = [];
-    buffKeys.forEach(bk => {
-        const buff = zoneData.layer_buff[bk];
-        if (buff && buff.desc) mechDescs.push(formatDesc(buff.desc));
-    });
+    const combinedDesc = processBossDesc(zoneData);
+    const html = combinedDesc
+        .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
+        .replace(/\n/g, '<br>')
+        .replace(/^· /gm, '<br>· ')
+        .replace(/^<br>/, '');
 
     const traitContainer = create("div", {
         className: `${letter}_b u_b`,
@@ -158,9 +179,9 @@ const renderBossSection = (zoneData, letter, label, elements) => {
             backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px",
             width: "100%", boxSizing: "border-box", textAlign: "left", display: "block",
         },
-        children: mechDescs.map(d =>
-            create("p", { html: d, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px", textAlign: "left", display: "block" } })
-        ),
+        children: [
+            create("p", { html, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px", textAlign: "left", display: "block" } })
+        ],
     });
     section.appendChild(traitContainer);
 
@@ -216,9 +237,11 @@ const renderAllBosses = () => {
     }, 100);
 
     if (allSharedBuffs.length > 0) {
+        const firstBossLeft = sections[0]?.wrapper?.getBoundingClientRect()?.left || 0;
+        const lastBossRight = sections[2]?.wrapper?.getBoundingClientRect()?.right || 0;
         const sharedBuffBox = create("div", {
             style: {
-                width: "calc(100% - 36px)",
+                width: `${lastBossRight - firstBossLeft}px`,
                 maxWidth: "1200px",
                 backgroundColor: "#27363E",
                 color: "#eeeeee",
