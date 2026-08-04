@@ -156,10 +156,10 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         className: `${letter}_b u_b`,
         style: {
             backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "12px",
-            width: "100%", boxSizing: "border-box", textAlign: "left",
+            width: "100%", boxSizing: "border-box", textAlign: "left", display: "block",
         },
         children: mechDescs.map(d =>
-            create("p", { html: d, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px", textAlign: "left" } })
+            create("p", { html: d, style: { lineHeight: "1.7", margin: "4px 0", fontSize: "13px", textAlign: "left", display: "block" } })
         ),
     });
     section.appendChild(traitContainer);
@@ -226,11 +226,12 @@ const renderAllBosses = () => {
                 margin: "16px auto 10px",
                 padding: "20px",
                 lineHeight: "1.8",
+                display: "block",
             },
             children: allSharedBuffs.map(buff =>
                 create("p", {
                     html: `<b>${buff.title}</b><br>${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/(<br>)?· /g, (m, p) => (p ? '<br>· ' : '· '))}`,
-                    style: { margin: "0 0 15px 0", textAlign: "left" }
+                    style: { margin: "0 0 15px 0", textAlign: "left", display: "block" }
                 })
             ),
         });
