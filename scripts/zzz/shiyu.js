@@ -313,13 +313,7 @@ const bindEvents = () => {
         document.body.style.overflow = "visible";
         document.body.style.height = "auto";
         
-        const title = document.querySelector(".content_title");
-        const ver = document.querySelector(".ver");
-        const floor = document.querySelector(".floor_select");
         const dl = byId("downloadBtn");
-        if (title) title.style.marginBottom = "0";
-        if (ver) ver.style.display = "none";
-        if (floor) floor.style.display = "none";
         dl.style.display = "none";
 
         html2canvas(document.body, {
@@ -336,9 +330,6 @@ const bindEvents = () => {
             container.setAttribute("style", origStyle);
             document.body.style.overflow = "";
             document.body.style.height = "";
-            if (title) title.style.marginBottom = "";
-            if (ver) ver.style.display = "";
-            if (floor) floor.style.display = "";
             dl.style.display = "";
         });
     });
