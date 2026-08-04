@@ -1,0 +1,175 @@
+{
+  "deadly_id": 69013,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6901301": {
+      "name": "秽息司祭",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69011502": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69010103": {
+          "title": "破招",
+          "desc": "· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[冲刺攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 触发<color=#FFFFFF>[极限闪避]</color>或<color=#FFFFFF>[极限支援]</color>后，全队攻击力<color=#2BAD00>提升10%</color>，暴击伤害<color=#2BAD00>提升10%</color>，持续15秒，最多叠加3层，每层效果单独结算持续时间。"
+        },
+        "69011001": {
+          "title": "蓄变",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>将<color=#2BAD00>提升25%</color>，异常精通<color=#2BAD00>提升60</color>点。\n· 触发属性异常时，敌人的防御力<color=#2BAD00>降低10%</color>，且承受的属性异常伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69011301": {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        }
+      },
+      "layer_room": {
+        "69013011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 8886169,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901302": {
+      "name": "恶名·冥宁芙",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010106": {
+          "title": "",
+          "desc": "· 首领敌人造成伤害提升25%；<color=#FFAF2C>分身被击破</color>/<color=#FFAF2C>本体进入失衡状态</color>时，将对首领敌人施加1层/5层<color=#FFFFFF>[如履薄冰]</color>， 每层<color=#FFFFFF>[如履薄冰]</color>会使首领敌人造成的伤害降低5%，并使代理人对其造成的<color=#98EFF0>冰属性伤害</color>和<color=#2EB6FF>电属性伤害</color><color=#FFAF2C>提升10%</color>；敌人从失衡状态恢复时，<color=#FFFFFF>[如履薄冰]</color>层数将会被重置。"
+        },
+        "69010109": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>击破舞者分身</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010103": {
+          "title": "破招",
+          "desc": "· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[冲刺攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 触发<color=#FFFFFF>[极限闪避]</color>或<color=#FFFFFF>[极限支援]</color>后，全队攻击力<color=#2BAD00>提升10%</color>，暴击伤害<color=#2BAD00>提升10%</color>，持续15秒，最多叠加3层，每层效果单独结算持续时间。"
+        },
+        "69011001": {
+          "title": "蓄变",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>将<color=#2BAD00>提升25%</color>，异常精通<color=#2BAD00>提升60</color>点。\n· 触发属性异常时，敌人的防御力<color=#2BAD00>降低10%</color>，且承受的属性异常伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69011301": {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        }
+      },
+      "layer_room": {
+        "69013021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·冥宁芙",
+                "hp": 10294847,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901303": {
+      "name": "恶名·庞培",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010503": {
+          "title": "",
+          "desc": "·代理人<color=#FFAF2C>发动[招架支援]或[连携技]命中首领敌人时</color>，将对其施加1层<color=#FFFFFF>[劣势]</color>，持续20秒，每层效果单独结算持续时间。代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[劣势]</color>，代理人的暴击伤害<color=#FFAF2C>提升15%</color>；\n\n首领敌人拥有4层<color=#FFFFFF>[劣势]</color>时，[招架支援]会弹开首领敌人的攻击，造成硬直效果。"
+        },
+        "69010802": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>350操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010103": {
+          "title": "破招",
+          "desc": "· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[冲刺攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 触发<color=#FFFFFF>[极限闪避]</color>或<color=#FFFFFF>[极限支援]</color>后，全队攻击力<color=#2BAD00>提升10%</color>，暴击伤害<color=#2BAD00>提升10%</color>，持续15秒，最多叠加3层，每层效果单独结算持续时间。"
+        },
+        "69011001": {
+          "title": "蓄变",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>将<color=#2BAD00>提升25%</color>，异常精通<color=#2BAD00>提升60</color>点。\n· 触发属性异常时，敌人的防御力<color=#2BAD00>降低10%</color>，且承受的属性异常伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69011301": {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        }
+      },
+      "layer_room": {
+        "69013031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·庞培",
+                "hp": 9508090,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

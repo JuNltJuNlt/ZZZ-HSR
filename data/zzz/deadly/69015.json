@@ -1,0 +1,175 @@
+{
+  "deadly_id": 69015,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6901501": {
+      "name": "秽息司祭",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69011502": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        },
+        "69011301": {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        "69011501": {
+          "title": "幻涌",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color><color=#2BAD00>提升20%</color>，异常精通提升60点。\n· 代理人命中属性异常状态中的敌人时，造成的伤害<color=#2BAD00>提升25%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        }
+      },
+      "layer_room": {
+        "69015011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 8886169,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901502": {
+      "name": "「霸主侵蚀体·庞培」",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010105": {
+          "title": "",
+          "desc": "· 首领敌人每10秒获得1层<color=#FFFFFF>[愈战愈勇]</color>，使自身造成伤害提升20%，最多叠加3层；队伍中任意代理人<color=#FFAF2C>对敌人施加属性异常效果时</color>，将移除1层<color=#FFFFFF>[愈战愈勇]</color>并削弱目标，使其受到伤害提升15%，持续20秒。"
+        },
+        "69010507": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限闪避]</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        },
+        "69011301": {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        "69011501": {
+          "title": "幻涌",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color><color=#2BAD00>提升20%</color>，异常精通提升60点。\n· 代理人命中属性异常状态中的敌人时，造成的伤害<color=#2BAD00>提升25%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        }
+      },
+      "layer_room": {
+        "69015021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「霸主侵蚀体·庞培」",
+                "hp": 9508090,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901503": {
+      "name": "恶名·死路屠夫",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010402": {
+          "title": "",
+          "desc": "· 属性异常对首领敌人造成的伤害提升50%；恶名·死路屠夫处于<color=#FFFFFF>[以太强化]</color>状态时，承受的伤害降低15%，代理人对其造成的失衡值降低30%；代理人对恶名·死路屠夫触发<color=#FFFFFF>[紊乱]</color>后，使其立即退出<color=#FFFFFF>[以太强化]</color>状态。"
+        },
+        "69010507": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限闪避]</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        },
+        "69011301": {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        "69011501": {
+          "title": "幻涌",
+          "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color><color=#2BAD00>提升20%</color>，异常精通提升60点。\n· 代理人命中属性异常状态中的敌人时，造成的伤害<color=#2BAD00>提升25%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        }
+      },
+      "layer_room": {
+        "69015031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·死路屠夫",
+                "hp": 12295543,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

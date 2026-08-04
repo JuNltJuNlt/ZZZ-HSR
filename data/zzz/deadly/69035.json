@@ -1,0 +1,196 @@
+{
+  "deadly_id": 69035,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6903501": {
+      "name": "猎血清道夫",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "69013303": {
+          "title": "",
+          "desc": "·[侵蚀壁垒]持续期间，代理人对其造成的异常伤害<color=#2BAD00>提升50%</color>，造成的异常积蓄<color=#2BAD00>提升30%</color>；首领在失衡状态下，受到的异常伤害<color=#2BAD00>提升15%</color>，代理人对其造成的异常积蓄<color=#2BAD00>提升15%</color>；首领在非失衡状态下，受到的伤害<color=#2BAD00>降低15%</color>。"
+        },
+        "69013304": {
+          "title": "",
+          "desc": "·每次成功应对首领的攻击并使其触发特殊跪地，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>1500操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69013301": {
+          "title": "续变",
+          "desc": "· 代理人使敌人进入属性异常状态后，其失衡恢复速度<color=#2BAD00>降低15%</color>，全队攻击力<color=#2BAD00>提升15%</color>，持续20秒，重复触发刷新持续时间。\n· 使敌人进入失衡状态时，全队回复<color=#2BAD00>20点能量</color>，异放伤害<color=#2BAD00>提升30%</color>，持续30秒，重复触发刷新持续时间，能量回复效果30秒内最多触发1次。"
+        },
+        "69013501": {
+          "title": "驰闪",
+          "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力<color=#2BAD00>提升10%/25%</color>。\n· 代理人的[普通攻击]造成的伤害<color=#2BAD00>提升40%</color>，并无视敌人20%的<color=#2EB6FF>电属性伤害抗性</color>。"
+        }
+      },
+      "layer_room": {
+        "69035011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "猎血清道夫",
+                "hp": 33152155,
+                "defense": 477,
+                "stun": 17877,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [
+                  "火",
+                  "风"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6903502": {
+      "name": "太初梦魇·「始主」",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69012704": {
+          "title": "",
+          "desc": "·首领受到的异常伤害<color=#2BAD00>降低30%</color>，当其从<Term:2000002></Term>状态切换回普通状态，或从普通状态切换为<color=#FFAF2C>[秽盾]</color>状态时，使代理人对其造成的暴击伤害<color=#2BAD00>提升20%</color>，最多叠加3层，当其从失衡状态恢复时层数重置。"
+        },
+        "69012705": {
+          "title": "",
+          "desc": "·触发<color=#FFAF2C>[秽盾净除]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        },
+        "69013001": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69013301": {
+          "title": "续变",
+          "desc": "· 代理人使敌人进入属性异常状态后，其失衡恢复速度<color=#2BAD00>降低15%</color>，全队攻击力<color=#2BAD00>提升15%</color>，持续20秒，重复触发刷新持续时间。\n· 使敌人进入失衡状态时，全队回复<color=#2BAD00>20点能量</color>，异放伤害<color=#2BAD00>提升30%</color>，持续30秒，重复触发刷新持续时间，能量回复效果30秒内最多触发1次。"
+        },
+        "69013501": {
+          "title": "驰闪",
+          "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力<color=#2BAD00>提升10%/25%</color>。\n· 代理人的[普通攻击]造成的伤害<color=#2BAD00>提升40%</color>，并无视敌人20%的<color=#2EB6FF>电属性伤害抗性</color>。"
+        }
+      },
+      "layer_room": {
+        "69035021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "太初梦魇·「始主」",
+                "hp": 32662528,
+                "defense": 477,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理"
+                ],
+                "resistance": [
+                  "冰",
+                  "以太"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6903503": {
+      "name": "「亵渎者」",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011902": {
+          "title": "",
+          "desc": "· 代理人发动招架支援命中亵渎者时，全队获得1层<color=#FFFFFF>[裁夺]</color>；代理人将在空中发动攻击的亵渎者击落时，全队获得4层<color=#FFFFFF>[裁夺]</color>。[裁夺]最多叠加6层，持续30秒，重复触发时刷新持续时间。\n· 每拥有1层<color=#FFFFFF>[裁夺]</color>，代理人的暴击伤害<color=#2BAD00>提升5%</color>，物理伤害<color=#2BAD00>提升5%</color>，电属性伤害<color=#2BAD00>提升5%</color>。\n· 亵渎者受到的属性异常伤害降低25%。"
+        },
+        "69011903": {
+          "title": "",
+          "desc": "· 代理人造成<color=#FFAF2C>部位破坏时</color>，可获得<color=#FFAF2C>2500操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的亵渎者击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013001": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69013301": {
+          "title": "续变",
+          "desc": "· 代理人使敌人进入属性异常状态后，其失衡恢复速度<color=#2BAD00>降低15%</color>，全队攻击力<color=#2BAD00>提升15%</color>，持续20秒，重复触发刷新持续时间。\n· 使敌人进入失衡状态时，全队回复<color=#2BAD00>20点能量</color>，异放伤害<color=#2BAD00>提升30%</color>，持续30秒，重复触发刷新持续时间，能量回复效果30秒内最多触发1次。"
+        },
+        "69013501": {
+          "title": "驰闪",
+          "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力<color=#2BAD00>提升10%/25%</color>。\n· 代理人的[普通攻击]造成的伤害<color=#2BAD00>提升40%</color>，并无视敌人20%的<color=#2EB6FF>电属性伤害抗性</color>。"
+        }
+      },
+      "layer_room": {
+        "69035031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「亵渎者」",
+                "hp": 16994444,
+                "defense": 953,
+                "stun": 19978,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

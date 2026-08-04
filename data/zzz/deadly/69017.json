@@ -1,0 +1,175 @@
+{
+  "deadly_id": 69017,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6901701": {
+      "name": "秽息妖鬼·名可名",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011502": {
+          "title": "",
+          "desc": ""
+        },
+        "69011602": {
+          "title": "",
+          "desc": "秽息妖鬼每次进入<color=#FFAF2C>属性异常</color>时，代理人对其造成的异常伤害增加8%，最多叠加6层；开启<Term:2000002></Term>时清空所有层数，每层使<color=#FFAF2C>[秽盾]</color>被削减效率提升2.5%。"
+        },
+        "69011603": {
+          "title": "",
+          "desc": "· 代理人吸引秽息妖鬼地面攻击<color=#FFAF2C>一次性引爆至少5处秽息泽</color>，且<color=#FFAF2C>未被该攻击及秽息泽爆炸命中</color>时，可获得<color=#FFAF2C>1700操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69011101": {
+          "title": "狂岚",
+          "desc": "· 代理人的<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>命中敌人时，代理人的暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，并使敌人的防御力<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69011601": {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        "69011701": {
+          "title": "通力",
+          "desc": "· 代理人的[支援攻击]、[强化特殊技]、[终结技]造成的伤害<color=#2BAD00>提升25%</color>。\n· 代理人每次发动[快速支援]或[连携技]时，喧响值获得效率<color=#2BAD00>提升30%</color>，攻击时无视敌人<color=#2BAD00>20%伤害抗性</color>，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69017011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息妖鬼·名可名",
+                "hp": 11647663,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901702": {
+      "name": "恶名·死路屠夫",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010402": {
+          "title": "",
+          "desc": "· 属性异常对首领敌人造成的伤害提升50%；恶名·死路屠夫处于<color=#FFFFFF>[以太强化]</color>状态时，承受的伤害降低15%，代理人对其造成的失衡值降低30%；代理人对恶名·死路屠夫触发<color=#FFFFFF>[紊乱]</color>后，使其立即退出<color=#FFFFFF>[以太强化]</color>状态。"
+        },
+        "69011702": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>施加[紊乱]</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69011101": {
+          "title": "狂岚",
+          "desc": "· 代理人的<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>命中敌人时，代理人的暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，并使敌人的防御力<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69011601": {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        "69011701": {
+          "title": "通力",
+          "desc": "· 代理人的[支援攻击]、[强化特殊技]、[终结技]造成的伤害<color=#2BAD00>提升25%</color>。\n· 代理人每次发动[快速支援]或[连携技]时，喧响值获得效率<color=#2BAD00>提升30%</color>，攻击时无视敌人<color=#2BAD00>20%伤害抗性</color>，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69017021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·死路屠夫",
+                "hp": 13576329,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901703": {
+      "name": "恶名·冥宁芙",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010106": {
+          "title": "",
+          "desc": "· 首领敌人造成伤害提升25%；<color=#FFAF2C>分身被击破</color>/<color=#FFAF2C>本体进入失衡状态</color>时，将对首领敌人施加1层/5层<color=#FFFFFF>[如履薄冰]</color>， 每层<color=#FFFFFF>[如履薄冰]</color>会使首领敌人造成的伤害降低5%，并使代理人对其造成的<color=#98EFF0>冰属性伤害</color>和<color=#2EB6FF>电属性伤害</color><color=#FFAF2C>提升10%</color>；敌人从失衡状态恢复时，<color=#FFFFFF>[如履薄冰]</color>层数将会被重置。"
+        },
+        "69010109": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>击破舞者分身</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69011101": {
+          "title": "狂岚",
+          "desc": "· 代理人的<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>命中敌人时，代理人的暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，并使敌人的防御力<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69011601": {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        "69011701": {
+          "title": "通力",
+          "desc": "· 代理人的[支援攻击]、[强化特殊技]、[终结技]造成的伤害<color=#2BAD00>提升25%</color>。\n· 代理人每次发动[快速支援]或[连携技]时，喧响值获得效率<color=#2BAD00>提升30%</color>，攻击时无视敌人<color=#2BAD00>20%伤害抗性</color>，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69017031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·冥宁芙",
+                "hp": 11291123,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

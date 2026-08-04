@@ -1,0 +1,179 @@
+{
+  "deadly_id": 69018,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6901801": {
+      "name": "恶名·死路屠夫",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010402": {
+          "title": "",
+          "desc": "· 属性异常对首领敌人造成的伤害提升50%；恶名·死路屠夫处于<color=#FFFFFF>[以太强化]</color>状态时，承受的伤害降低15%，代理人对其造成的失衡值降低30%；代理人对恶名·死路屠夫触发<color=#FFFFFF>[紊乱]</color>后，使其立即退出<color=#FFFFFF>[以太强化]</color>状态。"
+        },
+        "69011702": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>施加[紊乱]</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69011202": {
+          "title": "奏鸣",
+          "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+        },
+        "69011401": {
+          "title": "沉疴",
+          "desc": "· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升25%</color>，失衡恢复速度<color=#2BAD00>降低10%</color>。\n· 代理人释放连携技后，自身的攻击力<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒。"
+        },
+        "69011801": {
+          "title": "提振",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color><color=#2BAD00>提升30%</color>。\n· 使敌人进入属性异常时，全队的攻击力<color=#2BAD00>提升8%</color>，喧响值获取效率<color=#2BAD00>提升8%</color>，持续20秒，最多可叠加4层，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69018011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·死路屠夫",
+                "hp": 13576329,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901802": {
+      "name": "秽息司祭",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69011502": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69011202": {
+          "title": "奏鸣",
+          "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+        },
+        "69011401": {
+          "title": "沉疴",
+          "desc": "· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升25%</color>，失衡恢复速度<color=#2BAD00>降低10%</color>。\n· 代理人释放连携技后，自身的攻击力<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒。"
+        },
+        "69011801": {
+          "title": "提振",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color><color=#2BAD00>提升30%</color>。\n· 使敌人进入属性异常时，全队的攻击力<color=#2BAD00>提升8%</color>，喧响值获取效率<color=#2BAD00>提升8%</color>，持续20秒，最多可叠加4层，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69018021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 10454316,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901803": {
+      "name": "自律强袭单位·「提丰·破坏者型」",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010205": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>发动[招架支援]命中首领敌人时</color>，将对其施加1层<color=#FFFFFF>[难敌四手]</color>，<color=#FFFFFF>[招架支援]</color>累计命中3次时，将触发部位破坏，并额外施加3层<color=#FFFFFF>[难敌四手]</color>，每层<color=#FFFFFF>[难敌四手]</color>会使代理人对首领敌人造成的失衡值<color=#FFAF2C>提升15%</color>，在失衡状态下<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>对其造成的伤害<color=#FFAF2C>提升10%</color>；敌人充电蓄能时，将修复受损部位并重置部位破坏进度；敌人从失衡状态恢复时，<color=#FFFFFF>[难敌四手]</color>层数将会被重置。"
+        },
+        "69010308": {
+          "title": "",
+          "desc": "· 该场战斗中，将不再消耗<color=#FFFFFF>[支援点数]</color>。"
+        },
+        "69010703": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>200操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>600操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69011202": {
+          "title": "奏鸣",
+          "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+        },
+        "69011401": {
+          "title": "沉疴",
+          "desc": "· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升25%</color>，失衡恢复速度<color=#2BAD00>降低10%</color>。\n· 代理人释放连携技后，自身的攻击力<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒。"
+        },
+        "69011801": {
+          "title": "提振",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color><color=#2BAD00>提升30%</color>。\n· 使敌人进入属性异常时，全队的攻击力<color=#2BAD00>提升8%</color>，喧响值获取效率<color=#2BAD00>提升8%</color>，持续20秒，最多可叠加4层，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69018031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "自律强袭单位·「提丰·破坏者型」",
+                "hp": 10253353,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

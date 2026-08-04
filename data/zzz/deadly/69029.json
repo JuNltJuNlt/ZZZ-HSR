@@ -1,0 +1,193 @@
+{
+  "deadly_id": 69029,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6902901": {
+      "name": "太初梦魇·「始主」",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69012704": {
+          "title": "",
+          "desc": "·首领受到的异常伤害<color=#2BAD00>降低30%</color>，当其从<Term:2000002></Term>状态切换回普通状态，或从普通状态切换为<color=#FFAF2C>[秽盾]</color>状态时，使代理人对其造成的暴击伤害<color=#2BAD00>提升20%</color>，最多叠加3层，当其从失衡状态恢复时层数重置。"
+        },
+        "69012705": {
+          "title": "",
+          "desc": "·触发<color=#FFAF2C>[秽盾净除]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        },
+        "69013001": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69012901": {
+          "title": "裁夺",
+          "desc": "· 处于以太帷幕中时，代理人的攻击力<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升20%</color>。\n· 敌人的失衡易伤倍率<color=#2BAD00>提升30%</color>，代理人的普通攻击和终结技攻击命中敌人时，无视其<color=#2BAD00>10%</color>的<color=#F0D12B>物理属性伤害抗性</color>和<color=#2BAD00>10%</color>的防御力。"
+        },
+        "69012902": {
+          "title": "霜暝",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理伤害</color><color=#2BAD00>提升30%</color>。\n· 使敌人进入属性异常时，全队的攻击力<color=#2BAD00>提升25%</color>，喧响值获取效率<color=#2BAD00>提升20%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69012903": {
+          "title": "破阵",
+          "desc": "· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>，失衡恢复速度<color=#2BAD00>降低10%</color>。\n· 代理人释放<color=#FFFFFF>强化特殊技</color>后，自身暴击伤害<color=#2BAD00>提升40%</color>，持续20秒。"
+        }
+      },
+      "layer_room": {
+        "69029011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "太初梦魇·「始主」",
+                "hp": 24799327,
+                "defense": 477,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理"
+                ],
+                "resistance": [
+                  "冰",
+                  "以太"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6902902": {
+      "name": "未知复合侵蚀体",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010305": {
+          "title": "",
+          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
+        },
+        "69010306": {
+          "title": "",
+          "desc": ""
+        },
+        "69010307": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69012901": {
+          "title": "裁夺",
+          "desc": "· 处于以太帷幕中时，代理人的攻击力<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升20%</color>。\n· 敌人的失衡易伤倍率<color=#2BAD00>提升30%</color>，代理人的普通攻击和终结技攻击命中敌人时，无视其<color=#2BAD00>10%</color>的<color=#F0D12B>物理属性伤害抗性</color>和<color=#2BAD00>10%</color>的防御力。"
+        },
+        "69012902": {
+          "title": "霜暝",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理伤害</color><color=#2BAD00>提升30%</color>。\n· 使敌人进入属性异常时，全队的攻击力<color=#2BAD00>提升25%</color>，喧响值获取效率<color=#2BAD00>提升20%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69012903": {
+          "title": "破阵",
+          "desc": "· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>，失衡恢复速度<color=#2BAD00>降低10%</color>。\n· 代理人释放<color=#FFFFFF>强化特殊技</color>后，自身暴击伤害<color=#2BAD00>提升40%</color>，持续20秒。"
+        }
+      },
+      "layer_room": {
+        "69029021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "未知复合侵蚀体",
+                "hp": 14984636,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6902903": {
+      "name": "彷徨猎手",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69012302": {
+          "title": "",
+          "desc": "· 彷徨猎手处于[秽浊流界]中时，基础防御提高40%；代理人发动<color=#FFAF2C>[支援突击]或[闪避反击]</color>命中彷徨猎手时，将对其施加1层<color=#FFFFFF>[动摇]</color>。<color=#FFFFFF>[动摇]</color>最多叠加5层，持续15秒，重复触发时刷新持续时间。\n· 代理人攻击命中彷徨猎手时，对方每有1层[动摇]，代理人的贯穿伤害<color=#FFAF2C>提升7%</color>。"
+        },
+        "69012303": {
+          "title": "",
+          "desc": "· 在捉迷藏阶段，使用<color=#FFAF2C>[觉感术]</color>破除<color=#FFAF2C>溺想者·卢西娅的真身</color>，可获得<color=#FFAF2C>3000操作得分</color>；破除真身后发动<color=#FFAF2C>[招架支援]或[支援突击]</color>命中彷徨猎手，化解其突袭，可获得<color=#FFAF2C>2000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69013002": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Rupture><color=#FFAF2C>[命破]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69012901": {
+          "title": "裁夺",
+          "desc": "· 处于以太帷幕中时，代理人的攻击力<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升20%</color>。\n· 敌人的失衡易伤倍率<color=#2BAD00>提升30%</color>，代理人的普通攻击和终结技攻击命中敌人时，无视其<color=#2BAD00>10%</color>的<color=#F0D12B>物理属性伤害抗性</color>和<color=#2BAD00>10%</color>的防御力。"
+        },
+        "69012902": {
+          "title": "霜暝",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理伤害</color><color=#2BAD00>提升30%</color>。\n· 使敌人进入属性异常时，全队的攻击力<color=#2BAD00>提升25%</color>，喧响值获取效率<color=#2BAD00>提升20%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69012903": {
+          "title": "破阵",
+          "desc": "· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>，失衡恢复速度<color=#2BAD00>降低10%</color>。\n· 代理人释放<color=#FFFFFF>强化特殊技</color>后，自身暴击伤害<color=#2BAD00>提升40%</color>，持续20秒。"
+        }
+      },
+      "layer_room": {
+        "69029031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "彷徨猎手",
+                "hp": 17472355,
+                "defense": 1588,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

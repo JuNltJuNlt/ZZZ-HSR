@@ -1,0 +1,175 @@
+{
+  "deadly_id": 69008,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6900801": {
+      "name": "恶名·冥宁芙",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010106": {
+          "title": "",
+          "desc": "· 首领敌人造成伤害提升25%；<color=#FFAF2C>分身被击破</color>/<color=#FFAF2C>本体进入失衡状态</color>时，将对首领敌人施加1层/5层<color=#FFFFFF>[如履薄冰]</color>， 每层<color=#FFFFFF>[如履薄冰]</color>会使首领敌人造成的伤害降低5%，并使代理人对其造成的<color=#98EFF0>冰属性伤害</color>和<color=#2EB6FF>电属性伤害</color><color=#FFAF2C>提升10%</color>；敌人从失衡状态恢复时，<color=#FFFFFF>[如履薄冰]</color>层数将会被重置。"
+        },
+        "69010109": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>击破舞者分身</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010701": {
+          "title": "锐进",
+          "desc": "· 代理人的<color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[闪避反击]</color>命中敌人时，全队的攻击力<color=#2BAD00>提升15%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69010801": {
+          "title": "昏惫",
+          "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69010803": {
+          "title": "灼冽",
+          "desc": "· 代理人的<color=#FF5521>火属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>将<color=#2BAD00>提升20%</color>，攻击力<color=#2BAD00>提升25%</color>。\n·对敌人施加<color=#FFFFFF>属性异常</color>效果时，代理人<color=#2BAD00>回复400点喧响值</color>，<color=#2BAD00>提升80点异常精通</color>，持续15秒，喧响值回复效果15秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "69008011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·冥宁芙",
+                "hp": 8966480,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6900802": {
+      "name": "自律强袭单位·「提丰·破坏者型」",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010205": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>发动[招架支援]命中首领敌人时</color>，将对其施加1层<color=#FFFFFF>[难敌四手]</color>，<color=#FFFFFF>[招架支援]</color>累计命中3次时，将触发部位破坏，并额外施加3层<color=#FFFFFF>[难敌四手]</color>，每层<color=#FFFFFF>[难敌四手]</color>会使代理人对首领敌人造成的失衡值<color=#FFAF2C>提升15%</color>，在失衡状态下<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>对其造成的伤害<color=#FFAF2C>提升10%</color>；敌人充电蓄能时，将修复受损部位并重置部位破坏进度；敌人从失衡状态恢复时，<color=#FFFFFF>[难敌四手]</color>层数将会被重置。"
+        },
+        "69010308": {
+          "title": "",
+          "desc": "· 该场战斗中，将不再消耗<color=#FFFFFF>[支援点数]</color>。"
+        },
+        "69010703": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>200操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>600操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010701": {
+          "title": "锐进",
+          "desc": "· 代理人的<color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[闪避反击]</color>命中敌人时，全队的攻击力<color=#2BAD00>提升15%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69010801": {
+          "title": "昏惫",
+          "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69010803": {
+          "title": "灼冽",
+          "desc": "· 代理人的<color=#FF5521>火属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>将<color=#2BAD00>提升20%</color>，攻击力<color=#2BAD00>提升25%</color>。\n·对敌人施加<color=#FFFFFF>属性异常</color>效果时，代理人<color=#2BAD00>回复400点喧响值</color>，<color=#2BAD00>提升80点异常精通</color>，持续15秒，喧响值回复效果15秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "69008021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "自律强袭单位·「提丰·破坏者型」",
+                "hp": 9081541,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6900803": {
+      "name": "恶名·庞培",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010503": {
+          "title": "",
+          "desc": "·代理人<color=#FFAF2C>发动[招架支援]或[连携技]命中首领敌人时</color>，将对其施加1层<color=#FFFFFF>[劣势]</color>，持续20秒，每层效果单独结算持续时间。代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[劣势]</color>，代理人的暴击伤害<color=#FFAF2C>提升15%</color>；\n\n首领敌人拥有4层<color=#FFFFFF>[劣势]</color>时，[招架支援]会弹开首领敌人的攻击，造成硬直效果。"
+        },
+        "69010802": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>350操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010701": {
+          "title": "锐进",
+          "desc": "· 代理人的<color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[闪避反击]</color>命中敌人时，全队的攻击力<color=#2BAD00>提升15%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续20秒，重复触发时刷新持续时间。"
+        },
+        "69010801": {
+          "title": "昏惫",
+          "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69010803": {
+          "title": "灼冽",
+          "desc": "· 代理人的<color=#FF5521>火属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>将<color=#2BAD00>提升20%</color>，攻击力<color=#2BAD00>提升25%</color>。\n·对敌人施加<color=#FFFFFF>属性异常</color>效果时，代理人<color=#2BAD00>回复400点喧响值</color>，<color=#2BAD00>提升80点异常精通</color>，持续15秒，喧响值回复效果15秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "69008031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·庞培",
+                "hp": 8994139,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "deadly_id": 69033,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6903301": {
+      "name": "猎血清道夫",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "69013303": {
+          "title": "",
+          "desc": "·[侵蚀壁垒]持续期间，代理人对其造成的异常伤害<color=#2BAD00>提升50%</color>，造成的异常积蓄<color=#2BAD00>提升30%</color>；首领在失衡状态下，受到的异常伤害<color=#2BAD00>提升15%</color>，代理人对其造成的异常积蓄<color=#2BAD00>提升15%</color>；首领在非失衡状态下，受到的伤害<color=#2BAD00>降低15%</color>。"
+        },
+        "69013304": {
+          "title": "",
+          "desc": "·每次成功应对首领的攻击并使其触发特殊跪地，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>1500操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69013301": {
+          "title": "续变",
+          "desc": "· 代理人使敌人进入属性异常状态后，其失衡恢复速度<color=#2BAD00>降低15%</color>，全队攻击力<color=#2BAD00>提升15%</color>，持续20秒，重复触发刷新持续时间。\n· 使敌人进入失衡状态时，全队回复<color=#2BAD00>20点能量</color>，异放伤害<color=#2BAD00>提升30%</color>，持续30秒，重复触发刷新持续时间，能量回复效果30秒内最多触发1次。"
+        },
+        "69013302": {
+          "title": "裂魄",
+          "desc": "· 代理人的[终结技]造成的伤害<color=#2BAD00>提升30%</color>，发动[终结技]后，全队的贯穿伤害<color=#2BAD00>提升10%</color>，暴击伤害<color=#2BAD00>提升25%</color>，持续20秒，重复触发刷新持续时间。\n· 代理人使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升20%</color>。"
+        },
+        "69013402": {
+          "title": "骤暝",
+          "desc": "· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升20%</color>，无视敌人<color=#2BAD00>30%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 对敌人施加[紊乱]效果时，代理人的暴击伤害<color=#2BAD00>提升50%</color>，敌人的失衡恢复速度<color=#2BAD00>降低15%</color>，失衡易伤倍率<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69033011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "猎血清道夫",
+                "hp": 33152155,
+                "defense": 477,
+                "stun": 17877,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [
+                  "火",
+                  "风"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6903302": {
+      "name": "秽息司祭",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013002": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Rupture><color=#FFAF2C>[命破]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69013301": {
+          "title": "续变",
+          "desc": "· 代理人使敌人进入属性异常状态后，其失衡恢复速度<color=#2BAD00>降低15%</color>，全队攻击力<color=#2BAD00>提升15%</color>，持续20秒，重复触发刷新持续时间。\n· 使敌人进入失衡状态时，全队回复<color=#2BAD00>20点能量</color>，异放伤害<color=#2BAD00>提升30%</color>，持续30秒，重复触发刷新持续时间，能量回复效果30秒内最多触发1次。"
+        },
+        "69013302": {
+          "title": "裂魄",
+          "desc": "· 代理人的[终结技]造成的伤害<color=#2BAD00>提升30%</color>，发动[终结技]后，全队的贯穿伤害<color=#2BAD00>提升10%</color>，暴击伤害<color=#2BAD00>提升25%</color>，持续20秒，重复触发刷新持续时间。\n· 代理人使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升20%</color>。"
+        },
+        "69013402": {
+          "title": "骤暝",
+          "desc": "· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升20%</color>，无视敌人<color=#2BAD00>30%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 对敌人施加[紊乱]效果时，代理人的暴击伤害<color=#2BAD00>提升50%</color>，敌人的失衡恢复速度<color=#2BAD00>降低15%</color>，失衡易伤倍率<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69033021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 16726906,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6903303": {
+      "name": "恶名·冥宁芙",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010109": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>击破舞者分身</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        },
+        "69011204": {
+          "title": "",
+          "desc": "· 首领敌人造成伤害提升25%；<color=#FFAF2C>分身被击破</color>/<color=#FFAF2C>本体进入失衡状态</color>时，将对首领敌人施加1层/5层<color=#FFFFFF>[如履薄冰]</color>， 每层<color=#FFFFFF>[如履薄冰]</color>会使首领敌人造成的伤害降低5%，并使代理人对其造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color><color=#FFAF2C>提升10%</color>；敌人从失衡状态恢复时，<color=#FFFFFF>[如履薄冰]</color>层数将会被重置。"
+        },
+        "69013502": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69013301": {
+          "title": "续变",
+          "desc": "· 代理人使敌人进入属性异常状态后，其失衡恢复速度<color=#2BAD00>降低15%</color>，全队攻击力<color=#2BAD00>提升15%</color>，持续20秒，重复触发刷新持续时间。\n· 使敌人进入失衡状态时，全队回复<color=#2BAD00>20点能量</color>，异放伤害<color=#2BAD00>提升30%</color>，持续30秒，重复触发刷新持续时间，能量回复效果30秒内最多触发1次。"
+        },
+        "69013302": {
+          "title": "裂魄",
+          "desc": "· 代理人的[终结技]造成的伤害<color=#2BAD00>提升30%</color>，发动[终结技]后，全队的贯穿伤害<color=#2BAD00>提升10%</color>，暴击伤害<color=#2BAD00>提升25%</color>，持续20秒，重复触发刷新持续时间。\n· 代理人使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升20%</color>。"
+        },
+        "69013402": {
+          "title": "骤暝",
+          "desc": "· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升20%</color>，无视敌人<color=#2BAD00>30%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 对敌人施加[紊乱]效果时，代理人的暴击伤害<color=#2BAD00>提升50%</color>，敌人的失衡恢复速度<color=#2BAD00>降低15%</color>，失衡易伤倍率<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69033031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·冥宁芙",
+                "hp": 20257602,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

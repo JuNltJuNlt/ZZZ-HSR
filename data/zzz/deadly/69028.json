@@ -1,0 +1,188 @@
+{
+  "deadly_id": 69028,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6902801": {
+      "name": "「亵渎者」",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011902": {
+          "title": "",
+          "desc": "· 代理人发动招架支援命中亵渎者时，全队获得1层<color=#FFFFFF>[裁夺]</color>；代理人将在空中发动攻击的亵渎者击落时，全队获得4层<color=#FFFFFF>[裁夺]</color>。[裁夺]最多叠加6层，持续30秒，重复触发时刷新持续时间。\n· 每拥有1层<color=#FFFFFF>[裁夺]</color>，代理人的暴击伤害<color=#2BAD00>提升5%</color>，物理伤害<color=#2BAD00>提升5%</color>，电属性伤害<color=#2BAD00>提升5%</color>。\n· 亵渎者受到的属性异常伤害降低25%。"
+        },
+        "69011903": {
+          "title": "",
+          "desc": "· 代理人造成<color=#FFAF2C>部位破坏时</color>，可获得<color=#FFAF2C>2500操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的亵渎者击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013001": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69011904": {
+          "title": "驭变",
+          "desc": "· <color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。发动<color=#FFFFFF>[终结技]</color>时，代理人的攻击力<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。\n· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>。"
+        },
+        "69012703": {
+          "title": "聚气",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升16%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升30%</color>。\n· 处于以太帷幕中的代理人，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#F0D12B>物理属性伤害抗性</color>和<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69012801": {
+          "title": "异变",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升25%</color>，异常精通<color=#2BAD00>提升40</color>点。\n· 对敌人施加属性异常效果后，敌人的全伤害抗性<color=#2BAD00>降低10%</color>，代理人对其造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69028011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「亵渎者」",
+                "hp": 14081111,
+                "defense": 953,
+                "stun": 19978,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6902802": {
+      "name": "恶名·冥宁芙",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010109": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>击破舞者分身</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        },
+        "69011204": {
+          "title": "",
+          "desc": "· 首领敌人造成伤害提升25%；<color=#FFAF2C>分身被击破</color>/<color=#FFAF2C>本体进入失衡状态</color>时，将对首领敌人施加1层/5层<color=#FFFFFF>[如履薄冰]</color>， 每层<color=#FFFFFF>[如履薄冰]</color>会使首领敌人造成的伤害降低5%，并使代理人对其造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color><color=#FFAF2C>提升10%</color>；敌人从失衡状态恢复时，<color=#FFFFFF>[如履薄冰]</color>层数将会被重置。"
+        }
+      },
+      "selectable_buff": {
+        "69011904": {
+          "title": "驭变",
+          "desc": "· <color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。发动<color=#FFFFFF>[终结技]</color>时，代理人的攻击力<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。\n· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>。"
+        },
+        "69012703": {
+          "title": "聚气",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升16%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升30%</color>。\n· 处于以太帷幕中的代理人，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#F0D12B>物理属性伤害抗性</color>和<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69012801": {
+          "title": "异变",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升25%</color>，异常精通<color=#2BAD00>提升40</color>点。\n· 对敌人施加属性异常效果后，敌人的全伤害抗性<color=#2BAD00>降低10%</color>，代理人对其造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69028021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·冥宁芙",
+                "hp": 16604592,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6902803": {
+      "name": "秽息司祭",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013002": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Rupture><color=#FFAF2C>[命破]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69011904": {
+          "title": "驭变",
+          "desc": "· <color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。发动<color=#FFFFFF>[终结技]</color>时，代理人的攻击力<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。\n· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>。"
+        },
+        "69012703": {
+          "title": "聚气",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升16%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升30%</color>。\n· 处于以太帷幕中的代理人，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#F0D12B>物理属性伤害抗性</color>和<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69012801": {
+          "title": "异变",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升25%</color>，异常精通<color=#2BAD00>提升40</color>点。\n· 对敌人施加属性异常效果后，敌人的全伤害抗性<color=#2BAD00>降低10%</color>，代理人对其造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69028031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 14636043,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

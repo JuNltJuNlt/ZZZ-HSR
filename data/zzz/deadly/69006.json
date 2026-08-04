@@ -1,0 +1,179 @@
+{
+  "deadly_id": 69006,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6900601": {
+      "name": "未知复合侵蚀体",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010305": {
+          "title": "",
+          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
+        },
+        "69010306": {
+          "title": "",
+          "desc": ""
+        },
+        "69010307": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        },
+        "69010601": {
+          "title": "电火",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>将<color=#2BAD00>提升25%</color>。\n· 触发<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[极限支援]</color>或<color=#FFFFFF>[快速支援]</color>后，代理人的暴击率<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        "69010602": {
+          "title": "积异",
+          "desc": "· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>，拥有护盾时异常积蓄效率<color=#2BAD00>额外提升20%</color>。\n· 攻击处于属性异常状态中的敌人时，代理人造成的伤害<color=#2BAD00>提升40%</color>。"
+        }
+      },
+      "layer_room": {
+        "69006011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "未知复合侵蚀体",
+                "hp": 8657790,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6900602": {
+      "name": "牲鬼·布林格",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010107": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>打断吟唱</color>时，可获得<color=#FFAF2C>2000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69010505": {
+          "title": "",
+          "desc": "· 对首领敌人<color=#FFAF2C>施加属性异常或[紊乱]效果时</color>，全队获得1层<color=#FFFFFF>[心无旁骛]</color>，最多叠加6层，每层<color=#FFFFFF>[心无旁骛]</color>会使代理人的<color=#FFAF2C>攻击力提升8%</color>；拥有至少3层<color=#FFFFFF>[心无旁骛]</color>后，队伍中任意代理人对敌人<color=#FFAF2C>施加属性异常效果时，该效果的持续时间提升5秒</color>；牲鬼·布林格召唤「牲祭之刃」发动攻击时，全队<color=#FFFFFF>[心无旁骛]</color>层数将会被重置。"
+        },
+        "69010506": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        },
+        "69010601": {
+          "title": "电火",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>将<color=#2BAD00>提升25%</color>。\n· 触发<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[极限支援]</color>或<color=#FFFFFF>[快速支援]</color>后，代理人的暴击率<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        "69010602": {
+          "title": "积异",
+          "desc": "· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>，拥有护盾时异常积蓄效率<color=#2BAD00>额外提升20%</color>。\n· 攻击处于属性异常状态中的敌人时，代理人造成的伤害<color=#2BAD00>提升40%</color>。"
+        }
+      },
+      "layer_room": {
+        "69006021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "牲鬼·布林格",
+                "hp": 10279016,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6900603": {
+      "name": "恶名·庞培",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010503": {
+          "title": "",
+          "desc": "·代理人<color=#FFAF2C>发动[招架支援]或[连携技]命中首领敌人时</color>，将对其施加1层<color=#FFFFFF>[劣势]</color>，持续20秒，每层效果单独结算持续时间。代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[劣势]</color>，代理人的暴击伤害<color=#FFAF2C>提升15%</color>；\n\n首领敌人拥有4层<color=#FFFFFF>[劣势]</color>时，[招架支援]会弹开首领敌人的攻击，造成硬直效果。"
+        },
+        "69010504": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>300操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        },
+        "69010601": {
+          "title": "电火",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>将<color=#2BAD00>提升25%</color>。\n· 触发<color=#FFFFFF>[连携技]</color>、<color=#FFFFFF>[极限支援]</color>或<color=#FFFFFF>[快速支援]</color>后，代理人的暴击率<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        "69010602": {
+          "title": "积异",
+          "desc": "· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>，拥有护盾时异常积蓄效率<color=#2BAD00>额外提升20%</color>。\n· 攻击处于属性异常状态中的敌人时，代理人造成的伤害<color=#2BAD00>提升40%</color>。"
+        }
+      },
+      "layer_room": {
+        "69006031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·庞培",
+                "hp": 8839954,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

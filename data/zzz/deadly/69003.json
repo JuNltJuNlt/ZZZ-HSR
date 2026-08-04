@@ -1,0 +1,174 @@
+{
+  "deadly_id": 69003,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6900301": {
+      "name": "恶名·死路屠夫",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010402": {
+          "title": "",
+          "desc": "· 属性异常对首领敌人造成的伤害提升50%；恶名·死路屠夫处于<color=#FFFFFF>[以太强化]</color>状态时，承受的伤害降低15%，代理人对其造成的失衡值降低30%；代理人对恶名·死路屠夫触发<color=#FFFFFF>[紊乱]</color>后，使其立即退出<color=#FFFFFF>[以太强化]</color>状态。"
+        },
+        "69010507": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[极限闪避]</color>时，可获得<color=#FFAF2C>200操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010301": {
+          "title": "异象",
+          "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+        },
+        "69010302": {
+          "title": "霜雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>将<color=#2BAD00>提升25%</color>。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>，无视敌人<color=#2BAD00>15%</color>防御力。"
+        },
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69003011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "恶名·死路屠夫",
+                "hp": 9836435,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6900302": {
+      "name": "未知复合侵蚀体",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010305": {
+          "title": "",
+          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
+        },
+        "69010306": {
+          "title": "",
+          "desc": ""
+        },
+        "69010307": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010301": {
+          "title": "异象",
+          "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+        },
+        "69010302": {
+          "title": "霜雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>将<color=#2BAD00>提升25%</color>。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>，无视敌人<color=#2BAD00>15%</color>防御力。"
+        },
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69003021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "未知复合侵蚀体",
+                "hp": 8657790,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6900303": {
+      "name": "「霸主侵蚀体·庞培」",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010105": {
+          "title": "",
+          "desc": "· 首领敌人每10秒获得1层<color=#FFFFFF>[愈战愈勇]</color>，使自身造成伤害提升20%，最多叠加3层；队伍中任意代理人<color=#FFAF2C>对敌人施加属性异常效果时</color>，将移除1层<color=#FFFFFF>[愈战愈勇]</color>并削弱目标，使其受到伤害提升15%，持续20秒。"
+        },
+        "69010108": {
+          "title": "",
+          "desc": "· 对敌人<color=#FFAF2C>施加属性异常效果</color>时，可获得<color=#FFAF2C>150操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69010301": {
+          "title": "异象",
+          "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+        },
+        "69010302": {
+          "title": "霜雷",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>将<color=#2BAD00>提升25%</color>。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[闪避反击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>，无视敌人<color=#2BAD00>15%</color>防御力。"
+        },
+        "69010303": {
+          "title": "驰援",
+          "desc": "· 代理人的能量获取效率<color=#2BAD00>提升25%</color>，<color=#FFFFFF>[快速支援]</color>造成的伤害<color=#2BAD00>提升50%</color>。\n· 每次使用<color=#FFFFFF>[快速支援]</color>时，全队的攻击力<color=#2BAD00>提升10%</color>，持续20秒，最多可叠加3层，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69003031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「霸主侵蚀体·庞培」",
+                "hp": 8017632,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

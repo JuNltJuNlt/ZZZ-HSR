@@ -1,0 +1,200 @@
+{
+  "deadly_id": 69038,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6903801": {
+      "name": "秽息妖鬼·名可名",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011602": {
+          "title": "",
+          "desc": "秽息妖鬼每次进入<color=#FFAF2C>属性异常</color>时，代理人对其造成的异常伤害增加8%，最多叠加6层；开启<Term:2000002></Term>时清空所有层数，每层使<color=#FFAF2C>[秽盾]</color>被削减效率提升2.5%。"
+        },
+        "69011603": {
+          "title": "",
+          "desc": "· 代理人吸引秽息妖鬼地面攻击<color=#FFAF2C>一次性引爆至少5处秽息泽</color>，且<color=#FFAF2C>未被该攻击及秽息泽爆炸命中</color>时，可获得<color=#FFAF2C>1700操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69013701": {
+          "title": "授命",
+          "desc": "· 代理人的贯穿伤害<color=#2BAD00>提升20%</color>。\n· [命破]特性的代理人发动[强化特殊技]后，暴击伤害<color=#2BAD00>提升50%</color>，<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时无视其<color=#2BAD00>30%</color>的<color=#F0D12B>物理伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69013801": {
+          "title": "冽锋",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color><color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>造成的伤害额外<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，<color=#98EFF0>冰属性伤害抗性</color><color=#2BAD00>降低30%</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69038011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息妖鬼·名可名",
+                "hp": 19162283,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6903802": {
+      "name": "魇缚者·叶释渊",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69012603": {
+          "title": "",
+          "desc": "· 代理人使索贝克与魇缚者进入<color=#FFAF2C>虚弱状态</color>时，可获得<color=#FFAF2C>1500操作得分</color>；代理人<color=#FFAF2C>击杀索贝克</color>时，可获得<color=#FFAF2C>2000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012604": {
+          "title": "",
+          "desc": "· 索贝克与魇缚者每次交替上场时，可使魇缚者获得1层<color=#FFFFFF>[合契]</color>与一层<color=#FFFFFF>[舍身]</color>，[合契]与[舍身]最多叠加3层，每层[合契]可使全属性异常积蓄抗性<color=#FFAF2C>提升15%</color>，每层[舍身]可使魇缚者失衡易伤倍率<color=#FFAF2C>提升10%</color>；魇缚者进入失衡状态时，受到暴击伤害<color=#FFAF2C>提升50%</color>。"
+        },
+        "69013004": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Stun><color=#FFAF2C>[击破]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69013701": {
+          "title": "授命",
+          "desc": "· 代理人的贯穿伤害<color=#2BAD00>提升20%</color>。\n· [命破]特性的代理人发动[强化特殊技]后，暴击伤害<color=#2BAD00>提升50%</color>，<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时无视其<color=#2BAD00>30%</color>的<color=#F0D12B>物理伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69013801": {
+          "title": "冽锋",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color><color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>造成的伤害额外<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，<color=#98EFF0>冰属性伤害抗性</color><color=#2BAD00>降低30%</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69038021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魇缚者·叶释渊",
+                "hp": 22585468,
+                "defense": 953,
+                "stun": 14069,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6903803": {
+      "name": "「亵渎者」",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011902": {
+          "title": "",
+          "desc": "· 代理人发动招架支援命中亵渎者时，全队获得1层<color=#FFFFFF>[裁夺]</color>；代理人将在空中发动攻击的亵渎者击落时，全队获得4层<color=#FFFFFF>[裁夺]</color>。[裁夺]最多叠加6层，持续30秒，重复触发时刷新持续时间。\n· 每拥有1层<color=#FFFFFF>[裁夺]</color>，代理人的暴击伤害<color=#2BAD00>提升5%</color>，物理伤害<color=#2BAD00>提升5%</color>，电属性伤害<color=#2BAD00>提升5%</color>。\n· 亵渎者受到的属性异常伤害降低25%。"
+        },
+        "69011903": {
+          "title": "",
+          "desc": "· 代理人造成<color=#FFAF2C>部位破坏时</color>，可获得<color=#FFAF2C>2500操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的亵渎者击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        },
+        "69013001": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69013701": {
+          "title": "授命",
+          "desc": "· 代理人的贯穿伤害<color=#2BAD00>提升20%</color>。\n· [命破]特性的代理人发动[强化特殊技]后，暴击伤害<color=#2BAD00>提升50%</color>，<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时无视其<color=#2BAD00>30%</color>的<color=#F0D12B>物理伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "69013801": {
+          "title": "冽锋",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color><color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>造成的伤害额外<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，<color=#98EFF0>冰属性伤害抗性</color><color=#2BAD00>降低30%</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "69038031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「亵渎者」",
+                "hp": 17803703,
+                "defense": 953,
+                "stun": 19978,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}

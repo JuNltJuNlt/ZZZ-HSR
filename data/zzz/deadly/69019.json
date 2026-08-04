@@ -1,0 +1,186 @@
+{
+  "deadly_id": 69019,
+  "deadly_name": "试炼",
+  "time": " - ",
+  "zone": {
+    "6901901": {
+      "name": "「亵渎者」",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011902": {
+          "title": "",
+          "desc": "· 代理人发动招架支援命中亵渎者时，全队获得1层<color=#FFFFFF>[裁夺]</color>；代理人将在空中发动攻击的亵渎者击落时，全队获得4层<color=#FFFFFF>[裁夺]</color>。[裁夺]最多叠加6层，持续30秒，重复触发时刷新持续时间。\n· 每拥有1层<color=#FFFFFF>[裁夺]</color>，代理人的暴击伤害<color=#2BAD00>提升5%</color>，物理伤害<color=#2BAD00>提升5%</color>，电属性伤害<color=#2BAD00>提升5%</color>。\n· 亵渎者受到的属性异常伤害降低25%。"
+        },
+        "69011903": {
+          "title": "",
+          "desc": "· 代理人造成<color=#FFAF2C>部位破坏时</color>，可获得<color=#FFAF2C>2500操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的亵渎者击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69011601": {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        "69011901": {
+          "title": "倏袭",
+          "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "69011904": {
+          "title": "驭变",
+          "desc": "· <color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。发动<color=#FFFFFF>[终结技]</color>时，代理人的攻击力<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。\n· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>。"
+        }
+      },
+      "layer_room": {
+        "69019011": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「亵渎者」",
+                "hp": 11329629,
+                "defense": 953,
+                "stun": 19978,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901902": {
+      "name": "秽息妖鬼·名可名",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011602": {
+          "title": "",
+          "desc": "秽息妖鬼每次进入<color=#FFAF2C>属性异常</color>时，代理人对其造成的异常伤害增加8%，最多叠加6层；开启<Term:2000002></Term>时清空所有层数，每层使<color=#FFAF2C>[秽盾]</color>被削减效率提升2.5%。"
+        },
+        "69011603": {
+          "title": "",
+          "desc": "· 代理人吸引秽息妖鬼地面攻击<color=#FFAF2C>一次性引爆至少5处秽息泽</color>，且<color=#FFAF2C>未被该攻击及秽息泽爆炸命中</color>时，可获得<color=#FFAF2C>1700操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69011601": {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        "69011901": {
+          "title": "倏袭",
+          "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "69011904": {
+          "title": "驭变",
+          "desc": "· <color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。发动<color=#FFFFFF>[终结技]</color>时，代理人的攻击力<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。\n· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>。"
+        }
+      },
+      "layer_room": {
+        "69019021": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息妖鬼·名可名",
+                "hp": 13902049,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    },
+    "6901903": {
+      "name": "秽息司祭",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69011302": {
+          "title": "",
+          "desc": "· 秽息司祭每次切换阶段时，会使自身异常积蓄抗性提升10%，同时使自身受到的暴击伤害提高30%，至多可以叠加2层，<Term:2000002></Term>被打破时，清除所有层数。"
+        },
+        "69011303": {
+          "title": "",
+          "desc": "· 代理人<color=#FFAF2C>3秒内成功发动3次[招架支援]</color>时，可获得<color=#FFAF2C>1000操作得分</color>，最多获得5000操作得分。"
+        },
+        "69012102": {
+          "title": "",
+          "desc": ""
+        }
+      },
+      "selectable_buff": {
+        "69011601": {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        "69011901": {
+          "title": "倏袭",
+          "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "69011904": {
+          "title": "驭变",
+          "desc": "· <color=#FFFFFF>[终结技]</color>造成的伤害<color=#2BAD00>提升30%</color>。发动<color=#FFFFFF>[终结技]</color>时，代理人的攻击力<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。\n· 使敌人进入失衡状态后，其失衡易伤倍率<color=#2BAD00>提升35%</color>。"
+        }
+      },
+      "layer_room": {
+        "69019031": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息司祭",
+                "hp": 12545180,
+                "defense": 953,
+                "stun": 16648,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "S"
+              }
+            ]
+          ],
+          "weakness": [],
+          "s_rank_goal": 20000
+        }
+      }
+    }
+  }
+}
