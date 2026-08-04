@@ -118,7 +118,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     const monster = room.monsters[0][0];
     const buffKeys = Object.keys(zoneData.layer_buff || {});
 
-    const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column" } });
+    const section = create("div", { className: letter });
     const recommend = create("div", { className: `${letter}_r` });
     const lineup = create("div", { className: `${letter}_m` });
     
@@ -160,12 +160,21 @@ const renderAllBosses = () => {
     const bossColors = ["u", "l", "t"];
     const allSelectableBuffs = [];
 
-    const bossRow = create("div", { className: "u_l" });
+    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "0" } });
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
         const label = text.stageLabels[i] || `Boss${i+1}`;
-        bossRow.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
+        const wrapper = create("div", {
+            style: {
+                flex: "0 0 auto",
+                width: "calc(33.33% - 24px)",
+                maxWidth: "400px",
+                margin: "0 12px",
+            }
+        });
+        wrapper.appendChild(renderBossSection(zoneData, bossColors[i], label, elements));
+        bossRow.appendChild(wrapper);
         if (i === 0 && zoneData.selectable_buff) {
             Object.values(zoneData.selectable_buff).forEach(b => allSelectableBuffs.push(b));
         }
@@ -176,6 +185,7 @@ const renderAllBosses = () => {
         const sharedBuffBox = create("div", {
             style: {
                 width: "calc(100% - 36px)",
+                maxWidth: "1200px",
                 backgroundColor: "#27363E",
                 color: "#eeeeee",
                 borderRadius: "5px",
