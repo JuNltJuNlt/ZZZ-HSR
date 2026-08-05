@@ -75,14 +75,14 @@ const renderWeaknessBars = (weakness = [], resistance = []) => {
     });
 };
 
-// ===== 渲染怪物卡片（复用式舆防卫战的样式） =====
-const renderMonsterCard = (monster, stageLevel) => {
+// ===== 渲染怪物卡片 =====
+const renderMonsterCard = (monster, stageLevel, multiplier = 1) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
-    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
-    const def = monster.defense || 0;
-    const stun = monster.stun || 0;
+    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * multiplier);
+    const def = Math.round(monster.defense * multiplier);
+    const stun = Math.round(monster.stun * multiplier);
 
     const img = image(imagePath, "monicon hasimg", monster.name);
     const nameLayer = create("div", {
@@ -115,12 +115,11 @@ const renderMonsterCard = (monster, stageLevel) => {
     });
 };
 
-// ===== 渲染试炼Boss（恢复原来的样式） =====
+// ===== 渲染试炼Boss =====
 const renderTrialZone = (zoneKey, zoneData) => {
     const monster = zoneData.monsters[0];
-    const card = renderMonsterCard(monster, zoneData.monster_level);
+    const card = renderMonsterCard(monster, zoneData.monster_level, 8.74);
     
-    // 提取所有buff（layer_buff + selectable_buff）
     const buffs = [];
     Object.values(zoneData.layer_buff || {}).forEach(b => {
         if (b.desc && b.desc.trim()) {
@@ -189,12 +188,10 @@ const renderFinalZone = (zoneKey, zoneData) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
-    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
-    const hpFinal = Math.round(hp * 15.8);
-    const def = monster.defense || 0;
-    const stun = monster.stun || 0;
+    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * 15.8);
+    const def = Math.round(monster.defense * 15.8);
+    const stun = Math.round(monster.stun * 15.8);
 
-    // 提取buff
     const buffs = [];
     Object.values(zoneData.layer_buff || {}).forEach(b => {
         if (b.desc && b.desc.trim()) {
@@ -224,7 +221,7 @@ const renderFinalZone = (zoneKey, zoneData) => {
                     create("div", { className: "monster-name", text: monster.name }),
                     renderWeaknessBars(monster.weakness, monster.resistance),
                     create("div", { className: "monster-stats", children: [
-                        create("p", { html: `血量：<span class="hp">${hpFinal.toLocaleString()}</span> (×15.8)` }),
+                        create("p", { html: `血量：<span class="hp">${hp.toLocaleString()}</span>` }),
                         create("p", { html: `防御：<span class="def">${def}</span>` }),
                         create("p", { html: `失衡条：<span class="stun">${stun}</span>` }),
                     ]}),
@@ -258,7 +255,7 @@ const renderFinalChart = () => {
     const data = finalEntries.map(e => {
         const zone = Object.values(e.final_zone)[0];
         const monster = zone.monsters[0];
-        return Math.round((monster.hp * (monster.hp_ratio_sum ?? 1)) * 15.8);
+        return Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * 15.8);
     });
 
     if (chartElement && window.echarts) {
@@ -307,7 +304,7 @@ const renderTrialChart = () => {
                 });
             });
         }
-        return Math.round(total);
+        return Math.round(total * 8.74);
     });
 
     const existingChart = window.echarts.getInstanceByDom(chartElement);
@@ -347,7 +344,7 @@ const render = () => {
     const layout = byId("asLayout");
     layout.replaceChildren();
 
-    // 1. 渲染试炼三Boss（使用原有格式）
+    // 1. 渲染试炼三Boss
     if (entry.normal_zone && Object.keys(entry.normal_zone).length > 0) {
         const zoneKeys = Object.keys(entry.normal_zone).sort();
         zoneKeys.forEach(key => {

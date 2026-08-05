@@ -34,9 +34,9 @@
       "monsters": [
         {
           "name": "死路屠夫",
-          "hp": 21772936,
-          "defense": 953,
-          "stun": 14079,
+          "hp": 21772935.809999995,
+          "defense": 952.8000000000001,
+          "stun": 14078.85,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -90,9 +90,9 @@
       "monsters": [
         {
           "name": "基塔布鲁",
-          "hp": 21055865,
-          "defense": 953,
-          "stun": 21038,
+          "hp": 21055864.41,
+          "defense": 952.8000000000001,
+          "stun": 21037.2,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -145,8 +145,8 @@
       "monsters": [
         {
           "name": "太初梦魇·「始主」",
-          "hp": 38711145,
-          "defense": 477,
+          "hp": 38711144.160000004,
+          "defense": 476.40000000000003,
           "stun": 18236,
           "number": 1,
           "hp_ratio_sum": 1,
@@ -201,9 +201,9 @@
       "monsters": [
         {
           "name": "复写体·猎血清道夫",
-          "hp": 46994361,
-          "defense": 477,
-          "stun": 17877,
+          "hp": 46994360.22,
+          "defense": 476.40000000000003,
+          "stun": 17876.45,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],

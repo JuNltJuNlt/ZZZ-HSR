@@ -30,9 +30,9 @@
       "monsters": [
         {
           "name": "库萨里库",
-          "hp": 18522758,
-          "defense": 953,
-          "stun": 18934,
+          "hp": 18522757.62,
+          "defense": 952.8000000000001,
+          "stun": 18933.95,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -88,9 +88,9 @@
       "monsters": [
         {
           "name": "秽息妖鬼·名可名",
-          "hp": 25549711,
-          "defense": 953,
-          "stun": 16648,
+          "hp": 25549710.21,
+          "defense": 952.8000000000001,
+          "stun": 16647.4,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -146,9 +146,9 @@
       "monsters": [
         {
           "name": "魇缚者·叶释渊",
-          "hp": 25151999,
-          "defense": 953,
-          "stun": 14069,
+          "hp": 25151998.41,
+          "defense": 952.8000000000001,
+          "stun": 14068.040000000003,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -203,9 +203,9 @@
       "monsters": [
         {
           "name": "异构·基塔布鲁",
-          "hp": 31900305,
-          "defense": 953,
-          "stun": 18934,
+          "hp": 31900304.79,
+          "defense": 952.8000000000001,
+          "stun": 18933.95,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],

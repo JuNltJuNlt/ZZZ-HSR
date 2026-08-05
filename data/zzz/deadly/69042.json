@@ -38,9 +38,9 @@
       "monsters": [
         {
           "name": "基塔布鲁·滞变畸兽",
-          "hp": 22562955,
-          "defense": 953,
-          "stun": 23277,
+          "hp": 22562954.099999998,
+          "defense": 952.8000000000001,
+          "stun": 23276.75,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],
@@ -87,9 +87,9 @@
       "monsters": [
         {
           "name": "恶名·死路屠夫",
-          "hp": 25103401,
-          "defense": 953,
-          "stun": 15487,
+          "hp": 25103400.21,
+          "defense": 952.8000000000001,
+          "stun": 15486.5,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -139,9 +139,9 @@
       "monsters": [
         {
           "name": "未知复合侵蚀体",
-          "hp": 22199460,
-          "defense": 953,
-          "stun": 16895,
+          "hp": 22199459.4,
+          "defense": 952.8000000000001,
+          "stun": 16894.15,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -193,9 +193,9 @@
       "monsters": [
         {
           "name": "异构·基塔布鲁",
-          "hp": 30356742,
-          "defense": 953,
-          "stun": 18934,
+          "hp": 30356741.655,
+          "defense": 952.8000000000001,
+          "stun": 18933.95,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],

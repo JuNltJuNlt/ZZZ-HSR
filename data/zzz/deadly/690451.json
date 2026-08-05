@@ -30,9 +30,9 @@
       "monsters": [
         {
           "name": "库萨里库",
-          "hp": 18522758,
-          "defense": 953,
-          "stun": 18934,
+          "hp": 18522757.62,
+          "defense": 952.8000000000001,
+          "stun": 18933.95,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -88,9 +88,9 @@
       "monsters": [
         {
           "name": "基塔布鲁·滞变畸兽",
-          "hp": 24819250,
-          "defense": 953,
-          "stun": 23277,
+          "hp": 24819249.509999998,
+          "defense": 952.8000000000001,
+          "stun": 23276.75,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],
@@ -141,9 +141,9 @@
       "monsters": [
         {
           "name": "魇缚者·叶释渊",
-          "hp": 25151999,
-          "defense": 953,
-          "stun": 14069,
+          "hp": 25151998.41,
+          "defense": 952.8000000000001,
+          "stun": 14068.040000000003,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -199,8 +199,8 @@
         {
           "name": "异构·焚昼余火",
           "hp": 27180279,
-          "defense": 953,
-          "stun": 17586,
+          "defense": 952.8000000000001,
+          "stun": 17585.05,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],

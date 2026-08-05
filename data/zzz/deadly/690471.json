@@ -38,9 +38,9 @@
       "monsters": [
         {
           "name": "焚昼余火·法厄同",
-          "hp": 22691839,
-          "defense": 953,
-          "stun": 19541,
+          "hp": 22691838.509999998,
+          "defense": 952.8000000000001,
+          "stun": 19540.25,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -92,8 +92,8 @@
       "monsters": [
         {
           "name": "熔狱行赭",
-          "hp": 18440191,
-          "defense": 953,
+          "hp": 18440190.27,
+          "defense": 952.8000000000001,
           "stun": 22701,
           "number": 1,
           "hp_ratio_sum": 1,
@@ -145,9 +145,9 @@
       "monsters": [
         {
           "name": "秽息司祭",
-          "hp": 20908632,
-          "defense": 953,
-          "stun": 16648,
+          "hp": 20908631.7,
+          "defense": 952.8000000000001,
+          "stun": 16647.4,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
@@ -200,9 +200,9 @@
       "monsters": [
         {
           "name": "异构·焚昼余火",
-          "hp": 33703546,
-          "defense": 953,
-          "stun": 17586,
+          "hp": 33703545.96,
+          "defense": 952.8000000000001,
+          "stun": 17585.05,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [],
