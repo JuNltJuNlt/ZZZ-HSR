@@ -1,8 +1,167 @@
 {
   "deadly_id": 690421,
   "deadly_name": "试炼",
-  "time": " - ",
-  "zone": {
+  "time": "",
+  "normal_zone": {
+    "69042101": {
+      "name": "基塔布鲁·滞变畸兽",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "69014405": {
+          "title": "69014405_Title",
+          "desc": "· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]，持续30秒，最多叠加2层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升8%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升8%</color>。\n· 对敌人造成[部位破坏]或[完美反制]时，<color=#FFAF2C>全队异常精通提升60</color>点，持续30秒，重复触发刷新持续时间。"
+        },
+        "69014406": {
+          "title": "69014406_Title",
+          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功<color=#FFAF2C>应对</color><Term:2000003></Term>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69014201": {
+          "title": "勠力",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队的异常精通分别<color=#2BAD00>提升30点/70点</color>，造成的属性异常伤害分别<color=#2BAD00>提升10%/25%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果后，敌人的全属性伤害抗性<color=#2BAD00>降低15%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "69014202": {
+          "title": "诡袭",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>，暴击伤害<color=#2BAD00>提升40%</color>。\n· 代理人对敌人施加<color=#FFFFFF>属性异常</color>效果后，其防御力<color=#2BAD00>降低10%</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "基塔布鲁·滞变畸兽",
+          "hp": 22562955,
+          "defense": 953,
+          "stun": 23277,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "69042102": {
+      "name": "恶名·死路屠夫",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010402": {
+          "title": "",
+          "desc": "· 属性异常对首领敌人造成的伤害提升50%；恶名·死路屠夫处于<color=#FFFFFF>[以太强化]</color>状态时，承受的伤害降低15%，代理人对其造成的失衡值降低30%；代理人对恶名·死路屠夫触发<color=#FFFFFF>[紊乱]</color>后，使其立即退出<color=#FFFFFF>[以太强化]</color>状态。"
+        },
+        "69013702": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>施加[紊乱]</color>时，可获得<color=#FFAF2C>300操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69014201": {
+          "title": "勠力",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队的异常精通分别<color=#2BAD00>提升30点/70点</color>，造成的属性异常伤害分别<color=#2BAD00>提升10%/25%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果后，敌人的全属性伤害抗性<color=#2BAD00>降低15%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "69014202": {
+          "title": "诡袭",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>，暴击伤害<color=#2BAD00>提升40%</color>。\n· 代理人对敌人施加<color=#FFFFFF>属性异常</color>效果后，其防御力<color=#2BAD00>降低10%</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "恶名·死路屠夫",
+          "hp": 25103401,
+          "defense": 953,
+          "stun": 15487,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "冰",
+            "以太"
+          ],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "69042103": {
+      "name": "未知复合侵蚀体",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "69010305": {
+          "title": "",
+          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
+        },
+        "69010307": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "69013201": {
+          "title": "摧心",
+          "desc": "· 代理人的暴击伤害<color=#2BAD00>提升30%</color>。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升10%</color>，[普通攻击]命中时造成的伤害<color=#2BAD00>提升30%</color>，并无视敌人<color=#2BAD00>15%</color>的防御力。"
+        },
+        "69014201": {
+          "title": "勠力",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队的异常精通分别<color=#2BAD00>提升30点/70点</color>，造成的属性异常伤害分别<color=#2BAD00>提升10%/25%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果后，敌人的全属性伤害抗性<color=#2BAD00>降低15%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "69014202": {
+          "title": "诡袭",
+          "desc": "· 代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>，暴击伤害<color=#2BAD00>提升40%</color>。\n· 代理人对敌人施加<color=#FFFFFF>属性异常</color>效果后，其防御力<color=#2BAD00>降低10%</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "未知复合侵蚀体",
+          "hp": 22199460,
+          "defense": 953,
+          "stun": 16895,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "电",
+            "以太"
+          ],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    }
+  },
+  "final_zone": {
     "69042201": {
       "name": "异构·基塔布鲁",
       "stage_num": 1,
@@ -31,156 +190,26 @@
           "desc": "· 代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>，暴击伤害<color=#2BAD00>提升40%</color>。\n· 代理人对敌人施加<color=#FFFFFF>属性异常</color>效果后，其防御力<color=#2BAD00>降低10%</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
-      "layer_room": {
-        "690422011": {
-          "level": 70,
-          "monsters": [
-            [
-              {
-                "name": "异构·基塔布鲁",
-                "hp": 30356741.655,
-                "defense": 952.8000000000001,
-                "stun": 18933.95,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [],
-                "resistance": [],
-                "type": "S"
-              }
-            ]
-          ],
+      "monsters": [
+        {
+          "name": "异构·基塔布鲁",
+          "hp": 30356742,
+          "defense": 953,
+          "stun": 18934,
+          "number": 1,
+          "hp_ratio_sum": 1,
           "weakness": [],
-          "s_rank_goal": 30000
+          "resistance": [],
+          "type": "S"
         }
-      }
-    }
-  },
-  "has_final": true,
-  "final_zone": {
-    "69042101": {
-      "name": "基塔布鲁·滞变畸兽",
-      "stage_num": 1,
-      "monster_level": 70,
-      "layer_buff": {
-        "69013003": {
-          "title": "",
-          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
-        },
-        "69014405": {
-          "title": "69014405_Title",
-          "desc": "· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]，持续30秒，最多叠加2层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升8%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升8%</color>。\n· 对敌人造成[部位破坏]或[完美反制]时，<color=#FFAF2C>全队异常精通提升60</color>点，持续30秒，重复触发刷新持续时间。"
-        },
-        "69014406": {
-          "title": "69014406_Title",
-          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功<color=#FFAF2C>应对</color><Term:2000003></Term>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
-        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 30000,
+        "a": 20000,
+        "b": 10000
       },
-      "layer_room": {
-        "690421011": {
-          "level": 70,
-          "monsters": [
-            [
-              {
-                "name": "基塔布鲁·滞变畸兽",
-                "hp": 22562954.099999998,
-                "defense": 952.8000000000001,
-                "stun": 23276.75,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [],
-                "resistance": [],
-                "type": "S"
-              }
-            ]
-          ],
-          "weakness": [],
-          "s_rank_goal": 20000
-        }
-      }
-    },
-    "69042102": {
-      "name": "恶名·死路屠夫",
-      "stage_num": 2,
-      "monster_level": 70,
-      "layer_buff": {
-        "69010402": {
-          "title": "",
-          "desc": "· 属性异常对首领敌人造成的伤害提升50%；恶名·死路屠夫处于<color=#FFFFFF>[以太强化]</color>状态时，承受的伤害降低15%，代理人对其造成的失衡值降低30%；代理人对恶名·死路屠夫触发<color=#FFFFFF>[紊乱]</color>后，使其立即退出<color=#FFFFFF>[以太强化]</color>状态。"
-        },
-        "69013702": {
-          "title": "",
-          "desc": "· 成功<color=#FFAF2C>施加[紊乱]</color>时，可获得<color=#FFAF2C>300操作得分</color>，最多获得5000操作得分。"
-        }
-      },
-      "layer_room": {
-        "690421021": {
-          "level": 70,
-          "monsters": [
-            [
-              {
-                "name": "恶名·死路屠夫",
-                "hp": 25103400.21,
-                "defense": 952.8000000000001,
-                "stun": 15486.5,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": [],
-                "type": "S"
-              }
-            ]
-          ],
-          "weakness": [],
-          "s_rank_goal": 20000
-        }
-      }
-    },
-    "69042103": {
-      "name": "未知复合侵蚀体",
-      "stage_num": 3,
-      "monster_level": 70,
-      "layer_buff": {
-        "69010305": {
-          "title": "",
-          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
-        },
-        "69010306": {
-          "title": "",
-          "desc": ""
-        },
-        "69010307": {
-          "title": "",
-          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
-        }
-      },
-      "layer_room": {
-        "690421031": {
-          "level": 70,
-          "monsters": [
-            [
-              {
-                "name": "未知复合侵蚀体",
-                "hp": 22199459.4,
-                "defense": 952.8000000000001,
-                "stun": 16894.15,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "以太"
-                ],
-                "resistance": [],
-                "type": "S"
-              }
-            ]
-          ],
-          "weakness": [],
-          "s_rank_goal": 20000
-        }
-      }
+      "isFinal": true
     }
   }
 }
