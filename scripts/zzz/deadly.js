@@ -29,7 +29,6 @@ const loadData = async () => {
 
 const currentEntry = () => deadlyEntries[state.scheduleIndex];
 const entryLabel = (e) => (indexData.entries[deadlyEntries.indexOf(e)] || "").replace('.json', '');
-const isOldEntry = (e) => parseInt(entryLabel(e)) <= 62037;
 
 const setSchedule = (index) => {
     state.scheduleIndex = wrapIndex(index, deadlyEntries.length);
@@ -48,7 +47,7 @@ const renderScheduleSelect = () => {
 const renderScheduleHeader = () => {
     const e = currentEntry();
     byId("scheduleName").textContent = entryLabel(e);
-    byId("scheduleTime").textContent = e.deadly_name;
+    byId("scheduleTime").textContent = e.deadly_name || "";
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
 
@@ -60,22 +59,24 @@ const renderWeaknessBars = (weakness = [], resistance = []) => {
     if (items.length === 0) return null;
 
     return create("div", {
-        className: "weakness-bars",
+        style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" },
         children: items.map(item => {
             const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
             return create("div", {
-                className: "bar-item",
+                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" },
                 children: [
-                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "", item.element),
-                    create("span", { className: `line ${item.type}` }),
+                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
+                    create("span", {
+                        style: { width: "18px", height: "3px", borderRadius: "2px", backgroundColor: barColor, display: "block" }
+                    })
                 ]
             });
         })
     });
 };
 
-// ===== 渲染怪物卡片 =====
-const renderMonsterCard = (monster, stageLevel, isFinal = false) => {
+// ===== 渲染怪物卡片（复用式舆防卫战的样式） =====
+const renderMonsterCard = (monster, stageLevel) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
@@ -114,17 +115,31 @@ const renderMonsterCard = (monster, stageLevel, isFinal = false) => {
     });
 };
 
-// ===== 渲染试炼三Boss =====
+// ===== 渲染试炼Boss（恢复原来的样式） =====
 const renderTrialZone = (zoneKey, zoneData) => {
     const monster = zoneData.monsters[0];
     const card = renderMonsterCard(monster, zoneData.monster_level);
     
-    const buffs = Object.values(zoneData.layer_buff || {})
-        .filter(b => b.desc && b.desc.trim())
-        .map(b => create("div", {
-            className: "mechanic-item",
-            html: `<b>${b.title || ""}</b><br>${b.desc}`
-        }));
+    // 提取所有buff（layer_buff + selectable_buff）
+    const buffs = [];
+    Object.values(zoneData.layer_buff || {}).forEach(b => {
+        if (b.desc && b.desc.trim()) {
+            buffs.push({ title: b.title || "", desc: b.desc });
+        }
+    });
+    Object.values(zoneData.selectable_buff || {}).forEach(b => {
+        if (b.desc && b.desc.trim()) {
+            buffs.push({ title: b.title || "", desc: b.desc });
+        }
+    });
+
+    const buffElements = buffs.map(b => 
+        create("p", {
+            className: "buff_desc",
+            html: `<b>${b.title}</b><br>${b.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">')}`,
+            style: { lineHeight: "1.7", marginTop: "11px", marginBottom: "0" }
+        })
+    );
 
     return create("div", {
         className: "u_l",
@@ -156,7 +171,7 @@ const renderTrialZone = (zoneKey, zoneData) => {
                                     create("div", {
                                         className: "buff",
                                         style: { backgroundColor: "#27363E", color: "#eeeeee", borderRadius: "5px", padding: "12px" },
-                                        children: buffs.length > 0 ? buffs : [create("p", { text: "无特殊机制" })]
+                                        children: buffElements.length > 0 ? buffElements : [create("p", { text: "无特殊机制" })]
                                     }),
                                 ]
                             })
@@ -179,18 +194,29 @@ const renderFinalZone = (zoneKey, zoneData) => {
     const def = monster.defense || 0;
     const stun = monster.stun || 0;
 
-    // 机制框内容
-    const buffs = Object.values(zoneData.layer_buff || {})
-        .filter(b => b.desc && b.desc.trim())
-        .map(b => create("div", {
+    // 提取buff
+    const buffs = [];
+    Object.values(zoneData.layer_buff || {}).forEach(b => {
+        if (b.desc && b.desc.trim()) {
+            buffs.push({ title: b.title || "", desc: b.desc });
+        }
+    });
+    Object.values(zoneData.selectable_buff || {}).forEach(b => {
+        if (b.desc && b.desc.trim()) {
+            buffs.push({ title: b.title || "", desc: b.desc });
+        }
+    });
+
+    const buffElements = buffs.map(b =>
+        create("div", {
             className: "mechanic-item",
-            html: `<b>${b.title || "机制"}</b><br>${b.desc}`
-        }));
+            html: `<b>${b.title || "机制"}</b><br>${b.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">')}`
+        })
+    );
 
     return create("div", {
         className: "final-card",
         children: [
-            // 左侧：Boss信息
             create("div", {
                 className: "monster-info",
                 children: [
@@ -204,12 +230,11 @@ const renderFinalZone = (zoneKey, zoneData) => {
                     ]}),
                 ]
             }),
-            // 右侧：机制框
             create("div", {
                 className: "mechanic-box",
                 children: [
                     create("div", { className: "mechanic-title", text: "— 机制说明 —" }),
-                    ...(buffs.length > 0 ? buffs : [create("div", { className: "mechanic-item", text: "无特殊机制" })]),
+                    ...(buffElements.length > 0 ? buffElements : [create("div", { className: "mechanic-item", text: "无特殊机制" })]),
                 ]
             })
         ]
@@ -222,7 +247,6 @@ const renderFinalChart = () => {
     const container = document.getElementById("finalChartContainer");
     const chartElement = document.getElementById("finalChart");
     
-    // 只显示有 final_zone 的期数
     const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
     if (finalEntries.length === 0) {
         container.style.display = "none";
@@ -267,45 +291,7 @@ const renderFinalChart = () => {
     }
 };
 
-// ===== 主渲染函数 =====
-const render = () => {
-    renderScheduleSelect();
-    renderScheduleHeader();
-    
-    const entry = currentEntry();
-    const layout = byId("asLayout");
-    layout.replaceChildren();
-
-    // 1. 渲染试炼三Boss
-    if (entry.normal_zone && Object.keys(entry.normal_zone).length > 0) {
-        const zoneKeys = Object.keys(entry.normal_zone).sort();
-        zoneKeys.forEach(key => {
-            layout.appendChild(renderTrialZone(key, entry.normal_zone[key]));
-        });
-    }
-
-    // 2. 渲染绝境关卡
-    const finalSection = document.getElementById("finalSection");
-    const finalLayout = document.getElementById("finalLayout");
-    if (entry.final_zone && Object.keys(entry.final_zone).length > 0) {
-        finalSection.style.display = "";
-        finalLayout.replaceChildren();
-        const finalKeys = Object.keys(entry.final_zone).sort();
-        finalKeys.forEach(key => {
-            finalLayout.appendChild(renderFinalZone(key, entry.final_zone[key]));
-        });
-    } else {
-        finalSection.style.display = "none";
-    }
-
-    // 3. 渲染绝境图表
-    renderFinalChart();
-
-    // 4. 渲染试炼图表（简化版，复用现有逻辑）
-    renderTrialChart();
-};
-
-// ===== 试炼血量演化图 =====
+// ===== 渲染试炼血量演化图 =====
 const renderTrialChart = () => {
     const chartElement = byId("chart");
     if (!chartElement || !window.echarts) return;
@@ -350,6 +336,44 @@ const renderTrialChart = () => {
         }],
         dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
     }, true);
+};
+
+// ===== 主渲染函数 =====
+const render = () => {
+    renderScheduleSelect();
+    renderScheduleHeader();
+    
+    const entry = currentEntry();
+    const layout = byId("asLayout");
+    layout.replaceChildren();
+
+    // 1. 渲染试炼三Boss（使用原有格式）
+    if (entry.normal_zone && Object.keys(entry.normal_zone).length > 0) {
+        const zoneKeys = Object.keys(entry.normal_zone).sort();
+        zoneKeys.forEach(key => {
+            layout.appendChild(renderTrialZone(key, entry.normal_zone[key]));
+        });
+    }
+
+    // 2. 渲染绝境关卡
+    const finalSection = document.getElementById("finalSection");
+    const finalLayout = document.getElementById("finalLayout");
+    if (entry.final_zone && Object.keys(entry.final_zone).length > 0) {
+        finalSection.style.display = "";
+        finalLayout.replaceChildren();
+        const finalKeys = Object.keys(entry.final_zone).sort();
+        finalKeys.forEach(key => {
+            finalLayout.appendChild(renderFinalZone(key, entry.final_zone[key]));
+        });
+    } else {
+        finalSection.style.display = "none";
+    }
+
+    // 3. 渲染绝境图表
+    renderFinalChart();
+
+    // 4. 渲染试炼图表
+    renderTrialChart();
 };
 
 // ===== 事件绑定 =====
