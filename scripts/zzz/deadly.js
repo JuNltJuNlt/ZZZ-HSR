@@ -268,7 +268,7 @@ const renderAllBosses = () => {
         style: { 
             display: "flex",
             justifyContent: "center",
-            gap: "0px",
+            gap: "24px",
             position: "relative",
             width: "100%",
             padding: "0 40px",
@@ -290,13 +290,12 @@ const renderAllBosses = () => {
         
         const wrapper = create("div", {
             style: {
-                flex: "0 1 auto",
-                width: "calc(33.33% - 14px)",
+                flex: "0 0 auto",
+                width: "calc(33.33% - 16px)",
                 minWidth: "280px",
                 maxWidth: "420px",
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: i === 0 ? "0" : "20px",
             }
         });
         const section = renderBossSection(zoneData, bossColors[i], label, elements);
@@ -354,59 +353,27 @@ const renderAllBosses = () => {
         });
         container.appendChild(sharedBuffBox);
 
+        // 对齐 Buff 框
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
-            const secondWrapper = sections[1]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
-            const downloadBtn = byId("downloadBtn");
             
-            if (firstWrapper && secondWrapper && lastWrapper) {
+            if (firstWrapper && lastWrapper) {
                 const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
+                const lastRect = lastWrapper.getBoundingClientRect();
                 
-                // Buff 框对齐 Boss1
+                // Buff 框左边界 = Boss1 机制框左边界
                 const leftOffset = firstRect.left - containerRect.left;
-                const rightEdge = firstRect.right - containerRect.left;
+                // Buff 框右边界 = Boss3 机制框右边界
+                const rightEdge = lastRect.right - containerRect.left;
                 const totalWidth = rightEdge - leftOffset;
                 
                 sharedBuffBox.style.marginLeft = leftOffset + "px";
                 sharedBuffBox.style.width = totalWidth + "px";
                 sharedBuffBox.style.maxWidth = "none";
-                
-                // 强制重排
-                sharedBuffBox.offsetHeight;
-                
-                // Boss2 与下载按钮对齐
-                if (downloadBtn) {
-                    const btnRect = downloadBtn.getBoundingClientRect();
-                    const btnCenter = btnRect.left + btnRect.width / 2;
-                    const secondRect = secondWrapper.getBoundingClientRect();
-                    const secondCenter = secondRect.left + secondRect.width / 2;
-                    const btnAlignShift = btnCenter - secondCenter;
-                    
-                    if (Math.abs(btnAlignShift) > 1) {
-                        secondWrapper.style.marginLeft = (parseFloat(secondWrapper.style.marginLeft) || 20) + btnAlignShift + "px";
-                        lastWrapper.style.marginLeft = (parseFloat(lastWrapper.style.marginLeft) || 20) + btnAlignShift + "px";
-                    }
-                }
-                
-                // 重新获取位置，统一 Boss 间距
-                const updatedSecondRect = secondWrapper.getBoundingClientRect();
-                const updatedFirstRect = firstWrapper.getBoundingClientRect();
-                
-                // Boss1 到 Boss2 的间距
-                const gap1to2 = updatedSecondRect.left - (updatedFirstRect.left + updatedFirstRect.width);
-                // Boss2 到 Boss3 的间距
-                const updatedLastRect = lastWrapper.getBoundingClientRect();
-                const gap2to3 = updatedLastRect.left - (updatedSecondRect.left + updatedSecondRect.width);
-                
-                // 调整 Boss3 使间距与 Boss1-Boss2 相同
-                const gapDiff = gap1to2 - gap2to3;
-                if (Math.abs(gapDiff) > 1) {
-                    lastWrapper.style.marginLeft = (parseFloat(lastWrapper.style.marginLeft) || 0) + gapDiff + "px";
-                }
             }
-        }, 400);
+        }, 200);
     }
 
     const finalSection = document.getElementById("finalSection");
@@ -490,15 +457,15 @@ const renderCharts = () => {
         }
     });
     
-    renderLineChart("chart", "危局强袭战总血量演化", [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
+    renderLineChart("chart", "危局强袭战总血量演化", [{ name: "总血量", color: "#cc0000", data: totalData }], labels, true);
     renderLineChart("bossChart", text.chartBossTitle, [
         { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
         { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
-    ], labels);
+    ], labels, true);
 };
 
-const renderLineChart = (targetId, title, seriesData, labels) => {
+const renderLineChart = (targetId, title, seriesData, labels, isNewChart = false) => {
     const chartElement = byId(targetId);
     if (!chartElement) {
         console.warn('图表容器不存在:', targetId);
@@ -507,9 +474,18 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     if (!seriesData.length || !window.echarts) return;
     
     const isTotalChart = targetId === "chart";
+    
+    if (isNewChart) {
+        // 新图表逻辑：销毁旧实例，创建新实例
+        const oldInstance = isTotalChart ? chartInstance : bossChartInstance;
+        if (oldInstance && !oldInstance.isDisposed()) {
+            oldInstance.dispose();
+        }
+    }
+    
     const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
     
-    if (currentInstance && !currentInstance.isDisposed()) {
+    if (currentInstance && !currentInstance.isDisposed() && !isNewChart) {
         currentInstance.setOption({
             xAxis: { data: labels },
             series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
@@ -524,7 +500,8 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
         bossChartInstance = newInstance;
     }
     
-    newInstance.setOption({
+    // 两个图表使用完全相同的配置
+    const option = {
         title: { 
             text: title, 
             subtext: text.chartSubtitle, 
@@ -534,14 +511,16 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
             top: "3%"
         },
         tooltip: { trigger: "axis" },
-        grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
+        grid: { left: "3%", right: "4%", top: "25%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
         xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 } },
         yAxis: { type: "value" },
-        legend: { data: seriesData.map(s => s.name), top: "12%" },
+        legend: { data: seriesData.map(s => s.name), top: "13%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
-    }, true);
+    };
+    
+    newInstance.setOption(option, true);
 };
 
 const render = () => {
