@@ -376,110 +376,90 @@ const renderAllBosses = () => {
         }, 300);
     }
 
-    // 渲染绝境关卡
-    renderFinalSection(entry);
-};
-
-const renderFinalSection = (entry) => {
-    const finalZone = entry.final_zone;
-    const container = document.getElementById("finalSection");
-    if (!container) return;
-    
-    if (!finalZone || Object.keys(finalZone).length === 0) {
-        container.style.display = "none";
-        return;
+    // 渲染绝境
+    const finalSection = document.getElementById("finalSection");
+    if (finalSection) {
+        const finalZone = entry.final_zone;
+        if (finalZone && Object.keys(finalZone).length > 0) {
+            finalSection.style.display = "";
+            finalSection.replaceChildren();
+            
+            const finalTitle = create("p", { className: "content_title", text: "绝境" });
+            finalSection.appendChild(finalTitle);
+            
+            const finalKeys = Object.keys(finalZone).sort();
+            finalKeys.forEach(fk => {
+                const zoneData = finalZone[fk];
+                const monster = zoneData.monsters?.[0];
+                if (!monster) return;
+                
+                const finalRow = create("div", {
+                    style: {
+                        display: "flex",
+                        gap: "24px",
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                        width: "100%",
+                        padding: "0 40px",
+                        boxSizing: "border-box",
+                    }
+                });
+                
+                const leftSide = create("div", {
+                    style: {
+                        flex: "0 0 auto",
+                        width: "320px",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                    }
+                });
+                
+                const levelLabel = create("p", { text: `绝境 Lv${zoneData.monster_level || 70}`, style: { textAlign: "center" } });
+                leftSide.appendChild(levelLabel);
+                
+                const card = renderMonsterCard(monster, zoneData.monster_level || 70, 15.8);
+                leftSide.appendChild(create("div", { className: "wave_monsters", children: [card] }));
+                
+                finalRow.appendChild(leftSide);
+                
+                const combinedDesc = processBossDesc(zoneData);
+                const html = combinedDesc
+                    .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
+                    .replace(/\n/g, '<br>')
+                    .replace(/^· /gm, '<br>· ')
+                    .replace(/^<br>/, '');
+                
+                const rightSide = create("div", {
+                    style: {
+                        flex: "1 1 auto",
+                        maxWidth: "700px",
+                        backgroundColor: "#27363E",
+                        color: "#eee",
+                        borderRadius: "5px",
+                        padding: "14px",
+                        lineHeight: "1.8",
+                        fontSize: "14px",
+                        textAlign: "left",
+                    },
+                    children: [
+                        create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
+                    ]
+                });
+                
+                finalRow.appendChild(rightSide);
+                finalSection.appendChild(finalRow);
+            });
+        } else {
+            finalSection.style.display = "none";
+        }
     }
-    
-    container.style.display = "";
-    container.replaceChildren();
-    
-    // 绝境标题
-    const finalTitle = create("p", { 
-        className: "content_title", 
-        text: "绝境" 
-    });
-    container.appendChild(finalTitle);
-    
-    const finalKeys = Object.keys(finalZone).sort();
-    finalKeys.forEach(fk => {
-        const zoneData = finalZone[fk];
-        const monster = zoneData.monsters?.[0];
-        if (!monster) return;
-        
-        // 绝境布局：左边怪物卡片，右边机制框
-        const finalRow = create("div", {
-            style: {
-                display: "flex",
-                gap: "24px",
-                alignItems: "flex-start",
-                justifyContent: "center",
-                width: "100%",
-                padding: "0 40px",
-                boxSizing: "border-box",
-            }
-        });
-        
-        // 左边：怪物卡片区域
-        const leftSide = create("div", {
-            style: {
-                flex: "0 0 auto",
-                width: "320px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-            }
-        });
-        
-        // 绝境 Lv 标签
-        const levelLabel = create("div", {
-            children: [
-                create("p", { text: `绝境 Lv${zoneData.monster_level || 70}`, style: { textAlign: "center" } }),
-                ...renderElementIcons(zoneData.weakness || [], "elem_"),
-            ]
-        });
-        leftSide.appendChild(levelLabel);
-        
-        // 怪物卡片（使用 15.8 倍率）
-        const card = renderMonsterCard(monster, zoneData.monster_level || 70, 15.8);
-        leftSide.appendChild(create("div", { className: "wave_monsters", children: [card] }));
-        
-        finalRow.appendChild(leftSide);
-        
-        // 右边：机制框
-        const combinedDesc = processBossDesc(zoneData);
-        const html = combinedDesc
-            .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
-            .replace(/\n/g, '<br>')
-            .replace(/^· /gm, '<br>· ')
-            .replace(/^<br>/, '');
-        
-        const rightSide = create("div", {
-            style: {
-                flex: "1 1 auto",
-                maxWidth: "700px",
-                backgroundColor: "#27363E",
-                color: "#eee",
-                borderRadius: "5px",
-                padding: "14px",
-                lineHeight: "1.8",
-                fontSize: "14px",
-                textAlign: "left",
-            },
-            children: [
-                create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
-            ]
-        });
-        
-        finalRow.appendChild(rightSide);
-        container.appendChild(finalRow);
-    });
 };
 
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     
-    // 试炼总血量
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
@@ -516,7 +496,6 @@ const renderCharts = () => {
         return Math.round(total * 8.74);
     });
     
-    // 试炼各Boss血量
     const bossData = [[], [], []];
     entries.forEach(e => {
         const zone = e.normal_zone || e.zone || {};
@@ -561,7 +540,6 @@ const renderCharts = () => {
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
     ], labels);
     
-    // 绝境总血量演化（只有后六期有 final_zone 的数据）
     const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
     if (finalEntries.length > 0) {
         const finalLabels = finalEntries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
@@ -589,11 +567,9 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     chartElement.style.width = "100%";
     chartElement.style.height = "600px";
     
-    const isTotalChart = targetId === "chart";
-    const isBossChart = targetId === "bossChart";
     let currentInstance;
-    if (isTotalChart) currentInstance = chartInstance;
-    else if (isBossChart) currentInstance = bossChartInstance;
+    if (targetId === "chart") currentInstance = chartInstance;
+    else if (targetId === "bossChart") currentInstance = bossChartInstance;
     else currentInstance = finalChartInstance;
     
     if (currentInstance && !currentInstance.isDisposed()) {
@@ -608,8 +584,8 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }
     
     const newInstance = window.echarts.init(chartElement);
-    if (isTotalChart) chartInstance = newInstance;
-    else if (isBossChart) bossChartInstance = newInstance;
+    if (targetId === "chart") chartInstance = newInstance;
+    else if (targetId === "bossChart") bossChartInstance = newInstance;
     else finalChartInstance = newInstance;
     
     newInstance.setOption({
