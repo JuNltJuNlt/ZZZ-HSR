@@ -183,7 +183,8 @@ const renderBossSection = (zoneData, letter, label, elements) => {
 
 const renderAllBosses = () => {
     const entry = currentEntry();
-    const zone = entry.zone || entry.normal_zone || {};
+    // 优先使用 normal_zone，如果没有则用 zone
+    const zone = entry.normal_zone || entry.zone || {};
     const zoneKeys = Object.keys(zone).filter(k => k.length <= 7).sort();
     const container = byId("deadlyLayout");
     container.replaceChildren();
@@ -272,7 +273,7 @@ const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     const totalData = entries.map(e => {
-        const zone = e.zone || e.normal_zone || {};
+        const zone = e.normal_zone || e.zone || {};
         let total = 0;
         for (const zk of Object.keys(zone).filter(k => k.length <= 7)) {
             for (const rk of Object.keys(zone[zk].layer_room || {})) {
