@@ -176,7 +176,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         }
     }
 
-    // 如果仍然没有怪物，显示占位信息
     if (!monster) {
         const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
         const recommend = create("div", { className: `${letter}_r` });
@@ -205,7 +204,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         return section;
     }
 
-    // 正常渲染
     const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
     const lineup = create("div", { className: `${letter}_m` });
@@ -218,7 +216,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         ],
     }));
 
-    // 确保怪物有 weakness 和 resistance
     if (!monster.weakness) monster.weakness = zoneData.weakness || [];
     if (!monster.resistance) monster.resistance = [];
     
@@ -251,7 +248,8 @@ const renderBossSection = (zoneData, letter, label, elements) => {
 const renderAllBosses = () => {
     const entry = currentEntry();
     const zone = entry.normal_zone || entry.zone || {};
-    const zoneKeys = Object.keys(zone).filter(k => k.length <= 7).sort();
+    // 移除长度限制，直接获取所有 key
+    const zoneKeys = Object.keys(zone).sort();
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
@@ -347,16 +345,15 @@ const renderCharts = () => {
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
-        for (const zk of Object.keys(zone).filter(k => k.length <= 7)) {
+        // 移除长度限制，直接遍历所有 key
+        for (const zk of Object.keys(zone)) {
             const zd = zone[zk];
             let monsters = [];
             
-            // 1. 直接从 monsters 获取（后六期）
             if (zd.monsters && zd.monsters.length > 0) {
                 monsters = zd.monsters;
             }
             
-            // 2. 从 layer_room 获取（前期）
             if (monsters.length === 0 && zd.layer_room) {
                 for (const rk of Object.keys(zd.layer_room)) {
                     const room = zd.layer_room[rk];
@@ -368,7 +365,6 @@ const renderCharts = () => {
                 }
             }
             
-            // 3. 从 monster_list 获取（原始数据格式）
             if (monsters.length === 0 && zd.monster_list) {
                 monsters = Object.values(zd.monster_list).map(m => ({
                     hp: m.stats?.hp || 0,
