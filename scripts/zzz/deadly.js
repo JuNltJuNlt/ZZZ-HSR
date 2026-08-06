@@ -409,24 +409,34 @@ const renderFinalSection = () => {
             }
         });
         
+        // 左边：与试炼格式一致
         const leftSide = create("div", {
+            className: "u",
             style: {
                 flex: "0 0 auto",
                 width: "320px",
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
             }
         });
         
-        const levelLabel = create("p", { text: `绝境 Lv${zoneData.monster_level || 70}`, style: { textAlign: "center" } });
-        leftSide.appendChild(levelLabel);
+        const recommend = create("div", { className: "u_r" });
+        recommend.appendChild(create("div", {
+            children: [
+                create("p", { text: `绝境 Lv${zoneData.monster_level || 70}` }),
+                ...renderElementIcons(zoneData.weakness || [], "elem_"),
+                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+            ],
+        }));
+        leftSide.appendChild(recommend);
         
-        const card = renderMonsterCard(monster, zoneData.monster_level || 70, 15.8);
-        leftSide.appendChild(create("div", { className: "wave_monsters", children: [card] }));
+        const lineup = create("div", { className: "u_m" });
+        lineup.appendChild(create("div", { className: "wave_monsters", children: [renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)] }));
+        leftSide.appendChild(lineup);
         
         finalRow.appendChild(leftSide);
         
+        // 右边：机制框
         const combinedDesc = processBossDesc(zoneData);
         const html = combinedDesc
             .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
@@ -435,6 +445,7 @@ const renderFinalSection = () => {
             .replace(/^<br>/, '');
         
         const rightSide = create("div", {
+            className: "u_b",
             style: {
                 flex: "1 1 auto",
                 maxWidth: "700px",
