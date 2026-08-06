@@ -358,28 +358,39 @@ const renderAllBosses = () => {
             const secondWrapper = sections[1]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
             
-            if (firstWrapper && lastWrapper) {
+            if (firstWrapper && secondWrapper && lastWrapper) {
                 const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
-                const lastRect = lastWrapper.getBoundingClientRect();
                 
+                // Buff 框对齐 Boss1
                 const leftOffset = firstRect.left - containerRect.left;
-                const rightEdge = lastRect.right - containerRect.left;
+                const rightEdge = firstRect.right - containerRect.left;
                 const totalWidth = rightEdge - leftOffset;
                 
                 sharedBuffBox.style.marginLeft = leftOffset + "px";
                 sharedBuffBox.style.width = totalWidth + "px";
+                sharedBuffBox.style.maxWidth = "none";
                 
-                const buffRightEdge = leftOffset + sharedBuffBox.offsetWidth;
+                // 强制重排后获取最新位置
+                sharedBuffBox.offsetHeight;
+                
+                // 重新获取 Buff 框右边界
+                const buffRect = sharedBuffBox.getBoundingClientRect();
+                const buffRightEdge = buffRect.right - containerRect.left;
+                
+                // 重新获取 Boss3 右边界
+                const lastRect = lastWrapper.getBoundingClientRect();
                 const boss3RightEdge = lastRect.right - containerRect.left;
+                
+                // 计算偏移量
                 const shiftAmount = boss3RightEdge - buffRightEdge;
                 
-                if (shiftAmount > 0 && secondWrapper && lastWrapper) {
+                if (shiftAmount > 1) {
                     secondWrapper.style.marginLeft = (-shiftAmount) + "px";
                     lastWrapper.style.marginLeft = (-shiftAmount) + "px";
                 }
             }
-        }, 200);
+        }, 400);
     }
 
     const finalSection = document.getElementById("finalSection");
@@ -390,6 +401,7 @@ const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     
+    // 总血量
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
@@ -426,6 +438,7 @@ const renderCharts = () => {
         return Math.round(total * 8.74);
     });
     
+    // 三个 Boss 单独血量
     const bossData = [[], [], []];
     entries.forEach(e => {
         const zone = e.normal_zone || e.zone || {};
@@ -473,7 +486,11 @@ const renderCharts = () => {
 
 const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
-    if (!chartElement || !seriesData.length || !window.echarts) return;
+    if (!chartElement) {
+        console.warn('图表容器不存在:', targetId);
+        return;
+    }
+    if (!seriesData.length || !window.echarts) return;
     
     const isTotalChart = targetId === "chart";
     const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
