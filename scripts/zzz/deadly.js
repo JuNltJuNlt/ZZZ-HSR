@@ -9,8 +9,6 @@ const EMOTE_ROOT = "../../images/ZZZ%20images/emote";
 let deadlyEntries = [];
 let monstersData = [];
 let indexData = null;
-let chartInstance = null;
-let bossChartInstance = null;
 
 const text = {
     title: "危局强袭战",
@@ -467,28 +465,11 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
     
-    const isTotalChart = targetId === "chart";
-    const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
+    const existingChart = window.echarts.getInstanceByDom(chartElement);
+    if (existingChart) window.echarts.dispose(existingChart);
     
-    // 如果已有实例且未销毁，只更新数据，保持缩放状态
-    if (currentInstance && !currentInstance.isDisposed()) {
-        currentInstance.setOption({
-            title: { text: title },
-            xAxis: { data: labels },
-            series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        }, true);
-        return;
-    }
-    
-    // 首次创建实例
-    const newInstance = window.echarts.init(chartElement);
-    if (isTotalChart) {
-        chartInstance = newInstance;
-    } else {
-        bossChartInstance = newInstance;
-    }
-    
-    newInstance.setOption({
+    const chartInstance = window.echarts.init(chartElement);
+    chartInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
