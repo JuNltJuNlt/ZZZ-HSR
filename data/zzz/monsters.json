@@ -991,8 +991,8 @@
             "name": "熔狱行赭",
             "type": "A",
             "category": 1,
-            "weakness": [],
-            "resistance": []
+            "weakness": ["冰","风"],
+            "resistance": ["物理"]
         },
         {
             "name": "乌利迪姆",
@@ -1516,7 +1516,6 @@
             "name": "自律战术单位·「征服者」",
             "type": "A",
             "category": 4,
-            "weakness": ["电", "风"],
             "resistance": ["物理"]
         }
     ]
