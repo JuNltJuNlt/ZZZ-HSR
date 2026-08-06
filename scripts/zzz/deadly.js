@@ -397,9 +397,17 @@ const renderFinalSection = () => {
         const monster = zoneData.monsters?.[0];
         if (!monster) return;
         
-        // 与试炼相同的布局结构，但机制框放在怪物旁边
-        const section = create("div", { className: "u", style: { display: "flex", flexDirection: "column", width: "100%" } });
+        // 左列：标题在上，怪物卡片在下
+        const leftCol = create("div", {
+            style: {
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                flex: "0 0 auto",
+            }
+        });
         
+        // 标题
         const recommend = create("div", { className: "u_r" });
         recommend.appendChild(create("div", {
             children: [
@@ -408,25 +416,14 @@ const renderFinalSection = () => {
                 create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
             ],
         }));
-        section.appendChild(recommend);
-        
-        // 横向布局：怪物卡片 + 机制框
-        const contentRow = create("div", {
-            style: {
-                display: "flex",
-                gap: "16px",
-                alignItems: "flex-start",
-                justifyContent: "center",
-                width: "100%",
-            }
-        });
+        leftCol.appendChild(recommend);
         
         // 怪物卡片
-        const lineup = create("div", { className: "u_m", style: { flex: "0 0 auto" } });
+        const lineup = create("div", { className: "u_m" });
         lineup.appendChild(create("div", { className: "wave_monsters", children: [
             renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)
         ]}));
-        contentRow.appendChild(lineup);
+        leftCol.appendChild(lineup);
         
         // 机制框
         const combinedDesc = processBossDesc(zoneData);
@@ -436,11 +433,11 @@ const renderFinalSection = () => {
             .replace(/^· /gm, '<br>· ')
             .replace(/^<br>/, '');
         
-        const traitContainer = create("div", {
+        const rightCol = create("div", {
             className: "u_b",
             style: {
                 flex: "0 0 auto",
-                width: "400px",
+                width: "480px",
                 backgroundColor: "#27363E",
                 color: "#eee",
                 borderRadius: "5px",
@@ -453,10 +450,20 @@ const renderFinalSection = () => {
                 create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
             ]
         });
-        contentRow.appendChild(traitContainer);
         
-        section.appendChild(contentRow);
-        container.appendChild(section);
+        // 横向布局
+        const row = create("div", {
+            style: {
+                display: "flex",
+                gap: "20px",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                width: "100%",
+            },
+            children: [leftCol, rightCol]
+        });
+        
+        container.appendChild(row);
     });
 };
 
