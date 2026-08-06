@@ -9,6 +9,7 @@ const EMOTE_ROOT = "../../images/ZZZ%20images/emote";
 let deadlyEntries = [];
 let monstersData = [];
 let indexData = null;
+let chartInstance = null;
 
 const text = {
     title: "危局强袭战",
@@ -264,10 +265,12 @@ const renderAllBosses = () => {
         className: "u_l", 
         style: { 
             display: "flex",
-            justifyContent: "flex-start",
+            justifyContent: "center",
             gap: "24px",
             position: "relative",
             width: "100%",
+            padding: "0 24px",
+            boxSizing: "border-box",
         } 
     });
     
@@ -284,6 +287,7 @@ const renderAllBosses = () => {
         
         const wrapper = create("div", {
             style: {
+                flex: "0 0 auto",
                 width: "calc(33.33% - 16px)",
                 maxWidth: "420px",
                 display: "flex",
@@ -327,7 +331,6 @@ const renderAllBosses = () => {
                 lineHeight: "1.8",
                 display: "block",
                 boxSizing: "border-box",
-                width: "100%",
             },
             children: allSharedBuffs.map(buff => {
                 const descHtml = buff.desc
@@ -348,37 +351,18 @@ const renderAllBosses = () => {
 
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
-            const secondWrapper = sections[1]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
-            
             if (firstWrapper && lastWrapper) {
                 const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
                 const lastRect = lastWrapper.getBoundingClientRect();
                 
-                // Buff 框左边界 = Boss1 左边界
                 const leftOffset = firstRect.left - containerRect.left;
-                // Buff 框右边界 = Boss1 右边界
-                const rightEdge = firstRect.right - containerRect.left;
+                const rightEdge = lastRect.right - containerRect.left;
                 const totalWidth = rightEdge - leftOffset;
                 
-                // 设置 Buff 框位置和宽度（与 Boss1 对齐）
                 sharedBuffBox.style.marginLeft = leftOffset + "px";
                 sharedBuffBox.style.width = totalWidth + "px";
-                sharedBuffBox.style.maxWidth = "none";
-                
-                // 计算 Boss3 需要向左移动的距离
-                const boss3RightEdge = lastRect.right - containerRect.left;
-                const shiftAmount = boss3RightEdge - rightEdge;
-                
-                if (shiftAmount > 0) {
-                    // 移动 Boss2
-                    if (secondWrapper) {
-                        secondWrapper.style.marginLeft = (-shiftAmount) + "px";
-                    }
-                    // 移动 Boss3
-                    lastWrapper.style.marginLeft = (-shiftAmount) + "px";
-                }
             }
         }, 200);
     }
@@ -431,9 +415,16 @@ const renderCharts = () => {
 const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
-    const existingChart = window.echarts.getInstanceByDom(chartElement);
-    if (existingChart) window.echarts.dispose(existingChart);
-    const chartInstance = window.echarts.init(chartElement);
+    
+    if (chartInstance && !chartInstance.isDisposed()) {
+        chartInstance.setOption({
+            xAxis: { data: labels },
+            series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+        }, true);
+        return;
+    }
+    
+    chartInstance = window.echarts.init(chartElement);
     chartInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
