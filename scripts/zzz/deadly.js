@@ -114,16 +114,27 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
 };
 
 function processBossDesc(zoneData) {
-    const buffKeys = Object.keys(zoneData.layer_buff || {});
     const allLines = [];
-
-    buffKeys.forEach(bk => {
-        const buff = zoneData.layer_buff[bk];
-        if (buff && buff.desc) {
-            const lines = buff.desc.split('\n').filter(l => l.trim());
-            lines.forEach(l => allLines.push(l));
-        }
-    });
+    
+    // 1. 从 layer_buff 获取
+    if (zoneData.layer_buff) {
+        Object.values(zoneData.layer_buff).forEach(buff => {
+            if (buff && buff.desc && buff.desc.trim()) {
+                const lines = buff.desc.split('\n').filter(l => l.trim());
+                lines.forEach(l => allLines.push(l));
+            }
+        });
+    }
+    
+    // 2. 从 selectable_buff 获取（后三期可能在这里）
+    if (zoneData.selectable_buff) {
+        Object.values(zoneData.selectable_buff).forEach(buff => {
+            if (buff && buff.desc && buff.desc.trim()) {
+                const lines = buff.desc.split('\n').filter(l => l.trim());
+                lines.forEach(l => allLines.push(l));
+            }
+        });
+    }
 
     const suitLine = allLines.find(l => l.includes('适合') && l.includes('特性的代理人挑战'));
     const scoreLines = allLines.filter(l => l.includes('操作得分') || l.includes('可获得'));
@@ -248,7 +259,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
 const renderAllBosses = () => {
     const entry = currentEntry();
     const zone = entry.normal_zone || entry.zone || {};
-    // 移除长度限制，直接获取所有 key
     const zoneKeys = Object.keys(zone).sort();
     const container = byId("deadlyLayout");
     container.replaceChildren();
@@ -290,10 +300,14 @@ const renderAllBosses = () => {
     });
     container.appendChild(bossRow);
 
+    // 对齐三个机制框的高度
     setTimeout(() => {
         const traitBoxes = sections.map(s => s.section.querySelector(`.u_b`));
-        const maxH = Math.max(...traitBoxes.map(b => b?.offsetHeight || 0));
-        traitBoxes.forEach(b => { if (b) b.style.minHeight = maxH + "px"; });
+        const validBoxes = traitBoxes.filter(b => b !== null);
+        if (validBoxes.length > 0) {
+            const maxH = Math.max(...validBoxes.map(b => b.offsetHeight || 0));
+            validBoxes.forEach(b => { if (b) b.style.minHeight = maxH + "px"; });
+        }
     }, 100);
 
     if (allSharedBuffs.length > 0) {
@@ -345,7 +359,6 @@ const renderCharts = () => {
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
-        // 移除长度限制，直接遍历所有 key
         for (const zk of Object.keys(zone)) {
             const zd = zone[zk];
             let monsters = [];
