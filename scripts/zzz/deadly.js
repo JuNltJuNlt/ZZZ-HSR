@@ -474,6 +474,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
     
     if (currentInstance && !currentInstance.isDisposed()) {
+        currentInstance.resize();
         currentInstance.setOption({
             title: { text: title },
             legend: { data: seriesData.map(s => s.name) },
