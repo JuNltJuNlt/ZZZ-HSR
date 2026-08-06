@@ -265,7 +265,17 @@ const renderAllBosses = () => {
     const allSharedBuffs = [];
     const sections = [];
 
-    const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px", position: "relative" } });
+    const bossRow = create("div", { 
+        className: "u_l", 
+        style: { 
+            display: "flex",
+            justifyContent: "space-between",  // 两端对齐，Boss1靠左，Boss3靠右
+            gap: "0px",
+            position: "relative",
+            width: "100%",
+        } 
+    });
+    
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.weakness || [];
@@ -278,7 +288,7 @@ const renderAllBosses = () => {
         const label = text.stageLabels[i] || `第${i+1}间`;
         const wrapper = create("div", {
             style: {
-                width: "calc(33.33% - 32px)",
+                width: "calc(33.33% - 16px)",
                 maxWidth: "420px",
                 display: "flex",
                 flexDirection: "column",
@@ -324,6 +334,7 @@ const renderAllBosses = () => {
                 lineHeight: "1.8",
                 display: "block",
                 boxSizing: "border-box",
+                width: "100%",
             },
             children: allSharedBuffs.map(buff => {
                 const descHtml = buff.desc
@@ -342,14 +353,14 @@ const renderAllBosses = () => {
         });
         container.appendChild(sharedBuffBox);
 
-        // 动态调整共用 Buff 框宽度，与三个 Boss 卡片对齐
+        // 动态调整共用 Buff 框宽度，与 Boss1 左边界到 Boss3 右边界对齐
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
             if (firstWrapper && lastWrapper) {
+                const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
                 const lastRect = lastWrapper.getBoundingClientRect();
-                const containerRect = container.getBoundingClientRect();
                 const leftOffset = firstRect.left - containerRect.left;
                 const rightEdge = lastRect.right - containerRect.left;
                 const totalWidth = rightEdge - leftOffset;
