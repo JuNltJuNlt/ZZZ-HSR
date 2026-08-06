@@ -11,11 +11,13 @@ let monstersData = [];
 let indexData = null;
 let chartInstance = null;
 let bossChartInstance = null;
+let finalChartInstance = null;
 
 const text = {
     title: "危局强袭战",
     chartTotalTitle: "试炼总血量演化",
     chartBossTitle: "试炼Boss血量演化",
+    chartFinalTitle: "绝境总血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     stageLabels: ["第一间", "第二间", "第三间"],
 };
@@ -374,14 +376,110 @@ const renderAllBosses = () => {
         }, 300);
     }
 
-    const finalSection = document.getElementById("finalSection");
-    if (finalSection) finalSection.style.display = "none";
+    // 渲染绝境关卡
+    renderFinalSection(entry);
+};
+
+const renderFinalSection = (entry) => {
+    const finalZone = entry.final_zone;
+    const container = document.getElementById("finalSection");
+    if (!container) return;
+    
+    if (!finalZone || Object.keys(finalZone).length === 0) {
+        container.style.display = "none";
+        return;
+    }
+    
+    container.style.display = "";
+    container.replaceChildren();
+    
+    // 绝境标题
+    const finalTitle = create("p", { 
+        className: "content_title", 
+        text: "绝境" 
+    });
+    container.appendChild(finalTitle);
+    
+    const finalKeys = Object.keys(finalZone).sort();
+    finalKeys.forEach(fk => {
+        const zoneData = finalZone[fk];
+        const monster = zoneData.monsters?.[0];
+        if (!monster) return;
+        
+        // 绝境布局：左边怪物卡片，右边机制框
+        const finalRow = create("div", {
+            style: {
+                display: "flex",
+                gap: "24px",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                width: "100%",
+                padding: "0 40px",
+                boxSizing: "border-box",
+            }
+        });
+        
+        // 左边：怪物卡片区域
+        const leftSide = create("div", {
+            style: {
+                flex: "0 0 auto",
+                width: "320px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+            }
+        });
+        
+        // 绝境 Lv 标签
+        const levelLabel = create("div", {
+            children: [
+                create("p", { text: `绝境 Lv${zoneData.monster_level || 70}`, style: { textAlign: "center" } }),
+                ...renderElementIcons(zoneData.weakness || [], "elem_"),
+            ]
+        });
+        leftSide.appendChild(levelLabel);
+        
+        // 怪物卡片（使用 15.8 倍率）
+        const card = renderMonsterCard(monster, zoneData.monster_level || 70, 15.8);
+        leftSide.appendChild(create("div", { className: "wave_monsters", children: [card] }));
+        
+        finalRow.appendChild(leftSide);
+        
+        // 右边：机制框
+        const combinedDesc = processBossDesc(zoneData);
+        const html = combinedDesc
+            .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
+            .replace(/\n/g, '<br>')
+            .replace(/^· /gm, '<br>· ')
+            .replace(/^<br>/, '');
+        
+        const rightSide = create("div", {
+            style: {
+                flex: "1 1 auto",
+                maxWidth: "700px",
+                backgroundColor: "#27363E",
+                color: "#eee",
+                borderRadius: "5px",
+                padding: "14px",
+                lineHeight: "1.8",
+                fontSize: "14px",
+                textAlign: "left",
+            },
+            children: [
+                create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
+            ]
+        });
+        
+        finalRow.appendChild(rightSide);
+        container.appendChild(finalRow);
+    });
 };
 
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     
+    // 试炼总血量
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
@@ -418,6 +516,7 @@ const renderCharts = () => {
         return Math.round(total * 8.74);
     });
     
+    // 试炼各Boss血量
     const bossData = [[], [], []];
     entries.forEach(e => {
         const zone = e.normal_zone || e.zone || {};
@@ -461,6 +560,26 @@ const renderCharts = () => {
         { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
     ], labels);
+    
+    // 绝境总血量演化（只有后六期有 final_zone 的数据）
+    const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
+    if (finalEntries.length > 0) {
+        const finalLabels = finalEntries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
+        const finalData = finalEntries.map(e => {
+            const fz = e.final_zone;
+            let total = 0;
+            for (const fk of Object.keys(fz)) {
+                const zd = fz[fk];
+                if (zd.monsters) {
+                    zd.monsters.forEach(m => {
+                        total += (m.hp || 0) * (m.hp_ratio_sum || 1);
+                    });
+                }
+            }
+            return Math.round(total * 15.8);
+        });
+        renderLineChart("finalChart", text.chartFinalTitle, [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
+    }
 };
 
 const renderLineChart = (targetId, title, seriesData, labels) => {
@@ -471,7 +590,11 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     chartElement.style.height = "600px";
     
     const isTotalChart = targetId === "chart";
-    const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
+    const isBossChart = targetId === "bossChart";
+    let currentInstance;
+    if (isTotalChart) currentInstance = chartInstance;
+    else if (isBossChart) currentInstance = bossChartInstance;
+    else currentInstance = finalChartInstance;
     
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
@@ -485,11 +608,9 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }
     
     const newInstance = window.echarts.init(chartElement);
-    if (isTotalChart) {
-        chartInstance = newInstance;
-    } else {
-        bossChartInstance = newInstance;
-    }
+    if (isTotalChart) chartInstance = newInstance;
+    else if (isBossChart) bossChartInstance = newInstance;
+    else finalChartInstance = newInstance;
     
     newInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
