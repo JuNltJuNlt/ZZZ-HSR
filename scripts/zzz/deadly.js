@@ -116,19 +116,9 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
 function processBossDesc(zoneData) {
     const allLines = [];
     
-    // 1. 从 layer_buff 获取
+    // 只从 layer_buff 获取 Boss 专属机制
     if (zoneData.layer_buff) {
         Object.values(zoneData.layer_buff).forEach(buff => {
-            if (buff && buff.desc && buff.desc.trim()) {
-                const lines = buff.desc.split('\n').filter(l => l.trim());
-                lines.forEach(l => allLines.push(l));
-            }
-        });
-    }
-    
-    // 2. 从 selectable_buff 获取（后三期可能在这里）
-    if (zoneData.selectable_buff) {
-        Object.values(zoneData.selectable_buff).forEach(buff => {
             if (buff && buff.desc && buff.desc.trim()) {
                 const lines = buff.desc.split('\n').filter(l => l.trim());
                 lines.forEach(l => allLines.push(l));
@@ -290,9 +280,12 @@ const renderAllBosses = () => {
         sections.push({ section, wrapper });
         wrapper.appendChild(section);
         bossRow.appendChild(wrapper);
+        
+        // 收集共用 Buff（selectable_buff）
         if (zoneData.selectable_buff) {
             Object.values(zoneData.selectable_buff).forEach(b => {
-                if (!allSharedBuffs.find(x => x.title === b.title)) {
+                const exists = allSharedBuffs.find(x => x.desc === b.desc && x.title === b.title);
+                if (!exists) {
                     allSharedBuffs.push(b);
                 }
             });
@@ -310,6 +303,7 @@ const renderAllBosses = () => {
         }
     }, 100);
 
+    // 渲染共用 Buff 长框
     if (allSharedBuffs.length > 0) {
         const sharedBuffBox = create("div", {
             className: "shared-buff-box",
@@ -323,15 +317,24 @@ const renderAllBosses = () => {
                 display: "block",
                 boxSizing: "border-box",
             },
-            children: allSharedBuffs.map(buff =>
-                create("p", {
-                    html: `<b>${buff.title}</b><br><span style="font-size:14px;">${buff.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/(<br>)?· /g, (m, p) => (p ? '<br>· ' : '· '))}</span>`,
+            children: allSharedBuffs.map(buff => {
+                const descHtml = buff.desc
+                    .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
+                    .split('\n')
+                    .map(line => line.trim())
+                    .filter(Boolean)
+                    .map(line => line.replace(/^· /, '·&nbsp;'))
+                    .join('<br>');
+                
+                return create("p", {
+                    html: `<b>${buff.title}</b><br><span style="font-size:14px;">${descHtml}</span>`,
                     style: { margin: "0 0 15px 0", textAlign: "left", display: "block" }
-                })
-            ),
+                });
+            }),
         });
         container.appendChild(sharedBuffBox);
 
+        // 动态调整共用 Buff 框宽度，与三个 Boss 卡片对齐
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
