@@ -139,25 +139,25 @@ function processBossDesc(zoneData) {
 }
 
 const renderBossSection = (zoneData, letter, label, elements) => {
-    // 尝试从 layer_room 或直接 monsters 获取怪物数据
     let monster = null;
-    let roomKey = null;
-    let room = null;
     
-    if (zoneData.layer_room && Object.keys(zoneData.layer_room).length > 0) {
-        roomKey = Object.keys(zoneData.layer_room)[0];
-        room = zoneData.layer_room[roomKey];
-        if (room && room.monsters && room.monsters.length > 0) {
-            monster = room.monsters[0][0];
-        }
-    }
-    
-    // 如果 layer_room 中没有，尝试直接从 monsters 获取
-    if (!monster && zoneData.monsters && zoneData.monsters.length > 0) {
+    // 1. 直接从 monsters 获取（后六期）
+    if (zoneData.monsters && zoneData.monsters.length > 0) {
         monster = zoneData.monsters[0];
     }
     
-    // 如果还没有，尝试从 monster_list 获取（原始数据格式）
+    // 2. 从 layer_room 获取（前期）
+    if (!monster && zoneData.layer_room) {
+        const roomKeys = Object.keys(zoneData.layer_room);
+        if (roomKeys.length > 0) {
+            const room = zoneData.layer_room[roomKeys[0]];
+            if (room && room.monsters && room.monsters.length > 0) {
+                monster = room.monsters[0][0];
+            }
+        }
+    }
+    
+    // 3. 从 monster_list 获取（原始数据格式）
     if (!monster && zoneData.monster_list) {
         const keys = Object.keys(zoneData.monster_list);
         if (keys.length > 0) {
@@ -250,7 +250,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
 
 const renderAllBosses = () => {
     const entry = currentEntry();
-    // 优先使用 normal_zone，如果没有则用 zone
     const zone = entry.normal_zone || entry.zone || {};
     const zoneKeys = Object.keys(zone).filter(k => k.length <= 7).sort();
     const container = byId("deadlyLayout");
@@ -264,7 +263,6 @@ const renderAllBosses = () => {
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.weakness || [];
-        // 从 layer_room 或 monster_list 获取弱点
         if (zoneData.layer_room) {
             const roomValues = Object.values(zoneData.layer_room);
             if (roomValues.length > 0 && roomValues[0].weakness) {
@@ -353,8 +351,13 @@ const renderCharts = () => {
             const zd = zone[zk];
             let monsters = [];
             
-            // 尝试从 layer_room 获取
-            if (zd.layer_room) {
+            // 1. 直接从 monsters 获取（后六期）
+            if (zd.monsters && zd.monsters.length > 0) {
+                monsters = zd.monsters;
+            }
+            
+            // 2. 从 layer_room 获取（前期）
+            if (monsters.length === 0 && zd.layer_room) {
                 for (const rk of Object.keys(zd.layer_room)) {
                     const room = zd.layer_room[rk];
                     if (room && room.monsters) {
@@ -365,12 +368,7 @@ const renderCharts = () => {
                 }
             }
             
-            // 如果 layer_room 中没有，尝试直接从 monsters 获取
-            if (monsters.length === 0 && zd.monsters) {
-                monsters = zd.monsters;
-            }
-            
-            // 如果还没有，尝试从 monster_list 获取
+            // 3. 从 monster_list 获取（原始数据格式）
             if (monsters.length === 0 && zd.monster_list) {
                 monsters = Object.values(zd.monster_list).map(m => ({
                     hp: m.stats?.hp || 0,
