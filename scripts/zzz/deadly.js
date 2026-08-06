@@ -264,8 +264,8 @@ const renderAllBosses = () => {
         className: "u_l", 
         style: { 
             display: "flex",
-            justifyContent: "space-between",
-            gap: "0px",
+            justifyContent: "flex-start",
+            gap: "24px",
             position: "relative",
             width: "100%",
         } 
@@ -284,7 +284,6 @@ const renderAllBosses = () => {
         
         const wrapper = create("div", {
             style: {
-                flex: "0 0 auto",
                 width: "calc(33.33% - 16px)",
                 maxWidth: "420px",
                 display: "flex",
@@ -292,7 +291,7 @@ const renderAllBosses = () => {
             }
         });
         const section = renderBossSection(zoneData, bossColors[i], label, elements);
-        sections.push({ section, wrapper });
+        sections.push({ section, wrapper, index: i });
         wrapper.appendChild(section);
         bossRow.appendChild(wrapper);
         
@@ -349,17 +348,37 @@ const renderAllBosses = () => {
 
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
+            const secondWrapper = sections[1]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
+            
             if (firstWrapper && lastWrapper) {
                 const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
                 const lastRect = lastWrapper.getBoundingClientRect();
+                
+                // Buff 框左边界 = Boss1 左边界
                 const leftOffset = firstRect.left - containerRect.left;
-                const rightEdge = lastRect.right - containerRect.left;
+                // Buff 框右边界 = Boss1 右边界
+                const rightEdge = firstRect.right - containerRect.left;
                 const totalWidth = rightEdge - leftOffset;
+                
+                // 设置 Buff 框位置和宽度（与 Boss1 对齐）
                 sharedBuffBox.style.marginLeft = leftOffset + "px";
                 sharedBuffBox.style.width = totalWidth + "px";
                 sharedBuffBox.style.maxWidth = "none";
+                
+                // 计算 Boss3 需要向左移动的距离
+                const boss3RightEdge = lastRect.right - containerRect.left;
+                const shiftAmount = boss3RightEdge - rightEdge;
+                
+                if (shiftAmount > 0) {
+                    // 移动 Boss2
+                    if (secondWrapper) {
+                        secondWrapper.style.marginLeft = (-shiftAmount) + "px";
+                    }
+                    // 移动 Boss3
+                    lastWrapper.style.marginLeft = (-shiftAmount) + "px";
+                }
             }
         }, 200);
     }
