@@ -69,15 +69,14 @@ const renderWeaknessBars = (monster) => {
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
     
-    // 无论有无弱点/抗性，都返回一个固定高度的容器
     return create("div", {
         style: { 
             display: "flex", 
             justifyContent: "center", 
             gap: "3px", 
             marginTop: "4px",
-            minHeight: "28px",  // 固定最小高度，保持占位
-            visibility: items.length === 0 ? "hidden" : "visible"  // 无内容时隐藏但占位
+            minHeight: "28px",
+            visibility: items.length === 0 ? "hidden" : "visible"
         },
         children: items.length > 0 ? items.map(item => {
             const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
@@ -124,7 +123,6 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
 function processBossDesc(zoneData) {
     const allLines = [];
     
-    // 只从 layer_buff 获取 Boss 专属机制
     if (zoneData.layer_buff) {
         Object.values(zoneData.layer_buff).forEach(buff => {
             if (buff && buff.desc && buff.desc.trim()) {
@@ -150,12 +148,10 @@ function processBossDesc(zoneData) {
 const renderBossSection = (zoneData, letter, label, elements) => {
     let monster = null;
     
-    // 1. 直接从 monsters 获取（后六期）
     if (zoneData.monsters && zoneData.monsters.length > 0) {
         monster = zoneData.monsters[0];
     }
     
-    // 2. 从 layer_room 获取（前期）
     if (!monster && zoneData.layer_room) {
         const roomKeys = Object.keys(zoneData.layer_room);
         if (roomKeys.length > 0) {
@@ -166,7 +162,6 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         }
     }
     
-    // 3. 从 monster_list 获取（原始数据格式）
     if (!monster && zoneData.monster_list) {
         const keys = Object.keys(zoneData.monster_list);
         if (keys.length > 0) {
@@ -269,7 +264,7 @@ const renderAllBosses = () => {
         className: "u_l", 
         style: { 
             display: "flex",
-            justifyContent: "space-between",  // 两端对齐，Boss1靠左，Boss3靠右
+            justifyContent: "space-between",
             gap: "0px",
             position: "relative",
             width: "100%",
@@ -286,8 +281,10 @@ const renderAllBosses = () => {
             }
         }
         const label = text.stageLabels[i] || `第${i+1}间`;
+        
         const wrapper = create("div", {
             style: {
+                flex: "0 0 auto",
                 width: "calc(33.33% - 16px)",
                 maxWidth: "420px",
                 display: "flex",
@@ -299,7 +296,6 @@ const renderAllBosses = () => {
         wrapper.appendChild(section);
         bossRow.appendChild(wrapper);
         
-        // 收集共用 Buff（selectable_buff）
         if (zoneData.selectable_buff) {
             Object.values(zoneData.selectable_buff).forEach(b => {
                 const exists = allSharedBuffs.find(x => x.desc === b.desc && x.title === b.title);
@@ -311,7 +307,6 @@ const renderAllBosses = () => {
     });
     container.appendChild(bossRow);
 
-    // 对齐三个机制框的高度
     setTimeout(() => {
         const traitBoxes = sections.map(s => s.section.querySelector(`.u_b`));
         const validBoxes = traitBoxes.filter(b => b !== null);
@@ -321,7 +316,6 @@ const renderAllBosses = () => {
         }
     }, 100);
 
-    // 渲染共用 Buff 长框
     if (allSharedBuffs.length > 0) {
         const sharedBuffBox = create("div", {
             className: "shared-buff-box",
@@ -353,7 +347,6 @@ const renderAllBosses = () => {
         });
         container.appendChild(sharedBuffBox);
 
-        // 动态调整共用 Buff 框宽度，与 Boss1 左边界到 Boss3 右边界对齐
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
