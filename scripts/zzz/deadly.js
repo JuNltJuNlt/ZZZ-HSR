@@ -88,7 +88,7 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
-    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * multiplier);
+    const hp = Math.round((monster.hp || 0) * (monster.hp_ratio_sum ?? 1) * multiplier);
     const def = Math.round(monster.defense || 0);
     const stun = Math.round(monster.stun || 0);
     const img = image(imagePath, "monicon hasimg", monster.name);
@@ -139,10 +139,73 @@ function processBossDesc(zoneData) {
 }
 
 const renderBossSection = (zoneData, letter, label, elements) => {
-    const roomKey = Object.keys(zoneData.layer_room)[0];
-    const room = zoneData.layer_room[roomKey];
-    const monster = room.monsters[0][0];
+    // 尝试从 layer_room 或直接 monsters 获取怪物数据
+    let monster = null;
+    let roomKey = null;
+    let room = null;
+    
+    if (zoneData.layer_room && Object.keys(zoneData.layer_room).length > 0) {
+        roomKey = Object.keys(zoneData.layer_room)[0];
+        room = zoneData.layer_room[roomKey];
+        if (room && room.monsters && room.monsters.length > 0) {
+            monster = room.monsters[0][0];
+        }
+    }
+    
+    // 如果 layer_room 中没有，尝试直接从 monsters 获取
+    if (!monster && zoneData.monsters && zoneData.monsters.length > 0) {
+        monster = zoneData.monsters[0];
+    }
+    
+    // 如果还没有，尝试从 monster_list 获取（原始数据格式）
+    if (!monster && zoneData.monster_list) {
+        const keys = Object.keys(zoneData.monster_list);
+        if (keys.length > 0) {
+            const rawMonster = zoneData.monster_list[keys[0]];
+            if (rawMonster && rawMonster.stats) {
+                monster = {
+                    name: rawMonster.name,
+                    hp: rawMonster.stats.hp,
+                    defense: rawMonster.stats.defence,
+                    stun: rawMonster.stats.stun,
+                    hp_ratio_sum: 1,
+                    weakness: zoneData.weakness || [],
+                    resistance: []
+                };
+            }
+        }
+    }
 
+    // 如果仍然没有怪物，显示占位信息
+    if (!monster) {
+        const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
+        const recommend = create("div", { className: `${letter}_r` });
+        recommend.appendChild(create("div", {
+            children: [
+                create("p", { text: `${label} Lv${zoneData.monster_level || 70}` }),
+                ...renderElementIcons(elements, "elem_"),
+                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+            ],
+        }));
+        section.appendChild(recommend);
+        
+        const lineup = create("div", { className: `${letter}_m` });
+        lineup.appendChild(create("p", { text: "无怪物数据", style: { textAlign: "center", padding: "20px", color: "#999" } }));
+        section.appendChild(lineup);
+        
+        const traitContainer = create("div", {
+            className: `${letter}_b u_b`,
+            style: {
+                backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "14px",
+                width: "100%", boxSizing: "border-box", textAlign: "left", display: "block",
+            },
+            children: [create("p", { text: "无机制说明", style: { lineHeight: "1.8", margin: "4px 0", fontSize: "14px", textAlign: "left", display: "block" } })],
+        });
+        section.appendChild(traitContainer);
+        return section;
+    }
+
+    // 正常渲染
     const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
     const lineup = create("div", { className: `${letter}_m` });
@@ -155,7 +218,11 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         ],
     }));
 
-    lineup.appendChild(create("div", { className: "wave_monsters", children: [renderMonsterCard(monster, zoneData.monster_level, 8.74)] }));
+    // 确保怪物有 weakness 和 resistance
+    if (!monster.weakness) monster.weakness = zoneData.weakness || [];
+    if (!monster.resistance) monster.resistance = [];
+    
+    lineup.appendChild(create("div", { className: "wave_monsters", children: [renderMonsterCard(monster, zoneData.monster_level || 70, 8.74)] }));
     section.appendChild(recommend);
     section.appendChild(lineup);
 
@@ -173,7 +240,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
             width: "100%", boxSizing: "border-box", textAlign: "left", display: "block",
         },
         children: [
-            create("p", { html, style: { lineHeight: "1.8", margin: "4px 0", fontSize: "14px", textAlign: "left", display: "block" } })
+            create("p", { html: html || "无机制说明", style: { lineHeight: "1.8", margin: "4px 0", fontSize: "14px", textAlign: "left", display: "block" } })
         ],
     });
     section.appendChild(traitContainer);
@@ -196,7 +263,14 @@ const renderAllBosses = () => {
     const bossRow = create("div", { className: "u_l", style: { justifyContent: "center", gap: "24px", position: "relative" } });
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
-        const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
+        const elements = zoneData.weakness || [];
+        // 从 layer_room 或 monster_list 获取弱点
+        if (zoneData.layer_room) {
+            const roomValues = Object.values(zoneData.layer_room);
+            if (roomValues.length > 0 && roomValues[0].weakness) {
+                elements.push(...roomValues[0].weakness);
+            }
+        }
         const label = text.stageLabels[i] || `第${i+1}间`;
         const wrapper = create("div", {
             style: {
@@ -276,14 +350,37 @@ const renderCharts = () => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
         for (const zk of Object.keys(zone).filter(k => k.length <= 7)) {
-            for (const rk of Object.keys(zone[zk].layer_room || {})) {
-                const room = zone[zk].layer_room[rk];
-                if (room.monsters) {
-                    room.monsters.forEach(w => w.forEach(m => {
-                        total += m.hp * (m.hp_ratio_sum ?? 1);
-                    }));
+            const zd = zone[zk];
+            let monsters = [];
+            
+            // 尝试从 layer_room 获取
+            if (zd.layer_room) {
+                for (const rk of Object.keys(zd.layer_room)) {
+                    const room = zd.layer_room[rk];
+                    if (room && room.monsters) {
+                        room.monsters.forEach(w => w.forEach(m => {
+                            monsters.push(m);
+                        }));
+                    }
                 }
             }
+            
+            // 如果 layer_room 中没有，尝试直接从 monsters 获取
+            if (monsters.length === 0 && zd.monsters) {
+                monsters = zd.monsters;
+            }
+            
+            // 如果还没有，尝试从 monster_list 获取
+            if (monsters.length === 0 && zd.monster_list) {
+                monsters = Object.values(zd.monster_list).map(m => ({
+                    hp: m.stats?.hp || 0,
+                    hp_ratio_sum: 1
+                }));
+            }
+            
+            monsters.forEach(m => {
+                total += (m.hp || 0) * (m.hp_ratio_sum || 1);
+            });
         }
         return Math.round(total * 8.74);
     });
