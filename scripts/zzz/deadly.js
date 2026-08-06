@@ -353,19 +353,17 @@ const renderAllBosses = () => {
         });
         container.appendChild(sharedBuffBox);
 
-        // 对齐 Buff 框
         setTimeout(() => {
-            const firstWrapper = sections[0]?.wrapper;
-            const lastWrapper = sections[2]?.wrapper;
+            const allWrappers = bossRow.children;
+            const firstWrapper = allWrappers[0];
+            const lastWrapper = allWrappers[allWrappers.length - 1];
             
-            if (firstWrapper && lastWrapper) {
+            if (firstWrapper && lastWrapper && allWrappers.length >= 3) {
                 const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
                 const lastRect = lastWrapper.getBoundingClientRect();
                 
-                // Buff 框左边界 = Boss1 机制框左边界
                 const leftOffset = firstRect.left - containerRect.left;
-                // Buff 框右边界 = Boss3 机制框右边界
                 const rightEdge = lastRect.right - containerRect.left;
                 const totalWidth = rightEdge - leftOffset;
                 
@@ -373,7 +371,7 @@ const renderAllBosses = () => {
                 sharedBuffBox.style.width = totalWidth + "px";
                 sharedBuffBox.style.maxWidth = "none";
             }
-        }, 200);
+        }, 300);
     }
 
     const finalSection = document.getElementById("finalSection");
@@ -457,15 +455,15 @@ const renderCharts = () => {
         }
     });
     
-    renderLineChart("chart", "危局强袭战总血量演化", [{ name: "总血量", color: "#cc0000", data: totalData }], labels, true);
+    renderLineChart("chart", "危局强袭战总血量演化", [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
     renderLineChart("bossChart", text.chartBossTitle, [
         { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
         { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
-    ], labels, true);
+    ], labels);
 };
 
-const renderLineChart = (targetId, title, seriesData, labels, isNewChart = false) => {
+const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement) {
         console.warn('图表容器不存在:', targetId);
@@ -474,18 +472,9 @@ const renderLineChart = (targetId, title, seriesData, labels, isNewChart = false
     if (!seriesData.length || !window.echarts) return;
     
     const isTotalChart = targetId === "chart";
-    
-    if (isNewChart) {
-        // 新图表逻辑：销毁旧实例，创建新实例
-        const oldInstance = isTotalChart ? chartInstance : bossChartInstance;
-        if (oldInstance && !oldInstance.isDisposed()) {
-            oldInstance.dispose();
-        }
-    }
-    
     const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
     
-    if (currentInstance && !currentInstance.isDisposed() && !isNewChart) {
+    if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.setOption({
             xAxis: { data: labels },
             series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
@@ -500,27 +489,17 @@ const renderLineChart = (targetId, title, seriesData, labels, isNewChart = false
         bossChartInstance = newInstance;
     }
     
-    // 两个图表使用完全相同的配置
-    const option = {
-        title: { 
-            text: title, 
-            subtext: text.chartSubtitle, 
-            left: "center", 
-            textStyle: { color: "#000" }, 
-            subtextStyle: { color: "#2545ba" }, 
-            top: "3%"
-        },
+    newInstance.setOption({
+        title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
-        grid: { left: "3%", right: "4%", top: "25%", containLabel: true },
+        grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
         xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 } },
         yAxis: { type: "value" },
-        legend: { data: seriesData.map(s => s.name), top: "13%" },
+        legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
-    };
-    
-    newInstance.setOption(option, true);
+    }, true);
 };
 
 const render = () => {
