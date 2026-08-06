@@ -181,159 +181,9 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     return section;
 };
 
-// ===== 渲染绝境关卡 =====
-const renderFinalZone = (zoneKey, zoneData) => {
-    const roomKey = Object.keys(zoneData.layer_room)[0];
-    const room = zoneData.layer_room[roomKey];
-    const monster = room.monsters[0][0];
-    
-    const info = monstersData.find(m => m.name === monster.name) || {};
-    const type = info.type || "S";
-    const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
-    const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * 15.8);
-    const def = Math.round(monster.defense || 0);
-    const stun = Math.round(monster.stun || 0);
-
-    const buffs = [];
-    Object.values(zoneData.layer_buff || {}).forEach(b => {
-        if (b.desc && b.desc.trim()) {
-            buffs.push({ title: b.title || "", desc: b.desc });
-        }
-    });
-    Object.values(zoneData.selectable_buff || {}).forEach(b => {
-        if (b.desc && b.desc.trim()) {
-            buffs.push({ title: b.title || "", desc: b.desc });
-        }
-    });
-
-    const buffElements = buffs.map(b =>
-        create("div", {
-            className: "mechanic-item",
-            html: `<b>${b.title || "机制"}</b><br>${b.desc.replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ')}`
-        })
-    );
-
-    const weaknessItems = [];
-    (monster.weakness || []).forEach(el => weaknessItems.push({ element: el, type: "weak" }));
-    (monster.resistance || []).forEach(el => weaknessItems.push({ element: el, type: "resist" }));
-    const weaknessBars = weaknessItems.length > 0 ? create("div", {
-        style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" },
-        children: weaknessItems.map(item => {
-            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-            return create("div", {
-                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" },
-                children: [
-                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
-                    create("span", { style: { width: "18px", height: "3px", borderRadius: "2px", backgroundColor: barColor, display: "block" } })
-                ]
-            });
-        })
-    }) : null;
-
-    return create("div", {
-        className: "final-card",
-        style: {
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "20px",
-            background: "#f7f9fc",
-            borderRadius: "8px",
-            border: "2px solid #cc0000",
-            padding: "20px",
-            margin: "0 20px",
-        },
-        children: [
-            create("div", {
-                className: "monster-info",
-                style: { flex: "0 0 220px", textAlign: "center" },
-                children: [
-                    image(imagePath, "", monster.name, { style: "width:180px;height:180px;object-fit:contain;background:#eef2f7;border-radius:8px;" }),
-                    create("div", { className: "monster-name", style: { fontSize: "1.1em", fontWeight: "bold", marginTop: "8px" }, text: monster.name }),
-                    weaknessBars,
-                    create("div", { className: "monster-stats", style: { fontSize: "0.9em", color: "#333", lineHeight: "1.6" }, children: [
-                        create("p", { html: `血量：<span style="color:#cc0000;font-weight:bold;">${hp.toLocaleString()}</span>` }),
-                        create("p", { html: `防御：<span style="color:#2545ba;font-weight:bold;">${def}</span>` }),
-                        create("p", { html: `失衡条：<span style="color:#000000;font-weight:bold;">${stun}</span>` }),
-                    ]}),
-                ]
-            }),
-            create("div", {
-                className: "mechanic-box",
-                style: {
-                    flex: "1",
-                    minWidth: "300px",
-                    background: "#ffffff",
-                    borderRadius: "6px",
-                    border: "1px solid #d8dee8",
-                    padding: "16px",
-                    maxHeight: "400px",
-                    overflowY: "auto",
-                },
-                children: [
-                    create("div", { className: "mechanic-title", style: { fontWeight: "bold", fontSize: "1em", marginBottom: "8px", color: "#2545ba" }, text: "— 机制说明 —" }),
-                    ...(buffElements.length > 0 ? buffElements : [create("div", { className: "mechanic-item", text: "无特殊机制" })]),
-                ]
-            })
-        ]
-    });
-};
-
-// ===== 渲染绝境血量演化图 =====
-const renderFinalChart = () => {
-    const entries = deadlyEntries.slice().reverse();
-    const container = document.getElementById("finalChartContainer");
-    const chartElement = document.getElementById("finalChart");
-    
-    const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
-    if (finalEntries.length === 0) {
-        if (container) container.style.display = "none";
-        return;
-    }
-    if (container) container.style.display = "";
-
-    const labels = finalEntries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
-    const data = finalEntries.map(e => {
-        const zone = Object.values(e.final_zone)[0];
-        const roomKey = Object.keys(zone.layer_room)[0];
-        const room = zone.layer_room[roomKey];
-        const monster = room.monsters[0][0];
-        return Math.round(monster.hp * (monster.hp_ratio_sum ?? 1) * 15.8);
-    });
-
-    if (chartElement && window.echarts) {
-        const existingChart = window.echarts.getInstanceByDom(chartElement);
-        if (existingChart) window.echarts.dispose(existingChart);
-        const chartInstance = window.echarts.init(chartElement);
-        chartInstance.setOption({
-            title: {
-                text: "绝境总血量演化",
-                subtext: text.chartSubtitle,
-                left: "center",
-                textStyle: { color: "#000" },
-                subtextStyle: { color: "#cc0000" },
-                top: "8%"
-            },
-            tooltip: { trigger: "axis" },
-            grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
-            toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
-            xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 30, fontSize: 10 } },
-            yAxis: { type: "value" },
-            series: [{
-                name: "绝境总血量",
-                type: "line",
-                data: data,
-                lineStyle: { color: "#cc0000" },
-                itemStyle: { color: "#cc0000" },
-            }],
-            dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
-        }, true);
-    }
-};
-
-// ===== 渲染试炼三Boss =====
 const renderAllBosses = () => {
     const entry = currentEntry();
-    const zone = entry.normal_zone || entry.zone || {};
+    const zone = entry.zone || entry.normal_zone || {};
     const zoneKeys = Object.keys(zone).filter(k => k.length <= 7).sort();
     const container = byId("deadlyLayout");
     container.replaceChildren();
@@ -346,7 +196,7 @@ const renderAllBosses = () => {
     zoneKeys.forEach((zk, i) => {
         const zoneData = zone[zk];
         const elements = zoneData.layer_room ? Object.values(zoneData.layer_room)[0]?.weakness || [] : [];
-        const label = text.stageLabels[i];
+        const label = text.stageLabels[i] || `第${i+1}间`;
         const wrapper = create("div", {
             style: {
                 width: "calc(33.33% - 32px)",
@@ -415,26 +265,14 @@ const renderAllBosses = () => {
     }
 
     const finalSection = document.getElementById("finalSection");
-    const finalLayout = document.getElementById("finalLayout");
-    if (entry.final_zone && Object.keys(entry.final_zone).length > 0) {
-        finalSection.style.display = "";
-        finalLayout.replaceChildren();
-        const finalKeys = Object.keys(entry.final_zone).sort();
-        finalKeys.forEach(key => {
-            finalLayout.appendChild(renderFinalZone(key, entry.final_zone[key]));
-        });
-        renderFinalChart();
-    } else {
-        finalSection.style.display = "none";
-    }
+    if (finalSection) finalSection.style.display = "none";
 };
 
-// ===== 渲染试炼血量演化图 =====
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     const totalData = entries.map(e => {
-        const zone = e.normal_zone || e.zone || {};
+        const zone = e.zone || e.normal_zone || {};
         let total = 0;
         for (const zk of Object.keys(zone).filter(k => k.length <= 7)) {
             for (const rk of Object.keys(zone[zk].layer_room || {})) {
@@ -470,7 +308,6 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }, true);
 };
 
-// ===== 主渲染函数 =====
 const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
@@ -478,7 +315,6 @@ const render = () => {
     renderCharts();
 };
 
-// ===== 事件绑定 =====
 const bindEvents = () => {
     byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
     byId("nextSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex - 1));
@@ -518,7 +354,6 @@ const bindEvents = () => {
     }, true);
 };
 
-// ===== 初始化 =====
 const init = async () => {
     initMenu();
     await loadData();
