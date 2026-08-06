@@ -397,29 +397,13 @@ const renderFinalSection = () => {
         const monster = zoneData.monsters?.[0];
         if (!monster) return;
         
-        const finalRow = create("div", {
-            style: {
-                display: "flex",
-                gap: "24px",
-                alignItems: "flex-start",
-                justifyContent: "center",
-                width: "100%",
-                padding: "0 40px",
-                boxSizing: "border-box",
-            }
-        });
-        
-        // 左边：与试炼格式一致
-        const leftSide = create("div", {
+        // 与试炼相同的 class 结构
+        const section = create("div", {
             className: "u",
-            style: {
-                flex: "0 0 auto",
-                width: "320px",
-                display: "flex",
-                flexDirection: "column",
-            }
+            style: { display: "flex", flexDirection: "column", width: "100%" }
         });
         
+        // 推荐区域（与试炼格式一致）
         const recommend = create("div", { className: "u_r" });
         recommend.appendChild(create("div", {
             children: [
@@ -428,15 +412,24 @@ const renderFinalSection = () => {
                 create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
             ],
         }));
-        leftSide.appendChild(recommend);
+        section.appendChild(recommend);
         
-        const lineup = create("div", { className: "u_m" });
+        // 横向布局：左边怪物卡片 + 右边机制框
+        const finalRow = create("div", {
+            style: {
+                display: "flex",
+                gap: "24px",
+                alignItems: "flex-start",
+                width: "100%",
+            }
+        });
+        
+        // 左边怪物区域
+        const lineup = create("div", { className: "u_m", style: { flex: "0 0 auto" } });
         lineup.appendChild(create("div", { className: "wave_monsters", children: [renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)] }));
-        leftSide.appendChild(lineup);
+        finalRow.appendChild(lineup);
         
-        finalRow.appendChild(leftSide);
-        
-        // 右边：机制框
+        // 右边机制框
         const combinedDesc = processBossDesc(zoneData);
         const html = combinedDesc
             .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
@@ -444,11 +437,10 @@ const renderFinalSection = () => {
             .replace(/^· /gm, '<br>· ')
             .replace(/^<br>/, '');
         
-        const rightSide = create("div", {
+        const traitContainer = create("div", {
             className: "u_b",
             style: {
                 flex: "1 1 auto",
-                maxWidth: "700px",
                 backgroundColor: "#27363E",
                 color: "#eee",
                 borderRadius: "5px",
@@ -461,9 +453,10 @@ const renderFinalSection = () => {
                 create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
             ]
         });
+        finalRow.appendChild(traitContainer);
         
-        finalRow.appendChild(rightSide);
-        container.appendChild(finalRow);
+        section.appendChild(finalRow);
+        container.appendChild(section);
     });
 };
 
