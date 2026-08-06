@@ -268,7 +268,7 @@ const renderAllBosses = () => {
         style: { 
             display: "flex",
             justifyContent: "center",
-            gap: "20px",
+            gap: "0px",
             position: "relative",
             width: "100%",
             padding: "0 40px",
@@ -296,6 +296,7 @@ const renderAllBosses = () => {
                 maxWidth: "420px",
                 display: "flex",
                 flexDirection: "column",
+                marginLeft: i === 0 ? "0" : "20px",
             }
         });
         const section = renderBossSection(zoneData, bossColors[i], label, elements);
@@ -357,6 +358,7 @@ const renderAllBosses = () => {
             const firstWrapper = sections[0]?.wrapper;
             const secondWrapper = sections[1]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
+            const downloadBtn = byId("downloadBtn");
             
             if (firstWrapper && secondWrapper && lastWrapper) {
                 const containerRect = container.getBoundingClientRect();
@@ -371,23 +373,37 @@ const renderAllBosses = () => {
                 sharedBuffBox.style.width = totalWidth + "px";
                 sharedBuffBox.style.maxWidth = "none";
                 
-                // 强制重排后获取最新位置
+                // 强制重排
                 sharedBuffBox.offsetHeight;
                 
-                // 重新获取 Buff 框右边界
-                const buffRect = sharedBuffBox.getBoundingClientRect();
-                const buffRightEdge = buffRect.right - containerRect.left;
+                // Boss2 与下载按钮对齐
+                if (downloadBtn) {
+                    const btnRect = downloadBtn.getBoundingClientRect();
+                    const btnCenter = btnRect.left + btnRect.width / 2;
+                    const secondRect = secondWrapper.getBoundingClientRect();
+                    const secondCenter = secondRect.left + secondRect.width / 2;
+                    const btnAlignShift = btnCenter - secondCenter;
+                    
+                    if (Math.abs(btnAlignShift) > 1) {
+                        secondWrapper.style.marginLeft = (parseFloat(secondWrapper.style.marginLeft) || 20) + btnAlignShift + "px";
+                        lastWrapper.style.marginLeft = (parseFloat(lastWrapper.style.marginLeft) || 20) + btnAlignShift + "px";
+                    }
+                }
                 
-                // 重新获取 Boss3 右边界
-                const lastRect = lastWrapper.getBoundingClientRect();
-                const boss3RightEdge = lastRect.right - containerRect.left;
+                // 重新获取位置，统一 Boss 间距
+                const updatedSecondRect = secondWrapper.getBoundingClientRect();
+                const updatedFirstRect = firstWrapper.getBoundingClientRect();
                 
-                // 计算偏移量
-                const shiftAmount = boss3RightEdge - buffRightEdge;
+                // Boss1 到 Boss2 的间距
+                const gap1to2 = updatedSecondRect.left - (updatedFirstRect.left + updatedFirstRect.width);
+                // Boss2 到 Boss3 的间距
+                const updatedLastRect = lastWrapper.getBoundingClientRect();
+                const gap2to3 = updatedLastRect.left - (updatedSecondRect.left + updatedSecondRect.width);
                 
-                if (shiftAmount > 1) {
-                    secondWrapper.style.marginLeft = (-shiftAmount) + "px";
-                    lastWrapper.style.marginLeft = (-shiftAmount) + "px";
+                // 调整 Boss3 使间距与 Boss1-Boss2 相同
+                const gapDiff = gap1to2 - gap2to3;
+                if (Math.abs(gapDiff) > 1) {
+                    lastWrapper.style.marginLeft = (parseFloat(lastWrapper.style.marginLeft) || 0) + gapDiff + "px";
                 }
             }
         }, 400);
@@ -401,7 +417,6 @@ const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     
-    // 总血量
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
@@ -438,7 +453,6 @@ const renderCharts = () => {
         return Math.round(total * 8.74);
     });
     
-    // 三个 Boss 单独血量
     const bossData = [[], [], []];
     entries.forEach(e => {
         const zone = e.normal_zone || e.zone || {};
@@ -511,13 +525,20 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }
     
     newInstance.setOption({
-        title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
+        title: { 
+            text: title, 
+            subtext: text.chartSubtitle, 
+            left: "center", 
+            textStyle: { color: "#000" }, 
+            subtextStyle: { color: "#2545ba" }, 
+            top: "3%"
+        },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
         toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
         xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 } },
         yAxis: { type: "value" },
-        legend: { data: seriesData.map(s => s.name), top: "16%" },
+        legend: { data: seriesData.map(s => s.name), top: "12%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
     }, true);
