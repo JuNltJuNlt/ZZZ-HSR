@@ -266,11 +266,12 @@ const renderAllBosses = () => {
         style: { 
             display: "flex",
             justifyContent: "center",
-            gap: "24px",
+            gap: "20px",
             position: "relative",
             width: "100%",
-            padding: "0 24px",
+            padding: "0 40px",
             boxSizing: "border-box",
+            flexWrap: "nowrap",
         } 
     });
     
@@ -287,8 +288,9 @@ const renderAllBosses = () => {
         
         const wrapper = create("div", {
             style: {
-                flex: "0 0 auto",
-                width: "calc(33.33% - 16px)",
+                flex: "0 1 auto",
+                width: "calc(33.33% - 14px)",
+                minWidth: "280px",
                 maxWidth: "420px",
                 display: "flex",
                 flexDirection: "column",
