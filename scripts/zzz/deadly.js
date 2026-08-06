@@ -397,22 +397,50 @@ const renderFinalSection = () => {
         const monster = zoneData.monsters?.[0];
         if (!monster) return;
         
-        const section = create("div", { className: "u_l", children: [
-            create("div", { className: "u", children: [
-                create("div", { className: "u_r", children: [
-                    create("div", { children: [
-                        create("p", { text: `绝境 Lv${zoneData.monster_level || 70}` }),
-                        ...renderElementIcons(zoneData.weakness || [], "elem_"),
-                        create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
-                    ]})
-                ]}),
-                create("div", { className: "u_m", children: [
-                    create("div", { className: "wave_monsters", children: [
-                        renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)
-                    ]})
-                ]})
-            ]}),
-            create("div", { className: "u_b", style: {
+        // 与试炼相同的布局结构，但机制框放在怪物旁边
+        const section = create("div", { className: "u", style: { display: "flex", flexDirection: "column", width: "100%" } });
+        
+        const recommend = create("div", { className: "u_r" });
+        recommend.appendChild(create("div", {
+            children: [
+                create("p", { text: `绝境 Lv${zoneData.monster_level || 70}` }),
+                ...renderElementIcons(zoneData.weakness || [], "elem_"),
+                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+            ],
+        }));
+        section.appendChild(recommend);
+        
+        // 横向布局：怪物卡片 + 机制框
+        const contentRow = create("div", {
+            style: {
+                display: "flex",
+                gap: "16px",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                width: "100%",
+            }
+        });
+        
+        // 怪物卡片
+        const lineup = create("div", { className: "u_m", style: { flex: "0 0 auto" } });
+        lineup.appendChild(create("div", { className: "wave_monsters", children: [
+            renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)
+        ]}));
+        contentRow.appendChild(lineup);
+        
+        // 机制框
+        const combinedDesc = processBossDesc(zoneData);
+        const html = combinedDesc
+            .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
+            .replace(/\n/g, '<br>')
+            .replace(/^· /gm, '<br>· ')
+            .replace(/^<br>/, '');
+        
+        const traitContainer = create("div", {
+            className: "u_b",
+            style: {
+                flex: "0 0 auto",
+                width: "400px",
                 backgroundColor: "#27363E",
                 color: "#eee",
                 borderRadius: "5px",
@@ -420,20 +448,14 @@ const renderFinalSection = () => {
                 lineHeight: "1.8",
                 fontSize: "14px",
                 textAlign: "left",
-                maxWidth: "500px",
-                alignSelf: "center",
-            }, children: [
-                create("p", { 
-                    html: processBossDesc(zoneData)
-                        .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
-                        .replace(/\n/g, '<br>')
-                        .replace(/^· /gm, '<br>· ')
-                        .replace(/^<br>/, '') || "无机制说明",
-                    style: { margin: "4px 0" }
-                })
-            ]})
-        ]});
+            },
+            children: [
+                create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
+            ]
+        });
+        contentRow.appendChild(traitContainer);
         
+        section.appendChild(contentRow);
         container.appendChild(section);
     });
 };
