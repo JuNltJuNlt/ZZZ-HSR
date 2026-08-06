@@ -259,17 +259,6 @@ const renderAllBosses = () => {
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
-    // 在 deadlyLayout 前面插入"试炼"标题
-    const parent = container.parentElement;
-    const existingTrial = parent.querySelector('.trial_title');
-    if (!existingTrial) {
-        const trialTitle = create("p", { 
-            className: "content_title trial_title", 
-            text: "试炼"
-        });
-        parent.insertBefore(trialTitle, container);
-    }
-
     const bossColors = ["u", "l", "t"];
     const allSharedBuffs = [];
     const sections = [];
