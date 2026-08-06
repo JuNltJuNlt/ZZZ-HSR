@@ -418,14 +418,17 @@ const renderFinalSection = () => {
         }));
         leftCol.appendChild(recommend);
         
-        // 怪物卡片
-        const lineup = create("div", { className: "u_m" });
+        // 怪物卡片（向下微调）
+        const lineup = create("div", { 
+            className: "u_m", 
+            style: { marginTop: "8px" } 
+        });
         lineup.appendChild(create("div", { className: "wave_monsters", children: [
             renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)
         ]}));
         leftCol.appendChild(lineup);
         
-        // 机制框
+        // 机制框（向下多移一点）
         const combinedDesc = processBossDesc(zoneData);
         const html = combinedDesc
             .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
@@ -445,6 +448,7 @@ const renderFinalSection = () => {
                 lineHeight: "1.8",
                 fontSize: "14px",
                 textAlign: "left",
+                marginTop: "16px",
             },
             children: [
                 create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
