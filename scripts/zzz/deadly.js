@@ -19,7 +19,7 @@ const text = {
     chartBossTitle: "试炼Boss血量演化",
     chartFinalTitle: "绝境总血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
-    stageLabels: ["第一间", "第二间", "第三间"],
+    stageLabels: ["试炼一", "试炼二", "试炼三"],
 };
 
 const state = {
@@ -375,85 +375,85 @@ const renderAllBosses = () => {
             }
         }, 300);
     }
+};
 
-    // 渲染绝境
-    const finalSection = document.getElementById("finalSection");
-    if (finalSection) {
-        const finalZone = entry.final_zone;
-        if (finalZone && Object.keys(finalZone).length > 0) {
-            finalSection.style.display = "";
-            finalSection.replaceChildren();
-            
-            const finalTitle = create("p", { className: "content_title", text: "绝境" });
-            finalSection.appendChild(finalTitle);
-            
-            const finalKeys = Object.keys(finalZone).sort();
-            finalKeys.forEach(fk => {
-                const zoneData = finalZone[fk];
-                const monster = zoneData.monsters?.[0];
-                if (!monster) return;
-                
-                const finalRow = create("div", {
-                    style: {
-                        display: "flex",
-                        gap: "24px",
-                        alignItems: "flex-start",
-                        justifyContent: "center",
-                        width: "100%",
-                        padding: "0 40px",
-                        boxSizing: "border-box",
-                    }
-                });
-                
-                const leftSide = create("div", {
-                    style: {
-                        flex: "0 0 auto",
-                        width: "320px",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                    }
-                });
-                
-                const levelLabel = create("p", { text: `绝境 Lv${zoneData.monster_level || 70}`, style: { textAlign: "center" } });
-                leftSide.appendChild(levelLabel);
-                
-                const card = renderMonsterCard(monster, zoneData.monster_level || 70, 15.8);
-                leftSide.appendChild(create("div", { className: "wave_monsters", children: [card] }));
-                
-                finalRow.appendChild(leftSide);
-                
-                const combinedDesc = processBossDesc(zoneData);
-                const html = combinedDesc
-                    .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
-                    .replace(/\n/g, '<br>')
-                    .replace(/^· /gm, '<br>· ')
-                    .replace(/^<br>/, '');
-                
-                const rightSide = create("div", {
-                    style: {
-                        flex: "1 1 auto",
-                        maxWidth: "700px",
-                        backgroundColor: "#27363E",
-                        color: "#eee",
-                        borderRadius: "5px",
-                        padding: "14px",
-                        lineHeight: "1.8",
-                        fontSize: "14px",
-                        textAlign: "left",
-                    },
-                    children: [
-                        create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
-                    ]
-                });
-                
-                finalRow.appendChild(rightSide);
-                finalSection.appendChild(finalRow);
-            });
-        } else {
-            finalSection.style.display = "none";
-        }
+const renderFinalSection = () => {
+    const entry = currentEntry();
+    const finalZone = entry.final_zone;
+    const container = document.getElementById("finalSection");
+    if (!container) return;
+    
+    if (!finalZone || Object.keys(finalZone).length === 0) {
+        container.style.display = "none";
+        return;
     }
+    
+    container.style.display = "";
+    container.replaceChildren();
+    
+    const finalKeys = Object.keys(finalZone).sort();
+    finalKeys.forEach(fk => {
+        const zoneData = finalZone[fk];
+        const monster = zoneData.monsters?.[0];
+        if (!monster) return;
+        
+        const finalRow = create("div", {
+            style: {
+                display: "flex",
+                gap: "24px",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                width: "100%",
+                padding: "0 40px",
+                boxSizing: "border-box",
+            }
+        });
+        
+        const leftSide = create("div", {
+            style: {
+                flex: "0 0 auto",
+                width: "320px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+            }
+        });
+        
+        const levelLabel = create("p", { text: `绝境 Lv${zoneData.monster_level || 70}`, style: { textAlign: "center" } });
+        leftSide.appendChild(levelLabel);
+        
+        const card = renderMonsterCard(monster, zoneData.monster_level || 70, 15.8);
+        leftSide.appendChild(create("div", { className: "wave_monsters", children: [card] }));
+        
+        finalRow.appendChild(leftSide);
+        
+        const combinedDesc = processBossDesc(zoneData);
+        const html = combinedDesc
+            .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
+            .replace(/\n/g, '<br>')
+            .replace(/^· /gm, '<br>· ')
+            .replace(/^<br>/, '');
+        
+        const rightSide = create("div", {
+            style: {
+                flex: "1 1 auto",
+                maxWidth: "700px",
+                backgroundColor: "#27363E",
+                color: "#eee",
+                borderRadius: "5px",
+                padding: "14px",
+                lineHeight: "1.8",
+                fontSize: "14px",
+                textAlign: "left",
+            },
+            children: [
+                create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
+            ]
+        });
+        
+        finalRow.appendChild(rightSide);
+        container.appendChild(finalRow);
+    });
 };
 
 const renderCharts = () => {
@@ -605,6 +605,7 @@ const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
     renderAllBosses();
+    renderFinalSection();
     renderCharts();
 };
 
