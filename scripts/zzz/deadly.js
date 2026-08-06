@@ -465,23 +465,22 @@ const renderCharts = () => {
 
 const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
-    if (!chartElement) {
-        console.warn('图表容器不存在:', targetId);
-        return;
-    }
-    if (!seriesData.length || !window.echarts) return;
+    if (!chartElement || !seriesData.length || !window.echarts) return;
     
     const isTotalChart = targetId === "chart";
     const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
     
+    // 如果已有实例且未销毁，只更新数据，保持缩放状态
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.setOption({
+            title: { text: title },
             xAxis: { data: labels },
             series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         }, true);
         return;
     }
     
+    // 首次创建实例
     const newInstance = window.echarts.init(chartElement);
     if (isTotalChart) {
         chartInstance = newInstance;
