@@ -467,6 +467,9 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
     
+    chartElement.style.width = "100%";
+    chartElement.style.height = "600px";
+    
     const isTotalChart = targetId === "chart";
     const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
     
