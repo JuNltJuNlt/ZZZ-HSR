@@ -14,8 +14,8 @@ let bossChartInstance = null;
 
 const text = {
     title: "危局强袭战",
-    chartTotalTitle: "总血量演化",
-    chartBossTitle: "各Boss血量演化",
+    chartTotalTitle: "试炼总血量演化",
+    chartBossTitle: "试炼Boss血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     stageLabels: ["第一间", "第二间", "第三间"],
 };
@@ -259,6 +259,13 @@ const renderAllBosses = () => {
     const container = byId("deadlyLayout");
     container.replaceChildren();
 
+    // 添加"试炼"标题
+    const trialTitle = create("p", { 
+        className: "content_title", 
+        text: "试炼" 
+    });
+    container.appendChild(trialTitle);
+
     const bossColors = ["u", "l", "t"];
     const allSharedBuffs = [];
     const sections = [];
@@ -455,7 +462,7 @@ const renderCharts = () => {
         }
     });
     
-    renderLineChart("chart", "危局强袭战总血量演化", [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
+    renderLineChart("chart", text.chartTotalTitle, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
     renderLineChart("bossChart", text.chartBossTitle, [
         { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
         { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
