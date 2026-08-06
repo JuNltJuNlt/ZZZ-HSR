@@ -10,10 +10,12 @@ let deadlyEntries = [];
 let monstersData = [];
 let indexData = null;
 let chartInstance = null;
+let bossChartInstance = null;
 
 const text = {
     title: "危局强袭战",
     chartTotalTitle: "总血量演化",
+    chartBossTitle: "各Boss血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     stageLabels: ["第一间", "第二间", "第三间"],
 };
@@ -353,7 +355,9 @@ const renderAllBosses = () => {
 
         setTimeout(() => {
             const firstWrapper = sections[0]?.wrapper;
+            const secondWrapper = sections[1]?.wrapper;
             const lastWrapper = sections[2]?.wrapper;
+            
             if (firstWrapper && lastWrapper) {
                 const containerRect = container.getBoundingClientRect();
                 const firstRect = firstWrapper.getBoundingClientRect();
@@ -365,6 +369,15 @@ const renderAllBosses = () => {
                 
                 sharedBuffBox.style.marginLeft = leftOffset + "px";
                 sharedBuffBox.style.width = totalWidth + "px";
+                
+                const buffRightEdge = leftOffset + sharedBuffBox.offsetWidth;
+                const boss3RightEdge = lastRect.right - containerRect.left;
+                const shiftAmount = boss3RightEdge - buffRightEdge;
+                
+                if (shiftAmount > 0 && secondWrapper && lastWrapper) {
+                    secondWrapper.style.marginLeft = (-shiftAmount) + "px";
+                    lastWrapper.style.marginLeft = (-shiftAmount) + "px";
+                }
             }
         }, 200);
     }
@@ -376,6 +389,7 @@ const renderAllBosses = () => {
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
+    
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
@@ -411,23 +425,75 @@ const renderCharts = () => {
         }
         return Math.round(total * 8.74);
     });
+    
+    const bossData = [[], [], []];
+    entries.forEach(e => {
+        const zone = e.normal_zone || e.zone || {};
+        const zoneKeys = Object.keys(zone).sort();
+        
+        for (let i = 0; i < 3; i++) {
+            let bossHP = 0;
+            if (i < zoneKeys.length) {
+                const zd = zone[zoneKeys[i]];
+                let monsters = [];
+                
+                if (zd.monsters && zd.monsters.length > 0) {
+                    monsters = zd.monsters;
+                } else if (zd.layer_room) {
+                    for (const rk of Object.keys(zd.layer_room)) {
+                        const room = zd.layer_room[rk];
+                        if (room && room.monsters) {
+                            room.monsters.forEach(w => w.forEach(m => {
+                                monsters.push(m);
+                            }));
+                        }
+                    }
+                } else if (zd.monster_list) {
+                    monsters = Object.values(zd.monster_list).map(m => ({
+                        hp: m.stats?.hp || 0,
+                        hp_ratio_sum: 1
+                    }));
+                }
+                
+                monsters.forEach(m => {
+                    bossHP += (m.hp || 0) * (m.hp_ratio_sum || 1);
+                });
+            }
+            bossData[i].push(Math.round(bossHP * 8.74));
+        }
+    });
+    
     renderLineChart("chart", "危局强袭战总血量演化", [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
+    renderLineChart("bossChart", text.chartBossTitle, [
+        { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
+        { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
+        { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
+    ], labels);
 };
 
 const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
     
-    if (chartInstance && !chartInstance.isDisposed()) {
-        chartInstance.setOption({
+    const isTotalChart = targetId === "chart";
+    const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
+    
+    if (currentInstance && !currentInstance.isDisposed()) {
+        currentInstance.setOption({
             xAxis: { data: labels },
             series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         }, true);
         return;
     }
     
-    chartInstance = window.echarts.init(chartElement);
-    chartInstance.setOption({
+    const newInstance = window.echarts.init(chartElement);
+    if (isTotalChart) {
+        chartInstance = newInstance;
+    } else {
+        bossChartInstance = newInstance;
+    }
+    
+    newInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
