@@ -68,10 +68,18 @@ const renderWeaknessBars = (monster) => {
     const items = [];
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
-    if (items.length === 0) return null;
+    
+    // 无论有无弱点/抗性，都返回一个固定高度的容器
     return create("div", {
-        style: { display: "flex", justifyContent: "center", gap: "3px", marginTop: "4px" },
-        children: items.map(item => {
+        style: { 
+            display: "flex", 
+            justifyContent: "center", 
+            gap: "3px", 
+            marginTop: "4px",
+            minHeight: "28px",  // 固定最小高度，保持占位
+            visibility: items.length === 0 ? "hidden" : "visible"  // 无内容时隐藏但占位
+        },
+        children: items.length > 0 ? items.map(item => {
             const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
             return create("div", {
                 style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
@@ -80,7 +88,7 @@ const renderWeaknessBars = (monster) => {
                     create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
                 ]
             });
-        })
+        }) : []
     });
 };
 
@@ -109,7 +117,7 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
                 create("br"),
                 create("span", { className: "monname_2", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
             ]}),
-        ].filter(Boolean),
+        ],
     });
 };
 
