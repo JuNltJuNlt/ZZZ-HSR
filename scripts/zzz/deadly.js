@@ -439,7 +439,6 @@ const renderFinalSection = () => {
                 color: "#eee",
                 borderRadius: "5px",
                 padding: "14px",
-                paddingTop: "80px",
                 lineHeight: "1.8",
                 fontSize: "14px",
                 textAlign: "left",
@@ -453,6 +452,7 @@ const renderFinalSection = () => {
             style: {
                 display: "flex",
                 gap: "20px",
+                alignItems: "flex-start",
                 justifyContent: "center",
                 width: "100%",
             },
@@ -460,6 +460,17 @@ const renderFinalSection = () => {
         });
         
         container.appendChild(row);
+        
+        // 渲染后动态调整机制框位置，使其顶部与副标题对齐
+        setTimeout(() => {
+            const subtitleEl = leftCol.querySelector('.u_r p:last-child');
+            if (subtitleEl) {
+                const recommendRect = recommend.getBoundingClientRect();
+                const subtitleRect = subtitleEl.getBoundingClientRect();
+                const offsetToSubtitle = subtitleRect.bottom - recommendRect.top;
+                rightCol.style.marginTop = offsetToSubtitle + "px";
+            }
+        }, 100);
     });
 };
 
