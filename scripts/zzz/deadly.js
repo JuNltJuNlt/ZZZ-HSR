@@ -403,6 +403,7 @@ const renderFinalSection = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 flex: "0 0 auto",
+                marginTop: "40px",
             }
         });
         
@@ -415,10 +416,6 @@ const renderFinalSection = () => {
             ],
         }));
         leftCol.appendChild(recommend);
-        
-        // 用空 div 占位来微调
-        const spacer = create("div", { style: { height: "12px" } });
-        leftCol.appendChild(spacer);
         
         const lineup = create("div", { className: "u_m" });
         lineup.appendChild(create("div", { className: "wave_monsters", children: [
@@ -442,11 +439,10 @@ const renderFinalSection = () => {
                 color: "#eee",
                 borderRadius: "5px",
                 padding: "14px",
+                paddingTop: "80px",
                 lineHeight: "1.8",
                 fontSize: "14px",
                 textAlign: "left",
-                position: "relative",
-                top: "40px",
             },
             children: [
                 create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
@@ -457,7 +453,6 @@ const renderFinalSection = () => {
             style: {
                 display: "flex",
                 gap: "20px",
-                alignItems: "flex-start",
                 justifyContent: "center",
                 width: "100%",
             },
