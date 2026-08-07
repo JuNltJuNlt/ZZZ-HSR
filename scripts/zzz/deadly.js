@@ -46,20 +46,24 @@ const currentEntry = () => deadlyEntries[state.scheduleIndex];
 
 const setSchedule = (index) => {
     state.scheduleIndex = wrapIndex(index, deadlyEntries.length);
-    render();
+    // 切换期数时不销毁图表，保留缩放状态
+    render(false);
 };
 
-const getAdjustedMonster = (monster) => {
-    if (!normalizeMode) return monster;
+const getAdjustedHp = (monster) => {
+    if (!normalizeMode) return monster.hp || 0;
     if (Math.round(monster.defense || 0) === 476) {
-        return {
-            ...monster,
-            defense: 952.8,
-            hp: (monster.hp || 0) * 0.625,
-            hp_ratio_sum: (monster.hp_ratio_sum || 1) * 0.625,
-        };
+        return (monster.hp || 0) * 0.625;
     }
-    return { ...monster };
+    return monster.hp || 0;
+};
+
+const getAdjustedDef = (monster) => {
+    if (!normalizeMode) return monster.defense || 0;
+    if (Math.round(monster.defense || 0) === 476) {
+        return 952.8;
+    }
+    return monster.defense || 0;
 };
 
 const getChartTitle = (baseTitle) => {
@@ -109,7 +113,8 @@ const renderNormalizeToggle = () => {
         });
         toggleEl.querySelector("input").addEventListener("change", (e) => {
             normalizeMode = e.target.checked;
-            render();
+            // 归一模式切换时强制重建图表
+            render(true);
         });
         const contentEl = document.querySelector(".content");
         if (contentEl) {
@@ -154,24 +159,23 @@ const renderWeaknessBars = (monster) => {
 };
 
 const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
-    const adjusted = getAdjustedMonster(monster);
-    const info = monstersData.find(m => m.name === adjusted.name) || {};
+    const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || "S";
-    const imagePath = `${IMAGE_ROOT}/${type}/${adjusted.name}.webp`;
-    const hp = Math.round((adjusted.hp || 0) * (adjusted.hp_ratio_sum ?? 1) * multiplier);
-    const def = Math.round(adjusted.defense || 0);
-    const stun = Math.round(adjusted.stun || 0);
-    const img = image(imagePath, "monicon hasimg", adjusted.name);
+    const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
+    const hp = Math.round(getAdjustedHp(monster) * (monster.hp_ratio_sum ?? 1) * multiplier);
+    const def = Math.round(getAdjustedDef(monster));
+    const stun = Math.round(monster.stun || 0);
+    const img = image(imagePath, "monicon hasimg", monster.name);
     img.style.height = "180px";
     img.style.width = "auto";
-    const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: adjusted.name })] });
+    const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monster.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
     return create("span", {
         className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            renderWeaknessBars(adjusted),
+            renderWeaknessBars(monster),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
@@ -552,18 +556,13 @@ const getMonsterListFromZoneData = (zd) => {
     return monsters;
 };
 
-const renderCharts = () => {
-    // 归一模式切换时强制重建图表
-    if (chartInstance && !chartInstance.isDisposed()) {
-        chartInstance.dispose();
+const renderCharts = (forceRebuild = false) => {
+    if (forceRebuild) {
+        if (chartInstance && !chartInstance.isDisposed()) chartInstance.dispose();
+        if (bossChartInstance && !bossChartInstance.isDisposed()) bossChartInstance.dispose();
+        if (finalChartInstance && !finalChartInstance.isDisposed()) finalChartInstance.dispose();
         chartInstance = null;
-    }
-    if (bossChartInstance && !bossChartInstance.isDisposed()) {
-        bossChartInstance.dispose();
         bossChartInstance = null;
-    }
-    if (finalChartInstance && !finalChartInstance.isDisposed()) {
-        finalChartInstance.dispose();
         finalChartInstance = null;
     }
     
@@ -577,8 +576,7 @@ const renderCharts = () => {
             const zd = zone[zk];
             const monsters = getMonsterListFromZoneData(zd);
             monsters.forEach(m => {
-                const adjusted = getAdjustedMonster(m);
-                total += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
+                total += getAdjustedHp(m) * (m.hp_ratio_sum || 1);
             });
         }
         return Math.round(total * 8.74);
@@ -595,8 +593,7 @@ const renderCharts = () => {
                 const zd = zone[zoneKeys[i]];
                 const monsters = getMonsterListFromZoneData(zd);
                 monsters.forEach(m => {
-                    const adjusted = getAdjustedMonster(m);
-                    bossHP += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
+                    bossHP += getAdjustedHp(m) * (m.hp_ratio_sum || 1);
                 });
             }
             bossData[i].push(Math.round(bossHP * 8.74));
@@ -620,8 +617,7 @@ const renderCharts = () => {
                 const zd = fz[fk];
                 if (zd.monsters) {
                     zd.monsters.forEach(m => {
-                        const adjusted = getAdjustedMonster(m);
-                        total += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
+                        total += getAdjustedHp(m) * (m.hp_ratio_sum || 1);
                     });
                 }
             }
@@ -672,13 +668,13 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }, true);
 };
 
-const render = () => {
+const render = (forceRebuildCharts = false) => {
     renderScheduleSelect();
     renderScheduleHeader();
     renderNormalizeToggle();
     renderAllBosses();
     renderFinalSection();
-    renderCharts();
+    renderCharts(forceRebuildCharts);
 };
 
 const bindEvents = () => {
