@@ -52,7 +52,7 @@ const setSchedule = (index) => {
 const getAdjustedHp = (monster) => {
     if (!normalizeMode) return monster.hp || 0;
     if (Math.round(monster.defense || 0) === 476) {
-        return (monster.hp || 0) * 0.625;
+        return (monster.hp || 0) / 1.375;
     }
     return monster.hp || 0;
 };
