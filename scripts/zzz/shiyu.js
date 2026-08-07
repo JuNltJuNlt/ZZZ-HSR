@@ -140,7 +140,19 @@ const roomHp = (zone, floorNum, roomIndex) => {
     return stageTotalHp(zone[fkey].layer_room[rooms[roomIndex]]);
 };
 
-const isOldEntry = (e) => parseInt((indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '')) <= 62037;
+// 解析版本号：如 "2.5A" -> 2.5, "3.2C" -> 3.2
+const parseVersion = (label) => {
+    const match = label.match(/^(\d+)\.(\d+)/);
+    if (!match) return 0;
+    return parseFloat(match[1] + '.' + match[2]);
+};
+
+// 旧版：< 2.5（即 1.0A ~ 2.4B）
+const isOldEntry = (e) => {
+    const label = (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '');
+    return parseVersion(label) < 2.5;
+};
+
 const entryLabel = (e) => (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '');
 
 const renderMonsterCard = (monster, stageLevel) => {
@@ -244,8 +256,9 @@ const renderPeakChart = () => {
     const allEntries = [...oldEntries, ...newEntries];
     const peakLabels = allEntries.map(e => entryLabel(e));
     const peakData = allEntries.map(e => {
-        const num = parseInt(entryLabel(e));
-        const floorToUse = num <= 62037 ? 7 : 5;
+        const label = entryLabel(e);
+        const version = parseVersion(label);
+        const floorToUse = version < 2.5 ? 7 : 5;
         return floorTotalHp(e.zone, floorToUse);
     });
     renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels);
