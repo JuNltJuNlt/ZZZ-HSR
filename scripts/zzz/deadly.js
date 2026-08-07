@@ -397,7 +397,6 @@ const renderFinalSection = () => {
         const monster = zoneData.monsters?.[0];
         if (!monster) return;
         
-        // 左列：标题在上，怪物卡片在下
         const leftCol = create("div", {
             style: {
                 display: "flex",
@@ -407,7 +406,6 @@ const renderFinalSection = () => {
             }
         });
         
-        // 标题
         const recommend = create("div", { className: "u_r" });
         recommend.appendChild(create("div", {
             children: [
@@ -418,17 +416,16 @@ const renderFinalSection = () => {
         }));
         leftCol.appendChild(recommend);
         
-        // 怪物卡片（向下微调）
-        const lineup = create("div", { 
-            className: "u_m", 
-            style: { marginTop: "8px" } 
-        });
+        // 用空 div 占位来微调
+        const spacer = create("div", { style: { height: "12px" } });
+        leftCol.appendChild(spacer);
+        
+        const lineup = create("div", { className: "u_m" });
         lineup.appendChild(create("div", { className: "wave_monsters", children: [
             renderMonsterCard(monster, zoneData.monster_level || 70, 15.8)
         ]}));
         leftCol.appendChild(lineup);
         
-        // 机制框（向下多移一点）
         const combinedDesc = processBossDesc(zoneData);
         const html = combinedDesc
             .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
@@ -448,14 +445,14 @@ const renderFinalSection = () => {
                 lineHeight: "1.8",
                 fontSize: "14px",
                 textAlign: "left",
-                marginTop: "16px",
+                position: "relative",
+                top: "40px",
             },
             children: [
                 create("p", { html: html || "无机制说明", style: { margin: "4px 0" } })
             ]
         });
         
-        // 横向布局
         const row = create("div", {
             style: {
                 display: "flex",
