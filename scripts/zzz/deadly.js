@@ -12,6 +12,7 @@ let indexData = null;
 let chartInstance = null;
 let bossChartInstance = null;
 let finalChartInstance = null;
+let normalizeMode = false;
 
 const text = {
     title: "危局强袭战",
@@ -48,6 +49,27 @@ const setSchedule = (index) => {
     render();
 };
 
+// 低防血量归一处理
+const getAdjustedMonster = (monster) => {
+    if (!normalizeMode) return monster;
+    if (Math.round(monster.defense || 0) === 476) {
+        return {
+            ...monster,
+            defense: 952.8,
+            hp: (monster.hp || 0) * 0.625,
+            hp_ratio_sum: (monster.hp_ratio_sum || 1) * 0.625,
+            _normalized: true,
+        };
+    }
+    return { ...monster };
+};
+
+const getMultiplier = () => normalizeMode ? 0.625 : 1;
+
+const getChartTitle = (baseTitle) => {
+    return normalizeMode ? `${baseTitle}（低防血量归一）` : baseTitle;
+};
+
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...deadlyEntries.map((e, i) => create("option", {
@@ -62,6 +84,45 @@ const renderScheduleHeader = () => {
     byId("scheduleName").textContent = indexData.entries[state.scheduleIndex].replace('.json', '');
     byId("scheduleTime").textContent = e.time || "";
     byId("scheduleSelect").value = String(state.scheduleIndex);
+};
+
+const renderNormalizeToggle = () => {
+    let toggleEl = document.getElementById("normalizeToggle");
+    if (!toggleEl) {
+        toggleEl = create("div", {
+            id: "normalizeToggle",
+            style: {
+                position: "absolute",
+                top: "10px",
+                right: "20px",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                fontSize: "14px",
+                color: "#000",
+                cursor: "pointer",
+                userSelect: "none",
+            },
+            children: [
+                create("span", { text: "低防血量归一" }),
+                create("input", {
+                    attrs: { type: "checkbox", checked: normalizeMode },
+                    style: { cursor: "pointer" },
+                }),
+            ],
+        });
+        toggleEl.querySelector("input").addEventListener("change", (e) => {
+            normalizeMode = e.target.checked;
+            render();
+        });
+        const contentEl = document.querySelector(".content");
+        if (contentEl) {
+            contentEl.style.position = "relative";
+            contentEl.appendChild(toggleEl);
+        }
+    } else {
+        toggleEl.querySelector("input").checked = normalizeMode;
+    }
 };
 
 const renderElementIcons = (elements = [], className = "elem_") =>
@@ -97,23 +158,24 @@ const renderWeaknessBars = (monster) => {
 };
 
 const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
-    const info = monstersData.find(m => m.name === monster.name) || {};
+    const adjusted = getAdjustedMonster(monster);
+    const info = monstersData.find(m => m.name === adjusted.name) || {};
     const type = info.type || "S";
-    const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
-    const hp = Math.round((monster.hp || 0) * (monster.hp_ratio_sum ?? 1) * multiplier);
-    const def = Math.round(monster.defense || 0);
-    const stun = Math.round(monster.stun || 0);
-    const img = image(imagePath, "monicon hasimg", monster.name);
+    const imagePath = `${IMAGE_ROOT}/${type}/${adjusted.name}.webp`;
+    const hp = Math.round((adjusted.hp || 0) * (adjusted.hp_ratio_sum ?? 1) * multiplier);
+    const def = Math.round(adjusted.defense || 0);
+    const stun = Math.round(adjusted.stun || 0);
+    const img = image(imagePath, "monicon hasimg", adjusted.name);
     img.style.height = "180px";
     img.style.width = "auto";
-    const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monster.name })] });
+    const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: adjusted.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
     return create("span", {
         className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            renderWeaknessBars(monster),
+            renderWeaknessBars(adjusted),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
@@ -461,7 +523,6 @@ const renderFinalSection = () => {
         
         container.appendChild(row);
         
-        // 渲染后动态调整机制框位置，使其顶部与副标题对齐
         setTimeout(() => {
             const subtitleEl = leftCol.querySelector('.u_r p:last-child');
             if (subtitleEl) {
@@ -474,44 +535,45 @@ const renderFinalSection = () => {
     });
 };
 
+const getMonsterListFromZoneData = (zd) => {
+    let monsters = [];
+    if (zd.monsters && zd.monsters.length > 0) {
+        monsters = zd.monsters;
+    } else if (zd.layer_room) {
+        for (const rk of Object.keys(zd.layer_room)) {
+            const room = zd.layer_room[rk];
+            if (room && room.monsters) {
+                room.monsters.forEach(w => w.forEach(m => monsters.push(m)));
+            }
+        }
+    } else if (zd.monster_list) {
+        monsters = Object.values(zd.monster_list).map(m => ({
+            hp: m.stats?.hp || 0,
+            defense: m.stats?.defence || 0,
+            hp_ratio_sum: 1
+        }));
+    }
+    return monsters;
+};
+
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
+    
+    const multiplier = normalizeMode ? 0.625 : 1;
     
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
         for (const zk of Object.keys(zone)) {
             const zd = zone[zk];
-            let monsters = [];
-            
-            if (zd.monsters && zd.monsters.length > 0) {
-                monsters = zd.monsters;
-            }
-            
-            if (monsters.length === 0 && zd.layer_room) {
-                for (const rk of Object.keys(zd.layer_room)) {
-                    const room = zd.layer_room[rk];
-                    if (room && room.monsters) {
-                        room.monsters.forEach(w => w.forEach(m => {
-                            monsters.push(m);
-                        }));
-                    }
-                }
-            }
-            
-            if (monsters.length === 0 && zd.monster_list) {
-                monsters = Object.values(zd.monster_list).map(m => ({
-                    hp: m.stats?.hp || 0,
-                    hp_ratio_sum: 1
-                }));
-            }
-            
+            const monsters = getMonsterListFromZoneData(zd);
             monsters.forEach(m => {
-                total += (m.hp || 0) * (m.hp_ratio_sum || 1);
+                const adjusted = getAdjustedMonster(m);
+                total += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
             });
         }
-        return Math.round(total * 8.74);
+        return Math.round(total * 8.74 * multiplier);
     });
     
     const bossData = [[], [], []];
@@ -523,36 +585,18 @@ const renderCharts = () => {
             let bossHP = 0;
             if (i < zoneKeys.length) {
                 const zd = zone[zoneKeys[i]];
-                let monsters = [];
-                
-                if (zd.monsters && zd.monsters.length > 0) {
-                    monsters = zd.monsters;
-                } else if (zd.layer_room) {
-                    for (const rk of Object.keys(zd.layer_room)) {
-                        const room = zd.layer_room[rk];
-                        if (room && room.monsters) {
-                            room.monsters.forEach(w => w.forEach(m => {
-                                monsters.push(m);
-                            }));
-                        }
-                    }
-                } else if (zd.monster_list) {
-                    monsters = Object.values(zd.monster_list).map(m => ({
-                        hp: m.stats?.hp || 0,
-                        hp_ratio_sum: 1
-                    }));
-                }
-                
+                const monsters = getMonsterListFromZoneData(zd);
                 monsters.forEach(m => {
-                    bossHP += (m.hp || 0) * (m.hp_ratio_sum || 1);
+                    const adjusted = getAdjustedMonster(m);
+                    bossHP += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
                 });
             }
-            bossData[i].push(Math.round(bossHP * 8.74));
+            bossData[i].push(Math.round(bossHP * 8.74 * multiplier));
         }
     });
     
-    renderLineChart("chart", text.chartTotalTitle, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
-    renderLineChart("bossChart", text.chartBossTitle, [
+    renderLineChart("chart", getChartTitle(text.chartTotalTitle), [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
+    renderLineChart("bossChart", getChartTitle(text.chartBossTitle), [
         { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
         { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
@@ -568,13 +612,14 @@ const renderCharts = () => {
                 const zd = fz[fk];
                 if (zd.monsters) {
                     zd.monsters.forEach(m => {
-                        total += (m.hp || 0) * (m.hp_ratio_sum || 1);
+                        const adjusted = getAdjustedMonster(m);
+                        total += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
                     });
                 }
             }
-            return Math.round(total * 15.8);
+            return Math.round(total * 15.8 * multiplier);
         });
-        renderLineChart("finalChart", text.chartFinalTitle, [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
+        renderLineChart("finalChart", getChartTitle(text.chartFinalTitle), [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
     }
 };
 
@@ -622,6 +667,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
 const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
+    renderNormalizeToggle();
     renderAllBosses();
     renderFinalSection();
     renderCharts();
