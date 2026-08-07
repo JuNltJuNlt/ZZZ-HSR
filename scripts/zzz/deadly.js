@@ -678,9 +678,17 @@ const bindEvents = () => {
         container.style.height = "auto";
         document.body.style.overflow = "visible";
         document.body.style.height = "auto";
+        
         const dl = byId("downloadBtn");
         dl.style.display = "none";
-        html2canvas(document.body, { scale: 2, backgroundColor: "#29105a", useCORS: true, windowHeight: document.body.scrollHeight, windowWidth: document.body.scrollWidth }).then(canvas => {
+
+        html2canvas(document.body, {
+            scale: 2,
+            backgroundColor: "#29105a",
+            useCORS: true,
+            windowHeight: document.body.scrollHeight,
+            windowWidth: document.body.scrollWidth
+        }).then(canvas => {
             const a = document.createElement("a");
             a.download = `危局强袭战_${currentEntry().deadly_name || ''}.png`;
             a.href = canvas.toDataURL("image/png");
