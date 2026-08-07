@@ -49,7 +49,6 @@ const setSchedule = (index) => {
     render();
 };
 
-// 低防血量归一处理
 const getAdjustedMonster = (monster) => {
     if (!normalizeMode) return monster;
     if (Math.round(monster.defense || 0) === 476) {
@@ -58,13 +57,10 @@ const getAdjustedMonster = (monster) => {
             defense: 952.8,
             hp: (monster.hp || 0) * 0.625,
             hp_ratio_sum: (monster.hp_ratio_sum || 1) * 0.625,
-            _normalized: true,
         };
     }
     return { ...monster };
 };
-
-const getMultiplier = () => normalizeMode ? 0.625 : 1;
 
 const getChartTitle = (baseTitle) => {
     return normalizeMode ? `${baseTitle}（低防血量归一）` : baseTitle;
@@ -557,10 +553,22 @@ const getMonsterListFromZoneData = (zd) => {
 };
 
 const renderCharts = () => {
+    // 归一模式切换时强制重建图表
+    if (chartInstance && !chartInstance.isDisposed()) {
+        chartInstance.dispose();
+        chartInstance = null;
+    }
+    if (bossChartInstance && !bossChartInstance.isDisposed()) {
+        bossChartInstance.dispose();
+        bossChartInstance = null;
+    }
+    if (finalChartInstance && !finalChartInstance.isDisposed()) {
+        finalChartInstance.dispose();
+        finalChartInstance = null;
+    }
+    
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
-    
-    const multiplier = normalizeMode ? 0.625 : 1;
     
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
@@ -573,7 +581,7 @@ const renderCharts = () => {
                 total += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
             });
         }
-        return Math.round(total * 8.74 * multiplier);
+        return Math.round(total * 8.74);
     });
     
     const bossData = [[], [], []];
@@ -591,7 +599,7 @@ const renderCharts = () => {
                     bossHP += (adjusted.hp || 0) * (adjusted.hp_ratio_sum || 1);
                 });
             }
-            bossData[i].push(Math.round(bossHP * 8.74 * multiplier));
+            bossData[i].push(Math.round(bossHP * 8.74));
         }
     });
     
@@ -617,7 +625,7 @@ const renderCharts = () => {
                     });
                 }
             }
-            return Math.round(total * 15.8 * multiplier);
+            return Math.round(total * 15.8);
         });
         renderLineChart("finalChart", getChartTitle(text.chartFinalTitle), [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
     }
