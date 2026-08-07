@@ -46,8 +46,7 @@ const currentEntry = () => deadlyEntries[state.scheduleIndex];
 
 const setSchedule = (index) => {
     state.scheduleIndex = wrapIndex(index, deadlyEntries.length);
-    // 切换期数时不销毁图表，保留缩放状态
-    render(false);
+    render();
 };
 
 const getAdjustedHp = (monster) => {
@@ -97,24 +96,23 @@ const renderNormalizeToggle = () => {
                 right: "20px",
                 display: "flex",
                 alignItems: "center",
-                gap: "8px",
-                fontSize: "14px",
+                gap: "10px",
+                fontSize: "18px",
                 color: "#000",
                 cursor: "pointer",
                 userSelect: "none",
             },
             children: [
-                create("span", { text: "低防血量归一" }),
+                create("span", { text: "低防血量归一", style: { fontWeight: "normal" } }),
                 create("input", {
                     attrs: { type: "checkbox", checked: normalizeMode },
-                    style: { cursor: "pointer" },
+                    style: { cursor: "pointer", width: "20px", height: "20px" },
                 }),
             ],
         });
         toggleEl.querySelector("input").addEventListener("change", (e) => {
             normalizeMode = e.target.checked;
-            // 归一模式切换时强制重建图表
-            render(true);
+            render();
         });
         const contentEl = document.querySelector(".content");
         if (contentEl) {
@@ -556,16 +554,7 @@ const getMonsterListFromZoneData = (zd) => {
     return monsters;
 };
 
-const renderCharts = (forceRebuild = false) => {
-    if (forceRebuild) {
-        if (chartInstance && !chartInstance.isDisposed()) chartInstance.dispose();
-        if (bossChartInstance && !bossChartInstance.isDisposed()) bossChartInstance.dispose();
-        if (finalChartInstance && !finalChartInstance.isDisposed()) finalChartInstance.dispose();
-        chartInstance = null;
-        bossChartInstance = null;
-        finalChartInstance = null;
-    }
-    
+const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
     
@@ -668,13 +657,13 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }, true);
 };
 
-const render = (forceRebuildCharts = false) => {
+const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
     renderNormalizeToggle();
     renderAllBosses();
     renderFinalSection();
-    renderCharts(forceRebuildCharts);
+    renderCharts();
 };
 
 const bindEvents = () => {

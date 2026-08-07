@@ -10,6 +10,9 @@ let monstersData = [];
 let indexData = null;
 let showPeakChart = false;
 let peakChartLoaded = false;
+let totalChartInstance = null;
+let stageChartInstance = null;
+let peakChartInstance = null;
 
 const text = {
     title: "式舆防卫战",
@@ -140,14 +143,12 @@ const roomHp = (zone, floorNum, roomIndex) => {
     return stageTotalHp(zone[fkey].layer_room[rooms[roomIndex]]);
 };
 
-// 解析版本号：如 "2.5A" -> 2.5, "3.2C" -> 3.2
 const parseVersion = (label) => {
     const match = label.match(/^(\d+)\.(\d+)/);
     if (!match) return 0;
     return parseFloat(match[1] + '.' + match[2]);
 };
 
-// 旧版：< 2.5（即 1.0A ~ 2.4B）
 const isOldEntry = (e) => {
     const label = (indexData.entries[shiyuEntries.indexOf(e)] || "").replace('.json', '');
     return parseVersion(label) < 2.5;
@@ -271,10 +272,29 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
         chartElement.style.width = chartElement.parentElement.offsetWidth + "px";
         chartElement.style.height = "600px";
     }
-    const existingChart = window.echarts.getInstanceByDom(chartElement);
-    if (existingChart) window.echarts.dispose(existingChart);
-    const chartInstance = window.echarts.init(chartElement);
-    chartInstance.setOption({
+    
+    let currentInstance;
+    if (targetId === "totalChart") currentInstance = totalChartInstance;
+    else if (targetId === "stageChart") currentInstance = stageChartInstance;
+    else currentInstance = peakChartInstance;
+    
+    if (currentInstance && !currentInstance.isDisposed()) {
+        currentInstance.resize();
+        currentInstance.setOption({
+            title: { text: title },
+            legend: { data: seriesData.map(s => s.name) },
+            xAxis: { data: labels },
+            series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+        }, true);
+        return;
+    }
+    
+    const newInstance = window.echarts.init(chartElement);
+    if (targetId === "totalChart") totalChartInstance = newInstance;
+    else if (targetId === "stageChart") stageChartInstance = newInstance;
+    else peakChartInstance = newInstance;
+    
+    newInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
