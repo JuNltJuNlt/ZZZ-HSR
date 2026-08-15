@@ -10,7 +10,7 @@
       "layer_buff": {
         "62001581": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
+          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -114,9 +114,9 @@
               },
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 0,
-                "defense": 0,
-                "stun": 0,
+                "hp": 431450,
+                "defense": 510,
+                "stun": 1763,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -167,7 +167,7 @@
       "layer_buff": {
         "62001581": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
+          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -335,7 +335,7 @@
       "layer_buff": {
         "62001581": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
+          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -472,9 +472,9 @@
               },
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 0,
-                "defense": 0,
-                "stun": 0,
+                "hp": 1589317,
+                "defense": 683,
+                "stun": 2040,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -511,7 +511,7 @@
       "layer_buff": {
         "62001581": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
+          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -521,7 +521,7 @@
             [
               {
                 "name": "城防戍卫布",
-                "hp": 9948968,
+                "hp": 6253637,
                 "defense": 858,
                 "stun": 11557,
                 "number": 1,
@@ -535,7 +535,7 @@
               },
               {
                 "name": "蜕生·蝎骸",
-                "hp": 20878517,
+                "hp": 13123640,
                 "defense": 953,
                 "stun": 18293,
                 "number": 1,
@@ -559,7 +559,7 @@
             [
               {
                 "name": "蜕生·阿瓦鲁斯",
-                "hp": 22104799,
+                "hp": 18946971,
                 "defense": 953,
                 "stun": 14499,
                 "number": 1,
@@ -575,7 +575,7 @@
               },
               {
                 "name": "怒蛇",
-                "hp": 10305342,
+                "hp": 8833150,
                 "defense": 715,
                 "stun": 13108,
                 "number": 1,
@@ -600,15 +600,15 @@
       "layer_buff": {
         "62001581": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
+          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001582": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#F0D12B>物理属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#F0D12B>物理属性</color>积蓄效率提升25%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低20%，持续10秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#FE437E>以太属性</color>积蓄效率提升15%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低10%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001583": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，持续20秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，且失衡恢复速度降低15%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -617,42 +617,50 @@
           "monsters": [
             [
               {
-                "name": "秽蚀·盛怒恶霸",
-                "hp": 9639528,
-                "defense": 794,
-                "stun": 12601,
+                "name": "城防戍卫布",
+                "hp": 7965171,
+                "defense": 858,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "特勤镇暴布",
+                "hp": 1423184,
+                "defense": 683,
+                "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "风"
                 ],
-                "resistance": [
-                  "电"
-                ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
-                "name": "秽蚀·赫斯克龙",
-                "hp": 5110324,
-                "defense": 794,
-                "stun": 12446,
+                "name": "空域侦巡布",
+                "hp": 1423184,
+                "defense": 683,
+                "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "火"
+                  "火",
+                  "风"
                 ],
-                "resistance": [
-                  "电"
-                ],
-                "type": "B"
-              }
-            ],
-            [
+                "resistance": [],
+                "type": "C"
+              },
               {
                 "name": "自律战术单位·「征服者」",
-                "hp": 41584191,
+                "hp": 35693593,
                 "defense": 953,
                 "stun": 17586,
                 "number": 1,
@@ -668,22 +676,27 @@
               }
             ]
           ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "自律战术单位·「征服者」",
-              "bold": true
-            }
-          ],
           "weakness": []
         },
         "62058052_62058052": {
           "level": 70,
           "monsters": [
             [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 35320007,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              },
               {
                 "name": "拉赫穆",
                 "hp": 7965171,
@@ -714,34 +727,7 @@
                 "resistance": [],
                 "type": "B"
               }
-            ],
-            [
-              {
-                "name": "秽蚀·狛野真斗",
-                "hp": 35320007,
-                "defense": 953,
-                "stun": 16284,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
-              }
             ]
-          ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "秽蚀·狛野真斗",
-              "bold": true
-            }
           ],
           "weakness": []
         },
@@ -767,7 +753,7 @@
               },
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 987337,
+                "hp": 1086071,
                 "defense": 731,
                 "stun": 2327,
                 "number": 1,
@@ -781,7 +767,7 @@
               },
               {
                 "name": "秽息残兵·炮手",
-                "hp": 987337,
+                "hp": 1086071,
                 "defense": 636,
                 "stun": 2327,
                 "number": 1,
@@ -792,12 +778,10 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              }
-            ],
-            [
+              },
               {
                 "name": "多佩冈亚·星徽·比利",
-                "hp": 44738412,
+                "hp": 40517808,
                 "defense": 953,
                 "stun": 19541,
                 "number": 1,
@@ -813,16 +797,6 @@
               }
             ]
           ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "多佩冈亚·星徽·比利",
-              "bold": true
-            }
-          ],
           "weakness": []
         }
       }
@@ -836,13 +810,9 @@
           "title": "",
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
         "62001581": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升15%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>对敌人造成的伤害提升25%，且无视敌人25%的防御力。"
+          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -851,40 +821,50 @@
           "monsters": [
             [
               {
-                "name": "秽蚀·盛怒恶霸",
-                "hp": 9639528,
-                "defense": 794,
-                "stun": 12601,
+                "name": "城防戍卫布",
+                "hp": 7965171,
+                "defense": 858,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "特勤镇暴布",
+                "hp": 1423184,
+                "defense": 683,
+                "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "风"
                 ],
-                "resistance": [
-                  "电"
-                ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
-                "name": "秽蚀·赫斯克龙",
-                "hp": 5110324,
-                "defense": 794,
-                "stun": 12446,
+                "name": "空域侦巡布",
+                "hp": 1423184,
+                "defense": 683,
+                "stun": 3173,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
-                  "火"
+                  "火",
+                  "风"
                 ],
-                "resistance": [
-                  "电"
-                ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "自律战术单位·「征服者」",
-                "hp": 41584191,
+                "hp": 35693593,
                 "defense": 953,
                 "stun": 17586,
                 "number": 1,
@@ -913,13 +893,9 @@
           "title": "",
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
         "62001582": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#F0D12B>物理属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#F0D12B>物理属性</color>积蓄效率提升25%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低20%，持续10秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#FE437E>以太属性</color>积蓄效率提升15%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低10%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -987,13 +963,9 @@
           "title": "",
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
         "62001583": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，持续20秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，且失衡恢复速度降低15%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -1019,7 +991,7 @@
               },
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 987337,
+                "hp": 1086071,
                 "defense": 731,
                 "stun": 2327,
                 "number": 1,
@@ -1033,7 +1005,7 @@
               },
               {
                 "name": "秽息残兵·炮手",
-                "hp": 987337,
+                "hp": 1086071,
                 "defense": 636,
                 "stun": 2327,
                 "number": 1,
@@ -1047,7 +1019,7 @@
               },
               {
                 "name": "多佩冈亚·星徽·比利",
-                "hp": 44738412,
+                "hp": 40517808,
                 "defense": 953,
                 "stun": 19541,
                 "number": 1,

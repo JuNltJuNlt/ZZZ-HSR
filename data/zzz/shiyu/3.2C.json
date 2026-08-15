@@ -8,9 +8,9 @@
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001541": {
-          "title": "紊音共振",
-          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        "62001591": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
         }
       },
       "layer_room": {
@@ -64,9 +64,9 @@
               },
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 0,
-                "defense": 0,
-                "stun": 0,
+                "hp": 431450,
+                "defense": 510,
+                "stun": 1763,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -183,9 +183,9 @@
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001541": {
-          "title": "紊音共振",
-          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        "62001591": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
         }
       },
       "layer_room": {
@@ -344,9 +344,9 @@
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001541": {
-          "title": "紊音共振",
-          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        "62001591": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
         }
       },
       "layer_room": {
@@ -400,9 +400,9 @@
               },
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 0,
-                "defense": 0,
-                "stun": 0,
+                "hp": 1589317,
+                "defense": 683,
+                "stun": 2040,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -521,9 +521,9 @@
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001541": {
-          "title": "紊音共振",
-          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        "62001591": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
         }
       },
       "layer_room": {
@@ -630,9 +630,13 @@
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
-        "62001562": {
-          "title": "御雷贯芒",
-          "desc": "· 代理人攻击命中敌人时无视其20%的<color=#2EB6FF>电属性伤害抗性</color>。 \n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击率提升5%，暴击伤害提升20%，持续15秒，重复触发时刷新持续时间。"
+        "62001591": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+        },
+        "62001593": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -655,8 +659,24 @@
                 "type": "B"
               },
               {
+                "name": "蜕生·蝎骸",
+                "hp": 30871462,
+                "defense": 953,
+                "stun": 19541,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              },
+              {
                 "name": "特勤镇暴布",
-                "hp": 1293804,
+                "hp": 1423184,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -670,7 +690,7 @@
               },
               {
                 "name": "空域侦巡布",
-                "hp": 1293804,
+                "hp": 1423184,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -682,35 +702,7 @@
                 "resistance": [],
                 "type": "C"
               }
-            ],
-            [
-              {
-                "name": "蜕生·蝎骸",
-                "hp": 37186079,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
-                "resistance": [
-                  "冰"
-                ],
-                "type": "A"
-              }
             ]
-          ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "蜕生·蝎骸",
-              "bold": true
-            }
           ],
           "weakness": []
         },
@@ -720,7 +712,7 @@
             [
               {
                 "name": "离子体·法布提",
-                "hp": 4982010,
+                "hp": 5415228,
                 "defense": 715,
                 "stun": 11170,
                 "number": 1,
@@ -735,7 +727,7 @@
               },
               {
                 "name": "离子体·杜拉罕",
-                "hp": 4192166,
+                "hp": 4556702,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
@@ -747,12 +739,10 @@
                   "冰"
                 ],
                 "type": "B"
-              }
-            ],
-            [
+              },
               {
                 "name": "秽蚀·色雷斯人",
-                "hp": 38364858,
+                "hp": 62976276,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -768,16 +758,6 @@
               }
             ]
           ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "秽蚀·色雷斯人",
-              "bold": true
-            }
-          ],
           "weakness": []
         },
         "62059053_62059053": {
@@ -786,7 +766,7 @@
             [
               {
                 "name": "魁梧打手",
-                "hp": 4935817,
+                "hp": 5365019,
                 "defense": 794,
                 "stun": 8891,
                 "number": 1,
@@ -800,7 +780,7 @@
               },
               {
                 "name": "魁梧施虐者",
-                "hp": 3716548,
+                "hp": 4039726,
                 "defense": 794,
                 "stun": 6783,
                 "number": 1,
@@ -811,12 +791,10 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              }
-            ],
-            [
+              },
               {
                 "name": "牲鬼·卫律使者",
-                "hp": 41853886,
+                "hp": 45802366,
                 "defense": 953,
                 "stun": 17586,
                 "number": 1,
@@ -833,16 +811,6 @@
               }
             ]
           ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "牲鬼·卫律使者",
-              "bold": true
-            }
-          ],
           "weakness": []
         }
       }
@@ -856,13 +824,9 @@
           "title": "",
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001571": {
+        "62001591": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升20%，防御力提升20%。\n· 代理人命中敌人且触发暴击后，敌人的防御力降低20%，若其处于失衡状态，失衡易伤倍率提升35%。"
+          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
         }
       },
       "layer_room": {
@@ -886,7 +850,7 @@
               },
               {
                 "name": "蜕生·蝎骸",
-                "hp": 37186079,
+                "hp": 30871462,
                 "defense": 953,
                 "stun": 19541,
                 "number": 1,
@@ -902,7 +866,7 @@
               },
               {
                 "name": "特勤镇暴布",
-                "hp": 1293804,
+                "hp": 1423184,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -916,7 +880,7 @@
               },
               {
                 "name": "空域侦巡布",
-                "hp": 1293804,
+                "hp": 1423184,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -943,10 +907,6 @@
           "title": "",
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
         "62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
@@ -959,7 +919,7 @@
             [
               {
                 "name": "离子体·法布提",
-                "hp": 4982010,
+                "hp": 5415228,
                 "defense": 715,
                 "stun": 11170,
                 "number": 1,
@@ -974,7 +934,7 @@
               },
               {
                 "name": "离子体·杜拉罕",
-                "hp": 4192166,
+                "hp": 4556702,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
@@ -989,7 +949,7 @@
               },
               {
                 "name": "秽蚀·色雷斯人",
-                "hp": 38364858,
+                "hp": 62976276,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -1018,13 +978,9 @@
           "title": "",
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
         "62001593": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，贯穿伤害提升20%，<color=#FFFFFF>[终结技]</color>造成的伤害提升50%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，攻击无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -1034,7 +990,7 @@
             [
               {
                 "name": "魁梧打手",
-                "hp": 4935817,
+                "hp": 5365019,
                 "defense": 794,
                 "stun": 8891,
                 "number": 1,
@@ -1048,7 +1004,7 @@
               },
               {
                 "name": "魁梧施虐者",
-                "hp": 3716548,
+                "hp": 4039726,
                 "defense": 794,
                 "stun": 6783,
                 "number": 1,
@@ -1062,7 +1018,7 @@
               },
               {
                 "name": "牲鬼·卫律使者",
-                "hp": 41853886,
+                "hp": 45802366,
                 "defense": 953,
                 "stun": 17586,
                 "number": 1,
