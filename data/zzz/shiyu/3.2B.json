@@ -62,6 +62,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62058012": {
@@ -156,6 +162,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
@@ -246,6 +258,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62058022": {
@@ -323,6 +341,12 @@
                 "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
@@ -418,6 +442,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62058032": {
@@ -500,6 +530,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
@@ -532,7 +568,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "蜕生·蝎骸",
                 "hp": 13123640,
@@ -551,11 +589,37 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·蝎骸",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
         "62058042": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "怒蛇",
+                "hp": 8833150,
+                "defense": 715,
+                "stun": 13108,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ],
             [
               {
                 "name": "蜕生·阿瓦鲁斯",
@@ -572,22 +636,18 @@
                   "火"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "怒蛇",
-                "hp": 8833150,
-                "defense": 715,
-                "stun": 13108,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
-                "resistance": [],
-                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·阿瓦鲁斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -657,7 +717,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "自律战术单位·「征服者」",
                 "hp": 35693593,
@@ -676,27 +738,22 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "自律战术单位·「征服者」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
         "62058052_62058052": {
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "秽蚀·狛野真斗",
-                "hp": 35320007,
-                "defense": 953,
-                "stun": 16284,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
-              },
               {
                 "name": "拉赫穆",
                 "hp": 7965171,
@@ -727,7 +784,34 @@
                 "resistance": [],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 35320007,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -778,7 +862,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·星徽·比利",
                 "hp": 40517808,
@@ -796,6 +882,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·星徽·比利",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -861,7 +957,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "自律战术单位·「征服者」",
                 "hp": 35693593,
@@ -879,6 +977,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "自律战术单位·「征服者」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -903,21 +1011,6 @@
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "秽蚀·狛野真斗",
-                "hp": 35320007,
-                "defense": 953,
-                "stun": 16284,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
-              },
               {
                 "name": "拉赫穆",
                 "hp": 7965171,
@@ -948,7 +1041,34 @@
                 "resistance": [],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 35320007,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -1016,7 +1136,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·星徽·比利",
                 "hp": 40517808,
@@ -1034,6 +1156,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·星徽·比利",
+              "bold": true
+            }
           ],
           "weakness": []
         }

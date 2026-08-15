@@ -106,6 +106,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62059012": {
@@ -173,6 +179,12 @@
                 "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
@@ -267,6 +279,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62059022": {
@@ -334,6 +352,12 @@
                 "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
@@ -428,6 +452,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62059032": {
@@ -512,6 +542,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
@@ -532,22 +568,6 @@
           "monsters": [
             [
               {
-                "name": "「空域戒戍者」",
-                "hp": 31378647,
-                "defense": 953,
-                "stun": 19772,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
-              },
-              {
                 "name": "蜕生·城防戍卫布",
                 "hp": 9948968,
                 "defense": 858,
@@ -563,7 +583,35 @@
                 ],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "「空域戒戍者」",
+                "hp": 31378647,
+                "defense": 953,
+                "stun": 19772,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「空域戒戍者」",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -598,7 +646,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 10829310,
@@ -616,6 +666,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -659,22 +719,6 @@
                 "type": "B"
               },
               {
-                "name": "蜕生·蝎骸",
-                "hp": 30871462,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
-                "resistance": [
-                  "冰"
-                ],
-                "type": "A"
-              },
-              {
                 "name": "特勤镇暴布",
                 "hp": 1423184,
                 "defense": 683,
@@ -702,7 +746,35 @@
                 "resistance": [],
                 "type": "C"
               }
+            ],
+            [
+              {
+                "name": "蜕生·蝎骸",
+                "hp": 30871462,
+                "defense": 953,
+                "stun": 19541,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·蝎骸",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -739,7 +811,9 @@
                   "冰"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 62976276,
@@ -757,6 +831,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -791,7 +875,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "牲鬼·卫律使者",
                 "hp": 45802366,
@@ -810,6 +896,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·卫律使者",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -849,22 +945,6 @@
                 "type": "B"
               },
               {
-                "name": "蜕生·蝎骸",
-                "hp": 30871462,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "风"
-                ],
-                "resistance": [
-                  "冰"
-                ],
-                "type": "A"
-              },
-              {
                 "name": "特勤镇暴布",
                 "hp": 1423184,
                 "defense": 683,
@@ -892,7 +972,35 @@
                 "resistance": [],
                 "type": "C"
               }
+            ],
+            [
+              {
+                "name": "蜕生·蝎骸",
+                "hp": 30871462,
+                "defense": 953,
+                "stun": 19541,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·蝎骸",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -946,7 +1054,9 @@
                   "冰"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 62976276,
@@ -964,6 +1074,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -1015,7 +1135,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "牲鬼·卫律使者",
                 "hp": 45802366,
@@ -1034,6 +1156,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·卫律使者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

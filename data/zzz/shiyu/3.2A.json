@@ -76,6 +76,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62057012": {
@@ -125,6 +131,12 @@
                 "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
@@ -231,6 +243,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62057022": {
@@ -307,6 +325,12 @@
                 "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
@@ -399,6 +423,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
         "62057032": {
@@ -480,6 +510,12 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
@@ -512,7 +548,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 11370776,
@@ -529,11 +567,37 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
         "62057042": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 881418,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "伐木机",
@@ -549,22 +613,18 @@
                   "冰"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "秽息残兵·盾卫",
-                "hp": 881418,
-                "defense": 731,
-                "stun": 2178,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "伐木机",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -622,7 +682,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "缄枢",
                 "hp": 35277955,
@@ -640,6 +702,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -686,7 +758,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "遴命者·「骇鸟」",
                 "hp": 39451424,
@@ -704,6 +778,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "遴命者·「骇鸟」",
+              "bold": true
+            }
           ],
           "weakness": []
         },
@@ -740,7 +824,9 @@
                   "物理"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "幻矢单元",
                 "hp": 47774015,
@@ -758,6 +844,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "幻矢单元",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -811,7 +907,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "缄枢",
                 "hp": 35277955,
@@ -829,6 +927,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -892,7 +1000,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "遴命者·「骇鸟」",
                 "hp": 39451424,
@@ -910,6 +1020,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "遴命者·「骇鸟」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
@@ -963,7 +1083,9 @@
                   "物理"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "幻矢单元",
                 "hp": 47774015,
@@ -981,6 +1103,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "幻矢单元",
+              "bold": true
+            }
           ],
           "weakness": []
         }

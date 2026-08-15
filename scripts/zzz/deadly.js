@@ -49,9 +49,13 @@ const setSchedule = (index) => {
     render();
 };
 
+const isLowDef = (defense) => {
+    return Math.abs(defense - 476) <= 2;
+};
+
 const getAdjustedHp = (monster) => {
     if (!normalizeMode) return monster.hp || 0;
-    if (Math.round(monster.defense || 0) === 476) {
+    if (isLowDef(monster.defense || 0)) {
         return (monster.hp || 0) / 1.375;
     }
     return monster.hp || 0;
@@ -59,7 +63,7 @@ const getAdjustedHp = (monster) => {
 
 const getAdjustedDef = (monster) => {
     if (!normalizeMode) return monster.defense || 0;
-    if (Math.round(monster.defense || 0) === 476) {
+    if (isLowDef(monster.defense || 0)) {
         return 952.8;
     }
     return monster.defense || 0;
