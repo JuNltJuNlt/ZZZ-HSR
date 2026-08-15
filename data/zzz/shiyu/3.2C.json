@@ -687,12 +687,12 @@
       "monster_level": 0,
       "layer_buff": {
         "62001541": {
-          "title": "紊音共振",
-          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
-        },
-        "62001591": {
           "title": "(Test1)TBD",
           "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+        },
+        "62001591": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
         "62001593": {
           "title": "(Test1)TBD",
