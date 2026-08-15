@@ -288,7 +288,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
             legend: { data: seriesData.map(s => s.name) },
             xAxis: { data: labels },
             series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        }, false);
+        }, true);
         return;
     }
     
