@@ -240,7 +240,10 @@ const renderCharts = () => {
     const totalData = activeEntries.map(e => floorTotalHp(e.zone, floorNum));
     renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
 
-    const roomCount = isOld ? 2 : (floorNum === 5 ? 3 : 2);
+    const currentFloorData = currentFloor();
+    const actualRoomCount = Object.keys(currentFloorData.layer_room || {}).length;
+    const roomCount = Math.min(actualRoomCount, 3);
+    
     const stageSeries = [];
     const colors = ["#cc0000", "#2545ba", "#4CAF50"];
     for (let i = 0; i < roomCount; i++) {
