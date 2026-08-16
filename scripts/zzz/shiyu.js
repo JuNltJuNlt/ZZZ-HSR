@@ -281,23 +281,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     else if (targetId === "stageChart") currentInstance = stageChartInstance;
     else currentInstance = peakChartInstance;
     
-    if (currentInstance && !currentInstance.isDisposed()) {
-        currentInstance.resize();
-        currentInstance.setOption({
-            title: { text: title },
-            legend: { data: seriesData.map(s => s.name) },
-            xAxis: { data: labels },
-            series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        }, true);
-        return;
-    }
-    
-    const newInstance = window.echarts.init(chartElement);
-    if (targetId === "totalChart") totalChartInstance = newInstance;
-    else if (targetId === "stageChart") stageChartInstance = newInstance;
-    else peakChartInstance = newInstance;
-    
-    newInstance.setOption({
+    const fullOption = {
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
         tooltip: { trigger: "axis" },
         grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
@@ -307,7 +291,20 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
         dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
-    }, true);
+    };
+    
+    if (currentInstance && !currentInstance.isDisposed()) {
+        currentInstance.resize();
+        currentInstance.setOption(fullOption, true);
+        return;
+    }
+    
+    const newInstance = window.echarts.init(chartElement);
+    if (targetId === "totalChart") totalChartInstance = newInstance;
+    else if (targetId === "stageChart") stageChartInstance = newInstance;
+    else peakChartInstance = newInstance;
+    
+    newInstance.setOption(fullOption, true);
 };
 
 const renderFloor = () => {
