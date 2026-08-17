@@ -43,7 +43,7 @@ const setSchedule = (index) => {
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...skillEntries.map((e, i) => create("option", {
-            text: `${indexData.entries[i].replace('.json', '')} | ${e.skill_name || ''}`,
+            text: `${indexData.entries[i].replace('.json', '')} | ${e.skill_name || ''} | ${e.time || ''}`,
             attrs: { value: i, selected: i === state.scheduleIndex },
         })),
     );
@@ -119,20 +119,29 @@ const renderBossCard = (boss) => {
 
 const processModeDesc = (desc) => {
     const lines = desc.split('\n').filter(l => l.trim());
-    let result = '';
-    let first = true;
+    let specialLines = [];
+    let otherLines = [];
     lines.forEach(line => {
         if (line.includes('【特殊挑战】')) {
-            if (first) { result += line + '\n\n'; first = false; }
-            else result += line + '\n';
+            specialLines.push(line.replace('【特殊挑战】', '').trim());
+        } else if (line.includes('【关卡介绍】')) {
+            otherLines.push(line.replace('【关卡介绍】', '').trim());
         } else {
-            result += line + '\n';
+            otherLines.push(line);
         }
     });
+    
+    let result = '';
+    if (specialLines.length > 0) {
+        result += '【特殊挑战】' + specialLines.join('') + '\n\n';
+    }
+    if (otherLines.length > 0) {
+        result += '【关卡介绍】' + otherLines.join('\n');
+    }
     return result.trim();
 };
 
-const renderBossBuffBox = (buffs, title) => {
+const renderBossBuffBox = (buffs) => {
     if (!buffs || buffs.length === 0) return null;
     return create("div", {
         style: {
@@ -147,13 +156,10 @@ const renderBossBuffBox = (buffs, title) => {
             width: "100%",
             boxSizing: "border-box",
         },
-        children: [
-            ...(title ? [create("p", { text: title, style: { fontWeight: "bold", marginBottom: "8px" } })] : []),
-            ...buffs.map(buff => create("p", {
-                html: `<b>${buff.title || '无标题'}</b><br><span style="font-size:14px;">${(buff.desc || '').replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>')}</span>`,
-                style: { margin: "0 0 12px 0" }
-            }))
-        ],
+        children: buffs.map(buff => create("p", {
+            html: `<b>${buff.title || '无标题'}</b><br><span style="font-size:14px;">${(buff.desc || '').replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>')}</span>`,
+            style: { margin: "0 0 12px 0" }
+        }))
     });
 };
 
@@ -165,16 +171,13 @@ const render = () => {
     container.replaceChildren();
 
     const bosses = entry.bosses || [];
-    
     if (bosses.length === 0) return;
 
-    // 顶部共用 Buff（取第一个 Boss 的 layer_buffs，三个 Boss 相同）
     const sharedBuffs = bosses[0].layer_buffs || [];
     if (sharedBuffs.length > 0) {
-        container.appendChild(renderBossBuffBox(sharedBuffs, ""));
+        container.appendChild(renderBossBuffBox(sharedBuffs));
     }
 
-    // 三个 Boss 并排
     const bossRow = create("div", {
         style: {
             display: "flex",
@@ -206,7 +209,6 @@ const render = () => {
             
             wrapper.appendChild(create("div", { className: "wave_monsters", children: [renderBossCard(boss)] }));
             
-            // 机制框
             const modeDescHtml = processModeDesc(boss.mode_desc || '')
                 .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
                 .replace(/\n/g, '<br>');
@@ -227,10 +229,9 @@ const render = () => {
                 children: [create("p", { html: modeDescHtml || "无机制说明", style: { margin: "4px 0" } })]
             }));
             
-            // Boss 专属 Buff 框
             const selectableBuffs = boss.selectable_buffs || [];
             if (selectableBuffs.length > 0) {
-                wrapper.appendChild(renderBossBuffBox(selectableBuffs, ""));
+                wrapper.appendChild(renderBossBuffBox(selectableBuffs));
             }
             
             return wrapper;

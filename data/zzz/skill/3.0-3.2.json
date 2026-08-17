@@ -1,0 +1,186 @@
+{
+  "skill_id": 1,
+  "skill_name": "拟境湮灭战",
+  "time": "2026-06-17 06:00:00 - 2026-10-21 05:59:59",
+  "bosses": [
+    {
+      "name": "异构·太初梦魇",
+      "easy_hp": 21465692,
+      "hard_hp": 39864343,
+      "defense": 477,
+      "stun": 32242,
+      "weakness": [
+        "物理"
+      ],
+      "resistance": [
+        "冰",
+        "以太"
+      ],
+      "type": "S",
+      "layer_buffs": [
+        {
+          "title": "",
+          "desc": "雨果：[决算]伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "伊芙琳：连携技伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "伊德海莉：贯穿伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "简：[强击]造成的暴击伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "柳：造成的异常伤害和紊乱伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "凯撒：拥有[荣光之盾]时，全队受到的伤害大幅降低"
+        }
+      ],
+      "selectable_buffs": [
+        {
+          "title": "异象",
+          "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+        },
+        {
+          "title": "凝神",
+          "desc": "· 代理人的生命值上限<color=#2BAD00>提升30%</color>，终结技造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人释放终结技后，能量和闪能获得效率 <color=#2BAD00>提升15%</color>，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color><color=#2BAD00>提升40%</color>，持续20秒。"
+        },
+        {
+          "title": "淬体",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，攻击命中敌人时，无视其<color=#2BAD00>10%</color>的全伤害抗性。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升20%</color>，[普通攻击]造成的伤害<color=#2BAD00>提升40%</color>，并无视敌人<color=#2BAD00>20%</color>的防御力。"
+        },
+        {
+          "title": "掠火",
+          "desc": "· 代理人使敌人进入属性异常状态后，其全属性伤害抗性降低<color=#2BAD00>10%</color>，<color=#FE437E>以太伤害抗性</color>降低<color=#2BAD00>10%</color>，持续15秒，重复触发刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，异放伤害<color=#2BAD00>提升15%</color>，[连携技]、[终结技]造成的属性异常积蓄值<color=#2BAD00>提升20%</color>。"
+        }
+      ],
+      "mode_desc": "【特殊挑战】「异构·太初梦魇」状态切换成功的次数不超过3次。\n\n【关卡介绍】\n战斗中，首领初始和从失衡中恢复时会拥有一半失衡值； <color=#FFAF2C>「疾斩飞剑」</color>命中首领后的一段时间内，首领无法进行<color=#FFAF2C>状态切换</color>。 \n每当首领的<color=#FFAF2C>失衡值累计</color>或<color=#FFAF2C>秽盾值下降</color>到一定程度时，都会尝试进行<color=#FFAF2C>状态切换</color>。如果切换成功，首领当前的<color=#FFAF2C>失衡值</color>和<color=#FFAF2C>秽盾值</color>会进行<color=#FFAF2C>等比转换</color>。\n 代理人发动「招架支援」、「极限闪避」、「终结技」和对敌人施加属性异常效果时，会减少<color=#FFAF2C>「疾斩飞剑」</color>的技能冷却时间。\n秽盾状态下，代理人<color=#FFAF2C>格挡首领的攻击时会额外削减秽盾值</color>。"
+    },
+    {
+      "name": "异构·溺想者·狛野真斗",
+      "easy_hp": 18180678,
+      "hard_hp": 33764840,
+      "defense": 953,
+      "stun": 19541,
+      "weakness": [
+        "冰"
+      ],
+      "resistance": [
+        "物理"
+      ],
+      "type": "A",
+      "layer_buffs": [
+        {
+          "title": "",
+          "desc": "雨果：[决算]伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "伊芙琳：连携技伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "伊德海莉：贯穿伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "简：[强击]造成的暴击伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "柳：造成的异常伤害和紊乱伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "凯撒：拥有[荣光之盾]时，全队受到的伤害大幅降低"
+        }
+      ],
+      "selectable_buffs": [
+        {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        {
+          "title": "极境",
+          "desc": "· [命破]特性的代理人贯穿伤害<color=#2BAD00>提升10%</color>，造成的秽息盾削减值<color=#2BAD00>提升30%</color>。\n· 处于以太帷幕中的代理人，贯穿伤害额外<color=#2BAD00>提升30%</color>，攻击命中敌人后使其失衡易伤倍率<color=#2BAD00>提升45%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        {
+          "title": "淬体",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，攻击命中敌人时，无视其<color=#2BAD00>10%</color>的全伤害抗性。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升20%</color>，[普通攻击]造成的伤害<color=#2BAD00>提升40%</color>，并无视敌人<color=#2BAD00>20%</color>的防御力。"
+        },
+        {
+          "title": "掠火",
+          "desc": "· 代理人使敌人进入属性异常状态后，其全属性伤害抗性降低<color=#2BAD00>10%</color>，<color=#FE437E>以太伤害抗性</color>降低<color=#2BAD00>10%</color>，持续15秒，重复触发刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，异放伤害<color=#2BAD00>提升15%</color>，[连携技]、[终结技]造成的属性异常积蓄值<color=#2BAD00>提升20%</color>。"
+        }
+      ],
+      "mode_desc": "【特殊挑战】全程阻止[异构·溺想者·狛野真斗]进入<color=#FFAF2C>秽盾狂暴</color>状态\n\n【关卡介绍】\n战斗中，首领初始拥有一半秽盾值，代理人的攻击将<color=#FFAF2C>不再能够对其造成秽盾削减</color>。代理人发动「招架支援」或「终结技」、「强化特殊技」、「支援突击」命中<color=#FFAF2C>格挡</color>状态下的首领敌人时，将<color=#FFAF2C>破除首领敌人的格挡状态并削减其秽盾值</color>。当秽盾值被完全削减至零时，首领敌人会直接进入失衡状态。 \n当首领敌人的<color=#FFAF2C>攻击命中</color>代理人或<color=#FFAF2C>成功格挡</color>代理人攻击时，会获得秽盾值。若首领敌人的秽盾值积累至最大值，将进入<color=#FFAF2C>秽盾狂暴</color>状态.。<color=#FFAF2C>秽盾狂暴</color>状态下，「异构·溺想者·狛野真斗」<color=#FFAF2C>无法被打断</color>且攻击欲望提高。"
+    },
+    {
+      "name": "异构·闪耀之誓·比利",
+      "easy_hp": 31816608,
+      "hard_hp": 64744080,
+      "defense": 953,
+      "stun": 19541,
+      "weakness": [
+        "火",
+        "电"
+      ],
+      "resistance": [
+        "物理"
+      ],
+      "type": "A",
+      "layer_buffs": [
+        {
+          "title": "",
+          "desc": "雨果：[决算]伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "伊芙琳：连携技伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "伊德海莉：贯穿伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "简：[强击]造成的暴击伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "柳：造成的异常伤害和紊乱伤害大幅提升"
+        },
+        {
+          "title": "",
+          "desc": "凯撒：拥有[荣光之盾]时，全队受到的伤害大幅降低"
+        }
+      ],
+      "selectable_buffs": [
+        {
+          "title": "奇巧",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+        },
+        {
+          "title": "极境",
+          "desc": "· [命破]特性的代理人贯穿伤害<color=#2BAD00>提升10%</color>，造成的秽息盾削减值<color=#2BAD00>提升30%</color>。\n· 处于以太帷幕中的代理人，贯穿伤害额外<color=#2BAD00>提升30%</color>，攻击命中敌人后使其失衡易伤倍率<color=#2BAD00>提升45%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        {
+          "title": "淬体",
+          "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，攻击命中敌人时，无视其<color=#2BAD00>10%</color>的全伤害抗性。\n· [强攻]特性的代理人攻击力<color=#2BAD00>提升20%</color>，[普通攻击]造成的伤害<color=#2BAD00>提升40%</color>，并无视敌人<color=#2BAD00>20%</color>的防御力。"
+        },
+        {
+          "title": "掠火",
+          "desc": "· 代理人使敌人进入属性异常状态后，其全属性伤害抗性降低<color=#2BAD00>10%</color>，<color=#FE437E>以太伤害抗性</color>降低<color=#2BAD00>10%</color>，持续15秒，重复触发刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，异放伤害<color=#2BAD00>提升15%</color>，[连携技]、[终结技]造成的属性异常积蓄值<color=#2BAD00>提升20%</color>。"
+        }
+      ],
+      "mode_desc": "【特殊挑战】代理人身上存在的<color=#FFAF2C>「蚀刻」</color>全程不达到20层\n\n【关卡介绍】\n战斗中，首领敌人每隔10秒会在场地留下区域<color=#FFAF2C>「星徽斗场」</color>。代理人处于该区域内时，每隔1.5秒获得一层<color=#FFAF2C>「蚀刻」</color>，<color=#FFAF2C>「蚀刻」</color>最多叠加20层。每层<color=#FFAF2C>「蚀刻」</color>会使全体代理人的异常积蓄效率提升40%，并使当前代理人持续损失生命值。\n代理人触发「招架支援」、「格挡」后，可转移2层「蚀刻」给首领敌人；触发「闪避反击」后，则转移1层「蚀刻」给首领敌人；对首领敌人施加属性异常效果，会转移4层<color=#FFAF2C>「蚀刻」</color>；使首领敌人进入失衡状态后，会转移所有<color=#FFAF2C>「蚀刻」</color>。 当首领敌人累积的<color=#FFAF2C>「蚀刻」</color>达到最大层数时，会引爆所有<color=#FFAF2C>「蚀刻」</color>层数使「异构·闪耀之誓·比利」受到最大生命值的百分比伤害，并为全体代理人恢复相当于其当前已损失生命值 50% 的生命值。\n首领敌人的部分攻击对代理人造成受击效果时，会向代理人传递2层<color=#FFAF2C>「蚀刻」</color>。"
+    }
+  ]
+}
