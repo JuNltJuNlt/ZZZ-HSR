@@ -92,7 +92,6 @@ const renderBossCard = (boss) => {
     const info = monstersData.find(m => m.name === boss.name) || {};
     const type = info.type || boss.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${boss.name}.webp`;
-    const hpDisplay = `${boss.easy_hp.toLocaleString()} / ${boss.hard_hp.toLocaleString()}`;
     const def = boss.defense || 0;
     const stun = boss.stun || 0;
     const img = image(imagePath, "monicon hasimg", boss.name);
@@ -105,11 +104,11 @@ const renderBossCard = (boss) => {
         className: "monster_card hover-shadow",
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            renderWeaknessBars(boss),
+            create("div", { style: { minHeight: "28px" } }),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
-                create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${hpDisplay}</color></b>` }),
+                create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${boss.easy_hp}</color> / <color style="color:#9b59b6;">${boss.hard_hp}</color></b>` }),
                 create("br"),
                 create("span", { className: "monname_2", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
             ]}),
@@ -186,6 +185,7 @@ const render = () => {
             width: "100%",
             padding: "0 40px",
             boxSizing: "border-box",
+            alignItems: "stretch",
         },
         children: bosses.map((boss, i) => {
             const wrapper = create("div", {
@@ -200,10 +200,14 @@ const render = () => {
             });
             
             wrapper.appendChild(create("div", {
+                className: "u_r",
                 children: [
-                    create("p", { text: `拟境${i + 1} Lv70` }),
-                    ...renderElementIcons(boss.weakness || [], "elem_"),
-                    create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+                    create("div", {
+                        children: [
+                            create("p", { text: `拟境${i + 1} Lv70` }),
+                            create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+                        ],
+                    }),
                 ],
             }));
             
@@ -214,6 +218,7 @@ const render = () => {
                 .replace(/\n/g, '<br>');
             
             wrapper.appendChild(create("div", {
+                className: "u_b",
                 style: {
                     backgroundColor: "#27363E",
                     color: "#eee",
@@ -225,6 +230,7 @@ const render = () => {
                     textAlign: "left",
                     width: "100%",
                     boxSizing: "border-box",
+                    flex: "1 1 auto",
                 },
                 children: [create("p", { html: modeDescHtml || "无机制说明", style: { margin: "4px 0" } })]
             }));
