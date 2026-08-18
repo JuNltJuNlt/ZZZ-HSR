@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../../stylesheets/arbitration.css" />
         <script src="../../plugins/echarts.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-        <script type="module" src="../../scripts/zzz/shiyu.js?v=9"></script>
+        <script type="module" src="../../scripts/zzz/shiyu.js?v=10"></script>
     </head>
     <body class="bg">
         <container>
@@ -47,17 +47,14 @@
                     <div id="nextSchedule" class="v_r"><p>▷</p></div>
                 </div>
 
-                <div class="ver">
-                    <div id="prevFloor" class="v_l">◀</div>
-                    <div class="ver_text hover-shadow">
-                        <p class="ver_text_name">节点</p>
-                        <p id="floorText" class="ver_text_time"></p>
-                    </div>
-                    <div id="nextFloor" class="v_r"><p>▶</p></div>
-                </div>
-
                 <div class="button_w">
                     <a id="downloadBtn" class="level_ dl_button hover-shadow" href="#"><span>下载图片</span></a>
+                </div>
+
+                <div class="floor_select">
+                    <div id="prevFloor" class="f_l">◁</div>
+                    <div id="floorText" class="f_text"></div>
+                    <div id="nextFloor" class="f_r">▷</div>
                 </div>
 
                 <div id="shiyuStages"></div>
