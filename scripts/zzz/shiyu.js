@@ -300,7 +300,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
         if (resetZoom) {
-            fullOption.dataZoom = [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }];
+            fullOption.dataZoom = [{ type: "slider", start: 0, end: 100 }];
         }
         currentInstance.setOption(fullOption, true);
         return;
@@ -313,7 +313,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     
     newInstance.setOption({
         ...fullOption,
-        dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
+        dataZoom: [{ type: "slider", start: 0, end: 100 }],
     }, true);
 };
 
