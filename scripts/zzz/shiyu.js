@@ -295,12 +295,13 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+        dataZoom: [{ type: "slider", start: 0, end: 100 }],
     };
     
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
-        if (resetZoom) {
-            fullOption.dataZoom = [{ type: "slider", start: 0, end: 100 }];
+        if (!resetZoom) {
+            delete fullOption.dataZoom;
         }
         currentInstance.setOption(fullOption, true);
         return;
@@ -311,10 +312,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     else if (targetId === "stageChart") stageChartInstance = newInstance;
     else peakChartInstance = newInstance;
     
-    newInstance.setOption({
-        ...fullOption,
-        dataZoom: [{ type: "slider", start: 0, end: 100 }],
-    }, true);
+    newInstance.setOption(fullOption, true);
 };
 
 const renderFloor = () => {
