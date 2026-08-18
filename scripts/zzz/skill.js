@@ -59,35 +59,6 @@ const renderScheduleHeader = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
-const renderWeaknessBars = (boss) => {
-    const weakness = boss.weakness || [];
-    const resistance = boss.resistance || [];
-    const items = [];
-    weakness.forEach(el => items.push({ element: el, type: "weak" }));
-    resistance.forEach(el => items.push({ element: el, type: "resist" }));
-    
-    return create("div", {
-        style: { 
-            display: "flex", 
-            justifyContent: "center", 
-            gap: "3px", 
-            marginTop: "4px",
-            minHeight: "28px",
-            visibility: items.length === 0 ? "hidden" : "visible"
-        },
-        children: items.length > 0 ? items.map(item => {
-            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-            return create("div", {
-                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
-                children: [
-                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
-                    create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
-                ]
-            });
-        }) : []
-    });
-};
-
 const renderBossCard = (boss) => {
     const info = monstersData.find(m => m.name === boss.name) || {};
     const type = info.type || boss.type || "S";
@@ -140,26 +111,12 @@ const processModeDesc = (desc) => {
     return result.trim();
 };
 
-const renderBossBuffBox = (buffs) => {
-    if (!buffs || buffs.length === 0) return null;
-    return create("div", {
-        style: {
-            backgroundColor: "#27363E",
-            color: "#eee",
-            borderRadius: "5px",
-            margin: "8px 0",
-            padding: "14px",
-            lineHeight: "1.8",
-            fontSize: "14px",
-            textAlign: "left",
-            width: "100%",
-            boxSizing: "border-box",
-        },
-        children: buffs.map(buff => create("p", {
-            html: `<b>${buff.title || '无标题'}</b><br><span style="font-size:14px;">${(buff.desc || '').replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>')}</span>`,
-            style: { margin: "0 0 12px 0" }
-        }))
-    });
+const renderBuffItems = (buffs) => {
+    if (!buffs || buffs.length === 0) return [];
+    return buffs.map(buff => create("p", {
+        html: `<b>${buff.title}</b><br><span style="font-size:14px;">${(buff.desc || '').replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>')}</span>`,
+        style: { margin: "0 0 12px 0" }
+    }));
 };
 
 const render = () => {
@@ -174,7 +131,22 @@ const render = () => {
 
     const sharedBuffs = bosses[0].layer_buffs || [];
     if (sharedBuffs.length > 0) {
-        container.appendChild(renderBossBuffBox(sharedBuffs));
+        const sharedBox = create("div", {
+            style: {
+                backgroundColor: "#27363E",
+                color: "#eee",
+                borderRadius: "5px",
+                margin: "8px 0",
+                padding: "14px",
+                lineHeight: "1.8",
+                fontSize: "14px",
+                textAlign: "left",
+                width: "100%",
+                boxSizing: "border-box",
+            },
+            children: renderBuffItems(sharedBuffs)
+        });
+        container.appendChild(sharedBox);
     }
 
     const bossRow = create("div", {
@@ -185,7 +157,7 @@ const render = () => {
             width: "100%",
             padding: "0 40px",
             boxSizing: "border-box",
-            alignItems: "stretch",
+            alignItems: "flex-start",
         },
         children: bosses.map((boss, i) => {
             const wrapper = create("div", {
@@ -211,14 +183,17 @@ const render = () => {
                 ],
             }));
             
-            wrapper.appendChild(create("div", { className: "wave_monsters", children: [renderBossCard(boss)] }));
+            wrapper.appendChild(create("div", { 
+                className: "wave_monsters", 
+                style: { marginTop: "16px" },
+                children: [renderBossCard(boss)] 
+            }));
             
             const modeDescHtml = processModeDesc(boss.mode_desc || '')
                 .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
                 .replace(/\n/g, '<br>');
             
-            wrapper.appendChild(create("div", {
-                className: "u_b",
+            const mechanismBox = create("div", {
                 style: {
                     backgroundColor: "#27363E",
                     color: "#eee",
@@ -230,14 +205,29 @@ const render = () => {
                     textAlign: "left",
                     width: "100%",
                     boxSizing: "border-box",
-                    flex: "1 1 auto",
                 },
                 children: [create("p", { html: modeDescHtml || "无机制说明", style: { margin: "4px 0" } })]
-            }));
+            });
+            wrapper.appendChild(mechanismBox);
             
             const selectableBuffs = boss.selectable_buffs || [];
             if (selectableBuffs.length > 0) {
-                wrapper.appendChild(renderBossBuffBox(selectableBuffs));
+                const buffBox = create("div", {
+                    style: {
+                        backgroundColor: "#27363E",
+                        color: "#eee",
+                        borderRadius: "5px",
+                        margin: "8px 0",
+                        padding: "14px",
+                        lineHeight: "1.8",
+                        fontSize: "14px",
+                        textAlign: "left",
+                        width: "100%",
+                        boxSizing: "border-box",
+                    },
+                    children: renderBuffItems(selectableBuffs)
+                });
+                wrapper.appendChild(buffBox);
             }
             
             return wrapper;
@@ -245,6 +235,27 @@ const render = () => {
     });
     
     container.appendChild(bossRow);
+
+    setTimeout(() => {
+        const mechanismBoxes = bossRow.querySelectorAll('.u_b, [style*="border-radius"]');
+        const boxes = Array.from(bossRow.children).map(child => {
+            const mech = child.children[2];
+            const buff = child.children[3];
+            return { mech, buff };
+        });
+        
+        const validMechs = boxes.map(b => b.mech).filter(el => el);
+        const validBuffs = boxes.map(b => b.buff).filter(el => el);
+        
+        if (validMechs.length > 0) {
+            const maxH = Math.max(...validMechs.map(el => el.offsetHeight));
+            validMechs.forEach(el => el.style.height = maxH + "px");
+        }
+        if (validBuffs.length > 0) {
+            const maxH = Math.max(...validBuffs.map(el => el.offsetHeight));
+            validBuffs.forEach(el => el.style.height = maxH + "px");
+        }
+    }, 200);
 };
 
 const bindEvents = () => {
