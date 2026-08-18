@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../../stylesheets/arbitration.css" />
         <script src="../../plugins/echarts.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-        <script type="module" src="../../scripts/zzz/shiyu.js?v=8"></script>
+        <script type="module" src="../../scripts/zzz/shiyu.js?v=9"></script>
     </head>
     <body class="bg">
         <container>
@@ -48,17 +48,16 @@
                 </div>
 
                 <div class="ver">
-                    <div id="prevFloor" class="v_l">◀</div>
+                    <div id="prevFloor" class="v_l">◁</div>
                     <div class="ver_text hover-shadow">
                         <p class="ver_text_name">节点</p>
                         <p id="floorText" class="ver_text_time"></p>
                     </div>
-                    <div id="nextFloor" class="v_r"><p>▶</p></div>
+                    <div id="nextFloor" class="v_r"><p>▷</p></div>
                 </div>
 
                 <div class="button_w">
                     <a id="downloadBtn" class="level_ dl_button hover-shadow" href="#"><span>下载图片</span></a>
-                    <a id="togglePeakChart" class="level_ dl_button hover-shadow" href="#"><span>显示最高层演化</span></a>
                 </div>
 
                 <div id="shiyuStages"></div>
@@ -69,6 +68,10 @@
                 </div>
                 <div class="chart_container" style="margin-top: 30px;">
                     <div id="stageChart" style="width: 100%; height: 600px;"></div>
+                </div>
+
+                <div class="button_w">
+                    <a id="togglePeakChart" class="level_ dl_button hover-shadow" href="#"><span>显示最高层演化</span></a>
                 </div>
 
                 <div id="peakChartContainer" style="display:none;">
