@@ -288,16 +288,29 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
-        const updateOption = {
-            title: { text: title },
-            legend: { data: seriesData.map(s => s.name) },
-            xAxis: { data: labels },
-            series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        };
+        
         if (resetZoom) {
-            updateOption.dataZoom = [{ type: "slider", start: 0, end: 100 }];
+            currentInstance.setOption({
+                title: { text: title },
+                legend: { data: seriesData.map(s => s.name) },
+                xAxis: { data: labels },
+                series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+                dataZoom: [{ type: "slider", start: 0, end: 100 }],
+            }, false);
+        } else {
+            const currentOption = currentInstance.getOption();
+            const currentDataZoom = currentOption.dataZoom;
+            const currentStart = currentDataZoom?.[0]?.start ?? 0;
+            const currentEnd = currentDataZoom?.[0]?.end ?? 100;
+            
+            currentInstance.setOption({
+                title: { text: title },
+                legend: { data: seriesData.map(s => s.name) },
+                xAxis: { data: labels },
+                series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+                dataZoom: [{ type: "slider", start: currentStart, end: currentEnd }],
+            }, false);
         }
-        currentInstance.setOption(updateOption, false);
         return;
     }
     
