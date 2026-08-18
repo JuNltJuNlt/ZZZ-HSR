@@ -13,12 +13,14 @@ let peakChartLoaded = false;
 let totalChartInstance = null;
 let stageChartInstance = null;
 let peakChartInstance = null;
+let peakAvgChartInstance = null;
 
 const text = {
     title: "式舆防卫战",
     chartTotalTitle: "总血量演化",
     chartStageTitle: "各间血量演化",
     chartPeakTitle: "最高层总血量演化",
+    chartPeakAvgTitle: "最高层平均每间输出量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     waveNames: ["第一波", "第二波", "第三波", "第四波"],
     stageLabels: ["房间一", "房间二", "房间三"],
@@ -256,6 +258,10 @@ const renderCharts = () => {
         stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data });
     }
     renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, labels, versionChanged);
+    
+    if (peakChartLoaded) {
+        renderPeakChart();
+    }
 };
 
 const renderPeakChart = () => {
@@ -271,12 +277,20 @@ const renderPeakChart = () => {
         return floorTotalHp(e.zone, floorToUse);
     });
     renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels, false);
+    
+    const peakAvgData = allEntries.map(e => {
+        const label = entryLabel(e);
+        const version = parseVersion(label);
+        const roomCountForPeak = version < 2.5 ? 2 : 3;
+        return Math.round(floorTotalHp(e.zone, version < 2.5 ? 7 : 5) / roomCountForPeak);
+    });
+    renderLineChart("peakAvgChart", text.chartPeakAvgTitle, [{ name: "平均输出量", color: "#2545ba", data: peakAvgData }], peakLabels, false);
 };
 
 const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
-    if (targetId === "peakChart") {
+    if (targetId === "peakChart" || targetId === "peakAvgChart") {
         chartElement.style.width = chartElement.parentElement.offsetWidth + "px";
         chartElement.style.height = "600px";
     }
@@ -284,7 +298,8 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     let currentInstance;
     if (targetId === "totalChart") currentInstance = totalChartInstance;
     else if (targetId === "stageChart") currentInstance = stageChartInstance;
-    else currentInstance = peakChartInstance;
+    else if (targetId === "peakChart") currentInstance = peakChartInstance;
+    else currentInstance = peakAvgChartInstance;
     
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
@@ -317,7 +332,8 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     const newInstance = window.echarts.init(chartElement);
     if (targetId === "totalChart") totalChartInstance = newInstance;
     else if (targetId === "stageChart") stageChartInstance = newInstance;
-    else peakChartInstance = newInstance;
+    else if (targetId === "peakChart") peakChartInstance = newInstance;
+    else peakAvgChartInstance = newInstance;
     
     newInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
@@ -361,9 +377,14 @@ const bindEvents = () => {
                     const peakChart = document.getElementById("peakChart");
                     peakChart.style.width = container.offsetWidth + "px";
                     peakChart.style.height = "600px";
+                    const peakAvgChart = document.getElementById("peakAvgChart");
+                    peakAvgChart.style.width = container.offsetWidth + "px";
+                    peakAvgChart.style.height = "600px";
                     renderPeakChart();
                     peakChartLoaded = true;
                 }, 200);
+            } else {
+                renderPeakChart();
             }
         } else {
             container.style.display = "none";
