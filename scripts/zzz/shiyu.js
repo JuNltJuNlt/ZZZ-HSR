@@ -296,7 +296,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
                 xAxis: { data: labels },
                 series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
                 dataZoom: [{ type: "slider", start: 0, end: 100 }],
-            }, false);
+            }, { replaceMerge: ['series'] });
         } else {
             const currentOption = currentInstance.getOption();
             const currentDataZoom = currentOption.dataZoom;
@@ -309,7 +309,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
                 xAxis: { data: labels },
                 series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
                 dataZoom: [{ type: "slider", start: currentStart, end: currentEnd }],
-            }, false);
+            }, { replaceMerge: ['series'] });
         }
         return;
     }
