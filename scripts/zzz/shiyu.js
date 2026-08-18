@@ -227,6 +227,8 @@ const renderBuffs = () => {
     buffKeys.map(k => floor.layer_buff[k]).filter(b => b && (b.title || b.desc)).forEach(buff => { container.appendChild(create("div", { className: "smallbuff a_b_0", style: { width: "100%" }, children: [create("p", { className: "smallbuff_name", text: buff.title || "" }), create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') })] })); });
 };
 
+let prevIsOld = null;
+
 const renderCharts = () => {
     const floorNum = currentFloor().stage_num;
     const allReversed = shiyuEntries.slice().reverse();
@@ -237,8 +239,11 @@ const renderCharts = () => {
     const activeEntries = isOld ? oldEntries : newEntries;
     const labels = activeEntries.map(e => entryLabel(e));
 
+    const versionChanged = prevIsOld !== null && prevIsOld !== isOld;
+    prevIsOld = isOld;
+
     const totalData = activeEntries.map(e => floorTotalHp(e.zone, floorNum));
-    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
+    renderLineChart("totalChart", `节点${floorNum} 总血量演化`, [{ name: "总血量", color: "#cc0000", data: totalData }], labels, versionChanged);
 
     const currentFloorData = currentFloor();
     const actualRoomCount = Object.keys(currentFloorData.layer_room || {}).length;
@@ -250,7 +255,7 @@ const renderCharts = () => {
         const data = activeEntries.map(e => roomHp(e.zone, floorNum, i));
         stageSeries.push({ name: text.stageLabels[i] || `房间${i + 1}`, color: colors[i], data });
     }
-    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, labels);
+    renderLineChart("stageChart", `节点${floorNum} 各间血量演化`, stageSeries, labels, versionChanged);
 };
 
 const renderPeakChart = () => {
@@ -265,10 +270,10 @@ const renderPeakChart = () => {
         const floorToUse = version < 2.5 ? 7 : 5;
         return floorTotalHp(e.zone, floorToUse);
     });
-    renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels);
+    renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels, false);
 };
 
-const renderLineChart = (targetId, title, seriesData, labels) => {
+const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
     if (targetId === "peakChart") {
@@ -290,11 +295,13 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
     };
     
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
+        if (resetZoom) {
+            fullOption.dataZoom = [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }];
+        }
         currentInstance.setOption(fullOption, true);
         return;
     }
@@ -304,7 +311,10 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     else if (targetId === "stageChart") stageChartInstance = newInstance;
     else peakChartInstance = newInstance;
     
-    newInstance.setOption(fullOption, true);
+    newInstance.setOption({
+        ...fullOption,
+        dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
+    }, true);
 };
 
 const renderFloor = () => {
