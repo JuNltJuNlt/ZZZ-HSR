@@ -1515,7 +1515,7 @@
         {
             "name": "「征服者」",
             "type": "A",
-            "category": 4,
+            "category": 5,
             "weakness": ["电", "风"],
             "resistance": ["物理"]
         },
