@@ -1513,7 +1513,7 @@
             "resistance": ["物理"]
         },
         {
-            "name": "自律战术单位·「征服者」",
+            "name": "「征服者」",
             "type": "A",
             "category": 4,
             "weakness": ["电", "风"],
@@ -1531,6 +1531,76 @@
             "type": "S",
             "category": 5,
             "weakness": [],
+            "resistance": []
+        },
+        {
+            "name": "「阿瑞斯」",
+            "type": "A",
+            "category": 5,
+            "weakness": ["以太"],
+            "resistance": ["火"]
+        },
+        {
+            "name": "特战·「捷足巡游者」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["火", "电"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "特战·「重装侵袭者」",
+            "type": "B",
+            "category": 4,
+            "weakness": ["火", "电"],
+            "resistance": ["冰"]
+        },
+        {
+            "name": "特战·掷弹猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "特战·轻装猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "特战·掠袭猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "特战·戍卫猎兵",
+            "type": "C",
+            "category": 4,
+            "weakness": ["电"],
+            "resistance": []
+        },
+        {
+            "name": "空巡先锋",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火","风"],
+            "resistance": []
+        },
+        {
+            "name": "空巡枪骑",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火","风"],
+            "resistance": []
+        },
+        {
+            "name": "空巡近卫",
+            "type": "C",
+            "category": 5,
+            "weakness": ["火","风"],
             "resistance": []
         }
     ]

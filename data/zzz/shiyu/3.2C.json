@@ -9,8 +9,8 @@
       "monster_level": 50,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -63,7 +63,7 @@
                 "type": "C"
               },
               {
-                "name": "秽息残兵·盾卫",
+                "name": "空巡枪骑",
                 "hp": 431450,
                 "defense": 510,
                 "stun": 1763,
@@ -71,34 +71,34 @@
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "库鲁鲁",
-                "hp": 480637,
-                "defense": 545,
-                "stun": 2403,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
                   "风"
                 ],
                 "resistance": [],
                 "type": "C"
               },
               {
-                "name": "库鲁鲁",
+                "name": "空巡近卫",
+                "hp": 480637,
+                "defense": 545,
+                "stun": 2403,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "空巡先锋",
                 "hp": 480637,
                 "defense": 510,
                 "stun": 2403,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
+                  "火",
                   "风"
                 ],
                 "resistance": [],
@@ -196,8 +196,8 @@
       "monster_level": 55,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -369,8 +369,8 @@
       "monster_level": 60,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -423,7 +423,7 @@
                 "type": "B"
               },
               {
-                "name": "秽息残兵·盾卫",
+                "name": "空巡枪骑",
                 "hp": 1589317,
                 "defense": 683,
                 "stun": 2040,
@@ -431,20 +431,20 @@
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "电"
+                  "风"
                 ],
                 "resistance": [],
                 "type": "C"
               },
               {
-                "name": "库鲁鲁",
+                "name": "空巡近卫",
                 "hp": 1770507,
                 "defense": 731,
                 "stun": 2781,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
+                  "火",
                   "风"
                 ],
                 "resistance": [],
@@ -558,8 +558,8 @@
       "monster_level": 65,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -687,16 +687,16 @@
       "monster_level": 0,
       "layer_buff": {
         "62001541": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
-        },
-        "62001591": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
+        "62001591": {
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+        },
         "62001593": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "title": "刹那焰光",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -784,7 +784,7 @@
             [
               {
                 "name": "离子体·法布提",
-                "hp": 5415228,
+                "hp": 7148101,
                 "defense": 715,
                 "stun": 11170,
                 "number": 1,
@@ -799,7 +799,7 @@
               },
               {
                 "name": "离子体·杜拉罕",
-                "hp": 4556702,
+                "hp": 6014846,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
@@ -816,7 +816,7 @@
             [
               {
                 "name": "秽蚀·色雷斯人",
-                "hp": 62976276,
+                "hp": 65147871,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -921,8 +921,8 @@
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -1027,7 +1027,7 @@
             [
               {
                 "name": "离子体·法布提",
-                "hp": 5415228,
+                "hp": 7148101,
                 "defense": 715,
                 "stun": 11170,
                 "number": 1,
@@ -1042,7 +1042,7 @@
               },
               {
                 "name": "离子体·杜拉罕",
-                "hp": 4556702,
+                "hp": 6014846,
                 "defense": 922,
                 "stun": 9335,
                 "number": 1,
@@ -1059,7 +1059,7 @@
             [
               {
                 "name": "秽蚀·色雷斯人",
-                "hp": 62976276,
+                "hp": 65147871,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -1099,8 +1099,8 @@
           "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
         },
         "62001593": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "title": "刹那焰光",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
