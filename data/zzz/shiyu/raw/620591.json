@@ -9,8 +9,8 @@
       "monster_level": 50,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -79,9 +79,9 @@
               }
             },
             "31744": {
-              "id": 10033,
-              "name": "秽息残兵·盾卫",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+              "id": 10042,
+              "name": "空巡枪骑",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Halberdier.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -99,9 +99,9 @@
               }
             },
             "31762": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10041,
+              "name": "空巡先锋",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Greatsworder.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -119,9 +119,9 @@
               }
             },
             "31752": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10043,
+              "name": "空巡近卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_RoscaSolider.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -248,8 +248,8 @@
       "monster_level": 55,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -467,8 +467,8 @@
       "monster_level": 60,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -537,9 +537,9 @@
               }
             },
             "31744": {
-              "id": 10033,
-              "name": "秽息残兵·盾卫",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+              "id": 10042,
+              "name": "空巡枪骑",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Halberdier.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -557,9 +557,9 @@
               }
             },
             "31752": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10043,
+              "name": "空巡近卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_RoscaSolider.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -706,8 +706,8 @@
       "monster_level": 65,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -849,12 +849,12 @@
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         },
         "62001593": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "title": "刹那焰光",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
@@ -875,8 +875,8 @@
       "monster_level": 70,
       "layer_buff": {
         "62001591": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，无视其20%的<color=#2EB6FF>电属性伤害抗性</color>，若敌人处于失衡状态，额外无视其20%的防御力。"
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         },
         "62001001": {
           "title": "",
@@ -1022,7 +1022,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 62976275.01,
+                "hp": 65147870.699999996,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
                 "stun": 14327.95,
@@ -1042,7 +1042,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4556701.125,
+                "hp": 6014845.484999999,
                 "attack": 2714.4545454545455,
                 "defence": 921.0400000000001,
                 "stun": 9334.2,
@@ -1062,7 +1062,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 5415228.0,
+                "hp": 7148100.959999999,
                 "attack": 2592.1818181818185,
                 "defence": 714.6,
                 "stun": 11169.550000000001,
@@ -1089,8 +1089,8 @@
       "monster_level": 70,
       "layer_buff": {
         "62001593": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "title": "刹那焰光",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",

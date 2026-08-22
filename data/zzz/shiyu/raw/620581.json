@@ -9,8 +9,8 @@
       "monster_level": 50,
       "layer_buff": {
         "62001581": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
+          "title": "御风惊雷",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -148,9 +148,9 @@
               }
             },
             "31744": {
-              "id": 10033,
-              "name": "秽息残兵·盾卫",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+              "id": 10042,
+              "name": "空巡枪骑",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Halberdier.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -168,9 +168,9 @@
               }
             },
             "31762": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10041,
+              "name": "空巡先锋",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Greatsworder.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -188,9 +188,9 @@
               }
             },
             "31752": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10043,
+              "name": "空巡近卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_RoscaSolider.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -227,8 +227,8 @@
       "monster_level": 55,
       "layer_buff": {
         "62001581": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
+          "title": "御风惊雷",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -406,9 +406,9 @@
               }
             },
             "31752": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10043,
+              "name": "空巡近卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_RoscaSolider.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -426,9 +426,9 @@
               }
             },
             "31762": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10041,
+              "name": "空巡先锋",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Greatsworder.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -465,8 +465,8 @@
       "monster_level": 60,
       "layer_buff": {
         "62001581": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
+          "title": "御风惊雷",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -644,9 +644,9 @@
               }
             },
             "31744": {
-              "id": 10033,
-              "name": "秽息残兵·盾卫",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+              "id": 10042,
+              "name": "空巡枪骑",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Halberdier.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -664,9 +664,9 @@
               }
             },
             "31752": {
-              "id": 10036,
-              "name": "库鲁鲁",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_Minion.png",
+              "id": 10043,
+              "name": "空巡近卫",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_RoscaSolider.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -703,8 +703,8 @@
       "monster_level": 65,
       "layer_buff": {
         "62001581": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
+          "title": "御风惊雷",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -822,16 +822,16 @@
       "monster_level": 0,
       "layer_buff": {
         "62001581": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
+          "title": "御风惊雷",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001582": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#FE437E>以太属性</color>积蓄效率提升15%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低10%，持续10秒，重复触发时刷新持续时间。"
+          "title": "冰锋碎厄",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#FE437E>以太属性</color>积蓄效率提升15%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低10%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001583": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，且失衡恢复速度降低15%，持续20秒，重复触发时刷新持续时间。"
+          "title": "焚烬启明",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人的失衡易伤倍率提升30%，且失衡恢复速度降低15%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
@@ -852,8 +852,8 @@
       "monster_level": 70,
       "layer_buff": {
         "62001581": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的锐化伤害提升35%，<color=#A6C5FD>风属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
+          "title": "御风惊雷",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[连携技]</color>命中敌人后，其失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -871,7 +871,7 @@
           "monster_list": {
             "31721": {
               "id": 30055,
-              "name": "自律战术单位·「征服者」",
+              "name": "「征服者」",
               "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_HACMecha.png",
               "element": {
                 "ice": 0,
@@ -969,8 +969,8 @@
       "monster_level": 70,
       "layer_buff": {
         "62001582": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太属性伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#FE437E>以太属性</color>积蓄效率提升15%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低10%，持续10秒，重复触发时刷新持续时间。"
+          "title": "冰锋碎厄",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>与<color=#FE437E>以太伤害</color>提升25%，<color=#98EFF0>冰属性</color>与<color=#FE437E>以太属性</color>积蓄效率提升15%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，敌人的防御力降低10%，持续10秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -999,7 +999,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 35320006.395,
+                "hp": 41984158.545,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
                 "stun": 16283.150000000001,
@@ -1019,7 +1019,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 7965170.595,
+                "hp": 9350417.655,
                 "attack": 2959.0000000000005,
                 "defence": 714.6,
                 "stun": 14001.300000000001,
@@ -1039,7 +1039,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 7965170.595,
+                "hp": 9350417.655,
                 "attack": 2959.0000000000005,
                 "defence": 714.6,
                 "stun": 14001.300000000001,
@@ -1065,8 +1065,8 @@
       "monster_level": 70,
       "layer_buff": {
         "62001583": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人受到的易伤倍率提升30%，且失衡恢复速度降低15%，持续20秒，重复触发时刷新持续时间。"
+          "title": "焚烬启明",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升25%，<color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人使敌人进入失衡状态后，敌人的失衡易伤倍率提升30%，且失衡恢复速度降低15%，持续20秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -1095,7 +1095,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 40517807.03999999,
+                "hp": 37141323.12,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
                 "stun": 19540.25,
