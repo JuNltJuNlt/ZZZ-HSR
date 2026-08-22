@@ -978,6 +978,10 @@
             {
               "name": "小怪波",
               "bold": false
+            },
+            {
+              "name": "「征服者」",
+              "bold": true
             }
           ],
           "weakness": []
