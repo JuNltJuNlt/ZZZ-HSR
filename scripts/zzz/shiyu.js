@@ -208,26 +208,41 @@ const renderStage = (stageData, label, elements, index) => {
 const renderAllStages = () => {
     const floor = currentFloor();
     const rooms = Object.keys(floor.layer_room).sort();
-    const buffKeys = Object.keys(floor.layer_buff);
+    const buffKeys = Object.keys(floor.layer_buff).filter(bk => {
+        const buff = floor.layer_buff[bk];
+        return buff && buff.title && buff.title.trim() !== "";
+    });
     const container = byId("shiyuStages"); container.replaceChildren();
     
     if (buffKeys.length > 0) {
         const buffRow = document.createElement("div"); 
         buffRow.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:12px;width:100%";
+        
+        const buffElements = [];
         buffKeys.forEach(bk => { 
             const buff = floor.layer_buff[bk]; 
             if (buff && (buff.title || buff.desc)) {
-                buffRow.appendChild(create("div", { 
+                const buffEl = create("div", { 
                     className: "smallbuff", 
                     style: { flex: "1 1 30%", minWidth: "280px" }, 
                     children: [
                         create("p", { className: "smallbuff_name", text: buff.title || "" }), 
                         create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') })
                     ] 
-                }));
+                });
+                buffElements.push(buffEl);
+                buffRow.appendChild(buffEl);
             }
         });
+        
         container.appendChild(buffRow);
+        
+        setTimeout(() => {
+            if (buffElements.length >= 3) {
+                const maxHeight = Math.max(...buffElements.map(el => el.offsetHeight));
+                buffElements.forEach(el => el.style.height = maxHeight + "px");
+            }
+        }, 100);
     }
     
     const monsterRow = document.createElement("div"); 
