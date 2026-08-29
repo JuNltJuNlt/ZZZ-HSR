@@ -208,7 +208,7 @@ const renderStage = (stageData, label, elements, index) => {
 const renderAllStages = () => {
     const floor = currentFloor();
     const rooms = Object.keys(floor.layer_room).sort();
-    const buffKeys = Object.keys(floor.layer_buff).sort();
+    const buffKeys = Object.keys(floor.layer_buff);
     const container = byId("shiyuStages"); container.replaceChildren();
     
     if (buffKeys.length > 0) {
