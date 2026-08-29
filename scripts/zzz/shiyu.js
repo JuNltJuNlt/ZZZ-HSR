@@ -49,18 +49,18 @@ const loadData = async () => {
 const currentEntry = () => shiyuEntries[state.scheduleIndex];
 const currentFloor = () => {
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
+    const keys = Object.keys(zone).filter(k => k.startsWith('zone_')).sort();
     return zone[keys[state.floorIndex]];
 };
 
 const setSchedule = (index) => {
     const prevZone = currentEntry().zone;
-    const prevKeys = Object.keys(prevZone).filter(k => k.length <= 7);
+    const prevKeys = Object.keys(prevZone).filter(k => k.startsWith('zone_'));
     const prevMaxFloor = prevKeys.length;
     const prevFloor = state.floorIndex;
     state.scheduleIndex = wrapIndex(index, shiyuEntries.length);
     const newZone = currentEntry().zone;
-    const newKeys = Object.keys(newZone).filter(k => k.length <= 7);
+    const newKeys = Object.keys(newZone).filter(k => k.startsWith('zone_'));
     const newMaxFloor = newKeys.length;
     if (prevFloor >= newMaxFloor) state.floorIndex = newMaxFloor - 1;
     else state.floorIndex = prevFloor;
@@ -69,7 +69,7 @@ const setSchedule = (index) => {
 
 const setFloor = (index) => {
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).filter(k => k.length <= 7);
+    const keys = Object.keys(zone).filter(k => k.startsWith('zone_'));
     state.floorIndex = wrapIndex(index, keys.length);
     renderFloor();
 };
@@ -191,7 +191,7 @@ const renderWave = (wave, index, stageLevel, waveNames) => {
     return create("div", { className: "wave_wrap", children: [create("p", { className: "wave_name", html: displayName }), create("div", { className: "wave_monsters", children: wave.map(m => renderMonsterCard(m, stageLevel)) })] });
 };
 
-const renderStage = (stageData, label, elements, index) => {
+const renderStage = (stageData, label, elements, index, roomBuffs) => {
     const letter = ["a", "b", "c"][index];
     const allWeakness = new Set(); const allResistance = new Set(); const aResistance = new Set();
     (stageData.monsters || []).flat().forEach(m => {
@@ -202,16 +202,39 @@ const renderStage = (stageData, label, elements, index) => {
     const roomResistance = [...new Set([...allResistance, ...aResistance])].filter(r => !allWeakness.has(r) || aResistance.has(r));
     const summaryItems = []; roomWeakness.forEach(el => summaryItems.push({ element: el, type: "weak" })); roomResistance.forEach(el => summaryItems.push({ element: el, type: "resist" }));
     const summaryBars = summaryItems.length > 0 ? create("div", { style: { display: "flex", justifyContent: "center", gap: "4px", marginTop: "6px" }, children: summaryItems.map(item => create("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }, children: [image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element), create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: item.type === "weak" ? "#4CAF50" : "#C62828", display: "block" } })] })) }) : null;
-    return create("div", { className: "u_l", children: [create("div", { className: "u", children: [create("div", { className: `${letter}_r u_r`, children: [create("div", { children: [create("p", { text: `${label} Lv${stageData.level || 70}` }), ...renderElementIcons(elements, "elem_"), create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }), summaryBars].filter(Boolean) })] }), create("div", { className: `${letter}_m u_m`, children: [create("div", { className: "stage", children: [create("div", { className: "emote_block_", children: [create("div", { className: "emote_", children: [image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")] })] }), create("div", { className: "stage_waves", children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level, stageData.waveNames)) })] })] })] })] });
+    
+    const roomBuffElements = [];
+    if (roomBuffs && Object.keys(roomBuffs).length > 0) {
+        Object.entries(roomBuffs).forEach(([bk, buff]) => {
+            if (buff && (buff.title || buff.desc)) {
+                roomBuffElements.push(create("div", { 
+                    className: "smallbuff", 
+                    style: { width: "100%", marginBottom: "8px" }, 
+                    children: [
+                        create("p", { className: "smallbuff_name", text: buff.title || "" }), 
+                        create("p", { className: "smallbuff_desc", html: (buff.desc || "").replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>').replace(/^· /gm, '<br>· ') })
+                    ] 
+                }));
+            }
+        });
+    }
+    
+    return create("div", { className: "u_l", children: [create("div", { className: "u", children: [
+        ...roomBuffElements,
+        create("div", { className: `${letter}_r u_r`, children: [create("div", { children: [create("p", { text: `${label} Lv${stageData.level || 70}` }), ...renderElementIcons(elements, "elem_"), create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }), summaryBars].filter(Boolean) })] }), 
+        create("div", { className: `${letter}_m u_m`, children: [create("div", { className: "stage", children: [create("div", { className: "emote_block_", children: [create("div", { className: "emote_", children: [image(`../../images/ZZZ%20images/emote/${1 + Math.floor(Math.random() * 6)}.png`, "", "")] })] }), create("div", { className: "stage_waves", children: (stageData.monsters || []).map((wave, wi) => renderWave(wave, wi, stageData.level, stageData.waveNames)) })] })] })]
+    })] });
 };
 
 const renderAllStages = () => {
     const floor = currentFloor();
     const rooms = Object.keys(floor.layer_room).sort();
-    const buffKeys = Object.keys(floor.layer_buff);
+    const buffKeys = Object.keys(floor.layer_buff || {});
     const container = byId("shiyuStages"); container.replaceChildren();
     
-    if (buffKeys.length > 0) {
+    const hasRoomBuffs = Object.values(floor.layer_room || {}).some(room => room.buffs && Object.keys(room.buffs).length > 0);
+    
+    if (!hasRoomBuffs && buffKeys.length > 0) {
         const buffRow = document.createElement("div"); 
         buffRow.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:12px;width:100%";
         buffKeys.forEach(bk => { 
@@ -236,7 +259,7 @@ const renderAllStages = () => {
         const stageData = floor.layer_room[rk]; 
         const wrapper = document.createElement("div"); 
         wrapper.style.cssText = `flex:1 1 ${rooms.length === 3 ? '30%' : '45%'};min-width:300px`; 
-        wrapper.appendChild(renderStage(stageData, text.stageLabels[i] || `房间${i + 1}`, stageData.weakness || [], i)); 
+        wrapper.appendChild(renderStage(stageData, text.stageLabels[i] || `房间${i + 1}`, stageData.weakness || [], i, stageData.buffs)); 
         monsterRow.appendChild(wrapper); 
     });
     container.appendChild(monsterRow);
@@ -458,7 +481,7 @@ const init = async () => {
     bindEvents();
     state.scheduleIndex = 0;
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).filter(k => k.length <= 7);
+    const keys = Object.keys(zone).filter(k => k.startsWith('zone_'));
     state.floorIndex = keys.length - 1;
     render();
 };
