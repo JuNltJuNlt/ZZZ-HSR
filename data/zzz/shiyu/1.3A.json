@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6200901": {
+    "zone_6200901": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009011": {
+        "room_62009011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "纵火犯",
@@ -40,7 +41,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -53,7 +55,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -66,13 +69,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62009012": {
+        "room_62009012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -100,26 +111,33 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200902": {
+    "zone_6200902": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009021": {
+        "room_62009021": {
           "level": 53,
           "monsters": [
             [
@@ -134,7 +152,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -147,7 +166,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -162,7 +182,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -177,13 +198,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62009022": {
+        "room_62009022": {
           "level": 53,
           "monsters": [
             [
@@ -199,7 +227,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -213,7 +242,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -225,7 +255,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -237,26 +268,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200903": {
+    "zone_6200903": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009031": {
+        "room_62009031": {
           "level": 55,
           "monsters": [
             [
@@ -270,7 +308,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -282,7 +321,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -296,7 +336,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -310,13 +351,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62009032": {
+        "room_62009032": {
           "level": 55,
           "monsters": [
             [
@@ -330,7 +378,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -342,7 +391,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -356,7 +406,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -370,26 +421,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200904": {
+    "zone_6200904": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009041": {
+        "room_62009041": {
           "level": 58,
           "monsters": [
             [
@@ -406,7 +464,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轻装猎兵",
@@ -419,7 +478,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "重装炮手",
@@ -434,7 +494,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "戍卫猎兵",
@@ -447,7 +508,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -462,13 +524,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62009042": {
+        "room_62009042": {
           "level": 58,
           "monsters": [
             [
@@ -483,7 +552,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "塔纳托斯",
@@ -496,7 +566,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -509,7 +580,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -522,7 +594,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -535,26 +608,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200905": {
+    "zone_6200905": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009051": {
+        "room_62009051": {
           "level": 60,
           "monsters": [
             [
@@ -568,7 +648,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -580,7 +661,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -594,7 +676,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -608,7 +691,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -622,13 +706,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62009052": {
+        "room_62009052": {
           "level": 60,
           "monsters": [
             [
@@ -644,7 +735,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -658,7 +750,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -670,7 +763,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -682,7 +776,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -696,26 +791,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200906": {
+    "zone_6200906": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009061": {
+        "room_62009061": {
           "level": 65,
           "monsters": [
             [
@@ -730,7 +832,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -743,8 +846,11 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·简",
                 "hp": 5665941,
@@ -757,13 +863,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·简",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62009062": {
+        "room_62009062": {
           "level": 65,
           "monsters": [
             [
@@ -777,8 +894,24 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
+              {
+                "name": "轰击猎兵",
+                "hp": 390526,
+                "defense": 636,
+                "stun": 1386,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "「护戍盾卫Ω型」",
                 "hp": 6497586,
@@ -791,40 +924,57 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
-              {
-                "name": "轰击猎兵",
-                "hp": 390526,
-                "defense": 636,
-                "stun": 1386,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「护戍盾卫Ω型」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200907": {
+    "zone_6200907": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001091": {
+        "buff_62001091": {
           "title": "缭乱川骛",
           "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62009071": {
+        "room_62009071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "「捷足巡游者」",
+                "hp": 2734021,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              }
+            ],
             [
               {
                 "name": "「提丰·挑战者型」",
@@ -839,28 +989,24 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
-              },
-              {
-                "name": "「捷足巡游者」",
-                "hp": 2734021,
-                "defense": 858,
-                "stun": 9335,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
                 ],
-                "resistance": [
-                  "以太"
-                ]
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「提丰·挑战者型」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62009072": {
+        "room_62009072": {
           "level": 70,
           "monsters": [
             [
@@ -875,8 +1021,11 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "星期五",
                 "hp": 8004942,
@@ -889,9 +1038,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "星期五",
+              "bold": true
+            }
           ],
           "weakness": []
         }

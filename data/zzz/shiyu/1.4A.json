@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6201201": {
+    "zone_6201201": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012011": {
+        "room_62012011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -40,7 +41,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -53,7 +55,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -66,13 +69,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62012012": {
+        "room_62012012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -100,26 +111,33 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201202": {
+    "zone_6201202": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012021": {
+        "room_62012021": {
           "level": 53,
           "monsters": [
             [
@@ -134,7 +152,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -147,7 +166,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -160,7 +180,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -173,13 +194,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62012022": {
+        "room_62012022": {
           "level": 53,
           "monsters": [
             [
@@ -196,7 +224,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -209,7 +238,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -222,7 +252,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -237,26 +268,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201203": {
+    "zone_6201203": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012031": {
+        "room_62012031": {
           "level": 55,
           "monsters": [
             [
@@ -270,7 +308,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -282,7 +321,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -296,7 +336,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -310,13 +351,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62012032": {
+        "room_62012032": {
           "level": 55,
           "monsters": [
             [
@@ -332,7 +380,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -346,7 +395,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -358,7 +408,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -370,7 +421,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -382,26 +434,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201204": {
+    "zone_6201204": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012041": {
+        "room_62012041": {
           "level": 58,
           "monsters": [
             [
@@ -416,7 +475,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -429,7 +489,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -442,7 +503,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -455,13 +517,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62012042": {
+        "room_62012042": {
           "level": 58,
           "monsters": [
             [
@@ -475,7 +544,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -489,7 +559,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -503,7 +574,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -517,7 +589,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轰击猎兵",
@@ -529,26 +602,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201205": {
+    "zone_6201205": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012051": {
+        "room_62012051": {
           "level": 60,
           "monsters": [
             [
@@ -563,7 +643,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -576,7 +657,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -589,7 +671,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -602,7 +685,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -615,13 +699,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62012052": {
+        "room_62012052": {
           "level": 60,
           "monsters": [
             [
@@ -636,7 +727,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -649,7 +741,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -664,7 +757,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -679,7 +773,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -694,42 +789,36 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201206": {
+    "zone_6201206": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012061": {
+        "room_62012061": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "恶名·塔纳托斯",
-                "hp": 6237615,
-                "defense": 953,
-                "stun": 8536,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "恶灵",
                 "hp": 418248,
@@ -741,7 +830,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "游魂",
@@ -754,13 +844,40 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·塔纳托斯",
+                "hp": 6237615,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·塔纳托斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62012062": {
+        "room_62012062": {
           "level": 65,
           "monsters": [
             [
@@ -775,7 +892,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -788,8 +906,11 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·简",
                 "hp": 6043670,
@@ -802,42 +923,40 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·简",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201207": {
+    "zone_6201207": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001121": {
+        "buff_62001121": {
           "title": "爆裂突击",
           "desc": "· 代理人造成的<color=#2EB6FF>电属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 攻击处于属性异常状态下的敌人时，代理人的暴击率提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62012071": {
+        "room_62012071": {
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "恶名·杜拉罕",
-                "hp": 6656169,
-                "defense": 953,
-                "stun": 13027,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "曼德拉",
                 "hp": 457419,
@@ -849,7 +968,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -862,7 +982,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -875,13 +996,40 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·杜拉罕",
+                "hp": 6656169,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·杜拉罕",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62012072": {
+        "room_62012072": {
           "level": 70,
           "monsters": [
             [
@@ -896,8 +1044,11 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "汉斯",
                 "hp": 8538605,
@@ -910,9 +1061,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -1,0 +1,1073 @@
+{
+  "name": "剧变节点",
+  "begin_time": "2026-01-09 04:00:00",
+  "end_time": "2026-01-23 03:59:59",
+  "zone": {
+    "6203901": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001391": {
+          "title": "寒光蚀铁",
+          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        }
+      },
+      "layer_room": {
+        "62039011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "轻装猎兵",
+                "hp": 206882,
+                "defense": 474,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 1307428,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「重装侵袭者」",
+                "hp": 1550049,
+                "defense": 640,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62039012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 14738,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 14738,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "哈提",
+                "hp": 1085071,
+                "defense": 640,
+                "stun": 3860,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 903612,
+                "defense": 533,
+                "stun": 4157,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203902": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001391": {
+          "title": "寒光蚀铁",
+          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        }
+      },
+      "layer_room": {
+        "62039021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2307710,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "轻装猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "「重装侵袭者」",
+                "hp": 2306888,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62039022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 376439,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 376439,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "哈提",
+                "hp": 1661212,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "铁道地精",
+                "hp": 2015443,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 316121,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203903": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001391": {
+          "title": "寒光蚀铁",
+          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        }
+      },
+      "layer_room": {
+        "62039031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "盗猎客",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 7427442,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62039032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 5550393,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 4404890,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "地精",
+                "hp": 4988499,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203904": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001391": {
+          "title": "寒光蚀铁",
+          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        }
+      },
+      "layer_room": {
+        "62039041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 828589,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "盗猎客",
+                "hp": 828589,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 15161034,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62039042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 4470543,
+                "defense": 858,
+                "stun": 5410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 11370776,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203905": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001391": {
+          "title": "寒光蚀铁",
+          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        },
+        "62001392": {
+          "title": "飞电掠火",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升30%，异常精通提升60点。\n· 代理人初始额外获得40点能量，属性异常造成的伤害提升20%。"
+        },
+        "62001393": {
+          "title": "流焰贯空",
+          "desc": "· 代理人的贯穿伤害提升10%，暴击伤害提升25%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人时无视其10%的全伤害抗性。"
+        }
+      },
+      "layer_room": {
+        "62039051_62039051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧打手",
+                "hp": 5150418,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 3878137,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽息行者·蝎骸",
+                "hp": 32607409,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽息行者·蝎骸",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "62039052_62039052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 5574908,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 5574908,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·「骇鸟」",
+                "hp": 23131355,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·「骇鸟」",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "62039053_62039053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "萨提尔",
+                "hp": 680871,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秉火领颂",
+                "hp": 6161310,
+                "defense": 794,
+                "stun": 9779,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽息原牲",
+                "hp": 1184706,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 26059149,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62039051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
+        "62001391": {
+          "title": "寒光蚀铁",
+          "desc": "· 代理人的暴击伤害提升15%，处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，攻击命中敌人时无视其10%的防御力。"
+        }
+      },
+      "layer_room": {
+        "62039051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧打手",
+                "hp": 5150418,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 3878137,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "秽息行者·蝎骸",
+                "hp": 32607409,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62039052": {
+      "name": "房间二",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
+        "62001392": {
+          "title": "飞电掠火",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升30%，异常精通提升60点。\n· 代理人初始额外获得40点能量，属性异常造成的伤害提升20%。"
+        }
+      },
+      "layer_room": {
+        "62039052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 5574908,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 5574908,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽蚀·「骇鸟」",
+                "hp": 23131355,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62039053": {
+      "name": "房间三",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
+        "62001393": {
+          "title": "流焰贯空",
+          "desc": "· 代理人的贯穿伤害提升10%，暴击伤害提升25%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人时无视其10%的全伤害抗性。"
+        }
+      },
+      "layer_room": {
+        "62039053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "萨提尔",
+                "hp": 680871,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秉火领颂",
+                "hp": 6161310,
+                "defense": 794,
+                "stun": 9779,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 26059149,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              },
+              {
+                "name": "秽息原牲",
+                "hp": 1184706,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

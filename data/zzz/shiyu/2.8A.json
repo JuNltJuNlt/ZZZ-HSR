@@ -3,18 +3,18 @@
   "begin_time": "2026-05-15 04:00:00",
   "end_time": "2026-05-29 03:59:59",
   "zone": {
-    "6204801": {
+    "zone_6204801": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001481": {
+        "buff_62001481": {
           "title": "寒息相续",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048011": {
+        "room_62048011": {
           "level": 50,
           "monsters": [
             [
@@ -76,9 +76,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62048012": {
+        "room_62048012": {
           "level": 50,
           "monsters": [
             [
@@ -126,22 +132,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204802": {
+    "zone_6204802": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001481": {
+        "buff_62001481": {
           "title": "寒息相续",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048021": {
+        "room_62048021": {
           "level": 55,
           "monsters": [
             [
@@ -231,9 +243,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62048022": {
+        "room_62048022": {
           "level": 55,
           "monsters": [
             [
@@ -308,22 +326,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204803": {
+    "zone_6204803": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001481": {
+        "buff_62001481": {
           "title": "寒息相续",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048031": {
+        "room_62048031": {
           "level": 60,
           "monsters": [
             [
@@ -399,9 +423,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62048032": {
+        "room_62048032": {
           "level": 60,
           "monsters": [
             [
@@ -480,22 +510,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204804": {
+    "zone_6204804": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001481": {
+        "buff_62001481": {
           "title": "寒息相续",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048041": {
+        "room_62048041": {
           "level": 65,
           "monsters": [
             [
@@ -512,7 +548,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 11370776,
@@ -529,11 +567,37 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62048042": {
+        "room_62048042": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "伐木机",
@@ -549,47 +613,43 @@
                   "冰"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "秽息残兵·盾卫",
-                "hp": 1469030,
-                "defense": 731,
-                "stun": 2178,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "伐木机",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6204805": {
+    "zone_6204805": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         },
-        "62001481": {
+        "buff_62001481": {
           "title": "寒息相续",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         },
-        "62001482": {
+        "buff_62001482": {
           "title": "鸣雷折锐",
           "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%，暴击伤害提升30%。\n· 代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048051_62048051": {
+        "room_62048051_62048051": {
           "level": 70,
           "monsters": [
             [
@@ -630,8 +690,12 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"],
-                "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
@@ -648,7 +712,7 @@
           ],
           "weakness": []
         },
-        "62048052_62048052": {
+        "room_62048052_62048052": {
           "level": 70,
           "monsters": [
             [
@@ -714,7 +778,7 @@
           ],
           "weakness": []
         },
-        "62048053_62048053": {
+        "room_62048053_62048053": {
           "level": 70,
           "monsters": [
             [
@@ -782,26 +846,18 @@
         }
       }
     },
-    "62048051": {
+    "zone_62048051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001481": {
+        "buff_62001481": {
           "title": "寒息相续",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048051": {
+        "room_62048051": {
           "level": 70,
           "monsters": [
             [
@@ -832,7 +888,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·狛野真斗",
                 "hp": 37985668,
@@ -840,35 +898,42 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"], "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "62048052": {
+    "zone_62048052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001482": {
+        "buff_62001482": {
           "title": "鸣雷折锐",
           "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%，暴击伤害提升30%。\n· 代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62048052": {
+        "room_62048052": {
           "level": 70,
           "monsters": [
             [
@@ -901,7 +966,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "缄枢",
                 "hp": 35277955,
@@ -920,30 +987,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62048053": {
+    "zone_62048053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62048053": {
+        "room_62048053": {
           "level": 70,
           "monsters": [
             [
@@ -976,7 +1045,9 @@
                   "冰"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 38364858,
@@ -994,6 +1065,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }

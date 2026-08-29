@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6201701": {
+    "zone_6201701": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017011": {
+        "room_62017011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -40,7 +41,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -55,7 +57,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -70,13 +73,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62017012": {
+        "room_62017012": {
           "level": 50,
           "monsters": [
             [
@@ -92,7 +102,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -104,7 +115,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -116,7 +128,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -130,26 +143,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201702": {
+    "zone_6201702": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017021": {
+        "room_62017021": {
           "level": 53,
           "monsters": [
             [
@@ -163,7 +183,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -175,7 +196,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -189,7 +211,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -203,13 +226,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62017022": {
+        "room_62017022": {
           "level": 53,
           "monsters": [
             [
@@ -224,7 +254,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -237,7 +268,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -250,7 +282,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -263,26 +296,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201703": {
+    "zone_6201703": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017031": {
+        "room_62017031": {
           "level": 55,
           "monsters": [
             [
@@ -297,7 +337,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -310,7 +351,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -323,7 +365,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -336,13 +379,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62017032": {
+        "room_62017032": {
           "level": 55,
           "monsters": [
             [
@@ -356,7 +406,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -370,7 +421,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -382,7 +434,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -396,26 +449,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201704": {
+    "zone_6201704": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017041": {
+        "room_62017041": {
           "level": 58,
           "monsters": [
             [
@@ -430,7 +490,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -443,7 +504,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -458,7 +520,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -473,7 +536,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -488,13 +552,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62017042": {
+        "room_62017042": {
           "level": 58,
           "monsters": [
             [
@@ -508,7 +579,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -522,7 +594,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -536,7 +609,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -550,7 +624,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轰击猎兵",
@@ -562,26 +637,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201705": {
+    "zone_6201705": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017051": {
+        "room_62017051": {
           "level": 60,
           "monsters": [
             [
@@ -596,7 +678,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -609,7 +692,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -622,7 +706,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -635,13 +720,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62017052": {
+        "room_62017052": {
           "level": 60,
           "monsters": [
             [
@@ -657,7 +749,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -669,7 +762,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -683,7 +777,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -695,7 +790,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -709,26 +805,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201706": {
+    "zone_6201706": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017061": {
+        "room_62017061": {
           "level": 65,
           "monsters": [
             [
@@ -743,7 +846,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -756,8 +860,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 9529793,
@@ -771,13 +878,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62017062": {
+        "room_62017062": {
           "level": 65,
           "monsters": [
             [
@@ -792,8 +910,11 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "汉斯",
                 "hp": 9981980,
@@ -806,28 +927,67 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201707": {
+    "zone_6201707": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001171": {
+        "buff_62001171": {
           "title": "逐火追雷",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人或使敌人进入失衡状态时，全队的暴击率提升15%，暴击伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62017071": {
+        "room_62017071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "弗瑟尔·蓄能型",
+                "hp": 825872,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "索迪代斯·蓄能型",
+                "hp": 825872,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "哈提头犬·蓄能型",
@@ -841,37 +1001,24 @@
                 ],
                 "resistance": [
                   "电"
-                ]
-              },
-              {
-                "name": "弗瑟尔·蓄能型",
-                "hp": 825872,
-                "defense": 636,
-                "stun": 2332,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "索迪代斯·蓄能型",
-                "hp": 825872,
-                "defense": 636,
-                "stun": 2332,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "哈提头犬·蓄能型",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62017072": {
+        "room_62017072": {
           "level": 70,
           "monsters": [
             [
@@ -885,7 +1032,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -897,8 +1045,11 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "特战强袭轰击者",
                 "hp": 9693259,
@@ -911,9 +1062,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "特战强袭轰击者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -3,18 +3,18 @@
   "begin_time": "2024-05-07 04:00:00",
   "end_time": "2024-05-14 03:59:59",
   "zone": {
-    "6200101": {
+    "zone_6200101": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001011": {
+        "room_62001011": {
           "level": 50,
           "monsters": [
             [
@@ -29,7 +29,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋",
@@ -42,7 +43,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -55,7 +57,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -68,7 +71,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -81,7 +85,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -94,13 +99,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62001012": {
+        "room_62001012": {
           "level": 50,
           "monsters": [
             [
@@ -114,7 +126,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -126,7 +139,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -140,7 +154,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -154,26 +169,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200102": {
+    "zone_6200102": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001021": {
+        "room_62001021": {
           "level": 53,
           "monsters": [
             [
@@ -189,7 +211,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -203,7 +226,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -215,7 +239,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -227,13 +252,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62001022": {
+        "room_62001022": {
           "level": 53,
           "monsters": [
             [
@@ -249,7 +281,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -261,7 +294,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -273,7 +307,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -287,26 +322,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200103": {
+    "zone_6200103": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001031": {
+        "room_62001031": {
           "level": 55,
           "monsters": [
             [
@@ -321,7 +363,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "重装炮手",
@@ -336,7 +379,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "戍卫猎兵",
@@ -349,7 +393,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -364,13 +409,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62001032": {
+        "room_62001032": {
           "level": 55,
           "monsters": [
             [
@@ -385,7 +437,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "偷猎者",
@@ -398,7 +451,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -411,7 +465,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -424,7 +479,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -437,26 +493,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200104": {
+    "zone_6200104": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001041": {
+        "room_62001041": {
           "level": 58,
           "monsters": [
             [
@@ -472,7 +535,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -484,7 +548,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -496,7 +561,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -508,7 +574,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -522,13 +589,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62001042": {
+        "room_62001042": {
           "level": 58,
           "monsters": [
             [
@@ -543,7 +617,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "装甲哈提",
@@ -556,7 +631,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -569,7 +645,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "地精",
@@ -582,7 +659,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -595,26 +673,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200105": {
+    "zone_6200105": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001051": {
+        "room_62001051": {
           "level": 60,
           "monsters": [
             [
@@ -628,7 +713,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -640,7 +726,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -654,7 +741,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -668,13 +756,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62001052": {
+        "room_62001052": {
           "level": 60,
           "monsters": [
             [
@@ -689,7 +784,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "纵火犯",
@@ -702,7 +798,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -715,7 +812,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -728,28 +826,50 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200106": {
+    "zone_6200106": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001061": {
+        "room_62001061": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "先锋猎兵",
+                "hp": 405219,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "「卫士Ⅲ型」",
@@ -763,25 +883,24 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
-              {
-                "name": "先锋猎兵",
-                "hp": 405219,
-                "defense": 636,
-                "stun": 1981,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「卫士Ⅲ型」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62001062": {
+        "room_62001062": {
           "level": 65,
           "monsters": [
             [
@@ -796,8 +915,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 4548311,
@@ -809,28 +931,83 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200107": {
+    "zone_6200107": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001011": {
+        "buff_62001011": {
           "title": "凌弱战术",
           "desc": "· 当场上存在普通敌人时，代理人对精英敌人和首领敌人造成的伤害降低25%，对普通敌人造成的伤害提升50%。\n· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[冲刺攻击]</color>造成的伤害提升50%。"
         }
       },
       "layer_room": {
-        "62001071": {
+        "room_62001071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "霍普利泰",
+                "hp": 476610,
+                "defense": 731,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 400241,
+                "defense": 572,
+                "stun": 2221,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 400241,
+                "defense": 572,
+                "stun": 2221,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "恶名·塔纳托斯",
@@ -843,8 +1020,27 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·塔纳托斯",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "room_62001072": {
+          "level": 70,
+          "monsters": [
+            [
               {
                 "name": "霍普利泰",
                 "hp": 476610,
@@ -856,41 +1052,10 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "曼德拉",
-                "hp": 400241,
-                "defense": 572,
-                "stun": 2221,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "曼德拉",
-                "hp": 400241,
-                "defense": 572,
-                "stun": 2221,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
-            ]
-          ],
-          "weakness": []
-        },
-        "62001072": {
-          "level": 70,
-          "monsters": [
+            ],
             [
               {
                 "name": "恶名·杜拉罕",
@@ -903,22 +1068,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "霍普利泰",
-                "hp": 476610,
-                "defense": 731,
-                "stun": 2115,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·杜拉罕",
+              "bold": true
+            }
           ],
           "weakness": []
         }

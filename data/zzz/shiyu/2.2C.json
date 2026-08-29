@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203201": {
+    "zone_6203201": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032011": {
+        "room_62032011": {
           "level": 50,
           "monsters": [
             [
@@ -28,7 +28,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -42,7 +43,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -54,7 +56,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -66,13 +69,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62032012": {
+        "room_62032012": {
           "level": 50,
           "monsters": [
             [
@@ -86,7 +96,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -98,7 +109,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -112,7 +124,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -126,26 +139,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203202": {
+    "zone_6203202": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032021": {
+        "room_62032021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -173,13 +194,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62032022": {
+        "room_62032022": {
           "level": 53,
           "monsters": [
             [
@@ -194,7 +222,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -207,7 +236,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -220,7 +250,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -233,26 +264,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203203": {
+    "zone_6203203": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032031": {
+        "room_62032031": {
           "level": 55,
           "monsters": [
             [
@@ -267,7 +305,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "装甲哈提",
@@ -280,7 +319,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -293,7 +333,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -306,7 +347,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -319,7 +361,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -332,13 +375,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62032032": {
+        "room_62032032": {
           "level": 55,
           "monsters": [
             [
@@ -352,7 +402,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -364,7 +415,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -378,7 +430,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -392,26 +445,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203204": {
+    "zone_6203204": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032041": {
+        "room_62032041": {
           "level": 58,
           "monsters": [
             [
@@ -427,7 +487,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -441,7 +502,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -455,7 +517,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -467,7 +530,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -479,13 +543,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62032042": {
+        "room_62032042": {
           "level": 58,
           "monsters": [
             [
@@ -500,7 +571,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -513,7 +585,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "杜拉罕",
@@ -526,7 +599,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -539,7 +613,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -552,7 +627,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -565,26 +641,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203205": {
+    "zone_6203205": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032051": {
+        "room_62032051": {
           "level": 60,
           "monsters": [
             [
@@ -599,7 +682,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -612,7 +696,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -625,7 +710,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -638,7 +724,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -651,13 +738,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62032052": {
+        "room_62032052": {
           "level": 60,
           "monsters": [
             [
@@ -672,7 +766,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "焚毁狂",
@@ -685,7 +780,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -700,7 +796,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -715,7 +812,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -730,26 +828,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203206": {
+    "zone_6203206": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032061": {
+        "room_62032061": {
           "level": 65,
           "monsters": [
             [
@@ -766,15 +871,38 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62032062": {
+        "room_62032062": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "格莱特",
@@ -788,41 +916,55 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "秽息残兵·盾卫",
-                "hp": 1469030,
-                "defense": 731,
-                "stun": 2178,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "格莱特",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203207": {
+    "zone_6203207": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001321": {
+        "buff_62001321": {
           "title": "赤海巡鲨",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62032071": {
+        "room_62032071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "赫斯克龙",
+                "hp": 1071492,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "秽息蚀者·阿瓦鲁斯",
@@ -837,26 +979,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
-              },
-              {
-                "name": "赫斯克龙",
-                "hp": 1071492,
-                "defense": 636,
-                "stun": 2327,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "以太"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62032072": {
+        "room_62032072": {
           "level": 70,
           "monsters": [
             [
@@ -873,9 +1013,16 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

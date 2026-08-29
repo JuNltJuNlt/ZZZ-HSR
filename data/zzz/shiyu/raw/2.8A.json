@@ -1,0 +1,1003 @@
+{
+  "name": "剧变节点",
+  "begin_time": "2026-05-15 04:00:00",
+  "end_time": "2026-05-29 03:59:59",
+  "zone": {
+    "6204801": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001481": {
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1550601,
+                "defense": 640,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1195789,
+                "defense": 640,
+                "stun": 4714,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 278913,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 278913,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62048012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1627606,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 299915,
+                "defense": 545,
+                "stun": 1175,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 299915,
+                "defense": 474,
+                "stun": 1175,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204802": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001481": {
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 376439,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 376439,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "哈提",
+                "hp": 1661212,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "铁道地精",
+                "hp": 2015443,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 316121,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62048022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 1853132,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 2395171,
+                "defense": 745,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204803": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001481": {
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 5550393,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 4404890,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "地精",
+                "hp": 4988499,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62048032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "突击炮手",
+                "hp": 4506004,
+                "defense": 858,
+                "stun": 5466,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4988499,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 6167254,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1104786,
+                "defense": 731,
+                "stun": 1360,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1104786,
+                "defense": 636,
+                "stun": 1360,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204804": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001481": {
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 4470543,
+                "defense": 858,
+                "stun": 5410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 11370776,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62048042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "伐木机",
+                "hp": 14855570,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6204805": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "62001451": {
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
+        },
+        "62001481": {
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "62001482": {
+          "title": "鸣雷折锐",
+          "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%，暴击伤害提升30%。\n· 代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048051_62048051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧打手",
+                "hp": 6867224,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 5170849,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 37985668,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": ["冰"],
+                "resistance": ["物理"],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "62048052_62048052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 6065056,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "突击炮手",
+                "hp": 4750822,
+                "defense": 858,
+                "stun": 7121,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "缄枢",
+                "hp": 35277955,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "62048053_62048053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 6065056,
+                "defense": 715,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 5103506,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 38364858,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62048051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
+        "62001481": {
+          "title": "寒息相续",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升10%，异常精通提升40点。\n· 使敌人进入属性异常状态后，全队造成的<color=#FFFFFF>[异放]</color>伤害提升30%，<color=#FFFFFF>[异放]</color>伤害无视敌人20%的<color=#98EFF0>冰属性伤害抗性</color>，持续10秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "魁梧打手",
+                "hp": 6867224,
+                "defense": 794,
+                "stun": 8891,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 5170849,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 37985668,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": ["冰"], "resistance": ["物理"],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62048052": {
+      "name": "房间二",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
+        "62001482": {
+          "title": "鸣雷折锐",
+          "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%，暴击伤害提升30%。\n· 代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62048052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 6065056,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "突击炮手",
+                "hp": 4750822,
+                "defense": 858,
+                "stun": 7121,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "缄枢",
+                "hp": 35277955,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "62048053": {
+      "name": "房间三",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001001": {
+          "title": "",
+          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
+        },
+        "62001002": {
+          "title": "",
+          "desc": ""
+        },
+        "62001451": {
+          "title": "诡色绮波",
+          "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
+        }
+      },
+      "layer_room": {
+        "62048053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 6065056,
+                "defense": 715,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 5103506,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 38364858,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

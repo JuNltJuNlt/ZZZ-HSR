@@ -3,18 +3,18 @@
   "begin_time": "2026-09-04 04:00:00",
   "end_time": "2026-09-18 03:59:59",
   "zone": {
-    "6205601": {
+    "zone_6205601": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001561": {
+        "buff_62001561": {
           "title": "幻霜蚀锋",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，暴击伤害提升25%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击命中失衡状态中的敌人后，其防御力降低25%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056011": {
+        "room_62056011": {
           "level": 50,
           "monsters": [
             [
@@ -80,9 +80,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62056012": {
+        "room_62056012": {
           "level": 50,
           "monsters": [
             [
@@ -144,22 +150,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205602": {
+    "zone_6205602": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001561": {
+        "buff_62001561": {
           "title": "幻霜蚀锋",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，暴击伤害提升25%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击命中失衡状态中的敌人后，其防御力降低25%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056021": {
+        "room_62056021": {
           "level": 55,
           "monsters": [
             [
@@ -225,9 +237,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62056022": {
+        "room_62056022": {
           "level": 55,
           "monsters": [
             [
@@ -289,22 +307,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205603": {
+    "zone_6205603": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001561": {
+        "buff_62001561": {
           "title": "幻霜蚀锋",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，暴击伤害提升25%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击命中失衡状态中的敌人后，其防御力降低25%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056031": {
+        "room_62056031": {
           "level": 60,
           "monsters": [
             [
@@ -386,9 +410,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62056032": {
+        "room_62056032": {
           "level": 60,
           "monsters": [
             [
@@ -464,22 +494,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205604": {
+    "zone_6205604": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001561": {
+        "buff_62001561": {
           "title": "幻霜蚀锋",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，暴击伤害提升25%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击命中失衡状态中的敌人后，其防御力降低25%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056041": {
+        "room_62056041": {
           "level": 65,
           "monsters": [
             [
@@ -500,22 +536,6 @@
                 "type": "B"
               },
               {
-                "name": "祸首·通缉打手",
-                "hp": 15161034,
-                "defense": 953,
-                "stun": 12195,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
-                ],
-                "type": "A"
-              },
-              {
                 "name": "通缉虐待狂",
                 "hp": 4808471,
                 "defense": 794,
@@ -531,11 +551,39 @@
                 ],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "祸首·通缉打手",
+                "hp": 15161034,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
           ],
           "weakness": []
         },
-        "62056042": {
+        "room_62056042": {
           "level": 65,
           "monsters": [
             [
@@ -557,30 +605,36 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "赫由托",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205605": {
+    "zone_6205605": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         },
-        "62001561": {
+        "buff_62001561": {
           "title": "幻霜蚀锋",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，暴击伤害提升25%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击命中失衡状态中的敌人后，其防御力降低25%，持续5秒，重复触发时刷新持续时间。"
         },
-        "62001562": {
+        "buff_62001562": {
           "title": "御雷贯芒",
           "desc": "· 代理人攻击命中敌人时无视其20%的<color=#2EB6FF>电属性伤害抗性</color>。 \n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击率提升5%，暴击伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056051_62056051": {
+        "room_62056051_62056051": {
           "level": 70,
           "monsters": [
             [
@@ -654,7 +708,7 @@
           ],
           "weakness": []
         },
-        "62056052_62056052": {
+        "room_62056052_62056052": {
           "level": 70,
           "monsters": [
             [
@@ -720,7 +774,7 @@
           ],
           "weakness": []
         },
-        "62056053_62056053": {
+        "room_62056053_62056053": {
           "level": 70,
           "monsters": [
             [
@@ -801,26 +855,18 @@
         }
       }
     },
-    "62056051": {
+    "zone_62056051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001561": {
+        "buff_62001561": {
           "title": "幻霜蚀锋",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，暴击伤害提升25%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击命中失衡状态中的敌人后，其防御力降低25%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056051": {
+        "room_62056051": {
           "level": 70,
           "monsters": [
             [
@@ -851,20 +897,6 @@
                 "type": "C"
               },
               {
-                "name": "特佩什",
-                "hp": 23234602,
-                "defense": 953,
-                "stun": 18627,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": [],
-                "type": "A"
-              },
-              {
                 "name": "离子体·普格努斯",
                 "hp": 7722230,
                 "defense": 858,
@@ -878,32 +910,50 @@
                 "resistance": [],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "特佩什",
+                "hp": 23234602,
+                "defense": 953,
+                "stun": 18627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "特佩什",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "62056052": {
+    "zone_62056052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "layer_room": {
-        "62056052": {
+        "room_62056052": {
           "level": 70,
           "monsters": [
             [
@@ -936,7 +986,9 @@
                   "物理"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "「空域戒戍者」",
                 "hp": 50615125,
@@ -955,30 +1007,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「空域戒戍者」",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62056053": {
+    "zone_62056053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001562": {
+        "buff_62001562": {
           "title": "御雷贯芒",
           "desc": "· 代理人攻击命中敌人时无视其20%的<color=#2EB6FF>电属性伤害抗性</color>。 \n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击率提升5%，暴击伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62056053": {
+        "room_62056053": {
           "level": 70,
           "monsters": [
             [
@@ -1024,7 +1078,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "缄枢",
                 "hp": 45262281,
@@ -1042,6 +1098,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
           ],
           "weakness": []
         }

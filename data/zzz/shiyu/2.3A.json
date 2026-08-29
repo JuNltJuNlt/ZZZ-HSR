@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203301": {
+    "zone_6203301": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033011": {
+        "room_62033011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -40,7 +41,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -53,13 +55,20 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62033012": {
+        "room_62033012": {
           "level": 50,
           "monsters": [
             [
@@ -75,7 +84,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -89,7 +99,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -101,7 +112,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -113,26 +125,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203302": {
+    "zone_6203302": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033021": {
+        "room_62033021": {
           "level": 53,
           "monsters": [
             [
@@ -147,7 +166,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -160,7 +180,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -175,7 +196,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -190,13 +212,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62033022": {
+        "room_62033022": {
           "level": 53,
           "monsters": [
             [
@@ -211,7 +240,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -224,7 +254,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -237,7 +268,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -250,7 +282,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -263,7 +296,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -276,26 +310,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203303": {
+    "zone_6203303": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033031": {
+        "room_62033031": {
           "level": 55,
           "monsters": [
             [
@@ -311,7 +352,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -325,7 +367,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -337,7 +380,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -349,7 +393,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -361,13 +406,20 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62033032": {
+        "room_62033032": {
           "level": 55,
           "monsters": [
             [
@@ -382,7 +434,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -395,7 +448,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -408,7 +462,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -421,7 +476,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "铁道地精",
@@ -434,7 +490,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -447,26 +504,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203304": {
+    "zone_6203304": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033041": {
+        "room_62033041": {
           "level": 58,
           "monsters": [
             [
@@ -482,7 +546,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -496,7 +561,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -510,7 +576,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -523,7 +590,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -536,13 +604,20 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62033042": {
+        "room_62033042": {
           "level": 58,
           "monsters": [
             [
@@ -558,7 +633,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -572,7 +648,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -584,7 +661,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -596,7 +674,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·狂乱暴徒",
@@ -610,26 +689,33 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203305": {
+    "zone_6203305": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033051": {
+        "room_62033051": {
           "level": 60,
           "monsters": [
             [
@@ -644,7 +730,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -657,7 +744,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -672,7 +760,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -687,7 +776,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -702,13 +792,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62033052": {
+        "room_62033052": {
           "level": 60,
           "monsters": [
             [
@@ -723,7 +820,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -736,7 +834,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·特里诺斯",
@@ -750,28 +849,51 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203306": {
+    "zone_6203306": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033061": {
+        "room_62033061": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1552975,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "伐木机",
@@ -785,28 +907,42 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
-              },
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "伐木机",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "room_62033062": {
+          "level": 65,
+          "monsters": [
+            [
               {
-                "name": "秽息残兵·盾卫",
-                "hp": 1552975,
-                "defense": 731,
+                "name": "赫斯克龙",
+                "hp": 1087316,
+                "defense": 636,
                 "stun": 2178,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "电"
+                  "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
-            ]
-          ],
-          "weakness": []
-        },
-        "62033062": {
-          "level": 65,
-          "monsters": [
+            ],
             [
               {
                 "name": "汉斯·超频型",
@@ -820,39 +956,37 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "赫斯克龙",
-                "hp": 1087316,
-                "defense": 636,
-                "stun": 2178,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "以太"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯·超频型",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203307": {
+    "zone_6203307": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001331": {
+        "buff_62001331": {
           "title": "机弦协律",
           "desc": "· 代理人生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升20%。\n· 当<color=#FFFFFF>[支援]</color>特性的代理人释放<color=#FFFFFF>[强化特殊技]</color>时，全队贯穿伤害提升20%，攻击力提升20%，持续20秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62033071": {
+        "room_62033071": {
           "level": 70,
           "monsters": [
             [
@@ -868,8 +1002,11 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
+                ],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "特战强袭轰击者",
                 "hp": 14770680,
@@ -882,13 +1019,24 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "特战强袭轰击者",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62033072": {
+        "room_62033072": {
           "level": 70,
           "monsters": [
             [
@@ -903,7 +1051,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               },
               {
                 "name": "帕里库斯",
@@ -916,9 +1065,16 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "帕里库斯、帕里库斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }

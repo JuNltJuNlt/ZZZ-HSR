@@ -1,0 +1,959 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6201901": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 195124,
+                "defense": 510,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1255582,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 1196178,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·塔纳托斯",
+                "hp": 1129953,
+                "defense": 533,
+                "stun": 4363,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 195124,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 195124,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201902": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "先锋猎兵",
+                "hp": 236736,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1144883,
+                "defense": 701,
+                "stun": 4935,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 236736,
+                "defense": 598,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1223679,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 1015566,
+                "defense": 701,
+                "stun": 4033,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 845730,
+                "defense": 585,
+                "stun": 4344,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 152422,
+                "defense": 468,
+                "stun": 1172,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 152422,
+                "defense": 468,
+                "stun": 1172,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 261047,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 261047,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201903": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "先锋猎兵",
+                "hp": 322662,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "整训猎兵",
+                "hp": 322662,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1667831,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 2076270,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 322662,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 322662,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "哈提",
+                "hp": 1423896,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 322662,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "铁道地精",
+                "hp": 1727522,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 270961,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201904": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 2169106,
+                "defense": 812,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 400997,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1699083,
+                "defense": 812,
+                "stun": 6060,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "整训猎兵",
+                "hp": 340910,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 374926,
+                "defense": 601,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 340910,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 340910,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 2256505,
+                "defense": 751,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 2169106,
+                "defense": 676,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201905": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 2986333,
+                "defense": 858,
+                "stun": 7793,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 3726411,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 688892,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 585665,
+                "defense": 731,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 3135628,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 3488818,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 2768788,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 3135628,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 645809,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 645809,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201906": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "整训猎兵",
+                "hp": 520828,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 700311,
+                "defense": 636,
+                "stun": 2079,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "特战强袭轰击者",
+                "hp": 8633766,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "格莱特·蓄能型",
+                "hp": 9981980,
+                "defense": 953,
+                "stun": 15816,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "弗瑟尔·蓄能型",
+                "hp": 702166,
+                "defense": 636,
+                "stun": 2183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯·蓄能型",
+                "hp": 702166,
+                "defense": 636,
+                "stun": 2183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201907": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001191": {
+          "title": "困顿桎梏",
+          "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
+        }
+      },
+      "layer_room": {
+        "62019071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 598663,
+                "defense": 731,
+                "stun": 1410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「护戍盾卫Ω型」",
+                "hp": 10953985,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 658370,
+                "defense": 636,
+                "stun": 1481,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62019072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "弗瑟尔",
+                "hp": 544325,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 544325,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "帕里库斯",
+                "hp": 7387572,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "帕里库斯",
+                "hp": 7387572,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

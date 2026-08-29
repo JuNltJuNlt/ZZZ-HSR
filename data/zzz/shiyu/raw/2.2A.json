@@ -1,0 +1,884 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6203001": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 238016,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1240039,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 932019,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "先锋猎兵",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 978590,
+                "defense": 640,
+                "stun": 4723,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 202350,
+                "defense": 545,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1045942,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203002": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "劫掠者",
+                "hp": 288775,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "通缉打手",
+                "hp": 1547584,
+                "defense": 649,
+                "stun": 7037,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 1885531,
+                "defense": 649,
+                "stun": 11637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 200802,
+                "defense": 559,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1579769,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203003": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 430138,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 2240977,
+                "defense": 689,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1684328,
+                "defense": 689,
+                "stun": 4852,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 1800186,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 2326738,
+                "defense": 745,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 430138,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 365684,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203004": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 386364,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "劫掠者",
+                "hp": 454463,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 2875919,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 3079934,
+                "defense": 751,
+                "stun": 14292,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 2875919,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "袭扰猎兵",
+                "hp": 348938,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1868503,
+                "defense": 812,
+                "stun": 5306,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 2068579,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 2557373,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 347531,
+                "defense": 601,
+                "stun": 1260,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203005": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 7427442,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 5928381,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 841483,
+                "defense": 636,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 4643763,
+                "defense": 858,
+                "stun": 6242,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4988499,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203006": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "伐木机",
+                "hp": 14855570,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "「捷足巡游者」",
+                "hp": 5423826,
+                "defense": 858,
+                "stun": 8739,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "「护戍盾卫」",
+                "hp": 15161034,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1469030,
+                "defense": 636,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203007": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001301": {
+          "title": "机弦协律",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升30%，属性异常造成的伤害提升30%。\n· 队伍内存在1名/2名[强攻]特性的代理人时，全队攻击力提升10%/25%。"
+        }
+      },
+      "layer_room": {
+        "62030071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 1191524,
+                "defense": 683,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "特战强袭轰击者",
+                "hp": 16155431,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62030072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·暗渊惩戒者",
+                "hp": 23964046,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

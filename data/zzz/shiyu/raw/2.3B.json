@@ -1,0 +1,827 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6203401": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 1240481,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·塔纳托斯",
+                "hp": 1171803,
+                "defense": 533,
+                "stun": 4363,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 202350,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 202350,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 238016,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1240039,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 932019,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203402": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1579769,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 291100,
+                "defense": 598,
+                "stun": 1228,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 291100,
+                "defense": 520,
+                "stun": 1228,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1505027,
+                "defense": 701,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 270716,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 270716,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 1564034,
+                "defense": 585,
+                "stun": 7165,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203403": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 21308,
+                "defense": 621,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 21308,
+                "defense": 621,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2241776,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1728807,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 430138,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 2305165,
+                "defense": 689,
+                "stun": 7264,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1735732,
+                "defense": 689,
+                "stun": 5542,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203404": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "弗瑟尔",
+                "hp": 426042,
+                "defense": 601,
+                "stun": 1984,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 426042,
+                "defense": 601,
+                "stun": 1984,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·特里诺斯",
+                "hp": 4033884,
+                "defense": 812,
+                "stun": 11420,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2368553,
+                "defense": 812,
+                "stun": 8322,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 2068579,
+                "defense": 872,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 2549494,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203405": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "离子体·塔纳托斯",
+                "hp": 5867558,
+                "defense": 715,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 5273556,
+                "defense": 922,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 984981,
+                "defense": 572,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 984981,
+                "defense": 572,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·狂乱暴徒",
+                "hp": 7119409,
+                "defense": 858,
+                "stun": 10228,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 6267146,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 3631444,
+                "defense": 715,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 1086134,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 1086134,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203406": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·狂乱暴徒",
+                "hp": 6665244,
+                "defense": 858,
+                "stun": 9630,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "秽蚀·特里诺斯",
+                "hp": 9627419,
+                "defense": 858,
+                "stun": 11075,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 4726002,
+                "defense": 858,
+                "stun": 5410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 12020534,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203407": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001341": {
+          "title": "寒冰淬火",
+          "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
+        }
+      },
+      "layer_room": {
+        "62034071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息蚀者·阿瓦鲁斯",
+                "hp": 22285003,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62034072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "赫由托",
+                "hp": 22464270,
+                "defense": 1588,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

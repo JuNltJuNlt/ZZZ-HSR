@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6200301": {
+    "zone_6200301": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003011": {
+        "room_62003011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -40,7 +41,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -53,7 +55,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -66,13 +69,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62003012": {
+        "room_62003012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -100,26 +111,33 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200302": {
+    "zone_6200302": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003021": {
+        "room_62003021": {
           "level": 53,
           "monsters": [
             [
@@ -134,7 +152,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "重装炮手",
@@ -149,7 +168,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "新晋猎兵",
@@ -162,7 +182,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "戍卫猎兵",
@@ -175,7 +196,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -190,13 +212,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62003022": {
+        "room_62003022": {
           "level": 53,
           "monsters": [
             [
@@ -212,7 +241,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -226,7 +256,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -238,7 +269,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -250,26 +282,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200303": {
+    "zone_6200303": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003031": {
+        "room_62003031": {
           "level": 55,
           "monsters": [
             [
@@ -284,7 +323,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -297,7 +337,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -310,7 +351,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿劳恩",
@@ -323,13 +365,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62003032": {
+        "room_62003032": {
           "level": 55,
           "monsters": [
             [
@@ -343,7 +392,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -355,7 +405,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -369,7 +420,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -383,26 +435,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200304": {
+    "zone_6200304": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003041": {
+        "room_62003041": {
           "level": 58,
           "monsters": [
             [
@@ -418,7 +477,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -432,7 +492,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -444,7 +505,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -456,13 +518,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62003042": {
+        "room_62003042": {
           "level": 58,
           "monsters": [
             [
@@ -478,7 +547,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -492,7 +562,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -504,7 +575,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -518,7 +590,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -530,26 +603,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200305": {
+    "zone_6200305": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003051": {
+        "room_62003051": {
           "level": 60,
           "monsters": [
             [
@@ -564,7 +644,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -577,7 +658,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -590,7 +672,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -603,13 +686,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62003052": {
+        "room_62003052": {
           "level": 60,
           "monsters": [
             [
@@ -625,7 +715,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -639,7 +730,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -653,7 +745,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -665,7 +758,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -677,42 +771,36 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200306": {
+    "zone_6200306": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003061": {
+        "room_62003061": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "恶名·装甲哈提",
-                "hp": 4548311,
-                "defense": 953,
-                "stun": 9817,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "恶灵",
                 "hp": 365967,
@@ -724,7 +812,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "游魂",
@@ -737,15 +826,57 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 4548311,
+                "defense": 953,
+                "stun": 9817,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62003062": {
+        "room_62003062": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "袭扰猎兵",
+                "hp": 365967,
+                "defense": 636,
+                "stun": 1519,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "「卫士Ⅲ型」",
@@ -759,40 +890,83 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
-              {
-                "name": "袭扰猎兵",
-                "hp": 365967,
-                "defense": 636,
-                "stun": 1519,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「卫士Ⅲ型」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200307": {
+    "zone_6200307": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001031": {
+        "buff_62001031": {
           "title": "精准协同",
           "desc": "· <color=#FFFFFF>[普通攻击]</color>造成的失衡值提升15%，<color=#FFFFFF>[连携技]</color>造成的伤害提升100%。\n· 代理人对处于失衡状态下的敌人造成的伤害额外提升50%。"
         }
       },
       "layer_room": {
-        "62003071": {
+        "room_62003071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "霍普利泰",
+                "hp": 389827,
+                "defense": 731,
+                "stun": 1622,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 306863,
+                "defense": 572,
+                "stun": 1703,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 306863,
+                "defense": 572,
+                "stun": 1703,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "恶名·塔纳托斯",
@@ -805,54 +979,54 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·塔纳托斯",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "room_62003072": {
+          "level": 70,
+          "monsters": [
+            [
               {
-                "name": "霍普利泰",
+                "name": "离子体·瑟托迪亚",
                 "hp": 389827,
-                "defense": 731,
+                "defense": 572,
                 "stun": 1622,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
-                "name": "曼德拉",
-                "hp": 306863,
+                "name": "离子体·纳塞勒亚",
+                "hp": 389827,
                 "defense": 572,
-                "stun": 1703,
+                "stun": 1622,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "曼德拉",
-                "hp": 306863,
-                "defense": 572,
-                "stun": 1703,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
-            ]
-          ],
-          "weakness": []
-        },
-        "62003072": {
-          "level": 70,
-          "monsters": [
+            ],
             [
               {
                 "name": "汉斯·超频型",
@@ -866,33 +1040,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "离子体·瑟托迪亚",
-                "hp": 389827,
-                "defense": 572,
-                "stun": 1622,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "离子体·纳塞勒亚",
-                "hp": 389827,
-                "defense": 572,
-                "stun": 1622,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯·超频型",
+              "bold": true
+            }
           ],
           "weakness": []
         }

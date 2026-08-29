@@ -1,0 +1,842 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6203101": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 202350,
+                "defense": 510,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1302085,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 896501,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 1302085,
+                "defense": 592,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203102": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 1208564,
+                "defense": 701,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 288775,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1269001,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "劫掠者",
+                "hp": 288775,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "通缉打手",
+                "hp": 1547584,
+                "defense": 649,
+                "stun": 7037,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 1885531,
+                "defense": 649,
+                "stun": 11637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203103": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 2241776,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 403238,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 403238,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 2329668,
+                "defense": 621,
+                "stun": 7396,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 2420489,
+                "defense": 689,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 2326738,
+                "defense": 621,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203104": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "袭扰猎兵",
+                "hp": 348938,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1868503,
+                "defense": 812,
+                "stun": 5306,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 2068579,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 2557373,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 347531,
+                "defense": 601,
+                "stun": 1260,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 386364,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "劫掠者",
+                "hp": 454463,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 2786996,
+                "defense": 751,
+                "stun": 10506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 3079934,
+                "defense": 751,
+                "stun": 14292,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 2875919,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203105": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 5550393,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 4404890,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 4988499,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 5928381,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "轻装猎兵",
+                "hp": 762085,
+                "defense": 636,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 4643763,
+                "defense": 858,
+                "stun": 6242,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 762085,
+                "defense": 731,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 4988499,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203106": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "骇鸟",
+                "hp": 15864929,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "「提丰·挑战者型」",
+                "hp": 12379396,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203107": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001311": {
+          "title": "寒冰淬火",
+          "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62031071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 4732077,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "汉斯",
+                "hp": 13341570,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62031072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 19918667,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

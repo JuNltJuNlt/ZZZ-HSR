@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202901": {
+    "zone_6202901": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029011": {
+        "room_62029011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -40,7 +41,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -53,7 +55,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -66,13 +69,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62029012": {
+        "room_62029012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -100,26 +111,33 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202902": {
+    "zone_6202902": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029021": {
+        "room_62029021": {
           "level": 53,
           "monsters": [
             [
@@ -134,7 +152,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -147,7 +166,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -162,7 +182,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -177,13 +198,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62029022": {
+        "room_62029022": {
           "level": 53,
           "monsters": [
             [
@@ -197,7 +225,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -211,7 +240,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -223,7 +253,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -237,26 +268,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202903": {
+    "zone_6202903": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029031": {
+        "room_62029031": {
           "level": 55,
           "monsters": [
             [
@@ -271,7 +309,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "纵火犯",
@@ -284,7 +323,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -297,7 +337,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -310,13 +351,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62029032": {
+        "room_62029032": {
           "level": 55,
           "monsters": [
             [
@@ -332,7 +380,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -344,7 +393,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -358,7 +408,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "整训猎兵",
@@ -370,7 +421,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -382,26 +434,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202904": {
+    "zone_6202904": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029041": {
+        "room_62029041": {
           "level": 58,
           "monsters": [
             [
@@ -416,7 +475,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -429,7 +489,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -444,7 +505,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -459,7 +521,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -474,13 +537,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62029042": {
+        "room_62029042": {
           "level": 58,
           "monsters": [
             [
@@ -494,7 +564,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -508,7 +579,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -522,7 +594,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -536,7 +609,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轰击猎兵",
@@ -548,26 +622,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202905": {
+    "zone_6202905": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029051": {
+        "room_62029051": {
           "level": 60,
           "monsters": [
             [
@@ -582,7 +663,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -595,7 +677,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -608,7 +691,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -621,13 +705,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62029052": {
+        "room_62029052": {
           "level": 60,
           "monsters": [
             [
@@ -643,7 +734,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -655,7 +747,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -669,7 +762,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -683,28 +777,51 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202906": {
+    "zone_6202906": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029061": {
+        "room_62029061": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "掠袭猎兵",
+                "hp": 1004352,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "「提丰·挑战者型」",
@@ -719,26 +836,24 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
-              },
-              {
-                "name": "掠袭猎兵",
-                "hp": 1004352,
-                "defense": 636,
-                "stun": 1981,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「提丰·挑战者型」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62029062": {
+        "room_62029062": {
           "level": 65,
           "monsters": [
             [
@@ -753,7 +868,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -767,8 +883,11 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
+                ],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "骇鸟",
                 "hp": 13371869,
@@ -781,28 +900,55 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "骇鸟",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202907": {
+    "zone_6202907": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001291": {
+        "buff_62001291": {
           "title": "霆击千嶂",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#F0D12B>物理伤害</color>提升20%，异常精通提升40点。\n· <color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，造成的伤害提升20%，暴击伤害提升40%。"
         }
       },
       "layer_room": {
-        "62029071": {
+        "room_62029071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "秽息原牲",
+                "hp": 1747441,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "牲鬼·凶魁愚者",
@@ -817,26 +963,24 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
-              },
-              {
-                "name": "秽息原牲",
-                "hp": 1747441,
-                "defense": 636,
-                "stun": 2327,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太",
-                  "物理"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62029072": {
+        "room_62029072": {
           "level": 70,
           "monsters": [
             [
@@ -850,7 +994,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -862,8 +1007,11 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "特战强袭轰击者",
                 "hp": 13616720,
@@ -876,9 +1024,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "特战强袭轰击者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

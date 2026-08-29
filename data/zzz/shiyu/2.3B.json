@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203401": {
+    "zone_6203401": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034011": {
+        "room_62034011": {
           "level": 50,
           "monsters": [
             [
@@ -28,7 +28,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -42,7 +43,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -54,7 +56,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -66,13 +69,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62034012": {
+        "room_62034012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -100,7 +111,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -113,7 +125,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -126,26 +139,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203402": {
+    "zone_6203402": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034021": {
+        "room_62034021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -173,7 +194,8 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽息残兵·炮手",
@@ -186,13 +208,20 @@
                   "火",
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62034022": {
+        "room_62034022": {
           "level": 53,
           "monsters": [
             [
@@ -207,7 +236,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -220,7 +250,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -233,7 +264,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -246,26 +278,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203403": {
+    "zone_6203403": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034031": {
+        "room_62034031": {
           "level": 55,
           "monsters": [
             [
@@ -280,7 +319,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -293,7 +333,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -306,7 +347,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -319,13 +361,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62034032": {
+        "room_62034032": {
           "level": 55,
           "monsters": [
             [
@@ -340,7 +389,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -353,7 +403,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -366,7 +417,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -379,26 +431,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203404": {
+    "zone_6203404": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034041": {
+        "room_62034041": {
           "level": 58,
           "monsters": [
             [
@@ -413,7 +472,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -426,7 +486,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·特里诺斯",
@@ -440,13 +501,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62034042": {
+        "room_62034042": {
           "level": 58,
           "monsters": [
             [
@@ -461,7 +529,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -474,7 +543,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "杜拉罕",
@@ -487,7 +557,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -500,7 +571,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -513,7 +585,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -526,26 +599,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203405": {
+    "zone_6203405": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034051": {
+        "room_62034051": {
           "level": 60,
           "monsters": [
             [
@@ -561,7 +641,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -575,7 +656,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -587,7 +669,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -599,7 +682,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·狂乱暴徒",
@@ -613,13 +697,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62034052": {
+        "room_62034052": {
           "level": 60,
           "monsters": [
             [
@@ -634,7 +725,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -647,7 +739,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -660,7 +753,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -673,26 +767,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203406": {
+    "zone_6203406": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034061": {
+        "room_62034061": {
           "level": 65,
           "monsters": [
             [
@@ -708,7 +809,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·特里诺斯",
@@ -722,13 +824,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62034062": {
+        "room_62034062": {
           "level": 65,
           "monsters": [
             [
@@ -743,8 +852,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 12020534,
@@ -756,26 +868,37 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203407": {
+    "zone_6203407": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001341": {
+        "buff_62001341": {
           "title": "寒冰淬火",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升15%。\n· 代理人处于<color=#FFFFFF>以太帷幕</color>中时，暴击伤害提升40%，贯穿伤害提升20%，退出<color=#FFFFFF>以太帷幕</color>后增益效果消失。"
         }
       },
       "layer_room": {
-        "62034071": {
+        "room_62034071": {
           "level": 70,
           "monsters": [
             [
@@ -792,13 +915,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62034072": {
+        "room_62034072": {
           "level": 70,
           "monsters": [
             [
@@ -815,9 +945,16 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "赫由托",
+              "bold": true
+            }
           ],
           "weakness": []
         }

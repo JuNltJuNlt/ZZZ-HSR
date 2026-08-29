@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6201001": {
+    "zone_6201001": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010011": {
+        "room_62010011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -40,13 +41,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62010012": {
+        "room_62010012": {
           "level": 50,
           "monsters": [
             [
@@ -60,7 +68,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -72,7 +81,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -86,7 +96,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -100,26 +111,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201002": {
+    "zone_6201002": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010021": {
+        "room_62010021": {
           "level": 53,
           "monsters": [
             [
@@ -134,7 +152,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -147,7 +166,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -160,7 +180,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -173,13 +194,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62010022": {
+        "room_62010022": {
           "level": 53,
           "monsters": [
             [
@@ -194,7 +222,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "焚毁狂",
@@ -207,7 +236,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -222,7 +252,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -237,26 +268,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201003": {
+    "zone_6201003": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010031": {
+        "room_62010031": {
           "level": 55,
           "monsters": [
             [
@@ -272,7 +310,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -284,7 +323,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -298,7 +338,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "整训猎兵",
@@ -310,7 +351,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -322,13 +364,20 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62010032": {
+        "room_62010032": {
           "level": 55,
           "monsters": [
             [
@@ -342,7 +391,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -354,7 +404,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -368,7 +419,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -382,26 +434,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201004": {
+    "zone_6201004": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010041": {
+        "room_62010041": {
           "level": 58,
           "monsters": [
             [
@@ -415,7 +474,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -429,7 +489,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -443,7 +504,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -457,7 +519,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轰击猎兵",
@@ -469,13 +532,20 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62010042": {
+        "room_62010042": {
           "level": 58,
           "monsters": [
             [
@@ -490,7 +560,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -503,7 +574,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -518,7 +590,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -533,7 +606,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -548,26 +622,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201005": {
+    "zone_6201005": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010051": {
+        "room_62010051": {
           "level": 60,
           "monsters": [
             [
@@ -582,7 +663,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -595,7 +677,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -608,7 +691,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -621,7 +705,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -634,7 +719,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -647,13 +733,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62010052": {
+        "room_62010052": {
           "level": 60,
           "monsters": [
             [
@@ -668,7 +761,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -681,7 +775,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -696,7 +791,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -711,7 +807,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -726,42 +823,36 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201006": {
+    "zone_6201006": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010061": {
+        "room_62010061": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "恶名·杜拉罕",
-                "hp": 5305456,
-                "defense": 953,
-                "stun": 14634,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "曼德拉",
                 "hp": 279535,
@@ -773,7 +864,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -786,7 +878,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -799,13 +892,40 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·杜拉罕",
+                "hp": 5305456,
+                "defense": 953,
+                "stun": 14634,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·杜拉罕",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62010062": {
+        "room_62010062": {
           "level": 65,
           "monsters": [
             [
@@ -820,7 +940,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -833,8 +954,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 6497586,
@@ -848,26 +972,37 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201007": {
+    "zone_6201007": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001101": {
+        "buff_62001101": {
           "title": "汹涌星流",
           "desc": "· 代理人的冲击力提升20%；使敌人进入失衡状态时，全队回复20点能量，全队攻击力提升20%，持续20秒，能量回复效果15秒内最多触发一次。\n· 进入失衡状态后，敌人的失衡易伤倍率随时间提升，每秒提升10%，通过这种方式最多提升60%。"
         }
       },
       "layer_room": {
-        "62010071": {
+        "room_62010071": {
           "level": 70,
           "monsters": [
             [
@@ -882,8 +1017,11 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "汉斯",
                 "hp": 8004942,
@@ -896,13 +1034,24 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62010072": {
+        "room_62010072": {
           "level": 70,
           "monsters": [
             [
@@ -917,7 +1066,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -930,8 +1080,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "色雷斯人",
                 "hp": 6864248,
@@ -943,9 +1096,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }

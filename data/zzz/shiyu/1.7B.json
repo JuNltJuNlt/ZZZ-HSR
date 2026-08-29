@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202101": {
+    "zone_6202101": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021011": {
+        "room_62021011": {
           "level": 50,
           "monsters": [
             [
@@ -26,7 +26,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -40,7 +41,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -52,7 +54,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -66,13 +69,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62021012": {
+        "room_62021012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -100,7 +111,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -113,7 +125,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -126,7 +139,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -139,26 +153,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202102": {
+    "zone_6202102": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021021": {
+        "room_62021021": {
           "level": 53,
           "monsters": [
             [
@@ -174,7 +195,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -188,7 +210,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -200,7 +223,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -212,13 +236,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62021022": {
+        "room_62021022": {
           "level": 53,
           "monsters": [
             [
@@ -233,7 +264,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -246,7 +278,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -259,7 +292,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -272,26 +306,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202103": {
+    "zone_6202103": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021031": {
+        "room_62021031": {
           "level": 55,
           "monsters": [
             [
@@ -306,7 +347,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -319,7 +361,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -332,7 +375,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -345,13 +389,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62021032": {
+        "room_62021032": {
           "level": 55,
           "monsters": [
             [
@@ -366,7 +417,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -379,7 +431,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -392,7 +445,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -405,7 +459,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "铁道地精",
@@ -418,7 +473,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -431,26 +487,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202104": {
+    "zone_6202104": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021041": {
+        "room_62021041": {
           "level": 58,
           "monsters": [
             [
@@ -464,7 +527,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -476,7 +540,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盛怒恶霸",
@@ -490,7 +555,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -504,13 +570,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62021042": {
+        "room_62021042": {
           "level": 58,
           "monsters": [
             [
@@ -525,7 +598,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -538,7 +612,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -551,7 +626,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -564,26 +640,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202105": {
+    "zone_6202105": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021051": {
+        "room_62021051": {
           "level": 60,
           "monsters": [
             [
@@ -599,7 +682,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -613,7 +697,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -627,7 +712,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -639,7 +725,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -651,13 +738,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62021052": {
+        "room_62021052": {
           "level": 60,
           "monsters": [
             [
@@ -672,7 +766,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -685,7 +780,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -698,7 +794,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -711,7 +808,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -724,26 +822,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202106": {
+    "zone_6202106": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021061": {
+        "room_62021061": {
           "level": 65,
           "monsters": [
             [
@@ -757,8 +862,24 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
+              {
+                "name": "轰击猎兵",
+                "hp": 624841,
+                "defense": 636,
+                "stun": 1386,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "「护戍盾卫Ω型」",
                 "hp": 10396138,
@@ -771,41 +892,27 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
-              {
-                "name": "轰击猎兵",
-                "hp": 624841,
-                "defense": 636,
-                "stun": 1386,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「护戍盾卫Ω型」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62021062": {
+        "room_62021062": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "色雷斯人",
-                "hp": 9337703,
-                "defense": 953,
-                "stun": 12805,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "阿佩卡（寄生态）",
                 "hp": 958764,
@@ -817,7 +924,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋（寄生态）",
@@ -830,7 +938,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "刺椎原虫",
@@ -842,26 +951,53 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "色雷斯人",
+                "hp": 9337703,
+                "defense": 953,
+                "stun": 12805,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202107": {
+    "zone_6202107": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001193": {
+        "buff_62001193": {
           "title": "幻霜凛然",
           "desc": "· <color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%。\n· 使敌人进入失衡状态或属性异常状态后，全队的<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62021071": {
+        "room_62021071": {
           "level": 70,
           "monsters": [
             [
@@ -876,8 +1012,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 9170778,
@@ -889,13 +1028,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62021072": {
+        "room_62021072": {
           "level": 70,
           "monsters": [
             [
@@ -910,7 +1060,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -923,7 +1074,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "帕里库斯",
+                "hp": 8508444,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               },
               {
                 "name": "帕里库斯",
@@ -936,22 +1104,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "帕里库斯",
-                "hp": 8508444,
-                "defense": 953,
-                "stun": 10030,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "帕里库斯、帕里库斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }

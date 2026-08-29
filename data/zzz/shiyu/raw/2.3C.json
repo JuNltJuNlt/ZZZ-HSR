@@ -1,0 +1,835 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6203501": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 202350,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "哈提",
+                "hp": 868057,
+                "defense": 640,
+                "stun": 3860,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "萨提尔",
+                "hp": 202350,
+                "defense": 427,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 1045942,
+                "defense": 533,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·特里诺斯",
+                "hp": 2039565,
+                "defense": 640,
+                "stun": 8961,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 238016,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1240039,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 932019,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203502": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 245504,
+                "defense": 559,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1579769,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 1505027,
+                "defense": 701,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 288775,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "轻装猎兵",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「重装侵袭者」",
+                "hp": 1504491,
+                "defense": 701,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203503": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "杜拉罕",
+                "hp": 1957858,
+                "defense": 800,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 365684,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 365684,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·狂乱暴徒",
+                "hp": 2643149,
+                "defense": 745,
+                "stun": 9533,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 2637822,
+                "defense": 689,
+                "stun": 10086,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 2915081,
+                "defense": 689,
+                "stun": 13721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 2721985,
+                "defense": 689,
+                "stun": 11440,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203504": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2368553,
+                "defense": 812,
+                "stun": 8322,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 2068579,
+                "defense": 872,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 2549494,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 386364,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 454463,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 2435526,
+                "defense": 751,
+                "stun": 7566,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1833891,
+                "defense": 751,
+                "stun": 5772,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203505": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 984981,
+                "defense": 572,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·狂乱暴徒",
+                "hp": 6873343,
+                "defense": 858,
+                "stun": 9017,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "秽蚀·特里诺斯",
+                "hp": 9928002,
+                "defense": 858,
+                "stun": 10371,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 6267146,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "轻装猎兵",
+                "hp": 805633,
+                "defense": 636,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 805633,
+                "defense": 731,
+                "stun": 1236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 5273556,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203506": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "「提丰·重击者型」",
+                "hp": 13086790,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 1070936,
+                "defense": 731,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 18027671,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203507": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001351": {
+          "title": "赤海巡鲨",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
+        }
+      },
+      "layer_room": {
+        "62035071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "赫斯克龙",
+                "hp": 1140620,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 23887553,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62035072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 21991703,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": ["冰"],
+                "resistance": ["物理"]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

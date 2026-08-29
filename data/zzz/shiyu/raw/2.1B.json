@@ -1,0 +1,932 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6202701": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "轻装猎兵",
+                "hp": 165506,
+                "defense": 474,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 1045942,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "「重装侵袭者」",
+                "hp": 1240039,
+                "defense": 640,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 11791,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 11791,
+                "defense": 533,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "哈提",
+                "hp": 868057,
+                "defense": 640,
+                "stun": 3860,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 722890,
+                "defense": 533,
+                "stun": 4157,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202702": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 288775,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1504491,
+                "defense": 649,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1130782,
+                "defense": 649,
+                "stun": 4701,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1505027,
+                "defense": 701,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1160643,
+                "defense": 701,
+                "stun": 4926,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 270716,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 270716,
+                "defense": 520,
+                "stun": 1846,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202703": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2241776,
+                "defense": 745,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "掠袭猎兵",
+                "hp": 430138,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "轻装猎兵",
+                "hp": 365684,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「重装侵袭者」",
+                "hp": 2240977,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 365684,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 365684,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "哈提",
+                "hp": 1613749,
+                "defense": 745,
+                "stun": 4722,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 365684,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "铁道地精",
+                "hp": 1957858,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 307089,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202704": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 386364,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 454463,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 2435526,
+                "defense": 751,
+                "stun": 7566,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1833891,
+                "defense": 751,
+                "stun": 5772,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2368553,
+                "defense": 812,
+                "stun": 8322,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 2068579,
+                "defense": 872,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 2549494,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202705": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 785323,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 785323,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 5845590,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 6260272,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 5845590,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 4678188,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 3712693,
+                "defense": 858,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 4204592,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 865971,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 865971,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202706": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "通缉打手",
+                "hp": 5382454,
+                "defense": 794,
+                "stun": 8323,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "通缉虐待狂",
+                "hp": 4052854,
+                "defense": 794,
+                "stun": 6350,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "蛮横力士",
+                "hp": 13564032,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 3768029,
+                "defense": 858,
+                "stun": 5410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 9583940,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202707": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001261": {
+          "title": "孤锋傲节",
+          "desc": "· 敌人的<color=#FE437E>以太属性伤害抗性</color>和<color=#F0D12B>物理属性伤害抗性</color>降低15%。\n· 释放<color=#FFFFFF>[强化特殊技]</color>或<color=#FFFFFF>[连携技]</color>后，代理人的属性异常伤害提升15%，暴击伤害提升20%，贯穿伤害提升20%，持续20秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62027071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 17027248,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62027072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 6389970,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "色雷斯人",
+                "hp": 13499688,
+                "defense": 953,
+                "stun": 13677,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

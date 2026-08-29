@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202501": {
+    "zone_6202501": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025011": {
+        "room_62025011": {
           "level": 50,
           "monsters": [
             [
@@ -26,7 +26,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -38,7 +39,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -52,7 +54,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -66,13 +69,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62025012": {
+        "room_62025012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -100,7 +111,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -113,7 +125,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -126,26 +139,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202502": {
+    "zone_6202502": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025021": {
+        "room_62025021": {
           "level": 53,
           "monsters": [
             [
@@ -159,7 +179,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -171,7 +192,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -185,7 +207,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -199,13 +222,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62025022": {
+        "room_62025022": {
           "level": 53,
           "monsters": [
             [
@@ -220,7 +250,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -233,7 +264,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -246,7 +278,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -259,26 +292,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202503": {
+    "zone_6202503": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025031": {
+        "room_62025031": {
           "level": 55,
           "monsters": [
             [
@@ -294,7 +334,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔·蓄能型",
@@ -306,7 +347,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯·蓄能型",
@@ -318,7 +360,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "地精·蓄能型",
@@ -332,13 +375,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62025032": {
+        "room_62025032": {
           "level": 55,
           "monsters": [
             [
@@ -354,7 +404,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -368,7 +419,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -380,7 +432,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -392,26 +445,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202504": {
+    "zone_6202504": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025041": {
+        "room_62025041": {
           "level": 58,
           "monsters": [
             [
@@ -426,7 +486,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -439,7 +500,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -454,7 +516,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -469,7 +532,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -484,13 +548,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62025042": {
+        "room_62025042": {
           "level": 58,
           "monsters": [
             [
@@ -505,7 +576,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -518,7 +590,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -531,7 +604,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -544,7 +618,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -557,7 +632,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -570,26 +646,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202505": {
+    "zone_6202505": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025051": {
+        "room_62025051": {
           "level": 60,
           "monsters": [
             [
@@ -603,7 +686,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -615,7 +699,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -629,7 +714,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -643,7 +729,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -657,13 +744,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62025052": {
+        "room_62025052": {
           "level": 60,
           "monsters": [
             [
@@ -678,7 +772,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -691,7 +786,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -704,7 +800,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -717,7 +814,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -730,26 +828,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202506": {
+    "zone_6202506": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025061": {
+        "room_62025061": {
           "level": 65,
           "monsters": [
             [
@@ -764,7 +869,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -777,8 +883,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 10829310,
@@ -792,13 +901,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62025062": {
+        "room_62025062": {
           "level": 65,
           "monsters": [
             [
@@ -815,28 +935,67 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202507": {
+    "zone_6202507": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001197": {
+        "buff_62001197": {
           "title": "炽袭绚烈",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62025071": {
+        "room_62025071": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "秉火领颂",
+                "hp": 7001489,
+                "defense": 794,
+                "stun": 9779,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "颂礼赞者",
+                "hp": 1234172,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "蛮横力士",
@@ -851,41 +1010,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
-              },
-              {
-                "name": "秉火领颂",
-                "hp": 7001489,
-                "defense": 794,
-                "stun": 9779,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
                 ],
-                "resistance": [
-                  "电"
-                ]
-              },
-              {
-                "name": "颂礼赞者",
-                "hp": 1234172,
-                "defense": 636,
-                "stun": 2327,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蛮横力士",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62025072": {
+        "room_62025072": {
           "level": 70,
           "monsters": [
             [
@@ -900,7 +1042,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -913,7 +1056,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "帕里库斯",
+                "hp": 8916035,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               },
               {
                 "name": "帕里库斯",
@@ -926,22 +1086,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "帕里库斯",
-                "hp": 8916035,
-                "defense": 953,
-                "stun": 10030,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "帕里库斯、帕里库斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }

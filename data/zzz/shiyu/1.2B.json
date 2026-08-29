@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6200701": {
+    "zone_6200701": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007011": {
+        "room_62007011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -40,13 +41,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62007012": {
+        "room_62007012": {
           "level": 50,
           "monsters": [
             [
@@ -60,7 +68,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -72,7 +81,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -86,7 +96,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -100,26 +111,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200702": {
+    "zone_6200702": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007021": {
+        "room_62007021": {
           "level": 53,
           "monsters": [
             [
@@ -134,7 +152,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -147,7 +166,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -160,7 +180,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -173,13 +194,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62007022": {
+        "room_62007022": {
           "level": 53,
           "monsters": [
             [
@@ -194,7 +222,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -207,7 +236,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -222,7 +252,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -237,26 +268,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200703": {
+    "zone_6200703": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007031": {
+        "room_62007031": {
           "level": 55,
           "monsters": [
             [
@@ -272,7 +310,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -286,7 +325,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -298,7 +338,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -310,7 +351,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -322,13 +364,20 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62007032": {
+        "room_62007032": {
           "level": 55,
           "monsters": [
             [
@@ -342,7 +391,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -354,7 +404,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -368,7 +419,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -382,26 +434,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200704": {
+    "zone_6200704": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007041": {
+        "room_62007041": {
           "level": 58,
           "monsters": [
             [
@@ -416,7 +475,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "哈提",
@@ -429,7 +489,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "塔纳托斯",
@@ -442,7 +503,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -455,7 +517,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -468,13 +531,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62007042": {
+        "room_62007042": {
           "level": 58,
           "monsters": [
             [
@@ -489,7 +559,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -502,7 +573,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -517,7 +589,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -532,7 +605,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -547,26 +621,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200705": {
+    "zone_6200705": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007051": {
+        "room_62007051": {
           "level": 60,
           "monsters": [
             [
@@ -580,7 +661,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -592,7 +674,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -606,7 +689,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -620,7 +704,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -634,13 +719,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62007052": {
+        "room_62007052": {
           "level": 60,
           "monsters": [
             [
@@ -655,7 +747,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -668,7 +761,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -681,7 +775,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -694,26 +789,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200706": {
+    "zone_6200706": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007061": {
+        "room_62007061": {
           "level": 65,
           "monsters": [
             [
@@ -728,7 +830,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -741,8 +844,11 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·简",
                 "hp": 4910482,
@@ -755,13 +861,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·简",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62007062": {
+        "room_62007062": {
           "level": 65,
           "monsters": [
             [
@@ -776,7 +893,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "戍卫猎兵",
@@ -789,8 +907,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "「护戍盾卫」",
                 "hp": 5631242,
@@ -804,42 +925,40 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「护戍盾卫」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200707": {
+    "zone_6200707": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001071": {
+        "buff_62001071": {
           "title": "不败之势",
           "desc": "· 拥有护盾时，代理人的属性异常积蓄效率提升25%。\n· 攻击命中处于属性异常状态下的敌人时，代理人造成的伤害提升35%。"
         }
       },
       "layer_room": {
-        "62007071": {
+        "room_62007071": {
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "恶名·杜拉罕",
-                "hp": 5408137,
-                "defense": 953,
-                "stun": 13027,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "曼德拉",
                 "hp": 371653,
@@ -851,7 +970,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -864,7 +984,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -877,13 +998,40 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·杜拉罕",
+                "hp": 5408137,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·杜拉罕",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62007072": {
+        "room_62007072": {
           "level": 70,
           "monsters": [
             [
@@ -898,7 +1046,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "焚毁狂",
@@ -911,8 +1060,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "蛮横力士",
                 "hp": 7030449,
@@ -926,9 +1078,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蛮横力士",
+              "bold": true
+            }
           ],
           "weakness": []
         }

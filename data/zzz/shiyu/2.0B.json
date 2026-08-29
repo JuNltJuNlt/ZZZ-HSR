@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202401": {
+    "zone_6202401": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024011": {
+        "room_62024011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -40,7 +41,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -55,7 +57,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -70,13 +73,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62024012": {
+        "room_62024012": {
           "level": 50,
           "monsters": [
             [
@@ -91,7 +101,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -104,7 +115,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -117,7 +129,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -130,26 +143,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202402": {
+    "zone_6202402": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024021": {
+        "room_62024021": {
           "level": 53,
           "monsters": [
             [
@@ -163,7 +183,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -175,7 +196,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -189,7 +211,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -203,13 +226,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62024022": {
+        "room_62024022": {
           "level": 53,
           "monsters": [
             [
@@ -224,7 +254,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -237,7 +268,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿佩卡（寄生态）",
@@ -250,7 +282,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋（寄生态）",
@@ -263,7 +296,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "刺椎原虫",
@@ -275,26 +309,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202403": {
+    "zone_6202403": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024031": {
+        "room_62024031": {
           "level": 55,
           "monsters": [
             [
@@ -308,7 +349,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -320,7 +362,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -334,7 +377,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -348,13 +392,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62024032": {
+        "room_62024032": {
           "level": 55,
           "monsters": [
             [
@@ -369,7 +420,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -382,7 +434,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -395,7 +448,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -408,7 +462,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "铁道地精",
@@ -421,7 +476,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -434,26 +490,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202404": {
+    "zone_6202404": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024041": {
+        "room_62024041": {
           "level": 58,
           "monsters": [
             [
@@ -467,7 +530,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -479,7 +543,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -493,7 +558,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -507,13 +573,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62024042": {
+        "room_62024042": {
           "level": 58,
           "monsters": [
             [
@@ -528,7 +601,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -541,7 +615,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -554,7 +629,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -567,7 +643,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -580,26 +657,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202405": {
+    "zone_6202405": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024051": {
+        "room_62024051": {
           "level": 60,
           "monsters": [
             [
@@ -614,7 +698,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -627,7 +712,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -642,7 +728,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -657,7 +744,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -672,13 +760,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62024052": {
+        "room_62024052": {
           "level": 60,
           "monsters": [
             [
@@ -693,7 +788,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "杜拉罕",
@@ -706,7 +802,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -719,7 +816,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -732,7 +830,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -745,26 +844,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202406": {
+    "zone_6202406": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024061": {
+        "room_62024061": {
           "level": 65,
           "monsters": [
             [
@@ -779,8 +885,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "恶名·塔纳托斯",
                 "hp": 9746274,
@@ -792,15 +901,54 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·塔纳托斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62024062": {
+        "room_62024062": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 723606,
+                "defense": 572,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 723606,
+                "defense": 572,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "汉斯·超频型",
@@ -814,67 +962,40 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "离子体·瑟托迪亚",
-                "hp": 723606,
-                "defense": 572,
-                "stun": 1981,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "离子体·纳塞勒亚",
-                "hp": 723606,
-                "defense": 572,
-                "stun": 1981,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯·超频型",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202407": {
+    "zone_6202407": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001196": {
+        "buff_62001196": {
           "title": "虎啸风生",
           "desc": "· 代理人的贯穿伤害提升20%，能量获取效率和闪能获得效率提升15%。\n· 使敌人进入失衡状态时，全队回复600点喧响值，并使全队的<color=#FE437E>以太属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，持续20秒，喧响值回复效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
-        "62024071": {
+        "room_62024071": {
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "哈提头犬·蓄能型",
-                "hp": 12737192,
-                "defense": 953,
-                "stun": 13027,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": [
-                  "电"
-                ]
-              },
               {
                 "name": "秉火领颂",
                 "hp": 6806228,
@@ -888,7 +1009,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "颂礼赞者",
@@ -901,13 +1023,41 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "哈提头犬·蓄能型",
+                "hp": 12737192,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "哈提头犬·蓄能型",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62024072": {
+        "room_62024072": {
           "level": 70,
           "monsters": [
             [
@@ -922,8 +1072,11 @@
                   "火",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 15925036,
@@ -937,9 +1090,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }

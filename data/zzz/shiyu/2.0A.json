@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202301": {
+    "zone_6202301": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023011": {
+        "room_62023011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -40,7 +41,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -53,7 +55,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -66,13 +69,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62023012": {
+        "room_62023012": {
           "level": 50,
           "monsters": [
             [
@@ -88,7 +98,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -102,7 +113,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -114,7 +126,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -126,26 +139,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202302": {
+    "zone_6202302": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023021": {
+        "room_62023021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -173,7 +194,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -186,7 +208,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -199,13 +222,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62023022": {
+        "room_62023022": {
           "level": 53,
           "monsters": [
             [
@@ -220,7 +250,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -233,26 +264,33 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202303": {
+    "zone_6202303": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023031": {
+        "room_62023031": {
           "level": 55,
           "monsters": [
             [
@@ -267,7 +305,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -280,7 +319,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -293,7 +333,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -306,13 +347,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62023032": {
+        "room_62023032": {
           "level": 55,
           "monsters": [
             [
@@ -327,7 +375,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -340,7 +389,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -353,7 +403,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -366,7 +417,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "铁道地精",
@@ -379,7 +431,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -392,26 +445,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202304": {
+    "zone_6202304": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023041": {
+        "room_62023041": {
           "level": 58,
           "monsters": [
             [
@@ -426,7 +486,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -439,7 +500,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -452,7 +514,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "班尼雷克",
@@ -465,13 +528,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62023042": {
+        "room_62023042": {
           "level": 58,
           "monsters": [
             [
@@ -487,7 +557,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -501,7 +572,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -515,7 +587,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -527,7 +600,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -539,26 +613,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202305": {
+    "zone_6202305": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023051": {
+        "room_62023051": {
           "level": 60,
           "monsters": [
             [
@@ -573,7 +654,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -586,7 +668,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -599,7 +682,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "恶灵",
@@ -612,7 +696,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "游魂",
@@ -625,13 +710,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62023052": {
+        "room_62023052": {
           "level": 60,
           "monsters": [
             [
@@ -646,7 +738,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -659,7 +752,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -672,7 +766,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -685,7 +780,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -698,26 +794,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202306": {
+    "zone_6202306": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023061": {
+        "room_62023061": {
           "level": 65,
           "monsters": [
             [
@@ -732,7 +835,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -745,7 +849,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "帕里库斯",
+                "hp": 10829310,
+                "defense": 953,
+                "stun": 9390,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               },
               {
                 "name": "帕里库斯",
@@ -758,26 +879,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "帕里库斯",
-                "hp": 10829310,
-                "defense": 953,
-                "stun": 9390,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "帕里库斯、帕里库斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62023062": {
+        "room_62023062": {
           "level": 65,
           "monsters": [
             [
@@ -792,8 +911,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 8121983,
@@ -805,26 +927,37 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202307": {
+    "zone_6202307": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001195": {
+        "buff_62001195": {
           "title": "寒枪幻棘",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动<color=#FFFFFF>[快速支援]</color>和<color=#FFFFFF>[终结技]</color>时，自身贯穿伤害提升30%，暴击伤害提升20%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62023071": {
+        "room_62023071": {
           "level": 70,
           "monsters": [
             [
@@ -841,13 +974,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62023072": {
+        "room_62023072": {
           "level": 70,
           "monsters": [
             [
@@ -862,9 +1002,16 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "特佩什",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -3,18 +3,18 @@
   "begin_time": "2025-12-29 15:00:00",
   "end_time": "2026-01-09 03:59:59",
   "zone": {
-    "6203801": {
+    "zone_6203801": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001381": {
+        "buff_62001381": {
           "title": "曙色引光",
           "desc": "· 代理人的攻击力提升30%，暴击伤害提升15%。\n· 敌人的失衡易伤倍率提升20%。"
         }
       },
       "layer_room": {
-        "62038011": {
+        "room_62038011": {
           "level": 50,
           "monsters": [
             [
@@ -76,9 +76,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62038012": {
+        "room_62038012": {
           "level": 50,
           "monsters": [
             [
@@ -140,22 +146,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6203802": {
+    "zone_6203802": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001381": {
+        "buff_62001381": {
           "title": "曙色引光",
           "desc": "· 代理人的攻击力提升30%，暴击伤害提升15%。\n· 敌人的失衡易伤倍率提升20%。"
         }
       },
       "layer_room": {
-        "62038021": {
+        "room_62038021": {
           "level": 55,
           "monsters": [
             [
@@ -217,9 +229,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62038022": {
+        "room_62038022": {
           "level": 55,
           "monsters": [
             [
@@ -294,22 +312,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6203803": {
+    "zone_6203803": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001381": {
+        "buff_62001381": {
           "title": "曙色引光",
           "desc": "· 代理人的攻击力提升30%，暴击伤害提升15%。\n· 敌人的失衡易伤倍率提升20%。"
         }
       },
       "layer_room": {
-        "62038031": {
+        "room_62038031": {
           "level": 60,
           "monsters": [
             [
@@ -391,9 +415,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62038032": {
+        "room_62038032": {
           "level": 60,
           "monsters": [
             [
@@ -457,24 +487,46 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6203804": {
+    "zone_6203804": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001381": {
+        "buff_62001381": {
           "title": "曙色引光",
           "desc": "· 代理人的攻击力提升30%，暴击伤害提升15%。\n· 敌人的失衡易伤倍率提升20%。"
         }
       },
       "layer_room": {
-        "62038041": {
+        "room_62038041": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "伐木机",
@@ -490,45 +542,25 @@
                   "冰"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "秽息残兵·盾卫",
-                "hp": 1469030,
-                "defense": 731,
-                "stun": 2178,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "伐木机",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62038042": {
+        "room_62038042": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "「提丰·挑战者型」",
-                "hp": 12379396,
-                "defense": 953,
-                "stun": 12195,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
-              },
               {
                 "name": "「捷足巡游者」",
                 "hp": 5423826,
@@ -559,32 +591,60 @@
                 "resistance": [],
                 "type": "C"
               }
+            ],
+            [
+              {
+                "name": "「提丰·挑战者型」",
+                "hp": 12379396,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「提丰·挑战者型」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203805": {
+    "zone_6203805": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001381": {
+        "buff_62001381": {
           "title": "曙色引光",
           "desc": "· 代理人的攻击力提升30%，暴击伤害提升15%。\n· 敌人的失衡易伤倍率提升20%。"
         },
-        "62001382": {
+        "buff_62001382": {
           "title": "累雪攒霜",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，代理人的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         },
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62038051_62038051": {
+        "room_62038051_62038051": {
           "level": 70,
           "monsters": [
             [
@@ -653,7 +713,7 @@
           ],
           "weakness": []
         },
-        "62038052_62038052": {
+        "room_62038052_62038052": {
           "level": 70,
           "monsters": [
             [
@@ -719,7 +779,7 @@
           ],
           "weakness": []
         },
-        "62038053_62038053": {
+        "room_62038053_62038053": {
           "level": 70,
           "monsters": [
             [
@@ -774,8 +834,12 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"],
-                "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
@@ -794,26 +858,18 @@
         }
       }
     },
-    "62038051": {
+    "zone_62038051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001381": {
+        "buff_62001381": {
           "title": "曙色引光",
           "desc": "· 代理人的攻击力提升30%，暴击伤害提升15%。\n· 敌人的失衡易伤倍率提升20%。"
         }
       },
       "layer_room": {
-        "62038051": {
+        "room_62038051": {
           "level": 70,
           "monsters": [
             [
@@ -848,7 +904,9 @@
                   "电"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "牲鬼·卫律使者",
                 "hp": 28429055,
@@ -868,30 +926,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·卫律使者",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62038052": {
+    "zone_62038052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62038052": {
+        "room_62038052": {
           "level": 70,
           "monsters": [
             [
@@ -924,7 +984,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "牲鬼·凶魁愚者",
                 "hp": 25701506,
@@ -943,30 +1005,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62038053": {
+    "zone_62038053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001382": {
+        "buff_62001382": {
           "title": "累雪攒霜",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，代理人的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62038053": {
+        "room_62038053": {
           "level": 70,
           "monsters": [
             [
@@ -1011,7 +1075,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·狛野真斗",
                 "hp": 23990948,
@@ -1019,10 +1085,25 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"], "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -3,18 +3,18 @@
   "begin_time": "2026-08-07 04:00:00",
   "end_time": "2026-08-21 03:59:59",
   "zone": {
-    "6205401": {
+    "zone_6205401": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "layer_room": {
-        "62054011": {
+        "room_62054011": {
           "level": 50,
           "monsters": [
             [
@@ -76,9 +76,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62054012": {
+        "room_62054012": {
           "level": 50,
           "monsters": [
             [
@@ -140,22 +146,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205402": {
+    "zone_6205402": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "layer_room": {
-        "62054021": {
+        "room_62054021": {
           "level": 55,
           "monsters": [
             [
@@ -245,9 +257,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62054022": {
+        "room_62054022": {
           "level": 55,
           "monsters": [
             [
@@ -311,22 +329,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205403": {
+    "zone_6205403": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "layer_room": {
-        "62054031": {
+        "room_62054031": {
           "level": 60,
           "monsters": [
             [
@@ -402,9 +426,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62054032": {
+        "room_62054032": {
           "level": 60,
           "monsters": [
             [
@@ -481,22 +511,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205404": {
+    "zone_6205404": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "layer_room": {
-        "62054041": {
+        "room_62054041": {
           "level": 65,
           "monsters": [
             [
@@ -513,7 +549,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 11370776,
@@ -530,9 +568,19 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62054042": {
+        "room_62054042": {
           "level": 65,
           "monsters": [
             [
@@ -549,7 +597,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "蜕生·蝎骸",
                 "hp": 14913227,
@@ -568,30 +618,40 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·蝎骸",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205405": {
+    "zone_6205405": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001522": {
-          "title": "紊音共振",
-          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
-        },
-        "62001541": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         },
-        "62001542": {
+        "buff_62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        },
+        "buff_62001542": {
           "title": "霜雷破锋",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击伤害提升30%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62054051_62054051": {
+        "room_62054051_62054051": {
           "level": 70,
           "monsters": [
             [
@@ -669,7 +729,7 @@
           ],
           "weakness": []
         },
-        "62054052_62054052": {
+        "room_62054052_62054052": {
           "level": 70,
           "monsters": [
             [
@@ -749,7 +809,7 @@
           ],
           "weakness": []
         },
-        "62054053_62054053": {
+        "room_62054053_62054053": {
           "level": 70,
           "monsters": [
             [
@@ -830,45 +890,21 @@
         }
       }
     },
-    "62054051": {
+    "zone_62054051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001541": {
+        "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
         }
       },
       "layer_room": {
-        "62054051": {
+        "room_62054051": {
           "level": 70,
           "monsters": [
             [
-              {
-                "name": "蜕生·阿瓦鲁斯",
-                "hp": 37141671,
-                "defense": 953,
-                "stun": 15487,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "物理",
-                  "风"
-                ],
-                "resistance": [
-                  "火"
-                ],
-                "type": "A"
-              },
               {
                 "name": "城防戍卫布",
                 "hp": 7965171,
@@ -911,32 +947,52 @@
                 "resistance": [],
                 "type": "C"
               }
+            ],
+            [
+              {
+                "name": "蜕生·阿瓦鲁斯",
+                "hp": 37141671,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·阿瓦鲁斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "62054052": {
+    "zone_62054052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62054052": {
+        "room_62054052": {
           "level": 70,
           "monsters": [
             [
@@ -983,7 +1039,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·星徽·比利",
                 "hp": 30388356,
@@ -1002,30 +1060,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·星徽·比利",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62054053": {
+    "zone_62054053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001542": {
+        "buff_62001542": {
           "title": "霜雷破锋",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升30%。 \n· <color=#FFFFFF>[强攻]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身暴击伤害提升30%，持续20秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62054053": {
+        "room_62054053": {
           "level": 70,
           "monsters": [
             [
@@ -1043,22 +1103,6 @@
                   "火"
                 ],
                 "type": "B"
-              },
-              {
-                "name": "牲鬼·凶魁愚者",
-                "hp": 39837334,
-                "defense": 953,
-                "stun": 14328,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
               },
               {
                 "name": "秽息残兵·盾卫",
@@ -1088,7 +1132,35 @@
                 "resistance": [],
                 "type": "C"
               }
+            ],
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 39837334,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

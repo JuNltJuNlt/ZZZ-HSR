@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6201101": {
+    "zone_6201101": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011011": {
+        "room_62011011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -40,7 +41,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -53,7 +55,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -66,13 +69,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62011012": {
+        "room_62011012": {
           "level": 50,
           "monsters": [
             [
@@ -88,7 +98,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -100,7 +111,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -112,7 +124,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -126,26 +139,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201102": {
+    "zone_6201102": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011021": {
+        "room_62011021": {
           "level": 53,
           "monsters": [
             [
@@ -159,7 +179,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -171,7 +192,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -185,7 +207,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -199,13 +222,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62011022": {
+        "room_62011022": {
           "level": 53,
           "monsters": [
             [
@@ -220,7 +250,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -233,7 +264,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -246,7 +278,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -259,26 +292,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201103": {
+    "zone_6201103": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011031": {
+        "room_62011031": {
           "level": 55,
           "monsters": [
             [
@@ -292,7 +332,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -304,7 +345,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -318,7 +360,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -332,13 +375,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62011032": {
+        "room_62011032": {
           "level": 55,
           "monsters": [
             [
@@ -353,7 +403,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "装甲哈提",
@@ -366,7 +417,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -379,7 +431,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -392,7 +445,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -405,7 +459,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -418,26 +473,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201104": {
+    "zone_6201104": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011041": {
+        "room_62011041": {
           "level": 58,
           "monsters": [
             [
@@ -451,7 +513,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -463,7 +526,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -477,7 +541,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -491,7 +556,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -505,13 +571,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62011042": {
+        "room_62011042": {
           "level": 58,
           "monsters": [
             [
@@ -526,7 +599,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -539,7 +613,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -552,7 +627,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -565,26 +641,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201105": {
+    "zone_6201105": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011051": {
+        "room_62011051": {
           "level": 60,
           "monsters": [
             [
@@ -600,7 +683,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -612,7 +696,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -626,7 +711,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -640,13 +726,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62011052": {
+        "room_62011052": {
           "level": 60,
           "monsters": [
             [
@@ -661,7 +754,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "塔纳托斯",
@@ -674,7 +768,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -687,7 +782,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -700,7 +796,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -713,26 +810,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201106": {
+    "zone_6201106": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011061": {
+        "room_62011061": {
           "level": 65,
           "monsters": [
             [
@@ -747,8 +851,25 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
+              {
+                "name": "掷弹猎兵",
+                "hp": 509317,
+                "defense": 636,
+                "stun": 2079,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "「护戍盾卫」",
                 "hp": 6930759,
@@ -762,42 +883,27 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
-              },
-              {
-                "name": "掷弹猎兵",
-                "hp": 509317,
-                "defense": 636,
-                "stun": 2079,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「护戍盾卫」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62011062": {
+        "room_62011062": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "恶名·装甲哈提",
-                "hp": 5198069,
-                "defense": 953,
-                "stun": 8536,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "曼德拉",
                 "hp": 388903,
@@ -809,7 +915,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -822,7 +929,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -835,26 +943,53 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 5198069,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201107": {
+    "zone_6201107": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001111": {
+        "buff_62001111": {
           "title": "异常冲击",
           "desc": "· 代理人的<color=#2EB6FF>电属性异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 使敌人进入属性异常状态时，全队暴击伤害提升20%，属性异常效果造成的伤害提升20%，最多叠加3层，持续30秒，每层效果单独结算持续时间。"
         }
       },
       "layer_room": {
-        "62011071": {
+        "room_62011071": {
           "level": 70,
           "monsters": [
             [
@@ -869,7 +1004,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "焚毁狂",
@@ -882,8 +1018,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 8151803,
@@ -897,13 +1036,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62011072": {
+        "room_62011072": {
           "level": 70,
           "monsters": [
             [
@@ -918,7 +1068,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "霍普利泰",
@@ -931,8 +1082,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "色雷斯人",
                 "hp": 7321865,
@@ -944,9 +1098,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }

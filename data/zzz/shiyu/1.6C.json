@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6201901": {
+    "zone_6201901": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019011": {
+        "room_62019011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -40,13 +41,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62019012": {
+        "room_62019012": {
           "level": 50,
           "monsters": [
             [
@@ -62,7 +70,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -76,7 +85,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -88,7 +98,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -100,26 +111,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201902": {
+    "zone_6201902": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019021": {
+        "room_62019021": {
           "level": 53,
           "monsters": [
             [
@@ -133,7 +151,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -147,7 +166,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -159,7 +179,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -173,13 +194,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62019022": {
+        "room_62019022": {
           "level": 53,
           "monsters": [
             [
@@ -194,7 +222,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -207,7 +236,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -220,7 +250,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -233,7 +264,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -246,7 +278,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -259,26 +292,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201903": {
+    "zone_6201903": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019031": {
+        "room_62019031": {
           "level": 55,
           "monsters": [
             [
@@ -292,7 +332,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -304,7 +345,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -318,7 +360,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -332,13 +375,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62019032": {
+        "room_62019032": {
           "level": 55,
           "monsters": [
             [
@@ -353,7 +403,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -366,7 +417,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -379,7 +431,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -392,7 +445,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "铁道地精",
@@ -405,7 +459,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -418,26 +473,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201904": {
+    "zone_6201904": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019041": {
+        "room_62019041": {
           "level": 58,
           "monsters": [
             [
@@ -453,7 +515,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -465,7 +528,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -479,7 +543,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "整训猎兵",
@@ -491,7 +556,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -503,13 +569,20 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62019042": {
+        "room_62019042": {
           "level": 58,
           "monsters": [
             [
@@ -523,7 +596,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -535,7 +609,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盛怒恶霸",
@@ -549,7 +624,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -563,26 +639,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201905": {
+    "zone_6201905": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019051": {
+        "room_62019051": {
           "level": 60,
           "monsters": [
             [
@@ -598,7 +681,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -612,7 +696,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -624,7 +709,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -636,7 +722,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -650,13 +737,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62019052": {
+        "room_62019052": {
           "level": 60,
           "monsters": [
             [
@@ -671,7 +765,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -684,7 +779,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -697,7 +793,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -710,7 +807,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -723,26 +821,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201906": {
+    "zone_6201906": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019061": {
+        "room_62019061": {
           "level": 65,
           "monsters": [
             [
@@ -756,7 +861,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -768,8 +874,11 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "特战强袭轰击者",
                 "hp": 8633766,
@@ -782,15 +891,54 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "特战强袭轰击者",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62019062": {
+        "room_62019062": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "弗瑟尔·蓄能型",
+                "hp": 702166,
+                "defense": 636,
+                "stun": 2183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "索迪代斯·蓄能型",
+                "hp": 702166,
+                "defense": 636,
+                "stun": 2183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "格莱特·蓄能型",
@@ -804,50 +952,37 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "弗瑟尔·蓄能型",
-                "hp": 702166,
-                "defense": 636,
-                "stun": 2183,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "索迪代斯·蓄能型",
-                "hp": 702166,
-                "defense": 636,
-                "stun": 2183,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "格莱特·蓄能型",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201907": {
+    "zone_6201907": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001191": {
+        "buff_62001191": {
           "title": "困顿桎梏",
           "desc": "· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升25%，失衡值提升15%。\n· 敌人进入失衡状态后，其失衡恢复速度降低15%，代理人对其造成的<color=#2EB6FF>电属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升40%。"
         }
       },
       "layer_room": {
-        "62019071": {
+        "room_62019071": {
           "level": 70,
           "monsters": [
             [
@@ -861,8 +996,24 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
+              {
+                "name": "轰击猎兵",
+                "hp": 658370,
+                "defense": 636,
+                "stun": 1481,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "「护戍盾卫Ω型」",
                 "hp": 10953985,
@@ -875,25 +1026,24 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
-              {
-                "name": "轰击猎兵",
-                "hp": 658370,
-                "defense": 636,
-                "stun": 1481,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「护戍盾卫Ω型」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62019072": {
+        "room_62019072": {
           "level": 70,
           "monsters": [
             [
@@ -908,7 +1058,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -921,7 +1072,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "帕里库斯",
+                "hp": 7387572,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               },
               {
                 "name": "帕里库斯",
@@ -934,22 +1102,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "帕里库斯",
-                "hp": 7387572,
-                "defense": 953,
-                "stun": 10030,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "帕里库斯、帕里库斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -1,0 +1,977 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6201501": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 195124,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 195124,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 864483,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 1196178,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1196178,
+                "defense": 640,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 697072,
+                "defense": 533,
+                "stun": 4157,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡（寄生态）",
+                "hp": 269307,
+                "defense": 427,
+                "stun": 1763,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "提尔锋（寄生态）",
+                "hp": 269307,
+                "defense": 427,
+                "stun": 1763,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "刺椎原虫",
+                "hp": 54999,
+                "defense": 427,
+                "stun": 1175,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201502": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "先锋猎兵",
+                "hp": 236736,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "突击炮手",
+                "hp": 1144883,
+                "defense": 701,
+                "stun": 4935,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 236736,
+                "defense": 598,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1223679,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "袭击者",
+                "hp": 236736,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "纵火犯",
+                "hp": 236736,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1450759,
+                "defense": 649,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1090397,
+                "defense": 649,
+                "stun": 4701,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201503": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "哈提·蓄能型",
+                "hp": 1384180,
+                "defense": 745,
+                "stun": 4163,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "弗瑟尔·蓄能型",
+                "hp": 355798,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯·蓄能型",
+                "hp": 355798,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精·蓄能型",
+                "hp": 1645271,
+                "defense": 621,
+                "stun": 7264,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 1978038,
+                "defense": 621,
+                "stun": 7990,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 1727522,
+                "defense": 800,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 322662,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 322662,
+                "defense": 497,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201504": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 2169106,
+                "defense": 812,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 340910,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "整训猎兵",
+                "hp": 340910,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1825217,
+                "defense": 812,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 2193687,
+                "defense": 812,
+                "stun": 7004,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 1504420,
+                "defense": 812,
+                "stun": 4918,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 1974194,
+                "defense": 676,
+                "stun": 4902,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1611683,
+                "defense": 812,
+                "stun": 5296,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 307390,
+                "defense": 601,
+                "stun": 1324,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 307390,
+                "defense": 601,
+                "stun": 1324,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201505": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 532422,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "焚毁狂",
+                "hp": 532422,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 3840574,
+                "defense": 794,
+                "stun": 10822,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 4244253,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 3963112,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 2349560,
+                "defense": 858,
+                "stun": 5066,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 1962943,
+                "defense": 715,
+                "stun": 5455,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 2752075,
+                "defense": 715,
+                "stun": 7215,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 447111,
+                "defense": 572,
+                "stun": 1947,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 480072,
+                "defense": 636,
+                "stun": 1364,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 480072,
+                "defense": 636,
+                "stun": 1364,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201506": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "袭扰猎兵",
+                "hp": 680917,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 636647,
+                "defense": 636,
+                "stun": 2079,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "骇鸟",
+                "hp": 9065674,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "恶名·塔纳托斯",
+                "hp": 7797019,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "提尔锋（寄生态）",
+                "hp": 798970,
+                "defense": 572,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "刺椎原虫",
+                "hp": 163167,
+                "defense": 572,
+                "stun": 1453,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6201507": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001151": {
+          "title": "冰火连协",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· <color=#FFFFFF>[连携技]</color>造成的伤害提升40%，每次触发 <color=#FFFFFF>[连携技]</color>时，代理人恢复10点能量。"
+        }
+      },
+      "layer_room": {
+        "62015071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "哈提头犬·蓄能型",
+                "hp": 10189754,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "弗瑟尔·蓄能型",
+                "hp": 750793,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯·蓄能型",
+                "hp": 750793,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62015072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "色雷斯人",
+                "hp": 9152331,
+                "defense": 953,
+                "stun": 13677,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡（寄生态）",
+                "hp": 939731,
+                "defense": 572,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "提尔锋（寄生态）",
+                "hp": 939731,
+                "defense": 572,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "刺椎原虫",
+                "hp": 191914,
+                "defense": 572,
+                "stun": 1551,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

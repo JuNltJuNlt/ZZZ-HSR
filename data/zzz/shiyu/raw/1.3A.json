@@ -1,0 +1,901 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6200901": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "袭击者",
+                "hp": 216804,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "纵火犯",
+                "hp": 216804,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1328613,
+                "defense": 592,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 998592,
+                "defense": 592,
+                "stun": 4499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 216804,
+                "defense": 510,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1395091,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200902": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 263040,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "劫掠者",
+                "hp": 309402,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "通缉打手",
+                "hp": 1658125,
+                "defense": 649,
+                "stun": 7037,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 2020212,
+                "defense": 649,
+                "stun": 11637,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 1612529,
+                "defense": 585,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 1359644,
+                "defense": 753,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 215145,
+                "defense": 468,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 215145,
+                "defense": 468,
+                "stun": 1116,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200903": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 263911,
+                "defense": 552,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 263911,
+                "defense": 552,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1429536,
+                "defense": 689,
+                "stun": 5123,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 2053004,
+                "defense": 621,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "先锋猎兵",
+                "hp": 322662,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "整训猎兵",
+                "hp": 322662,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 1667831,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 2076270,
+                "defense": 745,
+                "stun": 6724,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200904": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "「卫士」",
+                "hp": 2169106,
+                "defense": 812,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "轻装猎兵",
+                "hp": 278836,
+                "defense": 601,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "重装炮手",
+                "hp": 1648679,
+                "defense": 812,
+                "stun": 5306,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "戍卫猎兵",
+                "hp": 278836,
+                "defense": 691,
+                "stun": 1200,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 1762150,
+                "defense": 812,
+                "stun": 7004,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "哈提",
+                "hp": 1504420,
+                "defense": 812,
+                "stun": 4918,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "塔纳托斯",
+                "hp": 1974194,
+                "defense": 676,
+                "stun": 4902,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1611683,
+                "defense": 812,
+                "stun": 5296,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 307390,
+                "defense": 601,
+                "stun": 1324,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 307390,
+                "defense": 601,
+                "stun": 1324,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200905": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 399317,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 399317,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1832552,
+                "defense": 794,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 2643109,
+                "defense": 794,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 2540735,
+                "defense": 715,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 2036136,
+                "defense": 858,
+                "stun": 7793,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 2540735,
+                "defense": 858,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 469699,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 399317,
+                "defense": 731,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 2137929,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200906": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "纵火犯",
+                "hp": 434164,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 510688,
+                "defense": 636,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·简",
+                "hp": 5665941,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 355110,
+                "defense": 731,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "「护戍盾卫Ω型」",
+                "hp": 6497586,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ]
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 390526,
+                "defense": 636,
+                "stun": 1386,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6200907": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001091": {
+          "title": "缭乱川骛",
+          "desc": "· <color=#FFFFFF>[支援攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>累积的属性异常积蓄值提升30%，造成的伤害提升20%。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，额外获得400点喧响值，目标的防御力降低20%，持续20秒，喧响值获得效果10秒内最多触发一次。"
+        }
+      },
+      "layer_room": {
+        "62009071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「提丰·挑战者型」",
+                "hp": 6240158,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 2734021,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62009072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 417672,
+                "defense": 683,
+                "stun": 1410,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "星期五",
+                "hp": 8004942,
+                "defense": 953,
+                "stun": 16895,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

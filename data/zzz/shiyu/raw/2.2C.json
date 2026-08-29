@@ -1,0 +1,885 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6203201": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 1240481,
+                "defense": 533,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 1045942,
+                "defense": 687,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 165506,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 165506,
+                "defense": 427,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 896501,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 1302085,
+                "defense": 592,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203202": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "眼魔引擎",
+                "hp": 245504,
+                "defense": 559,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1579769,
+                "defense": 701,
+                "stun": 6514,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "掠夺者",
+                "hp": 288775,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 1504491,
+                "defense": 649,
+                "stun": 6204,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1130782,
+                "defense": 649,
+                "stun": 4701,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203203": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "雷蛛",
+                "hp": 143025,
+                "defense": 593,
+                "stun": 519,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1728807,
+                "defense": 745,
+                "stun": 5085,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 1957858,
+                "defense": 621,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 307089,
+                "defense": 497,
+                "stun": 1815,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 403238,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 403238,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 299099,
+                "defense": 552,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 299099,
+                "defense": 552,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1620141,
+                "defense": 689,
+                "stun": 5123,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 2326738,
+                "defense": 621,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203204": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 2458320,
+                "defense": 676,
+                "stun": 9506,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·塔纳托斯",
+                "hp": 2301579,
+                "defense": 676,
+                "stun": 5562,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 2068579,
+                "defense": 872,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "法布提",
+                "hp": 2368553,
+                "defense": 812,
+                "stun": 8322,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "杜拉罕",
+                "hp": 2068579,
+                "defense": 872,
+                "stun": 7944,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 2549494,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203205": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 5550393,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 4988499,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 1027424,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 6148252,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "焚毁狂",
+                "hp": 931739,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 6721003,
+                "defense": 794,
+                "stun": 10822,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 7427442,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 6935446,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203206": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 19078601,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "格莱特",
+                "hp": 15880423,
+                "defense": 953,
+                "stun": 15816,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ]
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6203207": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001321": {
+          "title": "赤海巡鲨",
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>和<color=#FF5521>火属性伤害</color>提升20%，贯穿伤害提升20%。\n· <color=#FFFFFF>[追加攻击]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，队伍内<color=#FFFFFF>[强攻]</color>与<color=#FFFFFF>[命破]</color>特性的代理人暴击伤害提升50%，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62032071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "秽息蚀者·阿瓦鲁斯",
+                "hp": 23027836,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "赫斯克龙",
+                "hp": 1071492,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62032072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 19918667,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

@@ -3,18 +3,18 @@
   "begin_time": "2026-05-01 04:00:00",
   "end_time": "2026-05-15 03:59:59",
   "zone": {
-    "6204701": {
+    "zone_6204701": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001471": {
+        "buff_62001471": {
           "title": "紊丝无定",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047011": {
+        "room_62047011": {
           "level": 50,
           "monsters": [
             [
@@ -76,9 +76,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62047012": {
+        "room_62047012": {
           "level": 50,
           "monsters": [
             [
@@ -140,22 +146,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204702": {
+    "zone_6204702": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001471": {
+        "buff_62001471": {
           "title": "紊丝无定",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047021": {
+        "room_62047021": {
           "level": 55,
           "monsters": [
             [
@@ -217,9 +229,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62047022": {
+        "room_62047022": {
           "level": 55,
           "monsters": [
             [
@@ -294,22 +312,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204703": {
+    "zone_6204703": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001471": {
+        "buff_62001471": {
           "title": "紊丝无定",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047031": {
+        "room_62047031": {
           "level": 60,
           "monsters": [
             [
@@ -385,9 +409,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62047032": {
+        "room_62047032": {
           "level": 60,
           "monsters": [
             [
@@ -466,22 +496,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204704": {
+    "zone_6204704": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001471": {
+        "buff_62001471": {
           "title": "紊丝无定",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047041": {
+        "room_62047041": {
           "level": 65,
           "monsters": [
             [
@@ -501,11 +537,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "特佩什",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62047042": {
+        "room_62047042": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 1013048,
+                "defense": 731,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "「提丰·重击者型」",
@@ -521,46 +578,43 @@
                   "火"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "巡防猎兵",
-                "hp": 1013048,
-                "defense": 731,
-                "stun": 1981,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「提丰·重击者型」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6204705": {
+    "zone_6204705": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001471": {
+        "buff_62001471": {
           "title": "紊丝无定",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         },
-        "62001472": {
+        "buff_62001472": {
           "title": "枢机锻序",
           "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
-        "62001473": {
+        "buff_62001473": {
           "title": "乱霜缭华",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· 使敌人进入失衡状态时，全队造成的暴击伤害提升30%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047051_62047051": {
+        "room_62047051_62047051": {
           "level": 70,
           "monsters": [
             [
@@ -638,7 +692,7 @@
           ],
           "weakness": []
         },
-        "62047052_62047052": {
+        "room_62047052_62047052": {
           "level": 70,
           "monsters": [
             [
@@ -718,7 +772,7 @@
           ],
           "weakness": []
         },
-        "62047053_62047053": {
+        "room_62047053_62047053": {
           "level": 70,
           "monsters": [
             [
@@ -784,26 +838,18 @@
         }
       }
     },
-    "62047051": {
+    "zone_62047051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001473": {
+        "buff_62001473": {
           "title": "乱霜缭华",
           "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· 使敌人进入失衡状态时，全队造成的暴击伤害提升30%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047051": {
+        "room_62047051": {
           "level": 70,
           "monsters": [
             [
@@ -848,7 +894,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽息行者·蝎骸",
                 "hp": 39128891,
@@ -867,30 +915,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽息行者·蝎骸",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62047052": {
+    "zone_62047052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001471": {
+        "buff_62001471": {
           "title": "紊丝无定",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其5%/15%全伤害抗性。\n· 代理人触发暴击后，自身的<color=#2EB6FF>电属性伤害</color>提升35%，持续5秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047052": {
+        "room_62047052": {
           "level": 70,
           "monsters": [
             [
@@ -923,22 +973,6 @@
                 "type": "C"
               },
               {
-                "name": "秽蚀·「骇鸟」",
-                "hp": 30841807,
-                "defense": 953,
-                "stun": 14328,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
-              },
-              {
                 "name": "秽蚀·「重装侵袭者」",
                 "hp": 9373502,
                 "defense": 858,
@@ -954,32 +988,52 @@
                 ],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "秽蚀·「骇鸟」",
+                "hp": 30841807,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·「骇鸟」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "62047053": {
+    "zone_62047053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001472": {
+        "buff_62001472": {
           "title": "枢机锻序",
           "desc": "· 代理人的<color=#FE437E>以太异常积蓄效率</color>和<color=#98EFF0>冰属性异常积蓄效率</color>提升25%。\n· 代理人使敌人进入属性异常状态后，其防御力下降10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62047053": {
+        "room_62047053": {
           "level": 70,
           "monsters": [
             [
@@ -1010,7 +1064,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·蛮横力士",
                 "hp": 54641982,
@@ -1028,6 +1084,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·蛮横力士",
+              "bold": true
+            }
           ],
           "weakness": []
         }

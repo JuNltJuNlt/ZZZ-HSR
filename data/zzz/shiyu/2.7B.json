@@ -3,18 +3,18 @@
   "begin_time": "2026-04-17 04:00:00",
   "end_time": "2026-05-01 03:59:59",
   "zone": {
-    "6204601": {
+    "zone_6204601": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62046011": {
+        "room_62046011": {
           "level": 50,
           "monsters": [
             [
@@ -62,9 +62,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62046012": {
+        "room_62046012": {
           "level": 50,
           "monsters": [
             [
@@ -126,22 +132,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204602": {
+    "zone_6204602": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62046021": {
+        "room_62046021": {
           "level": 55,
           "monsters": [
             [
@@ -216,9 +228,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62046022": {
+        "room_62046022": {
           "level": 55,
           "monsters": [
             [
@@ -279,22 +297,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204603": {
+    "zone_6204603": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62046031": {
+        "room_62046031": {
           "level": 60,
           "monsters": [
             [
@@ -373,9 +397,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62046032": {
+        "room_62046032": {
           "level": 60,
           "monsters": [
             [
@@ -424,22 +454,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204604": {
+    "zone_6204604": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62046041": {
+        "room_62046041": {
           "level": 65,
           "monsters": [
             [
@@ -471,7 +507,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "骇鸟",
                 "hp": 15864929,
@@ -489,9 +527,19 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "骇鸟",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62046042": {
+        "room_62046042": {
           "level": 65,
           "monsters": [
             [
@@ -508,7 +556,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 11370776,
@@ -525,30 +575,40 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204605": {
+    "zone_6204605": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         },
-        "62001433": {
+        "buff_62001433": {
           "title": "机芯化翼",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         },
-        "62001463": {
+        "buff_62001463": {
           "title": "冰魄敛光",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动[强化特殊技]后，自身的贯穿伤害提升15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62046051_62046051": {
+        "room_62046051_62046051": {
           "level": 70,
           "monsters": [
             [
@@ -614,7 +674,7 @@
           ],
           "weakness": []
         },
-        "62046052_62046052": {
+        "room_62046052_62046052": {
           "level": 70,
           "monsters": [
             [
@@ -680,7 +740,7 @@
           ],
           "weakness": []
         },
-        "62046053_62046053": {
+        "room_62046053_62046053": {
           "level": 70,
           "monsters": [
             [
@@ -760,26 +820,18 @@
         }
       }
     },
-    "62046051": {
+    "zone_62046051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001433": {
+        "buff_62001433": {
           "title": "机芯化翼",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升30%，攻击命中敌人时无视其10%的<color=#FE437E>以太属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62046051": {
+        "room_62046051": {
           "level": 70,
           "monsters": [
             [
@@ -812,7 +864,9 @@
                   "冰"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 31126205,
@@ -831,30 +885,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62046052": {
+    "zone_62046052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001383": {
+        "buff_62001383": {
           "title": "贯虹惊雷",
           "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升40%，并无视敌人15%的防御力。"
         }
       },
       "layer_room": {
-        "62046052": {
+        "room_62046052": {
           "level": 70,
           "monsters": [
             [
@@ -887,7 +943,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "牲鬼·凶魁愚者",
                 "hp": 32126882,
@@ -906,30 +964,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62046053": {
+    "zone_62046053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001463": {
+        "buff_62001463": {
           "title": "冰魄敛光",
           "desc": "· 代理人的生命值上限提升15%，<color=#FE437E>以太属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人发动[强化特殊技]后，自身的贯穿伤害提升15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62046053": {
+        "room_62046053": {
           "level": 70,
           "monsters": [
             [
@@ -974,7 +1034,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "赫由托",
                 "hp": 32198787,
@@ -992,6 +1054,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "赫由托",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202601": {
+    "zone_6202601": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026011": {
+        "room_62026011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -40,7 +41,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -53,7 +55,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -66,13 +69,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62026012": {
+        "room_62026012": {
           "level": 50,
           "monsters": [
             [
@@ -88,7 +98,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -102,7 +113,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -114,7 +126,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -126,26 +139,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202602": {
+    "zone_6202602": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026021": {
+        "room_62026021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -173,7 +194,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -188,7 +210,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -203,13 +226,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62026022": {
+        "room_62026022": {
           "level": 53,
           "monsters": [
             [
@@ -224,7 +254,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -237,26 +268,33 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202603": {
+    "zone_6202603": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026031": {
+        "room_62026031": {
           "level": 55,
           "monsters": [
             [
@@ -273,7 +311,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -286,7 +325,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -299,7 +339,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -314,13 +355,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62026032": {
+        "room_62026032": {
           "level": 55,
           "monsters": [
             [
@@ -335,7 +383,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "装甲哈提",
@@ -348,7 +397,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -361,7 +411,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -374,7 +425,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -387,7 +439,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -400,26 +453,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202604": {
+    "zone_6202604": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026041": {
+        "room_62026041": {
           "level": 58,
           "monsters": [
             [
@@ -436,7 +496,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轻装猎兵",
@@ -449,7 +510,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "重装炮手",
@@ -464,7 +526,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "戍卫猎兵",
@@ -477,7 +540,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -492,13 +556,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62026042": {
+        "room_62026042": {
           "level": 58,
           "monsters": [
             [
@@ -513,7 +584,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -526,7 +598,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -539,7 +612,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "班尼雷克",
@@ -552,26 +626,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202605": {
+    "zone_6202605": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026051": {
+        "room_62026051": {
           "level": 60,
           "monsters": [
             [
@@ -586,7 +667,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -599,7 +681,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -612,7 +695,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -625,13 +709,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62026052": {
+        "room_62026052": {
           "level": 60,
           "monsters": [
             [
@@ -646,7 +737,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -659,7 +751,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -672,7 +765,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -685,7 +779,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -698,26 +793,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202606": {
+    "zone_6202606": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026061": {
+        "room_62026061": {
           "level": 65,
           "monsters": [
             [
@@ -732,22 +834,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "祸首·通缉打手",
-                "hp": 12778586,
-                "defense": 953,
-                "stun": 12195,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
-                ]
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉虐待狂",
@@ -762,13 +850,42 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "祸首·通缉打手",
+                "hp": 12778586,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62026062": {
+        "room_62026062": {
           "level": 65,
           "monsters": [
             [
@@ -783,26 +900,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "特佩什",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202607": {
+    "zone_6202607": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001271": {
+        "buff_62001271": {
           "title": "诡趣生花",
           "desc": "· 代理人的暴击伤害提升20%，异常精通提升40点。\n· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[追加攻击]</color>后，全队攻击力提升20%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62026071": {
+        "room_62026071": {
           "level": 70,
           "monsters": [
             [
@@ -819,13 +943,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽蚀·简",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62026072": {
+        "room_62026072": {
           "level": 70,
           "monsters": [
             [
@@ -840,8 +971,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 19182429,
@@ -855,9 +989,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -1,0 +1,951 @@
+{
+  "name": "剧变节点",
+  "zone": {
+    "6202501": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 202350,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 896501,
+                "defense": 592,
+                "stun": 4750,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 1302085,
+                "defense": 592,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "法布提",
+                "hp": 1240481,
+                "defense": 640,
+                "stun": 7407,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 223131,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 223131,
+                "defense": 474,
+                "stun": 1766,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 1289116,
+                "defense": 533,
+                "stun": 6857,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202502": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 53,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025021": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 245504,
+                "defense": 520,
+                "stun": 1674,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 1087690,
+                "defense": 649,
+                "stun": 4963,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 1505027,
+                "defense": 585,
+                "stun": 7740,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025022": {
+          "level": 53,
+          "monsters": [
+            [
+              {
+                "name": "提尔锋",
+                "hp": 14305,
+                "defense": 585,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿佩卡",
+                "hp": 14305,
+                "defense": 585,
+                "stun": 0,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "哈提",
+                "hp": 1053180,
+                "defense": 701,
+                "stun": 4033,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "阿劳恩",
+                "hp": 877054,
+                "defense": 585,
+                "stun": 4344,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202503": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 55,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025031": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "哈提·蓄能型",
+                "hp": 1568737,
+                "defense": 745,
+                "stun": 4163,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "弗瑟尔·蓄能型",
+                "hp": 403238,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯·蓄能型",
+                "hp": 403238,
+                "defense": 552,
+                "stun": 1905,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精·蓄能型",
+                "hp": 1864640,
+                "defense": 621,
+                "stun": 7264,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025032": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "离子体·塔纳托斯",
+                "hp": 2117662,
+                "defense": 621,
+                "stun": 4706,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 1957858,
+                "defense": 800,
+                "stun": 7627,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 299099,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 299099,
+                "defense": 497,
+                "stun": 1152,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202504": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 58,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025041": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "盗猎客",
+                "hp": 386364,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "劫掠者",
+                "hp": 454463,
+                "defense": 601,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 2875919,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 3079934,
+                "defense": 751,
+                "stun": 14292,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 2875919,
+                "defense": 751,
+                "stun": 11916,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025042": {
+          "level": 58,
+          "monsters": [
+            [
+              {
+                "name": "阿佩卡",
+                "hp": 386364,
+                "defense": 541,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "哈提",
+                "hp": 1705009,
+                "defense": 812,
+                "stun": 4918,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "装甲哈提",
+                "hp": 1826574,
+                "defense": 812,
+                "stun": 5296,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "霍普利泰",
+                "hp": 386364,
+                "defense": 691,
+                "stun": 1800,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "曼德拉",
+                "hp": 324456,
+                "defense": 541,
+                "stun": 1890,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 2549494,
+                "defense": 676,
+                "stun": 8738,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202505": {
+      "name": "剧变节点第五防线",
+      "stage_num": 5,
+      "monster_level": 60,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025051": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 665528,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 665528,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "狂乱暴徒",
+                "hp": 3054253,
+                "defense": 794,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "盛怒恶霸",
+                "hp": 4405181,
+                "defense": 794,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "凶心疯汉",
+                "hp": 4234558,
+                "defense": 715,
+                "stun": 9792,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025052": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "塔纳托斯",
+                "hp": 3964566,
+                "defense": 858,
+                "stun": 5729,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "地精",
+                "hp": 3563214,
+                "defense": 715,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "弗瑟尔",
+                "hp": 733874,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 733874,
+                "defense": 636,
+                "stun": 2044,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "班尼雷克",
+                "hp": 4391609,
+                "defense": 715,
+                "stun": 9001,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202506": {
+      "name": "剧变节点第六防线",
+      "stage_num": 6,
+      "monster_level": 65,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025061": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 591850,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "盗猎客",
+                "hp": 591850,
+                "defense": 636,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "祸首·通缉打手",
+                "hp": 10829310,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025062": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "秽息蚀者·阿瓦鲁斯",
+                "hp": 15789142,
+                "defense": 953,
+                "stun": 14499,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "6202507": {
+      "name": "剧变节点第七防线",
+      "stage_num": 7,
+      "monster_level": 70,
+      "layer_buff": {
+        "62001197": {
+          "title": "炽袭绚烈",
+          "desc": "· 代理人造成的失衡值提升10%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· 使敌人进入失衡状态时，全队的贯穿伤害提升15%，暴击伤害提升20%，持续25秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "62025071": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "蛮横力士",
+                "hp": 13520094,
+                "defense": 953,
+                "stun": 13027,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ]
+              },
+              {
+                "name": "秉火领颂",
+                "hp": 7001489,
+                "defense": 794,
+                "stun": 9779,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "电"
+                ]
+              },
+              {
+                "name": "颂礼赞者",
+                "hp": 1234172,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        },
+        "62025072": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "弗瑟尔",
+                "hp": 656944,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "索迪代斯",
+                "hp": 656944,
+                "defense": 636,
+                "stun": 2332,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "帕里库斯",
+                "hp": 8916035,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              },
+              {
+                "name": "帕里库斯",
+                "hp": 8916035,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": []
+              }
+            ]
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

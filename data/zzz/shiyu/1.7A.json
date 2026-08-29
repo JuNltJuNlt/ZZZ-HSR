@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202001": {
+    "zone_6202001": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020011": {
+        "room_62020011": {
           "level": 50,
           "monsters": [
             [
@@ -26,7 +26,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -40,7 +41,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -52,7 +54,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -66,13 +69,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62020012": {
+        "room_62020012": {
           "level": 50,
           "monsters": [
             [
@@ -88,7 +98,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -102,7 +113,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -114,7 +126,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -126,26 +139,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202002": {
+    "zone_6202002": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020021": {
+        "room_62020021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -173,13 +194,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62020022": {
+        "room_62020022": {
           "level": 53,
           "monsters": [
             [
@@ -194,7 +222,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -207,7 +236,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -220,7 +250,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -233,26 +264,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202003": {
+    "zone_6202003": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020031": {
+        "room_62020031": {
           "level": 55,
           "monsters": [
             [
@@ -267,7 +305,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -280,7 +319,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -293,7 +333,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -306,13 +347,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62020032": {
+        "room_62020032": {
           "level": 55,
           "monsters": [
             [
@@ -328,7 +376,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -342,7 +391,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -354,7 +404,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -366,26 +417,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202004": {
+    "zone_6202004": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020041": {
+        "room_62020041": {
           "level": 58,
           "monsters": [
             [
@@ -400,7 +458,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -413,7 +472,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -428,7 +488,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -443,7 +504,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -458,13 +520,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62020042": {
+        "room_62020042": {
           "level": 58,
           "monsters": [
             [
@@ -479,7 +548,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "塔纳托斯",
@@ -492,7 +562,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -505,7 +576,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -518,7 +590,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -531,26 +604,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202005": {
+    "zone_6202005": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020051": {
+        "room_62020051": {
           "level": 60,
           "monsters": [
             [
@@ -566,7 +646,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -578,7 +659,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -592,7 +674,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -606,13 +689,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62020052": {
+        "room_62020052": {
           "level": 60,
           "monsters": [
             [
@@ -628,7 +718,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -642,7 +733,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -656,7 +748,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -668,7 +761,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -680,26 +774,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202006": {
+    "zone_6202006": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020061": {
+        "room_62020061": {
           "level": 65,
           "monsters": [
             [
@@ -714,7 +815,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "焚毁狂",
@@ -727,8 +829,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "蛮横力士",
                 "hp": 11035145,
@@ -742,29 +847,27 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蛮横力士",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62020062": {
+        "room_62020062": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "恶名·装甲哈提",
-                "hp": 7797103,
-                "defense": 953,
-                "stun": 8536,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "曼德拉",
                 "hp": 583354,
@@ -776,7 +879,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -789,7 +893,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -802,26 +907,53 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·装甲哈提",
+                "hp": 7797103,
+                "defense": 953,
+                "stun": 8536,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202007": {
+    "zone_6202007": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001192": {
+        "buff_62001192": {
           "title": "嬗变之音",
           "desc": "· 代理人的<color=#FE437E>以太属性异常积蓄效率</color>和<color=#F0D12B>物理属性异常积蓄效率</color>提升20%。\n· 使敌人进入失衡状态或属性异常状态后，代理人回复20点能量，能量回复效果20秒内最多触发1次，并使全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62020071": {
+        "room_62020071": {
           "level": 70,
           "monsters": [
             [
@@ -835,7 +967,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -847,8 +980,11 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "骇鸟",
                 "hp": 12795411,
@@ -861,15 +997,54 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "骇鸟",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62020072": {
+        "room_62020072": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 817045,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 817045,
+                "defense": 572,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "汉斯·超频型",
@@ -883,33 +1058,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "离子体·瑟托迪亚",
-                "hp": 817045,
-                "defense": 572,
-                "stun": 2115,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "离子体·纳塞勒亚",
-                "hp": 817045,
-                "defense": 572,
-                "stun": 2115,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯·超频型",
+              "bold": true
+            }
           ],
           "weakness": []
         }

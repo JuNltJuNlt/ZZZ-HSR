@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203101": {
+    "zone_6203101": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031011": {
+        "room_62031011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -40,13 +41,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62031012": {
+        "room_62031012": {
           "level": 50,
           "monsters": [
             [
@@ -60,7 +68,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -72,7 +81,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -86,7 +96,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -100,26 +111,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203102": {
+    "zone_6203102": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031021": {
+        "room_62031021": {
           "level": 53,
           "monsters": [
             [
@@ -135,7 +153,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -147,7 +166,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -159,7 +179,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -173,13 +194,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62031022": {
+        "room_62031022": {
           "level": 53,
           "monsters": [
             [
@@ -194,7 +222,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -207,7 +236,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -222,7 +252,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -237,26 +268,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203103": {
+    "zone_6203103": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031031": {
+        "room_62031031": {
           "level": 55,
           "monsters": [
             [
@@ -271,7 +309,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -284,7 +323,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -297,7 +337,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -310,13 +351,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62031032": {
+        "room_62031032": {
           "level": 55,
           "monsters": [
             [
@@ -330,7 +378,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -342,7 +391,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盛怒恶霸",
@@ -356,7 +406,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -370,26 +421,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203104": {
+    "zone_6203104": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031041": {
+        "room_62031041": {
           "level": 58,
           "monsters": [
             [
@@ -403,7 +461,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -417,7 +476,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -431,7 +491,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -445,7 +506,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轰击猎兵",
@@ -457,13 +519,20 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62031042": {
+        "room_62031042": {
           "level": 58,
           "monsters": [
             [
@@ -478,7 +547,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -491,7 +561,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -506,7 +577,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -521,7 +593,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -536,26 +609,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203105": {
+    "zone_6203105": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031051": {
+        "room_62031051": {
           "level": 60,
           "monsters": [
             [
@@ -570,7 +650,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -583,7 +664,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -596,7 +678,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -609,7 +692,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -622,13 +706,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62031052": {
+        "room_62031052": {
           "level": 60,
           "monsters": [
             [
@@ -645,7 +736,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轻装猎兵",
@@ -658,7 +750,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "重装炮手",
@@ -673,7 +766,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "戍卫猎兵",
@@ -686,7 +780,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -701,26 +796,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203106": {
+    "zone_6203106": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031061": {
+        "room_62031061": {
           "level": 65,
           "monsters": [
             [
@@ -736,13 +838,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "骇鸟",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62031062": {
+        "room_62031062": {
           "level": 65,
           "monsters": [
             [
@@ -759,26 +868,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "「提丰·挑战者型」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203107": {
+    "zone_6203107": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001311": {
+        "buff_62001311": {
           "title": "寒冰淬火",
           "desc": "· 若队伍内有1名/2名<color=#FFFFFF>[强攻]</color>特性的代理人，代理人命中敌人时无视其10%/20%全伤害抗性。\n· <color=#FFFFFF>[追加攻击]</color>命中后，代理人暴击伤害提升60%，持续10秒，重复触发刷新持续时间。"
         }
       },
       "layer_room": {
-        "62031071": {
+        "room_62031071": {
           "level": 70,
           "monsters": [
             [
@@ -793,8 +909,11 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "汉斯",
                 "hp": 13341570,
@@ -807,13 +926,24 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62031072": {
+        "room_62031072": {
           "level": 70,
           "monsters": [
             [
@@ -830,9 +960,16 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "秽蚀·多佩冈亚·「变节者」",
+              "bold": true
+            }
           ],
           "weakness": []
         }

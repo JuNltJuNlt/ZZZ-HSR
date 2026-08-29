@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6200401": {
+    "zone_6200401": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004011": {
+        "room_62004011": {
           "level": 50,
           "monsters": [
             [
@@ -26,7 +26,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -38,7 +39,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -52,7 +54,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -66,13 +69,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62004012": {
+        "room_62004012": {
           "level": 50,
           "monsters": [
             [
@@ -86,7 +96,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -100,7 +111,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -112,7 +124,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -126,26 +139,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200402": {
+    "zone_6200402": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004021": {
+        "room_62004021": {
           "level": 53,
           "monsters": [
             [
@@ -162,7 +182,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -175,7 +196,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -188,7 +210,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -203,13 +226,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62004022": {
+        "room_62004022": {
           "level": 53,
           "monsters": [
             [
@@ -225,7 +255,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -239,7 +270,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -251,7 +283,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -263,26 +296,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200403": {
+    "zone_6200403": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004031": {
+        "room_62004031": {
           "level": 55,
           "monsters": [
             [
@@ -297,7 +337,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "纵火犯",
@@ -310,7 +351,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -323,7 +365,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -336,13 +379,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62004032": {
+        "room_62004032": {
           "level": 55,
           "monsters": [
             [
@@ -356,7 +406,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -368,7 +419,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -382,7 +434,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -396,26 +449,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200404": {
+    "zone_6200404": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004041": {
+        "room_62004041": {
           "level": 58,
           "monsters": [
             [
@@ -430,7 +490,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -443,7 +504,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -456,7 +518,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -469,7 +532,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -482,7 +546,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -495,13 +560,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62004042": {
+        "room_62004042": {
           "level": 58,
           "monsters": [
             [
@@ -517,7 +589,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -531,7 +604,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -545,7 +619,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -557,7 +632,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -569,26 +645,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200405": {
+    "zone_6200405": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004051": {
+        "room_62004051": {
           "level": 60,
           "monsters": [
             [
@@ -603,7 +686,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -616,7 +700,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -629,7 +714,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -642,13 +728,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62004052": {
+        "room_62004052": {
           "level": 60,
           "monsters": [
             [
@@ -664,7 +757,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「卫士Ⅱ型」",
@@ -678,7 +772,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -690,7 +785,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -704,7 +800,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "巡防猎兵",
@@ -716,26 +813,33 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200406": {
+    "zone_6200406": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004061": {
+        "room_62004061": {
           "level": 65,
           "monsters": [
             [
@@ -750,20 +854,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "恶名·杜拉罕",
-                "hp": 4598062,
-                "defense": 953,
-                "stun": 12195,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "霍普利泰",
@@ -776,15 +868,70 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "恶名·杜拉罕",
+                "hp": 4598062,
+                "defense": 953,
+                "stun": 12195,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·杜拉罕",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62004062": {
+        "room_62004062": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "离子体·瑟托迪亚",
+                "hp": 307762,
+                "defense": 572,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "离子体·纳塞勒亚",
+                "hp": 307762,
+                "defense": 572,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "格莱特·超频型",
@@ -798,50 +945,37 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
-              },
-              {
-                "name": "离子体·瑟托迪亚",
-                "hp": 307762,
-                "defense": 572,
-                "stun": 1320,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "离子体·纳塞勒亚",
-                "hp": 307762,
-                "defense": 572,
-                "stun": 1320,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "以太"
-                ],
-                "resistance": []
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "格莱特·超频型",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6200407": {
+    "zone_6200407": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001041": {
+        "buff_62001041": {
           "title": "破竹之势",
           "desc": "· 使敌人进入失衡状态时，全队获得2层<color=#FFFFFF>[战意]</color>，使敌人进入属性异常状态时，全队获得1层<color=#FFFFFF>[战意]</color>。[战意]最多叠加3层，持续20秒，每层效果单独结算持续时间。\n· 每拥有1层<color=#FFFFFF>[战意]</color>，代理人的攻击力提升10%，异常精通提升10点。"
         }
       },
       "layer_room": {
-        "62004071": {
+        "room_62004071": {
           "level": 70,
           "monsters": [
             [
@@ -856,7 +990,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -869,8 +1004,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 6623340,
@@ -884,13 +1022,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62004072": {
+        "room_62004072": {
           "level": 70,
           "monsters": [
             [
@@ -905,8 +1054,11 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "汉斯",
                 "hp": 6937617,
@@ -919,9 +1071,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "汉斯",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203601": {
+    "zone_6203601": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036011": {
+        "room_62036011": {
           "level": 50,
           "monsters": [
             [
@@ -28,7 +28,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -42,7 +43,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -54,7 +56,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -66,13 +69,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62036012": {
+        "room_62036012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -100,7 +111,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -113,7 +125,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -126,26 +139,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203602": {
+    "zone_6203602": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036021": {
+        "room_62036021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -173,7 +194,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿佩卡（寄生态）",
@@ -186,7 +208,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋（寄生态）",
@@ -199,7 +222,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "刺椎原虫",
@@ -211,13 +235,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62036022": {
+        "room_62036022": {
           "level": 53,
           "monsters": [
             [
@@ -234,7 +265,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -247,7 +279,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -260,7 +293,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -275,26 +309,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203603": {
+    "zone_6203603": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036031": {
+        "room_62036031": {
           "level": 55,
           "monsters": [
             [
@@ -309,7 +350,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "装甲哈提",
@@ -322,7 +364,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -335,7 +378,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -348,7 +392,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -361,7 +406,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -374,13 +420,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62036032": {
+        "room_62036032": {
           "level": 55,
           "monsters": [
             [
@@ -396,7 +449,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -410,7 +464,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -422,7 +477,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -434,26 +490,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203604": {
+    "zone_6203604": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036041": {
+        "room_62036041": {
           "level": 58,
           "monsters": [
             [
@@ -468,7 +531,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -481,7 +545,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "杜拉罕",
@@ -494,7 +559,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -507,7 +573,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -520,7 +587,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -533,13 +601,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62036042": {
+        "room_62036042": {
           "level": 58,
           "monsters": [
             [
@@ -554,7 +629,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "离子体·普格努斯",
@@ -567,7 +643,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息原牲",
@@ -580,26 +657,33 @@
                   "以太",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203605": {
+    "zone_6203605": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036051": {
+        "room_62036051": {
           "level": 60,
           "monsters": [
             [
@@ -614,7 +698,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -627,7 +712,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·特里诺斯",
@@ -641,13 +727,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62036052": {
+        "room_62036052": {
           "level": 60,
           "monsters": [
             [
@@ -664,7 +757,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·盛怒恶霸",
@@ -679,26 +773,33 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203606": {
+    "zone_6203606": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036061": {
+        "room_62036061": {
           "level": 65,
           "monsters": [
             [
@@ -713,13 +814,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "特佩什",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62036062": {
+        "room_62036062": {
           "level": 65,
           "monsters": [
             [
@@ -736,7 +844,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               },
               {
                 "name": "蛮横力士",
@@ -751,26 +860,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "祸首·通缉打手、蛮横力士",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203607": {
+    "zone_6203607": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001361": {
+        "buff_62001361": {
           "title": "迷声诡步",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人命中失衡状态中的敌人后，其失衡易伤倍率提升50%。\n· 代理人的强化特殊技和终结技造成的伤害提升60%。"
         }
       },
       "layer_room": {
-        "62036071": {
+        "room_62036071": {
           "level": 70,
           "monsters": [
             [
@@ -787,13 +903,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "赫由托",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62036072": {
+        "room_62036072": {
           "level": 70,
           "monsters": [
             [
@@ -810,8 +933,11 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
-              },
+                ],
+                "type": "B"
+              }
+            ],
+            [
               {
                 "name": "秽蚀·多佩冈亚·「变节者」",
                 "hp": 24416430,
@@ -825,9 +951,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·多佩冈亚·「变节者」",
+              "bold": true
+            }
           ],
           "weakness": []
         }

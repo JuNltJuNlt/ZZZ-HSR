@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203701": {
+    "zone_6203701": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037011": {
+        "room_62037011": {
           "level": 50,
           "monsters": [
             [
@@ -26,7 +26,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -38,7 +39,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -52,7 +54,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -66,13 +69,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62037012": {
+        "room_62037012": {
           "level": 50,
           "monsters": [
             [
@@ -88,7 +98,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -102,7 +113,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -114,7 +126,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -126,26 +139,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203702": {
+    "zone_6203702": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037021": {
+        "room_62037021": {
           "level": 53,
           "monsters": [
             [
@@ -162,7 +182,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -175,7 +196,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -188,7 +210,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -203,13 +226,20 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62037022": {
+        "room_62037022": {
           "level": 53,
           "monsters": [
             [
@@ -224,7 +254,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -237,7 +268,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -250,7 +282,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -263,26 +296,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203703": {
+    "zone_6203703": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037031": {
+        "room_62037031": {
           "level": 55,
           "monsters": [
             [
@@ -296,7 +336,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -308,7 +349,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盛怒恶霸",
@@ -322,7 +364,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -336,13 +379,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62037032": {
+        "room_62037032": {
           "level": 55,
           "monsters": [
             [
@@ -357,7 +407,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -370,7 +421,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -383,7 +435,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -396,26 +449,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203704": {
+    "zone_6203704": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037041": {
+        "room_62037041": {
           "level": 58,
           "monsters": [
             [
@@ -429,7 +489,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -441,7 +502,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -455,7 +517,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "盛怒恶霸",
@@ -469,7 +532,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -483,13 +547,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62037042": {
+        "room_62037042": {
           "level": 58,
           "monsters": [
             [
@@ -504,7 +575,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -517,7 +589,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -530,7 +603,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -543,7 +617,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -556,26 +631,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203705": {
+    "zone_6203705": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037051": {
+        "room_62037051": {
           "level": 60,
           "monsters": [
             [
@@ -590,7 +672,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "劫掠者",
@@ -603,7 +686,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "通缉打手",
@@ -618,7 +702,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·盛怒恶霸",
@@ -633,13 +718,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62037052": {
+        "room_62037052": {
           "level": 60,
           "monsters": [
             [
@@ -654,7 +746,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "离子体·普格努斯",
@@ -667,7 +760,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽息原牲",
@@ -680,26 +774,33 @@
                   "以太",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203706": {
+    "zone_6203706": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037061": {
+        "room_62037061": {
           "level": 65,
           "monsters": [
             [
@@ -716,13 +817,20 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62037062": {
+        "room_62037062": {
           "level": 65,
           "monsters": [
             [
@@ -739,26 +847,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "秽蚀·暗渊惩戒者",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203707": {
+    "zone_6203707": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001371": {
+        "buff_62001371": {
           "title": "断云摧甲",
           "desc": "· 代理人的贯穿伤害提升15%，<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人并触发暴击时，自身暴击伤害提升5%，持续5秒，最多可叠加10层，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62037071": {
+        "room_62037071": {
           "level": 70,
           "monsters": [
             [
@@ -776,13 +891,20 @@
                 "resistance": [
                   "冰",
                   "风"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "牲鬼·卫律使者",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62037072": {
+        "room_62037072": {
           "level": 70,
           "monsters": [
             [
@@ -799,9 +921,16 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

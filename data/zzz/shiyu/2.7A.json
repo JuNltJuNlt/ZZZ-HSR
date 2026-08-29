@@ -3,18 +3,18 @@
   "begin_time": "2026-04-03 04:00:00",
   "end_time": "2026-04-17 03:59:59",
   "zone": {
-    "6204501": {
+    "zone_6204501": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62045011": {
+        "room_62045011": {
           "level": 50,
           "monsters": [
             [
@@ -62,9 +62,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62045012": {
+        "room_62045012": {
           "level": 50,
           "monsters": [
             [
@@ -126,22 +132,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204502": {
+    "zone_6204502": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62045021": {
+        "room_62045021": {
           "level": 55,
           "monsters": [
             [
@@ -216,9 +228,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62045022": {
+        "room_62045022": {
           "level": 55,
           "monsters": [
             [
@@ -308,22 +326,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204503": {
+    "zone_6204503": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62045031": {
+        "room_62045031": {
           "level": 60,
           "monsters": [
             [
@@ -402,9 +426,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62045032": {
+        "room_62045032": {
           "level": 60,
           "monsters": [
             [
@@ -481,24 +511,46 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204504": {
+    "zone_6204504": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62045041": {
+        "room_62045041": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 1469030,
+                "defense": 731,
+                "stun": 2178,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "伐木机",
@@ -514,26 +566,22 @@
                   "冰"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "秽息残兵·盾卫",
-                "hp": 1469030,
-                "defense": 731,
-                "stun": 2178,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "伐木机",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62045042": {
+        "room_62045042": {
           "level": 65,
           "monsters": [
             [
@@ -555,30 +603,36 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204505": {
+    "zone_6204505": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001382": {
+        "buff_62001382": {
           "title": "累雪攒霜",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，代理人的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         },
-        "62001431": {
+        "buff_62001431": {
           "title": "雷霆赤焰",
           "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%，暴击伤害提升20%。\n· [强攻]特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         },
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62045051_62045051": {
+        "room_62045051_62045051": {
           "level": 70,
           "monsters": [
             [
@@ -644,7 +698,7 @@
           ],
           "weakness": []
         },
-        "62045052_62045052": {
+        "room_62045052_62045052": {
           "level": 70,
           "monsters": [
             [
@@ -710,7 +764,7 @@
           ],
           "weakness": []
         },
-        "62045053_62045053": {
+        "room_62045053_62045053": {
           "level": 70,
           "monsters": [
             [
@@ -751,8 +805,12 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"],
-                "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
@@ -771,26 +829,18 @@
         }
       }
     },
-    "62045051": {
+    "zone_62045051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001431": {
+        "buff_62001431": {
           "title": "雷霆赤焰",
           "desc": "· 代理人的<color=#F0D12B>物理属性伤害</color>和<color=#2EB6FF>电属性伤害</color>提升15%，暴击伤害提升20%。\n· [强攻]特性的代理人命中敌人且暴击后，敌人防御力降低10%，持续5秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62045051": {
+        "room_62045051": {
           "level": 70,
           "monsters": [
             [
@@ -823,7 +873,9 @@
                   "火"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "缄枢",
                 "hp": 31949846,
@@ -842,30 +894,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62045052": {
+    "zone_62045052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001451": {
+        "buff_62001451": {
           "title": "诡色绮波",
           "desc": "· 代理人的<color=#FE437E>以太属性伤害</color>提升20%。\n· 处于失衡状态的敌人，其失衡恢复速度降低20%，受到的属性异常伤害提升20%。"
         }
       },
       "layer_room": {
-        "62045052": {
+        "room_62045052": {
           "level": 70,
           "monsters": [
             [
@@ -898,7 +952,9 @@
                   "冰"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·蛮横力士",
                 "hp": 46992104,
@@ -917,30 +973,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·蛮横力士",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62045053": {
+    "zone_62045053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001382": {
+        "buff_62001382": {
           "title": "累雪攒霜",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>提升20%，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，代理人的<color=#98EFF0>冰属性伤害</color>额外提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62045053": {
+        "room_62045053": {
           "level": 70,
           "monsters": [
             [
@@ -971,7 +1029,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·狛野真斗",
                 "hp": 31987931,
@@ -979,10 +1039,25 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"], "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         }

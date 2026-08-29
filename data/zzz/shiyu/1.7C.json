@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6202201": {
+    "zone_6202201": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022011": {
+        "room_62022011": {
           "level": 50,
           "monsters": [
             [
@@ -26,7 +26,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -38,7 +39,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -52,7 +54,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -66,13 +69,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62022012": {
+        "room_62022012": {
           "level": 50,
           "monsters": [
             [
@@ -87,7 +97,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -100,7 +111,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿佩卡（寄生态）",
@@ -113,7 +125,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋（寄生态）",
@@ -126,7 +139,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "刺椎原虫",
@@ -138,26 +152,33 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202202": {
+    "zone_6202202": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022021": {
+        "room_62022021": {
           "level": 53,
           "monsters": [
             [
@@ -172,7 +193,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -185,7 +207,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -198,7 +221,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -211,13 +235,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62022022": {
+        "room_62022022": {
           "level": 53,
           "monsters": [
             [
@@ -232,7 +263,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -245,7 +277,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -258,7 +291,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -271,7 +305,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -284,7 +319,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -297,26 +333,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202203": {
+    "zone_6202203": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022031": {
+        "room_62022031": {
           "level": 55,
           "monsters": [
             [
@@ -332,7 +375,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -346,7 +390,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -358,7 +403,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -370,13 +416,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62022032": {
+        "room_62022032": {
           "level": 55,
           "monsters": [
             [
@@ -391,7 +444,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "装甲哈提",
@@ -404,7 +458,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -417,7 +472,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -430,7 +486,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "弗瑟尔",
@@ -443,7 +500,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -456,26 +514,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202204": {
+    "zone_6202204": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022041": {
+        "room_62022041": {
           "level": 58,
           "monsters": [
             [
@@ -491,7 +556,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·塔纳托斯",
@@ -505,7 +571,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -519,7 +586,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -531,7 +599,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -543,13 +612,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62022042": {
+        "room_62022042": {
           "level": 58,
           "monsters": [
             [
@@ -564,7 +640,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -577,7 +654,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -590,7 +668,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -603,26 +682,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202205": {
+    "zone_6202205": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022051": {
+        "room_62022051": {
           "level": 60,
           "monsters": [
             [
@@ -638,7 +724,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -650,7 +737,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -662,7 +750,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -676,7 +765,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -690,13 +780,20 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62022052": {
+        "room_62022052": {
           "level": 60,
           "monsters": [
             [
@@ -711,7 +808,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "阿劳恩",
@@ -724,7 +822,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "地精",
@@ -737,7 +836,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "恶灵",
@@ -750,7 +850,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "游魂",
@@ -763,26 +864,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202206": {
+    "zone_6202206": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022061": {
+        "room_62022061": {
           "level": 65,
           "monsters": [
             [
@@ -797,7 +905,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "焚毁狂",
@@ -810,8 +919,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "蛮横力士",
                 "hp": 11035145,
@@ -825,29 +937,27 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蛮横力士",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62022062": {
+        "room_62022062": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "色雷斯人",
-                "hp": 9337703,
-                "defense": 953,
-                "stun": 12805,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
               {
                 "name": "阿佩卡（寄生态）",
                 "hp": 958764,
@@ -859,7 +969,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋（寄生态）",
@@ -872,7 +983,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "刺椎原虫",
@@ -884,26 +996,53 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "色雷斯人",
+                "hp": 9337703,
+                "defense": 953,
+                "stun": 12805,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "色雷斯人",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6202207": {
+    "zone_6202207": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001194": {
+        "buff_62001194": {
           "title": "撼岳强袭",
           "desc": "· 代理人的攻击力提升10%，敌人的失衡恢复速度降低10%。使敌人进入属性异常状态时，若敌人未处于失衡状态下，将直接累积10%失衡值。\n·  <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害提升30%，若命中处于失衡状态的敌人，此攻击的暴击伤害额外提升60%。"
         }
       },
       "layer_room": {
-        "62022071": {
+        "room_62022071": {
           "level": 70,
           "monsters": [
             [
@@ -918,8 +1057,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "恶名·塔纳托斯",
                 "hp": 11004815,
@@ -931,13 +1073,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·塔纳托斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62022072": {
+        "room_62022072": {
           "level": 70,
           "monsters": [
             [
@@ -952,7 +1105,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -965,8 +1119,11 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "特佩什",
                 "hp": 12673419,
@@ -978,9 +1135,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "特佩什",
+              "bold": true
+            }
           ],
           "weakness": []
         }

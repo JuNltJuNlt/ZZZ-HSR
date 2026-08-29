@@ -3,18 +3,18 @@
   "begin_time": "2026-07-24 04:00:00",
   "end_time": "2026-08-07 03:59:59",
   "zone": {
-    "6205301": {
+    "zone_6205301": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62053011": {
+        "room_62053011": {
           "level": 50,
           "monsters": [
             [
@@ -76,9 +76,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62053012": {
+        "room_62053012": {
           "level": 50,
           "monsters": [
             [
@@ -112,22 +118,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205302": {
+    "zone_6205302": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62053021": {
+        "room_62053021": {
           "level": 55,
           "monsters": [
             [
@@ -188,9 +200,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62053022": {
+        "room_62053022": {
           "level": 55,
           "monsters": [
             [
@@ -280,22 +298,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205303": {
+    "zone_6205303": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62053031": {
+        "room_62053031": {
           "level": 60,
           "monsters": [
             [
@@ -344,9 +368,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62053032": {
+        "room_62053032": {
           "level": 60,
           "monsters": [
             [
@@ -428,22 +458,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6205304": {
+    "zone_6205304": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62053041": {
+        "room_62053041": {
           "level": 65,
           "monsters": [
             [
@@ -460,7 +496,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "恶名·装甲哈提",
                 "hp": 11370776,
@@ -477,28 +515,22 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·装甲哈提",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62053042": {
+        "room_62053042": {
           "level": 65,
           "monsters": [
             [
-              {
-                "name": "「空域戒戍者」",
-                "hp": 22413320,
-                "defense": 953,
-                "stun": 19772,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "风"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
-              },
               {
                 "name": "蜕生·城防戍卫布",
                 "hp": 5969381,
@@ -515,32 +547,60 @@
                 ],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "「空域戒戍者」",
+                "hp": 22413320,
+                "defense": 953,
+                "stun": 19772,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「空域戒戍者」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6205305": {
+    "zone_6205305": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         },
-        "62001532": {
+        "buff_62001532": {
           "title": "链式回路",
           "desc": "· 代理人的异常精通提升20点，造成的属性异常伤害提升15%。\n· 若队伍内有1名/2名<color=#FFFFFF>[异常]</color>特性的代理人，代理人的属性异常伤害命中敌人时无视其5%/15%全属性伤害抗性。"
         },
-        "62001533": {
+        "buff_62001533": {
           "title": "零度行动",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[连携技]</color>造成的伤害提升20%，造成的暴击伤害提升35%。"
         }
       },
       "layer_room": {
-        "62053051_62053051": {
+        "room_62053051_62053051": {
           "level": 70,
           "monsters": [
             [
@@ -590,7 +650,7 @@
           ],
           "weakness": []
         },
-        "62053052_62053052": {
+        "room_62053052_62053052": {
           "level": 70,
           "monsters": [
             [
@@ -656,7 +716,7 @@
           ],
           "weakness": []
         },
-        "62053053_62053053": {
+        "room_62053053_62053053": {
           "level": 70,
           "monsters": [
             [
@@ -713,8 +773,12 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"],
-                "resistance": ["物理"],
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
                 "type": "A"
               }
             ]
@@ -733,28 +797,36 @@
         }
       }
     },
-    "62053051": {
+    "zone_62053051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001522": {
+        "buff_62001522": {
           "title": "终幕协奏",
           "desc": "· 代理人的<color=#FFFFFF>[终结技]</color>、<color=#FFFFFF>[连携技]</color>造成的伤害提升40%。\n· <color=#FFFFFF>[连携技]</color>命中敌人后，其失衡易伤倍率提升20%，失衡恢复速度降低15%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62053051": {
+        "room_62053051": {
           "level": 70,
           "monsters": [
+            [
+              {
+                "name": "怒蛇",
+                "hp": 8024059,
+                "defense": 715,
+                "stun": 12345,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ],
             [
               {
                 "name": "秽蚀·多佩冈亚·「变节者」",
@@ -771,47 +843,35 @@
                   "以太"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "怒蛇",
-                "hp": 8024059,
-                "defense": 715,
-                "stun": 12345,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "风"
-                ],
-                "resistance": [],
-                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·多佩冈亚·「变节者」",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "62053052": {
+    "zone_62053052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001532": {
+        "buff_62001532": {
           "title": "链式回路",
           "desc": "· 代理人的异常精通提升20点，造成的属性异常伤害提升15%。\n· 若队伍内有1名/2名<color=#FFFFFF>[异常]</color>特性的代理人，代理人的属性异常伤害命中敌人时无视其5%/15%全属性伤害抗性。"
         }
       },
       "layer_room": {
-        "62053052": {
+        "room_62053052": {
           "level": 70,
           "monsters": [
             [
@@ -844,7 +904,9 @@
                   "物理"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·蛮横力士",
                 "hp": 87427170,
@@ -863,30 +925,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·蛮横力士",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62053053": {
+    "zone_62053053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001533": {
+        "buff_62001533": {
           "title": "零度行动",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[连携技]</color>造成的伤害提升20%，造成的暴击伤害提升35%。"
         }
       },
       "layer_room": {
-        "62053053": {
+        "room_62053053": {
           "level": 70,
           "monsters": [
             [
@@ -919,16 +983,6 @@
                 "type": "C"
               },
               {
-                "name": "秽蚀·狛野真斗",
-                "hp": 29322270,
-                "defense": 953,
-                "stun": 16284,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": ["冰"], "resistance": ["物理"],
-                "type": "A"
-              },
-              {
                 "name": "秽蚀·赫斯克龙",
                 "hp": 5110324,
                 "defense": 794,
@@ -944,7 +998,34 @@
                 ],
                 "type": "B"
               }
+            ],
+            [
+              {
+                "name": "秽蚀·狛野真斗",
+                "hp": 29322270,
+                "defense": 953,
+                "stun": 16284,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         }

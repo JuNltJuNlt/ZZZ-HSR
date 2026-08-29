@@ -3,18 +3,18 @@
   "begin_time": "2026-01-23 04:00:00",
   "end_time": "2026-02-06 03:59:59",
   "zone": {
-    "6204001": {
+    "zone_6204001": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001401": {
+        "buff_62001401": {
           "title": "刹那荣枯",
           "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62040011": {
+        "room_62040011": {
           "level": 50,
           "monsters": [
             [
@@ -76,9 +76,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62040012": {
+        "room_62040012": {
           "level": 50,
           "monsters": [
             [
@@ -112,22 +118,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204002": {
+    "zone_6204002": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 55,
       "layer_buff": {
-        "62001401": {
+        "buff_62001401": {
           "title": "刹那荣枯",
           "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62040021": {
+        "room_62040021": {
           "level": 55,
           "monsters": [
             [
@@ -209,9 +221,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62040022": {
+        "room_62040022": {
           "level": 55,
           "monsters": [
             [
@@ -301,22 +319,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204003": {
+    "zone_6204003": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 60,
       "layer_buff": {
-        "62001401": {
+        "buff_62001401": {
           "title": "刹那荣枯",
           "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62040031": {
+        "room_62040031": {
           "level": 60,
           "monsters": [
             [
@@ -398,9 +422,15 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62040032": {
+        "room_62040032": {
           "level": 60,
           "monsters": [
             [
@@ -476,22 +506,28 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204004": {
+    "zone_6204004": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 65,
       "layer_buff": {
-        "62001401": {
+        "buff_62001401": {
           "title": "刹那荣枯",
           "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62040041": {
+        "room_62040041": {
           "level": 65,
           "monsters": [
             [
@@ -522,7 +558,9 @@
                 ],
                 "resistance": [],
                 "type": "C"
-              },
+              }
+            ],
+            [
               {
                 "name": "祸首·通缉打手",
                 "hp": 15161034,
@@ -541,9 +579,19 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "祸首·通缉打手",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62040042": {
+        "room_62040042": {
           "level": 65,
           "monsters": [
             [
@@ -565,30 +613,36 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "6204005": {
+    "zone_6204005": {
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
       "layer_buff": {
-        "62001401": {
+        "buff_62001401": {
           "title": "刹那荣枯",
           "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         },
-        "62001402": {
+        "buff_62001402": {
           "title": "冽刃凌渊",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color>提升15%。\n· 代理人使敌人进入属性异常状态后，其防御力降低10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         },
-        "62001403": {
+        "buff_62001403": {
           "title": "掬火濯心",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[连携技]</color>造成的伤害提升40%，造成的暴击伤害提升30%。"
         }
       },
       "layer_room": {
-        "62040051_62040051": {
+        "room_62040051_62040051": {
           "level": 70,
           "monsters": [
             [
@@ -653,7 +707,7 @@
           ],
           "weakness": []
         },
-        "62040052_62040052": {
+        "room_62040052_62040052": {
           "level": 70,
           "monsters": [
             [
@@ -720,7 +774,7 @@
           ],
           "weakness": []
         },
-        "62040053_62040053": {
+        "room_62040053_62040053": {
           "level": 70,
           "monsters": [
             [
@@ -788,26 +842,18 @@
         }
       }
     },
-    "62040051": {
+    "zone_62040051": {
       "name": "房间一",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001401": {
+        "buff_62001401": {
           "title": "刹那荣枯",
           "desc": "· 处于<color=#FFFFFF>[以太帷幕]</color>中时，代理人的攻击力提升25%，暴击伤害提升20%。\n· 代理人命中敌人时，无视敌人10%的<color=#F0D12B>物理属性伤害抗性</color>。"
         }
       },
       "layer_room": {
-        "62040051": {
+        "room_62040051": {
           "level": 70,
           "monsters": [
             [
@@ -839,7 +885,9 @@
                 ],
                 "resistance": [],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·多佩冈亚·「变节者」",
                 "hp": 23131355,
@@ -858,30 +906,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·多佩冈亚·「变节者」",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62040052": {
+    "zone_62040052": {
       "name": "房间二",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001402": {
+        "buff_62001402": {
           "title": "冽刃凌渊",
           "desc": "· 代理人的<color=#98EFF0>冰属性伤害</color>和<color=#F0D12B>物理属性伤害</color>提升15%。\n· 代理人使敌人进入属性异常状态后，其防御力降低10%，且受到的属性异常伤害提升20%，持续10秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62040052": {
+        "room_62040052": {
           "level": 70,
           "monsters": [
             [
@@ -915,7 +965,9 @@
                   "以太"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "秽蚀·简",
                 "hp": 27829214,
@@ -934,30 +986,32 @@
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·简",
+              "bold": true
+            }
+          ],
           "weakness": []
         }
       }
     },
-    "62040053": {
+    "zone_62040053": {
       "name": "房间三",
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
-        "62001002": {
-          "title": "",
-          "desc": ""
-        },
-        "62001403": {
+        "buff_62001403": {
           "title": "掬火濯心",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>和<color=#FFFFFF>[连携技]</color>造成的伤害提升40%，造成的暴击伤害提升30%。"
         }
       },
       "layer_room": {
-        "62040053": {
+        "room_62040053": {
           "level": 70,
           "monsters": [
             [
@@ -990,7 +1044,9 @@
                   "电"
                 ],
                 "type": "B"
-              },
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·暗渊惩戒者",
                 "hp": 22214337,
@@ -1008,6 +1064,16 @@
                 "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·暗渊惩戒者",
+              "bold": true
+            }
           ],
           "weakness": []
         }

@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6203501": {
+    "zone_6203501": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035011": {
+        "room_62035011": {
           "level": 50,
           "monsters": [
             [
@@ -27,7 +27,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -40,7 +41,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "萨提尔",
@@ -53,7 +55,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "地精",
@@ -66,7 +69,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "秽蚀·特里诺斯",
@@ -80,13 +84,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62035012": {
+        "room_62035012": {
           "level": 50,
           "monsters": [
             [
@@ -101,7 +112,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -114,7 +126,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -127,7 +140,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -140,26 +154,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203502": {
+    "zone_6203502": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035021": {
+        "room_62035021": {
           "level": 53,
           "monsters": [
             [
@@ -174,7 +195,8 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "泰拉斯奎祸车",
@@ -187,13 +209,20 @@
                   "电",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62035022": {
+        "room_62035022": {
           "level": 53,
           "monsters": [
             [
@@ -210,7 +239,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "掠袭猎兵",
@@ -223,7 +253,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轻装猎兵",
@@ -236,7 +267,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者」",
@@ -251,26 +283,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203503": {
+    "zone_6203503": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035031": {
+        "room_62035031": {
           "level": 55,
           "monsters": [
             [
@@ -285,7 +324,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -297,7 +337,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -309,7 +350,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·狂乱暴徒",
@@ -323,13 +365,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62035032": {
+        "room_62035032": {
           "level": 55,
           "monsters": [
             [
@@ -344,7 +393,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -357,7 +407,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "多佩冈亚·莫尔斯",
@@ -372,7 +423,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·巴罗姆",
@@ -387,7 +439,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "多佩冈亚·波可娜",
@@ -402,26 +455,33 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203504": {
+    "zone_6203504": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035041": {
+        "room_62035041": {
           "level": 58,
           "monsters": [
             [
@@ -436,7 +496,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "法布提",
@@ -449,7 +510,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "杜拉罕",
@@ -462,7 +524,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "霍普利泰",
@@ -475,7 +538,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "曼德拉",
@@ -488,7 +552,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "班尼雷克",
@@ -501,13 +566,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62035042": {
+        "room_62035042": {
           "level": 58,
           "monsters": [
             [
@@ -522,7 +594,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -535,7 +608,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -548,7 +622,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -561,26 +636,33 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203505": {
+    "zone_6203505": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035051": {
+        "room_62035051": {
           "level": 60,
           "monsters": [
             [
@@ -594,7 +676,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "秽蚀·狂乱暴徒",
@@ -608,7 +691,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "秽蚀·特里诺斯",
@@ -622,13 +706,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62035052": {
+        "room_62035052": {
           "level": 60,
           "monsters": [
             [
@@ -645,7 +736,8 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "轻装猎兵",
@@ -658,7 +750,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "戍卫猎兵",
@@ -671,7 +764,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者」",
@@ -686,28 +780,50 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203506": {
+    "zone_6203506": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035061": {
+        "room_62035061": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "巡防猎兵",
+                "hp": 1070936,
+                "defense": 731,
+                "stun": 1981,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "「提丰·重击者型」",
@@ -721,25 +837,24 @@
                 ],
                 "resistance": [
                   "火"
-                ]
-              },
-              {
-                "name": "巡防猎兵",
-                "hp": 1070936,
-                "defense": 731,
-                "stun": 1981,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
                 ],
-                "resistance": []
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「提丰·重击者型」",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62035062": {
+        "room_62035062": {
           "level": 65,
           "monsters": [
             [
@@ -756,26 +871,33 @@
                 ],
                 "resistance": [
                   "以太"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6203507": {
+    "zone_6203507": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001351": {
+        "buff_62001351": {
           "title": "赤海巡鲨",
           "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人造成的失衡值提升15%。\n· 代理人的贯穿伤害提升15%，攻击处于失衡状态中的敌人时，造成的暴击伤害提升50%。"
         }
       },
       "layer_room": {
-        "62035071": {
+        "room_62035071": {
           "level": 70,
           "monsters": [
             [
@@ -790,8 +912,11 @@
                   "火",
                   "以太"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "秽蚀·色雷斯人",
                 "hp": 23887553,
@@ -805,13 +930,24 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62035072": {
+        "room_62035072": {
           "level": 70,
           "monsters": [
             [
@@ -822,10 +958,21 @@
                 "stun": 16284,
                 "number": 1,
                 "hp_ratio_sum": 1,
-                "weakness": ["冰"],
-                "resistance": ["物理"]
+                "weakness": [
+                  "冰"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "秽蚀·狛野真斗",
+              "bold": true
+            }
           ],
           "weakness": []
         }

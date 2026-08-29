@@ -1,18 +1,18 @@
 {
   "name": "剧变节点",
   "zone": {
-    "6201801": {
+    "zone_6201801": {
       "name": "剧变节点第一防线",
       "stage_num": 1,
       "monster_level": 50,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018011": {
+        "room_62018011": {
           "level": 50,
           "monsters": [
             [
@@ -28,7 +28,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·杜拉罕",
@@ -42,7 +43,8 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "离子体·瑟托迪亚",
@@ -54,7 +56,8 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "离子体·纳塞勒亚",
@@ -66,13 +69,20 @@
                 "weakness": [
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62018012": {
+        "room_62018012": {
           "level": 50,
           "monsters": [
             [
@@ -88,7 +98,8 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -100,7 +111,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -112,7 +124,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -126,26 +139,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201802": {
+    "zone_6201802": {
       "name": "剧变节点第二防线",
       "stage_num": 2,
       "monster_level": 53,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018021": {
+        "room_62018021": {
           "level": 53,
           "monsters": [
             [
@@ -160,7 +180,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "提尔锋",
@@ -173,7 +194,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "阿佩卡",
@@ -186,7 +208,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "哈提",
@@ -199,7 +222,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -212,7 +236,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "曼德拉",
@@ -225,13 +250,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62018022": {
+        "room_62018022": {
           "level": 53,
           "monsters": [
             [
@@ -246,7 +278,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -259,7 +292,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -272,7 +306,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -285,26 +320,33 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201803": {
+    "zone_6201803": {
       "name": "剧变节点第三防线",
       "stage_num": 3,
       "monster_level": 55,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018031": {
+        "room_62018031": {
           "level": 55,
           "monsters": [
             [
@@ -319,7 +361,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "掠夺者",
@@ -332,7 +375,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "魁梧打手",
@@ -345,7 +389,8 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "魁梧施虐者",
@@ -358,13 +403,20 @@
                   "冰",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62018032": {
+        "room_62018032": {
           "level": 55,
           "monsters": [
             [
@@ -380,7 +432,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "袭扰猎兵",
@@ -392,7 +445,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "先锋猎兵",
@@ -404,7 +458,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -416,7 +471,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -430,26 +486,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201804": {
+    "zone_6201804": {
       "name": "剧变节点第四防线",
       "stage_num": 4,
       "monster_level": 58,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018041": {
+        "room_62018041": {
           "level": 58,
           "monsters": [
             [
@@ -464,7 +527,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "塔纳托斯",
@@ -477,7 +541,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "装甲哈提",
@@ -490,7 +555,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "B"
               },
               {
                 "name": "弗瑟尔",
@@ -503,7 +569,8 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "索迪代斯",
@@ -516,13 +583,20 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62018042": {
+        "room_62018042": {
           "level": 58,
           "monsters": [
             [
@@ -536,7 +610,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "突击炮手",
@@ -550,7 +625,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "整训猎兵",
@@ -562,7 +638,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -576,26 +653,33 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201805": {
+    "zone_6201805": {
       "name": "剧变节点第五防线",
       "stage_num": 5,
       "monster_level": 60,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018051": {
+        "room_62018051": {
           "level": 60,
           "monsters": [
             [
@@ -609,7 +693,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "贪婪射手",
@@ -621,7 +706,8 @@
                 "weakness": [
                   "火"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "狂乱暴徒",
@@ -635,7 +721,8 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "凶心疯汉",
@@ -649,13 +736,20 @@
                 ],
                 "resistance": [
                   "电"
-                ]
+                ],
+                "type": "B"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
           "weakness": []
         },
-        "62018052": {
+        "room_62018052": {
           "level": 60,
           "monsters": [
             [
@@ -671,7 +765,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "先锋猎兵",
@@ -683,7 +778,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "整训猎兵",
@@ -695,7 +791,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "「捷足巡游者Ⅱ型」",
@@ -709,7 +806,8 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               },
               {
                 "name": "「重装侵袭者Ⅱ型」",
@@ -723,28 +821,79 @@
                 ],
                 "resistance": [
                   "火"
-                ]
+                ],
+                "type": "B"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201806": {
+    "zone_6201806": {
       "name": "剧变节点第六防线",
       "stage_num": 6,
       "monster_level": 65,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018061": {
+        "room_62018061": {
           "level": 65,
           "monsters": [
+            [
+              {
+                "name": "霍普利泰",
+                "hp": 520828,
+                "defense": 731,
+                "stun": 1320,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 409984,
+                "defense": 572,
+                "stun": 1386,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "曼德拉",
+                "hp": 409984,
+                "defense": 572,
+                "stun": 1386,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
             [
               {
                 "name": "恶名·塔纳托斯",
@@ -757,52 +906,24 @@
                   "冰",
                   "以太"
                 ],
-                "resistance": []
-              },
-              {
-                "name": "霍普利泰",
-                "hp": 520828,
-                "defense": 731,
-                "stun": 1320,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "曼德拉",
-                "hp": 409984,
-                "defense": 572,
-                "stun": 1386,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
-              },
-              {
-                "name": "曼德拉",
-                "hp": 409984,
-                "defense": 572,
-                "stun": 1386,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "以太"
-                ],
-                "resistance": []
+                "resistance": [],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "恶名·塔纳托斯",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62018062": {
+        "room_62018062": {
           "level": 65,
           "monsters": [
             [
@@ -816,7 +937,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "轰击猎兵",
@@ -828,8 +950,11 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "骇鸟",
                 "hp": 9972241,
@@ -842,26 +967,37 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "骇鸟",
+              "bold": true
+            }
           ],
           "weakness": []
         }
       }
     },
-    "6201807": {
+    "zone_6201807": {
       "name": "剧变节点第七防线",
       "stage_num": 7,
       "monster_level": 70,
       "layer_buff": {
-        "62001181": {
+        "buff_62001181": {
           "title": "契阔同心",
           "desc": "· 敌人的失衡易伤倍率提升30%。\n· 代理人的<color=#FFFFFF>[追加攻击]</color>命中敌人时，其<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
-        "62018071": {
+        "room_62018071": {
           "level": 70,
           "monsters": [
             [
@@ -876,7 +1012,8 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "盗猎客",
@@ -889,8 +1026,11 @@
                   "火",
                   "物理"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "多佩冈亚·暗渊惩戒者",
                 "hp": 11107169,
@@ -904,13 +1044,24 @@
                 ],
                 "resistance": [
                   "冰"
-                ]
+                ],
+                "type": "A"
               }
             ]
           ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "多佩冈亚·暗渊惩戒者",
+              "bold": true
+            }
+          ],
           "weakness": []
         },
-        "62018072": {
+        "room_62018072": {
           "level": 70,
           "monsters": [
             [
@@ -924,7 +1075,8 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "巡防猎兵",
@@ -936,8 +1088,11 @@
                 "weakness": [
                   "电"
                 ],
-                "resistance": []
-              },
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
               {
                 "name": "星期五",
                 "hp": 11206919,
@@ -950,9 +1105,20 @@
                 ],
                 "resistance": [
                   "物理"
-                ]
+                ],
+                "type": "A"
               }
             ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "星期五",
+              "bold": true
+            }
           ],
           "weakness": []
         }

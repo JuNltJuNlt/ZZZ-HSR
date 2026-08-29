@@ -685,7 +685,20 @@
       "name": "",
       "stage_num": 5,
       "monster_level": 0,
-      "layer_buff": {},
+      "layer_buff": {
+        "buff_62001541": {
+          "title": "紊音共振",
+          "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
+        },
+        "buff_62001591": {
+          "title": "鸣风掣电",
+          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+        },
+        "buff_62001593": {
+          "title": "刹那焰光",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
       "layer_room": {
         "room_62059051_62059051": {
           "level": 70,
@@ -763,17 +776,7 @@
               "bold": true
             }
           ],
-          "weakness": [],
-          "buffs": {
-            "buff_62001001": {
-              "title": "",
-              "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-            },
-            "buff_62001591": {
-              "title": "鸣风掣电",
-              "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
-            }
-          }
+          "weakness": []
         },
         "room_62059052_62059052": {
           "level": 70,
@@ -839,17 +842,7 @@
               "bold": true
             }
           ],
-          "weakness": [],
-          "buffs": {
-            "buff_62001001": {
-              "title": "",
-              "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-            },
-            "buff_62001541": {
-              "title": "紊音共振",
-              "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
-            }
-          }
+          "weakness": []
         },
         "room_62059053_62059053": {
           "level": 70,
@@ -914,17 +907,7 @@
               "bold": true
             }
           ],
-          "weakness": [],
-          "buffs": {
-            "buff_62001001": {
-              "title": "",
-              "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-            },
-            "buff_62001593": {
-              "title": "刹那焰光",
-              "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
-            }
-          }
+          "weakness": []
         }
       }
     },
@@ -933,10 +916,6 @@
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "buff_62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
         "buff_62001591": {
           "title": "鸣风掣电",
           "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
@@ -1028,10 +1007,6 @@
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "buff_62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
         "buff_62001541": {
           "title": "紊音共振",
           "desc": "· 若队伍内有2名/3名<color=#FFFFFF>[异常]</color>特性的代理人，代理人造成的属性异常伤害<color=#2BAD00>提升10%/60%</color>，全队入场时初始获得<color=#2BAD00>500/1500点</color>喧响值。"
@@ -1111,10 +1086,6 @@
       "stage_num": 5,
       "monster_level": 70,
       "layer_buff": {
-        "buff_62001001": {
-          "title": "",
-          "desc": "· 本关内，对敌人造成伤害可获得<color=#FFAF2C>伤害得分</color>，击败单个<color=#FFFFFF>普通/精英敌人</color>时将一次性获得<color=#FFAF2C>击败得分</color>。\n· 本关内，不同时间段获得的分数将额外享受<color=#FFAF2C>倍率加成</color>，时间越靠前，加成系数越高，加成后<color=#FFAF2C>总得分上限为50000分</color>。"
-        },
         "buff_62001593": {
           "title": "刹那焰光",
           "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
