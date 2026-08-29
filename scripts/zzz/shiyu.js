@@ -217,19 +217,47 @@ const renderStage = (stageData, label, elements, index) => {
 const renderAllStages = () => {
     const floor = currentFloor();
     const rooms = Object.keys(floor.layer_room).sort();
-    const buffKeys = Object.keys(floor.layer_buff).filter(bk => {
-        const buff = floor.layer_buff[bk];
-        return buff && buff.title && buff.title.trim() !== "";
-    });
     const container = byId("shiyuStages"); container.replaceChildren();
     
-    if (buffKeys.length > 0) {
+    const zone = currentEntry().zone;
+    const floorKeys = getFloorKeys(zone);
+    const currentKey = floorKeys[state.floorIndex];
+    const currentNumPart = currentKey.replace('zone_', '');
+    
+    const hasChildren = Object.keys(zone).some(k => 
+        k.startsWith('zone_') && 
+        k.replace('zone_', '').startsWith(currentNumPart) && 
+        k.replace('zone_', '').length > 7
+    );
+    
+    let buffs = [];
+    if (hasChildren) {
+        const childKeys = Object.keys(zone).filter(k => 
+            k.startsWith('zone_') && 
+            k.replace('zone_', '').startsWith(currentNumPart) && 
+            k.replace('zone_', '').length > 7
+        ).sort();
+        
+        childKeys.forEach(childKey => {
+            const childZone = zone[childKey];
+            Object.entries(childZone.layer_buff || {}).forEach(([bk, buff]) => {
+                if (buff && buff.title && buff.title.trim() !== "") {
+                    buffs.push(buff);
+                }
+            });
+        });
+    } else {
+        buffs = Array.isArray(floor.layer_buff) 
+            ? floor.layer_buff 
+            : Object.values(floor.layer_buff || {}).filter(b => b && b.title && b.title.trim() !== "");
+    }
+    
+    if (buffs.length > 0) {
         const buffRow = document.createElement("div"); 
         buffRow.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:12px;width:100%";
         
         const buffElements = [];
-        buffKeys.forEach(bk => { 
-            const buff = floor.layer_buff[bk]; 
+        buffs.forEach(buff => { 
             if (buff && (buff.title || buff.desc)) {
                 const buffEl = create("div", { 
                     className: "smallbuff", 
