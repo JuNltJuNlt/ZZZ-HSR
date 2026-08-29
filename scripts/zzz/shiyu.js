@@ -47,20 +47,29 @@ const loadData = async () => {
 };
 
 const currentEntry = () => shiyuEntries[state.scheduleIndex];
+
+const getFloorKeys = (zone) => {
+    return Object.keys(zone).filter(k => {
+        if (!k.startsWith('zone_')) return false;
+        const numPart = k.replace('zone_', '');
+        return numPart.length <= 7;
+    }).sort();
+};
+
 const currentFloor = () => {
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).filter(k => k.length <= 7).sort();
+    const keys = getFloorKeys(zone);
     return zone[keys[state.floorIndex]];
 };
 
 const setSchedule = (index) => {
     const prevZone = currentEntry().zone;
-    const prevKeys = Object.keys(prevZone).filter(k => k.length <= 7);
+    const prevKeys = getFloorKeys(prevZone);
     const prevMaxFloor = prevKeys.length;
     const prevFloor = state.floorIndex;
     state.scheduleIndex = wrapIndex(index, shiyuEntries.length);
     const newZone = currentEntry().zone;
-    const newKeys = Object.keys(newZone).filter(k => k.length <= 7);
+    const newKeys = getFloorKeys(newZone);
     const newMaxFloor = newKeys.length;
     if (prevFloor >= newMaxFloor) state.floorIndex = newMaxFloor - 1;
     else state.floorIndex = prevFloor;
@@ -69,7 +78,7 @@ const setSchedule = (index) => {
 
 const setFloor = (index) => {
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).filter(k => k.length <= 7);
+    const keys = getFloorKeys(zone);
     state.floorIndex = wrapIndex(index, keys.length);
     renderFloor();
 };
@@ -160,7 +169,7 @@ const entryLabel = (e) => (indexData.entries[shiyuEntries.indexOf(e)] || "").rep
 
 const renderMonsterCard = (monster, stageLevel) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    const type = info.type || "C";
+    const type = info.type || monster.type || "C";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
     const def = monster.defense || 0;
@@ -473,7 +482,7 @@ const init = async () => {
     bindEvents();
     state.scheduleIndex = 0;
     const zone = currentEntry().zone;
-    const keys = Object.keys(zone).filter(k => k.length <= 7);
+    const keys = getFloorKeys(zone);
     state.floorIndex = keys.length - 1;
     render();
 };
