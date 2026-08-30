@@ -13,14 +13,12 @@ let peakChartLoaded = false;
 let totalChartInstance = null;
 let stageChartInstance = null;
 let peakChartInstance = null;
-let peakAvgChartInstance = null;
 
 const text = {
     title: "式舆防卫战",
     chartTotalTitle: "总血量演化",
     chartStageTitle: "各间血量演化",
     chartPeakTitle: "最高层总血量演化",
-    chartPeakAvgTitle: "最高层平均每间输出量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
     waveNames: ["第一波", "第二波", "第三波", "第四波"],
     stageLabels: ["房间一", "房间二", "房间三"],
@@ -341,21 +339,28 @@ const renderPeakChart = () => {
         const floorToUse = version < 2.5 ? 7 : 5;
         return floorTotalHp(e.zone, floorToUse);
     });
-    renderLineChart("peakChart", text.chartPeakTitle, [{ name: "最高层总血量", color: "#cc0000", data: peakData }], peakLabels, false);
     
-    const peakAvgData = allEntries.map(e => {
+    const normalizedData = allEntries.map(e => {
         const label = entryLabel(e);
         const version = parseVersion(label);
-        const roomCountForPeak = version < 2.5 ? 2 : 3;
-        return Math.round(floorTotalHp(e.zone, version < 2.5 ? 7 : 5) / roomCountForPeak);
+        const floorToUse = version < 2.5 ? 7 : 5;
+        const totalHp = floorTotalHp(e.zone, floorToUse);
+        if (version < 2.5) {
+            return totalHp;
+        }
+        return Math.round(totalHp / 1.5);
     });
-    renderLineChart("peakAvgChart", text.chartPeakAvgTitle, [{ name: "平均输出量", color: "#2545ba", data: peakAvgData }], peakLabels, false);
+    
+    renderLineChart("peakChart", text.chartPeakTitle, [
+        { name: "最高层总血量", color: "#cc0000", data: peakData },
+        { name: "间数归一总血量", color: "#2545ba", data: normalizedData },
+    ], peakLabels, false);
 };
 
 const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
-    if (targetId === "peakChart" || targetId === "peakAvgChart") {
+    if (targetId === "peakChart") {
         chartElement.style.width = chartElement.parentElement.offsetWidth + "px";
         chartElement.style.height = "600px";
     }
@@ -363,8 +368,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     let currentInstance;
     if (targetId === "totalChart") currentInstance = totalChartInstance;
     else if (targetId === "stageChart") currentInstance = stageChartInstance;
-    else if (targetId === "peakChart") currentInstance = peakChartInstance;
-    else currentInstance = peakAvgChartInstance;
+    else currentInstance = peakChartInstance;
     
     if (currentInstance && !currentInstance.isDisposed()) {
         currentInstance.resize();
@@ -397,8 +401,7 @@ const renderLineChart = (targetId, title, seriesData, labels, resetZoom = false)
     const newInstance = window.echarts.init(chartElement);
     if (targetId === "totalChart") totalChartInstance = newInstance;
     else if (targetId === "stageChart") stageChartInstance = newInstance;
-    else if (targetId === "peakChart") peakChartInstance = newInstance;
-    else peakAvgChartInstance = newInstance;
+    else peakChartInstance = newInstance;
     
     newInstance.setOption({
         title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
@@ -441,9 +444,6 @@ const bindEvents = () => {
                     const peakChart = document.getElementById("peakChart");
                     peakChart.style.width = container.offsetWidth + "px";
                     peakChart.style.height = "600px";
-                    const peakAvgChart = document.getElementById("peakAvgChart");
-                    peakAvgChart.style.width = container.offsetWidth + "px";
-                    peakAvgChart.style.height = "600px";
                     renderPeakChart();
                     peakChartLoaded = true;
                 }, 200);
