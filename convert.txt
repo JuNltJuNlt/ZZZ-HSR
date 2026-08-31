@@ -1,0 +1,391 @@
+shiyu/deadly
+
+(async () => {
+    const mRes = await fetch('../../data/zzz/monsters.json');
+    const monstersData = (await mRes.json()).monsters;
+
+    const elementMap = { ice: '冰', fire: '火', electric: '电', ether: '以太', physical: '物理', wind: '风' };
+
+    function parseElements(elemObj) {
+        const weak = [];
+        const resist = [];
+        for (const [key, val] of Object.entries(elemObj || {})) {
+            const cn = elementMap[key] || key;
+            if (val === 1) weak.push(cn);
+            if (val === -1) resist.push(cn);
+        }
+        return { weak, resist };
+    }
+
+    function convertMonster(mon, defaultType) {
+        const info = monstersData.find(m => m.name === mon.name);
+        return {
+            name: mon.name,
+            hp: Math.ceil(mon.stats.hp),
+            defense: Math.ceil(mon.stats.defence),
+            stun: Math.ceil(mon.stats.stun),
+            number: 1,
+            hp_ratio_sum: 1,
+            weakness: info ? info.weakness : parseElements(mon.element).weak,
+            resistance: info ? info.resistance : parseElements(mon.element).resist,
+            type: info ? info.type : (defaultType || "C"),
+        };
+    }
+
+    function splitWaves(monsters) {
+        const wave1 = [];
+        const wave2 = [];
+        const wave2Name = [];
+        monsters.forEach(m => {
+            if (m.type === 'A' || m.type === 'S') {
+                wave2.push(m);
+                wave2Name.push(m.name);
+            } else {
+                wave1.push(m);
+            }
+        });
+        const result = [];
+        if (wave1.length > 0) result.push({ name: '小怪波', monsters: wave1 });
+        if (wave2.length > 0) result.push({ name: wave2Name.join('、'), monsters: wave2, bold: true });
+        return result;
+    }
+
+    function convertShiyu(raw) {
+        const result = {
+            name: raw.name || "",
+            begin_time: raw.begin_time || "",
+            end_time: raw.end_time || "",
+            zone: {}
+        };
+
+        for (const [zoneKey, zoneData] of Object.entries(raw.zone || {})) {
+            const convertedRooms = {};
+
+            if (zoneData.child && zoneData.child.length > 0) {
+                zoneData.child.forEach((childKey) => {
+                    const childZone = raw.zone[String(childKey)];
+                    if (childZone && childZone.layer_room) {
+                        Object.entries(childZone.layer_room).forEach(([rk, room]) => {
+                            const allMonsters = room.monster_list
+                                ? Object.values(room.monster_list).map(m => convertMonster(m))
+                                : [];
+                            const waves = splitWaves(allMonsters);
+                            convertedRooms[`room_${childKey}_${rk}`] = {
+                                level: childZone.monster_level || zoneData.monster_level || 70,
+                                monsters: waves.map(w => w.monsters),
+                                waveNames: waves.map(w => ({ name: w.name, bold: w.bold || false })),
+                                weakness: parseElements(room.monster_weakness || {}).weak,
+                            };
+                        });
+                    }
+                });
+            } else {
+                Object.entries(zoneData.layer_room || {}).forEach(([rk, room]) => {
+                    const allMonsters = room.monster_list
+                        ? Object.values(room.monster_list).map(m => convertMonster(m))
+                        : [];
+                    const waves = splitWaves(allMonsters);
+                    convertedRooms[`room_${rk}`] = {
+                        level: zoneData.monster_level || 70,
+                        monsters: waves.map(w => w.monsters),
+                        waveNames: waves.map(w => ({ name: w.name, bold: w.bold || false })),
+                        weakness: parseElements(room.monster_weakness || {}).weak,
+                    };
+                });
+            }
+
+            const convertedBuffs = {};
+            Object.entries(zoneData.layer_buff || {}).forEach(([bk, buff]) => {
+                if (buff && buff.title && buff.title.trim() !== "") {
+                    convertedBuffs[`buff_${bk}`] = { title: buff.title || "", desc: buff.desc || "" };
+                }
+            });
+
+            result.zone[`zone_${zoneKey}`] = {
+                name: zoneData.name || "",
+                stage_num: zoneData.stage_num,
+                monster_level: zoneData.monster_level,
+                layer_buff: convertedBuffs,
+                layer_room: convertedRooms,
+            };
+        }
+
+        return result;
+    }
+
+    function convertDeadly(raw) {
+        function convertZone(zoneObj) {
+            const result = {};
+            for (const [zoneKey, zoneData] of Object.entries(zoneObj || {})) {
+                const convertedBuffs = {};
+                Object.entries(zoneData.layer_buff || {}).forEach(([bk, buff]) => {
+                    if (buff && (buff.title || buff.desc)) {
+                        convertedBuffs[`buff_${bk}`] = { title: buff.title || '', desc: buff.desc || '' };
+                    }
+                });
+
+                const convertedSelectable = {};
+                Object.entries(zoneData.selectable_buff || {}).forEach(([bk, buff]) => {
+                    if (buff && (buff.title || buff.desc)) {
+                        convertedSelectable[`buff_${bk}`] = { title: buff.title || '', desc: buff.desc || '' };
+                    }
+                });
+
+                const convertedMonsters = [];
+                if (zoneData.layer_room) {
+                    Object.values(zoneData.layer_room).forEach(room => {
+                        if (room.monster_list) {
+                            Object.values(room.monster_list).forEach(m => {
+                                convertedMonsters.push(convertMonster(m, 'S'));
+                            });
+                        }
+                    });
+                }
+
+                result[`zone_${zoneKey}`] = {
+                    name: zoneData.name || '',
+                    stage_num: zoneData.stage_num || 1,
+                    monster_level: zoneData.monster_level || 70,
+                    layer_buff: convertedBuffs,
+                    selectable_buff: convertedSelectable,
+                    monsters: convertedMonsters,
+                    weakness: [],
+                    goal: {
+                        s: zoneData.s_rank_goal || 20000,
+                        a: zoneData.a_rank_goal || 14000,
+                        b: zoneData.b_rank_goal || 6000
+                    },
+                    isFinal: false,
+                };
+            }
+            return result;
+        }
+
+        const normalZone = {};
+        const finalZone = {};
+
+        for (const mode of raw.modes || []) {
+            const target = mode.zone_type === 1002 ? finalZone : normalZone;
+            Object.assign(target, convertZone(mode.zone));
+        }
+
+        return {
+            deadly_id: raw.id,
+            deadly_name: raw.name || '',
+            time: (raw.begin_time && raw.end_time) ? (raw.begin_time + ' - ' + raw.end_time) : '',
+            normal_zone: normalZone,
+            final_zone: finalZone,
+        };
+    }
+
+    function download(data, fileName) {
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
+    }
+
+    const shiyuFiles = ['3.2C.json', '3.2B.json', '3.2A.json'];
+    for (const fileName of shiyuFiles) {
+        try {
+            const res = await fetch(`../../data/zzz/shiyu/raw/${fileName}`);
+            if (!res.ok) { console.log(`跳过式舆 ${fileName}`); continue; }
+            const raw = await res.json();
+            const result = convertShiyu(raw);
+            download(result, fileName);
+            console.log(`式舆完成: ${fileName}`);
+            await new Promise(r => setTimeout(r, 300));
+        } catch(e) {
+            console.log(`式舆失败: ${fileName}`, e.message);
+        }
+    }
+
+    const deadlyFiles = ['690451.json', '690461.json', '690471.json'];
+    for (const fileName of deadlyFiles) {
+        try {
+            const res = await fetch(`../../data/zzz/deadly/raw/${fileName}`);
+            if (!res.ok) { console.log(`跳过危局 ${fileName}`); continue; }
+            const raw = await res.json();
+            const result = convertDeadly(raw);
+            download(result, fileName);
+            console.log(`危局完成: ${fileName}`);
+            await new Promise(r => setTimeout(r, 300));
+        } catch(e) {
+            console.log(`危局失败: ${fileName}`, e.message);
+        }
+    }
+
+    console.log('全部完成！');
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skill
+
+(async () => {
+    const mRes = await fetch('../../data/zzz/monsters.json');
+    const monstersData = (await mRes.json()).monsters;
+
+    const elementMap = { ice: '冰', fire: '火', electric: '电', ether: '以太', physical: '物理', wind: '风' };
+
+    function parseElements(elemObj) {
+        const weak = [];
+        const resist = [];
+        for (const [key, val] of Object.entries(elemObj || {})) {
+            const cn = elementMap[key] || key;
+            if (val === 1) weak.push(cn);
+            if (val === -1) resist.push(cn);
+        }
+        return { weak, resist };
+    }
+
+    function convertBuff(buffObj) {
+        return { title: buffObj.title || '', desc: buffObj.desc || '' };
+    }
+
+    function convertBoss(bossObj) {
+        const modes = Object.values(bossObj.mode || {});
+        const easyMode = modes.find(m => m.difficulty === 1);
+        const hardMode = modes.find(m => m.difficulty === 2);
+        
+        if (!easyMode && !hardMode) return null;
+        const refMode = easyMode || hardMode;
+        const zoneData = Object.values(refMode.zone || {})[0];
+        if (!zoneData) return null;
+
+        const easyRoom = easyMode ? Object.values(easyMode.zone || {})[0] : null;
+        const hardRoom = hardMode ? Object.values(hardMode.zone || {})[0] : null;
+
+        const getMonster = (room) => {
+            if (!room?.layer_room) return null;
+            const firstRoom = Object.values(room.layer_room)[0];
+            if (!firstRoom?.monster_list) return null;
+            return Object.values(firstRoom.monster_list)[0] || null;
+        };
+
+        const easyMonster = getMonster(easyRoom);
+        const hardMonster = getMonster(hardRoom);
+        const monster = easyMonster || hardMonster;
+        if (!monster) return null;
+
+        const info = monstersData.find(m => m.name === monster.name);
+        const elements = parseElements(monster.element);
+        
+        const layerBuffs = [];
+        Object.values(zoneData.layer_buff || {}).forEach(b => {
+            if (b && (b.title || b.desc)) layerBuffs.push(convertBuff(b));
+        });
+
+        const selectableBuffs = [];
+        Object.values(zoneData.selectable_buff || {}).forEach(b => {
+            if (b && (b.title || b.desc)) selectableBuffs.push(convertBuff(b));
+        });
+
+        return {
+            name: bossObj.name || '',
+            easy_hp: easyMonster ? Math.ceil(easyMonster.stats.hp) : 0,
+            hard_hp: hardMonster ? Math.ceil(hardMonster.stats.hp) : 0,
+            defense: Math.ceil(monster.stats.defence),
+            stun: Math.ceil(monster.stats.stun),
+            weakness: info ? info.weakness : elements.weak,
+            resistance: info ? info.resistance : elements.resist,
+            type: info ? info.type : 'S',
+            layer_buffs: layerBuffs,
+            selectable_buffs: selectableBuffs,
+            mode_desc: refMode.desc || '',
+        };
+    }
+
+    function download(data, fileName) {
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
+    }
+
+    const fileList = ['1.json'];
+    for (const fileName of fileList) {
+        try {
+            const res = await fetch(`../../data/zzz/skill/raw/${fileName}`);
+            if (!res.ok) { console.log(`跳过 ${fileName}`); continue; }
+            const raw = await res.json();
+
+            const bosses = [];
+            Object.values(raw.boss || {}).forEach(b => {
+                const converted = convertBoss(b);
+                if (converted) bosses.push(converted);
+            });
+
+            const result = {
+                skill_id: raw.id,
+                skill_name: raw.name || '',
+                time: (raw.start_time && raw.end_time) ? (raw.start_time + ' - ' + raw.end_time) : '',
+                bosses: bosses,
+            };
+
+            download(result, '1.json');
+            console.log(`拟境完成: 共 ${bosses.length} 个 Boss`);
+            await new Promise(r => setTimeout(r, 300));
+        } catch(e) {
+            console.log(`失败: ${fileName}`, e.message);
+        }
+    }
+
+    console.log('全部完成！');
+})();
