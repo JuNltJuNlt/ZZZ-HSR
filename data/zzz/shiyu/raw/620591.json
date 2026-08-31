@@ -10,7 +10,7 @@
       "layer_buff": {
         "62001591": {
           "title": "鸣风掣电",
-          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· 代理人的锐化伤害提升20%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升10%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -249,7 +249,7 @@
       "layer_buff": {
         "62001591": {
           "title": "鸣风掣电",
-          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· 代理人的锐化伤害提升20%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升10%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -468,7 +468,7 @@
       "layer_buff": {
         "62001591": {
           "title": "鸣风掣电",
-          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· 代理人的锐化伤害提升20%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升10%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -707,7 +707,7 @@
       "layer_buff": {
         "62001591": {
           "title": "鸣风掣电",
-          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· 代理人的锐化伤害提升20%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升10%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         }
       },
       "child": [],
@@ -850,11 +850,11 @@
         },
         "62001591": {
           "title": "鸣风掣电",
-          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· 代理人的锐化伤害提升20%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升10%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         },
         "62001593": {
           "title": "刹那焰光",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人的<color=#FFFFFF>[终结技]</color>造成的伤害提升30%，[终结技]攻击命中敌人时无视其10%的全属性伤害抗性。"
         }
       },
       "child": [
@@ -876,7 +876,7 @@
       "layer_buff": {
         "62001591": {
           "title": "鸣风掣电",
-          "desc": "· 代理人的锐化伤害提升35%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[强化特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升15%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· 代理人的锐化伤害提升20%，击杀普通敌人后，<color=#FFFFFF>[击破]</color>特性的代理人恢复15点能量。\n· 代理人的<color=#FFFFFF>[普通攻击]</color>、<color=#FFFFFF>[特殊技]</color>和<color=#FFFFFF>[终结技]</color>命中敌人时，穿透率提升10%，若敌人处于失衡状态，无视其15%的<color=#2EB6FF>电属性伤害抗性</color>。"
         },
         "62001001": {
           "title": "",
@@ -1022,7 +1022,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 65147870.699999996,
+                "hp": 72386523.0,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
                 "stun": 14327.95,
@@ -1090,7 +1090,7 @@
       "layer_buff": {
         "62001593": {
           "title": "刹那焰光",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人发动<color=#FFFFFF>[终结技]</color>时，该次<color=#FFFFFF>[终结技]</color>造成的伤害提升40%，并无视敌人10%的全属性伤害抗性，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>与<color=#FE437E>以太伤害</color>提升15%，贯穿伤害提升15%。\n· 代理人的<color=#FFFFFF>[终结技]</color>造成的伤害提升30%，[终结技]攻击命中敌人时无视其10%的全属性伤害抗性。"
         },
         "62001001": {
           "title": "",
