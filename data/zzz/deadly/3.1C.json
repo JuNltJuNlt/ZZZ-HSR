@@ -206,8 +206,8 @@
           "stun": 17876.45,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
-          "resistance": [],
+          "weakness": ["冰"],
+          "resistance": ["物理"],
           "type": "S"
         }
       ],

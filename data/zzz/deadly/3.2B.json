@@ -216,8 +216,8 @@
           "stun": 17586,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
-          "resistance": [],
+          "weakness": ["电"],
+          "resistance": ["物理"],
           "type": "S"
         }
       ],
