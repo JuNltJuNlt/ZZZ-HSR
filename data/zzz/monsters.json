@@ -1606,7 +1606,7 @@
         {
             "name": "以太异体",
             "type": "S",
-            "category": 5,
+            "category": 1,
             "weakness": ["火"],
             "resistance": ["冰","以太"]
         }
