@@ -1,0 +1,228 @@
+{
+  "deadly_id": 690491,
+  "deadly_name": "试炼",
+  "time": "2026-09-03 04:00:00 - 2026-11-11 03:59:59",
+  "normal_zone": {
+    "zone_69049101": {
+      "name": "以太异体",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69014805": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>腐蚀印记</color>，<color=#FFFFFF>腐蚀印记</color>叠加3层后，会转化为<color=#FFFFFF>[腐蚀侵扰]</color>，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[腐蚀侵扰]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>15%失衡值</color>，但无法再次获得<color=#FFFFFF>腐蚀印记</color>。\n· 敌人进入失衡状态时，会直接获得3层<color=#FFFFFF>腐蚀印记</color>。"
+        },
+        "buff_69014806": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)· 每次成功触发<Term:2000004></Term>应对敌人强力攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色地板并进行招架支援，可额外获得<color=#FFAF2C>1000操作得分</color>；最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014901": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014902": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69014903": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "以太异体",
+          "hp": 22422615,
+          "defense": 953,
+          "stun": 20431,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "火"
+          ],
+          "resistance": [
+            "冰",
+            "以太"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69049102": {
+      "name": "熔狱行赭",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69014410": {
+          "title": "",
+          "desc": "·熔狱行赭进入[熔狱]状态后，每触发一次<Term:2000004></Term>首领会获得1层<color=#FFFFFF>[过热]</color>;累计触发两次<color=#FFFFFF>[招架支援]</color>或<color=#FFAF2C>[极限闪避]</color>首领会获得1层<color=#FFFFFF>[过热]</color>,每层<color=#FFFFFF>[过热]</color>会使全队代理人暴击伤害<color=#FFAF2C>提升25%</color>。最多叠加3层，持续20秒，触发<color=#FFFFFF>招架支援</color>或重复触发<color=#FFFFFF>[过热]</color>时刷新持续时间。"
+        },
+        "buff_69014411": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[完美反制]</color>时，可获得<color=#FFAF2C>2000操作得分</color>；<color=#FFAF2C>每击碎一颗燧石</color>可获得<color=#FFAF2C>1000操作分，最多获得5000操作得分</color>。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014901": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014902": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69014903": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "熔狱行赭",
+          "hp": 23562466,
+          "defense": 953,
+          "stun": 20431,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "冰",
+            "风"
+          ],
+          "resistance": [
+            "物理"
+          ],
+          "type": "A"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69049103": {
+      "name": "「亵渎者」",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69011902": {
+          "title": "",
+          "desc": "· 代理人发动招架支援命中亵渎者时，全队获得1层<color=#FFFFFF>[裁夺]</color>；代理人将在空中发动攻击的亵渎者击落时，全队获得4层<color=#FFFFFF>[裁夺]</color>。[裁夺]最多叠加6层，持续30秒，重复触发时刷新持续时间。\n· 每拥有1层<color=#FFFFFF>[裁夺]</color>，代理人的暴击伤害<color=#2BAD00>提升5%</color>，物理伤害<color=#2BAD00>提升5%</color>，电属性伤害<color=#2BAD00>提升5%</color>。\n· 亵渎者受到的属性异常伤害降低25%。"
+        },
+        "buff_69011903": {
+          "title": "",
+          "desc": "· 代理人造成<color=#FFAF2C>部位破坏时</color>，可获得<color=#FFAF2C>2500操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的亵渎者击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        },
+        "buff_69013001": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014901": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014902": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69014903": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "「亵渎者」",
+          "hp": 26705554,
+          "defense": 953,
+          "stun": 19978,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "电",
+            "物理"
+          ],
+          "resistance": [
+            "冰"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    }
+  },
+  "final_zone": {
+    "zone_69049201": {
+      "name": "复写体·猎血清道夫",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013304": {
+          "title": "",
+          "desc": "·每次成功应对首领的攻击并使其触发特殊跪地，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>1500操作得分</color>。最多获得5000操作得分。"
+        },
+        "buff_69014904": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)[完美反制]首领的控制技后，全队代理人攻击造成的失衡值提升15%，属性异常伤害提升40%。首领失衡期间，全队代理人造成的风属性和冰属性暴击伤害提升60%且无视首领-30%防御力。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014901": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014902": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69014903": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "复写体·猎血清道夫",
+          "hp": 44604817,
+          "defense": 477,
+          "stun": 17877,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 30000,
+        "a": 20000,
+        "b": 10000
+      },
+      "isFinal": false
+    }
+  }
+}

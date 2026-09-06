@@ -1,0 +1,228 @@
+{
+  "deadly_id": 690501,
+  "deadly_name": "试炼",
+  "time": "2026-09-03 04:00:00 - 2026-11-11 03:59:59",
+  "normal_zone": {
+    "zone_69050101": {
+      "name": "熔狱行赭",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69014410": {
+          "title": "",
+          "desc": "·熔狱行赭进入[熔狱]状态后，每触发一次<Term:2000004></Term>首领会获得1层<color=#FFFFFF>[过热]</color>;累计触发两次<color=#FFFFFF>[招架支援]</color>或<color=#FFAF2C>[极限闪避]</color>首领会获得1层<color=#FFFFFF>[过热]</color>,每层<color=#FFFFFF>[过热]</color>会使全队代理人暴击伤害<color=#FFAF2C>提升25%</color>。最多叠加3层，持续20秒，触发<color=#FFFFFF>招架支援</color>或重复触发<color=#FFFFFF>[过热]</color>时刷新持续时间。"
+        },
+        "buff_69014411": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>触发[完美反制]</color>时，可获得<color=#FFAF2C>2000操作得分</color>；<color=#FFAF2C>每击碎一颗燧石</color>可获得<color=#FFAF2C>1000操作分，最多获得5000操作得分</color>。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015001": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69015002": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015003": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队获得400点喧响值，此效果每20秒可触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "熔狱行赭",
+          "hp": 23562466,
+          "defense": 953,
+          "stun": 20431,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "冰",
+            "风"
+          ],
+          "resistance": [
+            "物理"
+          ],
+          "type": "A"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69050102": {
+      "name": "库萨里库",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013005": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Armorer><color=#FFAF2C>[锋御]</color>特性的代理人挑战。"
+        },
+        "buff_69014506": {
+          "title": "",
+          "desc": "· 库萨里库受到的属性异常伤害<color=#FFAF2C>降低40%</color>。\n· 代理人成功使用[招架支援]应对库萨里库的<Term:2000005></Term>时，将对其施加1层[识破]，使库萨里库进入失衡状态时，对其施加2层[识破]。每层[识破]会使其受到的<color=#FFAF2C>锐暴伤害提升20%</color>，[识破]最多叠加4层，持续<color=#FFAF2C>30</color>秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014507": {
+          "title": "",
+          "desc": "· 在库萨里库开启[侵蚀壁垒]后，使用<color=#FFFFFF>[招架支援]</color>反制库萨里库的<Term:2000005></Term>并对其造成部位破坏，可获得<color=#FFAF2C>1000操作得分</color>；成功通过<color=#FFFFFF>[招架支援]</color>应对<Term:2000005></Term>时，可获得<color=#FFAF2C>700操作得分</color>；<color=#FFAF2C>[完美反制]</color>库萨里库的<Term:2000003></Term>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015001": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69015002": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015003": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队获得400点喧响值，此效果每20秒可触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "库萨里库",
+          "hp": 33958389,
+          "defense": 953,
+          "stun": 18934,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "火",
+            "电"
+          ],
+          "resistance": [
+            "冰"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69050103": {
+      "name": "焚昼余火·法厄同",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69013601": {
+          "title": "",
+          "desc": "·焚昼余火开启[焚风]状态后，获得5层<color=#FFFFFF>[赴火]</color>，每层<color=#FFFFFF>[赴火]</color>使自身造成的伤害<color=#FFAF2C>提升10%</color>，且受到的暴击伤害<color=#FFAF2C>降低25%</color>。焚昼余火拥有<color=#FFFFFF>[赴火]</color>时，每次进入<color=#FFAF2C>异常状态</color>将失去一层<color=#FFFFFF>[赴火]</color>，并使后续受到的异放伤害<color=#FFAF2C>提升10%</color>，最多叠加3层，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69013602": {
+          "title": "",
+          "desc": "·焚昼余火处于<color=#FFFFFF>[焚风]</color>状态期间，对焚昼余火造成部位破坏时，可获得<color=#FFAF2C>1250操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的焚昼余火击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>；<color=#FFAF2C>[完美反制]</color>焚昼余火的<Term:2000003></Term>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015001": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69015002": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015003": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队获得400点喧响值，此效果每20秒可触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "焚昼余火·法厄同",
+          "hp": 39194994,
+          "defense": 953,
+          "stun": 19541,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "冰",
+            "风"
+          ],
+          "resistance": [
+            "物理"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    }
+  },
+  "final_zone": {
+    "zone_69050201": {
+      "name": "异构·太初梦魇·「始主」",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69012705": {
+          "title": "",
+          "desc": "·触发<color=#FFAF2C>[秽盾净除]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        },
+        "buff_69015004": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)·首领的失衡易伤倍率降低<color=#2BAD00>降低25%</color>，当其从<Term:2000002></Term>状态切换回普通状态，或从普通状态切换为<color=#FFAF2C>[秽盾]</color>状态时，使代理人对其造成的暴击伤害<color=#2BAD00>提升20%</color>，最多叠加3层，当其从失衡状态恢复时层数重置。代理人的每次<color=#2BAD00>招架支援额外扣减5%</color>秽盾。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015001": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人造成的<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+        },
+        "buff_69015002": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015003": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队获得400点喧响值，此效果每20秒可触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "异构·太初梦魇",
+          "hp": 55067861,
+          "defense": 477,
+          "stun": 19541,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 30000,
+        "a": 20000,
+        "b": 10000
+      },
+      "isFinal": false
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "deadly_id": 690481,
+  "deadly_name": "试炼",
+  "time": "2026-09-03 04:00:00 - 2026-11-11 03:59:59",
+  "normal_zone": {
+    "zone_69048101": {
+      "name": "以太异体",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69014805": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>腐蚀印记</color>，<color=#FFFFFF>腐蚀印记</color>叠加3层后，会转化为<color=#FFFFFF>[腐蚀侵扰]</color>，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[腐蚀侵扰]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>15%失衡值</color>，但无法再次获得<color=#FFFFFF>腐蚀印记</color>。\n· 敌人进入失衡状态时，会直接获得3层<color=#FFFFFF>腐蚀印记</color>。"
+        },
+        "buff_69014806": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)· 每次成功触发<Term:2000004></Term>应对敌人强力攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色地板并进行招架支援，可额外获得<color=#FFAF2C>1000操作得分</color>；最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014801": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/80点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常伤害</color><color=#2BAD00>提升20%</color>。"
+        },
+        "buff_69014802": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升20%</color>，能量获取效率<color=#2BAD00>提升20%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>后，锐化伤害<color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#2EB6FF>电属性伤害抗性</color>和<color=#FE437E>以太伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014803": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升15%</color>，命中失衡状态的敌人后，其失衡恢复速度<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，对处于失衡状态中的敌人，造成的属性异常伤害额外<color=#2BAD00>提升25%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "以太异体",
+          "hp": 22422615,
+          "defense": 953,
+          "stun": 20431,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "火"
+          ],
+          "resistance": [
+            "冰",
+            "以太"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69048102": {
+      "name": "未知复合侵蚀体",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69010305": {
+          "title": "",
+          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
+        },
+        "buff_69010307": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014801": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/80点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常伤害</color><color=#2BAD00>提升20%</color>。"
+        },
+        "buff_69014802": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升20%</color>，能量获取效率<color=#2BAD00>提升20%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>后，锐化伤害<color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#2EB6FF>电属性伤害抗性</color>和<color=#FE437E>以太伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014803": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升15%</color>，命中失衡状态的敌人后，其失衡恢复速度<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，对处于失衡状态中的敌人，造成的属性异常伤害额外<color=#2BAD00>提升25%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "未知复合侵蚀体",
+          "hp": 26639352,
+          "defense": 953,
+          "stun": 16895,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "电",
+            "以太"
+          ],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69048103": {
+      "name": "叛律孤歌·薇斯珀",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69013103": {
+          "title": "",
+          "desc": "· 代理人异常积蓄效率<color=#FFAF2C>提升15%</color>，对叛律孤歌造成的异常伤害<color=#FFAF2C>提升30%</color>，战斗中代理人处在[以太帷幕]状态时，叛律孤歌失衡易伤倍率<color=#FFAF2C>提升30%</color>。"
+        },
+        "buff_69013104": {
+          "title": "",
+          "desc": "<color=#FFAF2C>[控制技]</color>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>350操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，或招架部分招式最后一击时，可对首领造成<color=#FFAF2C>[部位破坏]</color>效果，可获得<color=#FFAF2C>750操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014801": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/80点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常伤害</color><color=#2BAD00>提升20%</color>。"
+        },
+        "buff_69014802": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升20%</color>，能量获取效率<color=#2BAD00>提升20%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>后，锐化伤害<color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#2EB6FF>电属性伤害抗性</color>和<color=#FE437E>以太伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014803": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升15%</color>，命中失衡状态的敌人后，其失衡恢复速度<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，对处于失衡状态中的敌人，造成的属性异常伤害额外<color=#2BAD00>提升25%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "叛律孤歌·薇斯珀",
+          "hp": 39406942,
+          "defense": 477,
+          "stun": 19978,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "以太",
+            "风"
+          ],
+          "resistance": [
+            "冰",
+            "火"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    }
+  },
+  "final_zone": {
+    "zone_69048201": {
+      "name": "OfficialName_Monster_GirReborn_HC_P2",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69014406": {
+          "title": "69014406_Title",
+          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功<color=#FFAF2C>应对</color><Term:2000003></Term>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        },
+        "buff_69014804": {
+          "title": "(Test1)TBD",
+          "desc": "(Test1)· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]；当敌人失衡时，会获得2层无属性的[凋蚀印记]，持续10秒，[凋蚀印记]最多叠加3层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升10%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升15%</color>，受到的<color=#FFAF2C>锐化伤害提升20%</color>。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69014801": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/80点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常伤害</color><color=#2BAD00>提升20%</color>。"
+        },
+        "buff_69014802": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升20%</color>，能量获取效率<color=#2BAD00>提升20%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>后，锐化伤害<color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>20%</color>的<color=#2EB6FF>电属性伤害抗性</color>和<color=#FE437E>以太伤害抗性</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014803": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[击破]</color>特性代理人造成的失衡值<color=#2BAD00>提升15%</color>，命中失衡状态的敌人后，其失衡恢复速度<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。\n· 代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>，对处于失衡状态中的敌人，造成的属性异常伤害额外<color=#2BAD00>提升25%</color>。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "基塔布鲁·滞变畸兽",
+          "hp": 31121296,
+          "defense": 953,
+          "stun": 23277,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 30000,
+        "a": 20000,
+        "b": 10000
+      },
+      "isFinal": false
+    }
+  }
+}
