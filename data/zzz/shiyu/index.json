@@ -1,6 +1,9 @@
 {
     "monster_catalog": "monsters.json",
     "entries": [
+        "3.3C.json",
+        "3.3B.json",
+        "3.3A.json",
         "3.2C.json",
         "3.2B.json",
         "3.2A.json",
