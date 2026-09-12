@@ -498,8 +498,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 7427441.175,
-                "attack": 2550.681818181818,
+                "hp": 4456464.705,
+                "attack": 3400.9090909090905,
                 "defence": 794.0,
                 "stun": 14720.76,
                 "attribute_infliction": 0.0
@@ -518,8 +518,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 6935445.3,
-                "attack": 2550.681818181818,
+                "hp": 4161267.1799999997,
+                "attack": 3400.9090909090905,
                 "defence": 794.0,
                 "stun": 12273.48,
                 "attribute_infliction": 0.0
@@ -538,8 +538,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 6935445.3,
-                "attack": 2088.9204545454545,
+                "hp": 4161267.1799999997,
+                "attack": 2785.2272727272725,
                 "defence": 794.0,
                 "stun": 12273.48,
                 "attribute_infliction": 0.0
@@ -558,8 +558,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 931738.3949999999,
-                "attack": 1187.3863636363635,
+                "hp": 559043.037,
+                "attack": 1583.181818181818,
                 "defence": 635.2,
                 "stun": 1854.0,
                 "attribute_infliction": 0.0
@@ -578,8 +578,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 931738.3949999999,
-                "attack": 1385.2840909090908,
+                "hp": 559043.037,
+                "attack": 1847.0454545454545,
                 "defence": 635.2,
                 "stun": 1854.0,
                 "attribute_infliction": 0.0
@@ -611,8 +611,8 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 9478215.705,
-                "attack": 2924.488636363636,
+                "hp": 5686929.4229999995,
+                "attack": 3899.3181818181815,
                 "defence": 857.5200000000001,
                 "stun": 12273.48,
                 "attribute_infliction": 0.0
@@ -631,8 +631,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 9150444.66,
-                "attack": 2330.7954545454545,
+                "hp": 5490266.796,
+                "attack": 3107.7272727272725,
                 "defence": 714.6,
                 "stun": 10821.18,
                 "attribute_infliction": 0.0
@@ -651,8 +651,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 11717645.205,
-                "attack": 2660.625,
+                "hp": 7030587.123000001,
+                "attack": 3547.5,
                 "defence": 857.5200000000001,
                 "stun": 12273.48,
                 "attribute_infliction": 0.0
@@ -671,8 +671,8 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 1589316.3299999998,
-                "attack": 1737.1022727272725,
+                "hp": 953589.798,
+                "attack": 2316.1363636363635,
                 "defence": 682.84,
                 "stun": 2039.4,
                 "attribute_infliction": 0.0
@@ -691,8 +691,8 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 1770506.535,
-                "attack": 1737.1022727272725,
+                "hp": 1062303.921,
+                "attack": 2316.1363636363635,
                 "defence": 730.48,
                 "stun": 2781.0,
                 "attribute_infliction": 0.0
@@ -741,8 +741,8 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 22282617.0,
-                "attack": 3343.090909090909,
+                "hp": 15916155.0,
+                "attack": 4457.454545454545,
                 "defence": 1588.0,
                 "stun": 15243.800000000001,
                 "attribute_infliction": 0.0
@@ -774,8 +774,8 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 31378646.88,
-                "attack": 3018.0681818181815,
+                "hp": 22413319.2,
+                "attack": 4024.090909090909,
                 "defence": 952.8000000000001,
                 "stun": 19771.4,
                 "attribute_infliction": 0.0
@@ -794,8 +794,8 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 9948967.14,
-                "attack": 2693.0454545454545,
+                "hp": 5969380.284,
+                "attack": 3590.7272727272725,
                 "defence": 857.5200000000001,
                 "stun": 11556.6,
                 "attribute_infliction": 0.0
@@ -829,11 +829,11 @@
         },
         "62001622": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性的代理人暴击率提升20%，代理人的锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性的代理人防御力提升15%，代理人的锐化伤害提升25%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>。"
         },
         "62001623": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的异常精通提升40点。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中的代理人攻击力提升15%，命中敌人时无视其20%的<color=#FE437E>以太伤害抗性</color>。"
+          "desc": "· 代理人的异常精通提升40点，使敌人进入失衡状态后，其失衡恢复速度降低10%，持续15秒，重复触发时刷新持续时间。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中的代理人攻击力提升15%，命中敌人时无视其20%的<color=#FE437E>以太伤害抗性</color>。"
         }
       },
       "child": [
@@ -975,7 +975,7 @@
       "layer_buff": {
         "62001622": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性的代理人暴击率提升20%，代理人的锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性的代理人防御力提升15%，代理人的锐化伤害提升25%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>和<color=#2EB6FF>电属性伤害抗性</color>。"
         },
         "62001001": {
           "title": "",
@@ -989,7 +989,7 @@
       "child": [],
       "layer_room": {
         "62062052": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_InnerKnightSlime.png",
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaTerrorBird.png",
           "monster_list": {
             "31462": {
               "id": 30051,
@@ -1031,43 +1031,43 @@
                 "attribute_infliction": 0.0
               }
             },
-            "31162": {
-              "id": 10034,
-              "name": "秽息残兵·炮手",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGrenadierJaeger.png",
+            "31481": {
+              "id": 20033,
+              "name": "拉赫穆",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_Arbiter.png",
               "element": {
-                "ice": 0,
-                "fire": 1,
+                "ice": 1,
+                "fire": 0,
                 "electric": 1,
                 "ether": 0,
-                "physical": 0,
+                "physical": -1,
                 "wind": 0
               },
               "stats": {
-                "hp": 1332904.8150000002,
-                "attack": 1589.5454545454547,
-                "defence": 635.2,
-                "stun": 2326.5,
+                "hp": 9027066.06,
+                "attack": 2592.1818181818185,
+                "defence": 714.6,
+                "stun": 12344.550000000001,
                 "attribute_infliction": 0.0
               }
             },
-            "31152": {
-              "id": 10033,
-              "name": "秽息残兵·盾卫",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_MiasmaWalkerGuardJaeger.png",
+            "31262": {
+              "id": 30036,
+              "name": "秽蚀·「骇鸟」",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaTerrorBird.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
                 "electric": 1,
-                "ether": 0,
+                "ether": -1,
                 "physical": 0,
                 "wind": 0
               },
               "stats": {
-                "hp": 1332904.8150000002,
-                "attack": 1760.727272727273,
-                "defence": 730.48,
-                "stun": 2326.5,
+                "hp": 40479870.68999999,
+                "attack": 3521.454545454546,
+                "defence": 952.8000000000001,
+                "stun": 14327.95,
                 "attribute_infliction": 0.0
               }
             }
@@ -1077,7 +1077,7 @@
             "203": "电属性"
           },
           "monster_resistance": {
-            "200": "物理"
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -1095,7 +1095,7 @@
       "layer_buff": {
         "62001623": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的异常精通提升40点。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中的代理人攻击力提升15%，命中敌人时无视其20%的<color=#FE437E>以太伤害抗性</color>。"
+          "desc": "· 代理人的异常精通提升40点，使敌人进入失衡状态后，其失衡恢复速度降低10%，持续15秒，重复触发时刷新持续时间。\n· 处于<color=#FFFFFF>[以太帷幕]</color>中的代理人攻击力提升15%，命中敌人时无视其20%的<color=#FE437E>以太伤害抗性</color>。"
         },
         "62001001": {
           "title": "",
@@ -1124,7 +1124,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 45603509.489999995,
+                "hp": 50670566.099999994,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
                 "stun": 14327.95,
@@ -1144,7 +1144,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4921237.215,
+                "hp": 5285773.304999999,
                 "attack": 2714.4545454545455,
                 "defence": 921.0400000000001,
                 "stun": 9334.2,
@@ -1164,7 +1164,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 5848446.24,
+                "hp": 6281664.4799999995,
                 "attack": 2592.1818181818185,
                 "defence": 714.6,
                 "stun": 11169.550000000001,

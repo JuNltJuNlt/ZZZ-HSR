@@ -957,7 +957,7 @@
           "layer_buff": {
             "69014904": {
               "title": "(Test1)TBD",
-              "desc": "(Test1)[完美反制]首领的控制技后，全队代理人攻击造成的失衡值提升15%，属性异常伤害提升40%。首领失衡期间，全队代理人造成的风属性和冰属性暴击伤害提升60%且无视首领-30%防御力。"
+              "desc": "(Test1)[完美反制]首领的控制技后，全队代理人攻击造成的失衡值提升15%，属性异常伤害提升40%。首领失衡期间，全队代理人造成的风属性和冰属性暴击伤害提升60%且无视首领-30%防御力，全队代理人造成的锐化伤害提升15%。"
             },
             "69013304": {
               "title": "",
@@ -985,7 +985,7 @@
                     "wind": 0
                   },
                   "stats": {
-                    "hp": 44604816.48,
+                    "hp": 47790874.8,
                     "attack": 2967.1515151515155,
                     "defence": 476.40000000000003,
                     "stun": 17876.45,
@@ -1010,11 +1010,11 @@
           "selectable_buff": {
             "69014901": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69014902": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
             },
             "69014903": {
               "title": "(Test1)TBD",
@@ -1029,7 +1029,7 @@
       "zone_type": 1001,
       "zone": {
         "69049101": {
-          "name": "以太异体",
+          "name": "(Test1)僭越者",
           "stage_num": 1,
           "monster_level": 70,
           "layer_buff": {
@@ -1039,11 +1039,11 @@
             },
             "69014805": {
               "title": "(Test1)TBD",
-              "desc": "(Test1)· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>腐蚀印记</color>，<color=#FFFFFF>腐蚀印记</color>叠加3层后，会转化为<color=#FFFFFF>[腐蚀侵扰]</color>，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[腐蚀侵扰]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>15%失衡值</color>，但无法再次获得<color=#FFFFFF>腐蚀印记</color>。\n· 敌人进入失衡状态时，会直接获得3层<color=#FFFFFF>腐蚀印记</color>。"
+              "desc": "(Test1)· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>15%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接获得3层<color=#FFFFFF>残晖印记</color>。"
             },
             "69014806": {
               "title": "(Test1)TBD",
-              "desc": "(Test1)· 每次成功触发<Term:2000004></Term>应对敌人强力攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色地板并进行招架支援，可额外获得<color=#FFAF2C>1000操作得分</color>；最多获得5000操作得分。"
+              "desc": "(Test1)· 每次成功触发<Term:2000004></Term>应对敌人强力攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色地板并进行招架支援，可额外获得<color=#FFAF2C>1500操作得分</color>；最多获得5000操作得分。"
             }
           },
           "layer_room": {
@@ -1052,18 +1052,18 @@
               "monster_list": {
                 "31734": {
                   "id": 40012,
-                  "name": "以太异体",
+                  "name": "(Test1)僭越者",
                   "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv04/Monster_HollowVenger.png",
                   "element": {
                     "ice": -1,
                     "fire": 1,
                     "electric": 0,
-                    "ether": -1,
+                    "ether": 0,
                     "physical": 0,
                     "wind": 0
                   },
                   "stats": {
-                    "hp": 22422614.4,
+                    "hp": 28028268.0,
                     "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
                     "stun": 20430.9,
@@ -1075,8 +1075,7 @@
                 "201": "火属性"
               },
               "monster_resistance": {
-                "202": "冰属性",
-                "205": "以太"
+                "202": "冰属性"
               },
               "waves_num": 1
             }
@@ -1088,11 +1087,11 @@
           "selectable_buff": {
             "69014901": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69014902": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
             },
             "69014903": {
               "title": "(Test1)TBD",
@@ -1107,7 +1106,7 @@
           "layer_buff": {
             "69014410": {
               "title": "",
-              "desc": "·熔狱行赭进入[熔狱]状态后，每触发一次<Term:2000004></Term>首领会获得1层<color=#FFFFFF>[过热]</color>;累计触发两次<color=#FFFFFF>[招架支援]</color>或<color=#FFAF2C>[极限闪避]</color>首领会获得1层<color=#FFFFFF>[过热]</color>,每层<color=#FFFFFF>[过热]</color>会使全队代理人暴击伤害<color=#FFAF2C>提升25%</color>。最多叠加3层，持续20秒，触发<color=#FFFFFF>招架支援</color>或重复触发<color=#FFFFFF>[过热]</color>时刷新持续时间。"
+              "desc": "·熔狱行赭进入[熔狱]状态后，其受到的属性异常伤害降低30%；每击碎一颗<color=#2BAD00>燧石</color>，全队额外恢复<color=#FFFFFF>20</color>点能量；每触发一次<Term:2000004></Term>首领会获得1层<color=#FFFFFF>[过热]</color>；累计触发两次<color=#FFAF2C>[招架支援]</color>或<color=#FFAF2C>[极限闪避]</color>首领会获得1层<color=#FFFFFF>[过热]</color>，每层<color=#FFFFFF>[过热]</color>会使全队代理人暴击伤害<color=#FFAF2C>提升25%</color>。最多叠加3层，持续20秒，触发<color=#FFAF2C>[招架支援]</color>或重复触发<color=#FFFFFF>[过热]</color>时刷新持续时间。"
             },
             "69014411": {
               "title": "",
@@ -1156,11 +1155,11 @@
           "selectable_buff": {
             "69014901": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69014902": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
             },
             "69014903": {
               "title": "(Test1)TBD",
@@ -1169,59 +1168,53 @@
           }
         },
         "69049103": {
-          "name": "「亵渎者」",
+          "name": "自律强袭单位·「提丰·破坏者型」",
           "stage_num": 3,
           "monster_level": 70,
           "layer_buff": {
-            "69013001": {
+            "69010205": {
               "title": "",
-              "desc": "· 适合<IconMap:Icon_AvatarClass_Attack><color=#FFAF2C>[强攻]</color>特性的代理人挑战。"
+              "desc": "· 代理人<color=#FFAF2C>发动[招架支援]命中首领敌人时</color>，将对其施加1层<color=#FFFFFF>[难敌四手]</color>，<color=#FFFFFF>[招架支援]</color>累计命中3次时，将触发部位破坏，并额外施加3层<color=#FFFFFF>[难敌四手]</color>，每层<color=#FFFFFF>[难敌四手]</color>会使代理人对首领敌人造成的失衡值<color=#FFAF2C>提升15%</color>，在失衡状态下<color=#FFFFFF>[连携技]</color>和<color=#FFFFFF>[终结技]</color>对其造成的伤害<color=#FFAF2C>提升10%</color>；敌人充电蓄能时，将修复受损部位并重置部位破坏进度；敌人从失衡状态恢复时，<color=#FFFFFF>[难敌四手]</color>层数将会被重置。"
             },
-            "69011902": {
+            "69010308": {
               "title": "",
-              "desc": "· 代理人发动招架支援命中亵渎者时，全队获得1层<color=#FFFFFF>[裁夺]</color>；代理人将在空中发动攻击的亵渎者击落时，全队获得4层<color=#FFFFFF>[裁夺]</color>。[裁夺]最多叠加6层，持续30秒，重复触发时刷新持续时间。\n· 每拥有1层<color=#FFFFFF>[裁夺]</color>，代理人的暴击伤害<color=#2BAD00>提升5%</color>，物理伤害<color=#2BAD00>提升5%</color>，电属性伤害<color=#2BAD00>提升5%</color>。\n· 亵渎者受到的属性异常伤害降低25%。"
+              "desc": "· 该场战斗中，将不再消耗<color=#FFFFFF>[支援点数]</color>。"
             },
-            "69011903": {
+            "69010703": {
               "title": "",
-              "desc": "· 代理人造成<color=#FFAF2C>部位破坏时</color>，可获得<color=#FFAF2C>2500操作得分</color>；代理人<color=#FFAF2C>将在空中发动攻击的亵渎者击落</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
-            },
-            "69012102": {
-              "title": "",
-              "desc": ""
+              "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>200操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>600操作得分</color>，最多获得5000操作得分。"
             }
           },
           "layer_room": {
             "690491031": {
-              "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_IsoldetheDefiler.png",
+              "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_TyphonDestroyer.png",
               "monster_list": {
-                "31142": {
-                  "id": 30038,
-                  "name": "「亵渎者」",
-                  "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv04/Monster_IsoldetheDefiler.png",
+                "11891": {
+                  "id": 300082,
+                  "name": "自律强袭单位·「提丰·破坏者型」",
+                  "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_TyphonDestroyer.png",
                   "element": {
-                    "ice": -1,
-                    "fire": 0,
+                    "ice": 0,
+                    "fire": -1,
                     "electric": 1,
                     "ether": 0,
-                    "physical": 1,
-                    "wind": 0
+                    "physical": 0,
+                    "wind": 1
                   },
                   "stats": {
-                    "hp": 26705553.929999996,
-                    "attack": 2967.1515151515155,
+                    "hp": 23436234.0,
+                    "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
-                    "stun": 19977.350000000002,
+                    "stun": 14327.95,
                     "attribute_infliction": 10.0
                   }
                 }
               },
               "monster_weakness": {
                 "203": "电属性",
-                "200": "物理"
+                "204": "风属性"
               },
-              "monster_resistance": {
-                "202": "冰属性"
-              },
+              "monster_resistance": {},
               "waves_num": 1
             }
           },
@@ -1232,11 +1225,11 @@
           "selectable_buff": {
             "69014901": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升40点</color>，属性异常伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69014902": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，击败敌人后，<color=#FFFFFF>[强攻]</color>特性的代理人恢复<color=#2BAD00>30点</color>能量。"
+              "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
             },
             "69014903": {
               "title": "(Test1)TBD",

@@ -1604,11 +1604,11 @@
             "resistance": []
         },
         {
-            "name": "以太异体",
+            "name": "僭越者",
             "type": "S",
             "category": 1,
             "weakness": ["火"],
-            "resistance": ["冰","以太"]
+            "resistance": ["冰"]
         }
     ]
 }
