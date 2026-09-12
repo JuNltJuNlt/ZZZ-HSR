@@ -10,7 +10,7 @@
       "layer_buff": {
         "buff_62001611": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#FF5521>火属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#FF5521>火属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -193,7 +193,7 @@
       "layer_buff": {
         "buff_62001611": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#FF5521>火属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#FF5521>火属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -362,7 +362,7 @@
       "layer_buff": {
         "buff_62001611": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#FF5521>火属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#FF5521>火属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -372,7 +372,7 @@
             [
               {
                 "name": "焚毁狂",
-                "hp": 931739,
+                "hp": 559044,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -386,7 +386,7 @@
               },
               {
                 "name": "劫掠者",
-                "hp": 1095964,
+                "hp": 657578,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -400,7 +400,7 @@
               },
               {
                 "name": "通缉打手",
-                "hp": 5873413,
+                "hp": 3524048,
                 "defense": 794,
                 "stun": 7793,
                 "number": 1,
@@ -416,7 +416,7 @@
               },
               {
                 "name": "秽蚀·盛怒恶霸",
-                "hp": 11470630,
+                "hp": 6882378,
                 "defense": 794,
                 "stun": 11046,
                 "number": 1,
@@ -446,7 +446,7 @@
             [
               {
                 "name": "拉赫穆",
-                "hp": 9478216,
+                "hp": 5686930,
                 "defense": 715,
                 "stun": 12274,
                 "number": 1,
@@ -462,7 +462,7 @@
               },
               {
                 "name": "城防戍卫布",
-                "hp": 9478216,
+                "hp": 5686930,
                 "defense": 858,
                 "stun": 12274,
                 "number": 1,
@@ -476,7 +476,7 @@
               },
               {
                 "name": "蜕生·城防戍卫布",
-                "hp": 9150445,
+                "hp": 5490267,
                 "defense": 858,
                 "stun": 10822,
                 "number": 1,
@@ -492,7 +492,7 @@
               },
               {
                 "name": "空巡枪骑",
-                "hp": 1589317,
+                "hp": 953590,
                 "defense": 683,
                 "stun": 2040,
                 "number": 1,
@@ -506,7 +506,7 @@
               },
               {
                 "name": "空巡近卫",
-                "hp": 1770507,
+                "hp": 1062304,
                 "defense": 731,
                 "stun": 2781,
                 "number": 1,
@@ -537,7 +537,7 @@
       "layer_buff": {
         "buff_62001611": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#FF5521>火属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#FF5521>火属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -547,7 +547,7 @@
             [
               {
                 "name": "秽息蚀者·阿瓦鲁斯",
-                "hp": 22104799,
+                "hp": 15789142,
                 "defense": 953,
                 "stun": 14499,
                 "number": 1,
@@ -577,7 +577,7 @@
             [
               {
                 "name": "城防戍卫布",
-                "hp": 9948968,
+                "hp": 5969381,
                 "defense": 858,
                 "stun": 11557,
                 "number": 1,
@@ -593,7 +593,7 @@
             [
               {
                 "name": "蜕生·蝎骸",
-                "hp": 20878517,
+                "hp": 14913227,
                 "defense": 953,
                 "stun": 18293,
                 "number": 1,
@@ -630,15 +630,15 @@
       "layer_buff": {
         "buff_62001611": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#FF5521>火属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#FF5521>火属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
         },
         "buff_62001612": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的攻击力提升15%，属性异常伤害提升20%。\n· 代理人命中处于<color=#FF5521>火属性异常</color>状态中的敌人时，其防御力降低15%，<color=#FF5521>火属性伤害抗性</color>降低20%。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的攻击力提升10%，属性异常伤害提升15%。\n· 代理人命中处于<color=#FF5521>火属性异常</color>状态中的敌人时，其防御力降低10%，<color=#FF5521>火属性伤害抗性</color>降低20%。"
         },
         "buff_62001613": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的贯穿伤害提升20%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的贯穿伤害提升30%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -714,7 +714,7 @@
             [
               {
                 "name": "怒蛇",
-                "hp": 9027067,
+                "hp": 9695738,
                 "defense": 715,
                 "stun": 12345,
                 "number": 1,
@@ -730,7 +730,7 @@
             [
               {
                 "name": "秽蚀·多佩冈亚·「变节者」",
-                "hp": 40479871,
+                "hp": 44977635,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -844,7 +844,7 @@
       "layer_buff": {
         "buff_62001611": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#FF5521>火属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#FF5521>火属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升15%，<color=#98EFF0>冰属性伤害</color>和<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#98EFF0>冰属性伤害抗性</color>和<color=#A6C5FD>风属性伤害抗性</color>降低20%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -923,7 +923,7 @@
       "layer_buff": {
         "buff_62001612": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的攻击力提升15%，属性异常伤害提升20%。\n· 代理人命中处于<color=#FF5521>火属性异常</color>状态中的敌人时，其防御力降低15%，<color=#FF5521>火属性伤害抗性</color>降低20%。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的攻击力提升10%，属性异常伤害提升15%。\n· 代理人命中处于<color=#FF5521>火属性异常</color>状态中的敌人时，其防御力降低10%，<color=#FF5521>火属性伤害抗性</color>降低20%。"
         }
       },
       "layer_room": {
@@ -933,7 +933,7 @@
             [
               {
                 "name": "怒蛇",
-                "hp": 9027067,
+                "hp": 9695738,
                 "defense": 715,
                 "stun": 12345,
                 "number": 1,
@@ -949,7 +949,7 @@
             [
               {
                 "name": "秽蚀·多佩冈亚·「变节者」",
-                "hp": 40479871,
+                "hp": 44977635,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -986,7 +986,7 @@
       "layer_buff": {
         "buff_62001613": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的贯穿伤害提升20%，<color=#FFFFFF>[终结技]</color>造成的伤害提升30%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升30%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的贯穿伤害提升30%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
