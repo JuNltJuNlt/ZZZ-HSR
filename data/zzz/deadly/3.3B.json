@@ -4,7 +4,7 @@
   "time": "2026-09-03 04:00:00 - 2026-11-11 03:59:59",
   "normal_zone": {
     "zone_69049101": {
-      "name": "(Test1)僭越者",
+      "name": "僭越者",
       "stage_num": 1,
       "monster_level": 70,
       "layer_buff": {
@@ -37,7 +37,7 @@
       },
       "monsters": [
         {
-          "name": "(Test1)僭越者",
+          "name": "僭越者",
           "hp": 28028268,
           "defense": 953,
           "stun": 20431,
