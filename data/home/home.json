@@ -378,6 +378,10 @@
         "directoryByGame": {
             "zzz": [
                 {
+                    "label": "角色 音擎 驱动盘",
+                    "href": "./zzz_html/char/"
+                },
+                {
                     "label": "怪物",
                     "href": "./zzz_html/monster/"
                 },
@@ -388,6 +392,10 @@
                 {
                     "label": "危局强袭战",
                     "href": "./zzz_html/deadly/"
+                },
+                {
+                    "label": "临界推演",
+                    "href": "./zzz_html/simul/"
                 },
                 {
                     "label": "拟境湮灭战",

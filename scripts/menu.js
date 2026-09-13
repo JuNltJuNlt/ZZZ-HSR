@@ -69,9 +69,18 @@ const renderPanelLinks = (items) =>
 
 const renderMainLinks = (items) => items.map(([label, href]) => scheduleLink(label, href));
 
-let currentMenuGame = "zzz";
+function detectCurrentGame() {
+    const path = window.location.pathname;
+    if (path.includes("/sr_html/")) return "sr";
+    return "zzz";
+}
+
+let currentMenuGame = null;
 
 export const openMenu = async (homeData) => {
+    if (currentMenuGame === null) {
+        currentMenuGame = detectCurrentGame();
+    }
     const menuGroups = buildMenuGroups(await loadHomeData(homeData));
 
     document.querySelector("popmask.yuhengcup")?.remove();
@@ -165,6 +174,7 @@ export const openMenu = async (homeData) => {
 
 export const initMenu = (homeData) => {
     if (homeData) cachedHomeData = homeData;
+    currentMenuGame = null;
 
     document.body.addEventListener("click", async (event) => {
         const target = event.target.closest("._menu_, .icon-button, [data-menu-button]");
