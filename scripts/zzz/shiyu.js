@@ -333,12 +333,6 @@ const renderPeakChart = () => {
     const newEntries = allReversed.filter(e => !isOldEntry(e));
     const allEntries = [...oldEntries, ...newEntries];
     const peakLabels = allEntries.map(e => entryLabel(e));
-    const peakData = allEntries.map(e => {
-        const label = entryLabel(e);
-        const version = parseVersion(label);
-        const floorToUse = version < 2.5 ? 7 : 5;
-        return floorTotalHp(e.zone, floorToUse);
-    });
     
     const normalizedData = allEntries.map(e => {
         const label = entryLabel(e);
@@ -352,8 +346,7 @@ const renderPeakChart = () => {
     });
     
     renderLineChart("peakChart", text.chartPeakTitle, [
-        { name: "最高层总血量", color: "#cc0000", data: peakData },
-        { name: "间数归一总血量", color: "#2545ba", data: normalizedData },
+        { name: "间数归一总血量", color: "#cc0000", data: normalizedData },
     ], peakLabels, false);
 };
 
