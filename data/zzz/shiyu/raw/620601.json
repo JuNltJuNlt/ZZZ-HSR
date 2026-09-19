@@ -10,7 +10,7 @@
       "layer_buff": {
         "62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "child": [],
@@ -255,7 +255,7 @@
       "layer_buff": {
         "62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "child": [],
@@ -478,7 +478,7 @@
       "layer_buff": {
         "62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "child": [],
@@ -721,7 +721,7 @@
       "layer_buff": {
         "62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "child": [],
@@ -866,7 +866,7 @@
       "layer_buff": {
         "62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         },
         "62001602": {
           "title": "(Test1)TBD",
@@ -896,7 +896,7 @@
       "layer_buff": {
         "62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         },
         "62001001": {
           "title": "",
@@ -1025,7 +1025,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 41934171.824999996,
+                "hp": 46593524.25,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
                 "stun": 18236.0,
@@ -1045,7 +1045,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 5848446.24,
+                "hp": 6281664.4799999995,
                 "attack": 2592.1818181818185,
                 "defence": 857.5200000000001,
                 "stun": 11169.550000000001,
@@ -1065,7 +1065,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4581148.995,
+                "hp": 4920493.365,
                 "attack": 2592.1818181818185,
                 "defence": 857.5200000000001,
                 "stun": 7120.5,
