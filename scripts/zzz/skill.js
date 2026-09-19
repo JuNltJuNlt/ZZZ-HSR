@@ -8,10 +8,15 @@ const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
 let skillEntries = [];
 let monstersData = [];
 let indexData = null;
+let chartInstance = null;
+let bossChartInstance = null;
 
 const text = {
     title: "拟境湮灭战",
+    chartTotalTitle: "总血量演化",
+    chartBossTitle: "各Boss血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
+    stageLabels: ["Boss一", "Boss二", "Boss三"],
 };
 
 const state = {
@@ -111,14 +116,6 @@ const processModeDesc = (desc) => {
     return result.trim();
 };
 
-const renderBuffItems = (buffs) => {
-    if (!buffs || buffs.length === 0) return [];
-    return buffs.map(buff => create("p", {
-        html: `<b>${buff.title}</b><br><span style="font-size:14px;">${(buff.desc || '').replace(/<color=([^>]+)>/g, '<color style="color:$1;">').replace(/\n/g, '<br>')}</span>`,
-        style: { margin: "0 0 12px 0" }
-    }));
-};
-
 const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
@@ -128,26 +125,6 @@ const render = () => {
 
     const bosses = entry.bosses || [];
     if (bosses.length === 0) return;
-
-    const sharedBuffs = bosses[0].layer_buffs || [];
-    if (sharedBuffs.length > 0) {
-        const sharedBox = create("div", {
-            style: {
-                backgroundColor: "#27363E",
-                color: "#eee",
-                borderRadius: "5px",
-                margin: "8px 0",
-                padding: "14px",
-                lineHeight: "1.8",
-                fontSize: "14px",
-                textAlign: "left",
-                width: "100%",
-                boxSizing: "border-box",
-            },
-            children: renderBuffItems(sharedBuffs)
-        });
-        container.appendChild(sharedBox);
-    }
 
     const bossRow = create("div", {
         style: {
@@ -210,26 +187,6 @@ const render = () => {
             });
             wrapper.appendChild(mechanismBox);
             
-            const selectableBuffs = boss.selectable_buffs || [];
-            if (selectableBuffs.length > 0) {
-                const buffBox = create("div", {
-                    style: {
-                        backgroundColor: "#27363E",
-                        color: "#eee",
-                        borderRadius: "5px",
-                        margin: "8px 0",
-                        padding: "14px",
-                        lineHeight: "1.8",
-                        fontSize: "14px",
-                        textAlign: "left",
-                        width: "100%",
-                        boxSizing: "border-box",
-                    },
-                    children: renderBuffItems(selectableBuffs)
-                });
-                wrapper.appendChild(buffBox);
-            }
-            
             return wrapper;
         })
     });
@@ -237,25 +194,82 @@ const render = () => {
     container.appendChild(bossRow);
 
     setTimeout(() => {
-        const mechanismBoxes = bossRow.querySelectorAll('.u_b, [style*="border-radius"]');
-        const boxes = Array.from(bossRow.children).map(child => {
-            const mech = child.children[2];
-            const buff = child.children[3];
-            return { mech, buff };
-        });
+        const wrappers = Array.from(bossRow.children);
+        const mechBoxes = wrappers.map(w => w.children[2]).filter(el => el);
         
-        const validMechs = boxes.map(b => b.mech).filter(el => el);
-        const validBuffs = boxes.map(b => b.buff).filter(el => el);
-        
-        if (validMechs.length > 0) {
-            const maxH = Math.max(...validMechs.map(el => el.offsetHeight));
-            validMechs.forEach(el => el.style.height = maxH + "px");
+        if (mechBoxes.length === 3) {
+            const maxH = Math.max(...mechBoxes.map(el => el.offsetHeight));
+            mechBoxes.forEach(el => el.style.height = maxH + "px");
         }
-        if (validBuffs.length > 0) {
-            const maxH = Math.max(...validBuffs.map(el => el.offsetHeight));
-            validBuffs.forEach(el => el.style.height = maxH + "px");
+    }, 300);
+
+    renderCharts();
+};
+
+const renderCharts = () => {
+    const entries = skillEntries.slice().reverse();
+    const labels = entries.map(e => indexData.entries[skillEntries.indexOf(e)].replace('.json', ''));
+    
+    const totalData = entries.map(e => {
+        const bosses = e.bosses || [];
+        let total = 0;
+        bosses.forEach(b => { total += b.hard_hp || 0; });
+        return total;
+    });
+    
+    renderLineChart("chart", text.chartTotalTitle, [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
+    
+    const bossData = [[], [], []];
+    entries.forEach(e => {
+        const bosses = e.bosses || [];
+        for (let i = 0; i < 3; i++) {
+            bossData[i].push(bosses[i] ? (bosses[i].hard_hp || 0) : 0);
         }
-    }, 200);
+    });
+    
+    renderLineChart("bossChart", text.chartBossTitle, [
+        { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
+        { name: text.stageLabels[1], color: "#2545ba", data: bossData[1] },
+        { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
+    ], labels);
+};
+
+const renderLineChart = (targetId, title, seriesData, labels) => {
+    const chartElement = byId(targetId);
+    if (!chartElement || !seriesData.length || !window.echarts) return;
+    
+    chartElement.style.width = "100%";
+    chartElement.style.height = "600px";
+    
+    const isTotalChart = targetId === "chart";
+    const currentInstance = isTotalChart ? chartInstance : bossChartInstance;
+    
+    if (currentInstance && !currentInstance.isDisposed()) {
+        currentInstance.resize();
+        currentInstance.setOption({
+            title: { text: title },
+            legend: { data: seriesData.map(s => s.name) },
+            xAxis: { data: labels },
+            series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+        }, false);
+        return;
+    }
+    
+    const newInstance = window.echarts.init(chartElement);
+    if (isTotalChart) chartInstance = newInstance;
+    else bossChartInstance = newInstance;
+    
+    newInstance.setOption({
+        title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
+        tooltip: { trigger: "axis" },
+        grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
+        toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
+        xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 } },
+        yAxis: { type: "value" },
+        legend: { data: seriesData.map(s => s.name), top: "16%" },
+        series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
+        dataZoom: [{ type: "slider", start: 0, end: 100 }],
+    }, true);
 };
 
 const bindEvents = () => {
