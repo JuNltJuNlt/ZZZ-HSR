@@ -10,7 +10,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -197,7 +197,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -368,7 +368,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -559,7 +559,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -690,7 +690,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         },
         "buff_62001602": {
           "title": "(Test1)TBD",
@@ -774,7 +774,7 @@
             [
               {
                 "name": "「卫士Ⅱ型」",
-                "hp": 5848447,
+                "hp": 6281665,
                 "defense": 858,
                 "stun": 11170,
                 "number": 1,
@@ -789,7 +789,7 @@
               },
               {
                 "name": "突击炮手",
-                "hp": 4581149,
+                "hp": 4920494,
                 "defense": 858,
                 "stun": 7121,
                 "number": 1,
@@ -806,7 +806,7 @@
             [
               {
                 "name": "缄枢",
-                "hp": 41934172,
+                "hp": 46593525,
                 "defense": 953,
                 "stun": 18236,
                 "number": 1,
@@ -922,7 +922,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%，<color=#FF5521>火属性异常积蓄效率</color>提升10%。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复300点喧响值，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -1011,7 +1011,7 @@
             [
               {
                 "name": "「卫士Ⅱ型」",
-                "hp": 5848447,
+                "hp": 6281665,
                 "defense": 858,
                 "stun": 11170,
                 "number": 1,
@@ -1026,7 +1026,7 @@
               },
               {
                 "name": "突击炮手",
-                "hp": 4581149,
+                "hp": 4920494,
                 "defense": 858,
                 "stun": 7121,
                 "number": 1,
@@ -1043,7 +1043,7 @@
             [
               {
                 "name": "缄枢",
-                "hp": 41934172,
+                "hp": 46593525,
                 "defense": 953,
                 "stun": 18236,
                 "number": 1,

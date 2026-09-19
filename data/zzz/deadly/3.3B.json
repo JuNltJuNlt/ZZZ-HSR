@@ -14,7 +14,7 @@
         },
         "buff_69014805": {
           "title": "(Test1)TBD",
-          "desc": "(Test1)· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>15%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接获得3层<color=#FFFFFF>残晖印记</color>。"
+          "desc": "(Test1)· 敌人受到的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>5%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接进入<color=#FFFFFF>[蜡翼]</color>状态。"
         },
         "buff_69014806": {
           "title": "(Test1)TBD",
@@ -24,21 +24,21 @@
       "selectable_buff": {
         "buff_69014901": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队异常精通<color=#2BAD00>提升50点</color>，属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014902": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升40%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升40%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69014903": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，锐化伤害<color=#2BAD00>提升10%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
         }
       },
       "monsters": [
         {
           "name": "僭越者",
-          "hp": 28028268,
+          "hp": 26346572,
           "defense": 953,
           "stun": 20431,
           "number": 1,
@@ -77,21 +77,21 @@
       "selectable_buff": {
         "buff_69014901": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队异常精通<color=#2BAD00>提升50点</color>，属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014902": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升40%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升40%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69014903": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，锐化伤害<color=#2BAD00>提升10%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
         }
       },
       "monsters": [
         {
           "name": "熔狱行赭",
-          "hp": 23562466,
+          "hp": 20489101,
           "defense": 953,
           "stun": 20431,
           "number": 1,
@@ -127,29 +127,29 @@
           "title": "",
           "desc": "· 该场战斗中，将不再消耗<color=#FFFFFF>[支援点数]</color>。"
         },
-        "buff_69010703": {
+        "buff_69014906": {
           "title": "",
-          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>200操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>600操作得分</color>，最多获得5000操作得分。"
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>300操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>900操作得分</color>，最多获得5000操作得分。"
         }
       },
       "selectable_buff": {
         "buff_69014901": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队异常精通<color=#2BAD00>提升50点</color>，属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014902": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升40%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升40%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69014903": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，锐化伤害<color=#2BAD00>提升10%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
         }
       },
       "monsters": [
         {
           "name": "自律强袭单位·「提丰·破坏者型」",
-          "hp": 23436234,
+          "hp": 24608046,
           "defense": 953,
           "stun": 14328,
           "number": 1,
@@ -184,33 +184,33 @@
         },
         "buff_69014904": {
           "title": "(Test1)TBD",
-          "desc": "(Test1)[完美反制]首领的控制技后，全队代理人攻击造成的失衡值提升15%，属性异常伤害提升40%。首领失衡期间，全队代理人造成的风属性和冰属性暴击伤害提升60%且无视首领-30%防御力，全队代理人造成的锐化伤害提升15%。"
+          "desc": "(Test1)[完美反制]首领的控制技后，全队代理人攻击造成的<color=#FFAF2C>失衡值</color>提升15%，<color=#FFAF2C>暴击伤害</color>提升75%，<color=#FFFFFF>属性异常伤害</color>提升40%。首领失衡期间，全队代理人造成的<color=#A6C5FD>风属性</color>和<color=#98EFF0>冰属性</color>暴击伤害提升80%且无视首领30%防御力，全队代理人造成的<color=#FFAF2C>锐化伤害</color>提升70%。"
         }
       },
       "selectable_buff": {
         "buff_69014901": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，自身异常精通<color=#2BAD00>提升20点</color>，属性异常伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队异常精通<color=#2BAD00>提升50点</color>，属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014902": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升15%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升40%</color>，<color=#A6C5FD>风属性伤害</color>命中时的暴击伤害<color=#2BAD00>提升40%</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人攻击力<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69014903": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人暴击率<color=#2BAD00>提升20%</color>，<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· 代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，锐化伤害<color=#2BAD00>提升10%</color>。\n· <color=#FFFFFF>[强攻]</color>或<color=#FFFFFF>[锋御]</color>特性的代理人穿透率<color=#2BAD00>提升20%</color>，<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。"
         }
       },
       "monsters": [
         {
           "name": "复写体·猎血清道夫",
-          "hp": 47790875,
+          "hp": 52569963,
           "defense": 477,
           "stun": 17877,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": ["火","风"],
-          "resistance": ["物理"],
+          "weakness": [],
+          "resistance": [],
           "type": "S"
         }
       ],

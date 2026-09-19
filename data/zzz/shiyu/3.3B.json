@@ -546,18 +546,18 @@
           "monsters": [
             [
               {
-                "name": "秽息蚀者·阿瓦鲁斯",
-                "hp": 15789142,
+                "name": "秽蚀·「骇鸟」",
+                "hp": 13657326,
                 "defense": 953,
-                "stun": 14499,
+                "stun": 13414,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "以太"
+                  "电"
                 ],
                 "resistance": [
-                  "冰"
+                  "以太"
                 ],
                 "type": "A"
               }
@@ -565,7 +565,7 @@
           ],
           "waveNames": [
             {
-              "name": "秽息蚀者·阿瓦鲁斯",
+              "name": "秽蚀·「骇鸟」",
               "bold": true
             }
           ],
@@ -634,11 +634,11 @@
         },
         "buff_62001612": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的攻击力提升10%，属性异常伤害提升15%。\n· 代理人命中处于<color=#FF5521>火属性异常</color>状态中的敌人时，其防御力降低10%，<color=#FF5521>火属性伤害抗性</color>降低20%。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队攻击力提升10%，属性异常伤害提升20%，持续15秒，重复触发时刷新持续时间。\n· 代理人使敌人进入<color=#FF5521>火属性异常</color>状态后，其<color=#FF5521>火属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_62001613": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的贯穿伤害提升30%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的贯穿伤害提升35%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升50%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -648,7 +648,7 @@
             [
               {
                 "name": "秽蚀·狂乱暴徒",
-                "hp": 6414145,
+                "hp": 5463901,
                 "defense": 858,
                 "stun": 10286,
                 "number": 1,
@@ -663,7 +663,7 @@
               },
               {
                 "name": "秽蚀·特里诺斯",
-                "hp": 9264727,
+                "hp": 7892175,
                 "defense": 858,
                 "stun": 11830,
                 "number": 1,
@@ -680,7 +680,7 @@
             [
               {
                 "name": "「空域戒戍者」",
-                "hp": 66432351,
+                "hp": 55887534,
                 "defense": 953,
                 "stun": 21120,
                 "number": 1,
@@ -854,7 +854,7 @@
             [
               {
                 "name": "秽蚀·狂乱暴徒",
-                "hp": 6414145,
+                "hp": 5463901,
                 "defense": 858,
                 "stun": 10286,
                 "number": 1,
@@ -869,7 +869,7 @@
               },
               {
                 "name": "秽蚀·特里诺斯",
-                "hp": 9264727,
+                "hp": 7892175,
                 "defense": 858,
                 "stun": 11830,
                 "number": 1,
@@ -886,7 +886,7 @@
             [
               {
                 "name": "「空域戒戍者」",
-                "hp": 66432351,
+                "hp": 55887534,
                 "defense": 953,
                 "stun": 21120,
                 "number": 1,
@@ -923,7 +923,7 @@
       "layer_buff": {
         "buff_62001612": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的攻击力提升10%，属性异常伤害提升15%。\n· 代理人命中处于<color=#FF5521>火属性异常</color>状态中的敌人时，其防御力降低10%，<color=#FF5521>火属性伤害抗性</color>降低20%。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队攻击力提升10%，属性异常伤害提升20%，持续15秒，重复触发时刷新持续时间。\n· 代理人使敌人进入<color=#FF5521>火属性异常</color>状态后，其<color=#FF5521>火属性伤害抗性</color>降低20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -986,7 +986,7 @@
       "layer_buff": {
         "buff_62001613": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的贯穿伤害提升30%，<color=#FFFFFF>[终结技]</color>造成的伤害提升20%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升35%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的贯穿伤害提升35%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升50%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {

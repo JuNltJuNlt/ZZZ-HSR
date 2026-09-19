@@ -14,7 +14,7 @@
         },
         "buff_69014805": {
           "title": "(Test1)TBD",
-          "desc": "(Test1)· 代理人的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>15%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接获得3层<color=#FFFFFF>残晖印记</color>。"
+          "desc": "(Test1)· 敌人受到的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>5%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接进入<color=#FFFFFF>[蜡翼]</color>状态。"
         },
         "buff_69014806": {
           "title": "(Test1)TBD",
@@ -24,7 +24,7 @@
       "selectable_buff": {
         "buff_69014801": {
           "title": "(Test1)TBD",
-          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常伤害<color=#2BAD00>提升20%</color>。"
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014802": {
           "title": "(Test1)TBD",
@@ -38,7 +38,7 @@
       "monsters": [
         {
           "name": "僭越者",
-          "hp": 28028268,
+          "hp": 26346572,
           "defense": 953,
           "stun": 20431,
           "number": 1,
@@ -77,7 +77,7 @@
       "selectable_buff": {
         "buff_69014801": {
           "title": "(Test1)TBD",
-          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常伤害<color=#2BAD00>提升20%</color>。"
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014802": {
           "title": "(Test1)TBD",
@@ -133,7 +133,7 @@
       "selectable_buff": {
         "buff_69014801": {
           "title": "(Test1)TBD",
-          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常伤害<color=#2BAD00>提升20%</color>。"
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014802": {
           "title": "(Test1)TBD",
@@ -190,7 +190,7 @@
       "selectable_buff": {
         "buff_69014801": {
           "title": "(Test1)TBD",
-          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#F0D12B>物理属性</color>异常伤害<color=#2BAD00>提升20%</color>。"
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69014802": {
           "title": "(Test1)TBD",
@@ -203,13 +203,13 @@
       },
       "monsters": [
         {
-          "name": "基塔布鲁·滞变畸兽",
+          "name": "异构·滞变畸兽",
           "hp": 37228875,
           "defense": 953,
           "stun": 23277,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": ["火"],
+          "weakness": [],
           "resistance": [],
           "type": "S"
         }
