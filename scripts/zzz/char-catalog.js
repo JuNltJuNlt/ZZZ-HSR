@@ -20,22 +20,22 @@ const renderTabs = () => {
         createSchedule({
             className: state.mode === "char" ? "active _a" : "_a",
             attrs: { "data-mode": "char" },
-            children: [create("span", { text: "角色" })],
+            img: "others/代理人.webp",
         }),
         createSchedule({
             className: state.mode === "wengine" ? "active _w" : "_w",
             attrs: { "data-mode": "wengine" },
-            children: [create("span", { text: "音擎" })],
+            img: "others/音擎.webp",
         }),
         createSchedule({
             className: state.mode === "drive" ? "active _r1" : "_r1",
             attrs: { "data-mode": "drive" },
-            children: [create("span", { text: "驱动盘" })],
+            img: "others/驱动盘.webp",
         }),
         createSchedule({
             className: state.mode === "bangboo" ? "active _r2" : "_r2",
             attrs: { "data-mode": "bangboo" },
-            children: [create("span", { text: "邦布" })],
+            img: "others/邦布.webp",
         }),
     );
 };
