@@ -1,5 +1,5 @@
 {
-  "id": 620581,
+  "id": 62058,
   "name": "剧变节点",
   "priority": 1,
   "zone": {
@@ -82,6 +82,7 @@
           "monster_weakness": {
             "203": "电属性"
           },
+          "monster_resistance": {},
           "waves_num": 4
         },
         "62058012": {
@@ -212,6 +213,9 @@
             "204": "风属性",
             "205": "以太"
           },
+          "monster_resistance": {
+            "200": "物理"
+          },
           "waves_num": 4
         }
       },
@@ -340,6 +344,9 @@
           "monster_weakness": {
             "203": "电属性"
           },
+          "monster_resistance": {
+            "201": "火属性"
+          },
           "waves_num": 4
         },
         "62058022": {
@@ -450,6 +457,7 @@
             "204": "风属性",
             "201": "火属性"
           },
+          "monster_resistance": {},
           "waves_num": 4
         }
       },
@@ -578,6 +586,9 @@
           "monster_weakness": {
             "203": "电属性"
           },
+          "monster_resistance": {
+            "201": "火属性"
+          },
           "waves_num": 3
         },
         "62058032": {
@@ -688,6 +699,7 @@
             "204": "风属性",
             "203": "电属性"
           },
+          "monster_resistance": {},
           "waves_num": 3
         }
       },
@@ -757,6 +769,9 @@
             "204": "风属性",
             "203": "电属性"
           },
+          "monster_resistance": {
+            "202": "冰属性"
+          },
           "waves_num": 2
         },
         "62058042": {
@@ -807,6 +822,9 @@
             "204": "风属性",
             "200": "物理"
           },
+          "monster_resistance": {
+            "201": "火属性"
+          },
           "waves_num": 2
         }
       },
@@ -842,9 +860,9 @@
       "layer_room": {},
       "goal_type": 3,
       "ss_rank_goal": 0,
-      "s_rank_goal": 1270001013,
-      "a_rank_goal": 1270001012,
-      "b_rank_goal": 1270001011
+      "s_rank_goal": 1270001003,
+      "a_rank_goal": 1270001002,
+      "b_rank_goal": 1270001001
     },
     "62058051": {
       "name": "房间一",
@@ -954,6 +972,9 @@
             "204": "风属性",
             "203": "电属性"
           },
+          "monster_resistance": {
+            "200": "物理"
+          },
           "waves_num": 3
         }
       },
@@ -1049,6 +1070,9 @@
           },
           "monster_weakness": {
             "202": "冰属性"
+          },
+          "monster_resistance": {
+            "200": "物理"
           },
           "waves_num": 2
         }
@@ -1167,6 +1191,9 @@
             "201": "火属性",
             "203": "电属性"
           },
+          "monster_resistance": {
+            "200": "物理"
+          },
           "waves_num": 2
         }
       },
@@ -1177,6 +1204,6 @@
       "b_rank_goal": 8000
     }
   },
-  "begin_time": "2026-07-30 04:00:00",
-  "end_time": "2026-10-01 03:59:59"
+  "begin_time": "2026-10-02 04:00:00",
+  "end_time": "2026-10-16 03:59:59"
 }

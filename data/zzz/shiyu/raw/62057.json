@@ -1,5 +1,5 @@
 {
-  "id": 620571,
+  "id": 62057,
   "name": "剧变节点",
   "priority": 1,
   "zone": {
@@ -103,6 +103,7 @@
             "202": "冰属性",
             "205": "以太"
           },
+          "monster_resistance": {},
           "waves_num": 4
         },
         "62057012": {
@@ -172,6 +173,7 @@
           "monster_weakness": {
             "203": "电属性"
           },
+          "monster_resistance": {},
           "waves_num": 4
         }
       },
@@ -321,6 +323,7 @@
             "202": "冰属性",
             "205": "以太"
           },
+          "monster_resistance": {},
           "waves_num": 3
         },
         "62057022": {
@@ -429,6 +432,9 @@
           },
           "monster_weakness": {
             "203": "电属性"
+          },
+          "monster_resistance": {
+            "201": "火属性"
           },
           "waves_num": 4
         }
@@ -559,6 +565,7 @@
             "202": "冰属性",
             "205": "以太"
           },
+          "monster_resistance": {},
           "waves_num": 3
         },
         "62057032": {
@@ -668,6 +675,9 @@
           "monster_weakness": {
             "203": "电属性"
           },
+          "monster_resistance": {
+            "201": "火属性"
+          },
           "waves_num": 3
         }
       },
@@ -737,6 +747,7 @@
             "202": "冰属性",
             "205": "以太"
           },
+          "monster_resistance": {},
           "waves_num": 2
         },
         "62057042": {
@@ -785,6 +796,9 @@
           },
           "monster_weakness": {
             "203": "电属性"
+          },
+          "monster_resistance": {
+            "202": "冰属性"
           },
           "waves_num": 2
         }
@@ -913,6 +927,9 @@
             "203": "电属性",
             "200": "物理"
           },
+          "monster_resistance": {
+            "205": "以太"
+          },
           "waves_num": 2
         }
       },
@@ -1030,6 +1047,9 @@
             "202": "冰属性",
             "200": "物理"
           },
+          "monster_resistance": {
+            "203": "电属性"
+          },
           "waves_num": 3
         }
       },
@@ -1127,6 +1147,9 @@
             "205": "以太",
             "200": "物理"
           },
+          "monster_resistance": {
+            "201": "火属性"
+          },
           "waves_num": 2
         }
       },
@@ -1137,6 +1160,6 @@
       "b_rank_goal": 8000
     }
   },
-  "begin_time": "2026-07-30 04:00:00",
-  "end_time": "2026-10-01 03:59:59"
+  "begin_time": "2026-09-18 04:00:00",
+  "end_time": "2026-10-02 03:59:59"
 }

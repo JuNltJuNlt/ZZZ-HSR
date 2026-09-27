@@ -957,7 +957,7 @@
           "layer_buff": {
             "69014804": {
               "title": "(Test1)TBD",
-              "desc": "(Test1)· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]；当敌人残痕因毁伤结算被移除时，会获得2层无属性的[凋蚀印记]，持续10秒，[凋蚀印记]最多叠加3层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升10%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升15%</color>，受到的<color=#FFAF2C>锐化伤害提升20%</color>。"
+              "desc": "(Test1)· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]；当敌人残痕因毁伤结算被移除时，会获得2层无属性的[凋蚀印记]，持续10秒，[凋蚀印记]最多叠加3层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升10%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升15%</color>，受到的<color=#FFAF2C>锐化伤害提升35%</color>。"
             },
             "69014406": {
               "title": "69014406_Title",
@@ -1007,7 +1007,7 @@
           "selectable_buff": {
             "69014801": {
               "title": "(Test1)TBD",
-              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/50点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69014802": {
               "title": "(Test1)TBD",
@@ -1036,11 +1036,11 @@
             },
             "69014805": {
               "title": "(Test1)TBD",
-              "desc": "(Test1)· 敌人受到的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 每使敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会积攒<color=#2BAD00>5%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接进入<color=#FFFFFF>[蜡翼]</color>状态。"
+              "desc": "· 首领敌人受到的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 每使首领敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>属性异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会累积<color=#2BAD00>5%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接进入<color=#FFFFFF>[蜡翼]</color>状态，重复触发时刷新持续时间。"
             },
             "69014806": {
               "title": "(Test1)TBD",
-              "desc": "(Test1)· 每次成功触发<Term:2000004></Term>应对敌人强力攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色地板并进行招架支援，可额外获得<color=#FFAF2C>1500操作得分</color>；最多获得5000操作得分。"
+              "desc": "· 每次成功触发<Term:2000004></Term>应对敌人攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色的曜界并触发招架支援，可额外获得<color=#FFAF2C>1500操作得分</color>；最多获得5000操作得分。"
             }
           },
           "layer_room": {
@@ -1060,7 +1060,7 @@
                     "wind": 0
                   },
                   "stats": {
-                    "hp": 26346571.92,
+                    "hp": 27467702.64,
                     "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
                     "stun": 20430.9,
@@ -1084,7 +1084,7 @@
           "selectable_buff": {
             "69014801": {
               "title": "(Test1)TBD",
-              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/50点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69014802": {
               "title": "(Test1)TBD",
@@ -1154,7 +1154,7 @@
           "selectable_buff": {
             "69014801": {
               "title": "(Test1)TBD",
-              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/50点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69014802": {
               "title": "(Test1)TBD",
@@ -1227,7 +1227,7 @@
           "selectable_buff": {
             "69014801": {
               "title": "(Test1)TBD",
-              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/60点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害和<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队异常精通分别<color=#2BAD00>提升20/50点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性</color>异常伤害额外<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69014802": {
               "title": "(Test1)TBD",
