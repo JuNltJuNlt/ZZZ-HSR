@@ -10,7 +10,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升30%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -197,7 +197,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升30%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -368,7 +368,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升30%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -559,7 +559,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升30%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -690,7 +690,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升30%，持续20秒，此效果每20秒可触发一次。"
         },
         "buff_62001602": {
           "title": "(Test1)TBD",
@@ -708,7 +708,7 @@
             [
               {
                 "name": "狂乱暴徒",
-                "hp": 4530766,
+                "hp": 4999466,
                 "defense": 794,
                 "stun": 7112,
                 "number": 1,
@@ -723,7 +723,7 @@
               },
               {
                 "name": "盛怒恶霸",
-                "hp": 6534772,
+                "hp": 7210783,
                 "defense": 794,
                 "stun": 9335,
                 "number": 1,
@@ -740,7 +740,7 @@
             [
               {
                 "name": "秽息蚀者·阿瓦鲁斯",
-                "hp": 51998339,
+                "hp": 60912340,
                 "defense": 953,
                 "stun": 15487,
                 "number": 1,
@@ -922,7 +922,7 @@
       "layer_buff": {
         "buff_62001601": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升20%，持续20秒，此效果每20秒可触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，属性异常伤害提升30%，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "layer_room": {
@@ -932,7 +932,7 @@
             [
               {
                 "name": "狂乱暴徒",
-                "hp": 4530766,
+                "hp": 4999466,
                 "defense": 794,
                 "stun": 7112,
                 "number": 1,
@@ -947,7 +947,7 @@
               },
               {
                 "name": "盛怒恶霸",
-                "hp": 6534772,
+                "hp": 7210783,
                 "defense": 794,
                 "stun": 9335,
                 "number": 1,
@@ -964,7 +964,7 @@
             [
               {
                 "name": "秽息蚀者·阿瓦鲁斯",
-                "hp": 51998339,
+                "hp": 60912340,
                 "defense": 953,
                 "stun": 15487,
                 "number": 1,
