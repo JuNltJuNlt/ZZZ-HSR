@@ -989,14 +989,14 @@
         },
         {
             "name": "熔狱行赭",
-            "type": "A",
+            "type": "S",
             "category": 1,
             "weakness": ["冰","风"],
             "resistance": ["物理"]
         },
         {
             "name": "乌利迪姆",
-            "type": "A",
+            "type": "S",
             "category": 1,
             "weakness": ["冰", "风"],
             "resistance": ["物理"]
