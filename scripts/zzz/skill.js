@@ -279,29 +279,38 @@ const bindEvents = () => {
     byId("downloadBtn").addEventListener("click", (e) => {
         e.preventDefault();
         const container = document.querySelector("container");
+        const content = document.querySelector(".content");
         const origStyle = container.getAttribute("style") || "";
+        const bodyOrigStyle = document.body.getAttribute("style") || "";
+        const contentOrigStyle = content.getAttribute("style") || "";
+        
         container.style.overflow = "visible";
         container.style.height = "auto";
         document.body.style.overflow = "visible";
         document.body.style.height = "auto";
+        content.style.overflow = "visible";
+        content.style.height = "auto";
+        container.style.background = "#29105a";
         
         const dl = byId("downloadBtn");
         dl.style.display = "none";
 
-        html2canvas(document.body, {
+        html2canvas(content, {
             scale: 2,
             backgroundColor: "#29105a",
             useCORS: true,
-            windowHeight: document.body.scrollHeight,
-            windowWidth: document.body.scrollWidth
+            windowHeight: content.scrollHeight,
+            windowWidth: content.scrollWidth,
+            height: content.scrollHeight,
+            width: content.scrollWidth,
         }).then(canvas => {
             const a = document.createElement("a");
             a.download = `拟境湮灭战_${currentEntry().skill_name || ''}.png`;
             a.href = canvas.toDataURL("image/png");
             a.click();
             container.setAttribute("style", origStyle);
-            document.body.style.overflow = "";
-            document.body.style.height = "";
+            document.body.setAttribute("style", bodyOrigStyle);
+            content.setAttribute("style", contentOrigStyle);
             dl.style.display = "";
         });
     });
