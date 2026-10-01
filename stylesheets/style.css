@@ -19,7 +19,8 @@ body {
 }
 
 .bg {
-    background: #29105a url('../images/others/logo_background.png') no-repeat right center/cover;
+    background: #29105a url('../images/others/logo_background.png') no-repeat top center;
+    background-size: 100% auto;
 }
 
 .bg_2 {
