@@ -657,7 +657,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
         yAxis: { type: "value" },
         legend: { data: seriesData.map(s => s.name), top: "16%" },
         series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        dataZoom: [{ type: "slider", start: 0, end: labels.length > 30 ? 30 : 100 }],
+        dataZoom: [{ type: "slider", start: 0, end: 100 }],
     }, true);
 };
 
@@ -678,28 +678,33 @@ const bindEvents = () => {
         e.preventDefault();
         const container = document.querySelector("container");
         const origStyle = container.getAttribute("style") || "";
+        const bodyOrigStyle = document.body.getAttribute("style") || "";
+        
         container.style.overflow = "visible";
         container.style.height = "auto";
         document.body.style.overflow = "visible";
         document.body.style.height = "auto";
+        container.classList.add("bg");
         
         const dl = byId("downloadBtn");
         dl.style.display = "none";
 
-        html2canvas(document.body, {
+        html2canvas(container, {
             scale: 2,
             backgroundColor: "#29105a",
             useCORS: true,
-            windowHeight: document.body.scrollHeight,
-            windowWidth: document.body.scrollWidth
+            windowHeight: container.scrollHeight,
+            windowWidth: container.scrollWidth,
+            height: container.scrollHeight,
+            width: container.scrollWidth,
         }).then(canvas => {
             const a = document.createElement("a");
             a.download = `危局强袭战_${currentEntry().deadly_name || ''}.png`;
             a.href = canvas.toDataURL("image/png");
             a.click();
             container.setAttribute("style", origStyle);
-            document.body.style.overflow = "";
-            document.body.style.height = "";
+            document.body.setAttribute("style", bodyOrigStyle);
+            container.classList.remove("bg");
             dl.style.display = "";
         });
     });
