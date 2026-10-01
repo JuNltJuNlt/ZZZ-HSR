@@ -468,13 +468,12 @@ const bindEvents = () => {
     dl.style.display = "none";
 
     html2canvas(content, {
-        scale: 2,
-        backgroundColor: "#ffffff",
-        useCORS: true,
-        y: content.getBoundingClientRect().top + window.scrollY,
-        height: content.scrollHeight,
-        width: content.scrollWidth,
-    }).then(canvas => {
+    scale: 2,
+    backgroundColor: "#ffffff",
+    useCORS: true,
+    height: content.scrollHeight,
+    width: content.scrollWidth,
+}).then(canvas => {
         const a = document.createElement("a");
         a.download = `式舆防卫战_${currentEntry().name}.png`;
         a.href = canvas.toDataURL("image/png");
