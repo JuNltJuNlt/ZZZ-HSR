@@ -3,6 +3,7 @@ import { byId, create, image, wrapIndex } from "../tools.js";
 
 const DATA_ROOT = "../../data/zzz/skill";
 const IMAGE_ROOT = "../../images/ZZZ%20images/monster";
+const SKILL_IMAGE_ROOT = "../../images/ZZZ%20images/monster/skill";
 const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
 
 let skillEntries = [];
@@ -16,7 +17,7 @@ const text = {
     chartTotalTitle: "总血量演化",
     chartBossTitle: "各Boss血量演化",
     chartSubtitle: "妮可少女 玉衡杯数据库 yuhengcup.wiki",
-    stageLabels: ["Boss一", "Boss二", "Boss三"],
+    stageLabels: ["拟境1", "拟境2", "拟境3"],
 };
 
 const state = {
@@ -160,6 +161,21 @@ const render = () => {
                 ],
             }));
             
+            wrapper.appendChild(create("div", {
+                style: {
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "8px",
+                },
+                children: [
+                    image(`${SKILL_IMAGE_ROOT}/${boss.name}.webp`, "", boss.name, {
+                        style: { width: "100%", height: "auto", borderRadius: "5px" },
+                        error: "remove",
+                    }),
+                ],
+            }));
+            
             wrapper.appendChild(create("div", { 
                 className: "wave_monsters", 
                 style: { marginTop: "16px" },
@@ -195,7 +211,7 @@ const render = () => {
 
     setTimeout(() => {
         const wrappers = Array.from(bossRow.children);
-        const mechBoxes = wrappers.map(w => w.children[2]).filter(el => el);
+        const mechBoxes = wrappers.map(w => w.children[3]).filter(el => el);
         
         if (mechBoxes.length === 3) {
             const maxH = Math.max(...mechBoxes.map(el => el.offsetHeight));
@@ -290,17 +306,15 @@ const bindEvents = () => {
         document.body.style.height = "auto";
         content.style.overflow = "visible";
         content.style.height = "auto";
-        container.style.background = "#29105a";
         
         const dl = byId("downloadBtn");
         dl.style.display = "none";
 
         html2canvas(content, {
             scale: 2,
-            backgroundColor: "#29105a",
+            backgroundColor: "#ffffff",
             useCORS: true,
-            windowHeight: content.scrollHeight,
-            windowWidth: content.scrollWidth,
+            y: content.getBoundingClientRect().top + window.scrollY,
             height: content.scrollHeight,
             width: content.scrollWidth,
         }).then(canvas => {
