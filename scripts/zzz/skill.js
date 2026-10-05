@@ -310,23 +310,25 @@ const bindEvents = () => {
         const dl = byId("downloadBtn");
         dl.style.display = "none";
 
-        html2canvas(content, {
-            scale: 2,
-            backgroundColor: "#ffffff",
-            useCORS: true,
-            y: content.getBoundingClientRect().top + window.scrollY,
-            height: content.scrollHeight,
-            width: content.scrollWidth,
-        }).then(canvas => {
-            const a = document.createElement("a");
-            a.download = `拟境湮灭战_${currentEntry().skill_name || ''}.png`;
-            a.href = canvas.toDataURL("image/png");
-            a.click();
-            container.setAttribute("style", origStyle);
-            document.body.setAttribute("style", bodyOrigStyle);
-            content.setAttribute("style", contentOrigStyle);
-            dl.style.display = "";
-        });
+        setTimeout(() => {
+            html2canvas(content, {
+                scale: 2,
+                backgroundColor: "#ffffff",
+                useCORS: true,
+                y: content.getBoundingClientRect().top + window.scrollY,
+                height: content.scrollHeight,
+                width: content.scrollWidth,
+            }).then(canvas => {
+                const a = document.createElement("a");
+                a.download = `拟境湮灭战_${currentEntry().skill_name || ''}.png`;
+                a.href = canvas.toDataURL("image/png");
+                a.click();
+                container.setAttribute("style", origStyle);
+                document.body.setAttribute("style", bodyOrigStyle);
+                content.setAttribute("style", contentOrigStyle);
+                dl.style.display = "";
+            });
+        }, 300);
     });
     document.body.addEventListener("mouseenter", (event) => {
         const card = event.target.closest(".monster_card");
