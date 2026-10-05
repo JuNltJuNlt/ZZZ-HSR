@@ -11,8 +11,6 @@ const state = {
 };
 
 let itemData = {
-    types: [],
-    rarities: [],
     items: [],
 };
 
@@ -147,4 +145,7 @@ async function init() {
 
 init().catch(function (error) {
     console.error(error);
+    byId("itemGrid").replaceChildren(
+        create("p", { className: "desc", text: "数据加载中..." }),
+    );
 });
