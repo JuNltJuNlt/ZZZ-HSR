@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="玉衡杯数据库 - 绝区零代理人 音擎 驱动盘 邦布" />
-        <title>代理人 音擎 驱动盘 邦布 - 玉衡杯数据库</title>
+        <meta name="description" content="玉衡杯数据库 - 绝区零贝果计划" />
+        <title>贝果计划 - 玉衡杯数据库</title>
         <link rel="stylesheet" href="../../stylesheets/thin.css" />
         <link rel="stylesheet" href="../../stylesheets/style.css" />
-        <link rel="stylesheet" href="../../stylesheets/char.css" />
-        <script type="module" src="../../scripts/zzz/char-catalog.js"></script>
+        <link rel="stylesheet" href="../../stylesheets/item.css" />
+        <script type="module" src="../../scripts/zzz/labyrinth.js"></script>
     </head>
     <body class="bg">
         <container>
@@ -31,10 +31,27 @@
                 </em>
             </h3>
 
-            <div class="content">
-                <section id="catalogTabs" class="a_w_r select_parts select_parts_size_1"></section>
-                <div id="catalogFilters" class="area_pre"></div>
-                <div id="catalogArea" class="area"></div>
+            <div class="content item-content">
+                <section class="item-filter-panel">
+                    <h1>贝果计划</h1>
+                    <div class="filter-group search-group">
+                        <p>搜索</p>
+                        <input id="itemSearch" type="text" placeholder="搜索名称或 ID" autocomplete="off" />
+                    </div>
+                    <div class="filter-group">
+                        <p>类型</p>
+                        <div id="typeFilters" class="filter-buttons"></div>
+                    </div>
+                    <div class="filter-group">
+                        <p>稀有度</p>
+                        <div id="rarityFilters" class="filter-buttons"></div>
+                    </div>
+                </section>
+
+                <div class="item-result-line">
+                    <span id="itemCount"></span>
+                </div>
+                <section id="itemGrid" class="item-grid"></section>
             </div>
         </container>
     </body>
