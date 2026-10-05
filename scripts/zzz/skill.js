@@ -150,28 +150,28 @@ const render = () => {
             });
             
             wrapper.appendChild(create("div", {
+                style: {
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                },
+                children: [
+                    image(`${SKILL_IMAGE_ROOT}/${boss.name}.webp`, "", boss.name, {
+                        style: { width: "100%", height: "auto", borderRadius: "5px" },
+                        error: "remove",
+                    }),
+                ],
+            }));
+            
+            wrapper.appendChild(create("div", {
                 className: "u_r",
+                style: { marginTop: "8px" },
                 children: [
                     create("div", {
                         children: [
                             create("p", { text: `拟境${i + 1} Lv70` }),
                             create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
                         ],
-                    }),
-                ],
-            }));
-            
-            wrapper.appendChild(create("div", {
-                style: {
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "8px",
-                },
-                children: [
-                    image(`${SKILL_IMAGE_ROOT}/${boss.name}.webp`, "", boss.name, {
-                        style: { width: "100%", height: "auto", borderRadius: "5px" },
-                        error: "remove",
                     }),
                 ],
             }));
