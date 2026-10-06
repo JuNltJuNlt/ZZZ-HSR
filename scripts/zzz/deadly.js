@@ -81,7 +81,7 @@ const parseVersion = (label) => {
 
 const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    let abnormal = info.stuns || 0;
+    let abnormal = info.stun || 0;
     
     const label = indexData.entries[state.scheduleIndex].replace('.json', '');
     const version = parseVersion(label);

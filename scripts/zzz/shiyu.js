@@ -108,7 +108,7 @@ const renderElementIcons = (elements = [], className = "elem_") =>
 
 const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    return info.stuns || 0;
+    return info.stun || 0;
 };
 
 const renderWeaknessBars = (monster, abnormalValue) => {
