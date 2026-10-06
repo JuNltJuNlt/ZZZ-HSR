@@ -106,25 +106,36 @@ const renderFloorText = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
-const renderWeaknessBars = (monster) => {
+const getStunValue = (monster) => {
+    const info = monstersData.find(m => m.name === monster.name) || {};
+    return monster.stun || info.stun || 0;
+};
+
+const renderWeaknessBars = (monster, stunValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
     const items = [];
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
-    if (items.length === 0) return null;
+    if (items.length === 0 && !stunValue) return null;
     return create("div", {
-        style: { display: "flex", justifyContent: "center", gap: "3px", marginTop: "4px" },
-        children: items.map(item => {
-            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-            return create("div", {
-                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
-                children: [
-                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
-                    create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
-                ]
-            });
-        })
+        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px" },
+        children: [
+            ...items.map(item => {
+                const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
+                return create("div", {
+                    style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
+                    children: [
+                        image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
+                        create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
+                    ]
+                });
+            }),
+            stunValue ? create("span", {
+                style: { color: "#9b59b6", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                text: String(stunValue)
+            }) : null,
+        ].filter(Boolean)
     });
 };
 
@@ -173,7 +184,7 @@ const renderMonsterCard = (monster, stageLevel) => {
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
     const def = monster.defense || 0;
-    const stun = monster.stun || 0;
+    const stun = monster.stun || info.stun || 0;
     const img = image(imagePath, "monicon hasimg", monster.name);
     const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monster.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
@@ -182,7 +193,7 @@ const renderMonsterCard = (monster, stageLevel) => {
         className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
             create("div", { className: "monleft", children: [img, nameLayer, ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : [])] }),
-            renderWeaknessBars(monster),
+            renderWeaknessBars(monster, getStunValue(monster)),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
@@ -450,40 +461,45 @@ const bindEvents = () => {
         }
     });
     byId("downloadBtn").addEventListener("click", (e) => {
-    e.preventDefault();
-    const container = document.querySelector("container");
-    const content = document.querySelector(".content");
-    const origStyle = container.getAttribute("style") || "";
-    const bodyOrigStyle = document.body.getAttribute("style") || "";
-    const contentOrigStyle = content.getAttribute("style") || "";
-    
-    container.style.overflow = "visible";
-    container.style.height = "auto";
-    document.body.style.overflow = "visible";
-    document.body.style.height = "auto";
-    content.style.overflow = "visible";
-    content.style.height = "auto";
-    
-    const dl = byId("downloadBtn");
-    dl.style.display = "none";
+        e.preventDefault();
+        const container = document.querySelector("container");
+        const content = document.querySelector(".content");
+        const origStyle = container.getAttribute("style") || "";
+        const bodyOrigStyle = document.body.getAttribute("style") || "";
+        const contentOrigStyle = content.getAttribute("style") || "";
+        
+        container.style.overflow = "visible";
+        container.style.height = "auto";
+        document.body.style.overflow = "visible";
+        document.body.style.height = "auto";
+        content.style.overflow = "visible";
+        content.style.height = "auto";
+        
+        const dl = byId("downloadBtn");
+        dl.style.display = "none";
 
-    html2canvas(content, {
-    scale: 2,
-    backgroundColor: "#ffffff",
-    useCORS: true,
-    height: content.scrollHeight,
-    width: content.scrollWidth,
-}).then(canvas => {
-        const a = document.createElement("a");
-        a.download = `式舆防卫战_${currentEntry().name}.png`;
-        a.href = canvas.toDataURL("image/png");
-        a.click();
-        container.setAttribute("style", origStyle);
-        document.body.setAttribute("style", bodyOrigStyle);
-        content.setAttribute("style", contentOrigStyle);
-        dl.style.display = "";
+        setTimeout(() => {
+            if (totalChartInstance && !totalChartInstance.isDisposed()) totalChartInstance.resize();
+            if (stageChartInstance && !stageChartInstance.isDisposed()) stageChartInstance.resize();
+            
+            requestAnimationFrame(() => {
+                html2canvas(content, {
+                    scale: 2,
+                    backgroundColor: "#ffffff",
+                    useCORS: true,
+                }).then(canvas => {
+                    const a = document.createElement("a");
+                    a.download = `式舆防卫战_${currentEntry().name}.png`;
+                    a.href = canvas.toDataURL("image/png");
+                    a.click();
+                    container.setAttribute("style", origStyle);
+                    document.body.setAttribute("style", bodyOrigStyle);
+                    content.setAttribute("style", contentOrigStyle);
+                    dl.style.display = "";
+                });
+            });
+        }, 500);
     });
-});
     document.body.addEventListener("click", (event) => {
         if (event.target.closest(".emote_block_")) {
             document.querySelectorAll(".emote_").forEach(node => {

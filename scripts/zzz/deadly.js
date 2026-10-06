@@ -73,6 +73,24 @@ const getChartTitle = (baseTitle) => {
     return normalizeMode ? `${baseTitle}（低防血量归一）` : baseTitle;
 };
 
+const parseVersion = (label) => {
+    const match = label.match(/^(\d+)\.(\d+)/);
+    if (!match) return 0;
+    return parseFloat(match[1] + '.' + match[2]);
+};
+
+const getStunValue = (monster) => {
+    const info = monstersData.find(m => m.name === monster.name) || {};
+    let baseStun = monster.stun || info.stun || 0;
+    
+    const label = indexData.entries[state.scheduleIndex].replace('.json', '');
+    const version = parseVersion(label);
+    if (version >= 2.1) {
+        baseStun = Math.round(baseStun * 1.1);
+    }
+    return baseStun;
+};
+
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...deadlyEntries.map((e, i) => create("option", {
@@ -131,7 +149,7 @@ const renderNormalizeToggle = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
-const renderWeaknessBars = (monster) => {
+const renderWeaknessBars = (monster, stunValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
     const items = [];
@@ -142,21 +160,28 @@ const renderWeaknessBars = (monster) => {
         style: { 
             display: "flex", 
             justifyContent: "center", 
+            alignItems: "center",
             gap: "3px", 
             marginTop: "4px",
             minHeight: "28px",
-            visibility: items.length === 0 ? "hidden" : "visible"
+            visibility: (items.length === 0 && !stunValue) ? "hidden" : "visible"
         },
-        children: items.length > 0 ? items.map(item => {
-            const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-            return create("div", {
-                style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
-                children: [
-                    image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
-                    create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
-                ]
-            });
-        }) : []
+        children: [
+            ...items.map(item => {
+                const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
+                return create("div", {
+                    style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
+                    children: [
+                        image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
+                        create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
+                    ]
+                });
+            }),
+            stunValue ? create("span", {
+                style: { color: "#9b59b6", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                text: String(stunValue)
+            }) : null,
+        ].filter(Boolean)
     });
 };
 
@@ -166,7 +191,7 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(getAdjustedHp(monster) * (monster.hp_ratio_sum ?? 1) * multiplier);
     const def = Math.round(getAdjustedDef(monster));
-    const stun = Math.round(monster.stun || 0);
+    const stun = Math.round(getStunValue(monster));
     const img = image(imagePath, "monicon hasimg", monster.name);
     img.style.height = "180px";
     img.style.width = "auto";
@@ -177,7 +202,7 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
         className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            renderWeaknessBars(monster),
+            renderWeaknessBars(monster, getStunValue(monster)),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
@@ -688,29 +713,32 @@ const bindEvents = () => {
         document.body.style.height = "auto";
         content.style.overflow = "visible";
         content.style.height = "auto";
-        container.style.background = "#29105a";
         
         const dl = byId("downloadBtn");
         dl.style.display = "none";
 
-        html2canvas(content, {
-            scale: 2,
-            backgroundColor: "#29105a",
-            useCORS: true,
-            windowHeight: content.scrollHeight,
-            windowWidth: content.scrollWidth,
-            height: content.scrollHeight,
-            width: content.scrollWidth,
-        }).then(canvas => {
-            const a = document.createElement("a");
-            a.download = `危局强袭战_${currentEntry().deadly_name || ''}.png`;
-            a.href = canvas.toDataURL("image/png");
-            a.click();
-            container.setAttribute("style", origStyle);
-            document.body.setAttribute("style", bodyOrigStyle);
-            content.setAttribute("style", contentOrigStyle);
-            dl.style.display = "";
-        });
+        setTimeout(() => {
+            if (chartInstance && !chartInstance.isDisposed()) chartInstance.resize();
+            if (bossChartInstance && !bossChartInstance.isDisposed()) bossChartInstance.resize();
+            if (finalChartInstance && !finalChartInstance.isDisposed()) finalChartInstance.resize();
+            
+            requestAnimationFrame(() => {
+                html2canvas(content, {
+                    scale: 2,
+                    backgroundColor: "#ffffff",
+                    useCORS: true,
+                }).then(canvas => {
+                    const a = document.createElement("a");
+                    a.download = `危局强袭战_${currentEntry().deadly_name || ''}.png`;
+                    a.href = canvas.toDataURL("image/png");
+                    a.click();
+                    container.setAttribute("style", origStyle);
+                    document.body.setAttribute("style", bodyOrigStyle);
+                    content.setAttribute("style", contentOrigStyle);
+                    dl.style.display = "";
+                });
+            });
+        }, 500);
     });
     document.body.addEventListener("mouseenter", (event) => {
         const card = event.target.closest(".monster_card");

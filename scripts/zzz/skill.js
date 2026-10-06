@@ -65,12 +65,45 @@ const renderScheduleHeader = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
+const getStunValue = (monster) => {
+    const info = monstersData.find(m => m.name === monster.name) || {};
+    return monster.stun || info.stun || 0;
+};
+
+const renderWeaknessBars = (monster, stunValue) => {
+    const weakness = monster.weakness || [];
+    const resistance = monster.resistance || [];
+    const items = [];
+    weakness.forEach(el => items.push({ element: el, type: "weak" }));
+    resistance.forEach(el => items.push({ element: el, type: "resist" }));
+    if (items.length === 0 && !stunValue) return null;
+    return create("div", {
+        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
+        children: [
+            ...items.map(item => {
+                const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
+                return create("div", {
+                    style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
+                    children: [
+                        image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
+                        create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
+                    ]
+                });
+            }),
+            stunValue ? create("span", {
+                style: { color: "#9b59b6", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                text: String(stunValue)
+            }) : null,
+        ].filter(Boolean)
+    });
+};
+
 const renderBossCard = (boss) => {
     const info = monstersData.find(m => m.name === boss.name) || {};
     const type = info.type || boss.type || "S";
-    const imagePath = `${IMAGE_ROOT}/${type}/${boss.name}.webp`;
+    const imagePath = `${IMAGE_ROOT}/skill/${boss.name}.webp`;
     const def = boss.defense || 0;
-    const stun = boss.stun || 0;
+    const stun = getStunValue(boss);
     const img = image(imagePath, "monicon hasimg", boss.name);
     img.style.height = "180px";
     img.style.width = "auto";
@@ -81,7 +114,7 @@ const renderBossCard = (boss) => {
         className: "monster_card hover-shadow",
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            create("div", { style: { minHeight: "28px" } }),
+            renderWeaknessBars(boss, getStunValue(boss)),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
