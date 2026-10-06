@@ -81,7 +81,7 @@ const parseVersion = (label) => {
 
 const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    let abnormal = info.stun || 0;
+    let abnormal = info.stuns || 0;
     
     const label = indexData.entries[state.scheduleIndex].replace('.json', '');
     const version = parseVersion(label);
@@ -178,7 +178,7 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                 });
             }),
             abnormalValue ? create("span", {
-                style: { color: "#6a1b9a", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                style: { color: "#6a1b9a", fontWeight: "bold", marginLeft: "4px" },
                 text: String(abnormalValue)
             }) : null,
         ].filter(Boolean)

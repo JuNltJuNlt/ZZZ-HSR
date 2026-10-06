@@ -108,7 +108,7 @@ const renderElementIcons = (elements = [], className = "elem_") =>
 
 const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    return info.stun || 0;
+    return info.stuns || 0;
 };
 
 const renderWeaknessBars = (monster, abnormalValue) => {
@@ -132,7 +132,7 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                 });
             }),
             abnormalValue ? create("span", {
-                style: { color: "#6a1b9a", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                style: { color: "#6a1b9a", fontWeight: "bold", marginLeft: "4px" },
                 text: String(abnormalValue)
             }) : null,
         ].filter(Boolean)
