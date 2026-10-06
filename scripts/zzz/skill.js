@@ -65,18 +65,18 @@ const renderScheduleHeader = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
-const getStunValue = (monster) => {
+const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    return monster.stun || info.stun || 0;
+    return info.stun || 0;
 };
 
-const renderWeaknessBars = (monster, stunValue) => {
+const renderWeaknessBars = (monster, abnormalValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
     const items = [];
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
-    if (items.length === 0 && !stunValue) return null;
+    if (items.length === 0 && !abnormalValue) return null;
     return create("div", {
         style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
         children: [
@@ -90,9 +90,9 @@ const renderWeaknessBars = (monster, stunValue) => {
                     ]
                 });
             }),
-            stunValue ? create("span", {
-                style: { color: "#9b59b6", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
-                text: String(stunValue)
+            abnormalValue ? create("span", {
+                style: { color: "#6a1b9a", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                text: String(abnormalValue)
             }) : null,
         ].filter(Boolean)
     });
@@ -101,9 +101,9 @@ const renderWeaknessBars = (monster, stunValue) => {
 const renderBossCard = (boss) => {
     const info = monstersData.find(m => m.name === boss.name) || {};
     const type = info.type || boss.type || "S";
-    const imagePath = `${IMAGE_ROOT}/skill/${boss.name}.webp`;
+    const imagePath = `${IMAGE_ROOT}/${type}/${boss.name}.webp`;
     const def = boss.defense || 0;
-    const stun = getStunValue(boss);
+    const stun = boss.stun || 0;
     const img = image(imagePath, "monicon hasimg", boss.name);
     img.style.height = "180px";
     img.style.width = "auto";
@@ -114,7 +114,7 @@ const renderBossCard = (boss) => {
         className: "monster_card hover-shadow",
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            renderWeaknessBars(boss, getStunValue(boss)),
+            renderWeaknessBars(boss, getAbnormalValue(boss)),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),

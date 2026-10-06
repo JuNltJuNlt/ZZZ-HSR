@@ -106,20 +106,20 @@ const renderFloorText = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
-const getStunValue = (monster) => {
+const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    return monster.stun || info.stun || 0;
+    return info.stun || 0;
 };
 
-const renderWeaknessBars = (monster, stunValue) => {
+const renderWeaknessBars = (monster, abnormalValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
     const items = [];
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
-    if (items.length === 0 && !stunValue) return null;
+    if (items.length === 0 && !abnormalValue) return null;
     return create("div", {
-        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px" },
+        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
         children: [
             ...items.map(item => {
                 const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
@@ -131,9 +131,9 @@ const renderWeaknessBars = (monster, stunValue) => {
                     ]
                 });
             }),
-            stunValue ? create("span", {
-                style: { color: "#9b59b6", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
-                text: String(stunValue)
+            abnormalValue ? create("span", {
+                style: { color: "#6a1b9a", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                text: String(abnormalValue)
             }) : null,
         ].filter(Boolean)
     });
@@ -184,7 +184,7 @@ const renderMonsterCard = (monster, stageLevel) => {
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(monster.hp * (monster.hp_ratio_sum ?? 1));
     const def = monster.defense || 0;
-    const stun = monster.stun || info.stun || 0;
+    const stun = monster.stun || 0;
     const img = image(imagePath, "monicon hasimg", monster.name);
     const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monster.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
@@ -193,7 +193,7 @@ const renderMonsterCard = (monster, stageLevel) => {
         className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
             create("div", { className: "monleft", children: [img, nameLayer, ...(monster.number >= 2 ? [create("span", { className: "monicon_num", text: String(monster.number) })] : [])] }),
-            renderWeaknessBars(monster, getStunValue(monster)),
+            renderWeaknessBars(monster, getAbnormalValue(monster)),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),

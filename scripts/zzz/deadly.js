@@ -79,16 +79,16 @@ const parseVersion = (label) => {
     return parseFloat(match[1] + '.' + match[2]);
 };
 
-const getStunValue = (monster) => {
+const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
-    let baseStun = monster.stun || info.stun || 0;
+    let abnormal = info.stun || 0;
     
     const label = indexData.entries[state.scheduleIndex].replace('.json', '');
     const version = parseVersion(label);
     if (version >= 2.1) {
-        baseStun = Math.round(baseStun * 1.1);
+        abnormal = Math.round(abnormal * 1.1);
     }
-    return baseStun;
+    return abnormal;
 };
 
 const renderScheduleSelect = () => {
@@ -149,7 +149,7 @@ const renderNormalizeToggle = () => {
 const renderElementIcons = (elements = [], className = "elem_") =>
     elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
 
-const renderWeaknessBars = (monster, stunValue) => {
+const renderWeaknessBars = (monster, abnormalValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
     const items = [];
@@ -164,7 +164,7 @@ const renderWeaknessBars = (monster, stunValue) => {
             gap: "3px", 
             marginTop: "4px",
             minHeight: "28px",
-            visibility: (items.length === 0 && !stunValue) ? "hidden" : "visible"
+            visibility: (items.length === 0 && !abnormalValue) ? "hidden" : "visible"
         },
         children: [
             ...items.map(item => {
@@ -177,9 +177,9 @@ const renderWeaknessBars = (monster, stunValue) => {
                     ]
                 });
             }),
-            stunValue ? create("span", {
-                style: { color: "#9b59b6", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
-                text: String(stunValue)
+            abnormalValue ? create("span", {
+                style: { color: "#6a1b9a", fontWeight: "bold", fontSize: "13px", marginLeft: "4px" },
+                text: String(abnormalValue)
             }) : null,
         ].filter(Boolean)
     });
@@ -191,7 +191,7 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     const hp = Math.round(getAdjustedHp(monster) * (monster.hp_ratio_sum ?? 1) * multiplier);
     const def = Math.round(getAdjustedDef(monster));
-    const stun = Math.round(getStunValue(monster));
+    const stun = Math.round(monster.stun || 0);
     const img = image(imagePath, "monicon hasimg", monster.name);
     img.style.height = "180px";
     img.style.width = "auto";
@@ -202,7 +202,7 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 8.74) => {
         className: "monster_card hover-shadow", attrs: { "data-lv": stageLevel },
         children: [
             create("div", { className: "monleft", children: [img, nameLayer] }),
-            renderWeaknessBars(monster, getStunValue(monster)),
+            renderWeaknessBars(monster, getAbnormalValue(monster)),
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
