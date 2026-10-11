@@ -202,8 +202,8 @@ const render = () => {
                 children: [
                     create("div", {
                         children: [
-                            create("p", { text: `拟境${i + 1} Lv70` }),
-                            create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+                            create("p", { text: boss.name }),
+                            create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
                         ],
                     }),
                 ],

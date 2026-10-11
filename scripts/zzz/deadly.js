@@ -281,7 +281,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
             children: [
                 create("p", { text: `${label} Lv${zoneData.monster_level || 70}` }),
                 ...renderElementIcons(elements, "elem_"),
-                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
             ],
         }));
         section.appendChild(recommend);
@@ -308,9 +308,9 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     
     recommend.appendChild(create("div", {
         children: [
-            create("p", { text: `${label} Lv${zoneData.monster_level || 70}` }),
+            create("p", { text: monster.name }),
             ...renderElementIcons(elements, "elem_"),
-            create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+            create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
         ],
     }));
 
@@ -501,7 +501,7 @@ const renderFinalSection = () => {
             children: [
                 create("p", { text: `绝境 Lv${zoneData.monster_level || 70}` }),
                 ...renderElementIcons(zoneData.weakness || [], "elem_"),
-                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF" } }),
+                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
             ],
         }));
         leftCol.appendChild(recommend);

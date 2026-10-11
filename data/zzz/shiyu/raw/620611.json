@@ -9,8 +9,8 @@
       "monster_level": 50,
       "layer_buff": {
         "62001611": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升25%，<color=#A6C5FD>风属性伤害</color>提升40%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低25%，持续30秒，重复触发时刷新持续时间。"
+          "title": "岚火燎天",
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升35%，<color=#A6C5FD>风属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低15%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -253,8 +253,8 @@
       "monster_level": 55,
       "layer_buff": {
         "62001611": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升25%，<color=#A6C5FD>风属性伤害</color>提升40%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低25%，持续30秒，重复触发时刷新持续时间。"
+          "title": "岚火燎天",
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升35%，<color=#A6C5FD>风属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低15%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -477,8 +477,8 @@
       "monster_level": 60,
       "layer_buff": {
         "62001611": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升25%，<color=#A6C5FD>风属性伤害</color>提升40%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低25%，持续30秒，重复触发时刷新持续时间。"
+          "title": "岚火燎天",
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升35%，<color=#A6C5FD>风属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低15%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -700,8 +700,8 @@
       "monster_level": 65,
       "layer_buff": {
         "62001611": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升25%，<color=#A6C5FD>风属性伤害</color>提升40%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低25%，持续30秒，重复触发时刷新持续时间。"
+          "title": "岚火燎天",
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升35%，<color=#A6C5FD>风属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低15%，持续30秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -805,15 +805,15 @@
       "monster_level": 0,
       "layer_buff": {
         "62001611": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升25%，<color=#A6C5FD>风属性伤害</color>提升40%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低25%，持续30秒，重复触发时刷新持续时间。"
+          "title": "岚火燎天",
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升35%，<color=#A6C5FD>风属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低15%，持续30秒，重复触发时刷新持续时间。"
         },
         "62001612": {
-          "title": "(Test1)TBD",
+          "title": "炽阳焚夜",
           "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队攻击力提升10%，属性异常伤害提升20%，持续15秒，重复触发时刷新持续时间。\n· 代理人使敌人进入<color=#FF5521>火属性异常</color>状态后，其<color=#FF5521>火属性伤害抗性</color>降低10%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001613": {
-          "title": "(Test1)TBD",
+          "title": "极凛破界",
           "desc": "· 代理人的贯穿伤害提升35%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升50%，持续15秒，重复触发时刷新持续时间。"
         }
       },
@@ -835,8 +835,8 @@
       "monster_level": 70,
       "layer_buff": {
         "62001611": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升25%，<color=#A6C5FD>风属性伤害</color>提升40%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低25%，持续30秒，重复触发时刷新持续时间。"
+          "title": "岚火燎天",
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的攻击力提升35%，<color=#A6C5FD>风属性伤害</color>提升20%。\n· 代理人的<color=#FFFFFF>[终结技]</color>命中敌人后，其<color=#A6C5FD>风属性伤害抗性</color>降低15%，持续30秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -865,7 +865,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 55887533.279999994,
+                "hp": 50615124.48,
                 "attack": 3179.0909090909095,
                 "defence": 952.8000000000001,
                 "stun": 21119.45,
@@ -885,7 +885,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 5463900.585,
+                "hp": 4276096.109999999,
                 "attack": 2836.727272727273,
                 "defence": 857.5200000000001,
                 "stun": 10285.95,
@@ -905,7 +905,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 7892174.114999999,
+                "hp": 6176484.09,
                 "attack": 2836.727272727273,
                 "defence": 857.5200000000001,
                 "stun": 11829.9,
@@ -935,7 +935,7 @@
       "monster_level": 70,
       "layer_buff": {
         "62001612": {
-          "title": "(Test1)TBD",
+          "title": "炽阳焚夜",
           "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队攻击力提升10%，属性异常伤害提升20%，持续15秒，重复触发时刷新持续时间。\n· 代理人使敌人进入<color=#FF5521>火属性异常</color>状态后，其<color=#FF5521>火属性伤害抗性</color>降低10%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
@@ -1015,7 +1015,7 @@
       "monster_level": 70,
       "layer_buff": {
         "62001613": {
-          "title": "(Test1)TBD",
+          "title": "极凛破界",
           "desc": "· 代理人的贯穿伤害提升35%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，其<color=#FF5521>火属性伤害</color>和<color=#98EFF0>冰属性伤害</color>提升50%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
