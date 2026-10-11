@@ -107,6 +107,17 @@ const getHpPercent = (monster, multiplier) => {
     return percent;
 };
 
+const renderHpPercent = (hpPercent) => {
+    if (hpPercent === null) return null;
+    return create("p", {
+        style: { fontWeight: "bold", fontSize: "13px", margin: "2px 0" },
+        children: [
+            create("span", { text: "HP " }),
+            create("span", { text: `${hpPercent}%`, style: { color: "#cc0000" } }),
+        ],
+    });
+};
+
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...deadlyEntries.map((e, i) => create("option", {
@@ -327,7 +338,7 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     recommend.appendChild(create("div", {
         children: [
             create("p", { text: monster.name }),
-            hpPercent !== null ? create("p", { text: `HP ${hpPercent}%`, style: { fontWeight: "bold" } }) : null,
+            renderHpPercent(hpPercent),
             ...renderElementIcons(elements, "elem_"),
             create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
         ].filter(Boolean),
@@ -521,7 +532,7 @@ const renderFinalSection = () => {
         recommend.appendChild(create("div", {
             children: [
                 create("p", { text: monster.name }),
-                hpPercent !== null ? create("p", { text: `HP ${hpPercent}%`, style: { fontWeight: "bold" } }) : null,
+                renderHpPercent(hpPercent),
                 ...renderElementIcons(zoneData.weakness || [], "elem_"),
                 create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
             ].filter(Boolean),
