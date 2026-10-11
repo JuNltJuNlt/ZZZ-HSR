@@ -338,9 +338,9 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     recommend.appendChild(create("div", {
         children: [
             create("p", { text: monster.name }),
-            renderHpPercent(hpPercent),
             ...renderElementIcons(elements, "elem_"),
             create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
+            renderHpPercent(hpPercent),
         ].filter(Boolean),
     }));
 
@@ -532,9 +532,9 @@ const renderFinalSection = () => {
         recommend.appendChild(create("div", {
             children: [
                 create("p", { text: monster.name }),
-                renderHpPercent(hpPercent),
                 ...renderElementIcons(zoneData.weakness || [], "elem_"),
                 create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
+                renderHpPercent(hpPercent),
             ].filter(Boolean),
         }));
         leftCol.appendChild(recommend);
@@ -584,7 +584,7 @@ const renderFinalSection = () => {
         container.appendChild(row);
         
         setTimeout(() => {
-            const subtitleEl = leftCol.querySelector('.u_r p:last-child');
+            const subtitleEl = leftCol.querySelector('.u_r p:nth-child(3)');
             if (subtitleEl) {
                 const recommendRect = recommend.getBoundingClientRect();
                 const subtitleRect = subtitleEl.getBoundingClientRect();
