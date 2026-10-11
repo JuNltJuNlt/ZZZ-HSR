@@ -8,33 +8,33 @@
       "stage_num": 1,
       "monster_level": 70,
       "layer_buff": {
-        "buff_69014410": {
-          "title": "",
-          "desc": "·熔狱行赭进入[熔狱]状态后，其受到的属性异常伤害降低30%；每击碎一颗<color=#2BAD00>燧石</color>，全队额外恢复<color=#FFFFFF>20</color>点能量；每触发一次<Term:2000004></Term>首领会获得1层<color=#FFFFFF>[过热]</color>；累计触发两次<color=#FFAF2C>[招架支援]</color>或<color=#FFAF2C>[极限闪避]</color>首领会获得1层<color=#FFFFFF>[过热]</color>，每层<color=#FFFFFF>[过热]</color>会使全队代理人暴击伤害<color=#FFAF2C>提升25%</color>。最多叠加3层，持续20秒，触发<color=#FFAF2C>[招架支援]</color>或重复触发<color=#FFFFFF>[过热]</color>时刷新持续时间。"
-        },
         "buff_69014411": {
           "title": "",
           "desc": "· 成功<color=#FFAF2C>触发[完美反制]</color>时，可获得<color=#FFAF2C>2000操作得分</color>；<color=#FFAF2C>每击碎一颗燧石</color>可获得<color=#FFAF2C>1000操作分，最多获得5000操作得分</color>。"
+        },
+        "buff_69014412": {
+          "title": "",
+          "desc": "·熔狱行赭进入[熔狱]状态后，其受到的属性异常伤害降低30%；每击碎一颗<color=#2BAD00>燧石</color>，全队额外恢复<color=#FFFFFF>20</color>点能量；每触发一次<Term:2000004></Term>首领会获得1层<color=#FFFFFF>[过热]</color>；累计触发两次<color=#FFAF2C>[招架支援]</color>或<color=#FFAF2C>[极限闪避]</color>首领会获得1层<color=#FFFFFF>[过热]</color>，每层<color=#FFFFFF>[过热]</color>会使全队代理人暴击伤害<color=#FFAF2C>提升25%</color>。最多叠加3层，持续20秒，触发<color=#FFAF2C>[招架支援]</color>或重复触发<color=#FFFFFF>[过热]</color>时刷新持续时间。"
         }
       },
       "selectable_buff": {
         "buff_69015001": {
-          "title": "(Test1)TBD",
+          "title": "掠霜",
           "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>30%</color>的<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升50%</color>。"
         },
         "buff_69015002": {
-          "title": "(Test1)TBD",
+          "title": "奔霆",
           "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69015003": {
-          "title": "(Test1)TBD",
+          "title": "极魄",
           "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队<color=#2BAD00>获得20点</color>能量，属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "monsters": [
         {
           "name": "熔狱行赭",
-          "hp": 20489101,
+          "hp": 22538011,
           "defense": 953,
           "stun": 20431,
           "number": 1,
@@ -77,15 +77,15 @@
       },
       "selectable_buff": {
         "buff_69015001": {
-          "title": "(Test1)TBD",
+          "title": "掠霜",
           "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>30%</color>的<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升50%</color>。"
         },
         "buff_69015002": {
-          "title": "(Test1)TBD",
+          "title": "奔霆",
           "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69015003": {
-          "title": "(Test1)TBD",
+          "title": "极魄",
           "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队<color=#2BAD00>获得20点</color>能量，属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果每20秒可触发一次。"
         }
       },
@@ -135,22 +135,22 @@
       },
       "selectable_buff": {
         "buff_69015001": {
-          "title": "(Test1)TBD",
+          "title": "掠霜",
           "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>30%</color>的<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升50%</color>。"
         },
         "buff_69015002": {
-          "title": "(Test1)TBD",
+          "title": "奔霆",
           "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69015003": {
-          "title": "(Test1)TBD",
+          "title": "极魄",
           "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队<color=#2BAD00>获得20点</color>能量，属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果每20秒可触发一次。"
         }
       },
       "monsters": [
         {
           "name": "焚昼余火·法厄同",
-          "hp": 24239010,
+          "hp": 23723286,
           "defense": 953,
           "stun": 19541,
           "number": 1,
@@ -186,20 +186,20 @@
         },
         "buff_69015006": {
           "title": "",
-          "desc": "· 代理人攻击命中首领敌人时，使首领敌人获得1点[紊相值]；同一名代理人每1秒最多施加1点[紊相值]。\n· 首领敌人持有的[紊相值]达到10点时，会立即移除所有[紊相值]并使首领敌人进入[紊相]状态。[紊相]状态期间，敌人受到的<color=#2BAD00>属性异常伤害提升35%</color>、<color=#2BAD00>暴击伤害提升120%</color>，受到的<color=#2BAD00>锐化伤害提升75%</color>，<color=#2BAD00>锐暴伤害提升20%</color>，持续10秒，重复进入[紊相]状态时刷新持续时间。\n· 代理人成功对首领敌人施加属性异常状态时，全队代理人会获得[升变]效果：<color=#2BAD00>造成的伤害提升15%</color>，异常精通<color=#2BAD00>提升20点</color>；[升变]效果持续10秒，重复触发刷新持续时间。"
+          "desc": "· 代理人攻击命中首领敌人时，使首领敌人获得1点[紊相值]；同一名代理人每1秒最多施加1点[紊相值]。\n· 首领敌人持有的[紊相值]达到10点时，会立即移除所有[紊相值]并使首领敌人进入[紊相]状态。[紊相]状态期间，敌人受到的<color=#2BAD00>属性异常伤害提升20%</color>、<color=#2BAD00>暴击伤害提升120%</color>，受到的<color=#2BAD00>锐化伤害提升65%</color>，<color=#2BAD00>锐暴伤害提升25%</color>，持续10秒，重复进入[紊相]状态时刷新持续时间。\n· 代理人成功对首领敌人施加属性异常状态时，全队代理人异常精通<color=#2BAD00>提升20点</color>，持续10秒，重复触发刷新持续时间。"
         }
       },
       "selectable_buff": {
         "buff_69015001": {
-          "title": "(Test1)TBD",
+          "title": "掠霜",
           "desc": "· 代理人造成的<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升30%</color>，攻击命中敌人时无视其<color=#2BAD00>30%</color>的<color=#A6C5FD>风属性伤害抗性</color>。\n· <color=#FFFFFF>[强攻]</color>特性的代理人暴击伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害<color=#2BAD00>提升50%</color>。"
         },
         "buff_69015002": {
-          "title": "(Test1)TBD",
+          "title": "奔霆",
           "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[特殊技]</color>、<color=#FFFFFF>[终结技]</color>后，<color=#2EB6FF>电属性伤害</color>和<color=#A6C5FD>风属性伤害</color><color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_69015003": {
-          "title": "(Test1)TBD",
+          "title": "极魄",
           "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，<color=#FF5521>火属性</color>和<color=#A6C5FD>风属性</color>异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队<color=#2BAD00>获得20点</color>能量，属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果每20秒可触发一次。"
         }
       },
@@ -211,7 +211,7 @@
           "stun": 18934,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": ["火","风"],
+          "weakness": [],
           "resistance": [],
           "type": "S"
         }
