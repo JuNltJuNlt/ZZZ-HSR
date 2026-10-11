@@ -498,12 +498,12 @@ const renderFinalSection = () => {
         
         const recommend = create("div", { className: "u_r" });
         recommend.appendChild(create("div", {
-            children: [
-                create("p", { text: `绝境 Lv${zoneData.monster_level || 70}` }),
-                ...renderElementIcons(zoneData.weakness || [], "elem_"),
-                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
-            ],
-        }));
+    children: [
+        create("p", { text: monster.name }),
+        ...renderElementIcons(zoneData.weakness || [], "elem_"),
+        create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
+    ],
+}));
         leftCol.appendChild(recommend);
         
         const lineup = create("div", { className: "u_m" });
