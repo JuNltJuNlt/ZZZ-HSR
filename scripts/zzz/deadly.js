@@ -8,6 +8,7 @@ const EMOTE_ROOT = "../../images/ZZZ%20images/emote";
 
 let deadlyEntries = [];
 let monstersData = [];
+let bossHpData = [];
 let indexData = null;
 let chartInstance = null;
 let bossChartInstance = null;
@@ -39,6 +40,8 @@ const loadData = async () => {
     indexData = await fetchJson("index.json");
     const mRes = await fetch('../../data/zzz/monsters.json');
     monstersData = (await mRes.json()).monsters;
+    const bhRes = await fetch('../../data/zzz/boss_hp.json');
+    bossHpData = (await bhRes.json()).monsters;
     deadlyEntries = await Promise.all(indexData.entries.map(f => fetchJson(f)));
 };
 
@@ -89,6 +92,19 @@ const getAbnormalValue = (monster) => {
         abnormal = Math.round(abnormal * 1.1);
     }
     return abnormal;
+};
+
+const getBaseHp = (monsterName) => {
+    const entry = bossHpData.find(m => m.name === monsterName);
+    return entry ? entry.base_hp : 0;
+};
+
+const getHpPercent = (monster, multiplier) => {
+    const baseHp = getBaseHp(monster.name);
+    if (!baseHp) return null;
+    const finalHp = getAdjustedHp(monster) * (monster.hp_ratio_sum ?? 1) * multiplier;
+    const percent = Math.round((finalHp / multiplier / 247.95 / baseHp) * 100);
+    return percent;
 };
 
 const renderScheduleSelect = () => {
@@ -302,6 +318,8 @@ const renderBossSection = (zoneData, letter, label, elements) => {
         return section;
     }
 
+    const hpPercent = getHpPercent(monster, 8.74);
+    
     const section = create("div", { className: letter, style: { display: "flex", flexDirection: "column", width: "100%" } });
     const recommend = create("div", { className: `${letter}_r` });
     const lineup = create("div", { className: `${letter}_m` });
@@ -309,9 +327,10 @@ const renderBossSection = (zoneData, letter, label, elements) => {
     recommend.appendChild(create("div", {
         children: [
             create("p", { text: monster.name }),
+            hpPercent !== null ? create("p", { text: `HP ${hpPercent}%`, style: { fontWeight: "bold" } }) : null,
             ...renderElementIcons(elements, "elem_"),
             create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
-        ],
+        ].filter(Boolean),
     }));
 
     if (!monster.weakness) monster.weakness = zoneData.weakness || [];
@@ -486,6 +505,8 @@ const renderFinalSection = () => {
         const monster = zoneData.monsters?.[0];
         if (!monster) return;
         
+        const hpPercent = getHpPercent(monster, 15.8);
+        
         const leftCol = create("div", {
             style: {
                 display: "flex",
@@ -498,12 +519,13 @@ const renderFinalSection = () => {
         
         const recommend = create("div", { className: "u_r" });
         recommend.appendChild(create("div", {
-    children: [
-        create("p", { text: monster.name }),
-        ...renderElementIcons(zoneData.weakness || [], "elem_"),
-        create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
-    ],
-}));
+            children: [
+                create("p", { text: monster.name }),
+                hpPercent !== null ? create("p", { text: `HP ${hpPercent}%`, style: { fontWeight: "bold" } }) : null,
+                ...renderElementIcons(zoneData.weakness || [], "elem_"),
+                create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } }),
+            ].filter(Boolean),
+        }));
         leftCol.appendChild(recommend);
         
         const lineup = create("div", { className: "u_m" });
