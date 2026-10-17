@@ -47,13 +47,13 @@
                 }
             ]
         },
-        "siteVersion": "3.1V12",
+        "siteVersion": "3.3",
         "siteVersionByGame": {
-            "zzz": "3.2",
-            "sr": "4.5v2"
+            "zzz": "3.3",
+            "sr": "4.7"
         },
         "featured": {
-            "version": "4.5v1",
+            "version": "4.7",
             "characters": [
                 1512,
                 1513
@@ -378,10 +378,6 @@
         "directoryByGame": {
             "zzz": [
                 {
-                    "label": "贝果计划",
-                    "href": "./zzz_html/labyrinth/"
-                },
-                {
                     "label": "怪物",
                     "href": "./zzz_html/monster/"
                 },
@@ -395,7 +391,7 @@
                 },
                 {
                     "label": "临界推演",
-                    "href": "./zzz_html/simul/"
+                    "href": "./zzz_html/simulation/"
                 },
                 {
                     "label": "拟境湮灭战",
