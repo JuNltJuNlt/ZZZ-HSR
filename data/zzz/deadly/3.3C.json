@@ -1,7 +1,7 @@
 {
   "deadly_id": 690501,
   "deadly_name": "试炼",
-  "time": "2026-09-03 04:00:00 - 2026-11-11 03:59:59",
+  "time": "2026-11-20 04:00:00 - 2026-12-02 03:59:59",
   "normal_zone": {
     "zone_69050101": {
       "name": "熔狱行赭",
@@ -211,7 +211,7 @@
           "stun": 18934,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": ["火","风"],
+          "weakness": [],
           "resistance": [],
           "type": "S"
         }

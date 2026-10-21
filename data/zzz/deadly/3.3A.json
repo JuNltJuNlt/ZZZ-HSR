@@ -1,10 +1,10 @@
 {
   "deadly_id": 690481,
   "deadly_name": "试炼",
-  "time": "2026-09-03 04:00:00 - 2026-11-11 03:59:59",
+  "time": "2026-10-23 04:00:00 - 2026-11-06 03:59:59",
   "normal_zone": {
     "zone_69048101": {
-      "name": "僭越者",
+      "name": "以太异体·特里薇亚",
       "stage_num": 1,
       "monster_level": 70,
       "layer_buff": {
@@ -13,11 +13,11 @@
           "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
         },
         "buff_69014805": {
-          "title": "TBD",
-          "desc": "· 首领敌人受到的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 每使首领敌人进入一次<color=#FFFFFF>属性异常</color>状态后，目标敌人获得1层<color=#FFFFFF>残晖印记</color>，印记叠加<color=#2BAD00>3层</color>后，会转化为<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 敌人处于<color=#FFFFFF>[蜡翼]</color>状态下，受到的<color=#2BAD00>属性异常伤害提升30%</color>，再次进入<color=#FFFFFF>属性异常</color>状态时会累积<color=#2BAD00>5%失衡值</color>，但无法再次获得<color=#FFFFFF>残晖印记</color>。\n· 敌人进入失衡状态时，会直接进入<color=#FFFFFF>[蜡翼]</color>状态，重复触发时刷新持续时间。"
+          "title": "",
+          "desc": "· 首领敌人受到攻击时，此次攻击造成的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 首领敌人每次进入<color=#FFFFFF>属性异常</color>状态时，都会获得1层<color=#FFFFFF>残晖印记</color>，持有的残晖印记到达<color=#2BAD00>3层</color>时，会消耗所有的残晖印记并进入<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 首领敌人处于<color=#FFFFFF>[蜡翼]</color>状态时，受到的<color=#2BAD00>属性异常伤害提升30%</color>，进入<color=#FFFFFF>属性异常</color>状态时额外累积<color=#2BAD00>5%失衡值</color>，但不再获得<color=#FFFFFF>残晖印记</color>。\n· 首领敌人进入失衡状态时，立刻进入<color=#FFFFFF>[蜡翼]</color>状态，若此时已经处于[蜡翼]状态，则刷新持续时间。"
         },
         "buff_69014806": {
-          "title": "TBD",
+          "title": "",
           "desc": "· 每次成功触发<Term:2000004></Term>应对敌人攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色的曜界并触发招架支援，可额外获得<color=#FFAF2C>1500操作得分</color>；最多获得5000操作得分。"
         }
       },
@@ -37,7 +37,7 @@
       },
       "monsters": [
         {
-          "name": "僭越者",
+          "name": "以太异体·特里薇亚",
           "hp": 30270530,
           "defense": 953,
           "stun": 20431,
@@ -127,7 +127,7 @@
         },
         "buff_69013104": {
           "title": "",
-          "desc": "<color=#FFAF2C>[控制技]</color>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>350操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，或招架部分招式最后一击时，可对首领造成<color=#FFAF2C>[部位破坏]</color>效果，可获得<color=#FFAF2C>750操作得分</color>。最多获得5000操作得分。"
+          "desc": "<color=#FFAF2C>[控制技]</color>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>350操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，或招架部分招式最后一击时，可对首领造成<color=#FFAF2C>[部位破坏]</color>效果，可获得<color=#FFAF2C>750操作得分</color>。<Term:2000003></Term>期间，通过<color=#FFAF2C><Term:2000006></Term></color>造成<color=#FFAF2C>[完美反制]</color>时，会获得该次<color=#FFAF2C>[控制技]</color>剩余的成功应对得分。最多获得5000操作得分。"
         }
       },
       "selectable_buff": {
@@ -180,7 +180,7 @@
       "layer_buff": {
         "buff_69014406": {
           "title": "69014406_Title",
-          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功<color=#FFAF2C>应对</color><Term:2000003></Term>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功应对<color=#FFAF2C><Term:2000003></Term></color>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>。<Term:2000003></Term>期间，通过<color=#FFAF2C><Term:2000006></Term></color>造成<color=#FFAF2C>[完美反制]</color>时，会获得该次<color=#FFAF2C>[控制技]</color>剩余的成功应对得分。最多获得5000操作得分。"
         },
         "buff_69014804": {
           "title": "TBD",
@@ -209,7 +209,7 @@
           "stun": 23277,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": ["火"],
+          "weakness": [],
           "resistance": [],
           "type": "S"
         }
