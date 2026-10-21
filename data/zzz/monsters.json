@@ -1088,6 +1088,14 @@
             "resistance": ["火"]
         },
         {
+            "name": "特战·「卫士Ⅱ型」",
+            "type": "B",
+            "category": 4,
+            "stun": 2250,
+            "weakness": ["电"],
+            "resistance": ["火"]
+        },
+        {
             "name": "城防戍卫布",
             "type": "B",
             "category": 5,
@@ -1206,6 +1214,14 @@
             "stun": 3300,
             "weakness": ["冰", "以太"],
             "resistance": []
+        },
+        {
+            "name": "蜕生·特佩什",
+            "type": "A",
+            "category": 1,
+            "stun": 3750,
+            "weakness": ["火", "电"],
+            "resistance": ["冰"]
         },
         {
             "name": "秽息蚀者·阿瓦鲁斯",
@@ -1744,7 +1760,7 @@
             "resistance": ["冰"]
         },
         {
-            "name": "僭越者",
+            "name": "以太异体·特里薇亚",
             "type": "S",
             "category": 1,
             "stun": 3750,
