@@ -203,7 +203,10 @@ const render = () => {
                 }
             });
             
-            wrapper.appendChild(create("div", {
+            // 上方信息容器
+            const topInfo = create("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", width: "100%" } });
+            
+            topInfo.appendChild(create("div", {
                 style: {
                     width: "100%",
                     display: "flex",
@@ -217,7 +220,7 @@ const render = () => {
                 ],
             }));
             
-            wrapper.appendChild(create("div", {
+            topInfo.appendChild(create("div", {
                 className: "u_r",
                 style: { marginTop: "8px" },
                 children: [
@@ -230,16 +233,19 @@ const render = () => {
                 ],
             }));
             
-            wrapper.appendChild(create("div", { 
+            topInfo.appendChild(create("div", { 
                 className: "wave_monsters", 
                 style: { marginTop: "16px" },
                 children: [renderBossCard(boss)] 
             }));
             
+            wrapper.appendChild(topInfo);
+            
             const modeDescHtml = processModeDesc(boss.mode_desc || '')
                 .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
                 .replace(/\n/g, '<br>');
             
+            // 机制框
             const mechanismBox = create("div", {
                 style: {
                     backgroundColor: "#27363E",
@@ -267,19 +273,31 @@ const render = () => {
 
     setTimeout(() => {
         const wrappers = Array.from(bossRow.children);
-        const mechBoxes = wrappers.map(w => w.children[3]).filter(el => el);
+        const topInfos = wrappers.map(w => w.children[0]);
+        const mechBoxes = wrappers.map(w => w.children[1]);
         
-        if (mechBoxes.length === 3) {
-            // 先清空高度，让其自然撑开以获得真正的最大高度
-            mechBoxes.forEach(el => el.style.height = "auto");
+        if (wrappers.length === 3) {
+            // 1. 重置高度和边距，让其自然渲染
+            topInfos.forEach(el => el.style.minHeight = "");
+            mechBoxes.forEach(el => {
+                el.style.height = "auto";
+                el.style.marginTop = "8px";
+            });
             
-            // 获取最高的高度
-            const maxH = Math.max(...mechBoxes.map(el => el.offsetHeight));
+            // 2. 计算三个“上方信息块”的最大高度
+            const maxTopH = Math.max(...topInfos.map(el => el.offsetHeight));
             
-            // 严格设置统一高度，让它们底部完全对齐
-            mechBoxes.forEach(el => el.style.height = maxH + "px");
+            // 3. 强制上方信息块等底对齐
+            topInfos.forEach(el => el.style.minHeight = maxTopH + "px");
+            
+            // 4. 强制机制框等高
+            // 使用 requestAnimationFrame 确保上一步的 minHeight 生效后再测高度
+            requestAnimationFrame(() => {
+                const maxMechH = Math.max(...mechBoxes.map(el => el.offsetHeight));
+                mechBoxes.forEach(el => el.style.height = maxMechH + "px");
+            });
         }
-    }, 500); // 延迟 500ms，确保字体渲染完成
+    }, 500);
 
     renderCharts();
 };
