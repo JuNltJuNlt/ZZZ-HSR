@@ -209,7 +209,7 @@
           "stun": 23277,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
+          "weakness": ["火"],
           "resistance": [],
           "type": "S"
         }

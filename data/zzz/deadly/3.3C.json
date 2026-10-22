@@ -211,7 +211,7 @@
           "stun": 18934,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
+          "weakness": ["火","风"],
           "resistance": [],
           "type": "S"
         }
