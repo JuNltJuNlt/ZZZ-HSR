@@ -46,6 +46,10 @@ const setSchedule = (index) => {
     render();
 };
 
+const isLowDef = (defense) => {
+    return Math.abs((defense || 0) - 476) <= 2;
+};
+
 const renderScheduleSelect = () => {
     byId("scheduleSelect").replaceChildren(
         ...skillEntries.map((e, i) => create("option", {
@@ -113,6 +117,20 @@ const renderBossCard = (boss) => {
     const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: boss.name })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
+    
+    const hpChildren = [
+        create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${boss.easy_hp}</color> / <color style="color:#9b59b6;">${boss.hard_hp}</color></b>` })
+    ];
+    
+    if (isLowDef(def)) {
+        const normEasy = Math.round(boss.easy_hp / 1.375);
+        const normHard = Math.round(boss.hard_hp / 1.375);
+        hpChildren.push(
+            create("br"),
+            create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">（${normEasy}</color> / <color style="color:#9b59b6;">${normHard}）</color></b>` })
+        );
+    }
+    
     return create("span", {
         className: "monster_card hover-shadow",
         children: [
@@ -121,7 +139,7 @@ const renderBossCard = (boss) => {
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
-                create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${boss.easy_hp}</color> / <color style="color:#9b59b6;">${boss.hard_hp}</color></b>` }),
+                ...hpChildren,
                 create("br"),
                 create("span", { className: "monname_2", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
             ]}),
