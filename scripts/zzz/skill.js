@@ -252,6 +252,8 @@ const render = () => {
                     textAlign: "left",
                     width: "100%",
                     boxSizing: "border-box",
+                    display: "flex",
+                    flexDirection: "column",
                 },
                 children: [create("p", { html: modeDescHtml || "无机制说明", style: { margin: "4px 0" } })]
             });
@@ -268,10 +270,16 @@ const render = () => {
         const mechBoxes = wrappers.map(w => w.children[3]).filter(el => el);
         
         if (mechBoxes.length === 3) {
+            // 先清空高度，让其自然撑开以获得真正的最大高度
+            mechBoxes.forEach(el => el.style.height = "auto");
+            
+            // 获取最高的高度
             const maxH = Math.max(...mechBoxes.map(el => el.offsetHeight));
+            
+            // 严格设置统一高度，让它们底部完全对齐
             mechBoxes.forEach(el => el.style.height = maxH + "px");
         }
-    }, 300);
+    }, 500); // 延迟 500ms，确保字体渲染完成
 
     renderCharts();
 };
