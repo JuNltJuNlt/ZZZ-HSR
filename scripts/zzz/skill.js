@@ -77,15 +77,18 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     weakness.forEach(el => items.push({ element: el, type: "weak" }));
     resistance.forEach(el => items.push({ element: el, type: "resist" }));
     if (items.length === 0 && !abnormalValue) return null;
+    
     return create("div", {
         style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
         children: [
             ...items.map(item => {
-                const barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
+                const barColor = "#888888";
                 return create("div", {
                     style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
                     children: [
-                        image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element),
+                        image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element, {
+                            style: { filter: "grayscale(100%)" }
+                        }),
                         create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
                     ]
                 });
