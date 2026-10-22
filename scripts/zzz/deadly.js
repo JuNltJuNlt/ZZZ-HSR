@@ -102,7 +102,9 @@ const getBaseHp = (monsterName) => {
 const getHpPercent = (monster, multiplier) => {
     const baseHp = getBaseHp(monster.name);
     if (!baseHp) return null;
-    const finalHp = getAdjustedHp(monster) * (monster.hp_ratio_sum ?? 1) * multiplier;
+    // 这里不再使用 getAdjustedHp，直接取原始 hp
+    const rawHp = monster.hp || 0;
+    const finalHp = rawHp * (monster.hp_ratio_sum ?? 1) * multiplier;
     const percent = Math.round((finalHp / multiplier / 247.95 / baseHp) * 100);
     return percent;
 };
