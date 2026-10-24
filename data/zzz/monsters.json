@@ -1741,7 +1741,7 @@
             "category": 1,
             "stun": 3750,
             "weakness": ["冰","风"],
-            "resistance": ["物理"]
+            "resistance": ["**物理**"]
         },
         {
             "name": "异构·熔狱行赭",
