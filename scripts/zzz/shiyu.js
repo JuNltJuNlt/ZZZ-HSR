@@ -119,27 +119,29 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     const allWeakness = [...(monster.weakness || []), ...(monsterInfo.weakness || [])];
     const allResistance = [...(monster.resistance || []), ...(monsterInfo.resistance || [])];
     
-    // 使用 Map 来合并同名属性，并记录最高星数
+    // 使用 Map 来合并同名属性，并记录最高线数
     const mapItems = new Map();
 
     const parseItem = (str, isWeak) => {
         // 提取纯净属性名（去掉所有 *）
         const cleanEl = str.replace(/\*/g, "");
-        // 计算星号数量
-        const starCount = (str.match(/\*/g) || []).length;
-        // 如果是抗性，有星号则取星号数，无星号默认 1 根线。如果是弱点，固定 1 根绿线。
-        const count = isWeak ? 1 : (starCount > 0 ? starCount : 1);
+        // 计算星号总数
+        const totalStars = (str.match(/\*/g) || []).length;
+        // 单边星号数量，向上取整以防不对称（如 "*电" 也能算 1 个）
+        const halfStars = Math.ceil(totalStars / 2);
+        // 线数 = 单边星号数 + 1
+        const lines = halfStars + 1;
         
         if (!mapItems.has(cleanEl)) {
-            mapItems.set(cleanEl, { element: cleanEl, type: isWeak ? "weak" : "resist", count });
+            mapItems.set(cleanEl, { element: cleanEl, type: isWeak ? "weak" : "resist", lines });
         } else {
             const existing = mapItems.get(cleanEl);
             // 如果有一方是弱点，优先显示为弱点（绿色），否则合并红线数量
             if (isWeak) {
                 existing.type = "weak";
-                existing.count = 1;
+                existing.lines = Math.max(existing.lines, lines);
             } else if (existing.type === "resist") {
-                existing.count = Math.max(existing.count, count);
+                existing.lines = Math.max(existing.lines, lines);
             }
         }
     };
@@ -162,7 +164,7 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                 if (isSkillPage) barColor = "#888888"; // 拟境强制灰色
                 
                 // 绘制多根横线（等号效果）
-                const bars = Array.from({ length: item.count }).map(() => 
+                const bars = Array.from({ length: item.lines }).map(() => 
                     create("span", { 
                         style: { 
                             width: "14px", 
