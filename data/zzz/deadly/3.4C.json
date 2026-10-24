@@ -114,7 +114,7 @@
       "isFinal": false
     },
     "zone_69053103": {
-      "name": "僭越者",
+      "name": "以太异体·特里薇亚",
       "stage_num": 3,
       "monster_level": 70,
       "layer_buff": {
@@ -147,7 +147,7 @@
       },
       "monsters": [
         {
-          "name": "僭越者",
+          "name": "以太异体·特里薇亚",
           "hp": 28028268,
           "defense": 953,
           "stun": 20431,
@@ -173,7 +173,7 @@
   },
   "final_zone": {
     "zone_69053201": {
-      "name": "异构·基塔布鲁·滞变畸兽",
+      "name": "异构·滞变畸兽",
       "stage_num": 1,
       "monster_level": 70,
       "layer_buff": {
@@ -208,7 +208,7 @@
           "stun": 23277,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
+          "weakness": ["火","电"],
           "resistance": [],
           "type": "S"
         }

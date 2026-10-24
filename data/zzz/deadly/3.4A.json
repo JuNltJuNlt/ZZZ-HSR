@@ -37,7 +37,7 @@
       },
       "monsters": [
         {
-          "name": "新生之结",
+          "name": "新生之结·？？？",
           "hp": 20575338,
           "defense": 953,
           "stun": 19007,
@@ -120,7 +120,7 @@
       "isFinal": false
     },
     "zone_69051103": {
-      "name": "僭越者",
+      "name": "以太异体·特里薇亚",
       "stage_num": 3,
       "monster_level": 70,
       "layer_buff": {
@@ -153,7 +153,7 @@
       },
       "monsters": [
         {
-          "name": "僭越者",
+          "name": "以太异体·特里薇亚",
           "hp": 28028268,
           "defense": 953,
           "stun": 20431,
@@ -218,8 +218,8 @@
           "stun": 19007,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
-          "resistance": [],
+          "weakness": ["火"],
+          "resistance": ["风"],
           "type": "S"
         }
       ],

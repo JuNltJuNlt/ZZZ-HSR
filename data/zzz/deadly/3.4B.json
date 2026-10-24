@@ -37,7 +37,7 @@
       },
       "monsters": [
         {
-          "name": "新生之结",
+          "name": "新生之结·？？？",
           "hp": 20575338,
           "defense": 953,
           "stun": 19007,
@@ -178,7 +178,7 @@
   },
   "final_zone": {
     "zone_69052201": {
-      "name": "异构·基塔布鲁·滞变畸兽",
+      "name": "异构·滞变畸兽",
       "stage_num": 1,
       "monster_level": 70,
       "layer_buff": {
@@ -213,7 +213,7 @@
           "stun": 23277,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": [],
+          "weakness": ["火","电"],
           "resistance": [],
           "type": "S"
         }
