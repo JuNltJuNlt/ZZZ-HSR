@@ -40,7 +40,7 @@ const currentNode = () => getCurrentNodes()[state.nodeIndex] || null;
 
 const setSchedule = (index) => {
     state.scheduleIndex = wrapIndex(index, simulationEntries.length);
-    state.nodeIndex = 0; // 切换期数时重置节点
+    state.nodeIndex = 0; 
     render();
 };
 
@@ -48,7 +48,7 @@ const setNode = (index) => {
     const nodes = getCurrentNodes();
     state.nodeIndex = wrapIndex(index, nodes.length);
     renderNodeContent(); 
-    renderNodeNav(); // 仅更新导航按钮的选中状态
+    renderNodeNav(); 
 };
 
 // ================= 顶部 UI =================
@@ -68,55 +68,74 @@ const renderScheduleHeader = () => {
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
 
-// 修复需求2：节点按钮阵列（一行4个）
+// 修复问题1 & 3：节点按钮使用和换期相同的样式，使用 grid 强制一行4个
 const renderNodeNav = () => {
     const navContainer = byId("nodeNavContainer");
     navContainer.replaceChildren();
     const nodes = getCurrentNodes();
     if (nodes.length === 0) return;
 
-    // 容器居中，设置 gap
-    const navRow = create("div", { 
+    // 使用 Grid 布局，强制一行 4 个，自动换行
+    const navGrid = create("div", { 
         style: { 
-            display: "flex", 
-            flexWrap: "wrap", 
-            gap: "12px", 
-            justifyContent: "flex-start", 
+            display: "grid", 
+            gridTemplateColumns: "repeat(4, 1fr)", 
+            gap: "15px", 
             margin: "20px auto",
             width: "100%",
-            maxWidth: "900px" // 限制最大宽度，保证一行4个不会拉得太开
+            maxWidth: "1000px"
         } 
     });
     
     nodes.forEach((node, idx) => {
         const isActive = idx === state.nodeIndex;
-        const btn = create("button", {
-            text: `节点 ${idx + 1}`,
+        
+        // 复用 ver_text 的样式类，制作节点框
+        const btnWrapper = create("div", {
+            className: "hover-shadow",
             style: {
-                // 一行四个的核心逻辑：计算百分比
-                flex: "0 0 calc(25% - 9px)", 
-                boxSizing: "border-box",
-                padding: "12px 0", 
-                border: "none", 
-                borderRadius: "4px", 
+                backgroundColor: isActive ? "#27363E" : "#fff", // 选中变深色，未选中白底
+                border: "1px solid #27363E",
+                borderRadius: "5px",
+                padding: "12px 0",
                 cursor: "pointer",
-                fontSize: "16px",
-                backgroundColor: isActive ? "#27363E" : "#e0e0e0", // 选中用深色，未选中用浅色
-                color: isActive ? "#fff" : "#333",
-                fontWeight: isActive ? "bold" : "normal",
+                textAlign: "center",
                 transition: "all 0.2s",
-                boxShadow: isActive ? "0 2px 8px rgba(39, 54, 62, 0.4)" : "none"
-            }
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+            },
+            children: [
+                create("p", { 
+                    text: `节点 ${idx + 1}`, 
+                    style: { 
+                        margin: 0, 
+                        fontSize: "16px",
+                        fontWeight: isActive ? "bold" : "normal",
+                        color: isActive ? "#fff" : "#333"
+                    } 
+                })
+            ]
         });
-        btn.addEventListener("click", () => setNode(idx));
-        navRow.appendChild(btn);
+        
+        btnWrapper.addEventListener("click", () => setNode(idx));
+        navGrid.appendChild(btnWrapper);
     });
-    navContainer.appendChild(navRow);
+    navContainer.appendChild(navGrid);
 };
 
 // ================= 通用组件 =================
+// 兼容数字ID转英文
+const mapElementId = (id) => {
+    const map = { "200": "physical", "201": "fire", "202": "ice", "203": "electric", "204": "wind", "205": "ether" };
+    return map[String(id)] || id;
+};
+
 const renderElementIcons = (elements = [], className = "elem_") =>
-    elements.map(name => image(`${ELEMENT_ROOT}/${name}.webp`, className, name));
+    elements.map(name => {
+        const el = mapElementId(name);
+        return image(`${ELEMENT_ROOT}/${el}.webp`, className, el);
+    });
 
 const getAbnormalValue = (monster) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
@@ -125,8 +144,9 @@ const getAbnormalValue = (monster) => {
 
 const renderWeaknessBars = (monster, abnormalValue) => {
     const monsterInfo = monstersData.find(m => m.name === monster.name) || {};
-    const allWeakness = [...(monster.weakness || []), ...(monsterInfo.weakness || [])];
-    const allResistance = [...(monster.resistance || []), ...(monsterInfo.resistance || [])];
+    // 将数字和中文混合的数组全部转换一下
+    const allWeakness = [...(monster.weakness || []), ...(monsterInfo.weakness || [])].map(mapElementId);
+    const allResistance = [...(monster.resistance || []), ...(monsterInfo.resistance || [])].map(mapElementId);
     const mapItems = new Map();
 
     const parseItem = (str, isWeak) => {
@@ -265,7 +285,6 @@ const renderNodeContent = () => {
                     displayLabel = "选战";
                 }
                 
-                // 一行四个的计算方式：25% 减去 gap 的一半，保证四个一行且不会超出
                 const wrapper = create("div", { style: { flex: "0 0 calc(25% - 12px)", minWidth: "260px", maxWidth: "350px" } });
                 const u_l = create("div", { className: "u_l" });
                 const u = create("div", { className: "u" });
@@ -296,7 +315,7 @@ const renderNodeContent = () => {
             container.appendChild(smallWarContainer);
         }
 
-        // Boss战 (修复需求1：去掉深色底板)
+        // Boss战
         if (node.boss_stage) {
             const bossData = node.boss_stage;
             const monster = bossData.monsters?.[0]?.[0]; 
@@ -304,14 +323,14 @@ const renderNodeContent = () => {
             if (monster) {
                 const bossContainer = create("div", {
                     style: {
-                        marginTop: "20px", padding: "20px", backgroundColor: "transparent", // 去掉深色
+                        marginTop: "20px", padding: "20px", backgroundColor: "transparent", 
                         borderRadius: "8px", display: "flex", gap: "30px",
                         alignItems: "flex-start", justifyContent: "center", flexWrap: "wrap"
                     }
                 });
 
                 const leftCol = create("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", marginTop: "10px" } });
-                leftCol.appendChild(create("div", { className: "u_r", style: { textAlign: "center", color: "#333", marginBottom: "15px" }, children: [ // 字体颜色由白改为深色
+                leftCol.appendChild(create("div", { className: "u_r", style: { textAlign: "center", color: "#333", marginBottom: "15px" }, children: [ 
                     create("p", { text: monster.name, style: { fontSize: "20px", fontWeight: "bold", margin: "0 0 5px 0" } }),
                     ...renderElementIcons(bossData.weakness, "elem_"),
                     create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal", marginTop: "5px" } })
@@ -329,9 +348,10 @@ const renderNodeContent = () => {
                     .replace(/^· /gm, '<br>· ')
                     .replace(/^<br>/, '');
                 
+                // 修复问题2：恢复机制框的深色样式，和危局一致
                 const rightCol = create("div", {
                     className: "u_b",
-                    style: { flex: "1 1 400px", backgroundColor: "#f5f5f5", color: "#333", border: "1px solid #e0e0e0", borderRadius: "5px", padding: "20px", lineHeight: "1.8", fontSize: "14px", textAlign: "left", maxWidth: "600px" }, // 改为浅灰背景和深色字体
+                    style: { flex: "1 1 400px", backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", padding: "20px", lineHeight: "1.8", fontSize: "14px", textAlign: "left", maxWidth: "600px" },
                     children: [ create("p", { html: buffHtml || "无特殊机制说明", style: { margin: 0 } }) ]
                 });
 
@@ -347,7 +367,7 @@ const renderNodeContent = () => {
 const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
-    renderNodeNav(); // 渲染节点按钮
+    renderNodeNav(); 
     renderNodeContent();
 };
 
