@@ -1,0 +1,1129 @@
+{
+  "name": "剧变节点",
+  "begin_time": "2026-10-21 04:00:00",
+  "end_time": "2026-12-18 03:59:59",
+  "zone": {
+    "zone_6206401": {
+      "name": "剧变节点第一防线",
+      "stage_num": 1,
+      "monster_level": 50,
+      "layer_buff": {
+        "buff_62001641": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064011": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "泰拉斯奎祸车",
+                "hp": 1627606,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 299915,
+                "defense": 545,
+                "stun": 1175,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 299915,
+                "defense": 474,
+                "stun": 1175,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
+          "weakness": []
+        },
+        "room_62064012": {
+          "level": 50,
+          "monsters": [
+            [
+              {
+                "name": "轻装猎兵",
+                "hp": 206882,
+                "defense": 474,
+                "stun": 1068,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "新晋猎兵",
+                "hp": 252938,
+                "defense": 474,
+                "stun": 1602,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "「捷足巡游者」",
+                "hp": 1307428,
+                "defense": 640,
+                "stun": 6234,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「重装侵袭者」",
+                "hp": 1550049,
+                "defense": 640,
+                "stun": 5937,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "B"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_6206402": {
+      "name": "剧变节点第二防线",
+      "stage_num": 2,
+      "monster_level": 55,
+      "layer_buff": {
+        "buff_62001641": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064021": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "「怒汉」",
+                "hp": 1853132,
+                "defense": 745,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 2395171,
+                "defense": 745,
+                "stun": 9126,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "袭扰猎兵",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "先锋猎兵",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "巡防猎兵",
+                "hp": 376439,
+                "defense": 634,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
+          "weakness": []
+        },
+        "room_62064022": {
+          "level": 55,
+          "monsters": [
+            [
+              {
+                "name": "偷猎者",
+                "hp": 376439,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "掠夺者",
+                "hp": 442789,
+                "defense": 552,
+                "stun": 1728,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "魁梧打手",
+                "hp": 2306888,
+                "defense": 689,
+                "stun": 6404,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              },
+              {
+                "name": "魁梧施虐者",
+                "hp": 1733867,
+                "defense": 689,
+                "stun": 4852,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_6206403": {
+      "name": "剧变节点第三防线",
+      "stage_num": 3,
+      "monster_level": 60,
+      "layer_buff": {
+        "buff_62001641": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064031": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "突击炮手",
+                "hp": 2703603,
+                "defense": 858,
+                "stun": 5466,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 2993100,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 3700352,
+                "defense": 858,
+                "stun": 8183,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 662872,
+                "defense": 731,
+                "stun": 1360,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 662872,
+                "defense": 636,
+                "stun": 1360,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
+          "weakness": []
+        },
+        "room_62064032": {
+          "level": 60,
+          "monsters": [
+            [
+              {
+                "name": "偷袭者",
+                "hp": 559044,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "盗猎客",
+                "hp": 559044,
+                "defense": 636,
+                "stun": 1854,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "多佩冈亚·莫尔斯",
+                "hp": 4161268,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "多佩冈亚·巴罗姆",
+                "hp": 4456465,
+                "defense": 794,
+                "stun": 14721,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 4161268,
+                "defense": 794,
+                "stun": 12274,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_6206404": {
+      "name": "剧变节点第四防线",
+      "stage_num": 4,
+      "monster_level": 65,
+      "layer_buff": {
+        "buff_62001641": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064041": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "城防戍卫布",
+                "hp": 5969381,
+                "defense": 858,
+                "stun": 11557,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "蜕生·蝎骸",
+                "hp": 14913227,
+                "defense": 953,
+                "stun": 18293,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "蜕生·蝎骸",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "room_62064042": {
+          "level": 65,
+          "monsters": [
+            [
+              {
+                "name": "通缉打手",
+                "hp": 3831578,
+                "defense": 794,
+                "stun": 8323,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "通缉虐待狂",
+                "hp": 2885083,
+                "defense": 794,
+                "stun": 6350,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 13657326,
+                "defense": 953,
+                "stun": 13414,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_6206405": {
+      "name": "",
+      "stage_num": 5,
+      "monster_level": 0,
+      "layer_buff": {
+        "buff_62001641": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_62001642": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%，攻击命中敌人时无视其15%的<color=#FF5521>火属性伤害抗性</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，暴击伤害提升40%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_62001643": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的生命值上限提升15%，贯穿伤害提升30%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，暴击伤害提升30%，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064051_62064051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 6931492,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "突击炮手",
+                "hp": 5429510,
+                "defense": 858,
+                "stun": 7121,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "缄枢",
+                "hp": 54580986,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "room_62064052_62064052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 8108957,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "拉赫穆",
+                "hp": 10698745,
+                "defense": 715,
+                "stun": 12345,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·「骇鸟」",
+                "hp": 52688086,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              },
+              {
+                "name": "多佩冈亚·星徽·比利",
+                "hp": 69217921,
+                "defense": 953,
+                "stun": 19541,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·「骇鸟」、多佩冈亚·星徽·比利",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
+        "room_62064053_62064053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 6931492,
+                "defense": 715,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 5832578,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 59356949,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_62064051": {
+      "name": "房间一",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_62001641": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064051": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「卫士Ⅱ型」",
+                "hp": 6931492,
+                "defense": 858,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "突击炮手",
+                "hp": 5429510,
+                "defense": 858,
+                "stun": 7121,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "缄枢",
+                "hp": 54580986,
+                "defense": 953,
+                "stun": 18236,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "缄枢",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_62064052": {
+      "name": "房间二",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_62001642": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%，攻击命中敌人时无视其15%的<color=#FF5521>火属性伤害抗性</color>。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，暴击伤害提升40%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "多佩冈亚·波可娜",
+                "hp": 8108957,
+                "defense": 794,
+                "stun": 14002,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "拉赫穆",
+                "hp": 10698745,
+                "defense": 715,
+                "stun": 12345,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·「骇鸟」",
+                "hp": 52688086,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              },
+              {
+                "name": "多佩冈亚·星徽·比利",
+                "hp": 69217921,
+                "defense": 953,
+                "stun": 19541,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·「骇鸟」、多佩冈亚·星徽·比利",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
+    "zone_62064053": {
+      "name": "房间三",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_62001643": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的生命值上限提升15%，贯穿伤害提升30%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，暴击伤害提升30%，持续20秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62064053": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "离子体·法布提",
+                "hp": 6931492,
+                "defense": 715,
+                "stun": 11170,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "离子体·杜拉罕",
+                "hp": 5832578,
+                "defense": 922,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 59356949,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    }
+  }
+}

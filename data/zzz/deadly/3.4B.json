@@ -1,0 +1,230 @@
+{
+  "deadly_id": 690521,
+  "deadly_name": "试炼",
+  "time": "2026-10-21 04:00:00 - 2026-12-18 03:59:59",
+  "normal_zone": {
+    "zone_69052101": {
+      "name": "新生之结·？？？",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013005": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Armorer><color=#FFAF2C>[锋御]</color>特性的代理人挑战。"
+        },
+        "buff_69015107": {
+          "title": "",
+          "desc": "(Test1)招架破除首领的强化部位或者击破其分身可以获得一层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升15%</color>，并使全队代理人获得<color=#2BAD00>防御力提升10%</color>，<color=#2BAD00>锐化伤害提升10%</color>。\n首领受到的<color=#2BAD00>异常伤害降低30%</color>。"
+        },
+        "buff_69015108": {
+          "title": "",
+          "desc": "(Test1)· 成功<color=#FFAF2C>击破分身</color>时，可获得<color=#FFAF2C>2000操作得分</color>。\n· 成功<color=#FFAF2C>击破巨剑</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015201": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+        },
+        "buff_69015202": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015203": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队攻击力分别<color=#2BAD00>提升10%/20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复<color=#2BAD00>10点能量</color>，此效果15秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "新生之结",
+          "hp": 20575338,
+          "defense": 953,
+          "stun": 19007,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "火"
+          ],
+          "resistance": [
+            "冰",
+            "风"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69052102": {
+      "name": "猎血清道夫",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69013303": {
+          "title": "",
+          "desc": "·[侵蚀壁垒]持续期间，代理人对其造成的异常伤害<color=#2BAD00>提升50%</color>，造成的异常积蓄<color=#2BAD00>提升30%</color>；首领在失衡状态下，受到的异常伤害<color=#2BAD00>提升15%</color>，代理人对其造成的异常积蓄<color=#2BAD00>提升15%</color>；首领在非失衡状态下，受到的伤害<color=#2BAD00>降低15%</color>。"
+        },
+        "buff_69013304": {
+          "title": "",
+          "desc": "·每次成功应对首领的攻击并使其触发特殊跪地，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>2000操作得分</color>。<Term:2000003></Term>期间，通过<color=#FFAF2C><Term:2000006></Term></color>造成<color=#FFAF2C>[完美反制]</color>时，会获得该次<color=#FFAF2C>[控制技]</color>剩余的成功应对得分。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015201": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+        },
+        "buff_69015202": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015203": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队攻击力分别<color=#2BAD00>提升10%/20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复<color=#2BAD00>10点能量</color>，此效果15秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "猎血清道夫",
+          "hp": 45207484,
+          "defense": 477,
+          "stun": 17877,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "电",
+            "以太"
+          ],
+          "resistance": [
+            "*火*",
+            "*风*"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69052103": {
+      "name": "基塔布鲁",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69013903": {
+          "title": "69013903_Title",
+          "desc": "· 代理人每次对首领施加异常状态时，会给首领施加1层[残翳]，每层[残翳]会令首领受到的<color=#2BAD00>异常伤害提升7.5%</color>，受到的[乱流]伤害<color=#2BAD00>额外提升5%</color>，持续<color=#2BAD00>10秒</color>，[残翳]最多累计<color=#2BAD00>3层</color>，每层效果单独结算持续时间；<Term:2000001></Term>持续期间，首领被施加[残翳]时还会额外削减<color=#FFAF2C>[侵蚀壁垒]</color><color=#2BAD00>最大值的20%</color>，并累积<color=#2BAD00>15%的失衡值</color>（15秒内不会重复触发）；<color=#FFAF2C>[侵蚀壁垒]</color>被击破时，首领立刻获得最大层数的[残翳]；首领进入失衡状态时，会移除所有[残翳]，并施加相同层数的[裂伤]，每层[裂伤]会降低首领<color=#2BAD00>5%异常积蓄抗性</color>，并增加其<color=#2BAD00>10%失衡易伤倍率</color>；首领失衡状态结束时，移除所有[裂伤]。"
+        },
+        "buff_69013904": {
+          "title": "69013904_Title",
+          "desc": "· 每次成功招架基塔布鲁开启[侵蚀壁垒]后的连续下砸，可获得<color=#FFAF2C>1000操作得分</color>，成功触发<Term:2000004></Term>应对最后一段下砸，可额外获得<color=#FFAF2C>1000操作得分</color>；<color=#FFAF2C>成功击破[侵蚀壁垒]</color>时，可获得<color=#FFAF2C>1500操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015201": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+        },
+        "buff_69015202": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015203": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队攻击力分别<color=#2BAD00>提升10%/20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复<color=#2BAD00>10点能量</color>，此效果15秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "基塔布鲁",
+          "hp": 27071826,
+          "defense": 953,
+          "stun": 21038,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "风"
+          ],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    }
+  },
+  "final_zone": {
+    "zone_69052201": {
+      "name": "异构·基塔布鲁·滞变畸兽",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69014406": {
+          "title": "69014406_Title",
+          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功应对<color=#FFAF2C><Term:2000003></Term></color>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>。<Term:2000003></Term>期间，通过<color=#FFAF2C><Term:2000006></Term></color>造成<color=#FFAF2C>[完美反制]</color>时，会获得该次<color=#FFAF2C>[控制技]</color>剩余的成功应对得分。最多获得5000操作得分。"
+        },
+        "buff_69014804": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]；当敌人残痕因毁伤结算被移除时，会获得2层无属性的[凋蚀印记]，持续10秒，[凋蚀印记]最多叠加3层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升15%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升15%</color>，受到的<color=#FFAF2C>锐化伤害提升35%</color>。\n· 对敌人造成[部位破坏]或[完美反制]时，<color=#FFAF2C>全队异常精通提升50</color>点，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015201": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+        },
+        "buff_69015202": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015203": {
+          "title": "(Test1)TBD",
+          "desc": "· 队伍内存在2/3名<color=#FFFFFF>[异常]</color>特性代理人时，全队攻击力分别<color=#2BAD00>提升10%/20%</color>。\n· 代理人使敌人进入<color=#FFFFFF>属性异常</color>状态后，全队恢复<color=#2BAD00>10点能量</color>，此效果15秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "异构·滞变畸兽",
+          "hp": 39485170,
+          "defense": 953,
+          "stun": 23277,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 30000,
+        "a": 20000,
+        "b": 10000
+      },
+      "isFinal": false
+    }
+  }
+}

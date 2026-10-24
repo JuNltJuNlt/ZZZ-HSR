@@ -1,0 +1,225 @@
+{
+  "deadly_id": 690531,
+  "deadly_name": "试炼",
+  "time": "2026-10-21 04:00:00 - 2026-12-18 03:59:59",
+  "normal_zone": {
+    "zone_69053101": {
+      "name": "库萨里库",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013005": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Armorer><color=#FFAF2C>[锋御]</color>特性的代理人挑战。"
+        },
+        "buff_69014506": {
+          "title": "",
+          "desc": "· 库萨里库受到的属性异常伤害<color=#FFAF2C>降低40%</color>。\n· 代理人成功使用[招架支援]应对库萨里库的<Term:2000005></Term>时，将对其施加1层[识破]，使库萨里库进入失衡状态时，对其施加2层[识破]。每层[识破]会使其受到的<color=#FFAF2C>锐暴伤害提升20%</color>，[识破]最多叠加4层，持续<color=#FFAF2C>30</color>秒，重复触发时刷新持续时间。"
+        },
+        "buff_69014507": {
+          "title": "",
+          "desc": "· 在库萨里库开启[侵蚀壁垒]后，使用<color=#FFFFFF>[招架支援]</color>反制库萨里库的<Term:2000005></Term>并对其造成部位破坏，可获得<color=#FFAF2C>1000操作得分</color>；成功通过<color=#FFFFFF>[招架支援]</color>应对<Term:2000005></Term>时，可获得<color=#FFAF2C>700操作得分</color>；<color=#FFAF2C>[完美反制]</color>库萨里库的<Term:2000003></Term>时，可获得<color=#FFAF2C>2000操作得分</color>。最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015301": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· 代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015302": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，全属性伤害抗性<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015303": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "库萨里库",
+          "hp": 28813179,
+          "defense": 953,
+          "stun": 18934,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "火",
+            "电"
+          ],
+          "resistance": [
+            "*冰*"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69053102": {
+      "name": "未知复合侵蚀体",
+      "stage_num": 2,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69010305": {
+          "title": "",
+          "desc": "· 对首领敌人的腿部造成足够的伤害时，会触发[部位破坏]，<color=#FFAF2C>代理人成功破坏首领敌人的腿部时</color>，回复<color=#FFAF2C>1000点喧响值</color>，首领敌人获得1层<color=#FFFFFF>[崩解]</color>，持续20秒，最多4层；代理人攻击命中敌人时，目标每拥有1层<color=#FFFFFF>[崩解]</color>，暴击伤害<color=#FFAF2C>提升25%</color>。"
+        },
+        "buff_69010307": {
+          "title": "",
+          "desc": "· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>800操作得分</color>，最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015301": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· 代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015302": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，全属性伤害抗性<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015303": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "未知复合侵蚀体",
+          "hp": 28859298,
+          "defense": 953,
+          "stun": 16895,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "电",
+            "以太"
+          ],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    },
+    "zone_69053103": {
+      "name": "僭越者",
+      "stage_num": 3,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69013003": {
+          "title": "",
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+        },
+        "buff_69014805": {
+          "title": "",
+          "desc": "· 首领敌人受到攻击时，此次攻击造成的异常积蓄效率<color=#2BAD00>提升10%</color>。\n· 首领敌人每次进入<color=#FFFFFF>属性异常</color>状态时，都会获得1层<color=#FFFFFF>残晖印记</color>，持有的残晖印记到达<color=#2BAD00>3层</color>时，会消耗所有的残晖印记并进入<color=#FFFFFF>[蜡翼]</color>状态，<color=#2BAD00>持续30秒</color>。\n· 首领敌人处于<color=#FFFFFF>[蜡翼]</color>状态时，受到的<color=#2BAD00>属性异常伤害提升30%</color>，进入<color=#FFFFFF>属性异常</color>状态时额外累积<color=#2BAD00>5%失衡值</color>，但不再获得<color=#FFFFFF>残晖印记</color>。\n· 首领敌人进入失衡状态时，立刻进入<color=#FFFFFF>[蜡翼]</color>状态，若此时已经处于[蜡翼]状态，则刷新持续时间。"
+        },
+        "buff_69014806": {
+          "title": "",
+          "desc": "· 每次成功触发<Term:2000004></Term>应对敌人攻击，可额外获得<color=#FFAF2C>1000操作得分</color>；\n· 敌人展开空间屏障后，每次成功踩踏金色的曜界并触发招架支援，可额外获得<color=#FFAF2C>1500操作得分</color>；最多获得5000操作得分。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015301": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· 代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015302": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，全属性伤害抗性<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015303": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "僭越者",
+          "hp": 28028268,
+          "defense": 953,
+          "stun": 20431,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [
+            "火"
+          ],
+          "resistance": [
+            "冰"
+          ],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 20000,
+        "a": 14000,
+        "b": 6000
+      },
+      "isFinal": false
+    }
+  },
+  "final_zone": {
+    "zone_69053201": {
+      "name": "异构·基塔布鲁·滞变畸兽",
+      "stage_num": 1,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_69014406": {
+          "title": "69014406_Title",
+          "desc": "· 成功<color=#FFAF2C>造成[部位破坏]</color>时，可获得<color=#FFAF2C>1000操作得分</color>；每次成功应对<color=#FFAF2C><Term:2000003></Term></color>时，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>阻止敌人的[侵蚀壁垒]充能完成并造成部位破坏</color>时，可获得<color=#FFAF2C>1500操作得分</color>。<Term:2000003></Term>期间，通过<color=#FFAF2C><Term:2000006></Term></color>造成<color=#FFAF2C>[完美反制]</color>时，会获得该次<color=#FFAF2C>[控制技]</color>剩余的成功应对得分。最多获得5000操作得分。"
+        },
+        "buff_69014804": {
+          "title": "(Test1)TBD",
+          "desc": "· 代理人对敌人施加属性异常状态时，目标敌人获得1层对应属性的[凋蚀印记]；当敌人残痕因毁伤结算被移除时，会获得2层无属性的[凋蚀印记]，持续10秒，[凋蚀印记]最多叠加3层，同属性的[凋蚀印记]重复触发刷新持续时间。\n· 敌人每持有1层[凋蚀印记]，受到的<color=#FFAF2C>属性异常伤害提升15%</color>，<color=#FFAF2C><Term:2000001></Term>受到的伤害提升15%</color>，受到的<color=#FFAF2C>锐化伤害提升35%</color>。\n· 对敌人造成[部位破坏]或[完美反制]时，<color=#FFAF2C>全队异常精通提升50</color>点，持续15秒，重复触发刷新持续时间。"
+        }
+      },
+      "selectable_buff": {
+        "buff_69015301": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· 代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015302": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升20%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低15%</color>，全属性伤害抗性<color=#2BAD00>降低15%</color>，持续15秒，重复触发时刷新持续时间。"
+        },
+        "buff_69015303": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
+        }
+      },
+      "monsters": [
+        {
+          "name": "异构·滞变畸兽",
+          "hp": 37228875,
+          "defense": 953,
+          "stun": 23277,
+          "number": 1,
+          "hp_ratio_sum": 1,
+          "weakness": [],
+          "resistance": [],
+          "type": "S"
+        }
+      ],
+      "weakness": [],
+      "goal": {
+        "s": 30000,
+        "a": 20000,
+        "b": 10000
+      },
+      "isFinal": false
+    }
+  }
+}
