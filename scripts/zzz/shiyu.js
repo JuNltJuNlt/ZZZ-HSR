@@ -112,64 +112,74 @@ const getAbnormalValue = (monster) => {
 };
 
 const renderWeaknessBars = (monster, abnormalValue) => {
-    const weakness = monster.weakness || [];
-    const resistance = monster.resistance || [];
+    // 从 monsters.json 获取基础抗性/弱点（可能包含 * 号）
+    const baseInfo = monstersData.find(m => m.name === monster.name) || {};
     
-    // 使用 Map 来合并相同属性，并记录最大星星数
-    const mapItems = new Map();
+    // 优先使用深渊 JSON 的弱点，如果没有则用基础库的
+    const weakness = (monster.weakness && monster.weakness.length > 0) 
+        ? monster.weakness 
+        : (baseInfo.weakness || []);
+        
+    // 优先使用深渊 JSON 的抗性，如果深渊没有，则用基础库的（为了拿到 * 号）
+    const resistance = (monster.resistance && monster.resistance.length > 0) 
+        ? monster.resistance 
+        : (baseInfo.resistance || []);
+
+    const items = [];
 
     weakness.forEach(el => {
-        const cleanEl = el.replace(/\*/g, ""); // 去除所有星号
-        if (!mapItems.has(cleanEl)) {
-            mapItems.set(cleanEl, { element: cleanEl, type: "weak", count: 1 });
-        }
+        items.push({ element: el.replace(/\*/g, ""), type: "weak", count: 1 });
     });
 
     resistance.forEach(el => {
-        const starCount = (el.match(/\*/g) || []).length; // 计算星号总数
-        const cleanEl = el.replace(/\*/g, ""); // 提取纯名字
+        // 统计 * 的总数
+        const starCount = (el.match(/\*/g) || []).length;
+        // 去除星号提取纯属性名
+        const cleanEl = el.replace(/\*/g, "").trim(); 
         
-        if (mapItems.has(cleanEl)) {
-            // 如果已经在弱点里，保留原有的，或者你可以决定覆盖
-            return; 
-        }
-        
-        // 如果没有星号，默认1根线
-        const count = starCount > 0 ? starCount : 1; 
-        
-        if (mapItems.has(cleanEl)) {
-            // 合并多条相同抗性，取最大星星数
-            const existing = mapItems.get(cleanEl);
-            existing.count = Math.max(existing.count, count);
-        } else {
-            mapItems.set(cleanEl, { element: cleanEl, type: "resist", count: count });
-        }
+        items.push({ 
+            element: cleanEl, 
+            type: "resist", 
+            count: starCount > 0 ? starCount : 1 
+        });
     });
 
-    const items = Array.from(mapItems.values());
-    
     if (items.length === 0 && !abnormalValue) return null;
     
     // 是否是拟境（拟境图标是灰色的）
     const isSkillPage = document.title.includes("拟境湮灭战");
 
     return create("div", {
-        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
+        style: { 
+            display: "flex", 
+            justifyContent: "center", 
+            alignItems: "center", 
+            gap: "3px", 
+            marginTop: "4px", 
+            minHeight: "28px" 
+        },
         children: [
             ...items.map(item => {
+                // 弱点绿色，抗性红色，拟境灰色
                 let barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-                if (isSkillPage) barColor = "#888888"; // 拟境强制灰色
+                if (isSkillPage) barColor = "#888888";
+
+                // 用 flex 实现多根线（近似等号）
+                const barStyle = {
+                    width: "14px",
+                    height: `${item.count * 3}px`, 
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                };
                 
-                // 根据 count 生成多根横线
                 const bars = Array.from({ length: item.count }).map(() => 
                     create("span", { 
                         style: { 
-                            width: "14px", 
+                            width: "100%", 
                             height: "2px", 
-                            borderRadius: "1px", 
                             backgroundColor: barColor, 
-                            display: "block",
-                            marginBottom: "1px" 
+                            display: "block" 
                         } 
                     })
                 );
@@ -177,17 +187,13 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                 const imgStyle = isSkillPage ? { filter: "grayscale(100%)" } : {};
 
                 return create("div", {
-                    style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
+                    style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" },
                     children: [
                         image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element, {
                             style: imgStyle,
                             error: "remove"
                         }),
-                        // 把多根横线包在一个 div 里
-                        create("div", { 
-                            style: { display: "flex", flexDirection: "column", alignItems: "center" },
-                            children: bars 
-                        })
+                        create("div", { style: barStyle, children: bars })
                     ]
                 });
             }),
