@@ -1740,8 +1740,8 @@
             "type": "S",
             "category": 1,
             "stun": 3750,
-            "weakness": ["*冰*","***风***"],
-            "resistance": ["**物理**"]
+            "weakness": ["冰","风"],
+            "resistance": ["*物理*"]
         },
         {
             "name": "异构·熔狱行赭",
@@ -1920,7 +1920,7 @@
             "resistance": []
         },
         {
-            "name": "新生之结",
+            "name": "新生之结·？？？",
             "type": "S",
             "category": 1,
             "stun": 3750,
