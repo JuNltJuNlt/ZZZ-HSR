@@ -112,6 +112,14 @@
             "resistance": []
         },
         {
+            "name": "蜕生·雷蛛",
+            "type": "C",
+            "category": 1,
+            "stun": 750,
+            "weakness": ["火","电"],
+            "resistance": []
+        },
+        {
             "name": "曼德拉",
             "type": "C",
             "category": 1,
@@ -261,6 +269,14 @@
             "category": 1,
             "stun": 720,
             "weakness": ["火", "以太"],
+            "resistance": []
+        },
+        {
+            "name": "蜕生·赫斯克龙",
+            "type": "C",
+            "category": 1,
+            "stun": 750,
+            "weakness": ["火", "电"],
             "resistance": []
         },
         {
@@ -1340,7 +1356,7 @@
             "type": "A",
             "category": 4,
             "stun": 3300,
-            "weakness": ["电"],
+            "weakness": ["电","风"],
             "resistance": ["火"]
         },
         {
@@ -1493,7 +1509,7 @@
             "category": 5,
             "stun": 3300,
             "weakness": ["火", "物理"],
-            "resistance": ["冰"]
+            "resistance": ["*冰*"]
         },
         {
             "name": "秽蚀·暗渊惩戒者",
@@ -1605,7 +1621,7 @@
             "category": 5,
             "stun": 3900,
             "weakness": ["冰", "风"],
-            "resistance": ["以太"]
+            "resistance": ["*以太*"]
         },
         {
             "name": "魔神黄金邦布",
@@ -1630,6 +1646,14 @@
             "stun": 3750,
             "weakness": ["以太"],
             "resistance": ["火"]
+        },
+        {
+            "name": "复写体·僭越者",
+            "type": "A",
+            "category": 1,
+            "stun": 3750,
+            "weakness": ["冰","电"],
+            "resistance": []
         },
         {
             "name": "死路屠夫",
@@ -1685,7 +1709,7 @@
             "category": 1,
             "stun": 3600,
             "weakness": ["以太"],
-            "resistance": ["冰"]
+            "resistance": ["*冰*"]
         },
         {
             "name": "尼尼微",
@@ -1757,7 +1781,15 @@
             "category": 1,
             "stun": 3750,
             "weakness": ["火", "电"],
-            "resistance": ["冰"]
+            "resistance": ["*冰*"]
+        },
+        {
+            "name": "异构·库萨里库",
+            "type": "S",
+            "category": 1,
+            "stun": 3750,
+            "weakness": [],
+            "resistance": []
         },
         {
             "name": "以太异体·特里薇亚",
@@ -1765,7 +1797,7 @@
             "category": 1,
             "stun": 3750,
             "weakness": ["火"],
-            "resistance": ["冰"]
+            "resistance": ["*冰*"]
         },
         {
             "name": "猎血清道夫",
@@ -1773,7 +1805,7 @@
             "category": 2,
             "stun": 3187,
             "weakness": ["电", "以太"],
-            "resistance": ["火", "风"]
+            "resistance": ["*火*", "*风*"]
         },
         {
             "name": "复写体·猎血清道夫",
@@ -1797,7 +1829,7 @@
             "category": 3,
             "stun": 3000,
             "weakness": ["火"],
-            "resistance": ["电"]
+            "resistance": ["*电*"]
         },
         {
             "name": "恶名·庞培",
@@ -1805,7 +1837,7 @@
             "category": 3,
             "stun": 3300,
             "weakness": ["火"],
-            "resistance": ["电"]
+            "resistance": ["*电*"]
         },
         {
             "name": "秽息妖鬼·名可名",
@@ -1813,7 +1845,7 @@
             "category": 3,
             "stun": 3600,
             "weakness": ["以太", "物理"],
-            "resistance": ["火"]
+            "resistance": ["*火*"]
         },
         {
             "name": "彷徨猎手",
@@ -1821,7 +1853,7 @@
             "category": 3,
             "stun": 4140,
             "weakness": ["冰", "火"],
-            "resistance": ["物理"]
+            "resistance": ["*物理*"]
         },
         {
             "name": "牲鬼·布林格",
@@ -1837,7 +1869,7 @@
             "category": 5,
             "stun": 3960,
             "weakness": ["电", "物理"],
-            "resistance": ["冰"]
+            "resistance": ["*冰*"]
         },
         {
             "name": "魇缚者·叶释渊",
@@ -1845,7 +1877,7 @@
             "category": 5,
             "stun": 3960,
             "weakness": ["冰", "物理", "风"],
-            "resistance": ["电"]
+            "resistance": ["*电*"]
         },
         {
             "name": "太初梦魇·「始主」",
@@ -1853,7 +1885,7 @@
             "category": 5,
             "stun": 4500,
             "weakness": ["物理"],
-            "resistance": ["冰", "以太"]
+            "resistance": ["*冰*", "*以太*"]
         },
         {
             "name": "异构·太初梦魇",
@@ -1869,7 +1901,7 @@
             "category": 5,
             "stun": 3750,
             "weakness": ["以太", "风"],
-            "resistance": ["冰", "火"]
+            "resistance": ["*冰*", "*火*"]
         },
         {
             "name": "焚昼余火·法厄同",
@@ -1877,7 +1909,7 @@
             "category": 5,
             "stun": 3750,
             "weakness": ["冰", "风"],
-            "resistance": ["物理"]
+            "resistance": ["*物理*"]
         },
         {
             "name": "异构·焚昼余火",
@@ -1886,6 +1918,14 @@
             "stun": 3750,
             "weakness": [],
             "resistance": []
+        },
+        {
+            "name": "新生之结",
+            "type": "S",
+            "category": 1,
+            "stun": 3750,
+            "weakness": ["火"],
+            "resistance": ["冰","风"]
         }
     ]
 }

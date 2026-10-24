@@ -78,22 +78,66 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
     const items = [];
-    weakness.forEach(el => items.push({ element: el, type: "weak" }));
-    resistance.forEach(el => items.push({ element: el, type: "resist" }));
+    
+    // 处理弱点
+    weakness.forEach(el => items.push({ element: el, type: "weak", count: 1 }));
+    
+    // 处理抗性（计算 * 的数量）
+    resistance.forEach(el => {
+        // 匹配开头和结尾的 * 号
+        const match = el.match(/^(\*+)(.*?)(\*+)$/);
+        if (match) {
+            const elName = match[2]; // 提取纯净的属性名，如 "电"
+            const count = Math.max(match[1].length, match[3].length); // 计算星号数量，对应红线数
+            items.push({ element: elName, type: "resist", count: count });
+        } else {
+            // 兼容普通抗性（无星号）
+            items.push({ element: el, type: "resist", count: 1 });
+        }
+    });
+    
     if (items.length === 0 && !abnormalValue) return null;
     
+    // 是否是拟境（拟境图标是灰色的）
+    const isSkillPage = document.title.includes("拟境湮灭战");
+
     return create("div", {
         style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
         children: [
             ...items.map(item => {
-                const barColor = "#888888";
+                // 基础横线颜色
+                let barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
+                if (isSkillPage) barColor = "#888888"; // 拟境强制灰色
+                
+                // 根据 count 生成多根横线
+                const bars = Array.from({ length: item.count }).map(() => 
+                    create("span", { 
+                        style: { 
+                            width: "14px", 
+                            height: "2px", 
+                            borderRadius: "1px", 
+                            backgroundColor: barColor, 
+                            display: "block",
+                            marginBottom: "1px" 
+                        } 
+                    })
+                );
+
+                // 图片的 style：拟境需要灰度
+                const imgStyle = isSkillPage ? { filter: "grayscale(100%)" } : {};
+
                 return create("div", {
                     style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "1px" },
                     children: [
                         image(`${ELEMENT_ROOT}/${item.element}.webp`, "elem_small", item.element, {
-                            style: { filter: "grayscale(100%)" }
+                            style: imgStyle,
+                            error: "remove"
                         }),
-                        create("span", { style: { width: "14px", height: "2px", borderRadius: "1px", backgroundColor: barColor, display: "block" } })
+                        // 把多根横线包在一个 div 里
+                        create("div", { 
+                            style: { display: "flex", flexDirection: "column", alignItems: "center" },
+                            children: bars 
+                        })
                     ]
                 });
             }),
