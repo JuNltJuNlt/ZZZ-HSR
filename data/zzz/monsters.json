@@ -1740,7 +1740,7 @@
             "type": "S",
             "category": 1,
             "stun": 3750,
-            "weakness": ["*冰*","风"],
+            "weakness": ["*冰*","***风***"],
             "resistance": ["**物理**"]
         },
         {
