@@ -1012,77 +1012,1008 @@
       "id": 10208,
       "type": "battle",
       "name": "LAST STAGE",
-      "small_stages": [],
+      "small_stages": [
+        {
+          "name": "4-1",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "204",
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "异象",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+            },
+            {
+              "title": "逐锋",
+              "desc": "· 代理人的[追加攻击]造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升30%</color>。\n· 当[强攻]特性代理人的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，其全伤害抗性<color=#2BAD00>降低30%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "聚元",
+              "desc": "· 代理人的生命值上限<color=#2BAD00>提升20%</color>，[终结技]造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人发动[强化特殊技]后，能量和闪能获得效率<color=#2BAD00>提升20%</color>，<color=#FE437E>以太属性伤害</color><color=#2BAD00>提升35%</color>，持续20秒，重复触发刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "颂礼赞者",
+                "hp": 1298411,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 19038576,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-1",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "200",
+            "203"
+          ],
+          "buffs": [
+            {
+              "title": "崩倾",
+              "desc": "· 代理人的<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 代理人命中非失衡状态敌人时，造成的失衡值<color=#2BAD00>提升10%</color>；命中失衡状态中的敌人时，暴击伤害<color=#2BAD00>提升30%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>。"
+            },
+            {
+              "title": "奏鸣",
+              "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "奇巧",
+              "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "整训猎兵",
+                "hp": 895389,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 984732,
+                "defense": 636,
+                "stun": 2221,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 16899556,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-1",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "诛心",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>效果造成的伤害<color=#2BAD00>提升40%</color>。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，全队<color=#FFFFFF>回复10点能量</color>，代理人的攻击力<color=#FFFFFF>提升25%</color>，持续30秒，能量回复效果20秒内最多触发一次。"
+            },
+            {
+              "title": "昏惫",
+              "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "倏袭",
+              "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "秽蚀·狂乱暴徒",
+                "hp": 6248154,
+                "defense": 858,
+                "stun": 10286,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "秽蚀·特里诺斯",
+                "hp": 9024966,
+                "defense": 858,
+                "stun": 11830,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "B"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "4-2",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "204",
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "诛心",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>效果造成的伤害<color=#2BAD00>提升40%</color>。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，全队<color=#FFFFFF>回复10点能量</color>，代理人的攻击力<color=#FFFFFF>提升25%</color>，持续30秒，能量回复效果20秒内最多触发一次。"
+            },
+            {
+              "title": "昏惫",
+              "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "倏袭",
+              "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "颂礼赞者",
+                "hp": 1038729,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·色雷斯人",
+                "hp": 15230861,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "风"
+                ],
+                "resistance": [
+                  "电"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·色雷斯人",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-2",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "200",
+            "203"
+          ],
+          "buffs": [
+            {
+              "title": "异象",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+            },
+            {
+              "title": "逐锋",
+              "desc": "· 代理人的[追加攻击]造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升30%</color>。\n· 当[强攻]特性代理人的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，其全伤害抗性<color=#2BAD00>降低30%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "聚元",
+              "desc": "· 代理人的生命值上限<color=#2BAD00>提升20%</color>，[终结技]造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人发动[强化特殊技]后，能量和闪能获得效率<color=#2BAD00>提升20%</color>，<color=#FE437E>以太属性伤害</color><color=#2BAD00>提升35%</color>，持续20秒，重复触发刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "整训猎兵",
+                "hp": 895389,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "轰击猎兵",
+                "hp": 984732,
+                "defense": 636,
+                "stun": 2221,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "牲鬼·凶魁愚者",
+                "hp": 16899556,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "牲鬼·凶魁愚者",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-2",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "201",
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "崩倾",
+              "desc": "· 代理人的<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 代理人命中非失衡状态敌人时，造成的失衡值<color=#2BAD00>提升10%</color>；命中失衡状态中的敌人时，暴击伤害<color=#2BAD00>提升30%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>。"
+            },
+            {
+              "title": "奏鸣",
+              "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "奇巧",
+              "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "颂礼赞者",
+                "hp": 1298411,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "秽息蚀者·阿瓦鲁斯",
+                "hp": 19537463,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-3",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "202",
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "崩倾",
+              "desc": "· 代理人的<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 代理人命中非失衡状态敌人时，造成的失衡值<color=#2BAD00>提升10%</color>；命中失衡状态中的敌人时，暴击伤害<color=#2BAD00>提升30%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>。"
+            },
+            {
+              "title": "奏鸣",
+              "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "奇巧",
+              "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 716311,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 716311,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "帕里库斯",
+                "hp": 10720139,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "帕里库斯",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-3",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "201",
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "诛心",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>效果造成的伤害<color=#2BAD00>提升40%</color>。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，全队<color=#FFFFFF>回复10点能量</color>，代理人的攻击力<color=#FFFFFF>提升25%</color>，持续30秒，能量回复效果20秒内最多触发一次。"
+            },
+            {
+              "title": "昏惫",
+              "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "倏袭",
+              "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "颂礼赞者",
+                "hp": 1298411,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "秽息蚀者·阿瓦鲁斯",
+                "hp": 19537463,
+                "defense": 953,
+                "stun": 15487,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "以太"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽息蚀者·阿瓦鲁斯",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-3",
+          "tag": "前战",
+          "level": 70,
+          "weakness": [
+            "202",
+            "205"
+          ],
+          "buffs": [
+            {
+              "title": "异象",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+            },
+            {
+              "title": "逐锋",
+              "desc": "· 代理人的[追加攻击]造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升30%</color>。\n· 当[强攻]特性代理人的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，其全伤害抗性<color=#2BAD00>降低30%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "聚元",
+              "desc": "· 代理人的生命值上限<color=#2BAD00>提升20%</color>，[终结技]造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人发动[强化特殊技]后，能量和闪能获得效率<color=#2BAD00>提升20%</color>，<color=#FE437E>以太属性伤害</color><color=#2BAD00>提升35%</color>，持续20秒，重复触发刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "恶毒打手",
+                "hp": 716311,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "贪婪射手",
+                "hp": 716311,
+                "defense": 636,
+                "stun": 2115,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "帕里库斯",
+                "hp": 10720139,
+                "defense": 953,
+                "stun": 10030,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "以太"
+                ],
+                "resistance": [],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "帕里库斯",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-4",
+          "tag": "选战",
+          "level": 70,
+          "weakness": [
+            "200",
+            "201"
+          ],
+          "buffs": [
+            {
+              "title": "异象",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
+            },
+            {
+              "title": "逐锋",
+              "desc": "· 代理人的[追加攻击]造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升30%</color>。\n· 当[强攻]特性代理人的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，其全伤害抗性<color=#2BAD00>降低30%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "聚元",
+              "desc": "· 代理人的生命值上限<color=#2BAD00>提升20%</color>，[终结技]造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人发动[强化特殊技]后，能量和闪能获得效率<color=#2BAD00>提升20%</color>，<color=#FE437E>以太属性伤害</color><color=#2BAD00>提升35%</color>，持续20秒，重复触发刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "秽息残兵·盾卫",
+                "hp": 952168,
+                "defense": 731,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 952168,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 12393008,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "物理"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·多佩冈亚·「变节者」",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-4",
+          "tag": "选战",
+          "level": 70,
+          "weakness": [
+            "200",
+            "204"
+          ],
+          "buffs": [
+            {
+              "title": "诛心",
+              "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>效果造成的伤害<color=#2BAD00>提升40%</color>。\n· 对敌人施加<color=#FFFFFF>[紊乱]</color>效果时，全队<color=#FFFFFF>回复10点能量</color>，代理人的攻击力<color=#FFFFFF>提升25%</color>，持续30秒，能量回复效果20秒内最多触发一次。"
+            },
+            {
+              "title": "昏惫",
+              "desc": "· 代理人造成的失衡值<color=#2BAD00>提升10%</color>，连携技造成的伤害<color=#2BAD00>提升50%</color>。\n· <color=#FFFFFF>[连携技]</color>命中敌人时，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>，且全队攻击力<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "倏袭",
+              "desc": "· 队伍内存在1名/2名[强攻]特性的代理人时，全队造成的伤害<color=#2BAD00>提升20%/40%</color>。\n· 触发暴击后，代理人的<color=#2EB6FF>电属性伤害</color><color=#2BAD00>提升30%</color>，[强攻]特性代理人的暴击伤害<color=#2BAD00>额外提升40%</color>，持续5秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "魁梧施虐者",
+                "hp": 3116665,
+                "defense": 794,
+                "stun": 6783,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "冰",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "秽蚀·简",
+                "hp": 14909964,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "物理",
+                  "风"
+                ],
+                "resistance": [
+                  "以太"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "秽蚀·简",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "4-4",
+          "tag": "选战",
+          "level": 70,
+          "weakness": [
+            "203"
+          ],
+          "buffs": [
+            {
+              "title": "崩倾",
+              "desc": "· 代理人的<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 代理人命中非失衡状态敌人时，造成的失衡值<color=#2BAD00>提升10%</color>；命中失衡状态中的敌人时，暴击伤害<color=#2BAD00>提升30%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>。"
+            },
+            {
+              "title": "奏鸣",
+              "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+            },
+            {
+              "title": "奇巧",
+              "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+            },
+            {
+              "title": "怒涛",
+              "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
+            }
+          ],
+          "layer_buffs": [],
+          "monsters": [
+            [
+              {
+                "name": "秽息原牲",
+                "hp": 1142506,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "以太",
+                  "物理"
+                ],
+                "resistance": [],
+                "type": "C"
+              }
+            ],
+            [
+              {
+                "name": "骇鸟",
+                "hp": 10283031,
+                "defense": 953,
+                "stun": 14328,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "骇鸟",
+              "bold": true
+            }
+          ]
+        }
+      ],
       "boss_stage": {
-        "name": "4-2",
-        "tag": "前战",
+        "name": "LAST STAGE",
+        "tag": "终局",
         "level": 70,
         "weakness": [
           "201",
-          "205"
+          "202"
         ],
         "buffs": [
           {
-            "title": "崩倾",
-            "desc": "· 代理人的<color=#FFFFFF>[闪避反击]</color>、<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升30%</color>。\n· 代理人命中非失衡状态敌人时，造成的失衡值<color=#2BAD00>提升10%</color>；命中失衡状态中的敌人时，暴击伤害<color=#2BAD00>提升30%</color>，敌人的失衡易伤倍率<color=#2BAD00>提升25%</color>。"
+            "title": "异象",
+            "desc": "· 代理人的属性异常积蓄效率<color=#2BAD00>提升20%</color>。\n· 对敌人施加<color=#FFFFFF>属性异常</color>效果时，全队<color=#2BAD00>提升60点异常精通</color>，<color=#FFFFFF>紊乱</color>造成的伤害<color=#2BAD00>提升40%</color>，持续15秒。"
           },
           {
-            "title": "奏鸣",
-            "desc": "· 代理人的喧响值获取效率<color=#2BAD00>提升20%</color>。\n·<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>命中敌人时，无视其<color=#2BAD00>20%</color>的伤害抗性，<color=#FFFFFF>[终结技]</color>命中敌人后，代理人的<color=#FFFFFF>[终结技]</color>和<color=#FFFFFF>[强化特殊技]</color>造成的伤害<color=#2BAD00>提升50%</color>，持续30秒，重复触发时刷新持续时间。"
+            "title": "逐锋",
+            "desc": "· 代理人的[追加攻击]造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升30%</color>。\n· 当[强攻]特性代理人的<color=#FFFFFF>[强化特殊技]</color>、<color=#FFFFFF>[终结技]</color>命中敌人时，其全伤害抗性<color=#2BAD00>降低30%</color>，持续15秒，重复触发时刷新持续时间。"
           },
           {
-            "title": "奇巧",
-            "desc": "· 代理人造成的伤害<color=#2BAD00>提升20%</color>，造成的<color=#F0D12B>物理属性伤害</color>额外<color=#2BAD00>提升20%</color>。\n· 使敌人进入属性异常后，敌人的防御力<color=#2BAD00>降低10%</color>，持续10秒；对敌人施加[紊乱]效果后，敌人的防御力<color=#2BAD00>额外降低25%</color>，持续10秒，两个效果独立刷新持续时间。"
+            "title": "聚元",
+            "desc": "· 代理人的生命值上限<color=#2BAD00>提升20%</color>，[终结技]造成的伤害<color=#2BAD00>提升40%</color>。\n· 代理人发动[强化特殊技]后，能量和闪能获得效率<color=#2BAD00>提升20%</color>，<color=#FE437E>以太属性伤害</color><color=#2BAD00>提升35%</color>，持续20秒，重复触发刷新持续时间。"
           },
           {
             "title": "怒涛",
             "desc": "· [命破]特性的代理人的生命值低于上限的80%/50%时，攻击命中敌人时无视其<color=#2BAD00>10%/25%</color>的<color=#98EFF0>冰属性伤害抗性</color>。\n· 代理人开启或延长以太帷幕时，全队的贯穿伤害<color=#2BAD00>提升20%</color>，暴击伤害<color=#2BAD00>提升30%</color>，持续20秒，重复触发时刷新持续时间。"
           }
         ],
-        "layer_buffs": [],
+        "layer_buffs": [
+          {
+            "title": "",
+            "desc": "· 彷徨猎手处于[秽浊流界]中时，基础防御提高40%；代理人发动<color=#FFAF2C>[支援突击]或[闪避反击]</color>命中彷徨猎手时，将对其施加1层<color=#FFFFFF>[动摇]</color>。<color=#FFFFFF>[动摇]</color>最多叠加5层，持续15秒，重复触发时刷新持续时间。\n· 代理人攻击命中彷徨猎手时，对方每有1层[动摇]，代理人的贯穿伤害<color=#FFAF2C>提升7%</color>。"
+          },
+          {
+            "title": "",
+            "desc": "· 在捉迷藏阶段，使用<color=#FFAF2C>[觉感术]</color>破除<color=#FFAF2C>溺想者·卢西娅的真身</color>，可获得<color=#FFAF2C>3000操作得分</color>；破除真身后发动<color=#FFAF2C>[招架支援]或[支援突击]</color>命中彷徨猎手，化解其突袭，可获得<color=#FFAF2C>2000操作得分</color>，最多获得5000操作得分。"
+          },
+          {
+            "title": "",
+            "desc": "· 本关持有额外<color=#FFAF2C>得分倍率</color>时，操作得分上限也将同步提升。"
+          }
+        ],
         "monsters": [
           [
             {
-              "name": "颂礼赞者",
-              "hp": 1298411,
-              "defense": 636,
-              "stun": 2327,
+              "name": "彷徨猎手",
+              "hp": 13977884,
+              "defense": 1588,
+              "stun": 16284,
               "number": 1,
               "hp_ratio_sum": 1,
               "weakness": [
-                "火",
-                "物理"
-              ],
-              "resistance": [],
-              "type": "C"
-            }
-          ],
-          [
-            {
-              "name": "秽息蚀者·阿瓦鲁斯",
-              "hp": 19537463,
-              "defense": 953,
-              "stun": 15487,
-              "number": 1,
-              "hp_ratio_sum": 1,
-              "weakness": [
-                "火",
-                "以太"
+                "冰",
+                "火"
               ],
               "resistance": [
-                "冰"
+                "*物理*"
               ],
-              "type": "A"
+              "type": "S"
             }
           ]
         ],
         "waveNames": [
           {
-            "name": "小怪波",
-            "bold": false
-          },
-          {
-            "name": "秽息蚀者·阿瓦鲁斯",
+            "name": "彷徨猎手",
             "bold": true
           }
         ]
