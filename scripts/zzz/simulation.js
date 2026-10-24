@@ -40,14 +40,15 @@ const currentNode = () => getCurrentNodes()[state.nodeIndex] || null;
 
 const setSchedule = (index) => {
     state.scheduleIndex = wrapIndex(index, simulationEntries.length);
-    state.nodeIndex = 0;
+    state.nodeIndex = 0; // 切换期数时重置节点
     render();
 };
 
 const setNode = (index) => {
     const nodes = getCurrentNodes();
     state.nodeIndex = wrapIndex(index, nodes.length);
-    render();
+    renderNodeContent(); 
+    renderNodeNav(); // 仅更新导航按钮的选中状态
 };
 
 // ================= 顶部 UI =================
@@ -67,10 +68,50 @@ const renderScheduleHeader = () => {
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
 
-// 修复需求3：顶部节点切换 UI
-const renderNodeHeader = () => {
+// 修复需求2：节点按钮阵列（一行4个）
+const renderNodeNav = () => {
+    const navContainer = byId("nodeNavContainer");
+    navContainer.replaceChildren();
     const nodes = getCurrentNodes();
-    byId("nodeIndexText").textContent = nodes.length > 0 ? `节点 ${state.nodeIndex + 1}` : "无节点";
+    if (nodes.length === 0) return;
+
+    // 容器居中，设置 gap
+    const navRow = create("div", { 
+        style: { 
+            display: "flex", 
+            flexWrap: "wrap", 
+            gap: "12px", 
+            justifyContent: "flex-start", 
+            margin: "20px auto",
+            width: "100%",
+            maxWidth: "900px" // 限制最大宽度，保证一行4个不会拉得太开
+        } 
+    });
+    
+    nodes.forEach((node, idx) => {
+        const isActive = idx === state.nodeIndex;
+        const btn = create("button", {
+            text: `节点 ${idx + 1}`,
+            style: {
+                // 一行四个的核心逻辑：计算百分比
+                flex: "0 0 calc(25% - 9px)", 
+                boxSizing: "border-box",
+                padding: "12px 0", 
+                border: "none", 
+                borderRadius: "4px", 
+                cursor: "pointer",
+                fontSize: "16px",
+                backgroundColor: isActive ? "#27363E" : "#e0e0e0", // 选中用深色，未选中用浅色
+                color: isActive ? "#fff" : "#333",
+                fontWeight: isActive ? "bold" : "normal",
+                transition: "all 0.2s",
+                boxShadow: isActive ? "0 2px 8px rgba(39, 54, 62, 0.4)" : "none"
+            }
+        });
+        btn.addEventListener("click", () => setNode(idx));
+        navRow.appendChild(btn);
+    });
+    navContainer.appendChild(navRow);
 };
 
 // ================= 通用组件 =================
@@ -161,7 +202,6 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 1) => {
     });
 };
 
-// 小怪直接排布，不显示波次名字
 const renderWave = (wave, index, stageLevel, customWaveNames, multiplier = 1) => {
     return create("div", { className: "wave_wrap", style: { width: "100%", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "10px", marginBottom: "10px" }, children: 
         wave.map(m => renderMonsterCard(m, stageLevel, multiplier))
@@ -211,7 +251,7 @@ const renderNodeContent = () => {
 
     // 2. 战斗节点
     if (node.type === "battle") {
-        // 前战/选战容器 (修复需求1：一行四个)
+        // 前战/选战容器
         if (node.small_stages && node.small_stages.length > 0) {
             const smallWarContainer = create("div", { style: { display: "flex", flexWrap: "wrap", gap: "15px", justifyContent: "center", marginBottom: "30px", width: "100%" } });
             let preBattleCount = 1;
@@ -225,11 +265,8 @@ const renderNodeContent = () => {
                     displayLabel = "选战";
                 }
                 
-                // 修复需求1：计算 flex 宽度。如果刚好是4个，每个宽度 23%；如果不够4个，按剩余空间平分。
-                const count = node.small_stages.length;
-                const flexBasis = count >= 4 ? "calc(25% - 15px)" : `calc(${100/count}% - 15px)`;
-                
-                const wrapper = create("div", { style: { flex: `1 1 ${flexBasis}`, minWidth: "260px", maxWidth: "350px" } });
+                // 一行四个的计算方式：25% 减去 gap 的一半，保证四个一行且不会超出
+                const wrapper = create("div", { style: { flex: "0 0 calc(25% - 12px)", minWidth: "260px", maxWidth: "350px" } });
                 const u_l = create("div", { className: "u_l" });
                 const u = create("div", { className: "u" });
                 
@@ -259,7 +296,7 @@ const renderNodeContent = () => {
             container.appendChild(smallWarContainer);
         }
 
-        // Boss战 (修复需求2：恢复深色卡片)
+        // Boss战 (修复需求1：去掉深色底板)
         if (node.boss_stage) {
             const bossData = node.boss_stage;
             const monster = bossData.monsters?.[0]?.[0]; 
@@ -267,21 +304,20 @@ const renderNodeContent = () => {
             if (monster) {
                 const bossContainer = create("div", {
                     style: {
-                        marginTop: "20px", padding: "20px", backgroundColor: "#27363E",
+                        marginTop: "20px", padding: "20px", backgroundColor: "transparent", // 去掉深色
                         borderRadius: "8px", display: "flex", gap: "30px",
                         alignItems: "flex-start", justifyContent: "center", flexWrap: "wrap"
                     }
                 });
 
                 const leftCol = create("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", marginTop: "10px" } });
-                leftCol.appendChild(create("div", { className: "u_r", style: { textAlign: "center", color: "#fff", marginBottom: "15px" }, children: [
+                leftCol.appendChild(create("div", { className: "u_r", style: { textAlign: "center", color: "#333", marginBottom: "15px" }, children: [ // 字体颜色由白改为深色
                     create("p", { text: monster.name, style: { fontSize: "20px", fontWeight: "bold", margin: "0 0 5px 0" } }),
                     ...renderElementIcons(bossData.weakness, "elem_"),
                     create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal", marginTop: "5px" } })
                 ]}));
                 
                 const lineup = create("div", { className: "u_m" });
-                // Boss 血量乘 8.74
                 lineup.appendChild(create("div", { className: "wave_monsters", children: [
                     renderMonsterCard(monster, bossData.level, 8.74)
                 ]}));
@@ -295,7 +331,7 @@ const renderNodeContent = () => {
                 
                 const rightCol = create("div", {
                     className: "u_b",
-                    style: { flex: "1 1 400px", backgroundColor: "#1e2a30", color: "#eee", borderRadius: "5px", padding: "20px", lineHeight: "1.8", fontSize: "14px", textAlign: "left", maxWidth: "600px" },
+                    style: { flex: "1 1 400px", backgroundColor: "#f5f5f5", color: "#333", border: "1px solid #e0e0e0", borderRadius: "5px", padding: "20px", lineHeight: "1.8", fontSize: "14px", textAlign: "left", maxWidth: "600px" }, // 改为浅灰背景和深色字体
                     children: [ create("p", { html: buffHtml || "无特殊机制说明", style: { margin: 0 } }) ]
                 });
 
@@ -311,7 +347,7 @@ const renderNodeContent = () => {
 const render = () => {
     renderScheduleSelect();
     renderScheduleHeader();
-    renderNodeHeader();
+    renderNodeNav(); // 渲染节点按钮
     renderNodeContent();
 };
 
@@ -319,10 +355,6 @@ const bindEvents = () => {
     byId("prevSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex + 1));
     byId("nextSchedule").addEventListener("click", () => setSchedule(state.scheduleIndex - 1));
     byId("scheduleSelect").addEventListener("change", e => setSchedule(Number(e.target.value)));
-
-    // 修复需求3：绑定顶部节点的切换按钮
-    byId("prevNode").addEventListener("click", () => setNode(state.nodeIndex - 1));
-    byId("nextNode").addEventListener("click", () => setNode(state.nodeIndex + 1));
     
     // 图片悬停
     document.body.addEventListener("mouseenter", (event) => {

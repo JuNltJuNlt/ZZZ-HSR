@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="../../stylesheets/style.css" />
         <link rel="stylesheet" href="../../stylesheets/shadow.css" />
         <link rel="stylesheet" href="../../stylesheets/arbitration.css" />
-        <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-        <!-- 注意：这里引入了 simulation.js，请确保路径正确 -->
+        <!-- 如果 html2canvas 本地化了，请用这个路径；否则换回你原来的 CDN -->
+        <script src="../../plugins/html2canvas.min.js"></script>
         <script type="module" src="../../scripts/zzz/simulation.js?v=1"></script>
     </head>
     <body class="bg">
@@ -53,37 +53,11 @@
                     <a id="downloadBtn" class="level_ dl_button hover-shadow" href="#"><span>下载图片</span></a>
                 </div>
 
-                <!-- 节点导航容器 (动态渲染节点按钮) -->
-                                <!-- 换期区域 -->
-                <div class="ver">
-                    <div id="prevSchedule" class="v_l">◁</div>
-                    <div class="ver_text hover-shadow">
-                        <p id="scheduleName" class="ver_text_name"></p>
-                        <p id="scheduleTime" class="ver_text_time"></p>
-                        <select id="scheduleSelect" class="schedule_select"></select>
-                    </div>
-                    <div id="nextSchedule" class="v_r"><p>▷</p></div>
-                </div>
+                <!-- 节点按钮容器：由 simulation.js 渲染一行四个的节点按钮 -->
+                <div id="nodeNavContainer" style="width: 100%; padding: 0 10px; margin-bottom: 20px;"></div>
 
-                <!-- 【新增】节点切换区域，直接套用上面的样式类 -->
-                <div class="ver" style="margin-top: 15px;">
-                    <div id="prevNode" class="v_l">◁</div>
-                    <div class="ver_text hover-shadow" style="padding: 10px 20px; min-width: 120px;">
-                        <p id="nodeIndexText" class="ver_text_name" style="margin: 0;">节点 1</p>
-                    </div>
-                    <div id="nextNode" class="v_r"><p>▷</p></div>
-                </div>
-
-                <div class="button_w">
-                    <a id="downloadBtn" class="level_ dl_button hover-shadow" href="#"><span>下载图片</span></a>
-                </div>
-
+                <!-- 节点内容渲染区 -->
                 <div id="simulationContent"></div>
-
-                <!-- 主体内容渲染区域 (根据节点类型渲染剧情或战斗) -->
-                <div id="simulationContent"></div>
-
-                <!-- 如果需要显示推演特有的 Buff 说明，可以在这里加一个容器，或者直接在 simulation.js 中渲染进 simulationContent -->
             </div>
         </container>
     </body>
