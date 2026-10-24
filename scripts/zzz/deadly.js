@@ -182,28 +182,27 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     const isSkillPage = document.title.includes("拟境湮灭战");
     const monsterInfo = monstersData.find(m => m.name === monster.name) || {};
     
-    // 合并深渊怪物数据和基础数据库中的弱点和抗性
+    // 合并深渊数据和基础数据库数据
     const allWeakness = [...(monster.weakness || []), ...(monsterInfo.weakness || [])];
     const allResistance = [...(monster.resistance || []), ...(monsterInfo.resistance || [])];
     
-    // 使用 Map 来合并同名属性，并记录最高线数
     const mapItems = new Map();
 
     const parseItem = (str, isWeak) => {
-        // 提取纯净属性名（去掉所有 *）
+        if (!str) return;
+        // 提取纯净属性名（去掉所有 *），确保能找到图标
         const cleanEl = str.replace(/\*/g, "");
-        // 计算星号总数
-        const totalStars = (str.match(/\*/g) || []).length;
-        // 单边星号数量，向上取整以防不对称（如 "*电" 也能算 1 个）
-        const halfStars = Math.ceil(totalStars / 2);
-        // 线数 = 单边星号数 + 1
-        const lines = halfStars + 1;
+        // 计算星号数量
+        const starCount = (str.match(/\*/g) || []).length;
+        
+        // 计算线数：每 2 个星号代表多 1 根线（无星号1根，*名*2根，**名**3根，***名***4根）
+        const lines = Math.floor(starCount / 2) + 1;
         
         if (!mapItems.has(cleanEl)) {
             mapItems.set(cleanEl, { element: cleanEl, type: isWeak ? "weak" : "resist", lines });
         } else {
             const existing = mapItems.get(cleanEl);
-            // 如果有一方是弱点，优先显示为弱点（绿色），否则合并红线数量
+            // 如果有一方是弱点，优先显示为弱点（绿色），且取最大的线数
             if (isWeak) {
                 existing.type = "weak";
                 existing.lines = Math.max(existing.lines, lines);
@@ -213,9 +212,9 @@ const renderWeaknessBars = (monster, abnormalValue) => {
         }
     };
 
-    // 先处理弱点（优先级高）
+    // 处理弱点
     allWeakness.forEach(el => parseItem(el, true));
-    // 再处理抗性
+    // 处理抗性
     allResistance.forEach(el => parseItem(el, false));
 
     const items = Array.from(mapItems.values());
@@ -223,15 +222,14 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     if (items.length === 0 && !abnormalValue) return null;
 
     return create("div", {
-        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "6px", marginTop: "4px", minHeight: "28px" },
+        style: { display: "flex", justifyContent: "center", alignItems: "flex-start", gap: "6px", marginTop: "4px", minHeight: "28px" },
         children: [
             ...items.map(item => {
-                // 颜色判断
                 let barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
-                if (isSkillPage) barColor = "#888888"; // 拟境强制灰色
+                if (isSkillPage) barColor = "#888888";
                 
-                // 绘制多根横线（等号效果）
-                const bars = Array.from({ length: item.lines }).map(() => 
+                // 绘制多根横线，等间距排列
+                const bars = Array.from({ length: item.lines }).map((_, index) => 
                     create("span", { 
                         style: { 
                             width: "14px", 
@@ -239,7 +237,8 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                             borderRadius: "1px", 
                             backgroundColor: barColor, 
                             display: "block",
-                            marginTop: "1px" // 线与线之间的微小间距
+                            // 如果不是第一根，就增加 2px 的间距
+                            marginTop: index > 0 ? "2px" : "1px" 
                         } 
                     })
                 );
