@@ -114,24 +114,39 @@ const getAbnormalValue = (monster) => {
 const renderWeaknessBars = (monster, abnormalValue) => {
     const weakness = monster.weakness || [];
     const resistance = monster.resistance || [];
-    const items = [];
     
-    // 处理弱点
-    weakness.forEach(el => items.push({ element: el, type: "weak", count: 1 }));
-    
-    // 处理抗性（计算 * 的数量）
-    resistance.forEach(el => {
-        // 匹配开头和结尾的 * 号
-        const match = el.match(/^(\*+)(.*?)(\*+)$/);
-        if (match) {
-            const elName = match[2]; // 提取纯净的属性名，如 "电"
-            const count = Math.max(match[1].length, match[3].length); // 计算星号数量，对应红线数
-            items.push({ element: elName, type: "resist", count: count });
-        } else {
-            // 兼容普通抗性（无星号）
-            items.push({ element: el, type: "resist", count: 1 });
+    // 使用 Map 来合并相同属性，并记录最大星星数
+    const mapItems = new Map();
+
+    weakness.forEach(el => {
+        const cleanEl = el.replace(/\*/g, ""); // 去除所有星号
+        if (!mapItems.has(cleanEl)) {
+            mapItems.set(cleanEl, { element: cleanEl, type: "weak", count: 1 });
         }
     });
+
+    resistance.forEach(el => {
+        const starCount = (el.match(/\*/g) || []).length; // 计算星号总数
+        const cleanEl = el.replace(/\*/g, ""); // 提取纯名字
+        
+        if (mapItems.has(cleanEl)) {
+            // 如果已经在弱点里，保留原有的，或者你可以决定覆盖
+            return; 
+        }
+        
+        // 如果没有星号，默认1根线
+        const count = starCount > 0 ? starCount : 1; 
+        
+        if (mapItems.has(cleanEl)) {
+            // 合并多条相同抗性，取最大星星数
+            const existing = mapItems.get(cleanEl);
+            existing.count = Math.max(existing.count, count);
+        } else {
+            mapItems.set(cleanEl, { element: cleanEl, type: "resist", count: count });
+        }
+    });
+
+    const items = Array.from(mapItems.values());
     
     if (items.length === 0 && !abnormalValue) return null;
     
@@ -142,7 +157,6 @@ const renderWeaknessBars = (monster, abnormalValue) => {
         style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "3px", marginTop: "4px", minHeight: "28px" },
         children: [
             ...items.map(item => {
-                // 基础横线颜色
                 let barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
                 if (isSkillPage) barColor = "#888888"; // 拟境强制灰色
                 
@@ -160,7 +174,6 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                     })
                 );
 
-                // 图片的 style：拟境需要灰度
                 const imgStyle = isSkillPage ? { filter: "grayscale(100%)" } : {};
 
                 return create("div", {
