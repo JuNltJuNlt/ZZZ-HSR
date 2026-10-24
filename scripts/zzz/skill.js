@@ -78,56 +78,70 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     const isSkillPage = document.title.includes("拟境湮灭战");
     const monsterInfo = monstersData.find(m => m.name === monster.name) || {};
     
-    // 1. 提取深渊数据和基础数据库的数据
-    const rawWeakness = [...(monster.weakness || []), ...(monsterInfo.weakness || [])];
-    const rawResistance = [...(monster.resistance || []), ...(monsterInfo.resistance || [])];
+    // 合并深渊怪物数据和基础数据库中的弱点和抗性
+    const allWeakness = [...(monster.weakness || []), ...(monsterInfo.weakness || [])];
+    const allResistance = [...(monster.resistance || []), ...(monsterInfo.resistance || [])];
     
     const mapItems = new Map();
 
-    // 2. 解析逻辑：计算单边星号数 + 1 得到线数
     const parseItem = (str, isWeak) => {
-        const cleanEl = str.replace(/\*/g, ""); // 去掉 * 找图标
+        // 提取纯净属性名（去掉所有 *）
+        const cleanEl = str.replace(/\*/g, "");
+        // 计算单边星号数量（因为通常成对出现，所以除以2向上取整）
         const starCount = (str.match(/\*/g) || []).length;
-        const halfStars = Math.ceil(starCount / 2); // 单边星号数
-        const lines = halfStars + 1; // 线数 = 单边星号数 + 1
+        const halfStars = Math.ceil(starCount / 2);
+        // 线数 = 单边星号数 + 1
+        const lines = halfStars + 1;
         
         if (!mapItems.has(cleanEl)) {
             mapItems.set(cleanEl, { element: cleanEl, type: isWeak ? "weak" : "resist", lines });
         } else {
-            // 如果已存在，取最大线数
             const existing = mapItems.get(cleanEl);
-            existing.lines = Math.max(existing.lines, lines);
-            // 弱点优先于抗性
-            if (isWeak) existing.type = "weak";
+            if (isWeak) {
+                existing.type = "weak";
+                existing.lines = Math.max(existing.lines, lines);
+            } else if (existing.type === "resist") {
+                existing.lines = Math.max(existing.lines, lines);
+            }
         }
     };
 
-    rawWeakness.forEach(el => parseItem(el, true));
-    rawResistance.forEach(el => parseItem(el, false));
+    // 先处理弱点，再处理抗性
+    allWeakness.forEach(el => parseItem(el, true));
+    allResistance.forEach(el => parseItem(el, false));
 
     const items = Array.from(mapItems.values());
     
     if (items.length === 0 && !abnormalValue) return null;
 
     return create("div", {
-        style: { display: "flex", justifyContent: "center", alignItems: "flex-end", gap: "8px", marginTop: "4px", minHeight: "28px" },
+        style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "6px", marginTop: "4px", minHeight: "28px" },
         children: [
             ...items.map(item => {
                 let barColor = item.type === "weak" ? "#4CAF50" : "#C62828";
                 if (isSkillPage) barColor = "#888888"; 
                 
-                // 生成多根横线，通过 gap 保证间距绝对一致
-                const bars = Array.from({ length: item.lines }).map(() => 
-                    create("span", { 
-                        style: { 
-                            width: "14px", 
-                            height: "2px", 
-                            borderRadius: "1px", 
-                            backgroundColor: barColor, 
-                            display: "block"
-                        } 
-                    })
-                );
+                // 使用 flex 纵向排列，gap 控制线与线的间距（1px）
+                const bars = create("div", {
+                    style: { 
+                        display: "flex", 
+                        flexDirection: "column", 
+                        alignItems: "center", 
+                        gap: "1px", 
+                        marginTop: "2px" 
+                    },
+                    children: Array.from({ length: item.lines }).map(() => 
+                        create("span", { 
+                            style: { 
+                                width: "14px", 
+                                height: "2px", 
+                                borderRadius: "1px", 
+                                backgroundColor: barColor, 
+                                display: "block"
+                            } 
+                        })
+                    )
+                });
 
                 const imgStyle = isSkillPage ? { filter: "grayscale(100%)" } : {};
 
@@ -138,21 +152,12 @@ const renderWeaknessBars = (monster, abnormalValue) => {
                             style: imgStyle,
                             error: "remove"
                         }),
-                        create("div", { 
-                            style: { 
-                                display: "flex", 
-                                flexDirection: "column", 
-                                alignItems: "center", 
-                                gap: "1px", // 这里使用 flex gap 控制线间距，保证一致
-                                marginTop: "2px" 
-                            },
-                            children: bars 
-                        })
+                        bars
                     ]
                 });
             }),
             abnormalValue ? create("span", {
-                style: { color: "#6a1b9a", fontWeight: "bold", marginLeft: "4px", marginBottom: "2px" },
+                style: { color: "#6a1b9a", fontWeight: "bold", marginLeft: "4px" },
                 text: String(abnormalValue)
             }) : null,
         ].filter(Boolean)
