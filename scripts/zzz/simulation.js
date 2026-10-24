@@ -1,7 +1,7 @@
 import { initMenu } from "../menu.js";
 import { byId, create, image, wrapIndex } from "../tools.js";
 
-const DATA_ROOT = "../../data/zzz/simulation"; // 请确认你的数据目录
+const DATA_ROOT = "../../data/zzz/simulation";
 const IMAGE_ROOT = "../../images/ZZZ%20images/monster";
 const ELEMENT_ROOT = "../../images/ZZZ%20images/element";
 
@@ -67,6 +67,7 @@ const renderScheduleHeader = () => {
     byId("scheduleSelect").value = String(state.scheduleIndex);
 };
 
+// 修复需求1：节点数量不固定，优化多节点换行样式
 const renderNodeNav = () => {
     const navContainer = byId("nodeNavContainer");
     navContainer.replaceChildren();
@@ -84,7 +85,8 @@ const renderNodeNav = () => {
                 padding: "8px 16px", border: "none", borderRadius: "4px", cursor: "pointer",
                 backgroundColor: isActive ? "#27363E" : "#e0e0e0",
                 color: isActive ? "#fff" : "#333",
-                fontWeight: isActive ? "bold" : "normal"
+                fontWeight: isActive ? "bold" : "normal",
+                whiteSpace: "nowrap"
             }
         });
         btn.addEventListener("click", () => setNode(idx));
@@ -151,12 +153,13 @@ const renderWeaknessBars = (monster, abnormalValue) => {
     });
 };
 
+// 修复需求3：Boss 血量乘以 8.74
 const renderMonsterCard = (monster, stageLevel, multiplier = 1) => {
     const info = monstersData.find(m => m.name === monster.name) || {};
     const type = info.type || monster.type || "C";
     const imagePath = `${IMAGE_ROOT}/${type}/${monster.name}.webp`;
     
-    // 注意：数据转换时已经算过 hp_ratio_sum，此处 multiplier 默认为 1
+    // 血量计算应用 multiplier
     const hp = Math.round((monster.hp || 0) * (monster.hp_ratio_sum ?? 1) * multiplier);
     const def = Math.round(monster.defense || 0);
     const stun = Math.round(monster.stun || 0);
@@ -182,18 +185,11 @@ const renderMonsterCard = (monster, stageLevel, multiplier = 1) => {
     });
 };
 
-// 波次渲染 (修复需求2：如果传入 customWaveNames，则使用自定义名字替换“第x波”)
-const renderWave = (wave, index, stageLevel, customWaveNames) => {
-    let waveNameStr = `第${index + 1}波`;
-    if (customWaveNames && customWaveNames[index]) {
-        const wn = customWaveNames[index];
-        waveNameStr = wn.bold ? `<b>${wn.name}</b>` : wn.name;
-    }
-    
-    return create("div", { className: "wave_wrap", children: [
-        create("p", { className: "wave_name", html: waveNameStr }), 
-        create("div", { className: "wave_monsters", children: wave.map(m => renderMonsterCard(m, stageLevel)) })
-    ]});
+// 修复需求2：严格按照式舆排版，去除“第x波”的独立标题块，让小怪卡片无缝排列
+const renderWave = (wave, index, stageLevel, customWaveNames, multiplier = 1) => {
+    return create("div", { className: "wave_wrap", style: { width: "100%", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "10px", marginBottom: "10px" }, children: 
+        wave.map(m => renderMonsterCard(m, stageLevel, multiplier))
+    });
 };
 
 // ================= 节点内容渲染 =================
@@ -212,27 +208,17 @@ const renderNodeContent = () => {
         node.branches.forEach((branch, idx) => {
             const details = create("details", {
                 style: {
-                    backgroundColor: "#fff",
-                    border: "1px solid #dcdcdc",
-                    borderRadius: "8px",
-                    marginBottom: "16px",
-                    overflow: "hidden",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.02)"
+                    backgroundColor: "#fff", border: "1px solid #dcdcdc", borderRadius: "8px",
+                    marginBottom: "16px", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.02)"
                 }
             });
             
             const summary = create("summary", {
                 text: `走向 ${idx + 1}：${branch.name}`,
                 style: {
-                    cursor: "pointer",
-                    padding: "16px 20px",
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                    color: "#2545ba",
-                    backgroundColor: "#f8f9fa",
-                    borderBottom: "1px solid transparent",
-                    userSelect: "none",
-                    listStyle: "none" // 隐藏默认箭头
+                    cursor: "pointer", padding: "16px 20px", fontWeight: "bold", fontSize: "16px",
+                    color: "#2545ba", backgroundColor: "#f8f9fa", borderBottom: "1px solid transparent",
+                    userSelect: "none", listStyle: "none"
                 }
             });
             
@@ -241,10 +227,7 @@ const renderNodeContent = () => {
             
             if (branch.record) {
                 contentDiv.appendChild(create("div", {
-                    style: {
-                        marginTop: "20px", padding: "16px", backgroundColor: "#fff8e1", borderLeft: "4px solid #ffc107",
-                        borderRadius: "4px", color: "#5d4037"
-                    },
+                    style: { marginTop: "20px", padding: "16px", backgroundColor: "#fff8e1", borderLeft: "4px solid #ffc107", borderRadius: "4px", color: "#5d4037" },
                     children: [
                         create("h4", { text: branch.record.name, style: { margin: "0 0 8px 0", color: "#e65100" } }),
                         create("p", { text: branch.record.desc, style: { fontWeight: "bold", margin: "0 0 8px 0" } }),
@@ -262,13 +245,13 @@ const renderNodeContent = () => {
 
     // 2. 战斗节点
     if (node.type === "battle") {
-        // A. 小怪战 (前战/选战)
-        if (node.small_stages && node.small_stages.length > 0) {
-            const smallWarContainer = create("div", { style: { display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center", marginBottom: "30px" } });
-            let preBattleCount = 1;
+        const battleRow = create("div", { style: { display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center", width: "100%" } });
+        let preBattleCount = 1;
+        let boxCount = 0;
 
+        // 渲染前战/选战
+        if (node.small_stages && node.small_stages.length > 0) {
             node.small_stages.forEach((stage) => {
-                // 修复需求3：前战编号，选战固定名字
                 let displayLabel = stage.name;
                 if (stage.tag === "前战") {
                     displayLabel = `前战${preBattleCount === 1 ? '一' : preBattleCount === 2 ? '二' : preBattleCount === 3 ? '三' : preBattleCount}`;
@@ -276,83 +259,100 @@ const renderNodeContent = () => {
                 } else if (stage.tag === "选战") {
                     displayLabel = "选战";
                 }
-
-                const wrapper = create("div", { style: { flex: "1 1 30%", minWidth: "320px", maxWidth: "450px" } });
                 
-                const stageBox = create("div", { className: "u_l", style: { border: "1px solid #ddd", borderRadius: "8px", overflow: "hidden", background: "#fff" } });
+                // 修复需求2：严格按照式舆排版结构 (u_l -> u -> u_r -> u_m -> stage)
+                const wrapper = create("div", { style: { flex: "1 1 30%", minWidth: "320px", maxWidth: "400px" } });
+                const u_l = create("div", { className: "u_l" });
+                const u = create("div", { className: "u" });
                 
-                // 头部
-                const header = create("div", { style: { padding: "12px", backgroundColor: "#f0f4f8", borderBottom: "1px solid #ddd", textAlign: "center" }, children: [
-                    create("p", { text: `${displayLabel} Lv${stage.level}`, style: { margin: 0, fontWeight: "bold" } }),
+                // 式舆的头部 u_r
+                const u_r = create("div", { className: "a_r u_r" });
+                u_r.appendChild(create("div", { children: [
+                    create("p", { text: `${displayLabel} Lv${stage.level}` }),
                     ...renderElementIcons(stage.weakness, "elem_"),
-                ]});
+                    create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } })
+                ]}));
                 
-                // 主体
-                const body = create("div", { className: "stage", style: { padding: "15px" }, children: [
-                    create("div", { className: "stage_waves", children: stage.monsters.map((wave, wi) => 
-                        renderWave(wave, wi, stage.level, stage.waveNames) // 修复需求2：传入 waveNames
-                    ) })
-                ]});
+                // 式舆的主体 u_m
+                const u_m = create("div", { className: "a_m u_m" });
+                const stageDiv = create("div", { className: "stage", style: { paddingBottom: "10px" } });
+                const stageWaves = create("div", { className: "stage_waves" });
                 
-                stageBox.appendChild(header);
-                stageBox.appendChild(body);
-                wrapper.appendChild(stageBox);
-                smallWarContainer.appendChild(wrapper);
+                stage.monsters.forEach((wave, wi) => {
+                    stageWaves.appendChild(renderWave(wave, wi, stage.level, stage.waveNames, 1));
+                });
+                
+                stageDiv.appendChild(stageWaves);
+                u_m.appendChild(stageDiv);
+                
+                u.appendChild(u_r);
+                u.appendChild(u_m);
+                u_l.appendChild(u);
+                wrapper.appendChild(u_l);
+                battleRow.appendChild(wrapper);
+                boxCount++;
             });
-            container.appendChild(smallWarContainer);
         }
 
-        // B. 强敌战 (复用危局绝境布局)
+        // 渲染Boss战
         if (node.boss_stage) {
             const bossData = node.boss_stage;
-            const monster = bossData.monsters?.[0]?.[0]; // 取第一波第一个怪物
+            const monster = bossData.monsters?.[0]?.[0]; 
             
             if (monster) {
-                const bossContainer = create("div", {
-                    style: {
-                        marginTop: "20px", padding: "20px", backgroundColor: "#27363E",
-                        borderRadius: "8px", display: "flex", gap: "30px",
-                        alignItems: "flex-start", justifyContent: "center", flexWrap: "wrap"
-                    }
-                });
-
-                // 左侧：怪物卡
-                const leftCol = create("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", marginTop: "10px" } });
-                leftCol.appendChild(create("div", { className: "u_r", style: { textAlign: "center", color: "#fff", marginBottom: "15px" }, children: [
-                    create("p", { text: monster.name, style: { fontSize: "20px", fontWeight: "bold", margin: "0 0 5px 0" } }),
+                // 修复需求3：Boss不需要深色，排版与式舆相同，血量 * 8.74
+                const wrapper = create("div", { style: { flex: "1 1 30%", minWidth: "320px", maxWidth: "400px" } });
+                const u_l = create("div", { className: "u_l" });
+                const u = create("div", { className: "u" });
+                
+                const u_r = create("div", { className: "c_r u_r" });
+                u_r.appendChild(create("div", { children: [
+                    create("p", { text: `终局 Lv${bossData.level}` }),
                     ...renderElementIcons(bossData.weakness, "elem_"),
-                    create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal", marginTop: "5px" } })
+                    create("p", { text: text.chartSubtitle, style: { fontSize: "0.75em", color: "#0066FF", fontWeight: "normal" } })
                 ]}));
                 
-                const lineup = create("div", { className: "u_m" });
-                // 修复需求2：Boss 波次名字使用 Boss 名字
-                lineup.appendChild(create("div", { className: "wave_monsters", children: [
-                    renderMonsterCard(monster, bossData.level, 1)
-                ]}));
-                leftCol.appendChild(lineup);
-
-                // 右侧：机制说明框
+                const u_m = create("div", { className: "c_m u_m" });
+                const stageDiv = create("div", { className: "stage" });
+                const stageWaves = create("div", { className: "stage_waves" });
+                
+                // Boss 血量乘 8.74
+                bossData.monsters.forEach((wave, wi) => {
+                    stageWaves.appendChild(renderWave(wave, wi, bossData.level, bossData.waveNames, 8.74));
+                });
+                
+                stageDiv.appendChild(stageWaves);
+                u_m.appendChild(stageDiv);
+                
+                // 将 Boss 机制框放在下方，替代原本的 buff 框
                 const buffHtml = bossData.layer_buffs.map(b => b.desc).filter(Boolean).join('\n')
                     .replace(/<color=([^>]+)>/g, '<color style="color:$1;">')
                     .replace(/\n/g, '<br>')
                     .replace(/^· /gm, '<br>· ')
                     .replace(/^<br>/, '');
-                
-                const rightCol = create("div", {
-                    className: "u_b",
-                    style: {
-                        flex: "1 1 400px", backgroundColor: "#1e2a30", color: "#eee",
-                        borderRadius: "5px", padding: "20px", lineHeight: "1.8", fontSize: "14px",
-                        textAlign: "left", maxWidth: "600px"
-                    },
-                    children: [ create("p", { html: buffHtml || "无特殊机制说明", style: { margin: 0 } }) ]
-                });
 
-                bossContainer.appendChild(leftCol);
-                bossContainer.appendChild(rightCol);
-                container.appendChild(bossContainer);
+                const traitContainer = create("div", {
+                    className: `c_b u_b`,
+                    style: {
+                        backgroundColor: "#27363E", color: "#eee", borderRadius: "5px", margin: "3px 0", padding: "14px",
+                        width: "100%", boxSizing: "border-box", textAlign: "left", display: "block",
+                    },
+                    children: [
+                        create("p", { html: buffHtml || "无特殊机制说明", style: { lineHeight: "1.8", margin: "4px 0", fontSize: "14px", textAlign: "left", display: "block" } })
+                    ],
+                });
+                
+                u.appendChild(u_r);
+                u.appendChild(u_m);
+                u_l.appendChild(u);
+                wrapper.appendChild(u_l);
+                wrapper.appendChild(traitContainer); // 机制框追加到下方
+                
+                battleRow.appendChild(wrapper);
+                boxCount++;
             }
         }
+        container.appendChild(battleRow);
     }
 };
 
