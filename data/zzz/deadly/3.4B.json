@@ -24,7 +24,7 @@
       "selectable_buff": {
         "buff_69015201": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
@@ -38,7 +38,7 @@
       "monsters": [
         {
           "name": "新生之结·？？？",
-          "hp": 20575338,
+          "hp": 26255426,
           "defense": 953,
           "stun": 19007,
           "number": 1,
@@ -82,7 +82,7 @@
       "selectable_buff": {
         "buff_69015201": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
@@ -141,7 +141,7 @@
       "selectable_buff": {
         "buff_69015201": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
@@ -155,7 +155,7 @@
       "monsters": [
         {
           "name": "基塔布鲁",
-          "hp": 27071826,
+          "hp": 23061185,
           "defense": 953,
           "stun": 21038,
           "number": 1,
@@ -194,7 +194,7 @@
       "selectable_buff": {
         "buff_69015201": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>500点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升25%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，锐化伤害<color=#2BAD00>提升25%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
@@ -208,7 +208,7 @@
       "monsters": [
         {
           "name": "异构·滞变畸兽",
-          "hp": 39485170,
+          "hp": 40613318,
           "defense": 953,
           "stun": 23277,
           "number": 1,

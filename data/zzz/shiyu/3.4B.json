@@ -10,7 +10,7 @@
       "layer_buff": {
         "buff_62001641": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -153,7 +153,7 @@
       "layer_buff": {
         "buff_62001641": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -319,7 +319,7 @@
       "layer_buff": {
         "buff_62001641": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -509,7 +509,7 @@
       "layer_buff": {
         "buff_62001641": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -640,7 +640,7 @@
       "layer_buff": {
         "buff_62001641": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_62001642": {
           "title": "(Test1)TBD",
@@ -723,24 +723,36 @@
           "monsters": [
             [
               {
-                "name": "多佩冈亚·波可娜",
-                "hp": 8108957,
-                "defense": 794,
-                "stun": 14002,
+                "name": "秽息残兵·盾卫",
+                "hp": 1431639,
+                "defense": 731,
+                "stun": 2327,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "电"
                 ],
-                "resistance": [
-                  "冰"
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1431639,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
                 ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "拉赫穆",
-                "hp": 10698745,
+                "hp": 9695738,
                 "defense": 715,
                 "stun": 12345,
                 "number": 1,
@@ -758,7 +770,7 @@
             [
               {
                 "name": "秽蚀·「骇鸟」",
-                "hp": 52688086,
+                "hp": 44977635,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -771,22 +783,6 @@
                   "以太"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "多佩冈亚·星徽·比利",
-                "hp": 69217921,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
               }
             ]
           ],
@@ -796,7 +792,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·「骇鸟」、多佩冈亚·星徽·比利",
+              "name": "秽蚀·「骇鸟」",
               "bold": true
             }
           ],
@@ -877,7 +873,7 @@
       "layer_buff": {
         "buff_62001641": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升20%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -965,24 +961,36 @@
           "monsters": [
             [
               {
-                "name": "多佩冈亚·波可娜",
-                "hp": 8108957,
-                "defense": 794,
-                "stun": 14002,
+                "name": "秽息残兵·盾卫",
+                "hp": 1431639,
+                "defense": 731,
+                "stun": 2327,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "电"
                 ],
-                "resistance": [
-                  "冰"
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1431639,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
                 ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "拉赫穆",
-                "hp": 10698745,
+                "hp": 9695738,
                 "defense": 715,
                 "stun": 12345,
                 "number": 1,
@@ -1000,7 +1008,7 @@
             [
               {
                 "name": "秽蚀·「骇鸟」",
-                "hp": 52688086,
+                "hp": 44977635,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -1013,22 +1021,6 @@
                   "以太"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "多佩冈亚·星徽·比利",
-                "hp": 69217921,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
               }
             ]
           ],
@@ -1038,7 +1030,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·「骇鸟」、多佩冈亚·星徽·比利",
+              "name": "秽蚀·「骇鸟」",
               "bold": true
             }
           ],

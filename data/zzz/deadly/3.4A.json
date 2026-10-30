@@ -24,21 +24,21 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升15%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升30%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69015103": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升25%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "monsters": [
         {
           "name": "新生之结·？？？",
-          "hp": 20575338,
+          "hp": 26255426,
           "defense": 953,
           "stun": 19007,
           "number": 1,
@@ -82,15 +82,15 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升15%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升30%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69015103": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升25%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "monsters": [
@@ -140,21 +140,21 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升15%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升30%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69015103": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升25%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "monsters": [
         {
           "name": "以太异体·特里薇亚",
-          "hp": 28028268,
+          "hp": 33633922,
           "defense": 953,
           "stun": 20431,
           "number": 1,
@@ -193,27 +193,27 @@
         },
         "buff_69015105": {
           "title": "",
-          "desc": "· 代理人成功使用[招架支援]应对库萨里库的<Term:2000005></Term>时，将对其施加1层[识破]，使库萨里库进入失衡状态时，对其施加2层[识破]。每层[识破]会使其受到的<color=#FFAF2C>锐暴伤害提升7.5%</color>，并使全队<color=#FFAF2C>锐化伤害提高10%</color>，[识破]最多叠加4层，持续<color=#FFAF2C>30</color>秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人成功使用[招架支援]应对库萨里库的<Term:2000005></Term>时，将对其施加1层[识破]，使库萨里库进入失衡状态时，对其施加2层[识破]。每层[识破]会使其受到的<color=#FFAF2C>锐暴伤害提升5%</color>，并使全队<color=#FFAF2C>锐化伤害提高15%</color>，[识破]最多叠加4层，持续<color=#FFAF2C>30</color>秒，重复触发时刷新持续时间。"
         }
       },
       "selectable_buff": {
         "buff_69015101": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升20%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升15%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升30%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升30%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升20%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升30%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升10%</color>，异常精通<color=#2BAD00>提升30点</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升40%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升40%</color>。"
         },
         "buff_69015103": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升25%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，<color=#FF5521>火属性异常积蓄效率</color><color=#2BAD00>提升10%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "monsters": [
         {
           "name": "异构·库萨里库",
-          "hp": 34657162,
+          "hp": 36757596,
           "defense": 953,
           "stun": 19007,
           "number": 1,

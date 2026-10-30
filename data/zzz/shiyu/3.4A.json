@@ -328,7 +328,7 @@
           "monsters": [
             [
               {
-                "name": "偷袭者",
+                "name": "焚毁狂",
                 "hp": 559044,
                 "defense": 636,
                 "stun": 1854,
@@ -342,8 +342,8 @@
                 "type": "C"
               },
               {
-                "name": "盗猎客",
-                "hp": 559044,
+                "name": "劫掠者",
+                "hp": 657578,
                 "defense": 636,
                 "stun": 1854,
                 "number": 1,
@@ -356,10 +356,10 @@
                 "type": "C"
               },
               {
-                "name": "多佩冈亚·莫尔斯",
-                "hp": 4161268,
+                "name": "通缉打手",
+                "hp": 3524048,
                 "defense": 794,
-                "stun": 12274,
+                "stun": 7793,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -372,10 +372,10 @@
                 "type": "B"
               },
               {
-                "name": "多佩冈亚·巴罗姆",
-                "hp": 4456465,
+                "name": "秽蚀·盛怒恶霸",
+                "hp": 6882378,
                 "defense": 794,
-                "stun": 14721,
+                "stun": 11046,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -383,23 +383,7 @@
                   "物理"
                 ],
                 "resistance": [
-                  "冰"
-                ],
-                "type": "B"
-              },
-              {
-                "name": "多佩冈亚·波可娜",
-                "hp": 4161268,
-                "defense": 794,
-                "stun": 12274,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "冰"
+                  "电"
                 ],
                 "type": "B"
               }
@@ -605,11 +589,11 @@
         },
         "buff_62001632": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升15%，造成的<color=#FF5521>火属性异常伤害</color>提升15%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升30点，持续20秒，此效果20秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升10%，造成的<color=#FF5521>火属性异常伤害</color>提升10%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升60点，持续20秒，此效果20秒内最多触发一次。"
         },
         "buff_62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -661,18 +645,18 @@
             ],
             [
               {
-                "name": "多佩冈亚·星徽·比利",
-                "hp": 69217921,
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 52688086,
                 "defense": 953,
-                "stun": 19541,
+                "stun": 14328,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "电"
+                  "物理"
                 ],
                 "resistance": [
-                  "物理"
+                  "以太"
                 ],
                 "type": "A"
               }
@@ -684,7 +668,7 @@
               "bold": false
             },
             {
-              "name": "多佩冈亚·星徽·比利",
+              "name": "秽蚀·多佩冈亚·「变节者」",
               "bold": true
             }
           ],
@@ -762,7 +746,7 @@
             [
               {
                 "name": "秽蚀·狂乱暴徒",
-                "hp": 7601949,
+                "hp": 6414145,
                 "defense": 858,
                 "stun": 10286,
                 "number": 1,
@@ -777,7 +761,7 @@
               },
               {
                 "name": "秽蚀·特里诺斯",
-                "hp": 10980417,
+                "hp": 9264727,
                 "defense": 858,
                 "stun": 11830,
                 "number": 1,
@@ -794,7 +778,7 @@
             [
               {
                 "name": "「空域戒戍者」",
-                "hp": 86467505,
+                "hp": 66432351,
                 "defense": 953,
                 "stun": 21120,
                 "number": 1,
@@ -883,18 +867,18 @@
             ],
             [
               {
-                "name": "多佩冈亚·星徽·比利",
-                "hp": 69217921,
+                "name": "秽蚀·多佩冈亚·「变节者」",
+                "hp": 52688086,
                 "defense": 953,
-                "stun": 19541,
+                "stun": 14328,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "电"
+                  "物理"
                 ],
                 "resistance": [
-                  "物理"
+                  "以太"
                 ],
                 "type": "A"
               }
@@ -906,7 +890,7 @@
               "bold": false
             },
             {
-              "name": "多佩冈亚·星徽·比利",
+              "name": "秽蚀·多佩冈亚·「变节者」",
               "bold": true
             }
           ],
@@ -921,7 +905,7 @@
       "layer_buff": {
         "buff_62001632": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升15%，造成的<color=#FF5521>火属性异常伤害</color>提升15%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升30点，持续20秒，此效果20秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升10%，造成的<color=#FF5521>火属性异常伤害</color>提升10%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升60点，持续20秒，此效果20秒内最多触发一次。"
         }
       },
       "layer_room": {
@@ -1000,7 +984,7 @@
       "layer_buff": {
         "buff_62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -1010,7 +994,7 @@
             [
               {
                 "name": "秽蚀·狂乱暴徒",
-                "hp": 7601949,
+                "hp": 6414145,
                 "defense": 858,
                 "stun": 10286,
                 "number": 1,
@@ -1025,7 +1009,7 @@
               },
               {
                 "name": "秽蚀·特里诺斯",
-                "hp": 10980417,
+                "hp": 9264727,
                 "defense": 858,
                 "stun": 11830,
                 "number": 1,
@@ -1042,7 +1026,7 @@
             [
               {
                 "name": "「空域戒戍者」",
-                "hp": 86467505,
+                "hp": 66432351,
                 "defense": 953,
                 "stun": 21120,
                 "number": 1,
