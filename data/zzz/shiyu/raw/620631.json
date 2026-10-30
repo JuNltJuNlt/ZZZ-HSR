@@ -423,10 +423,30 @@
         "62063031": {
           "monster_icon": "",
           "monster_list": {
-            "11613": {
-              "id": 200251,
-              "name": "多佩冈亚·巴罗姆",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Bellum.png",
+            "31322": {
+              "id": 20031,
+              "name": "秽蚀·盛怒恶霸",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_MiasmaWickedWraith.png",
+              "element": {
+                "ice": 0,
+                "fire": 1,
+                "electric": -1,
+                "ether": 0,
+                "physical": 1,
+                "wind": 0
+              },
+              "stats": {
+                "hp": 6882377.607,
+                "attack": 3899.3181818181815,
+                "defence": 794.0,
+                "stun": 11045.720000000001,
+                "attribute_infliction": 0.0
+              }
+            },
+            "11352": {
+              "id": 200171,
+              "name": "通缉打手",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_ThugBulkyEnforcerPro.png",
               "element": {
                 "ice": -1,
                 "fire": 1,
@@ -436,19 +456,19 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4456464.705,
-                "attack": 3400.9090909090905,
+                "hp": 3524047.695,
+                "attack": 2814.5454545454545,
                 "defence": 794.0,
-                "stun": 14720.76,
+                "stun": 7792.9800000000005,
                 "attribute_infliction": 0.0
               }
             },
-            "11623": {
-              "id": 200241,
-              "name": "多佩冈亚·波可娜",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Pulchra.png",
+            "11342": {
+              "id": 100151,
+              "name": "劫掠者",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugRaiderPro.png",
               "element": {
-                "ice": -1,
+                "ice": 0,
                 "fire": 1,
                 "electric": 0,
                 "ether": 0,
@@ -456,37 +476,17 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4161267.1799999997,
-                "attack": 3400.9090909090905,
-                "defence": 794.0,
-                "stun": 12273.48,
+                "hp": 657577.9349999999,
+                "attack": 1847.0454545454545,
+                "defence": 635.2,
+                "stun": 1854.0,
                 "attribute_infliction": 0.0
               }
             },
-            "11603": {
-              "id": 200231,
-              "name": "多佩冈亚·莫尔斯",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Doppelganger_Mors.png",
-              "element": {
-                "ice": -1,
-                "fire": 1,
-                "electric": 0,
-                "ether": 0,
-                "physical": 1,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 4161267.1799999997,
-                "attack": 2785.2272727272725,
-                "defence": 794.0,
-                "stun": 12273.48,
-                "attribute_infliction": 0.0
-              }
-            },
-            "11322": {
-              "id": 100181,
-              "name": "盗猎客",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPoacherPro.png",
+            "11332": {
+              "id": 100161,
+              "name": "焚毁狂",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugPyromaniacPro.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
@@ -502,26 +502,6 @@
                 "stun": 1854.0,
                 "attribute_infliction": 0.0
               }
-            },
-            "11312": {
-              "id": 100191,
-              "name": "偷袭者",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ThugAssaulterPro.png",
-              "element": {
-                "ice": 0,
-                "fire": 1,
-                "electric": 0,
-                "ether": 0,
-                "physical": 1,
-                "wind": 0
-              },
-              "stats": {
-                "hp": 559043.037,
-                "attack": 1847.0454545454545,
-                "defence": 635.2,
-                "stun": 1854.0,
-                "attribute_infliction": 0.0
-              }
             }
           },
           "monster_weakness": {
@@ -529,7 +509,7 @@
             "200": "物理"
           },
           "monster_resistance": {
-            "202": "冰属性"
+            "203": "电属性"
           },
           "waves_num": 3
         },
@@ -767,11 +747,11 @@
         },
         "62001632": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升15%，造成的<color=#FF5521>火属性异常伤害</color>提升15%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升30点，持续20秒，此效果20秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升10%，造成的<color=#FF5521>火属性异常伤害</color>提升10%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升60点，持续20秒，此效果20秒内最多触发一次。"
         },
         "62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
@@ -807,25 +787,25 @@
       "child": [],
       "layer_room": {
         "62063051": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_InnerKnightSlime.png",
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaIsoldeSlime.png",
           "monster_list": {
-            "31462": {
-              "id": 30051,
-              "name": "多佩冈亚·星徽·比利",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_InnerKnightSlime.png",
+            "31214": {
+              "id": 300372,
+              "name": "秽蚀·多佩冈亚·「变节者」",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaIsoldeSlime.png",
               "element": {
                 "ice": 0,
                 "fire": 1,
-                "electric": 1,
-                "ether": 0,
-                "physical": -1,
+                "electric": 0,
+                "ether": -1,
+                "physical": 1,
                 "wind": 0
               },
               "stats": {
-                "hp": 69217920.36,
+                "hp": 52688085.66,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
-                "stun": 19540.25,
+                "stun": 14327.95,
                 "attribute_infliction": 0.0
               }
             },
@@ -892,10 +872,10 @@
           },
           "monster_weakness": {
             "201": "火属性",
-            "203": "电属性"
+            "200": "物理"
           },
           "monster_resistance": {
-            "200": "物理"
+            "205": "以太"
           },
           "waves_num": 2
         }
@@ -913,7 +893,7 @@
       "layer_buff": {
         "62001632": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升15%，造成的<color=#FF5521>火属性异常伤害</color>提升15%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升30点，持续20秒，此效果20秒内最多触发一次。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升10%，造成的<color=#FF5521>火属性异常伤害</color>提升10%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升60点，持续20秒，此效果20秒内最多触发一次。"
         },
         "62001001": {
           "title": "",
@@ -1013,7 +993,7 @@
       "layer_buff": {
         "62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -1042,7 +1022,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 86467504.32,
+                "hp": 66432350.87999999,
                 "attack": 3179.0909090909095,
                 "defence": 952.8000000000001,
                 "stun": 21119.45,
@@ -1062,7 +1042,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 7601948.64,
+                "hp": 6414144.165,
                 "attack": 2836.727272727273,
                 "defence": 857.5200000000001,
                 "stun": 10285.95,
@@ -1082,7 +1062,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 10980416.16,
+                "hp": 9264726.135,
                 "attack": 2836.727272727273,
                 "defence": 857.5200000000001,
                 "stun": 11829.9,
