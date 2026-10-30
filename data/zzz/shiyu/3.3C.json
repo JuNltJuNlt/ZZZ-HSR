@@ -745,20 +745,32 @@
           "monsters": [
             [
               {
-                "name": "多佩冈亚·波可娜",
-                "hp": 7348743,
-                "defense": 794,
-                "stun": 14002,
+                "name": "秽息残兵·盾卫",
+                "hp": 1431639,
+                "defense": 731,
+                "stun": 2327,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "电"
                 ],
-                "resistance": [
-                  "冰"
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1431639,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
                 ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "拉赫穆",
@@ -793,22 +805,6 @@
                   "以太"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "多佩冈亚·星徽·比利",
-                "hp": 59088469,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
               }
             ]
           ],
@@ -818,7 +814,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·「骇鸟」、多佩冈亚·星徽·比利",
+              "name": "秽蚀·「骇鸟」",
               "bold": true
             }
           ],
@@ -999,20 +995,32 @@
           "monsters": [
             [
               {
-                "name": "多佩冈亚·波可娜",
-                "hp": 7348743,
-                "defense": 794,
-                "stun": 14002,
+                "name": "秽息残兵·盾卫",
+                "hp": 1431639,
+                "defense": 731,
+                "stun": 2327,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "电"
                 ],
-                "resistance": [
-                  "冰"
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "秽息残兵·炮手",
+                "hp": 1431639,
+                "defense": 636,
+                "stun": 2327,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
                 ],
-                "type": "B"
+                "resistance": [],
+                "type": "C"
               },
               {
                 "name": "拉赫穆",
@@ -1047,22 +1055,6 @@
                   "以太"
                 ],
                 "type": "A"
-              },
-              {
-                "name": "多佩冈亚·星徽·比利",
-                "hp": 59088469,
-                "defense": 953,
-                "stun": 19541,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "A"
               }
             ]
           ],
@@ -1072,7 +1064,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·「骇鸟」、多佩冈亚·星徽·比利",
+              "name": "秽蚀·「骇鸟」",
               "bold": true
             }
           ],
