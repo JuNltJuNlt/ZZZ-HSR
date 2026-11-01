@@ -76,7 +76,7 @@
         },
         "buff_69014906": {
           "title": "",
-          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>300操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>900操作得分</color>，最多获得5000操作得分。"
+          "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>300操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>900操作得分</color>，最多获得5000操作得分。\n· · 特殊技能期间，<color=#FFAF2C>抗打断能力</color>提升。"
         }
       },
       "selectable_buff": {
@@ -120,7 +120,7 @@
       "isFinal": false
     },
     "zone_69053103": {
-      "name": "以太异体·特里薇亚",
+      "name": "僭越者",
       "stage_num": 3,
       "monster_level": 70,
       "layer_buff": {
@@ -153,7 +153,7 @@
       },
       "monsters": [
         {
-          "name": "以太异体·特里薇亚",
+          "name": "僭越者",
           "hp": 33633922,
           "defense": 953,
           "stun": 20431,
@@ -179,7 +179,7 @@
   },
   "final_zone": {
     "zone_69053201": {
-      "name": "异构·滞变畸兽",
+      "name": "异构·基塔布鲁·滞变畸兽",
       "stage_num": 1,
       "monster_level": 70,
       "layer_buff": {
@@ -214,7 +214,7 @@
           "stun": 23277,
           "number": 1,
           "hp_ratio_sum": 1,
-          "weakness": ["火","电"],
+          "weakness": [],
           "resistance": [],
           "type": "S"
         }

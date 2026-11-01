@@ -689,18 +689,18 @@
             ],
             [
               {
-                "name": "缄枢",
-                "hp": 54580986,
+                "name": "幻矢单元",
+                "hp": 67542572,
                 "defense": 953,
                 "stun": 18236,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电",
+                  "以太",
                   "物理"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ],
                 "type": "A"
               }
@@ -712,7 +712,7 @@
               "bold": false
             },
             {
-              "name": "缄枢",
+              "name": "幻矢单元",
               "bold": true
             }
           ],
@@ -914,18 +914,18 @@
             ],
             [
               {
-                "name": "缄枢",
-                "hp": 54580986,
+                "name": "幻矢单元",
+                "hp": 67542572,
                 "defense": 953,
                 "stun": 18236,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "电",
+                  "以太",
                   "物理"
                 ],
                 "resistance": [
-                  "以太"
+                  "火"
                 ],
                 "type": "A"
               }
@@ -937,7 +937,7 @@
               "bold": false
             },
             {
-              "name": "缄枢",
+              "name": "幻矢单元",
               "bold": true
             }
           ],
