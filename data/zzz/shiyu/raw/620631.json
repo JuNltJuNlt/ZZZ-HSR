@@ -751,7 +751,7 @@
         },
         "62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%，攻击力提升10%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [
@@ -787,95 +787,95 @@
       "child": [],
       "layer_room": {
         "62063051": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaIsoldeSlime.png",
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_EvolvedTepes.png",
           "monster_list": {
-            "31214": {
-              "id": 300372,
-              "name": "秽蚀·多佩冈亚·「变节者」",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaIsoldeSlime.png",
+            "32001": {
+              "id": 30056,
+              "name": "蜕生·特佩什",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_EvolvedTepes.png",
               "element": {
-                "ice": 0,
+                "ice": -1,
                 "fire": 1,
-                "electric": 0,
-                "ether": -1,
-                "physical": 1,
+                "electric": 1,
+                "ether": 0,
+                "physical": 0,
                 "wind": 0
               },
               "stats": {
-                "hp": 52688085.66,
+                "hp": 51698070.9,
                 "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
-                "stun": 14327.95,
+                "stun": 17585.05,
                 "attribute_infliction": 0.0
               }
             },
-            "11522": {
-              "id": 200141,
-              "name": "凶心疯汉",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_RuthlessFiendPro.png",
+            "31832": {
+              "id": 20037,
+              "name": "特战·「捷足巡游者」",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv02/Monster_EvolvedFootRover.png",
               "element": {
-                "ice": 0,
+                "ice": -1,
                 "fire": 1,
-                "electric": -1,
+                "electric": 1,
                 "ether": 0,
                 "physical": 0,
                 "wind": 0
               },
               "stats": {
-                "hp": 6931491.84,
-                "attack": 2323.1818181818185,
-                "defence": 714.6,
-                "stun": 11169.550000000001,
+                "hp": 10307653.424999999,
+                "attack": 2665.545454545455,
+                "defence": 857.5200000000001,
+                "stun": 12600.7,
                 "attribute_infliction": 0.0
               }
             },
-            "11482": {
-              "id": 100271,
-              "name": "恶毒打手",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_ViciousStrikerPro.png",
+            "31782": {
+              "id": 10046,
+              "name": "特战·掠袭猎兵",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_EvolvedBlader.png",
               "element": {
                 "ice": 0,
-                "fire": 1,
-                "electric": 0,
+                "fire": 0,
+                "electric": 1,
                 "ether": 0,
                 "physical": 0,
                 "wind": 0
               },
               "stats": {
-                "hp": 1089393.12,
-                "attack": 1320.5454545454547,
+                "hp": 2264304.195,
+                "attack": 1931.909090909091,
                 "defence": 635.2,
-                "stun": 2115.0,
+                "stun": 2855.25,
                 "attribute_infliction": 0.0
               }
             },
-            "11492": {
-              "id": 100281,
-              "name": "贪婪射手",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_GreedyRangerPro.png",
+            "31792": {
+              "id": 10045,
+              "name": "特战·轻装猎兵",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv01/Monster_EvolvedRifleman.png",
               "element": {
                 "ice": 0,
-                "fire": 1,
-                "electric": 0,
+                "fire": 0,
+                "electric": 1,
                 "ether": 0,
                 "physical": 0,
                 "wind": 0
               },
               "stats": {
-                "hp": 1089393.12,
-                "attack": 1614.0000000000002,
+                "hp": 1924910.2349999999,
+                "attack": 1589.5454545454547,
                 "defence": 635.2,
-                "stun": 2115.0,
+                "stun": 2855.25,
                 "attribute_infliction": 0.0
               }
             }
           },
           "monster_weakness": {
             "201": "火属性",
-            "200": "物理"
+            "203": "电属性"
           },
           "monster_resistance": {
-            "205": "以太"
+            "202": "冰属性"
           },
           "waves_num": 2
         }
@@ -922,7 +922,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 60912339.20999999,
+                "hp": 65369339.64,
                 "attack": 3179.0909090909095,
                 "defence": 952.8000000000001,
                 "stun": 15486.5,
@@ -942,7 +942,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4999465.44,
+                "hp": 4843232.1450000005,
                 "attack": 2592.1818181818185,
                 "defence": 794.0,
                 "stun": 7111.1,
@@ -962,7 +962,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 7210782.720000001,
+                "hp": 6985445.76,
                 "attack": 2469.909090909091,
                 "defence": 794.0,
                 "stun": 9334.2,
@@ -993,7 +993,7 @@
       "layer_buff": {
         "62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%，攻击力提升10%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -1022,7 +1022,7 @@
                 "wind": 1
               },
               "stats": {
-                "hp": 66432350.87999999,
+                "hp": 52724088.0,
                 "attack": 3179.0909090909095,
                 "defence": 952.8000000000001,
                 "stun": 21119.45,
@@ -1042,7 +1042,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 6414144.165,
+                "hp": 5463900.585,
                 "attack": 2836.727272727273,
                 "defence": 857.5200000000001,
                 "stun": 10285.95,
@@ -1062,7 +1062,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 9264726.135,
+                "hp": 7892174.114999999,
                 "attack": 2836.727272727273,
                 "defence": 857.5200000000001,
                 "stun": 11829.9,

@@ -985,7 +985,7 @@
                     "wind": 0
                   },
                   "stats": {
-                    "hp": 37228874.26499999,
+                    "hp": 40613317.379999995,
                     "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
                     "stun": 23276.75,
@@ -1008,11 +1008,11 @@
           "selectable_buff": {
             "69015301": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69015302": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
               "title": "(Test1)TBD",
@@ -1086,11 +1086,11 @@
           "selectable_buff": {
             "69015301": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69015302": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
               "title": "(Test1)TBD",
@@ -1113,7 +1113,7 @@
             },
             "69014906": {
               "title": "",
-              "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>300操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>900操作得分</color>，最多获得5000操作得分。\n· · 特殊技能期间，<color=#FFAF2C>抗打断能力</color>提升。"
+              "desc": "· 成功<color=#FFAF2C>触发[极限支援]</color>时，可获得<color=#FFAF2C>300操作得分</color>。\n· 成功<color=#FFAF2C>造成部位破坏</color>时，可获得<color=#FFAF2C>900操作得分</color>，最多获得5000操作得分。"
             }
           },
           "layer_room": {
@@ -1156,11 +1156,11 @@
           "selectable_buff": {
             "69015301": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69015302": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
               "title": "(Test1)TBD",
@@ -1203,7 +1203,7 @@
                     "wind": 0
                   },
                   "stats": {
-                    "hp": 33633921.6,
+                    "hp": 31391660.159999996,
                     "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
                     "stun": 20430.9,
@@ -1227,11 +1227,11 @@
           "selectable_buff": {
             "69015301": {
               "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升20%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升20%</color>，持续10秒，重复触发时刷新持续时间。"
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
             },
             "69015302": {
               "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
               "title": "(Test1)TBD",
