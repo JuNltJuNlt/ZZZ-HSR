@@ -593,7 +593,7 @@
         },
         "buff_62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%，攻击力提升10%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -602,61 +602,62 @@
           "monsters": [
             [
               {
-                "name": "恶毒打手",
-                "hp": 1089394,
+                "name": "特战·掠袭猎兵",
+                "hp": 2264305,
                 "defense": 636,
-                "stun": 2115,
+                "stun": 2856,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [],
                 "type": "C"
               },
               {
-                "name": "贪婪射手",
-                "hp": 1089394,
+                "name": "特战·轻装猎兵",
+                "hp": 1924911,
                 "defense": 636,
-                "stun": 2115,
+                "stun": 2856,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [],
                 "type": "C"
               },
               {
-                "name": "凶心疯汉",
-                "hp": 6931492,
-                "defense": 715,
-                "stun": 11170,
+                "name": "特战·「捷足巡游者」",
+                "hp": 10307654,
+                "defense": 858,
+                "stun": 12601,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "火",
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "冰"
                 ],
                 "type": "B"
               }
             ],
             [
               {
-                "name": "秽蚀·多佩冈亚·「变节者」",
-                "hp": 52688086,
+                "name": "蜕生·特佩什",
+                "hp": 51698071,
                 "defense": 953,
-                "stun": 14328,
+                "stun": 17586,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰"
                 ],
                 "type": "A"
               }
@@ -668,7 +669,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·多佩冈亚·「变节者」",
+              "name": "蜕生·特佩什",
               "bold": true
             }
           ],
@@ -680,7 +681,7 @@
             [
               {
                 "name": "狂乱暴徒",
-                "hp": 4999466,
+                "hp": 4843233,
                 "defense": 794,
                 "stun": 7112,
                 "number": 1,
@@ -695,7 +696,7 @@
               },
               {
                 "name": "盛怒恶霸",
-                "hp": 7210783,
+                "hp": 6985446,
                 "defense": 794,
                 "stun": 9335,
                 "number": 1,
@@ -712,7 +713,7 @@
             [
               {
                 "name": "秽息蚀者·阿瓦鲁斯",
-                "hp": 60912340,
+                "hp": 65369340,
                 "defense": 953,
                 "stun": 15487,
                 "number": 1,
@@ -746,7 +747,7 @@
             [
               {
                 "name": "秽蚀·狂乱暴徒",
-                "hp": 6414145,
+                "hp": 5463901,
                 "defense": 858,
                 "stun": 10286,
                 "number": 1,
@@ -761,7 +762,7 @@
               },
               {
                 "name": "秽蚀·特里诺斯",
-                "hp": 9264727,
+                "hp": 7892175,
                 "defense": 858,
                 "stun": 11830,
                 "number": 1,
@@ -778,7 +779,7 @@
             [
               {
                 "name": "「空域戒戍者」",
-                "hp": 66432351,
+                "hp": 52724088,
                 "defense": 953,
                 "stun": 21120,
                 "number": 1,
@@ -824,61 +825,62 @@
           "monsters": [
             [
               {
-                "name": "恶毒打手",
-                "hp": 1089394,
+                "name": "特战·掠袭猎兵",
+                "hp": 2264305,
                 "defense": 636,
-                "stun": 2115,
+                "stun": 2856,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [],
                 "type": "C"
               },
               {
-                "name": "贪婪射手",
-                "hp": 1089394,
+                "name": "特战·轻装猎兵",
+                "hp": 1924911,
                 "defense": 636,
-                "stun": 2115,
+                "stun": 2856,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "电"
                 ],
                 "resistance": [],
                 "type": "C"
               },
               {
-                "name": "凶心疯汉",
-                "hp": 6931492,
-                "defense": 715,
-                "stun": 11170,
+                "name": "特战·「捷足巡游者」",
+                "hp": 10307654,
+                "defense": 858,
+                "stun": 12601,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
+                  "火",
+                  "电"
                 ],
                 "resistance": [
-                  "电"
+                  "冰"
                 ],
                 "type": "B"
               }
             ],
             [
               {
-                "name": "秽蚀·多佩冈亚·「变节者」",
-                "hp": 52688086,
+                "name": "蜕生·特佩什",
+                "hp": 51698071,
                 "defense": 953,
-                "stun": 14328,
+                "stun": 17586,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
+                  "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰"
                 ],
                 "type": "A"
               }
@@ -890,7 +892,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·多佩冈亚·「变节者」",
+              "name": "蜕生·特佩什",
               "bold": true
             }
           ],
@@ -915,7 +917,7 @@
             [
               {
                 "name": "狂乱暴徒",
-                "hp": 4999466,
+                "hp": 4843233,
                 "defense": 794,
                 "stun": 7112,
                 "number": 1,
@@ -930,7 +932,7 @@
               },
               {
                 "name": "盛怒恶霸",
-                "hp": 7210783,
+                "hp": 6985446,
                 "defense": 794,
                 "stun": 9335,
                 "number": 1,
@@ -947,7 +949,7 @@
             [
               {
                 "name": "秽息蚀者·阿瓦鲁斯",
-                "hp": 60912340,
+                "hp": 65369340,
                 "defense": 953,
                 "stun": 15487,
                 "number": 1,
@@ -984,7 +986,7 @@
       "layer_buff": {
         "buff_62001633": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%，攻击力提升10%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -994,7 +996,7 @@
             [
               {
                 "name": "秽蚀·狂乱暴徒",
-                "hp": 6414145,
+                "hp": 5463901,
                 "defense": 858,
                 "stun": 10286,
                 "number": 1,
@@ -1009,7 +1011,7 @@
               },
               {
                 "name": "秽蚀·特里诺斯",
-                "hp": 9264727,
+                "hp": 7892175,
                 "defense": 858,
                 "stun": 11830,
                 "number": 1,
@@ -1026,7 +1028,7 @@
             [
               {
                 "name": "「空域戒戍者」",
-                "hp": 66432351,
+                "hp": 52724088,
                 "defense": 953,
                 "stun": 21120,
                 "number": 1,

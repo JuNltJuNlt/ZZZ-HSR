@@ -14,11 +14,11 @@
         },
         "buff_69015107": {
           "title": "",
-          "desc": "(Test1)招架破除首领的强化部位或者击破其分身可以获得一层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升15%</color>，并使全队代理人获得<color=#2BAD00>防御力提升10%</color>，<color=#2BAD00>锐化伤害提升10%</color>。\n首领受到的<color=#2BAD00>异常伤害降低30%</color>。"
+          "desc": "招架破除首领的强化部位或者击破其分身可以获得1层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升10%</color>，并使全队代理人获得<color=#2BAD00>锐化伤害提升15%</color>，[裂核]最多叠加2层。\n首领受到的<color=#2BAD00>异常伤害降低30%</color>。"
         },
         "buff_69015108": {
           "title": "",
-          "desc": "(Test1)· 成功<color=#FFAF2C>击破分身</color>时，可获得<color=#FFAF2C>2000操作得分</color>。\n· 成功<color=#FFAF2C>击破巨剑</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
+          "desc": "· 成功<color=#FFAF2C>击破分裂体</color>时，可获得<color=#FFAF2C>2000操作得分</color>。\n· <color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>2000操作得分</color>。\n· 成功<color=#FFAF2C>击破巨剑</color>时，可获得<color=#FFAF2C>1500操作得分</color>，最多获得5000操作得分。"
         }
       },
       "selectable_buff": {
@@ -28,7 +28,7 @@
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，自身造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续30秒，重复触发时刷新持续时间。"
         },
         "buff_69015203": {
           "title": "(Test1)TBD",
@@ -38,7 +38,7 @@
       "monsters": [
         {
           "name": "新生之结·？？？",
-          "hp": 26255426,
+          "hp": 35707379,
           "defense": 953,
           "stun": 19007,
           "number": 1,
@@ -61,21 +61,21 @@
       "isFinal": false
     },
     "zone_69052102": {
-      "name": "猎血清道夫",
+      "name": "魇缚者·叶释渊",
       "stage_num": 2,
       "monster_level": 70,
       "layer_buff": {
-        "buff_69013003": {
+        "buff_69012602": {
           "title": "",
-          "desc": "· 适合<IconMap:Icon_AvatarClass_Anomaly><color=#FFAF2C>[异常]</color>特性的代理人挑战。"
+          "desc": "· 索贝克与魇缚者每次交替上场时，可使魇缚者获得1层<color=#FFFFFF>[合契]</color>与一层<color=#FFFFFF>[舍身]</color>，[合契]与[舍身]最多叠加3层，每层[合契]可使全属性异常积蓄抗性<color=#FFAF2C>提升15%</color>，每层[舍身]可使魇缚者防御<color=#FFAF2C>降低8%</color>；魇缚者进入失衡状态时，受到暴击伤害<color=#FFAF2C>提升50%</color>。"
         },
-        "buff_69013303": {
+        "buff_69012603": {
           "title": "",
-          "desc": "·[侵蚀壁垒]持续期间，代理人对其造成的异常伤害<color=#2BAD00>提升50%</color>，造成的异常积蓄<color=#2BAD00>提升30%</color>；首领在失衡状态下，受到的异常伤害<color=#2BAD00>提升15%</color>，代理人对其造成的异常积蓄<color=#2BAD00>提升15%</color>；首领在非失衡状态下，受到的伤害<color=#2BAD00>降低15%</color>。"
+          "desc": "· 代理人使索贝克与魇缚者进入<color=#FFAF2C>虚弱状态</color>时，可获得<color=#FFAF2C>1500操作得分</color>；代理人<color=#FFAF2C>击杀索贝克</color>时，可获得<color=#FFAF2C>2000操作得分</color>，最多获得5000操作得分。"
         },
-        "buff_69013304": {
+        "buff_69013004": {
           "title": "",
-          "desc": "·每次成功应对首领的攻击并使其触发特殊跪地，可获得<color=#FFAF2C>1000操作得分</color>；<Term:2000003></Term>期间，每次成功应对首领的攻击，可获得<color=#FFAF2C>500操作得分</color>；<color=#FFAF2C>[完美反制]</color>首领的<color=#FFAF2C>[控制技]</color>时，可获得<color=#FFAF2C>2000操作得分</color>。<Term:2000003></Term>期间，通过<color=#FFAF2C><Term:2000006></Term></color>造成<color=#FFAF2C>[完美反制]</color>时，会获得该次<color=#FFAF2C>[控制技]</color>剩余的成功应对得分。最多获得5000操作得分。"
+          "desc": "· 适合<IconMap:Icon_AvatarClass_Stun><color=#FFAF2C>[击破]</color>特性的代理人挑战。"
         }
       },
       "selectable_buff": {
@@ -85,7 +85,7 @@
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，自身造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续30秒，重复触发时刷新持续时间。"
         },
         "buff_69015203": {
           "title": "(Test1)TBD",
@@ -94,19 +94,19 @@
       },
       "monsters": [
         {
-          "name": "猎血清道夫",
-          "hp": 45207484,
-          "defense": 477,
-          "stun": 17877,
+          "name": "魇缚者·叶释渊",
+          "hp": 25665305,
+          "defense": 953,
+          "stun": 17586,
           "number": 1,
           "hp_ratio_sum": 1,
           "weakness": [
-            "电",
-            "以太"
+            "冰",
+            "物理",
+            "风"
           ],
           "resistance": [
-            "*火*",
-            "*风*"
+            "*电*"
           ],
           "type": "S"
         }
@@ -144,7 +144,7 @@
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，自身造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续30秒，重复触发时刷新持续时间。"
         },
         "buff_69015203": {
           "title": "(Test1)TBD",
@@ -197,7 +197,7 @@
         },
         "buff_69015202": {
           "title": "(Test1)TBD",
-          "desc": "· 代理人的异常精通<color=#2BAD00>提升40点</color>，<color=#2EB6FF>电属性异常积蓄效率</color><color=#2BAD00>提升15%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的属性异常伤害<color=#2BAD00>提升30%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[击破]</color>特性的代理人对敌人造成的失衡值<color=#2BAD00>提升15%</color>。\n· 代理人发动<color=#FFFFFF>[终结技]</color>后，自身造成的伤害<color=#2BAD00>提升30%</color>，暴击伤害<color=#2BAD00>提升40%</color>，持续30秒，重复触发时刷新持续时间。"
         },
         "buff_69015203": {
           "title": "(Test1)TBD",

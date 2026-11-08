@@ -696,11 +696,11 @@
         },
         "buff_62001652": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升15%，异常精通提升30点。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队异常积蓄效率提升15%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升15%，异常精通提升30点。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队异常积蓄效率提升15%，造成的<color=#FFFFFF>[紊乱]</color>伤害提升35%，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_62001653": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，全队攻击力提升15%，持续15秒，重复触发时刷新持续时间。\n· 全队造成的<color=#A6C5FD>风属性伤害</color>提升30%，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>。"
+          "desc": "· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。\n· 全队造成的<color=#A6C5FD>风属性伤害</color>提升30%，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -709,109 +709,44 @@
           "monsters": [
             [
               {
-                "name": "恶毒打手",
-                "hp": 1089394,
+                "name": "特战·掠袭猎兵",
+                "hp": 2264305,
                 "defense": 636,
-                "stun": 2115,
+                "stun": 2856,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "贪婪射手",
-                "hp": 1089394,
-                "defense": 636,
-                "stun": 2115,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "凶心疯汉",
-                "hp": 6931492,
-                "defense": 715,
-                "stun": 11170,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": [
                   "电"
                 ],
-                "type": "B"
-              }
-            ],
-            [
+                "resistance": [],
+                "type": "C"
+              },
               {
-                "name": "秽蚀·多佩冈亚·「变节者」",
-                "hp": 52688086,
-                "defense": 953,
-                "stun": 14328,
+                "name": "特战·轻装猎兵",
+                "hp": 1924911,
+                "defense": 636,
+                "stun": 2856,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "特战·「捷足巡游者」",
+                "hp": 10307654,
+                "defense": 858,
+                "stun": 12601,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
-              }
-            ]
-          ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "秽蚀·多佩冈亚·「变节者」",
-              "bold": true
-            }
-          ],
-          "weakness": []
-        },
-        "room_62065052_62065052": {
-          "level": 70,
-          "monsters": [
-            [
-              {
-                "name": "「捷足巡游者Ⅱ型」",
-                "hp": 4921238,
-                "defense": 858,
-                "stun": 9335,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
                   "电"
                 ],
                 "resistance": [
-                  "火"
-                ],
-                "type": "B"
-              },
-              {
-                "name": "「重装侵袭者Ⅱ型」",
-                "hp": 6084098,
-                "defense": 858,
-                "stun": 9335,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": [
-                  "火"
+                  "冰"
                 ],
                 "type": "B"
               }
@@ -819,7 +754,7 @@
             [
               {
                 "name": "蜕生·特佩什",
-                "hp": 46528264,
+                "hp": 51698071,
                 "defense": 953,
                 "stun": 17586,
                 "number": 1,
@@ -847,13 +782,79 @@
           ],
           "weakness": []
         },
+        "room_62065052_62065052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4556702,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 5633424,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "「征服者」",
+                "hp": 47050645,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「征服者」",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        },
         "room_62065053_62065053": {
           "level": 70,
           "monsters": [
             [
               {
                 "name": "城防戍卫布",
-                "hp": 10389353,
+                "hp": 9350418,
                 "defense": 858,
                 "stun": 14002,
                 "number": 1,
@@ -867,7 +868,7 @@
               },
               {
                 "name": "特勤镇暴布",
-                "hp": 1940705,
+                "hp": 1746635,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -881,7 +882,7 @@
               },
               {
                 "name": "空域侦巡布",
-                "hp": 1940705,
+                "hp": 1746635,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -897,7 +898,7 @@
             [
               {
                 "name": "蜕生·蝎骸",
-                "hp": 53323433,
+                "hp": 44202320,
                 "defense": 953,
                 "stun": 19541,
                 "number": 1,
@@ -943,122 +944,44 @@
           "monsters": [
             [
               {
-                "name": "恶毒打手",
-                "hp": 1089394,
+                "name": "特战·掠袭猎兵",
+                "hp": 2264305,
                 "defense": 636,
-                "stun": 2115,
+                "stun": 2856,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "火"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "贪婪射手",
-                "hp": 1089394,
-                "defense": 636,
-                "stun": 2115,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "凶心疯汉",
-                "hp": 6931492,
-                "defense": 715,
-                "stun": 11170,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火"
-                ],
-                "resistance": [
                   "电"
                 ],
-                "type": "B"
-              }
-            ],
-            [
+                "resistance": [],
+                "type": "C"
+              },
               {
-                "name": "秽蚀·多佩冈亚·「变节者」",
-                "hp": 52688086,
-                "defense": 953,
-                "stun": 14328,
+                "name": "特战·轻装猎兵",
+                "hp": 1924911,
+                "defense": 636,
+                "stun": 2856,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [],
+                "type": "C"
+              },
+              {
+                "name": "特战·「捷足巡游者」",
+                "hp": 10307654,
+                "defense": 858,
+                "stun": 12601,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
                   "火",
-                  "物理"
-                ],
-                "resistance": [
-                  "以太"
-                ],
-                "type": "A"
-              }
-            ]
-          ],
-          "waveNames": [
-            {
-              "name": "小怪波",
-              "bold": false
-            },
-            {
-              "name": "秽蚀·多佩冈亚·「变节者」",
-              "bold": true
-            }
-          ],
-          "weakness": []
-        }
-      }
-    },
-    "zone_62065052": {
-      "name": "房间二",
-      "stage_num": 5,
-      "monster_level": 70,
-      "layer_buff": {
-        "buff_62001652": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升15%，异常精通提升30点。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队异常积蓄效率提升15%，造成的属性异常伤害提升30%，持续15秒，重复触发时刷新持续时间。"
-        }
-      },
-      "layer_room": {
-        "room_62065052": {
-          "level": 70,
-          "monsters": [
-            [
-              {
-                "name": "「捷足巡游者Ⅱ型」",
-                "hp": 4921238,
-                "defense": 858,
-                "stun": 9335,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
                   "电"
                 ],
                 "resistance": [
-                  "火"
-                ],
-                "type": "B"
-              },
-              {
-                "name": "「重装侵袭者Ⅱ型」",
-                "hp": 6084098,
-                "defense": 858,
-                "stun": 9335,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": [
-                  "火"
+                  "冰"
                 ],
                 "type": "B"
               }
@@ -1066,7 +989,7 @@
             [
               {
                 "name": "蜕生·特佩什",
-                "hp": 46528264,
+                "hp": 51698071,
                 "defense": 953,
                 "stun": 17586,
                 "number": 1,
@@ -1096,6 +1019,85 @@
         }
       }
     },
+    "zone_62065052": {
+      "name": "房间二",
+      "stage_num": 5,
+      "monster_level": 70,
+      "layer_buff": {
+        "buff_62001652": {
+          "title": "(Test1)TBD",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升15%，异常精通提升30点。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队异常积蓄效率提升15%，造成的<color=#FFFFFF>[紊乱]</color>伤害提升35%，持续15秒，重复触发时刷新持续时间。"
+        }
+      },
+      "layer_room": {
+        "room_62065052": {
+          "level": 70,
+          "monsters": [
+            [
+              {
+                "name": "「捷足巡游者Ⅱ型」",
+                "hp": 4556702,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              },
+              {
+                "name": "「重装侵袭者Ⅱ型」",
+                "hp": 5633424,
+                "defense": 858,
+                "stun": 9335,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电"
+                ],
+                "resistance": [
+                  "火"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "「征服者」",
+                "hp": 47050645,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "电",
+                  "风"
+                ],
+                "resistance": [
+                  "物理"
+                ],
+                "type": "A"
+              }
+            ]
+          ],
+          "waveNames": [
+            {
+              "name": "小怪波",
+              "bold": false
+            },
+            {
+              "name": "「征服者」",
+              "bold": true
+            }
+          ],
+          "weakness": []
+        }
+      }
+    },
     "zone_62065053": {
       "name": "房间三",
       "stage_num": 5,
@@ -1103,7 +1105,7 @@
       "layer_buff": {
         "buff_62001653": {
           "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，全队攻击力提升15%，持续15秒，重复触发时刷新持续时间。\n· 全队造成的<color=#A6C5FD>风属性伤害</color>提升30%，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>。"
+          "desc": "· <color=#FFFFFF>[支援]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，全队攻击力提升20%，持续15秒，重复触发时刷新持续时间。\n· 全队造成的<color=#A6C5FD>风属性伤害</color>提升30%，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>。"
         }
       },
       "layer_room": {
@@ -1113,7 +1115,7 @@
             [
               {
                 "name": "城防戍卫布",
-                "hp": 10389353,
+                "hp": 9350418,
                 "defense": 858,
                 "stun": 14002,
                 "number": 1,
@@ -1127,7 +1129,7 @@
               },
               {
                 "name": "特勤镇暴布",
-                "hp": 1940705,
+                "hp": 1746635,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -1141,7 +1143,7 @@
               },
               {
                 "name": "空域侦巡布",
-                "hp": 1940705,
+                "hp": 1746635,
                 "defense": 683,
                 "stun": 3173,
                 "number": 1,
@@ -1157,7 +1159,7 @@
             [
               {
                 "name": "蜕生·蝎骸",
-                "hp": 53323433,
+                "hp": 44202320,
                 "defense": 953,
                 "stun": 19541,
                 "number": 1,
