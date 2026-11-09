@@ -1926,6 +1926,30 @@
             "stun": 3750,
             "weakness": ["火"],
             "resistance": ["*冰*"]
+        },
+        {
+            "name": "未成之结",
+            "type": "S",
+            "category": 1,
+            "stun": 0,
+            "weakness": ["冰","电"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "「预言家」",
+            "type": "A",
+            "category": 5,
+            "stun": 3750,
+            "weakness": ["火"],
+            "resistance": ["物理"]
+        },
+        {
+            "name": "多佩冈亚·卡芙卡",
+            "type": "A",
+            "category": 1,
+            "stun": 3750,
+            "weakness": ["火"],
+            "resistance": ["物理"]
         }
     ]
 }
