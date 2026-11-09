@@ -822,6 +822,7 @@ const collectMonsterAppearances = () => {
         processZone(entry.final_zone, 15.8);
     }
 
+    // 按 entryIndex 升序：最早的在前，最晚的在后
     map.forEach(records => records.sort((a, b) => a.entryIndex - b.entryIndex));
     return map;
 };
@@ -830,9 +831,18 @@ const renderAppearanceCard = (monsterName, records) => {
     const info = monstersData.find(m => m.name === monsterName) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monsterName}.webp`;
+    // records 已按时间升序，first 为最早，last 为最晚
     const firstHp = records[0]?.hp ?? 0;
     const lastHp = records[records.length - 1]?.hp ?? 0;
     const totalCount = records.reduce((sum, r) => sum + r.count, 0);
+
+    // 防御力：取基础数据库中的防御（或首次记录的防御），这里用 info 里的防御值
+    // 若 info 无 defense，尝试从 records 关联的怪物对象取，但 records 未存 defense。
+    // 为准确，我们在 collectMonsterAppearances 中保存 defense 更稳妥，这里先使用 info.defense 或 476
+    const def = info.defense ?? 476;
+
+    // 异常值 ×1.1
+    const abnormalValue = Math.round((info.stun || 0) * 1.1);
 
     const img = image(imagePath, "monicon hasimg", monsterName);
     img.style.height = "180px";
@@ -841,7 +851,12 @@ const renderAppearanceCard = (monsterName, records) => {
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
 
-    const weaknessBars = renderWeaknessBars({ name: monsterName, weakness: info.weakness || [], resistance: info.resistance || [] }, 0);
+    // 弱点/抗性条：使用基础数据库，保留异常条长度（异常值 ×1.1）
+    const weaknessBars = renderWeaknessBars(
+        { name: monsterName, weakness: info.weakness || [], resistance: info.resistance || [] },
+        abnormalValue
+    );
+
     const stun = info.stun || 0;
 
     return create("span", {
@@ -850,10 +865,16 @@ const renderAppearanceCard = (monsterName, records) => {
             create("div", { className: "monleft", children: [img, nameLayer] }),
             weaknessBars,
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
+                // 失衡值
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
+                // 血量范围（首次 → 最后）
                 create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${firstHp} → ${lastHp}</color></b>` }),
                 create("br"),
+                // 防御力（保留）
+                create("span", { className: "monname_2", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
+                create("br"),
+                // 登场次数（绿色）
                 create("span", { className: "monname_2", html: `<b><color style="color:#4CAF50;">登场 ${totalCount} 次</color></b>` }),
             ]}),
         ],
@@ -866,8 +887,22 @@ const renderAppearanceSection = () => {
         sectionEl = create("div", { id: "appearanceSection" });
         const contentEl = document.querySelector(".content");
         if (contentEl) {
-            // 插入到 content 的最前面，位于原内容上方
-            contentEl.insertBefore(sectionEl, contentEl.firstChild);
+            // 插入到按钮组之后、deadlyLayout 之前
+            const downloadBtn = contentEl.querySelector("#downloadBtn");
+            const layout = contentEl.querySelector("#deadlyLayout");
+            if (downloadBtn && layout) {
+                // downloadBtn 的父容器即按钮组，插入到按钮组后面
+                const btnGroup = downloadBtn.parentElement;
+                if (btnGroup && btnGroup.parentElement === contentEl) {
+                    contentEl.insertBefore(sectionEl, btnGroup.nextSibling);
+                } else {
+                    contentEl.insertBefore(sectionEl, layout);
+                }
+            } else if (layout) {
+                contentEl.insertBefore(sectionEl, layout);
+            } else {
+                contentEl.appendChild(sectionEl);
+            }
         } else {
             document.body.appendChild(sectionEl);
         }
@@ -916,17 +951,10 @@ const toggleAppearanceSection = () => {
 
     let sectionEl = document.getElementById("appearanceSection");
     if (!sectionEl) {
-        // 创建容器并插入到 .content 最前面
-        sectionEl = create("div", { id: "appearanceSection" });
-        const contentEl = document.querySelector(".content");
-        if (contentEl) {
-            contentEl.insertBefore(sectionEl, contentEl.firstChild);
-        } else {
-            document.body.appendChild(sectionEl);
-        }
+        renderAppearanceSection();
+        sectionEl = document.getElementById("appearanceSection");
     }
 
-    // 判空保护，避免 null.style
     if (sectionEl) {
         sectionEl.style.display = appearanceVisible ? "" : "none";
     }
@@ -941,30 +969,38 @@ const toggleAppearanceSection = () => {
     }
 };
 
-// 初始化按钮：完全复制下载按钮的结构与样式
+// 初始化按钮：克隆下载按钮并强制高度一致
 const initAppearanceButton = () => {
     const downloadBtn = byId("downloadBtn");
     if (!downloadBtn || byId("appearanceToggleBtn")) return;
 
-    // 父容器居中
     const parent = downloadBtn.parentElement;
     if (parent) {
         parent.style.display = "flex";
         parent.style.justifyContent = "center";
-        parent.style.alignItems = "center";
+        parent.style.alignItems = "center"; // 垂直居中
         parent.style.gap = "16px";
     }
 
-    // 克隆下载按钮，保留所有属性和样式，然后改 id 和文字
     const clone = downloadBtn.cloneNode(true);
     clone.id = "appearanceToggleBtn";
     clone.textContent = "强敌登场次数";
-    // 移除可能存在的 href 下载行为，改为按钮行为
     if (clone.tagName.toLowerCase() === "a") {
         clone.removeAttribute("download");
         clone.href = "javascript:void(0)";
     }
-    // 绑定点击事件
+
+    // 强制高度一致：复制计算样式中的高度、行高、内边距等
+    const computed = window.getComputedStyle(downloadBtn);
+    clone.style.height = computed.height;
+    clone.style.lineHeight = computed.lineHeight;
+    clone.style.paddingTop = computed.paddingTop;
+    clone.style.paddingBottom = computed.paddingBottom;
+    clone.style.display = computed.display;
+    clone.style.boxSizing = computed.boxSizing;
+    // 保证 flex 容器中不拉伸
+    clone.style.alignSelf = "center";
+
     clone.addEventListener("click", (e) => {
         e.preventDefault();
         toggleAppearanceSection();
