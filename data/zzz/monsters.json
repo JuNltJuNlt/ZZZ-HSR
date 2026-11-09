@@ -123,7 +123,7 @@
             "name": "曼德拉",
             "type": "C",
             "category": 1,
-            "stuns": 0,
+            "stun": 0,
             "weakness": ["冰", "以太"],
             "resistance": []
         },
