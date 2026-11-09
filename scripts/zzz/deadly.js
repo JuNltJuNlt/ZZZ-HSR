@@ -212,7 +212,20 @@ const renderWeaknessBars = (monster, abnormalValue) => {
 
     const items = Array.from(mapItems.values());
 
-    if (items.length === 0 && !abnormalValue) return null;
+    // 即使没有弱点/抗性，也返回一个占位容器，保证下方数值对齐
+    if (items.length === 0 && !abnormalValue) {
+        return create("div", {
+            style: {
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "6px",
+                marginTop: "4px",
+                minHeight: "28px",
+                visibility: "hidden",
+            }
+        });
+    }
 
     return create("div", {
         style: { display: "flex", justifyContent: "center", alignItems: "center", gap: "6px", marginTop: "4px", minHeight: "28px" },
@@ -772,6 +785,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
 
 // ==================== 强敌登场次数 ====================
 
+// 收集登场记录：同时保存防御值，确保防御正确；返回 { map, maxCount }
 const collectMonsterAppearances = () => {
     const map = new Map();
 
@@ -805,14 +819,16 @@ const collectMonsterAppearances = () => {
                     if (!m.name) return;
                     const rawHp = getAdjustedHp(m);
                     const totalHp = Math.round(rawHp * (m.hp_ratio_sum ?? 1) * multiplier);
+                    const def = Math.round(getAdjustedDef(m)); // 使用该怪物当期真实防御
                     if (!map.has(m.name)) map.set(m.name, []);
                     const arr = map.get(m.name);
                     const existing = arr.find(r => r.entryIndex === idx);
                     if (existing) {
                         existing.hp += totalHp;
                         existing.count += 1;
+                        existing.defense = def; // 保留最后一次的防御（或任意）
                     } else {
-                        arr.push({ entryIndex: idx, hp: totalHp, count: 1 });
+                        arr.push({ entryIndex: idx, hp: totalHp, count: 1, defense: def });
                     }
                 });
             }
@@ -822,7 +838,7 @@ const collectMonsterAppearances = () => {
         processZone(entry.final_zone, 15.8);
     }
 
-    // 按 entryIndex 升序：最早的在前，最晚的在后
+    // 按 entryIndex 升序：最早在前，最晚在后
     map.forEach(records => records.sort((a, b) => a.entryIndex - b.entryIndex));
     return map;
 };
@@ -831,17 +847,10 @@ const renderAppearanceCard = (monsterName, records) => {
     const info = monstersData.find(m => m.name === monsterName) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monsterName}.webp`;
-    // records 已按时间升序，first 为最早，last 为最晚
     const firstHp = records[0]?.hp ?? 0;
     const lastHp = records[records.length - 1]?.hp ?? 0;
     const totalCount = records.reduce((sum, r) => sum + r.count, 0);
-
-    // 防御力：取基础数据库中的防御（或首次记录的防御），这里用 info 里的防御值
-    // 若 info 无 defense，尝试从 records 关联的怪物对象取，但 records 未存 defense。
-    // 为准确，我们在 collectMonsterAppearances 中保存 defense 更稳妥，这里先使用 info.defense 或 476
-    const def = info.defense ?? 476;
-
-    // 异常值 ×1.1
+    const def = records[records.length - 1]?.defense ?? info.defense ?? 476; // 取最后一次防御
     const abnormalValue = Math.round((info.stun || 0) * 1.1);
 
     const img = image(imagePath, "monicon hasimg", monsterName);
@@ -851,7 +860,6 @@ const renderAppearanceCard = (monsterName, records) => {
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
     img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
 
-    // 弱点/抗性条：使用基础数据库，保留异常条长度（异常值 ×1.1）
     const weaknessBars = renderWeaknessBars(
         { name: monsterName, weakness: info.weakness || [], resistance: info.resistance || [] },
         abnormalValue
@@ -865,38 +873,39 @@ const renderAppearanceCard = (monsterName, records) => {
             create("div", { className: "monleft", children: [img, nameLayer] }),
             weaknessBars,
             create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
-                // 失衡值
                 create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
                 create("br"),
-                // 血量范围（首次 → 最后）
                 create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${firstHp} → ${lastHp}</color></b>` }),
                 create("br"),
-                // 防御力（保留）
                 create("span", { className: "monname_2", html: `<b><color style="color:#2545ba;">${def}</color></b>` }),
                 create("br"),
-                // 登场次数（绿色）
                 create("span", { className: "monname_2", html: `<b><color style="color:#4CAF50;">登场 ${totalCount} 次</color></b>` }),
             ]}),
         ],
     });
 };
 
-const renderAppearanceSection = () => {
+// 保证只有一个 #appearanceSection
+const ensureAppearanceSection = () => {
+    let sections = document.querySelectorAll("#appearanceSection");
+    if (sections.length > 1) {
+        for (let i = 1; i < sections.length; i++) sections[i].remove();
+    }
     let sectionEl = document.getElementById("appearanceSection");
     if (!sectionEl) {
         sectionEl = create("div", { id: "appearanceSection" });
         const contentEl = document.querySelector(".content");
         if (contentEl) {
-            // 插入到按钮组之后、deadlyLayout 之前
             const downloadBtn = contentEl.querySelector("#downloadBtn");
             const layout = contentEl.querySelector("#deadlyLayout");
-            if (downloadBtn && layout) {
-                // downloadBtn 的父容器即按钮组，插入到按钮组后面
+            if (downloadBtn) {
                 const btnGroup = downloadBtn.parentElement;
                 if (btnGroup && btnGroup.parentElement === contentEl) {
                     contentEl.insertBefore(sectionEl, btnGroup.nextSibling);
-                } else {
+                } else if (layout) {
                     contentEl.insertBefore(sectionEl, layout);
+                } else {
+                    contentEl.appendChild(sectionEl);
                 }
             } else if (layout) {
                 contentEl.insertBefore(sectionEl, layout);
@@ -907,13 +916,24 @@ const renderAppearanceSection = () => {
             document.body.appendChild(sectionEl);
         }
     }
+    return sectionEl;
+};
 
+const renderAppearanceSection = () => {
+    const sectionEl = ensureAppearanceSection();
     sectionEl.innerHTML = "";
 
     const map = collectMonsterAppearances();
-    const names = Array.from(map.keys()).sort();
 
-    if (names.length === 0) {
+    // 按登场次数降序排序；次数相同按名字排序
+    const sorted = Array.from(map.entries()).sort((a, b) => {
+        const ca = a[1].reduce((s, r) => s + r.count, 0);
+        const cb = b[1].reduce((s, r) => s + r.count, 0);
+        if (cb !== ca) return cb - ca;
+        return a[0].localeCompare(b[0]);
+    });
+
+    if (sorted.length === 0) {
         sectionEl.appendChild(create("div", {
             style: { textAlign: "center", color: "#999", padding: "30px" },
             text: "暂无强敌登场记录"
@@ -931,29 +951,22 @@ const renderAppearanceSection = () => {
         }
     });
 
-    names.forEach(name => {
-        grid.appendChild(renderAppearanceCard(name, map.get(name)));
+    sorted.forEach(([name, records]) => {
+        grid.appendChild(renderAppearanceCard(name, records));
     });
 
     sectionEl.appendChild(create("div", {
         style: { fontSize: "22px", fontWeight: "bold", textAlign: "center", margin: "20px 0 10px", color: "#222" },
         text: "强敌登场次数"
     }));
-    sectionEl.appendChild(create("div", {
-        style: { textAlign: "center", color: "#666", fontSize: "14px", marginBottom: "10px" },
-        text: "首次登场血量 → 最后一次登场血量（试炼倍率 8.74，绝境倍率 15.8）"
-    }));
+    // 不再显示那行倍率说明
     sectionEl.appendChild(grid);
 };
 
 const toggleAppearanceSection = () => {
     appearanceVisible = !appearanceVisible;
 
-    let sectionEl = document.getElementById("appearanceSection");
-    if (!sectionEl) {
-        renderAppearanceSection();
-        sectionEl = document.getElementById("appearanceSection");
-    }
+    const sectionEl = ensureAppearanceSection();
 
     if (sectionEl) {
         sectionEl.style.display = appearanceVisible ? "" : "none";
@@ -969,7 +982,7 @@ const toggleAppearanceSection = () => {
     }
 };
 
-// 初始化按钮：克隆下载按钮并强制高度一致
+// 初始化按钮：完全复制下载按钮结构与尺寸，并保证文字竖直居中
 const initAppearanceButton = () => {
     const downloadBtn = byId("downloadBtn");
     if (!downloadBtn || byId("appearanceToggleBtn")) return;
@@ -978,7 +991,7 @@ const initAppearanceButton = () => {
     if (parent) {
         parent.style.display = "flex";
         parent.style.justifyContent = "center";
-        parent.style.alignItems = "center"; // 垂直居中
+        parent.style.alignItems = "center";
         parent.style.gap = "16px";
     }
 
@@ -990,16 +1003,28 @@ const initAppearanceButton = () => {
         clone.href = "javascript:void(0)";
     }
 
-    // 强制高度一致：复制计算样式中的高度、行高、内边距等
+    // 强制与下载按钮完全一致的高度、内边距、行高等
     const computed = window.getComputedStyle(downloadBtn);
     clone.style.height = computed.height;
-    clone.style.lineHeight = computed.lineHeight;
     clone.style.paddingTop = computed.paddingTop;
     clone.style.paddingBottom = computed.paddingBottom;
+    clone.style.paddingLeft = computed.paddingLeft;
+    clone.style.paddingRight = computed.paddingRight;
+    clone.style.lineHeight = computed.lineHeight;
+    clone.style.fontSize = computed.fontSize;
     clone.style.display = computed.display;
     clone.style.boxSizing = computed.boxSizing;
-    // 保证 flex 容器中不拉伸
     clone.style.alignSelf = "center";
+    clone.style.textAlign = "center";
+    // 如果下载按钮是 inline-block 或 flex，确保文字垂直居中
+    if (computed.display === "inline-block" || computed.display === "block") {
+        clone.style.lineHeight = computed.height; // 单行文字垂直居中
+    }
+    // 对于 flex 布局，使用 align-items 居中文字
+    if (computed.display === "flex" || computed.display === "inline-flex") {
+        clone.style.alignItems = "center";
+        clone.style.justifyContent = "center";
+    }
 
     clone.addEventListener("click", (e) => {
         e.preventDefault();
