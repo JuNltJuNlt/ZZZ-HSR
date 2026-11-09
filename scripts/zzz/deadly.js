@@ -15,7 +15,6 @@ let bossChartInstance = null;
 let finalChartInstance = null;
 let normalizeMode = false;
 
-// ===== 新增：强敌登场次数状态 =====
 let appearanceVisible = false;
 
 const text = {
@@ -771,62 +770,18 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     }, true);
 };
 
-// ==================== 新增：强敌登场次数 ====================
+// ==================== 强敌登场次数 ====================
 
-// 收集所有怪物登场记录，按名字分组，区分试炼/绝境
 const collectMonsterAppearances = () => {
-    const normalMap = new Map(); // name -> [{ entryIndex, dateLabel, hp, count }]
-    const finalMap = new Map();
+    const map = new Map();
 
     for (let idx = 0; idx < deadlyEntries.length; idx++) {
         const entry = deadlyEntries[idx];
-        const dateLabel = indexData.entries[idx]?.replace('.json', '') || `第${idx}期`;
 
-        // ---- 试炼 ----
-        const normalZone = entry.normal_zone || entry.zone || {};
-        for (const zk of Object.keys(normalZone)) {
-            const zd = normalZone[zk];
-            let monsters = [];
-            if (zd.monsters?.length > 0) {
-                monsters = zd.monsters;
-            } else if (zd.layer_room) {
-                for (const rk of Object.keys(zd.layer_room)) {
-                    const room = zd.layer_room[rk];
-                    if (room?.monsters) room.monsters.forEach(w => w.forEach(m => monsters.push(m)));
-                }
-            } else if (zd.monster_list) {
-                monsters = Object.values(zd.monster_list).map(m => ({
-                    name: m.name,
-                    hp: m.stats?.hp || 0,
-                    defense: m.stats?.defence || 0,
-                    stun: m.stats?.stun || 0,
-                    hp_ratio_sum: 1,
-                    weakness: [],
-                    resistance: []
-                }));
-            }
-            monsters.forEach(m => {
-                if (!m.name) return;
-                const multiplier = 8.74;
-                const rawHp = getAdjustedHp(m);
-                const totalHp = Math.round(rawHp * (m.hp_ratio_sum ?? 1) * multiplier);
-                if (!normalMap.has(m.name)) normalMap.set(m.name, []);
-                const arr = normalMap.get(m.name);
-                const existing = arr.find(r => r.entryIndex === idx);
-                if (existing) {
-                    existing.hp += totalHp;
-                    existing.count += 1;
-                } else {
-                    arr.push({ entryIndex: idx, dateLabel, hp: totalHp, count: 1 });
-                }
-            });
-        }
-
-        // ---- 绝境 ----
-        const finalZone = entry.final_zone;
-        if (finalZone) {
-            for (const fk of Object.keys(finalZone)) {
-                const zd = finalZone[fk];
+        const processZone = (zone, multiplier) => {
+            if (!zone) return;
+            for (const zk of Object.keys(zone)) {
+                const zd = zone[zk];
                 let monsters = [];
                 if (zd.monsters?.length > 0) {
                     monsters = zd.monsters;
@@ -848,32 +803,30 @@ const collectMonsterAppearances = () => {
                 }
                 monsters.forEach(m => {
                     if (!m.name) return;
-                    const multiplier = 15.8;
                     const rawHp = getAdjustedHp(m);
                     const totalHp = Math.round(rawHp * (m.hp_ratio_sum ?? 1) * multiplier);
-                    if (!finalMap.has(m.name)) finalMap.set(m.name, []);
-                    const arr = finalMap.get(m.name);
+                    if (!map.has(m.name)) map.set(m.name, []);
+                    const arr = map.get(m.name);
                     const existing = arr.find(r => r.entryIndex === idx);
                     if (existing) {
                         existing.hp += totalHp;
                         existing.count += 1;
                     } else {
-                        arr.push({ entryIndex: idx, dateLabel, hp: totalHp, count: 1 });
+                        arr.push({ entryIndex: idx, hp: totalHp, count: 1 });
                     }
                 });
             }
-        }
+        };
+
+        processZone(entry.normal_zone || entry.zone || {}, 8.74);
+        processZone(entry.final_zone, 15.8);
     }
 
-    const sortRecords = (records) => records.sort((a, b) => a.entryIndex - b.entryIndex);
-    normalMap.forEach(sortRecords);
-    finalMap.forEach(sortRecords);
-
-    return { normalMap, finalMap };
+    map.forEach(records => records.sort((a, b) => a.entryIndex - b.entryIndex));
+    return map;
 };
 
-// 渲染单张强敌登场卡片
-const renderAppearanceCard = (monsterName, records, mode) => {
+const renderAppearanceCard = (monsterName, records) => {
     const info = monstersData.find(m => m.name === monsterName) || {};
     const type = info.type || "S";
     const imagePath = `${IMAGE_ROOT}/${type}/${monsterName}.webp`;
@@ -882,83 +835,70 @@ const renderAppearanceCard = (monsterName, records, mode) => {
     const totalCount = records.reduce((sum, r) => sum + r.count, 0);
 
     const img = image(imagePath, "monicon hasimg", monsterName);
-    img.style.height = "140px";
+    img.style.height = "180px";
     img.style.width = "auto";
     const nameLayer = create("div", { className: "monnameload hasimgname", children: [create("p", { text: monsterName })] });
     img.addEventListener("load", () => { nameLayer.style.display = "none"; });
-    img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); });
+    img.addEventListener("error", () => { img.style.opacity = "0"; img.classList.remove("hasimg"); nameLayer.classList.remove("hasimgname"); img.parentElement.classList.add("monicon"); });
 
-    // 试炼显示弱点/抗性；绝境不显示
-    let weaknessBars = null;
-    if (mode === 'normal') {
-        const pseudoMonster = {
-            name: monsterName,
-            weakness: info.weakness || [],
-            resistance: info.resistance || [],
-        };
-        weaknessBars = renderWeaknessBars(pseudoMonster, 0);
-    }
+    const weaknessBars = renderWeaknessBars({ name: monsterName, weakness: info.weakness || [], resistance: info.resistance || [] }, 0);
+    const stun = info.stun || 0;
 
-    const hpText = `${firstHp} → ${lastHp}`;
-
-    return create("div", {
-        className: "appearance-card",
-        style: {
-            background: "#f0f0f0",
-            borderRadius: "8px",
-            padding: "8px",
-            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            width: "100%",
-            maxWidth: "160px",
-            fontSize: "13px",
-        }
-    }, [
-        create("div", { className: "monleft", style: { position: "relative", width: "100%", display: "flex", justifyContent: "center" }, children: [img, nameLayer] }),
-        weaknessBars,
-        create("div", { style: { textAlign: "center", lineHeight: "1.6", marginTop: "4px", width: "100%" } }, [
-            create("div", { style: { marginTop: "4px" }, children: [
-                create("span", { text: "HP: " }),
-                create("span", { text: hpText, style: { color: "#cc0000", fontWeight: "bold" } }),
+    return create("span", {
+        className: "monster_card hover-shadow",
+        children: [
+            create("div", { className: "monleft", children: [img, nameLayer] }),
+            weaknessBars,
+            create("div", { className: "monright", style: { textAlign: "center", marginTop: "4px" }, children: [
+                create("span", { className: "monname_2", html: `<b><color style="color:#000000;">${stun}</color></b>` }),
+                create("br"),
+                create("span", { className: "monname_2", html: `<b><color style="color:#cc0000;">${firstHp} → ${lastHp}</color></b>` }),
+                create("br"),
+                create("span", { className: "monname_2", html: `<b><color style="color:#4CAF50;">登场 ${totalCount} 次</color></b>` }),
             ]}),
-            create("div", { style: { marginTop: "2px" }, children: [
-                create("span", { text: "登场 " }),
-                create("span", { text: `${totalCount} 次`, style: { color: "#2545ba", fontWeight: "bold" } }),
-            ]}),
-        ])
-    ]);
+        ],
+    });
 };
 
-// 渲染“强敌登场次数”区域
 const renderAppearanceSection = () => {
     let sectionEl = document.getElementById("appearanceSection");
     if (!sectionEl) {
-        sectionEl = create("div", { id: "appearanceSection", style: { marginTop: "30px" } });
+        sectionEl = create("div", { id: "appearanceSection" });
         const contentEl = document.querySelector(".content");
-        if (contentEl) contentEl.appendChild(sectionEl);
+        if (contentEl) {
+            // 插入到 content 的最前面，位于原内容上方
+            contentEl.insertBefore(sectionEl, contentEl.firstChild);
+        } else {
+            document.body.appendChild(sectionEl);
+        }
     }
+
     sectionEl.innerHTML = "";
 
-    const { normalMap, finalMap } = collectMonsterAppearances();
+    const map = collectMonsterAppearances();
+    const names = Array.from(map.keys()).sort();
 
-    const makeGrid = (map, mode) => {
-        const names = Array.from(map.keys()).sort();
-        const grid = create("div", {
-            style: {
-                display: "grid",
-                gridTemplateColumns: "repeat(6, 1fr)",
-                gap: "12px",
-                justifyItems: "center",
-                marginTop: "16px",
-            }
-        });
-        names.forEach(name => {
-            grid.appendChild(renderAppearanceCard(name, map.get(name), mode));
-        });
-        return { names, grid };
-    };
+    if (names.length === 0) {
+        sectionEl.appendChild(create("div", {
+            style: { textAlign: "center", color: "#999", padding: "30px" },
+            text: "暂无强敌登场记录"
+        }));
+        return;
+    }
+
+    const grid = create("div", {
+        style: {
+            display: "grid",
+            gridTemplateColumns: "repeat(6, 1fr)",
+            gap: "12px",
+            justifyItems: "center",
+            marginTop: "16px",
+        }
+    });
+
+    names.forEach(name => {
+        grid.appendChild(renderAppearanceCard(name, map.get(name)));
+    });
 
     sectionEl.appendChild(create("div", {
         style: { fontSize: "22px", fontWeight: "bold", textAlign: "center", margin: "20px 0 10px", color: "#222" },
@@ -968,56 +908,45 @@ const renderAppearanceSection = () => {
         style: { textAlign: "center", color: "#666", fontSize: "14px", marginBottom: "10px" },
         text: "首次登场血量 → 最后一次登场血量（试炼倍率 8.74，绝境倍率 15.8）"
     }));
-
-    const normalResult = makeGrid(normalMap, 'normal');
-    const finalResult = makeGrid(finalMap, 'final');
-
-    if (normalResult.names.length > 0) {
-        sectionEl.appendChild(create("div", {
-            style: { marginTop: "16px", fontWeight: "bold", textAlign: "center", color: "#444" },
-            text: "试炼强敌"
-        }));
-        sectionEl.appendChild(normalResult.grid);
-    }
-    if (finalResult.names.length > 0) {
-        sectionEl.appendChild(create("div", {
-            style: { marginTop: "16px", fontWeight: "bold", textAlign: "center", color: "#444" },
-            text: "绝境强敌"
-        }));
-        sectionEl.appendChild(finalResult.grid);
-    }
-    if (normalResult.names.length === 0 && finalResult.names.length === 0) {
-        sectionEl.appendChild(create("div", {
-            style: { textAlign: "center", color: "#999", padding: "30px" },
-            text: "暂无强敌登场记录"
-        }));
-    }
+    sectionEl.appendChild(grid);
 };
 
-// 切换显示/隐藏
 const toggleAppearanceSection = () => {
     appearanceVisible = !appearanceVisible;
+
     let sectionEl = document.getElementById("appearanceSection");
     if (!sectionEl) {
-        renderAppearanceSection();
-        sectionEl = document.getElementById("appearanceSection");
+        // 创建容器并插入到 .content 最前面
+        sectionEl = create("div", { id: "appearanceSection" });
+        const contentEl = document.querySelector(".content");
+        if (contentEl) {
+            contentEl.insertBefore(sectionEl, contentEl.firstChild);
+        } else {
+            document.body.appendChild(sectionEl);
+        }
     }
-    sectionEl.style.display = appearanceVisible ? "" : "none";
+
+    // 判空保护，避免 null.style
+    if (sectionEl) {
+        sectionEl.style.display = appearanceVisible ? "" : "none";
+    }
+
     if (appearanceVisible) {
         renderAppearanceSection();
     }
+
     const btn = document.getElementById("appearanceToggleBtn");
     if (btn) {
         btn.textContent = appearanceVisible ? "收起强敌登场次数" : "强敌登场次数";
     }
 };
 
-// 初始化按钮：位于下载按钮右侧，组合居中
+// 初始化按钮：完全复制下载按钮的结构与样式
 const initAppearanceButton = () => {
     const downloadBtn = byId("downloadBtn");
     if (!downloadBtn || byId("appearanceToggleBtn")) return;
 
-    // 确保下载按钮的父容器居中
+    // 父容器居中
     const parent = downloadBtn.parentElement;
     if (parent) {
         parent.style.display = "flex";
@@ -1026,48 +955,25 @@ const initAppearanceButton = () => {
         parent.style.gap = "16px";
     }
 
-    // 创建按钮
-    const btn = create("button", {
-        id: "appearanceToggleBtn",
-        text: "强敌登场次数",
-        style: {
-            display: "inline-block",
-            padding: "10px 24px",
-            background: "#4CAF50",
-            color: "#fff",
-            border: "none",
-            borderRadius: "6px",
-            fontSize: "16px",
-            cursor: "pointer",
-            fontWeight: "bold",
-            transition: "background 0.2s",
-        },
+    // 克隆下载按钮，保留所有属性和样式，然后改 id 和文字
+    const clone = downloadBtn.cloneNode(true);
+    clone.id = "appearanceToggleBtn";
+    clone.textContent = "强敌登场次数";
+    // 移除可能存在的 href 下载行为，改为按钮行为
+    if (clone.tagName.toLowerCase() === "a") {
+        clone.removeAttribute("download");
+        clone.href = "javascript:void(0)";
+    }
+    // 绑定点击事件
+    clone.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleAppearanceSection();
     });
-    btn.addEventListener("click", toggleAppearanceSection);
-    btn.addEventListener("mouseenter", () => { btn.style.background = "#3d8b40"; });
-    btn.addEventListener("mouseleave", () => { btn.style.background = "#4CAF50"; });
 
-    // 确保下载按钮样式统一（如果原样式不同，可在此覆盖或保留原样）
-    downloadBtn.style.display = "inline-block";
-    downloadBtn.style.padding = "10px 24px";
-    downloadBtn.style.background = "#2545ba";
-    downloadBtn.style.color = "#fff";
-    downloadBtn.style.border = "none";
-    downloadBtn.style.borderRadius = "6px";
-    downloadBtn.style.fontSize = "16px";
-    downloadBtn.style.cursor = "pointer";
-    downloadBtn.style.fontWeight = "bold";
-    downloadBtn.style.transition = "background 0.2s";
-    downloadBtn.style.textDecoration = "none";
-    downloadBtn.style.textAlign = "center";
-    downloadBtn.addEventListener("mouseenter", () => { downloadBtn.style.background = "#1a3580"; });
-    downloadBtn.addEventListener("mouseleave", () => { downloadBtn.style.background = "#2545ba"; });
-
-    // 插入到下载按钮之后
-    downloadBtn.insertAdjacentElement("afterend", btn);
+    downloadBtn.insertAdjacentElement("afterend", clone);
 };
 
-// ==================== 原有 render ====================
+// ==================== render ====================
 
 const render = () => {
     renderScheduleSelect();
@@ -1077,13 +983,11 @@ const render = () => {
     renderFinalSection();
     renderCharts();
 
-    // 若强敌登场次数区域可见，重新渲染
     const sectionEl = document.getElementById("appearanceSection");
     if (sectionEl && sectionEl.style.display !== "none") {
         renderAppearanceSection();
     }
 
-    // 确保按钮存在
     initAppearanceButton();
 };
 
@@ -1108,7 +1012,6 @@ const bindEvents = () => {
 
         const dl = byId("downloadBtn");
         dl.style.display = "none";
-        // 同时隐藏切换按钮，避免截图包含
         const toggleBtn = byId("appearanceToggleBtn");
         if (toggleBtn) toggleBtn.style.display = "none";
 
@@ -1137,13 +1040,13 @@ const bindEvents = () => {
         }, 500);
     });
     document.body.addEventListener("mouseenter", (event) => {
-        const card = event.target.closest(".monster_card, .appearance-card");
+        const card = event.target.closest(".monster_card");
         if (!card) return;
         card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "");
         card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "0.2");
     }, true);
     document.body.addEventListener("mouseleave", (event) => {
-        const card = event.target.closest(".monster_card, .appearance-card");
+        const card = event.target.closest(".monster_card");
         if (!card) return;
         card.querySelectorAll(".hasimgname").forEach(node => node.style.display = "none");
         card.querySelectorAll(".hasimg").forEach(node => node.style.opacity = "1");
