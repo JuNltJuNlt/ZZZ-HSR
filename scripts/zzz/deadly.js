@@ -566,7 +566,7 @@ const renderFinalSection = () => {
     const container = document.getElementById("finalSection");
     if (!container) return;
 
-    // 没有绝境关时隐藏并清空
+    // 没有绝境关时隐藏并清空，确保不占位
     if (!finalZone || Object.keys(finalZone).length === 0) {
         container.style.display = "none";
         container.replaceChildren();
@@ -731,15 +731,21 @@ const renderCharts = () => {
 
     if (finalChartEl) {
         if (!hasFinal) {
-            // 隐藏时清空实例内容，避免切换回来时残留
             finalChartEl.style.display = "none";
+            // 清除高度，避免占据空间
+            finalChartEl.style.height = "0";
+            finalChartEl.style.margin = "0";
+            finalChartEl.style.padding = "0";
             if (finalChartInstance && !finalChartInstance.isDisposed()) {
                 finalChartInstance.clear();
             }
             return;
         }
-        // 有绝境关：先显示容器
+        // 有绝境关：恢复显示与高度，交给 renderLineChart 重新设置
         finalChartEl.style.display = "";
+        finalChartEl.style.height = "";
+        finalChartEl.style.margin = "";
+        finalChartEl.style.padding = "";
     }
 
     const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
@@ -766,8 +772,11 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
 
-    chartElement.style.width = "100%";
-    chartElement.style.height = "600px";
+    // 仅当显示时才设置高度
+    if (chartElement.style.display !== "none") {
+        chartElement.style.width = "100%";
+        chartElement.style.height = "600px";
+    }
 
     let currentInstance;
     if (targetId === "chart") currentInstance = chartInstance;
