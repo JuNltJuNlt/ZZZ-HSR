@@ -212,7 +212,7 @@ const renderWeaknessBars = (monster, abnormalValue) => {
 
     const items = Array.from(mapItems.values());
 
-    // 即使没有弱点/抗性，也返回一个占位容器，保证下方数值对齐
+    // 即使没有弱点/抗性，也返回占位容器，保证数值对齐
     if (items.length === 0 && !abnormalValue) {
         return create("div", {
             style: {
@@ -785,12 +785,21 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
 
 // ==================== 强敌登场次数 ====================
 
-// 收集登场记录：同时保存防御值，确保防御正确；返回 { map, maxCount }
+// 按 indexData.entries 的顺序确定时间先后：entries 里可能最新在前，需要解析版本号排序
+const getSortedEntryIndices = () => {
+    // 返回按时间升序的 entry 索引数组（最早 → 最新）
+    return indexData.entries
+        .map((label, idx) => ({ idx, version: parseVersion(label.replace('.json', '')) }))
+        .sort((a, b) => a.version - b.version)
+        .map(item => item.idx);
+};
+
 const collectMonsterAppearances = () => {
     const map = new Map();
+    const sortedIndices = getSortedEntryIndices(); // 最早 → 最新
 
-    for (let idx = 0; idx < deadlyEntries.length; idx++) {
-        const entry = deadlyEntries[idx];
+    sortedIndices.forEach((entryIdx, order) => {
+        const entry = deadlyEntries[entryIdx];
 
         const processZone = (zone, multiplier) => {
             if (!zone) return;
@@ -819,16 +828,16 @@ const collectMonsterAppearances = () => {
                     if (!m.name) return;
                     const rawHp = getAdjustedHp(m);
                     const totalHp = Math.round(rawHp * (m.hp_ratio_sum ?? 1) * multiplier);
-                    const def = Math.round(getAdjustedDef(m)); // 使用该怪物当期真实防御
+                    const def = Math.round(getAdjustedDef(m));
                     if (!map.has(m.name)) map.set(m.name, []);
                     const arr = map.get(m.name);
-                    const existing = arr.find(r => r.entryIndex === idx);
+                    const existing = arr.find(r => r.order === order);
                     if (existing) {
                         existing.hp += totalHp;
                         existing.count += 1;
-                        existing.defense = def; // 保留最后一次的防御（或任意）
+                        existing.defense = def;
                     } else {
-                        arr.push({ entryIndex: idx, hp: totalHp, count: 1, defense: def });
+                        arr.push({ order, hp: totalHp, count: 1, defense: def });
                     }
                 });
             }
@@ -836,10 +845,10 @@ const collectMonsterAppearances = () => {
 
         processZone(entry.normal_zone || entry.zone || {}, 8.74);
         processZone(entry.final_zone, 15.8);
-    }
+    });
 
-    // 按 entryIndex 升序：最早在前，最晚在后
-    map.forEach(records => records.sort((a, b) => a.entryIndex - b.entryIndex));
+    // 按 order 升序：最早在前，最晚在后
+    map.forEach(records => records.sort((a, b) => a.order - b.order));
     return map;
 };
 
@@ -850,7 +859,7 @@ const renderAppearanceCard = (monsterName, records) => {
     const firstHp = records[0]?.hp ?? 0;
     const lastHp = records[records.length - 1]?.hp ?? 0;
     const totalCount = records.reduce((sum, r) => sum + r.count, 0);
-    const def = records[records.length - 1]?.defense ?? info.defense ?? 476; // 取最后一次防御
+    const def = records[records.length - 1]?.defense ?? info.defense ?? 476;
     const abnormalValue = Math.round((info.stun || 0) * 1.1);
 
     const img = image(imagePath, "monicon hasimg", monsterName);
@@ -885,9 +894,9 @@ const renderAppearanceCard = (monsterName, records) => {
     });
 };
 
-// 保证只有一个 #appearanceSection
+// 保证页面中只有一个 #appearanceSection
 const ensureAppearanceSection = () => {
-    let sections = document.querySelectorAll("#appearanceSection");
+    const sections = document.querySelectorAll("#appearanceSection");
     if (sections.length > 1) {
         for (let i = 1; i < sections.length; i++) sections[i].remove();
     }
@@ -925,7 +934,6 @@ const renderAppearanceSection = () => {
 
     const map = collectMonsterAppearances();
 
-    // 按登场次数降序排序；次数相同按名字排序
     const sorted = Array.from(map.entries()).sort((a, b) => {
         const ca = a[1].reduce((s, r) => s + r.count, 0);
         const cb = b[1].reduce((s, r) => s + r.count, 0);
@@ -959,7 +967,6 @@ const renderAppearanceSection = () => {
         style: { fontSize: "22px", fontWeight: "bold", textAlign: "center", margin: "20px 0 10px", color: "#222" },
         text: "强敌登场次数"
     }));
-    // 不再显示那行倍率说明
     sectionEl.appendChild(grid);
 };
 
@@ -968,12 +975,12 @@ const toggleAppearanceSection = () => {
 
     const sectionEl = ensureAppearanceSection();
 
-    if (sectionEl) {
-        sectionEl.style.display = appearanceVisible ? "" : "none";
-    }
-
     if (appearanceVisible) {
+        // 先重建内容，再显示
         renderAppearanceSection();
+        sectionEl.style.display = "";
+    } else {
+        sectionEl.style.display = "none";
     }
 
     const btn = document.getElementById("appearanceToggleBtn");
@@ -1003,7 +1010,6 @@ const initAppearanceButton = () => {
         clone.href = "javascript:void(0)";
     }
 
-    // 强制与下载按钮完全一致的高度、内边距、行高等
     const computed = window.getComputedStyle(downloadBtn);
     clone.style.height = computed.height;
     clone.style.paddingTop = computed.paddingTop;
@@ -1016,11 +1022,9 @@ const initAppearanceButton = () => {
     clone.style.boxSizing = computed.boxSizing;
     clone.style.alignSelf = "center";
     clone.style.textAlign = "center";
-    // 如果下载按钮是 inline-block 或 flex，确保文字垂直居中
     if (computed.display === "inline-block" || computed.display === "block") {
-        clone.style.lineHeight = computed.height; // 单行文字垂直居中
+        clone.style.lineHeight = computed.height;
     }
-    // 对于 flex 布局，使用 align-items 居中文字
     if (computed.display === "flex" || computed.display === "inline-flex") {
         clone.style.alignItems = "center";
         clone.style.justifyContent = "center";
@@ -1044,9 +1048,13 @@ const render = () => {
     renderFinalSection();
     renderCharts();
 
-    const sectionEl = document.getElementById("appearanceSection");
-    if (sectionEl && sectionEl.style.display !== "none") {
-        renderAppearanceSection();
+    // 仅当可见时才重新渲染内容，避免无谓的重建
+    if (appearanceVisible) {
+        const sectionEl = document.getElementById("appearanceSection");
+        if (sectionEl) {
+            renderAppearanceSection();
+            sectionEl.style.display = "";
+        }
     }
 
     initAppearanceButton();
