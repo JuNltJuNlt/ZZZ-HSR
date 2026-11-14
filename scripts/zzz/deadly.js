@@ -18,6 +18,9 @@ let normalizeMode = false;
 let appearanceVisible = false;
 let appearanceSectionEl = null;
 
+// 记录绝境图当前是否“处于可见/已初始化”状态
+let finalChartVisibleLast = false;
+
 const text = {
     title: "危局强袭战",
     chartTotalTitle: "试炼总血量演化",
@@ -687,6 +690,14 @@ const getFinalChartContainer = () => {
     return chartEl ? chartEl.parentElement : null;
 };
 
+// 辅助：销毁绝境图实例（用于从无绝境 → 有绝境时重新初始化）
+const disposeFinalChart = () => {
+    if (finalChartInstance && !finalChartInstance.isDisposed()) {
+        finalChartInstance.dispose();
+    }
+    finalChartInstance = null;
+};
+
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
@@ -735,8 +746,11 @@ const renderCharts = () => {
     const curFinal = currentEntry()?.final_zone;
     const hasFinal = curFinal && Object.keys(curFinal).length > 0;
 
+    const wasVisible = finalChartVisibleLast;
+    finalChartVisibleLast = hasFinal;
+
     if (!hasFinal) {
-        // 隐藏容器和父级 chart_container，彻底消除 600px 占位
+        // 隐藏容器和父级 chart_container，彻底消除占位
         if (finalChartEl) {
             finalChartEl.style.display = "none";
         }
@@ -755,12 +769,19 @@ const renderCharts = () => {
     // 有绝境关：恢复容器与父级显示
     if (finalChartEl) {
         finalChartEl.style.display = "";
+        finalChartEl.style.width = "100%";
+        finalChartEl.style.height = "600px";
     }
     if (finalChartContainer) {
         finalChartContainer.style.display = "";
         finalChartContainer.style.height = "";
         finalChartContainer.style.margin = "";
         finalChartContainer.style.padding = "";
+    }
+
+    // 从无绝境 → 有绝境：销毁旧实例并重新初始化（避免尺寸为 0 导致图表空白）
+    if (!wasVisible) {
+        disposeFinalChart();
     }
 
     const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
@@ -780,14 +801,6 @@ const renderCharts = () => {
             return Math.round(total * 15.8);
         });
 
-        // 确保实例尺寸正确（从隐藏恢复后需 resize）
-        if (finalChartInstance && !finalChartInstance.isDisposed()) {
-            if (finalChartEl) {
-                finalChartEl.style.width = "100%";
-                finalChartEl.style.height = "600px";
-            }
-            finalChartInstance.resize();
-        }
         renderLineChart("finalChart", getChartTitle(text.chartFinalTitle), [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
     }
 };
