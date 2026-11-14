@@ -9,8 +9,8 @@
       "monster_level": 50,
       "layer_buff": {
         "buff_62001642": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "title": "极炎烬狱",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -152,8 +152,8 @@
       "monster_level": 55,
       "layer_buff": {
         "buff_62001642": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "title": "极炎烬狱",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -318,8 +318,8 @@
       "monster_level": 60,
       "layer_buff": {
         "buff_62001642": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "title": "极炎烬狱",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -508,8 +508,8 @@
       "monster_level": 65,
       "layer_buff": {
         "buff_62001642": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "title": "极炎烬狱",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -639,15 +639,15 @@
       "monster_level": 0,
       "layer_buff": {
         "buff_62001641": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的<color=#FFFFFF>[紊乱]</color>伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "title": "雷殛崩序",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升15%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的<color=#FFFFFF>[紊乱]</color>伤害提升40%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_62001642": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "title": "极炎烬狱",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         },
         "buff_62001643": {
-          "title": "(Test1)TBD",
+          "title": "寂灭生息",
           "desc": "· 代理人的生命值上限提升15%，贯穿伤害提升30%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，暴击伤害提升30%，持续20秒，重复触发时刷新持续时间。"
         }
       },
@@ -658,7 +658,7 @@
             [
               {
                 "name": "「卫士Ⅱ型」",
-                "hp": 6498274,
+                "hp": 6281665,
                 "defense": 858,
                 "stun": 11170,
                 "number": 1,
@@ -673,7 +673,7 @@
               },
               {
                 "name": "突击炮手",
-                "hp": 5090166,
+                "hp": 4920494,
                 "defense": 858,
                 "stun": 7121,
                 "number": 1,
@@ -690,7 +690,7 @@
             [
               {
                 "name": "幻矢单元",
-                "hp": 62600433,
+                "hp": 57658293,
                 "defense": 953,
                 "stun": 18236,
                 "number": 1,
@@ -724,7 +724,7 @@
             [
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 1431639,
+                "hp": 1579740,
                 "defense": 731,
                 "stun": 2327,
                 "number": 1,
@@ -737,22 +737,8 @@
                 "type": "C"
               },
               {
-                "name": "秽息残兵·炮手",
-                "hp": 1431639,
-                "defense": 636,
-                "stun": 2327,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
                 "name": "拉赫穆",
-                "hp": 9695738,
+                "hp": 10698745,
                 "defense": 715,
                 "stun": 12345,
                 "number": 1,
@@ -770,7 +756,7 @@
             [
               {
                 "name": "秽蚀·「骇鸟」",
-                "hp": 44977635,
+                "hp": 52688086,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -835,18 +821,17 @@
             ],
             [
               {
-                "name": "秽蚀·色雷斯人",
-                "hp": 59356949,
+                "name": "多佩冈亚·卡芙卡",
+                "hp": 74683136,
                 "defense": 953,
-                "stun": 14328,
+                "stun": 17586,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "以太",
-                  "风"
+                  "火"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ],
                 "type": "A"
               }
@@ -858,7 +843,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·色雷斯人",
+              "name": "多佩冈亚·卡芙卡",
               "bold": true
             }
           ],
@@ -872,8 +857,8 @@
       "monster_level": 70,
       "layer_buff": {
         "buff_62001641": {
-          "title": "(Test1)TBD",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升10%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的<color=#FFFFFF>[紊乱]</color>伤害提升30%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
+          "title": "雷殛崩序",
+          "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人攻击力提升15%。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，全队造成的<color=#FFFFFF>[紊乱]</color>伤害提升40%，异常精通提升40点，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -883,7 +868,7 @@
             [
               {
                 "name": "「卫士Ⅱ型」",
-                "hp": 6498274,
+                "hp": 6281665,
                 "defense": 858,
                 "stun": 11170,
                 "number": 1,
@@ -898,7 +883,7 @@
               },
               {
                 "name": "突击炮手",
-                "hp": 5090166,
+                "hp": 4920494,
                 "defense": 858,
                 "stun": 7121,
                 "number": 1,
@@ -915,7 +900,7 @@
             [
               {
                 "name": "幻矢单元",
-                "hp": 62600433,
+                "hp": 57658293,
                 "defense": 953,
                 "stun": 18236,
                 "number": 1,
@@ -951,8 +936,8 @@
       "monster_level": 70,
       "layer_buff": {
         "buff_62001642": {
-          "title": "(Test1)TBD",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升20%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升30%，持续15秒，重复触发时刷新持续时间。"
+          "title": "极炎烬狱",
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，防御力提升10%，锐化伤害提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "layer_room": {
@@ -962,7 +947,7 @@
             [
               {
                 "name": "秽息残兵·盾卫",
-                "hp": 1431639,
+                "hp": 1579740,
                 "defense": 731,
                 "stun": 2327,
                 "number": 1,
@@ -975,22 +960,8 @@
                 "type": "C"
               },
               {
-                "name": "秽息残兵·炮手",
-                "hp": 1431639,
-                "defense": 636,
-                "stun": 2327,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "火",
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
                 "name": "拉赫穆",
-                "hp": 9695738,
+                "hp": 10698745,
                 "defense": 715,
                 "stun": 12345,
                 "number": 1,
@@ -1008,7 +979,7 @@
             [
               {
                 "name": "秽蚀·「骇鸟」",
-                "hp": 44977635,
+                "hp": 52688086,
                 "defense": 953,
                 "stun": 14328,
                 "number": 1,
@@ -1044,7 +1015,7 @@
       "monster_level": 70,
       "layer_buff": {
         "buff_62001643": {
-          "title": "(Test1)TBD",
+          "title": "寂灭生息",
           "desc": "· 代理人的生命值上限提升15%，贯穿伤害提升30%。\n· <color=#FFFFFF>[命破]</color>特性的代理人发动<color=#FFFFFF>[终结技]</color>后，暴击伤害提升30%，持续20秒，重复触发时刷新持续时间。"
         }
       },
@@ -1086,18 +1057,17 @@
             ],
             [
               {
-                "name": "秽蚀·色雷斯人",
-                "hp": 59356949,
+                "name": "多佩冈亚·卡芙卡",
+                "hp": 74683136,
                 "defense": 953,
-                "stun": 14328,
+                "stun": 17586,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
-                  "以太",
-                  "风"
+                  "火"
                 ],
                 "resistance": [
-                  "电"
+                  "物理"
                 ],
                 "type": "A"
               }
@@ -1109,7 +1079,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·色雷斯人",
+              "name": "多佩冈亚·卡芙卡",
               "bold": true
             }
           ],

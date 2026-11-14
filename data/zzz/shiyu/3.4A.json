@@ -9,7 +9,7 @@
       "monster_level": 50,
       "layer_buff": {
         "buff_62001631": {
-          "title": "(Test1)TBD",
+          "title": "熔锋焚胄",
           "desc": "· 代理人的防御力提升15%，锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>。"
         }
       },
@@ -152,7 +152,7 @@
       "monster_level": 55,
       "layer_buff": {
         "buff_62001631": {
-          "title": "(Test1)TBD",
+          "title": "熔锋焚胄",
           "desc": "· 代理人的防御力提升15%，锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>。"
         }
       },
@@ -318,7 +318,7 @@
       "monster_level": 60,
       "layer_buff": {
         "buff_62001631": {
-          "title": "(Test1)TBD",
+          "title": "熔锋焚胄",
           "desc": "· 代理人的防御力提升15%，锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>。"
         }
       },
@@ -492,7 +492,7 @@
       "monster_level": 65,
       "layer_buff": {
         "buff_62001631": {
-          "title": "(Test1)TBD",
+          "title": "熔锋焚胄",
           "desc": "· 代理人的防御力提升15%，锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>。"
         }
       },
@@ -584,15 +584,15 @@
       "monster_level": 0,
       "layer_buff": {
         "buff_62001631": {
-          "title": "(Test1)TBD",
+          "title": "熔锋焚胄",
           "desc": "· 代理人的防御力提升15%，锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>。"
         },
         "buff_62001632": {
-          "title": "(Test1)TBD",
+          "title": "燎火连环",
           "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升10%，造成的<color=#FF5521>火属性异常伤害</color>提升10%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升60点，持续20秒，此效果20秒内最多触发一次。"
         },
         "buff_62001633": {
-          "title": "(Test1)TBD",
+          "title": "罡风破阵",
           "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%，攻击力提升10%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
@@ -604,19 +604,6 @@
               {
                 "name": "特战·掠袭猎兵",
                 "hp": 2264305,
-                "defense": 636,
-                "stun": 2856,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "特战·轻装猎兵",
-                "hp": 1924911,
                 "defense": 636,
                 "stun": 2856,
                 "number": 1,
@@ -815,7 +802,7 @@
       "monster_level": 70,
       "layer_buff": {
         "buff_62001631": {
-          "title": "(Test1)TBD",
+          "title": "熔锋焚胄",
           "desc": "· 代理人的防御力提升15%，锐化伤害提升20%。\n· 代理人攻击命中敌人时，无视其20%的<color=#FF5521>火属性伤害抗性</color>。"
         }
       },
@@ -827,19 +814,6 @@
               {
                 "name": "特战·掠袭猎兵",
                 "hp": 2264305,
-                "defense": 636,
-                "stun": 2856,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "电"
-                ],
-                "resistance": [],
-                "type": "C"
-              },
-              {
-                "name": "特战·轻装猎兵",
-                "hp": 1924911,
                 "defense": 636,
                 "stun": 2856,
                 "number": 1,
@@ -906,7 +880,7 @@
       "monster_level": 70,
       "layer_buff": {
         "buff_62001632": {
-          "title": "(Test1)TBD",
+          "title": "燎火连环",
           "desc": "· <color=#FFFFFF>[异常]</color>特性的代理人的<color=#FF5521>火属性异常积蓄效率</color>提升10%，造成的<color=#FF5521>火属性异常伤害</color>提升10%。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队恢复20点能量，异常精通提升60点，持续20秒，此效果20秒内最多触发一次。"
         }
       },
@@ -985,7 +959,7 @@
       "monster_level": 70,
       "layer_buff": {
         "buff_62001633": {
-          "title": "(Test1)TBD",
+          "title": "罡风破阵",
           "desc": "· <color=#FFFFFF>[强攻]</color>特性的代理人的<color=#A6C5FD>风属性伤害</color>提升30%，攻击力提升10%。\n· 代理人发动<color=#FFFFFF>[强化特殊技]</color>后，攻击命中敌人时无视其20%的<color=#A6C5FD>风属性伤害抗性</color>，<color=#FFFFFF>[普通攻击]</color>造成的伤害提升40%，持续15秒，重复触发时刷新持续时间。"
         }
       },
