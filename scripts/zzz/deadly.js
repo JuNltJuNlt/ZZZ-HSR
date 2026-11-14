@@ -566,7 +566,6 @@ const renderFinalSection = () => {
     const container = document.getElementById("finalSection");
     if (!container) return;
 
-    // 没有绝境关时隐藏并清空，确保不占位
     if (!finalZone || Object.keys(finalZone).length === 0) {
         container.style.display = "none";
         container.replaceChildren();
@@ -682,6 +681,12 @@ const getMonsterListFromZoneData = (zd) => {
     return monsters;
 };
 
+// 辅助：获取 finalChart 的父级容器（.chart_container）
+const getFinalChartContainer = () => {
+    const chartEl = document.getElementById("finalChart");
+    return chartEl ? chartEl.parentElement : null;
+};
+
 const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
@@ -726,27 +731,36 @@ const renderCharts = () => {
 
     // ===== 绝境图：根据当前期是否有绝境关决定显示/隐藏 =====
     const finalChartEl = byId("finalChart");
+    const finalChartContainer = getFinalChartContainer();
     const curFinal = currentEntry()?.final_zone;
     const hasFinal = curFinal && Object.keys(curFinal).length > 0;
 
-    if (finalChartEl) {
-        if (!hasFinal) {
-            // 隐藏容器，并清除高度等占位样式
+    if (!hasFinal) {
+        // 隐藏容器和父级 chart_container，彻底消除 600px 占位
+        if (finalChartEl) {
             finalChartEl.style.display = "none";
-            finalChartEl.style.height = "0";
-            finalChartEl.style.margin = "0";
-            finalChartEl.style.padding = "0";
-            // 清空实例内容，但保留实例供下次复用
-            if (finalChartInstance && !finalChartInstance.isDisposed()) {
-                finalChartInstance.clear();
-            }
-            return;
         }
-        // 有绝境关：恢复容器显示与高度
+        if (finalChartContainer) {
+            finalChartContainer.style.display = "none";
+            finalChartContainer.style.height = "0";
+            finalChartContainer.style.margin = "0";
+            finalChartContainer.style.padding = "0";
+        }
+        if (finalChartInstance && !finalChartInstance.isDisposed()) {
+            finalChartInstance.clear();
+        }
+        return;
+    }
+
+    // 有绝境关：恢复容器与父级显示
+    if (finalChartEl) {
         finalChartEl.style.display = "";
-        finalChartEl.style.height = "";
-        finalChartEl.style.margin = "";
-        finalChartEl.style.padding = "";
+    }
+    if (finalChartContainer) {
+        finalChartContainer.style.display = "";
+        finalChartContainer.style.height = "";
+        finalChartContainer.style.margin = "";
+        finalChartContainer.style.padding = "";
     }
 
     const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
@@ -766,14 +780,13 @@ const renderCharts = () => {
             return Math.round(total * 15.8);
         });
 
-        // 确保实例存在且尺寸正确后渲染
-        if (finalChartEl) {
-            // 如果容器之前被隐藏，实例尺寸可能为 0，需要重新设置尺寸
-            if (finalChartInstance && !finalChartInstance.isDisposed()) {
+        // 确保实例尺寸正确（从隐藏恢复后需 resize）
+        if (finalChartInstance && !finalChartInstance.isDisposed()) {
+            if (finalChartEl) {
                 finalChartEl.style.width = "100%";
                 finalChartEl.style.height = "600px";
-                finalChartInstance.resize();
             }
+            finalChartInstance.resize();
         }
         renderLineChart("finalChart", getChartTitle(text.chartFinalTitle), [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
     }
@@ -783,7 +796,6 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
 
-    // 仅对可见的图表设置尺寸
     if (chartElement.style.display !== "none") {
         chartElement.style.width = "100%";
         chartElement.style.height = "600px";
@@ -795,7 +807,6 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     else currentInstance = finalChartInstance;
 
     if (currentInstance && !currentInstance.isDisposed()) {
-        // 先 resize，再 setOption（notMerge: true 保证完整重绘）
         currentInstance.resize();
         currentInstance.setOption({
             title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
