@@ -18,7 +18,7 @@ let normalizeMode = false;
 let appearanceVisible = false;
 let appearanceSectionEl = null;
 
-// 记录绝境图当前是否“处于可见/已初始化”状态
+// 记录绝境图上一轮是否处于可见状态
 let finalChartVisibleLast = false;
 
 const text = {
@@ -684,13 +684,11 @@ const getMonsterListFromZoneData = (zd) => {
     return monsters;
 };
 
-// 辅助：获取 finalChart 的父级容器（.chart_container）
 const getFinalChartContainer = () => {
     const chartEl = document.getElementById("finalChart");
     return chartEl ? chartEl.parentElement : null;
 };
 
-// 辅助：销毁绝境图实例（用于从无绝境 → 有绝境时重新初始化）
 const disposeFinalChart = () => {
     if (finalChartInstance && !finalChartInstance.isDisposed()) {
         finalChartInstance.dispose();
@@ -702,6 +700,7 @@ const renderCharts = () => {
     const entries = deadlyEntries.slice().reverse();
     const labels = entries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
 
+    // ---- 总血量图 ----
     const totalData = entries.map(e => {
         const zone = e.normal_zone || e.zone || {};
         let total = 0;
@@ -715,6 +714,7 @@ const renderCharts = () => {
         return Math.round(total * 8.74);
     });
 
+    // ---- 三 Boss 图 ----
     const bossData = [[], [], []];
     entries.forEach(e => {
         const zone = e.normal_zone || e.zone || {};
@@ -733,6 +733,7 @@ const renderCharts = () => {
         }
     });
 
+    // 这两个图始终复用实例，仅更新数据
     renderLineChart("chart", getChartTitle(text.chartTotalTitle), [{ name: "总血量", color: "#cc0000", data: totalData }], labels);
     renderLineChart("bossChart", getChartTitle(text.chartBossTitle), [
         { name: text.stageLabels[0], color: "#cc0000", data: bossData[0] },
@@ -740,7 +741,7 @@ const renderCharts = () => {
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
     ], labels);
 
-    // ===== 绝境图：根据当前期是否有绝境关决定显示/隐藏 =====
+    // ---- 绝境图 ----
     const finalChartEl = byId("finalChart");
     const finalChartContainer = getFinalChartContainer();
     const curFinal = currentEntry()?.final_zone;
@@ -750,7 +751,7 @@ const renderCharts = () => {
     finalChartVisibleLast = hasFinal;
 
     if (!hasFinal) {
-        // 隐藏容器和父级 chart_container，彻底消除占位
+        // 无绝境：隐藏 + 重置（销毁实例）
         if (finalChartEl) {
             finalChartEl.style.display = "none";
         }
@@ -760,13 +761,11 @@ const renderCharts = () => {
             finalChartContainer.style.margin = "0";
             finalChartContainer.style.padding = "0";
         }
-        if (finalChartInstance && !finalChartInstance.isDisposed()) {
-            finalChartInstance.clear();
-        }
+        disposeFinalChart();   // 重置
         return;
     }
 
-    // 有绝境关：恢复容器与父级显示
+    // 有绝境：恢复显示
     if (finalChartEl) {
         finalChartEl.style.display = "";
         finalChartEl.style.width = "100%";
@@ -779,7 +778,7 @@ const renderCharts = () => {
         finalChartContainer.style.padding = "";
     }
 
-    // 从无绝境 → 有绝境：销毁旧实例并重新初始化（避免尺寸为 0 导致图表空白）
+    // 无绝境 → 有绝境：重置（销毁旧实例）
     if (!wasVisible) {
         disposeFinalChart();
     }
