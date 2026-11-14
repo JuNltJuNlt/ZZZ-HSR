@@ -1007,16 +1007,16 @@
           "b_rank_goal": 10000,
           "selectable_buff": {
             "69015301": {
-              "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+              "title": "尖峰",
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
-              "title": "(Test1)TBD",
+              "title": "电离",
               "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
-              "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果20秒内最多触发一次。"
+              "title": "焰绽",
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
             }
           }
         }
@@ -1085,16 +1085,16 @@
           "b_rank_goal": 6000,
           "selectable_buff": {
             "69015301": {
-              "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+              "title": "尖峰",
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
-              "title": "(Test1)TBD",
+              "title": "电离",
               "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
-              "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果20秒内最多触发一次。"
+              "title": "焰绽",
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
             }
           }
         },
@@ -1133,7 +1133,7 @@
                     "wind": 1
                   },
                   "stats": {
-                    "hp": 26365763.25,
+                    "hp": 27537574.95,
                     "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
                     "stun": 14327.95,
@@ -1155,16 +1155,16 @@
           "b_rank_goal": 6000,
           "selectable_buff": {
             "69015301": {
-              "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+              "title": "尖峰",
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
-              "title": "(Test1)TBD",
+              "title": "电离",
               "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
-              "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果20秒内最多触发一次。"
+              "title": "焰绽",
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
             }
           }
         },
@@ -1203,7 +1203,7 @@
                     "wind": 0
                   },
                   "stats": {
-                    "hp": 31391660.159999996,
+                    "hp": 30270529.44,
                     "attack": 3286.6909090909094,
                     "defence": 952.8000000000001,
                     "stun": 20430.9,
@@ -1226,16 +1226,16 @@
           "b_rank_goal": 6000,
           "selectable_buff": {
             "69015301": {
-              "title": "(Test1)TBD",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>15%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，锐化伤害<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间。"
+              "title": "尖峰",
+              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
-              "title": "(Test1)TBD",
+              "title": "电离",
               "desc": "· <color=#FFFFFF>[异常]</color>特性代理人造成的属性异常伤害<color=#2BAD00>提升10%</color>，<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升30%</color>。\n· 代理人使敌人进入<color=#2EB6FF>电属性异常</color>状态后，其防御力<color=#2BAD00>降低25%</color>，全属性伤害抗性<color=#2BAD00>降低10%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69015303": {
-              "title": "(Test1)TBD",
-              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升20%</color>，持续20秒，此效果20秒内最多触发一次。"
+              "title": "焰绽",
+              "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的<color=#FF5521>火属性</color>和<color=#FE437E>以太属性</color>异常积蓄效率<color=#2BAD00>提升15%</color>。\n· 代理人造成<color=#FFFFFF>属性异常</color>伤害并触发暴击后，全队获得<color=#2BAD00>20点能量</color>，造成的属性异常伤害<color=#2BAD00>提升15%</color>，持续20秒，此效果20秒内最多触发一次。"
             }
           }
         }
