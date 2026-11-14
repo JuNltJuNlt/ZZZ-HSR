@@ -16,7 +16,6 @@ let finalChartInstance = null;
 let normalizeMode = false;
 
 let appearanceVisible = false;
-// 唯一容器引用，避免重复创建
 let appearanceSectionEl = null;
 
 const text = {
@@ -214,7 +213,6 @@ const renderWeaknessBars = (monster, abnormalValue) => {
 
     const items = Array.from(mapItems.values());
 
-    // 占位容器，保证下方数值对齐
     if (items.length === 0 && !abnormalValue) {
         return create("div", {
             style: {
@@ -568,8 +566,10 @@ const renderFinalSection = () => {
     const container = document.getElementById("finalSection");
     if (!container) return;
 
+    // 没有绝境关时隐藏并清空
     if (!finalZone || Object.keys(finalZone).length === 0) {
         container.style.display = "none";
+        container.replaceChildren();
         return;
     }
 
@@ -724,6 +724,24 @@ const renderCharts = () => {
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
     ], labels);
 
+    // ===== 绝境图：根据当前期是否有绝境关决定显示/隐藏 =====
+    const finalChartEl = byId("finalChart");
+    const curFinal = currentEntry()?.final_zone;
+    const hasFinal = curFinal && Object.keys(curFinal).length > 0;
+
+    if (finalChartEl) {
+        if (!hasFinal) {
+            // 隐藏时清空实例内容，避免切换回来时残留
+            finalChartEl.style.display = "none";
+            if (finalChartInstance && !finalChartInstance.isDisposed()) {
+                finalChartInstance.clear();
+            }
+            return;
+        }
+        // 有绝境关：先显示容器
+        finalChartEl.style.display = "";
+    }
+
     const finalEntries = entries.filter(e => e.final_zone && Object.keys(e.final_zone).length > 0);
     if (finalEntries.length > 0) {
         const finalLabels = finalEntries.map(e => indexData.entries[deadlyEntries.indexOf(e)].replace('.json', ''));
@@ -787,7 +805,6 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
 
 // ==================== 强敌登场次数 ====================
 
-// 按版本号升序得到“最早 → 最新”的 entry 索引
 const getSortedEntryIndices = () => {
     return indexData.entries
         .map((label, idx) => ({ idx, version: parseVersion(label.replace('.json', '')) }))
@@ -894,9 +911,7 @@ const renderAppearanceCard = (monsterName, records) => {
     });
 };
 
-// 幂等获取/创建唯一容器
 const getAppearanceSection = () => {
-    // 先清理页面上所有多余的 #appearanceSection
     const all = document.querySelectorAll("#appearanceSection");
     if (all.length > 1) {
         for (let i = 1; i < all.length; i++) all[i].remove();
@@ -909,7 +924,6 @@ const getAppearanceSection = () => {
     if (appearanceSectionEl && appearanceSectionEl.isConnected) {
         return appearanceSectionEl;
     }
-    // 创建新容器
     const el = create("div", { id: "appearanceSection" });
     const contentEl = document.querySelector(".content");
     if (contentEl) {
@@ -987,7 +1001,6 @@ const toggleAppearanceSection = () => {
         renderAppearanceSection();
         sectionEl.style.display = "";
     } else {
-        // 收起时清空内容并隐藏，确保不显示
         sectionEl.innerHTML = "";
         sectionEl.style.display = "none";
     }
@@ -998,7 +1011,6 @@ const toggleAppearanceSection = () => {
     }
 };
 
-// 初始化按钮：幂等，已存在则直接返回；文字垂直居中
 const initAppearanceButton = () => {
     const downloadBtn = byId("downloadBtn");
     if (!downloadBtn || byId("appearanceToggleBtn")) return;
@@ -1057,7 +1069,6 @@ const render = () => {
     renderFinalSection();
     renderCharts();
 
-    // 仅当可见时重建内容；收起状态不动
     if (appearanceVisible) {
         renderAppearanceSection();
         const sectionEl = getAppearanceSection();
