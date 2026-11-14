@@ -16,6 +16,8 @@ let finalChartInstance = null;
 let normalizeMode = false;
 
 let appearanceVisible = false;
+// 唯一容器引用，避免重复创建
+let appearanceSectionEl = null;
 
 const text = {
     title: "危局强袭战",
@@ -212,7 +214,7 @@ const renderWeaknessBars = (monster, abnormalValue) => {
 
     const items = Array.from(mapItems.values());
 
-    // 即使没有弱点/抗性，也返回占位容器，保证数值对齐
+    // 占位容器，保证下方数值对齐
     if (items.length === 0 && !abnormalValue) {
         return create("div", {
             style: {
@@ -785,9 +787,8 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
 
 // ==================== 强敌登场次数 ====================
 
-// 按 indexData.entries 的顺序确定时间先后：entries 里可能最新在前，需要解析版本号排序
+// 按版本号升序得到“最早 → 最新”的 entry 索引
 const getSortedEntryIndices = () => {
-    // 返回按时间升序的 entry 索引数组（最早 → 最新）
     return indexData.entries
         .map((label, idx) => ({ idx, version: parseVersion(label.replace('.json', '')) }))
         .sort((a, b) => a.version - b.version)
@@ -796,7 +797,7 @@ const getSortedEntryIndices = () => {
 
 const collectMonsterAppearances = () => {
     const map = new Map();
-    const sortedIndices = getSortedEntryIndices(); // 最早 → 最新
+    const sortedIndices = getSortedEntryIndices();
 
     sortedIndices.forEach((entryIdx, order) => {
         const entry = deadlyEntries[entryIdx];
@@ -847,7 +848,6 @@ const collectMonsterAppearances = () => {
         processZone(entry.final_zone, 15.8);
     });
 
-    // 按 order 升序：最早在前，最晚在后
     map.forEach(records => records.sort((a, b) => a.order - b.order));
     return map;
 };
@@ -894,42 +894,50 @@ const renderAppearanceCard = (monsterName, records) => {
     });
 };
 
-// 保证页面中只有一个 #appearanceSection
-const ensureAppearanceSection = () => {
-    const sections = document.querySelectorAll("#appearanceSection");
-    if (sections.length > 1) {
-        for (let i = 1; i < sections.length; i++) sections[i].remove();
+// 幂等获取/创建唯一容器
+const getAppearanceSection = () => {
+    // 先清理页面上所有多余的 #appearanceSection
+    const all = document.querySelectorAll("#appearanceSection");
+    if (all.length > 1) {
+        for (let i = 1; i < all.length; i++) all[i].remove();
     }
-    let sectionEl = document.getElementById("appearanceSection");
-    if (!sectionEl) {
-        sectionEl = create("div", { id: "appearanceSection" });
-        const contentEl = document.querySelector(".content");
-        if (contentEl) {
-            const downloadBtn = contentEl.querySelector("#downloadBtn");
-            const layout = contentEl.querySelector("#deadlyLayout");
-            if (downloadBtn) {
-                const btnGroup = downloadBtn.parentElement;
-                if (btnGroup && btnGroup.parentElement === contentEl) {
-                    contentEl.insertBefore(sectionEl, btnGroup.nextSibling);
-                } else if (layout) {
-                    contentEl.insertBefore(sectionEl, layout);
-                } else {
-                    contentEl.appendChild(sectionEl);
-                }
+    const existing = document.getElementById("appearanceSection");
+    if (existing) {
+        appearanceSectionEl = existing;
+        return existing;
+    }
+    if (appearanceSectionEl && appearanceSectionEl.isConnected) {
+        return appearanceSectionEl;
+    }
+    // 创建新容器
+    const el = create("div", { id: "appearanceSection" });
+    const contentEl = document.querySelector(".content");
+    if (contentEl) {
+        const downloadBtn = contentEl.querySelector("#downloadBtn");
+        const layout = contentEl.querySelector("#deadlyLayout");
+        if (downloadBtn) {
+            const btnGroup = downloadBtn.parentElement;
+            if (btnGroup && btnGroup.parentElement === contentEl) {
+                contentEl.insertBefore(el, btnGroup.nextSibling);
             } else if (layout) {
-                contentEl.insertBefore(sectionEl, layout);
+                contentEl.insertBefore(el, layout);
             } else {
-                contentEl.appendChild(sectionEl);
+                contentEl.appendChild(el);
             }
+        } else if (layout) {
+            contentEl.insertBefore(el, layout);
         } else {
-            document.body.appendChild(sectionEl);
+            contentEl.appendChild(el);
         }
+    } else {
+        document.body.appendChild(el);
     }
-    return sectionEl;
+    appearanceSectionEl = el;
+    return el;
 };
 
 const renderAppearanceSection = () => {
-    const sectionEl = ensureAppearanceSection();
+    const sectionEl = getAppearanceSection();
     sectionEl.innerHTML = "";
 
     const map = collectMonsterAppearances();
@@ -973,13 +981,14 @@ const renderAppearanceSection = () => {
 const toggleAppearanceSection = () => {
     appearanceVisible = !appearanceVisible;
 
-    const sectionEl = ensureAppearanceSection();
+    const sectionEl = getAppearanceSection();
 
     if (appearanceVisible) {
-        // 先重建内容，再显示
         renderAppearanceSection();
         sectionEl.style.display = "";
     } else {
+        // 收起时清空内容并隐藏，确保不显示
+        sectionEl.innerHTML = "";
         sectionEl.style.display = "none";
     }
 
@@ -989,7 +998,7 @@ const toggleAppearanceSection = () => {
     }
 };
 
-// 初始化按钮：完全复制下载按钮结构与尺寸，并保证文字竖直居中
+// 初始化按钮：幂等，已存在则直接返回；文字垂直居中
 const initAppearanceButton = () => {
     const downloadBtn = byId("downloadBtn");
     if (!downloadBtn || byId("appearanceToggleBtn")) return;
@@ -1048,13 +1057,11 @@ const render = () => {
     renderFinalSection();
     renderCharts();
 
-    // 仅当可见时才重新渲染内容，避免无谓的重建
+    // 仅当可见时重建内容；收起状态不动
     if (appearanceVisible) {
-        const sectionEl = document.getElementById("appearanceSection");
-        if (sectionEl) {
-            renderAppearanceSection();
-            sectionEl.style.display = "";
-        }
+        renderAppearanceSection();
+        const sectionEl = getAppearanceSection();
+        if (sectionEl) sectionEl.style.display = "";
     }
 
     initAppearanceButton();
