@@ -731,17 +731,18 @@ const renderCharts = () => {
 
     if (finalChartEl) {
         if (!hasFinal) {
+            // 隐藏容器，并清除高度等占位样式
             finalChartEl.style.display = "none";
-            // 清除高度，避免占据空间
             finalChartEl.style.height = "0";
             finalChartEl.style.margin = "0";
             finalChartEl.style.padding = "0";
+            // 清空实例内容，但保留实例供下次复用
             if (finalChartInstance && !finalChartInstance.isDisposed()) {
                 finalChartInstance.clear();
             }
             return;
         }
-        // 有绝境关：恢复显示与高度，交给 renderLineChart 重新设置
+        // 有绝境关：恢复容器显示与高度
         finalChartEl.style.display = "";
         finalChartEl.style.height = "";
         finalChartEl.style.margin = "";
@@ -764,6 +765,16 @@ const renderCharts = () => {
             }
             return Math.round(total * 15.8);
         });
+
+        // 确保实例存在且尺寸正确后渲染
+        if (finalChartEl) {
+            // 如果容器之前被隐藏，实例尺寸可能为 0，需要重新设置尺寸
+            if (finalChartInstance && !finalChartInstance.isDisposed()) {
+                finalChartEl.style.width = "100%";
+                finalChartEl.style.height = "600px";
+                finalChartInstance.resize();
+            }
+        }
         renderLineChart("finalChart", getChartTitle(text.chartFinalTitle), [{ name: "绝境总血量", color: "#cc0000", data: finalData }], finalLabels);
     }
 };
@@ -772,7 +783,7 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     const chartElement = byId(targetId);
     if (!chartElement || !seriesData.length || !window.echarts) return;
 
-    // 仅当显示时才设置高度
+    // 仅对可见的图表设置尺寸
     if (chartElement.style.display !== "none") {
         chartElement.style.width = "100%";
         chartElement.style.height = "600px";
@@ -784,13 +795,19 @@ const renderLineChart = (targetId, title, seriesData, labels) => {
     else currentInstance = finalChartInstance;
 
     if (currentInstance && !currentInstance.isDisposed()) {
+        // 先 resize，再 setOption（notMerge: true 保证完整重绘）
         currentInstance.resize();
         currentInstance.setOption({
-            title: { text: title },
-            legend: { data: seriesData.map(s => s.name) },
-            xAxis: { data: labels },
+            title: { text: title, subtext: text.chartSubtitle, left: "center", textStyle: { color: "#000" }, subtextStyle: { color: "#2545ba" }, top: "8%" },
+            tooltip: { trigger: "axis" },
+            grid: { left: "3%", right: "4%", top: "22%", containLabel: true },
+            toolbox: { feature: { saveAsImage: {} }, right: "75%", top: "10%" },
+            xAxis: { type: "category", data: labels, axisLabel: { color: "#000", interval: 0, rotate: 45, fontSize: 10 } },
+            yAxis: { type: "value" },
+            legend: { data: seriesData.map(s => s.name), top: "16%" },
             series: seriesData.map(s => ({ name: s.name, type: "line", data: s.data, lineStyle: { color: s.color }, itemStyle: { color: s.color } })),
-        }, false);
+            dataZoom: [{ type: "slider", start: 0, end: 100 }],
+        }, true);
         return;
     }
 
