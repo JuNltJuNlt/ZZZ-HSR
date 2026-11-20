@@ -28,7 +28,7 @@
         },
         "buff_69015102": {
           "title": "环缭",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升35%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>。"
         },
         "buff_69015103": {
           "title": "炽灭",
@@ -38,7 +38,7 @@
       "monsters": [
         {
           "name": "新生之结·？？？",
-          "hp": 42008681,
+          "hp": 38858030,
           "defense": 953,
           "stun": 19007,
           "number": 1,
@@ -85,7 +85,7 @@
         },
         "buff_69015102": {
           "title": "环缭",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升35%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>。"
         },
         "buff_69015103": {
           "title": "炽灭",
@@ -143,7 +143,7 @@
         },
         "buff_69015102": {
           "title": "环缭",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升35%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>。"
         },
         "buff_69015103": {
           "title": "炽灭",
@@ -202,7 +202,7 @@
         },
         "buff_69015102": {
           "title": "环缭",
-          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升35%</color>。"
+          "desc": "· <color=#FFFFFF>[异常]</color>特性代理人的攻击力<color=#2BAD00>提升15%</color>，<color=#98EFF0>冰属性伤害</color>和<color=#FE437E>以太伤害</color><color=#2BAD00>提升30%</color>。\n· <color=#FFFFFF>[异常]</color>特性代理人造成的<color=#FFFFFF>[紊乱]</color>伤害<color=#2BAD00>提升35%</color>，<color=#FFFFFF>[异放]</color>伤害<color=#2BAD00>提升20%</color>。"
         },
         "buff_69015103": {
           "title": "炽灭",
