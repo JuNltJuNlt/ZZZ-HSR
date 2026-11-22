@@ -14,7 +14,7 @@
         },
         "buff_69015107": {
           "title": "",
-          "desc": "· 招架破除首领的强化部位或者击破其分身可以获得1层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升10%</color>，并使全队代理人获得<color=#2BAD00>锐化伤害提升15%</color>，[裂核]最多叠加2层。\n· 首领受到的<color=#2BAD00>异常伤害降低30%</color>。"
+          "desc": "· 招架破除首领的强化部位或者击破其分身可以获得1层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升10%</color>，并使全队代理人获得<color=#2BAD00>锐化伤害提升15%</color>，[裂核]最多叠加2层。\n· 首领受到的<color=#2BAD00>异常伤害降低40%</color>。"
         },
         "buff_69015108": {
           "title": "",
@@ -24,7 +24,7 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "淬火",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升8%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升35%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "环缭",
@@ -81,7 +81,7 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "淬火",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升8%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升35%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "环缭",
@@ -119,7 +119,7 @@
       "isFinal": false
     },
     "zone_69051103": {
-      "name": "以太异体·特里薇亚",
+      "name": "僭越者",
       "stage_num": 3,
       "monster_level": 70,
       "layer_buff": {
@@ -139,7 +139,7 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "淬火",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升8%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升35%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "环缭",
@@ -198,7 +198,7 @@
       "selectable_buff": {
         "buff_69015101": {
           "title": "淬火",
-          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升15%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
+          "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升8%</color>，<color=#FF5521>火属性伤害</color><color=#2BAD00>提升35%</color>。\n· 代理人触发暴击后，锐暴伤害<color=#2BAD00>提升10%</color>，持续5秒，重复触发时刷新持续时间。"
         },
         "buff_69015102": {
           "title": "环缭",
