@@ -737,28 +737,10 @@
                 "type": "C"
               },
               {
-                "name": "拉赫穆",
-                "hp": 8024059,
-                "defense": 715,
-                "stun": 12345,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "B"
-              }
-            ],
-            [
-              {
-                "name": "秽蚀·「骇鸟」",
-                "hp": 52688086,
-                "defense": 953,
-                "stun": 14328,
+                "name": "特战·「捷足巡游者」",
+                "hp": 7464163,
+                "defense": 858,
+                "stun": 12601,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -766,7 +748,25 @@
                   "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "蜕生·特佩什",
+                "hp": 51698071,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
                 ],
                 "type": "A"
               }
@@ -778,7 +778,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·「骇鸟」",
+              "name": "蜕生·特佩什",
               "bold": true
             }
           ],
@@ -960,28 +960,10 @@
                 "type": "C"
               },
               {
-                "name": "拉赫穆",
-                "hp": 8024059,
-                "defense": 715,
-                "stun": 12345,
-                "number": 1,
-                "hp_ratio_sum": 1,
-                "weakness": [
-                  "冰",
-                  "电"
-                ],
-                "resistance": [
-                  "物理"
-                ],
-                "type": "B"
-              }
-            ],
-            [
-              {
-                "name": "秽蚀·「骇鸟」",
-                "hp": 52688086,
-                "defense": 953,
-                "stun": 14328,
+                "name": "特战·「捷足巡游者」",
+                "hp": 7464163,
+                "defense": 858,
+                "stun": 12601,
                 "number": 1,
                 "hp_ratio_sum": 1,
                 "weakness": [
@@ -989,7 +971,25 @@
                   "电"
                 ],
                 "resistance": [
-                  "以太"
+                  "冰"
+                ],
+                "type": "B"
+              }
+            ],
+            [
+              {
+                "name": "蜕生·特佩什",
+                "hp": 51698071,
+                "defense": 953,
+                "stun": 17586,
+                "number": 1,
+                "hp_ratio_sum": 1,
+                "weakness": [
+                  "火",
+                  "电"
+                ],
+                "resistance": [
+                  "冰"
                 ],
                 "type": "A"
               }
@@ -1001,7 +1001,7 @@
               "bold": false
             },
             {
-              "name": "秽蚀·「骇鸟」",
+              "name": "蜕生·特佩什",
               "bold": true
             }
           ],
