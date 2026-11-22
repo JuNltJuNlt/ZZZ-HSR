@@ -957,7 +957,7 @@
           "layer_buff": {
             "69015205": {
               "title": "",
-              "desc": "· 代理人对敌人施加<color=#FFFFFF>属性异常</color>状态时，目标敌人获得1层对应属性的<color=#FFFFFF>[凋蚀印记]</color>；当敌人残痕因毁伤结算被移除时，会获得2层无属性的<color=#FFFFFF>[凋蚀印记]</color>，持续10秒，<color=#FFFFFF>[凋蚀印记]</color>最多叠加3层，同属性的<color=#FFFFFF>[凋蚀印记]</color>重复触发时刷新持续时间。\n· 敌人每持有1层<color=#FFFFFF>[凋蚀印记]</color>，受到的属性异常伤害<color=#2BAD00>提升10%</color>，<Term:2000001></Term>受到的伤害<color=#2BAD00>提升25%</color>，受到的锐化伤害<color=#2BAD00>提升35%</color>。\n· 对敌人造成<color=#FFFFFF>[部位破坏]</color>或<color=#FFFFFF>[完美反制]</color>时，全队异常精通<color=#2BAD00>提升40点</color>，锐暴伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
+              "desc": "· 代理人对敌人施加<color=#FFFFFF>属性异常</color>状态时，目标敌人获得1层对应属性的<color=#FFFFFF>[凋蚀印记]</color>，持续10秒；<color=#FFFFFF>[凋蚀印记]</color>最多叠加3层，同属性的<color=#FFFFFF>[凋蚀印记]</color>重复触发时刷新持续时间。\n· 敌人每持有1层<color=#FFFFFF>[凋蚀印记]</color>，受到的属性异常伤害<color=#2BAD00>提升10%</color>，<Term:2000001></Term>受到的伤害<color=#2BAD00>提升25%</color>。\n· 当敌人残痕因<color=#FFFFFF>[毁伤]</color>结算被移除时，全队造成的锐化伤害<color=#2BAD00>提升40%</color>，<Term:2000001></Term>受到的伤害<color=#2BAD00>提升25%</color>，最多叠加2层，持续60秒，重复触发时刷新持续时间。\n· 对敌人造成<color=#FFFFFF>[部位破坏]</color>或<color=#FFFFFF>[完美反制]</color>时，全队异常精通<color=#2BAD00>提升40点</color>，锐暴伤害<color=#2BAD00>提升15%</color>，持续15秒，重复触发时刷新持续时间。"
             },
             "69014406": {
               "title": "69014406_Title",
@@ -1008,7 +1008,7 @@
           "selectable_buff": {
             "69015201": {
               "title": "攻砭",
-              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升20%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，锐化伤害<color=#2BAD00>提升20%</color>；攻击命中敌人后，使其失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，效果不可叠加。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，喧响值回复效果10秒内最多触发一次。"
             },
             "69015202": {
               "title": "墟湮",
@@ -1037,7 +1037,7 @@
             },
             "69015107": {
               "title": "",
-              "desc": "· 招架破除首领的强化部位或者击破其分身可以获得1层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升10%</color>，并使全队代理人获得<color=#2BAD00>锐化伤害提升15%</color>，[裂核]最多叠加2层。\n· 首领受到的<color=#2BAD00>异常伤害降低30%</color>。"
+              "desc": "· 招架破除首领的强化部位或者击破其分身可以获得1层[裂核]，每层使首领的<color=#2BAD00>失衡易伤倍率提升10%</color>，并使全队代理人获得<color=#2BAD00>锐化伤害提升15%</color>，[裂核]最多叠加2层。\n· 首领受到的<color=#2BAD00>异常伤害降低40%</color>。"
             },
             "69015108": {
               "title": "",
@@ -1085,7 +1085,7 @@
           "selectable_buff": {
             "69015201": {
               "title": "攻砭",
-              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升20%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，锐化伤害<color=#2BAD00>提升20%</color>；攻击命中敌人后，使其失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，效果不可叠加。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，喧响值回复效果10秒内最多触发一次。"
             },
             "69015202": {
               "title": "墟湮",
@@ -1162,7 +1162,7 @@
           "selectable_buff": {
             "69015201": {
               "title": "攻砭",
-              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升20%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，锐化伤害<color=#2BAD00>提升20%</color>；攻击命中敌人后，使其失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，效果不可叠加。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，喧响值回复效果10秒内最多触发一次。"
             },
             "69015202": {
               "title": "墟湮",
@@ -1231,7 +1231,7 @@
           "selectable_buff": {
             "69015201": {
               "title": "攻砭",
-              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的防御力<color=#2BAD00>提升10%</color>，锐化伤害<color=#2BAD00>提升20%</color>。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，敌人失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，喧响值回复效果10秒内最多触发一次。"
+              "desc": "· <color=#FFFFFF>[锋御]</color>特性代理人的<color=#FF5521>火属性伤害</color><color=#2BAD00>提升20%</color>，锐化伤害<color=#2BAD00>提升20%</color>；攻击命中敌人后，使其失衡易伤倍率<color=#2BAD00>提升15%</color>，持续10秒，重复触发时刷新持续时间，效果不可叠加。\n· 代理人触发<color=#FFFFFF>[毁伤]</color>时，自身回复<color=#2BAD00>300点喧响值</color>，喧响值回复效果10秒内最多触发一次。"
             },
             "69015202": {
               "title": "墟湮",
