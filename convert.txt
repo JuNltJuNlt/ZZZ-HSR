@@ -189,7 +189,7 @@ shiyu/deadly
         URL.revokeObjectURL(a.href);
     }
 
-    const shiyuFiles = ['620601.json', '620611.json', '620621.json'];
+    const shiyuFiles = ['620661.json', '620671.json', '620681.json'];
     for (const fileName of shiyuFiles) {
         try {
             const res = await fetch(`../../data/zzz/shiyu/raw/${fileName}`);
@@ -204,7 +204,7 @@ shiyu/deadly
         }
     }
 
-    const deadlyFiles = ['690481.json', '690491.json', '690501.json'];
+    const deadlyFiles = ['690541.json', '690551.json', '690561.json'];
     for (const fileName of deadlyFiles) {
         try {
             const res = await fetch(`../../data/zzz/deadly/raw/${fileName}`);
@@ -359,7 +359,7 @@ skill
         URL.revokeObjectURL(a.href);
     }
 
-    const fileList = ['2.json'];
+    const fileList = ['3.json'];
     for (const fileName of fileList) {
         try {
             const res = await fetch(`../../data/zzz/skill/raw/${fileName}`);
@@ -379,7 +379,7 @@ skill
                 bosses: bosses,
             };
 
-            download(result, '3.3.json');
+            download(result, '3.5-3.7.json');
             console.log(`拟境完成: 共 ${bosses.length} 个 Boss`);
             await new Promise(r => setTimeout(r, 300));
         } catch(e) {
