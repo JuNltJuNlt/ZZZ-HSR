@@ -1008,7 +1008,7 @@
           "selectable_buff": {
             "69015301": {
               "title": "尖峰",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
+              "desc": "· 队伍内存在<color=#FFFFFF>[防护]</color>特性代理人时，全队防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>，效果不可叠加。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
               "title": "电离",
@@ -1086,7 +1086,7 @@
           "selectable_buff": {
             "69015301": {
               "title": "尖峰",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
+              "desc": "· 队伍内存在<color=#FFFFFF>[防护]</color>特性代理人时，全队防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>，效果不可叠加。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
               "title": "电离",
@@ -1156,7 +1156,7 @@
           "selectable_buff": {
             "69015301": {
               "title": "尖峰",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
+              "desc": "· 队伍内存在<color=#FFFFFF>[防护]</color>特性代理人时，全队防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>，效果不可叠加。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
               "title": "电离",
@@ -1227,7 +1227,7 @@
           "selectable_buff": {
             "69015301": {
               "title": "尖峰",
-              "desc": "· 代理人的防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
+              "desc": "· 队伍内存在<color=#FFFFFF>[防护]</color>特性代理人时，全队防御力<color=#2BAD00>提升10%</color>，攻击命中敌人时无视其<color=#2BAD00>10%</color>的<color=#FF5521>火属性伤害抗性</color>，效果不可叠加。\n· <color=#FFFFFF>[锋御]</color>特性代理人触发暴击后，自身回复<color=#2BAD00>300点喧响值</color>，锐化伤害<color=#2BAD00>提升10%</color>，持续15秒，重复触发时刷新持续时间，喧响值回复效果15秒内最多触发一次。"
             },
             "69015302": {
               "title": "电离",

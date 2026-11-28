@@ -10,7 +10,7 @@
       "layer_buff": {
         "62001642": {
           "title": "极炎烬狱",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -192,7 +192,7 @@
       "layer_buff": {
         "62001642": {
           "title": "极炎烬狱",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -414,7 +414,7 @@
       "layer_buff": {
         "62001642": {
           "title": "极炎烬狱",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -658,7 +658,7 @@
       "layer_buff": {
         "62001642": {
           "title": "极炎烬狱",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
         }
       },
       "child": [],
@@ -807,7 +807,7 @@
         },
         "62001642": {
           "title": "极炎烬狱",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001643": {
           "title": "寂灭生息",
@@ -933,7 +933,7 @@
       "layer_buff": {
         "62001642": {
           "title": "极炎烬狱",
-          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升15%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
+          "desc": "· 代理人的<color=#FF5521>火属性伤害</color>提升30%。\n· <color=#FFFFFF>[锋御]</color>特性的代理人发动<color=#FFFFFF>[强化特殊技]</color>后，自身防御力提升10%，锐化伤害提升20%，全队造成的失衡值提升20%，持续15秒，重复触发时刷新持续时间。"
         },
         "62001001": {
           "title": "",
@@ -1047,25 +1047,25 @@
       "child": [],
       "layer_room": {
         "62064053": {
-          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_OutlanderSlime.png",
+          "monster_icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/IconBossGeneral/UnPacker/IconMonster_MiasmaThracian.png",
           "monster_list": {
-            "31772": {
-              "id": 30059,
-              "name": "多佩冈亚·卡芙卡",
-              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_Outlander_Slime.png",
+            "31102": {
+              "id": 930178,
+              "name": "秽蚀·色雷斯人",
+              "image": "UI/Sprite/A1DynamicLoad/BossCard/UnPacker/BossCardLv03/Monster_MiasmaThracian.png",
               "element": {
                 "ice": 0,
-                "fire": 1,
-                "electric": 0,
-                "ether": 0,
-                "physical": -1,
-                "wind": 0
+                "fire": 0,
+                "electric": -1,
+                "ether": 1,
+                "physical": 0,
+                "wind": 1
               },
               "stats": {
-                "hp": 53727913.574999996,
-                "attack": 2812.2727272727275,
+                "hp": 59356948.85999999,
+                "attack": 3521.454545454546,
                 "defence": 952.8000000000001,
-                "stun": 17585.05,
+                "stun": 14327.95,
                 "attribute_infliction": 0.0
               }
             },
@@ -1082,7 +1082,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 4921237.215,
+                "hp": 5832577.4399999995,
                 "attack": 2714.4545454545455,
                 "defence": 921.0400000000001,
                 "stun": 9334.2,
@@ -1102,7 +1102,7 @@
                 "wind": 0
               },
               "stats": {
-                "hp": 5848446.24,
+                "hp": 6931491.84,
                 "attack": 2592.1818181818185,
                 "defence": 714.6,
                 "stun": 11169.550000000001,
@@ -1111,10 +1111,11 @@
             }
           },
           "monster_weakness": {
-            "201": "火属性"
+            "205": "以太",
+            "204": "风属性"
           },
           "monster_resistance": {
-            "200": "物理"
+            "203": "电属性"
           },
           "waves_num": 2
         }
