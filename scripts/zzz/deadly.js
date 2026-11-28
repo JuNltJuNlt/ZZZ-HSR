@@ -13,7 +13,13 @@ let indexData = null;
 let chartInstance = null;
 let bossChartInstance = null;
 let finalChartInstance = null;
-let normalizeMode = false;
+
+// ---- 持久化状态：刷新后不重置 ----
+const STORAGE_KEY_NORMALIZE = "deadly_normalizeMode";
+const STORAGE_KEY_SHOW_FINAL = "deadly_showFinal";
+
+let normalizeMode = localStorage.getItem(STORAGE_KEY_NORMALIZE) === "true";
+let showFinal = localStorage.getItem(STORAGE_KEY_SHOW_FINAL) === "true";
 
 let appearanceVisible = false;
 let appearanceSectionEl = null;
@@ -142,14 +148,35 @@ const renderScheduleHeader = () => {
 };
 
 const renderNormalizeToggle = () => {
-    let toggleEl = document.getElementById("normalizeToggle");
-    if (!toggleEl) {
-        toggleEl = create("div", {
-            id: "normalizeToggle",
+    const contentEl = document.querySelector(".content");
+    if (!contentEl) return;
+    contentEl.style.position = "relative";
+
+    // 容器：容纳两个开关，右上角纵向排列
+    let panelEl = document.getElementById("togglePanel");
+    if (!panelEl) {
+        panelEl = create("div", {
+            id: "togglePanel",
             style: {
                 position: "absolute",
                 top: "10px",
                 right: "20px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-end",
+                gap: "8px",
+                zIndex: "50",
+            },
+        });
+        contentEl.appendChild(panelEl);
+    }
+
+    // ---- 低防血量归一 ----
+    let normalizeEl = document.getElementById("normalizeToggle");
+    if (!normalizeEl) {
+        normalizeEl = create("div", {
+            id: "normalizeToggle",
+            style: {
                 display: "flex",
                 alignItems: "center",
                 gap: "10px",
@@ -166,17 +193,46 @@ const renderNormalizeToggle = () => {
                 }),
             ],
         });
-        toggleEl.querySelector("input").addEventListener("change", (e) => {
+        normalizeEl.querySelector("input").addEventListener("change", (e) => {
             normalizeMode = e.target.checked;
+            localStorage.setItem(STORAGE_KEY_NORMALIZE, String(normalizeMode));
             render();
         });
-        const contentEl = document.querySelector(".content");
-        if (contentEl) {
-            contentEl.style.position = "relative";
-            contentEl.appendChild(toggleEl);
-        }
+        panelEl.appendChild(normalizeEl);
     } else {
-        toggleEl.querySelector("input").checked = normalizeMode;
+        normalizeEl.querySelector("input").checked = normalizeMode;
+    }
+
+    // ---- 显示绝境 ----
+    let finalEl = document.getElementById("finalToggle");
+    if (!finalEl) {
+        finalEl = create("div", {
+            id: "finalToggle",
+            style: {
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                fontSize: "18px",
+                color: "#000",
+                cursor: "pointer",
+                userSelect: "none",
+            },
+            children: [
+                create("span", { text: "显示绝境", style: { fontWeight: "normal" } }),
+                create("input", {
+                    attrs: { type: "checkbox", checked: showFinal },
+                    style: { cursor: "pointer", width: "20px", height: "20px" },
+                }),
+            ],
+        });
+        finalEl.querySelector("input").addEventListener("change", (e) => {
+            showFinal = e.target.checked;
+            localStorage.setItem(STORAGE_KEY_SHOW_FINAL, String(showFinal));
+            render();
+        });
+        panelEl.appendChild(finalEl);
+    } else {
+        finalEl.querySelector("input").checked = showFinal;
     }
 };
 
@@ -563,12 +619,42 @@ const renderAllBosses = () => {
     }
 };
 
+// ---- 找到用于展示绝境的期数：优先当前期，其次最新有绝境的期数 ----
+const resolveFinalEntryIndex = () => {
+    const cur = currentEntry();
+    if (cur && cur.final_zone && Object.keys(cur.final_zone).length > 0) {
+        return state.scheduleIndex;
+    }
+    // 回退：从后往前找最新有绝境的期数
+    for (let i = deadlyEntries.length - 1; i >= 0; i--) {
+        const e = deadlyEntries[i];
+        if (e && e.final_zone && Object.keys(e.final_zone).length > 0) {
+            return i;
+        }
+    }
+    return -1;
+};
+
 const renderFinalSection = () => {
-    const entry = currentEntry();
-    const finalZone = entry.final_zone;
     const container = document.getElementById("finalSection");
     if (!container) return;
 
+    // 未开启显示绝境：全部隐藏
+    if (!showFinal) {
+        container.style.display = "none";
+        container.replaceChildren();
+        return;
+    }
+
+    const finalIdx = resolveFinalEntryIndex();
+    if (finalIdx < 0) {
+        container.style.display = "none";
+        container.replaceChildren();
+        return;
+    }
+
+    const finalEntry = deadlyEntries[finalIdx];
+    const finalZone = finalEntry.final_zone;
     if (!finalZone || Object.keys(finalZone).length === 0) {
         container.style.display = "none";
         container.replaceChildren();
@@ -577,6 +663,20 @@ const renderFinalSection = () => {
 
     container.style.display = "";
     container.replaceChildren();
+
+    // 如果当前期没有绝境，但展示的是回退期数，加一行提示
+    const isFallback = finalIdx !== state.scheduleIndex;
+    if (isFallback) {
+        container.appendChild(create("div", {
+            style: {
+                textAlign: "center",
+                color: "#666",
+                fontSize: "14px",
+                marginBottom: "8px",
+            },
+            text: `当前期无绝境，显示最新绝境：${indexData.entries[finalIdx].replace('.json', '')} | ${finalEntry.deadly_name || ''}`,
+        }));
+    }
 
     const finalKeys = Object.keys(finalZone).sort();
     finalKeys.forEach(fk => {
@@ -741,31 +841,41 @@ const renderCharts = () => {
         { name: text.stageLabels[2], color: "#4CAF50", data: bossData[2] },
     ], labels);
 
-    // ---- 绝境图 ----
+    // ---- 绝境图：仅 showFinal 开启时展示 ----
     const finalChartEl = byId("finalChart");
     const finalChartContainer = getFinalChartContainer();
-    const curFinal = currentEntry()?.final_zone;
-    const hasFinal = curFinal && Object.keys(curFinal).length > 0;
 
-    const wasVisible = finalChartVisibleLast;
-    finalChartVisibleLast = hasFinal;
-
-    if (!hasFinal) {
-        // 无绝境：隐藏 + 重置（销毁实例）
-        if (finalChartEl) {
-            finalChartEl.style.display = "none";
-        }
+    if (!showFinal) {
+        if (finalChartEl) finalChartEl.style.display = "none";
         if (finalChartContainer) {
             finalChartContainer.style.display = "none";
             finalChartContainer.style.height = "0";
             finalChartContainer.style.margin = "0";
             finalChartContainer.style.padding = "0";
         }
-        disposeFinalChart();   // 重置
+        disposeFinalChart();
+        finalChartVisibleLast = false;
         return;
     }
 
-    // 有绝境：恢复显示
+    const finalIdx = resolveFinalEntryIndex();
+    const hasFinal = finalIdx >= 0;
+    const wasVisible = finalChartVisibleLast;
+    finalChartVisibleLast = hasFinal;
+
+    if (!hasFinal) {
+        if (finalChartEl) finalChartEl.style.display = "none";
+        if (finalChartContainer) {
+            finalChartContainer.style.display = "none";
+            finalChartContainer.style.height = "0";
+            finalChartContainer.style.margin = "0";
+            finalChartContainer.style.padding = "0";
+        }
+        disposeFinalChart();
+        return;
+    }
+
+    // 恢复显示
     if (finalChartEl) {
         finalChartEl.style.display = "";
         finalChartEl.style.width = "100%";
@@ -778,7 +888,6 @@ const renderCharts = () => {
         finalChartContainer.style.padding = "";
     }
 
-    // 无绝境 → 有绝境：重置（销毁旧实例）
     if (!wasVisible) {
         disposeFinalChart();
     }
